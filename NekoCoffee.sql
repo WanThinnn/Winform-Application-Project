@@ -82,5 +82,3 @@ create table DonHang
 	foreign key (MaHD) references HoaDon(MaHD),
 	foreign key (MaMeo) references Meo(MaMeo)
 );
-select * from DonHang
-
