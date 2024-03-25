@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29CFB7DF-CA0A-49DA-9048-61FF0C4A0EB4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\windowsformsapp1\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{29CFB7DF-CA0A-49DA-9048-61FF0C4A0EB4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\thien\\downloads\\neko-coffe\\winform-application-project\\windowsformsapp1\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{29CFB7DF-CA0A-49DA-9048-61FF0C4A0EB4}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -46,8 +46,7 @@
               "ToolTip": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\WindowsFormsApp1\\Admin.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\Admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T18:13:01.982Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-20T18:13:01.982Z"
             },
             {
               "$type": "Document",
