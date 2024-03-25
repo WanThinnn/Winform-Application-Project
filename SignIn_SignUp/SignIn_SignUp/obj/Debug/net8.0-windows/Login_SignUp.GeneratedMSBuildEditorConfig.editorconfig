@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Login_SignUp
-build_property.ProjectDir = D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\
+build_property.ProjectDir = C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

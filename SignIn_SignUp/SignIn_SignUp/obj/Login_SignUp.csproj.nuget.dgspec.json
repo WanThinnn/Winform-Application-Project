@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UIT\\Semester_4\\Lập trình Mạng\\ĐỒ ÁN\\SignIn_SignUp\\SignIn_SignUp\\Login_SignUp.csproj": {}
+    "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\SignIn_SignUp\\SignIn_SignUp\\Login_SignUp.csproj": {}
   },
   "projects": {
-    "D:\\UIT\\Semester_4\\Lập trình Mạng\\ĐỒ ÁN\\SignIn_SignUp\\SignIn_SignUp\\Login_SignUp.csproj": {
+    "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\SignIn_SignUp\\SignIn_SignUp\\Login_SignUp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UIT\\Semester_4\\Lập trình Mạng\\ĐỒ ÁN\\SignIn_SignUp\\SignIn_SignUp\\Login_SignUp.csproj",
+        "projectUniqueName": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\SignIn_SignUp\\SignIn_SignUp\\Login_SignUp.csproj",
         "projectName": "Login_SignUp",
-        "projectPath": "D:\\UIT\\Semester_4\\Lập trình Mạng\\ĐỒ ÁN\\SignIn_SignUp\\SignIn_SignUp\\Login_SignUp.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\UIT\\Semester_4\\Lập trình Mạng\\ĐỒ ÁN\\SignIn_SignUp\\SignIn_SignUp\\obj\\",
+        "projectPath": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\SignIn_SignUp\\SignIn_SignUp\\Login_SignUp.csproj",
+        "packagesPath": "C:\\Users\\Thien\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\SignIn_SignUp\\SignIn_SignUp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Thien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
