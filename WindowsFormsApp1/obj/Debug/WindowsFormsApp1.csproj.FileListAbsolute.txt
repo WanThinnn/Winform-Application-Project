@@ -1,0 +1,22 @@
+C:\Drive\code\N2\LT Mang\UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Drive\code\N2\LT Mang\UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Drive\code\N2\LT Mang\UI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Drive\code\N2\LT Mang\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Drive\code\N2\LT Mang\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Drive\code\N2\LT Mang\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Drive\code\N2\LT Mang\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Drive\code\N2\LT Mang\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Drive\code\N2\LT Mang\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Drive\code\N2\LT Mang\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Drive\code\N2\LT Mang\UI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
