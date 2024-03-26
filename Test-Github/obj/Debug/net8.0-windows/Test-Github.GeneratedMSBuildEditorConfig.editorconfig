@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Test_Github
-build_property.ProjectDir = C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\Test-Github\
+build_property.ProjectDir = C:\Users\Thien\Downloads\Neko-Coffe\tst\Winform-Application-Project\Test-Github\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

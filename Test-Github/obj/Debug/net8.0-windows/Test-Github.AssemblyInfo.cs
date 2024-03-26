@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Test-Github")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5f0335d4a286e4c829f889b398a74583364242b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f09fd128c87aaae61c32f5999717200c17de3e76")]
 [assembly: System.Reflection.AssemblyProductAttribute("Test-Github")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Test-Github")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
