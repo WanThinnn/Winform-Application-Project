@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\tst\\Winform-Application-Project\\Test-Github\\Test-Github.csproj": {}
+    "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\Test-Github\\Test-Github.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\tst\\Winform-Application-Project\\Test-Github\\Test-Github.csproj": {
+    "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\Test-Github\\Test-Github.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\tst\\Winform-Application-Project\\Test-Github\\Test-Github.csproj",
+        "projectUniqueName": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\Test-Github\\Test-Github.csproj",
         "projectName": "Test-Github",
-        "projectPath": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\tst\\Winform-Application-Project\\Test-Github\\Test-Github.csproj",
+        "projectPath": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\Test-Github\\Test-Github.csproj",
         "packagesPath": "C:\\Users\\Thien\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\tst\\Winform-Application-Project\\Test-Github\\obj\\",
+        "outputPath": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\Test-Github\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
