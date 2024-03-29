@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neko-coffe-app", "neko-coffe-app.csproj", "{D2FA7231-9345-4DD0-85BD-54E70E1F34F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neko-coffe-app", "neko-coffe-app\neko-coffe-app.csproj", "{957859EA-33CA-4446-95F9-B64C781E782F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D2FA7231-9345-4DD0-85BD-54E70E1F34F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2FA7231-9345-4DD0-85BD-54E70E1F34F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2FA7231-9345-4DD0-85BD-54E70E1F34F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2FA7231-9345-4DD0-85BD-54E70E1F34F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{957859EA-33CA-4446-95F9-B64C781E782F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957859EA-33CA-4446-95F9-B64C781E782F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957859EA-33CA-4446-95F9-B64C781E782F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{957859EA-33CA-4446-95F9-B64C781E782F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {98BFF7A8-DC91-424D-9A00-4F5AA0763E2E}
+		SolutionGuid = {30A716EE-1C33-4102-8310-F34283BE09ED}
 	EndGlobalSection
 EndGlobal

@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D2FA7231-9345-4DD0-85BD-54E70E1F34F8}|neko-coffe-app.csproj|c:\\users\\thien\\downloads\\neko-coffe\\winform-application-project\\neko-coffe-app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D2FA7231-9345-4DD0-85BD-54E70E1F34F8}|neko-coffe-app.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{957859EA-33CA-4446-95F9-B64C781E782F}|neko-coffe-app\\neko-coffe-app.csproj|c:\\users\\thien\\downloads\\neko-coffe\\winform-application-project\\neko-coffe-app\\neko-coffe-app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{957859EA-33CA-4446-95F9-B64C781E782F}|neko-coffe-app\\neko-coffe-app.csproj|solutionrelative:neko-coffe-app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,12 +20,12 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\neko-coffe-app\\Form1.cs",
+              "RelativeDocumentMoniker": "neko-coffe-app\\Form1.cs",
+              "ToolTip": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\neko-coffe-app\\Form1.cs [Design]",
+              "RelativeToolTip": "neko-coffe-app\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T08:47:19.908Z",
+              "WhenOpened": "2024-03-29T21:17:25.686Z",
               "EditorCaption": " [Design]"
             }
           ]

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\neko-coffe-app.csproj": {}
+    "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\neko-coffe-app\\neko-coffe-app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\neko-coffe-app.csproj": {
+    "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\neko-coffe-app\\neko-coffe-app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\neko-coffe-app.csproj",
+        "projectUniqueName": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\neko-coffe-app\\neko-coffe-app.csproj",
         "projectName": "neko-coffe-app",
-        "projectPath": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\neko-coffe-app.csproj",
+        "projectPath": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\neko-coffe-app\\neko-coffe-app.csproj",
         "packagesPath": "C:\\Users\\Thien\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\obj\\",
+        "outputPath": "C:\\Users\\Thien\\Downloads\\Neko-Coffe\\Winform-Application-Project\\neko-coffe-app\\neko-coffe-app\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
