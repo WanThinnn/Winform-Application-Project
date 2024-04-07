@@ -153,3 +153,5 @@ D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debu
 D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.csproj.Up2Date
 D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.exe
 D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.pdb
+D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.ForgotPass.resources
+D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.Signup.resources
