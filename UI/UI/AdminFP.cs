@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UI
 {
-    public partial class Form1 : Form
+    public partial class AdminFP : Form
     {
-        public Form1()
+        public AdminFP()
         {
             InitializeComponent();
         }
@@ -45,7 +45,7 @@ namespace UI
 
         private void bunifuButton2_Click_1(object sender, EventArgs e)
         {
-
+        
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -59,6 +59,11 @@ namespace UI
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void admin1_Load(object sender, EventArgs e)
         {
 
         }
