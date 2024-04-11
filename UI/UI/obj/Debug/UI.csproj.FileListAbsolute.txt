@@ -144,7 +144,6 @@ D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\bin\Debu
 D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
 D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.csproj.AssemblyReference.cache
 D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.Admin.resources
-D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.Form1.resources
 D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.Login.resources
 D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.Properties.Resources.resources
 D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.csproj.GenerateResource.cache
@@ -235,3 +234,4 @@ C:\Drive\code\N2\LT Mang\Winform-Application-Project\UI\UI\obj\Debug\UI.csproj.C
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\UI\UI\obj\Debug\UI.csproj.Up2Date
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\UI\UI\obj\Debug\UI.exe
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\UI\UI\obj\Debug\UI.pdb
+D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.AdminFP.resources
