@@ -151,6 +151,12 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminOrder.Designer.cs">
+      <DependentUpon>AdminOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="ForgotPass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +185,9 @@
     </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminOrder.resx">
+      <DependentUpon>AdminOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPass.resx">
       <DependentUpon>ForgotPass.cs</DependentUpon>

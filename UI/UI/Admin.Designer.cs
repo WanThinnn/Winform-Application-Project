@@ -267,7 +267,7 @@
             this.AdminLabel1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminLabel1.Location = new System.Drawing.Point(22, 56);
             this.AdminLabel1.Name = "AdminLabel1";
-            this.AdminLabel1.Size = new System.Drawing.Size(691, 54);
+            this.AdminLabel1.Size = new System.Drawing.Size(570, 46);
             this.AdminLabel1.TabIndex = 1;
             this.AdminLabel1.Text = "We serve more than 40 coffee and stay with that is many cats\r\nall will cost with " +
     "a affordable, given you many good time\r\n";
@@ -279,7 +279,7 @@
             this.AdminTitle1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminTitle1.Location = new System.Drawing.Point(20, 13);
             this.AdminTitle1.Name = "AdminTitle1";
-            this.AdminTitle1.Size = new System.Drawing.Size(572, 34);
+            this.AdminTitle1.Size = new System.Drawing.Size(451, 26);
             this.AdminTitle1.TabIndex = 0;
             this.AdminTitle1.Text = "Best place for healing your mental health";
             // 
@@ -435,10 +435,10 @@
             this.AdminCircle2.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
             this.AdminCircle2.SuperScriptText = "";
             this.AdminCircle2.TabIndex = 17;
-            this.AdminCircle2.Text = "15";
+            this.AdminCircle2.Text = "12";
             this.AdminCircle2.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.AdminCircle2.Value = 15;
-            this.AdminCircle2.ValueByTransition = 15;
+            this.AdminCircle2.Value = 12;
+            this.AdminCircle2.ValueByTransition = 12;
             this.AdminCircle2.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             // 
             // AdminCircle1
@@ -484,7 +484,7 @@
             this.AdminLabel3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminLabel3.Location = new System.Drawing.Point(280, 45);
             this.AdminLabel3.Name = "AdminLabel3";
-            this.AdminLabel3.Size = new System.Drawing.Size(220, 27);
+            this.AdminLabel3.Size = new System.Drawing.Size(182, 23);
             this.AdminLabel3.TabIndex = 6;
             this.AdminLabel3.Text = "REMAINING TABLES\r\n";
             // 
@@ -495,7 +495,7 @@
             this.AdminLabel2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminLabel2.Location = new System.Drawing.Point(31, 45);
             this.AdminLabel2.Name = "AdminLabel2";
-            this.AdminLabel2.Size = new System.Drawing.Size(153, 27);
+            this.AdminLabel2.Size = new System.Drawing.Size(127, 23);
             this.AdminLabel2.TabIndex = 5;
             this.AdminLabel2.Text = "UNPAID BILLS";
             // 
@@ -517,7 +517,7 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(156, 59);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 44);
+            this.label3.Size = new System.Drawing.Size(118, 36);
             this.label3.TabIndex = 5;
             this.label3.Text = "Mrs. Min Joeng\r\n0843250104";
             // 
@@ -897,7 +897,7 @@
             this.label8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(102, 8);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 63);
+            this.label8.Size = new System.Drawing.Size(72, 57);
             this.label8.TabIndex = 1;
             this.label8.Text = "Table:\r\nDescripe:\r\nTotal:";
             // 
@@ -935,7 +935,7 @@
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(102, 8);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 63);
+            this.label7.Size = new System.Drawing.Size(72, 57);
             this.label7.TabIndex = 1;
             this.label7.Text = "Table:\r\nDescripe:\r\nTotal:";
             // 
@@ -965,6 +965,7 @@
             this.bunifuPanel4.ShowBorders = true;
             this.bunifuPanel4.Size = new System.Drawing.Size(512, 80);
             this.bunifuPanel4.TabIndex = 12;
+            this.bunifuPanel4.Click += new System.EventHandler(this.bunifuPanel4_Click);
             // 
             // label6
             // 
@@ -973,7 +974,7 @@
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(102, 8);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 63);
+            this.label6.Size = new System.Drawing.Size(72, 57);
             this.label6.TabIndex = 1;
             this.label6.Text = "Table:\r\nDescripe:\r\nTotal:";
             // 
