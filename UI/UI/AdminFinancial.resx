@@ -121,10 +121,10 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="AdminFinancialView.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGkAAAAlCAYAAABBGMctAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKdSURBVGhD7Zs/aFRBEMavtLS0tLS0TGlpJTb2lkFIF/D9
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKdSURBVGhD7Zs/aFRBEMavtLS0tLS0TGlpJTb2lkFIF/D9
         EbRIYSHYpbC4fakFO8FKsLK0sBAsBEGIJIZ75q8Ybp/fN28j5Jw77rz3breYgV+anZs75mNmZ/e9DP7X
         Glfealz+xO8UL31VfiBNVTRGy0VOmB/mCdwNqevXvCvWRBSXn/qqGGk/zphKjbydI2+vexGscQ+vQ6C3
         vspNmG6opfO44mZI8XLmh9kzE6c3WF2vGvf4Skj3YsYPIsAbcKQENzpiXOW/UVUfG7d5LaR+PpP2VuWf
@@ -138,10 +138,10 @@
         CDl80ak4msl+Ncy3eK4Koik/yiDMj+TJPdqGQGshhQvYYPAHMreFmFntubcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuPanel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="AdminFinancialBank.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA/IAAABQCAYAAAC6Xk5AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARVSURBVHhe7d0vc9tIAIfhwMLAwsDCwkDDQsPAwIMFnYkk
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARVSURBVHhe7d0vc9tIAIfhwMLAwsDCwkDDQsPAwIMFnYkk
         A4cdLDy4YoEHC/sRCgsPBhYeklStvTdOLtvWSWNLO3l+M890OiP/oW8kSydmZmZmZmZm9kI3hObtEFaL
         8d/LIdTXAAAA8HLFNl4t+tCcp2yedkNYv+pDfdG1Veja5nZomwEAAADIG/v537Gfb7aB/+F1yuvDbwhX
         ZzHec18KAAAA2M8Y9Z/ile0pt59/Q1ifdu3qY/wLQu4LAAAAAI+3OVn+3Gfo4/X84xt/y30gAAAA8Hs2
@@ -163,10 +163,10 @@
         BtzVfwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
+  <data name="AdminFinancialBankLabel.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="AdminFinancialBankImg.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAD6AAAAprCAMAAADwttLgAAAABGdBTUEAALGPC/xhBQAAAHtQTFRF////
         8/P/8fHy//yK//Wc4eH+/+1s2dn//uBh/9xIz8/+38unxsb++MZuvb35tbX3/65N8a04qan8s6qppKPj
@@ -2776,10 +2776,10 @@
         AAAATw2ogB0LPDBDKAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="AdminFinancialMoney.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA/IAAABQCAYAAAC6Xk5AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARVSURBVHhe7d0vc9tIAIfhwMLAwsDCwkDDQsPAwIMFnYkk
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARVSURBVHhe7d0vc9tIAIfhwMLAwsDCwkDDQsPAwIMFnYkk
         A4cdLDy4YoEHC/sRCgsPBhYeklStvTdOLtvWSWNLO3l+M890OiP/oW8kSydmZmZmZmZm9kI3hObtEFaL
         8d/LIdTXAAAA8HLFNl4t+tCcp2yedkNYv+pDfdG1Veja5nZomwEAAADIG/v537Gfb7aB/+F1yuvDbwhX
         ZzHec18KAAAA2M8Y9Z/ile0pt59/Q1ifdu3qY/wLQu4LAAAAAI+3OVn+3Gfo4/X84xt/y30gAAAA8Hs2
@@ -2801,10 +2801,10 @@
         BtzVfwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
+  <data name="AdminFinancialMoneyLabel.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="AdminFinancialMoneyImg.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEBLAEsAAD/4QBWRXhpZgAATU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAAB
         AAAARgEoAAMAAAABAAIAAAITAAMAAAABAAEAAAAAAAAAAAEsAAAAAQAAASwAAAAB/9sAQwACAQEBAQEC
