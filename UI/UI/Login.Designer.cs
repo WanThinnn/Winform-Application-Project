@@ -146,6 +146,7 @@
             this.txPass.Size = new System.Drawing.Size(372, 42);
             this.txPass.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txPass.TabIndex = 10;
+            this.txPass.TabStop = false;
             this.txPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txPass.TextMarginBottom = 0;
             this.txPass.TextMarginLeft = 3;
@@ -220,6 +221,7 @@
             this.txUser.Size = new System.Drawing.Size(372, 42);
             this.txUser.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txUser.TabIndex = 9;
+            this.txUser.TabStop = false;
             this.txUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txUser.TextMarginBottom = 0;
             this.txUser.TextMarginLeft = 3;
@@ -232,11 +234,11 @@
             // lbDangNhap
             // 
             this.lbDangNhap.AutoSize = true;
-            this.lbDangNhap.Font = new System.Drawing.Font("Montserrat Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDangNhap.Font = new System.Drawing.Font("SVN-Bango", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.lbDangNhap.Location = new System.Drawing.Point(383, 64);
             this.lbDangNhap.Name = "lbDangNhap";
-            this.lbDangNhap.Size = new System.Drawing.Size(113, 39);
+            this.lbDangNhap.Size = new System.Drawing.Size(105, 35);
             this.lbDangNhap.TabIndex = 8;
             this.lbDangNhap.Text = "LOGIN";
             // 
@@ -325,16 +327,17 @@
             this.btnLogin.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
             this.btnLogin.OnIdleState.IconLeftImage = null;
             this.btnLogin.OnIdleState.IconRightImage = null;
-            this.btnLogin.OnPressedState.BorderColor = System.Drawing.Color.Black;
+            this.btnLogin.OnPressedState.BorderColor = System.Drawing.Color.DarkRed;
             this.btnLogin.OnPressedState.BorderRadius = 40;
             this.btnLogin.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnLogin.OnPressedState.BorderThickness = 1;
-            this.btnLogin.OnPressedState.FillColor = System.Drawing.Color.Black;
+            this.btnLogin.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLogin.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnLogin.OnPressedState.IconLeftImage = null;
             this.btnLogin.OnPressedState.IconRightImage = null;
             this.btnLogin.Size = new System.Drawing.Size(372, 42);
             this.btnLogin.TabIndex = 5;
+            this.btnLogin.TabStop = false;
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLogin.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnLogin.TextMarginLeft = 0;
@@ -415,16 +418,17 @@
             this.btnSignUp.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
             this.btnSignUp.OnIdleState.IconLeftImage = null;
             this.btnSignUp.OnIdleState.IconRightImage = null;
-            this.btnSignUp.OnPressedState.BorderColor = System.Drawing.Color.Black;
+            this.btnSignUp.OnPressedState.BorderColor = System.Drawing.Color.DarkRed;
             this.btnSignUp.OnPressedState.BorderRadius = 40;
             this.btnSignUp.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnSignUp.OnPressedState.BorderThickness = 1;
-            this.btnSignUp.OnPressedState.FillColor = System.Drawing.Color.Black;
+            this.btnSignUp.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSignUp.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnSignUp.OnPressedState.IconLeftImage = null;
             this.btnSignUp.OnPressedState.IconRightImage = null;
             this.btnSignUp.Size = new System.Drawing.Size(372, 42);
             this.btnSignUp.TabIndex = 11;
+            this.btnSignUp.TabStop = false;
             this.btnSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSignUp.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnSignUp.TextMarginLeft = 0;
