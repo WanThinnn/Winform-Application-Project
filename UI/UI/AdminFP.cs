@@ -67,5 +67,10 @@ namespace UI
         {
 
         }
+
+        private void bunifuButton7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

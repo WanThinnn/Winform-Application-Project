@@ -38,41 +38,41 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.AdminOrder1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.AdminComeOder = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.AdminDate1 = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.AdminLabel1 = new System.Windows.Forms.Label();
             this.AdminTitle1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.AdminPayment = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.AdminCircle2 = new Bunifu.UI.WinForms.BunifuCircleProgress();
-            this.AdminCircle1 = new Bunifu.UI.WinForms.BunifuCircleProgress();
+            this.AdminComePayment = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.AdminTableCircle = new Bunifu.UI.WinForms.BunifuCircleProgress();
+            this.AdminBillCircle = new Bunifu.UI.WinForms.BunifuCircleProgress();
             this.AdminLabel3 = new System.Windows.Forms.Label();
             this.AdminLabel2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.bunifuPictureBox6 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.AdminShiftLabel = new System.Windows.Forms.Label();
+            this.AdminShiftManagementAva = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.AdminTilte4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.AdminTilte2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuPictureBox5 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuPictureBox4 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuPictureBox3 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.AdminShowEmployee5 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.AdminShowEmployee4 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.AdminShowEmployee3 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.AdminShowEmployee2 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.AdminShowEmployee1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.AdminFinancial1 = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.bunifuPanel6 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.AdminComeFinancial = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.MostRecentPay3 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.MostRecentPayLabel3 = new System.Windows.Forms.Label();
+            this.MostRecentPayImg3 = new System.Windows.Forms.PictureBox();
+            this.MostRecentPay2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.MostRecentPayLabel2 = new System.Windows.Forms.Label();
+            this.MostRecentPayImg2 = new System.Windows.Forms.PictureBox();
+            this.MostRecentPay1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.MostRecentPayLabel1 = new System.Windows.Forms.Label();
+            this.MostRecentPayImg1 = new System.Windows.Forms.PictureBox();
             this.AdminTitle3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel1.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
@@ -80,21 +80,21 @@
             this.panel2.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminShiftManagementAva)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee1)).BeginInit();
             this.bunifuPanel3.SuspendLayout();
-            this.bunifuPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.bunifuPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.bunifuPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.MostRecentPay3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MostRecentPayImg3)).BeginInit();
+            this.MostRecentPay2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MostRecentPayImg2)).BeginInit();
+            this.MostRecentPay1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MostRecentPayImg1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -120,7 +120,7 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 40;
             this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.AdminOrder1);
+            this.bunifuPanel1.Controls.Add(this.AdminComeOder);
             this.bunifuPanel1.Controls.Add(this.pictureBox1);
             this.bunifuPanel1.Controls.Add(this.AdminDate1);
             this.bunifuPanel1.Controls.Add(this.AdminLabel1);
@@ -134,94 +134,94 @@
             this.bunifuPanel1.TabIndex = 0;
             this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
             // 
-            // AdminOrder1
+            // AdminComeOder
             // 
-            this.AdminOrder1.AllowAnimations = true;
-            this.AdminOrder1.AllowMouseEffects = true;
-            this.AdminOrder1.AllowToggling = false;
-            this.AdminOrder1.AnimationSpeed = 200;
-            this.AdminOrder1.AutoGenerateColors = false;
-            this.AdminOrder1.AutoRoundBorders = false;
-            this.AdminOrder1.AutoSizeLeftIcon = true;
-            this.AdminOrder1.AutoSizeRightIcon = true;
-            this.AdminOrder1.BackColor = System.Drawing.Color.Transparent;
-            this.AdminOrder1.BackColor1 = System.Drawing.Color.Black;
-            this.AdminOrder1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminOrder1.BackgroundImage")));
-            this.AdminOrder1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminOrder1.ButtonText = "ORDER";
-            this.AdminOrder1.ButtonTextMarginLeft = 0;
-            this.AdminOrder1.ColorContrastOnClick = 45;
-            this.AdminOrder1.ColorContrastOnHover = 45;
-            this.AdminOrder1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AdminComeOder.AllowAnimations = true;
+            this.AdminComeOder.AllowMouseEffects = true;
+            this.AdminComeOder.AllowToggling = false;
+            this.AdminComeOder.AnimationSpeed = 200;
+            this.AdminComeOder.AutoGenerateColors = false;
+            this.AdminComeOder.AutoRoundBorders = false;
+            this.AdminComeOder.AutoSizeLeftIcon = true;
+            this.AdminComeOder.AutoSizeRightIcon = true;
+            this.AdminComeOder.BackColor = System.Drawing.Color.Transparent;
+            this.AdminComeOder.BackColor1 = System.Drawing.Color.Black;
+            this.AdminComeOder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminComeOder.BackgroundImage")));
+            this.AdminComeOder.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminComeOder.ButtonText = "ORDER";
+            this.AdminComeOder.ButtonTextMarginLeft = 0;
+            this.AdminComeOder.ColorContrastOnClick = 45;
+            this.AdminComeOder.ColorContrastOnHover = 45;
+            this.AdminComeOder.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges5.BottomLeft = true;
             borderEdges5.BottomRight = true;
             borderEdges5.TopLeft = true;
             borderEdges5.TopRight = true;
-            this.AdminOrder1.CustomizableEdges = borderEdges5;
-            this.AdminOrder1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AdminOrder1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.AdminOrder1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.AdminOrder1.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.AdminOrder1.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.AdminOrder1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrder1.ForeColor = System.Drawing.Color.LightSalmon;
-            this.AdminOrder1.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AdminOrder1.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.AdminOrder1.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.AdminOrder1.IconMarginLeft = 11;
-            this.AdminOrder1.IconPadding = 10;
-            this.AdminOrder1.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AdminOrder1.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.AdminOrder1.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.AdminOrder1.IconSize = 25;
-            this.AdminOrder1.IdleBorderColor = System.Drawing.Color.Black;
-            this.AdminOrder1.IdleBorderRadius = 35;
-            this.AdminOrder1.IdleBorderThickness = 1;
-            this.AdminOrder1.IdleFillColor = System.Drawing.Color.Black;
-            this.AdminOrder1.IdleIconLeftImage = null;
-            this.AdminOrder1.IdleIconRightImage = null;
-            this.AdminOrder1.IndicateFocus = false;
-            this.AdminOrder1.Location = new System.Drawing.Point(399, 115);
-            this.AdminOrder1.Name = "AdminOrder1";
-            this.AdminOrder1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.AdminOrder1.OnDisabledState.BorderRadius = 35;
-            this.AdminOrder1.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminOrder1.OnDisabledState.BorderThickness = 1;
-            this.AdminOrder1.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.AdminOrder1.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.AdminOrder1.OnDisabledState.IconLeftImage = null;
-            this.AdminOrder1.OnDisabledState.IconRightImage = null;
-            this.AdminOrder1.onHoverState.BorderColor = System.Drawing.Color.Black;
-            this.AdminOrder1.onHoverState.BorderRadius = 35;
-            this.AdminOrder1.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminOrder1.onHoverState.BorderThickness = 1;
-            this.AdminOrder1.onHoverState.FillColor = System.Drawing.Color.Black;
-            this.AdminOrder1.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.AdminOrder1.onHoverState.IconLeftImage = null;
-            this.AdminOrder1.onHoverState.IconRightImage = null;
-            this.AdminOrder1.OnIdleState.BorderColor = System.Drawing.Color.Black;
-            this.AdminOrder1.OnIdleState.BorderRadius = 35;
-            this.AdminOrder1.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminOrder1.OnIdleState.BorderThickness = 1;
-            this.AdminOrder1.OnIdleState.FillColor = System.Drawing.Color.Black;
-            this.AdminOrder1.OnIdleState.ForeColor = System.Drawing.Color.LightSalmon;
-            this.AdminOrder1.OnIdleState.IconLeftImage = null;
-            this.AdminOrder1.OnIdleState.IconRightImage = null;
-            this.AdminOrder1.OnPressedState.BorderColor = System.Drawing.Color.Black;
-            this.AdminOrder1.OnPressedState.BorderRadius = 35;
-            this.AdminOrder1.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminOrder1.OnPressedState.BorderThickness = 1;
-            this.AdminOrder1.OnPressedState.FillColor = System.Drawing.Color.Black;
-            this.AdminOrder1.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.AdminOrder1.OnPressedState.IconLeftImage = null;
-            this.AdminOrder1.OnPressedState.IconRightImage = null;
-            this.AdminOrder1.Size = new System.Drawing.Size(144, 42);
-            this.AdminOrder1.TabIndex = 4;
-            this.AdminOrder1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.AdminOrder1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.AdminOrder1.TextMarginLeft = 0;
-            this.AdminOrder1.TextPadding = new System.Windows.Forms.Padding(0);
-            this.AdminOrder1.UseDefaultRadiusAndThickness = true;
+            this.AdminComeOder.CustomizableEdges = borderEdges5;
+            this.AdminComeOder.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.AdminComeOder.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.AdminComeOder.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.AdminComeOder.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.AdminComeOder.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.AdminComeOder.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminComeOder.ForeColor = System.Drawing.Color.LightSalmon;
+            this.AdminComeOder.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AdminComeOder.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.AdminComeOder.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.AdminComeOder.IconMarginLeft = 11;
+            this.AdminComeOder.IconPadding = 10;
+            this.AdminComeOder.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AdminComeOder.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.AdminComeOder.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.AdminComeOder.IconSize = 25;
+            this.AdminComeOder.IdleBorderColor = System.Drawing.Color.Black;
+            this.AdminComeOder.IdleBorderRadius = 35;
+            this.AdminComeOder.IdleBorderThickness = 1;
+            this.AdminComeOder.IdleFillColor = System.Drawing.Color.Black;
+            this.AdminComeOder.IdleIconLeftImage = null;
+            this.AdminComeOder.IdleIconRightImage = null;
+            this.AdminComeOder.IndicateFocus = false;
+            this.AdminComeOder.Location = new System.Drawing.Point(399, 115);
+            this.AdminComeOder.Name = "AdminComeOder";
+            this.AdminComeOder.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.AdminComeOder.OnDisabledState.BorderRadius = 35;
+            this.AdminComeOder.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminComeOder.OnDisabledState.BorderThickness = 1;
+            this.AdminComeOder.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.AdminComeOder.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.AdminComeOder.OnDisabledState.IconLeftImage = null;
+            this.AdminComeOder.OnDisabledState.IconRightImage = null;
+            this.AdminComeOder.onHoverState.BorderColor = System.Drawing.Color.Black;
+            this.AdminComeOder.onHoverState.BorderRadius = 35;
+            this.AdminComeOder.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminComeOder.onHoverState.BorderThickness = 1;
+            this.AdminComeOder.onHoverState.FillColor = System.Drawing.Color.Black;
+            this.AdminComeOder.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.AdminComeOder.onHoverState.IconLeftImage = null;
+            this.AdminComeOder.onHoverState.IconRightImage = null;
+            this.AdminComeOder.OnIdleState.BorderColor = System.Drawing.Color.Black;
+            this.AdminComeOder.OnIdleState.BorderRadius = 35;
+            this.AdminComeOder.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminComeOder.OnIdleState.BorderThickness = 1;
+            this.AdminComeOder.OnIdleState.FillColor = System.Drawing.Color.Black;
+            this.AdminComeOder.OnIdleState.ForeColor = System.Drawing.Color.LightSalmon;
+            this.AdminComeOder.OnIdleState.IconLeftImage = null;
+            this.AdminComeOder.OnIdleState.IconRightImage = null;
+            this.AdminComeOder.OnPressedState.BorderColor = System.Drawing.Color.Black;
+            this.AdminComeOder.OnPressedState.BorderRadius = 35;
+            this.AdminComeOder.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminComeOder.OnPressedState.BorderThickness = 1;
+            this.AdminComeOder.OnPressedState.FillColor = System.Drawing.Color.Black;
+            this.AdminComeOder.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.AdminComeOder.OnPressedState.IconLeftImage = null;
+            this.AdminComeOder.OnPressedState.IconRightImage = null;
+            this.AdminComeOder.Size = new System.Drawing.Size(144, 42);
+            this.AdminComeOder.TabIndex = 4;
+            this.AdminComeOder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AdminComeOder.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AdminComeOder.TextMarginLeft = 0;
+            this.AdminComeOder.TextPadding = new System.Windows.Forms.Padding(0);
+            this.AdminComeOder.UseDefaultRadiusAndThickness = true;
             // 
             // pictureBox1
             // 
@@ -267,7 +267,7 @@
             this.AdminLabel1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminLabel1.Location = new System.Drawing.Point(22, 56);
             this.AdminLabel1.Name = "AdminLabel1";
-            this.AdminLabel1.Size = new System.Drawing.Size(691, 54);
+            this.AdminLabel1.Size = new System.Drawing.Size(570, 46);
             this.AdminLabel1.TabIndex = 1;
             this.AdminLabel1.Text = "We serve more than 40 coffee and stay with that is many cats\r\nall will cost with " +
     "a affordable, given you many good time\r\n";
@@ -279,7 +279,7 @@
             this.AdminTitle1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminTitle1.Location = new System.Drawing.Point(20, 13);
             this.AdminTitle1.Name = "AdminTitle1";
-            this.AdminTitle1.Size = new System.Drawing.Size(572, 34);
+            this.AdminTitle1.Size = new System.Drawing.Size(451, 26);
             this.AdminTitle1.TabIndex = 0;
             this.AdminTitle1.Text = "Best place for healing your mental health";
             // 
@@ -303,9 +303,9 @@
             this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel2.BorderRadius = 35;
             this.bunifuPanel2.BorderThickness = 1;
-            this.bunifuPanel2.Controls.Add(this.AdminPayment);
-            this.bunifuPanel2.Controls.Add(this.AdminCircle2);
-            this.bunifuPanel2.Controls.Add(this.AdminCircle1);
+            this.bunifuPanel2.Controls.Add(this.AdminComePayment);
+            this.bunifuPanel2.Controls.Add(this.AdminTableCircle);
+            this.bunifuPanel2.Controls.Add(this.AdminBillCircle);
             this.bunifuPanel2.Controls.Add(this.AdminLabel3);
             this.bunifuPanel2.Controls.Add(this.AdminLabel2);
             this.bunifuPanel2.Location = new System.Drawing.Point(544, 6);
@@ -314,168 +314,168 @@
             this.bunifuPanel2.Size = new System.Drawing.Size(522, 324);
             this.bunifuPanel2.TabIndex = 2;
             // 
-            // AdminPayment
+            // AdminComePayment
             // 
-            this.AdminPayment.AllowAnimations = true;
-            this.AdminPayment.AllowMouseEffects = true;
-            this.AdminPayment.AllowToggling = false;
-            this.AdminPayment.AnimationSpeed = 200;
-            this.AdminPayment.AutoGenerateColors = false;
-            this.AdminPayment.AutoRoundBorders = false;
-            this.AdminPayment.AutoSizeLeftIcon = true;
-            this.AdminPayment.AutoSizeRightIcon = true;
-            this.AdminPayment.BackColor = System.Drawing.Color.Transparent;
-            this.AdminPayment.BackColor1 = System.Drawing.Color.Black;
-            this.AdminPayment.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminPayment.BackgroundImage")));
-            this.AdminPayment.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminPayment.ButtonText = "PAYMENT";
-            this.AdminPayment.ButtonTextMarginLeft = 0;
-            this.AdminPayment.ColorContrastOnClick = 45;
-            this.AdminPayment.ColorContrastOnHover = 45;
-            this.AdminPayment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AdminComePayment.AllowAnimations = true;
+            this.AdminComePayment.AllowMouseEffects = true;
+            this.AdminComePayment.AllowToggling = false;
+            this.AdminComePayment.AnimationSpeed = 200;
+            this.AdminComePayment.AutoGenerateColors = false;
+            this.AdminComePayment.AutoRoundBorders = false;
+            this.AdminComePayment.AutoSizeLeftIcon = true;
+            this.AdminComePayment.AutoSizeRightIcon = true;
+            this.AdminComePayment.BackColor = System.Drawing.Color.Transparent;
+            this.AdminComePayment.BackColor1 = System.Drawing.Color.Black;
+            this.AdminComePayment.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminComePayment.BackgroundImage")));
+            this.AdminComePayment.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminComePayment.ButtonText = "PAYMENT";
+            this.AdminComePayment.ButtonTextMarginLeft = 0;
+            this.AdminComePayment.ColorContrastOnClick = 45;
+            this.AdminComePayment.ColorContrastOnHover = 45;
+            this.AdminComePayment.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges1.BottomLeft = true;
             borderEdges1.BottomRight = true;
             borderEdges1.TopLeft = true;
             borderEdges1.TopRight = true;
-            this.AdminPayment.CustomizableEdges = borderEdges1;
-            this.AdminPayment.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AdminPayment.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.AdminPayment.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.AdminPayment.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.AdminPayment.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.AdminPayment.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminPayment.ForeColor = System.Drawing.Color.LightSalmon;
-            this.AdminPayment.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AdminPayment.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.AdminPayment.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.AdminPayment.IconMarginLeft = 11;
-            this.AdminPayment.IconPadding = 10;
-            this.AdminPayment.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AdminPayment.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.AdminPayment.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.AdminPayment.IconSize = 25;
-            this.AdminPayment.IdleBorderColor = System.Drawing.Color.Black;
-            this.AdminPayment.IdleBorderRadius = 35;
-            this.AdminPayment.IdleBorderThickness = 1;
-            this.AdminPayment.IdleFillColor = System.Drawing.Color.Black;
-            this.AdminPayment.IdleIconLeftImage = null;
-            this.AdminPayment.IdleIconRightImage = null;
-            this.AdminPayment.IndicateFocus = false;
-            this.AdminPayment.Location = new System.Drawing.Point(189, 268);
-            this.AdminPayment.Name = "AdminPayment";
-            this.AdminPayment.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.AdminPayment.OnDisabledState.BorderRadius = 35;
-            this.AdminPayment.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminPayment.OnDisabledState.BorderThickness = 1;
-            this.AdminPayment.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.AdminPayment.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.AdminPayment.OnDisabledState.IconLeftImage = null;
-            this.AdminPayment.OnDisabledState.IconRightImage = null;
-            this.AdminPayment.onHoverState.BorderColor = System.Drawing.Color.Black;
-            this.AdminPayment.onHoverState.BorderRadius = 35;
-            this.AdminPayment.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminPayment.onHoverState.BorderThickness = 1;
-            this.AdminPayment.onHoverState.FillColor = System.Drawing.Color.Black;
-            this.AdminPayment.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.AdminPayment.onHoverState.IconLeftImage = null;
-            this.AdminPayment.onHoverState.IconRightImage = null;
-            this.AdminPayment.OnIdleState.BorderColor = System.Drawing.Color.Black;
-            this.AdminPayment.OnIdleState.BorderRadius = 35;
-            this.AdminPayment.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminPayment.OnIdleState.BorderThickness = 1;
-            this.AdminPayment.OnIdleState.FillColor = System.Drawing.Color.Black;
-            this.AdminPayment.OnIdleState.ForeColor = System.Drawing.Color.LightSalmon;
-            this.AdminPayment.OnIdleState.IconLeftImage = null;
-            this.AdminPayment.OnIdleState.IconRightImage = null;
-            this.AdminPayment.OnPressedState.BorderColor = System.Drawing.Color.Transparent;
-            this.AdminPayment.OnPressedState.BorderRadius = 35;
-            this.AdminPayment.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminPayment.OnPressedState.BorderThickness = 1;
-            this.AdminPayment.OnPressedState.FillColor = System.Drawing.Color.Transparent;
-            this.AdminPayment.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.AdminPayment.OnPressedState.IconLeftImage = null;
-            this.AdminPayment.OnPressedState.IconRightImage = null;
-            this.AdminPayment.Size = new System.Drawing.Size(144, 42);
-            this.AdminPayment.TabIndex = 5;
-            this.AdminPayment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.AdminPayment.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.AdminPayment.TextMarginLeft = 0;
-            this.AdminPayment.TextPadding = new System.Windows.Forms.Padding(0);
-            this.AdminPayment.UseDefaultRadiusAndThickness = true;
-            this.AdminPayment.Click += new System.EventHandler(this.bunifuButton4_Click);
+            this.AdminComePayment.CustomizableEdges = borderEdges1;
+            this.AdminComePayment.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.AdminComePayment.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.AdminComePayment.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.AdminComePayment.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.AdminComePayment.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.AdminComePayment.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminComePayment.ForeColor = System.Drawing.Color.LightSalmon;
+            this.AdminComePayment.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AdminComePayment.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.AdminComePayment.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.AdminComePayment.IconMarginLeft = 11;
+            this.AdminComePayment.IconPadding = 10;
+            this.AdminComePayment.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AdminComePayment.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.AdminComePayment.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.AdminComePayment.IconSize = 25;
+            this.AdminComePayment.IdleBorderColor = System.Drawing.Color.Black;
+            this.AdminComePayment.IdleBorderRadius = 35;
+            this.AdminComePayment.IdleBorderThickness = 1;
+            this.AdminComePayment.IdleFillColor = System.Drawing.Color.Black;
+            this.AdminComePayment.IdleIconLeftImage = null;
+            this.AdminComePayment.IdleIconRightImage = null;
+            this.AdminComePayment.IndicateFocus = false;
+            this.AdminComePayment.Location = new System.Drawing.Point(189, 268);
+            this.AdminComePayment.Name = "AdminComePayment";
+            this.AdminComePayment.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.AdminComePayment.OnDisabledState.BorderRadius = 35;
+            this.AdminComePayment.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminComePayment.OnDisabledState.BorderThickness = 1;
+            this.AdminComePayment.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.AdminComePayment.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.AdminComePayment.OnDisabledState.IconLeftImage = null;
+            this.AdminComePayment.OnDisabledState.IconRightImage = null;
+            this.AdminComePayment.onHoverState.BorderColor = System.Drawing.Color.Black;
+            this.AdminComePayment.onHoverState.BorderRadius = 35;
+            this.AdminComePayment.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminComePayment.onHoverState.BorderThickness = 1;
+            this.AdminComePayment.onHoverState.FillColor = System.Drawing.Color.Black;
+            this.AdminComePayment.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.AdminComePayment.onHoverState.IconLeftImage = null;
+            this.AdminComePayment.onHoverState.IconRightImage = null;
+            this.AdminComePayment.OnIdleState.BorderColor = System.Drawing.Color.Black;
+            this.AdminComePayment.OnIdleState.BorderRadius = 35;
+            this.AdminComePayment.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminComePayment.OnIdleState.BorderThickness = 1;
+            this.AdminComePayment.OnIdleState.FillColor = System.Drawing.Color.Black;
+            this.AdminComePayment.OnIdleState.ForeColor = System.Drawing.Color.LightSalmon;
+            this.AdminComePayment.OnIdleState.IconLeftImage = null;
+            this.AdminComePayment.OnIdleState.IconRightImage = null;
+            this.AdminComePayment.OnPressedState.BorderColor = System.Drawing.Color.Transparent;
+            this.AdminComePayment.OnPressedState.BorderRadius = 35;
+            this.AdminComePayment.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminComePayment.OnPressedState.BorderThickness = 1;
+            this.AdminComePayment.OnPressedState.FillColor = System.Drawing.Color.Transparent;
+            this.AdminComePayment.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.AdminComePayment.OnPressedState.IconLeftImage = null;
+            this.AdminComePayment.OnPressedState.IconRightImage = null;
+            this.AdminComePayment.Size = new System.Drawing.Size(144, 42);
+            this.AdminComePayment.TabIndex = 5;
+            this.AdminComePayment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AdminComePayment.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AdminComePayment.TextMarginLeft = 0;
+            this.AdminComePayment.TextPadding = new System.Windows.Forms.Padding(0);
+            this.AdminComePayment.UseDefaultRadiusAndThickness = true;
+            this.AdminComePayment.Click += new System.EventHandler(this.bunifuButton4_Click);
             // 
-            // AdminCircle2
+            // AdminTableCircle
             // 
-            this.AdminCircle2.Animated = false;
-            this.AdminCircle2.AnimationInterval = 1;
-            this.AdminCircle2.AnimationSpeed = 1;
-            this.AdminCircle2.BackColor = System.Drawing.Color.Transparent;
-            this.AdminCircle2.CircleMargin = 10;
-            this.AdminCircle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold);
-            this.AdminCircle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.AdminCircle2.IsPercentage = false;
-            this.AdminCircle2.LineProgressThickness = 10;
-            this.AdminCircle2.LineThickness = 10;
-            this.AdminCircle2.Location = new System.Drawing.Point(285, 85);
-            this.AdminCircle2.Maximum = 20;
-            this.AdminCircle2.Name = "AdminCircle2";
-            this.AdminCircle2.ProgressAnimationSpeed = 200;
-            this.AdminCircle2.ProgressBackColor = System.Drawing.Color.Gainsboro;
-            this.AdminCircle2.ProgressColor = System.Drawing.Color.Black;
-            this.AdminCircle2.ProgressColor2 = System.Drawing.Color.Black;
-            this.AdminCircle2.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
-            this.AdminCircle2.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
-            this.AdminCircle2.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
-            this.AdminCircle2.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.AdminCircle2.Size = new System.Drawing.Size(190, 190);
-            this.AdminCircle2.SubScriptColor = System.Drawing.Color.Black;
-            this.AdminCircle2.SubScriptMargin = new System.Windows.Forms.Padding(3, -7, 0, 0);
-            this.AdminCircle2.SubScriptText = "   TABLES";
-            this.AdminCircle2.SuperScriptColor = System.Drawing.Color.Black;
-            this.AdminCircle2.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
-            this.AdminCircle2.SuperScriptText = "";
-            this.AdminCircle2.TabIndex = 17;
-            this.AdminCircle2.Text = "15";
-            this.AdminCircle2.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.AdminCircle2.Value = 15;
-            this.AdminCircle2.ValueByTransition = 15;
-            this.AdminCircle2.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.AdminTableCircle.Animated = false;
+            this.AdminTableCircle.AnimationInterval = 1;
+            this.AdminTableCircle.AnimationSpeed = 1;
+            this.AdminTableCircle.BackColor = System.Drawing.Color.Transparent;
+            this.AdminTableCircle.CircleMargin = 10;
+            this.AdminTableCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold);
+            this.AdminTableCircle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AdminTableCircle.IsPercentage = false;
+            this.AdminTableCircle.LineProgressThickness = 10;
+            this.AdminTableCircle.LineThickness = 10;
+            this.AdminTableCircle.Location = new System.Drawing.Point(285, 85);
+            this.AdminTableCircle.Maximum = 20;
+            this.AdminTableCircle.Name = "AdminTableCircle";
+            this.AdminTableCircle.ProgressAnimationSpeed = 200;
+            this.AdminTableCircle.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.AdminTableCircle.ProgressColor = System.Drawing.Color.Black;
+            this.AdminTableCircle.ProgressColor2 = System.Drawing.Color.Black;
+            this.AdminTableCircle.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
+            this.AdminTableCircle.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
+            this.AdminTableCircle.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
+            this.AdminTableCircle.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.AdminTableCircle.Size = new System.Drawing.Size(190, 190);
+            this.AdminTableCircle.SubScriptColor = System.Drawing.Color.Black;
+            this.AdminTableCircle.SubScriptMargin = new System.Windows.Forms.Padding(3, -7, 0, 0);
+            this.AdminTableCircle.SubScriptText = "   TABLES";
+            this.AdminTableCircle.SuperScriptColor = System.Drawing.Color.Black;
+            this.AdminTableCircle.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
+            this.AdminTableCircle.SuperScriptText = "";
+            this.AdminTableCircle.TabIndex = 17;
+            this.AdminTableCircle.Text = "9";
+            this.AdminTableCircle.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.AdminTableCircle.Value = 9;
+            this.AdminTableCircle.ValueByTransition = 9;
+            this.AdminTableCircle.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             // 
-            // AdminCircle1
+            // AdminBillCircle
             // 
-            this.AdminCircle1.Animated = false;
-            this.AdminCircle1.AnimationInterval = 1;
-            this.AdminCircle1.AnimationSpeed = 1;
-            this.AdminCircle1.BackColor = System.Drawing.Color.Transparent;
-            this.AdminCircle1.CircleMargin = 10;
-            this.AdminCircle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold);
-            this.AdminCircle1.ForeColor = System.Drawing.Color.Black;
-            this.AdminCircle1.IsPercentage = false;
-            this.AdminCircle1.LineProgressThickness = 10;
-            this.AdminCircle1.LineThickness = 10;
-            this.AdminCircle1.Location = new System.Drawing.Point(11, 85);
-            this.AdminCircle1.Name = "AdminCircle1";
-            this.AdminCircle1.ProgressAnimationSpeed = 200;
-            this.AdminCircle1.ProgressBackColor = System.Drawing.Color.Gainsboro;
-            this.AdminCircle1.ProgressColor = System.Drawing.Color.Black;
-            this.AdminCircle1.ProgressColor2 = System.Drawing.Color.Black;
-            this.AdminCircle1.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
-            this.AdminCircle1.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
-            this.AdminCircle1.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Triangle;
-            this.AdminCircle1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.AdminCircle1.Size = new System.Drawing.Size(190, 190);
-            this.AdminCircle1.SubScriptColor = System.Drawing.Color.Black;
-            this.AdminCircle1.SubScriptMargin = new System.Windows.Forms.Padding(3, -7, 0, 0);
-            this.AdminCircle1.SubScriptText = "   BILLS";
-            this.AdminCircle1.SuperScriptColor = System.Drawing.Color.Black;
-            this.AdminCircle1.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
-            this.AdminCircle1.SuperScriptText = "";
-            this.AdminCircle1.TabIndex = 16;
-            this.AdminCircle1.Text = "30";
-            this.AdminCircle1.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.AdminCircle1.Value = 30;
-            this.AdminCircle1.ValueByTransition = 30;
-            this.AdminCircle1.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.AdminBillCircle.Animated = false;
+            this.AdminBillCircle.AnimationInterval = 1;
+            this.AdminBillCircle.AnimationSpeed = 1;
+            this.AdminBillCircle.BackColor = System.Drawing.Color.Transparent;
+            this.AdminBillCircle.CircleMargin = 10;
+            this.AdminBillCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold);
+            this.AdminBillCircle.ForeColor = System.Drawing.Color.Black;
+            this.AdminBillCircle.IsPercentage = false;
+            this.AdminBillCircle.LineProgressThickness = 10;
+            this.AdminBillCircle.LineThickness = 10;
+            this.AdminBillCircle.Location = new System.Drawing.Point(11, 85);
+            this.AdminBillCircle.Name = "AdminBillCircle";
+            this.AdminBillCircle.ProgressAnimationSpeed = 200;
+            this.AdminBillCircle.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.AdminBillCircle.ProgressColor = System.Drawing.Color.Black;
+            this.AdminBillCircle.ProgressColor2 = System.Drawing.Color.Black;
+            this.AdminBillCircle.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
+            this.AdminBillCircle.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
+            this.AdminBillCircle.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Triangle;
+            this.AdminBillCircle.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.AdminBillCircle.Size = new System.Drawing.Size(190, 190);
+            this.AdminBillCircle.SubScriptColor = System.Drawing.Color.Black;
+            this.AdminBillCircle.SubScriptMargin = new System.Windows.Forms.Padding(3, -7, 0, 0);
+            this.AdminBillCircle.SubScriptText = "   BILLS";
+            this.AdminBillCircle.SuperScriptColor = System.Drawing.Color.Black;
+            this.AdminBillCircle.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
+            this.AdminBillCircle.SuperScriptText = "";
+            this.AdminBillCircle.TabIndex = 16;
+            this.AdminBillCircle.Text = "30";
+            this.AdminBillCircle.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.AdminBillCircle.Value = 30;
+            this.AdminBillCircle.ValueByTransition = 30;
+            this.AdminBillCircle.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             // 
             // AdminLabel3
             // 
@@ -484,7 +484,7 @@
             this.AdminLabel3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminLabel3.Location = new System.Drawing.Point(280, 45);
             this.AdminLabel3.Name = "AdminLabel3";
-            this.AdminLabel3.Size = new System.Drawing.Size(220, 27);
+            this.AdminLabel3.Size = new System.Drawing.Size(182, 23);
             this.AdminLabel3.TabIndex = 6;
             this.AdminLabel3.Text = "REMAINING TABLES\r\n";
             // 
@@ -495,14 +495,14 @@
             this.AdminLabel2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminLabel2.Location = new System.Drawing.Point(31, 45);
             this.AdminLabel2.Name = "AdminLabel2";
-            this.AdminLabel2.Size = new System.Drawing.Size(153, 27);
+            this.AdminLabel2.Size = new System.Drawing.Size(127, 23);
             this.AdminLabel2.TabIndex = 5;
             this.AdminLabel2.Text = "UNPAID BILLS";
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.bunifuPictureBox6);
+            this.panel3.Controls.Add(this.AdminShiftLabel);
+            this.panel3.Controls.Add(this.AdminShiftManagementAva);
             this.panel3.Controls.Add(this.AdminTilte4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(544, 360);
@@ -510,32 +510,32 @@
             this.panel3.Size = new System.Drawing.Size(525, 143);
             this.panel3.TabIndex = 1;
             // 
-            // label3
+            // AdminShiftLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(156, 59);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 44);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Mrs. Min Joeng\r\n0843250104";
+            this.AdminShiftLabel.AutoSize = true;
+            this.AdminShiftLabel.BackColor = System.Drawing.Color.Transparent;
+            this.AdminShiftLabel.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminShiftLabel.Location = new System.Drawing.Point(156, 59);
+            this.AdminShiftLabel.Name = "AdminShiftLabel";
+            this.AdminShiftLabel.Size = new System.Drawing.Size(118, 36);
+            this.AdminShiftLabel.TabIndex = 5;
+            this.AdminShiftLabel.Text = "Mrs. Min Joeng\r\n0843250104";
             // 
-            // bunifuPictureBox6
+            // AdminShiftManagementAva
             // 
-            this.bunifuPictureBox6.AllowFocused = false;
-            this.bunifuPictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox6.AutoSizeHeight = true;
-            this.bunifuPictureBox6.BorderRadius = 42;
-            this.bunifuPictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox6.Image")));
-            this.bunifuPictureBox6.IsCircle = true;
-            this.bunifuPictureBox6.Location = new System.Drawing.Point(47, 41);
-            this.bunifuPictureBox6.Name = "bunifuPictureBox6";
-            this.bunifuPictureBox6.Size = new System.Drawing.Size(84, 84);
-            this.bunifuPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuPictureBox6.TabIndex = 11;
-            this.bunifuPictureBox6.TabStop = false;
-            this.bunifuPictureBox6.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.AdminShiftManagementAva.AllowFocused = false;
+            this.AdminShiftManagementAva.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AdminShiftManagementAva.AutoSizeHeight = true;
+            this.AdminShiftManagementAva.BorderRadius = 42;
+            this.AdminShiftManagementAva.Image = ((System.Drawing.Image)(resources.GetObject("AdminShiftManagementAva.Image")));
+            this.AdminShiftManagementAva.IsCircle = true;
+            this.AdminShiftManagementAva.Location = new System.Drawing.Point(47, 41);
+            this.AdminShiftManagementAva.Name = "AdminShiftManagementAva";
+            this.AdminShiftManagementAva.Size = new System.Drawing.Size(84, 84);
+            this.AdminShiftManagementAva.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AdminShiftManagementAva.TabIndex = 11;
+            this.AdminShiftManagementAva.TabStop = false;
+            this.AdminShiftManagementAva.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // AdminTilte4
             // 
@@ -641,11 +641,11 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.AdminTilte2);
-            this.panel4.Controls.Add(this.bunifuPictureBox5);
-            this.panel4.Controls.Add(this.bunifuPictureBox4);
-            this.panel4.Controls.Add(this.bunifuPictureBox3);
-            this.panel4.Controls.Add(this.bunifuPictureBox2);
-            this.panel4.Controls.Add(this.bunifuPictureBox1);
+            this.panel4.Controls.Add(this.AdminShowEmployee5);
+            this.panel4.Controls.Add(this.AdminShowEmployee4);
+            this.panel4.Controls.Add(this.AdminShowEmployee3);
+            this.panel4.Controls.Add(this.AdminShowEmployee2);
+            this.panel4.Controls.Add(this.AdminShowEmployee1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
@@ -741,85 +741,85 @@
             this.AdminTilte2.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminTilte2.UseDefaultRadiusAndThickness = true;
             // 
-            // bunifuPictureBox5
+            // AdminShowEmployee5
             // 
-            this.bunifuPictureBox5.AllowFocused = false;
-            this.bunifuPictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox5.AutoSizeHeight = true;
-            this.bunifuPictureBox5.BorderRadius = 34;
-            this.bunifuPictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox5.Image")));
-            this.bunifuPictureBox5.IsCircle = true;
-            this.bunifuPictureBox5.Location = new System.Drawing.Point(440, 58);
-            this.bunifuPictureBox5.Name = "bunifuPictureBox5";
-            this.bunifuPictureBox5.Size = new System.Drawing.Size(69, 69);
-            this.bunifuPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuPictureBox5.TabIndex = 10;
-            this.bunifuPictureBox5.TabStop = false;
-            this.bunifuPictureBox5.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.AdminShowEmployee5.AllowFocused = false;
+            this.AdminShowEmployee5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AdminShowEmployee5.AutoSizeHeight = true;
+            this.AdminShowEmployee5.BorderRadius = 34;
+            this.AdminShowEmployee5.Image = ((System.Drawing.Image)(resources.GetObject("AdminShowEmployee5.Image")));
+            this.AdminShowEmployee5.IsCircle = true;
+            this.AdminShowEmployee5.Location = new System.Drawing.Point(440, 58);
+            this.AdminShowEmployee5.Name = "AdminShowEmployee5";
+            this.AdminShowEmployee5.Size = new System.Drawing.Size(69, 69);
+            this.AdminShowEmployee5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AdminShowEmployee5.TabIndex = 10;
+            this.AdminShowEmployee5.TabStop = false;
+            this.AdminShowEmployee5.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuPictureBox4
+            // AdminShowEmployee4
             // 
-            this.bunifuPictureBox4.AllowFocused = false;
-            this.bunifuPictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox4.AutoSizeHeight = true;
-            this.bunifuPictureBox4.BorderRadius = 34;
-            this.bunifuPictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox4.Image")));
-            this.bunifuPictureBox4.IsCircle = true;
-            this.bunifuPictureBox4.Location = new System.Drawing.Point(345, 58);
-            this.bunifuPictureBox4.Name = "bunifuPictureBox4";
-            this.bunifuPictureBox4.Size = new System.Drawing.Size(69, 69);
-            this.bunifuPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuPictureBox4.TabIndex = 9;
-            this.bunifuPictureBox4.TabStop = false;
-            this.bunifuPictureBox4.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.AdminShowEmployee4.AllowFocused = false;
+            this.AdminShowEmployee4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AdminShowEmployee4.AutoSizeHeight = true;
+            this.AdminShowEmployee4.BorderRadius = 34;
+            this.AdminShowEmployee4.Image = ((System.Drawing.Image)(resources.GetObject("AdminShowEmployee4.Image")));
+            this.AdminShowEmployee4.IsCircle = true;
+            this.AdminShowEmployee4.Location = new System.Drawing.Point(345, 58);
+            this.AdminShowEmployee4.Name = "AdminShowEmployee4";
+            this.AdminShowEmployee4.Size = new System.Drawing.Size(69, 69);
+            this.AdminShowEmployee4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AdminShowEmployee4.TabIndex = 9;
+            this.AdminShowEmployee4.TabStop = false;
+            this.AdminShowEmployee4.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuPictureBox3
+            // AdminShowEmployee3
             // 
-            this.bunifuPictureBox3.AllowFocused = false;
-            this.bunifuPictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox3.AutoSizeHeight = true;
-            this.bunifuPictureBox3.BorderRadius = 34;
-            this.bunifuPictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox3.Image")));
-            this.bunifuPictureBox3.IsCircle = true;
-            this.bunifuPictureBox3.Location = new System.Drawing.Point(246, 58);
-            this.bunifuPictureBox3.Name = "bunifuPictureBox3";
-            this.bunifuPictureBox3.Size = new System.Drawing.Size(69, 69);
-            this.bunifuPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuPictureBox3.TabIndex = 8;
-            this.bunifuPictureBox3.TabStop = false;
-            this.bunifuPictureBox3.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.AdminShowEmployee3.AllowFocused = false;
+            this.AdminShowEmployee3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AdminShowEmployee3.AutoSizeHeight = true;
+            this.AdminShowEmployee3.BorderRadius = 34;
+            this.AdminShowEmployee3.Image = ((System.Drawing.Image)(resources.GetObject("AdminShowEmployee3.Image")));
+            this.AdminShowEmployee3.IsCircle = true;
+            this.AdminShowEmployee3.Location = new System.Drawing.Point(246, 58);
+            this.AdminShowEmployee3.Name = "AdminShowEmployee3";
+            this.AdminShowEmployee3.Size = new System.Drawing.Size(69, 69);
+            this.AdminShowEmployee3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AdminShowEmployee3.TabIndex = 8;
+            this.AdminShowEmployee3.TabStop = false;
+            this.AdminShowEmployee3.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuPictureBox2
+            // AdminShowEmployee2
             // 
-            this.bunifuPictureBox2.AllowFocused = false;
-            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox2.AutoSizeHeight = true;
-            this.bunifuPictureBox2.BorderRadius = 34;
-            this.bunifuPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox2.Image")));
-            this.bunifuPictureBox2.IsCircle = true;
-            this.bunifuPictureBox2.Location = new System.Drawing.Point(151, 58);
-            this.bunifuPictureBox2.Name = "bunifuPictureBox2";
-            this.bunifuPictureBox2.Size = new System.Drawing.Size(69, 69);
-            this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuPictureBox2.TabIndex = 7;
-            this.bunifuPictureBox2.TabStop = false;
-            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.AdminShowEmployee2.AllowFocused = false;
+            this.AdminShowEmployee2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AdminShowEmployee2.AutoSizeHeight = true;
+            this.AdminShowEmployee2.BorderRadius = 34;
+            this.AdminShowEmployee2.Image = ((System.Drawing.Image)(resources.GetObject("AdminShowEmployee2.Image")));
+            this.AdminShowEmployee2.IsCircle = true;
+            this.AdminShowEmployee2.Location = new System.Drawing.Point(151, 58);
+            this.AdminShowEmployee2.Name = "AdminShowEmployee2";
+            this.AdminShowEmployee2.Size = new System.Drawing.Size(69, 69);
+            this.AdminShowEmployee2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AdminShowEmployee2.TabIndex = 7;
+            this.AdminShowEmployee2.TabStop = false;
+            this.AdminShowEmployee2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // bunifuPictureBox1
+            // AdminShowEmployee1
             // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 34;
-            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(49, 58);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(69, 69);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuPictureBox1.TabIndex = 6;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.AdminShowEmployee1.AllowFocused = false;
+            this.AdminShowEmployee1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AdminShowEmployee1.AutoSizeHeight = true;
+            this.AdminShowEmployee1.BorderRadius = 34;
+            this.AdminShowEmployee1.Image = ((System.Drawing.Image)(resources.GetObject("AdminShowEmployee1.Image")));
+            this.AdminShowEmployee1.IsCircle = true;
+            this.AdminShowEmployee1.Location = new System.Drawing.Point(49, 58);
+            this.AdminShowEmployee1.Name = "AdminShowEmployee1";
+            this.AdminShowEmployee1.Size = new System.Drawing.Size(69, 69);
+            this.AdminShowEmployee1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AdminShowEmployee1.TabIndex = 6;
+            this.AdminShowEmployee1.TabStop = false;
+            this.AdminShowEmployee1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // bunifuPanel3
             // 
@@ -829,10 +829,10 @@
             this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel3.BorderRadius = 3;
             this.bunifuPanel3.BorderThickness = 1;
-            this.bunifuPanel3.Controls.Add(this.AdminFinancial1);
-            this.bunifuPanel3.Controls.Add(this.bunifuPanel6);
-            this.bunifuPanel3.Controls.Add(this.bunifuPanel5);
-            this.bunifuPanel3.Controls.Add(this.bunifuPanel4);
+            this.bunifuPanel3.Controls.Add(this.AdminComeFinancial);
+            this.bunifuPanel3.Controls.Add(this.MostRecentPay3);
+            this.bunifuPanel3.Controls.Add(this.MostRecentPay2);
+            this.bunifuPanel3.Controls.Add(this.MostRecentPay1);
             this.bunifuPanel3.Controls.Add(this.AdminTitle3);
             this.bunifuPanel3.Location = new System.Drawing.Point(3, 157);
             this.bunifuPanel3.Name = "bunifuPanel3";
@@ -840,153 +840,154 @@
             this.bunifuPanel3.Size = new System.Drawing.Size(541, 343);
             this.bunifuPanel3.TabIndex = 1;
             // 
-            // AdminFinancial1
+            // AdminComeFinancial
             // 
-            this.AdminFinancial1.ActiveImage = null;
-            this.AdminFinancial1.AllowAnimations = true;
-            this.AdminFinancial1.AllowBuffering = false;
-            this.AdminFinancial1.AllowToggling = false;
-            this.AdminFinancial1.AllowZooming = true;
-            this.AdminFinancial1.AllowZoomingOnFocus = false;
-            this.AdminFinancial1.BackColor = System.Drawing.Color.Transparent;
-            this.AdminFinancial1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AdminFinancial1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("AdminFinancial1.ErrorImage")));
-            this.AdminFinancial1.FadeWhenInactive = false;
-            this.AdminFinancial1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.AdminFinancial1.Image = ((System.Drawing.Image)(resources.GetObject("AdminFinancial1.Image")));
-            this.AdminFinancial1.ImageActive = null;
-            this.AdminFinancial1.ImageLocation = null;
-            this.AdminFinancial1.ImageMargin = 0;
-            this.AdminFinancial1.ImageSize = new System.Drawing.Size(69, 43);
-            this.AdminFinancial1.ImageZoomSize = new System.Drawing.Size(70, 44);
-            this.AdminFinancial1.InitialImage = ((System.Drawing.Image)(resources.GetObject("AdminFinancial1.InitialImage")));
-            this.AdminFinancial1.Location = new System.Drawing.Point(440, 296);
-            this.AdminFinancial1.Name = "AdminFinancial1";
-            this.AdminFinancial1.Rotation = 0;
-            this.AdminFinancial1.ShowActiveImage = true;
-            this.AdminFinancial1.ShowCursorChanges = true;
-            this.AdminFinancial1.ShowImageBorders = true;
-            this.AdminFinancial1.ShowSizeMarkers = false;
-            this.AdminFinancial1.Size = new System.Drawing.Size(70, 44);
-            this.AdminFinancial1.TabIndex = 14;
-            this.AdminFinancial1.ToolTipText = "";
-            this.AdminFinancial1.WaitOnLoad = false;
-            this.AdminFinancial1.Zoom = 0;
-            this.AdminFinancial1.ZoomSpeed = 10;
+            this.AdminComeFinancial.ActiveImage = null;
+            this.AdminComeFinancial.AllowAnimations = true;
+            this.AdminComeFinancial.AllowBuffering = false;
+            this.AdminComeFinancial.AllowToggling = false;
+            this.AdminComeFinancial.AllowZooming = true;
+            this.AdminComeFinancial.AllowZoomingOnFocus = false;
+            this.AdminComeFinancial.BackColor = System.Drawing.Color.Transparent;
+            this.AdminComeFinancial.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.AdminComeFinancial.ErrorImage = ((System.Drawing.Image)(resources.GetObject("AdminComeFinancial.ErrorImage")));
+            this.AdminComeFinancial.FadeWhenInactive = false;
+            this.AdminComeFinancial.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.AdminComeFinancial.Image = ((System.Drawing.Image)(resources.GetObject("AdminComeFinancial.Image")));
+            this.AdminComeFinancial.ImageActive = null;
+            this.AdminComeFinancial.ImageLocation = null;
+            this.AdminComeFinancial.ImageMargin = 0;
+            this.AdminComeFinancial.ImageSize = new System.Drawing.Size(69, 43);
+            this.AdminComeFinancial.ImageZoomSize = new System.Drawing.Size(70, 44);
+            this.AdminComeFinancial.InitialImage = ((System.Drawing.Image)(resources.GetObject("AdminComeFinancial.InitialImage")));
+            this.AdminComeFinancial.Location = new System.Drawing.Point(440, 296);
+            this.AdminComeFinancial.Name = "AdminComeFinancial";
+            this.AdminComeFinancial.Rotation = 0;
+            this.AdminComeFinancial.ShowActiveImage = true;
+            this.AdminComeFinancial.ShowCursorChanges = true;
+            this.AdminComeFinancial.ShowImageBorders = true;
+            this.AdminComeFinancial.ShowSizeMarkers = false;
+            this.AdminComeFinancial.Size = new System.Drawing.Size(70, 44);
+            this.AdminComeFinancial.TabIndex = 14;
+            this.AdminComeFinancial.ToolTipText = "";
+            this.AdminComeFinancial.WaitOnLoad = false;
+            this.AdminComeFinancial.Zoom = 0;
+            this.AdminComeFinancial.ZoomSpeed = 10;
             // 
-            // bunifuPanel6
+            // MostRecentPay3
             // 
-            this.bunifuPanel6.BackgroundColor = System.Drawing.Color.LightSalmon;
-            this.bunifuPanel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel6.BackgroundImage")));
-            this.bunifuPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel6.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel6.BorderRadius = 40;
-            this.bunifuPanel6.BorderThickness = 1;
-            this.bunifuPanel6.Controls.Add(this.label8);
-            this.bunifuPanel6.Controls.Add(this.pictureBox4);
-            this.bunifuPanel6.Location = new System.Drawing.Point(23, 216);
-            this.bunifuPanel6.Name = "bunifuPanel6";
-            this.bunifuPanel6.ShowBorders = true;
-            this.bunifuPanel6.Size = new System.Drawing.Size(512, 80);
-            this.bunifuPanel6.TabIndex = 13;
+            this.MostRecentPay3.BackgroundColor = System.Drawing.Color.LightSalmon;
+            this.MostRecentPay3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MostRecentPay3.BackgroundImage")));
+            this.MostRecentPay3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MostRecentPay3.BorderColor = System.Drawing.Color.Transparent;
+            this.MostRecentPay3.BorderRadius = 40;
+            this.MostRecentPay3.BorderThickness = 1;
+            this.MostRecentPay3.Controls.Add(this.MostRecentPayLabel3);
+            this.MostRecentPay3.Controls.Add(this.MostRecentPayImg3);
+            this.MostRecentPay3.Location = new System.Drawing.Point(23, 216);
+            this.MostRecentPay3.Name = "MostRecentPay3";
+            this.MostRecentPay3.ShowBorders = true;
+            this.MostRecentPay3.Size = new System.Drawing.Size(512, 80);
+            this.MostRecentPay3.TabIndex = 13;
             // 
-            // label8
+            // MostRecentPayLabel3
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(102, 8);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 63);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Table:\r\nDescripe:\r\nTotal:";
+            this.MostRecentPayLabel3.AutoSize = true;
+            this.MostRecentPayLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.MostRecentPayLabel3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MostRecentPayLabel3.Location = new System.Drawing.Point(102, 8);
+            this.MostRecentPayLabel3.Name = "MostRecentPayLabel3";
+            this.MostRecentPayLabel3.Size = new System.Drawing.Size(72, 57);
+            this.MostRecentPayLabel3.TabIndex = 1;
+            this.MostRecentPayLabel3.Text = "Table:\r\nDescripe:\r\nTotal:";
             // 
-            // pictureBox4
+            // MostRecentPayImg3
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(17, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(78, 80);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.MostRecentPayImg3.BackColor = System.Drawing.Color.Transparent;
+            this.MostRecentPayImg3.Image = ((System.Drawing.Image)(resources.GetObject("MostRecentPayImg3.Image")));
+            this.MostRecentPayImg3.Location = new System.Drawing.Point(17, 0);
+            this.MostRecentPayImg3.Name = "MostRecentPayImg3";
+            this.MostRecentPayImg3.Size = new System.Drawing.Size(78, 80);
+            this.MostRecentPayImg3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MostRecentPayImg3.TabIndex = 0;
+            this.MostRecentPayImg3.TabStop = false;
             // 
-            // bunifuPanel5
+            // MostRecentPay2
             // 
-            this.bunifuPanel5.BackgroundColor = System.Drawing.Color.DarkSalmon;
-            this.bunifuPanel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel5.BackgroundImage")));
-            this.bunifuPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel5.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel5.BorderRadius = 40;
-            this.bunifuPanel5.BorderThickness = 1;
-            this.bunifuPanel5.Controls.Add(this.label7);
-            this.bunifuPanel5.Controls.Add(this.pictureBox3);
-            this.bunifuPanel5.Location = new System.Drawing.Point(23, 130);
-            this.bunifuPanel5.Name = "bunifuPanel5";
-            this.bunifuPanel5.ShowBorders = true;
-            this.bunifuPanel5.Size = new System.Drawing.Size(512, 80);
-            this.bunifuPanel5.TabIndex = 13;
+            this.MostRecentPay2.BackgroundColor = System.Drawing.Color.DarkSalmon;
+            this.MostRecentPay2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MostRecentPay2.BackgroundImage")));
+            this.MostRecentPay2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MostRecentPay2.BorderColor = System.Drawing.Color.Transparent;
+            this.MostRecentPay2.BorderRadius = 40;
+            this.MostRecentPay2.BorderThickness = 1;
+            this.MostRecentPay2.Controls.Add(this.MostRecentPayLabel2);
+            this.MostRecentPay2.Controls.Add(this.MostRecentPayImg2);
+            this.MostRecentPay2.Location = new System.Drawing.Point(23, 130);
+            this.MostRecentPay2.Name = "MostRecentPay2";
+            this.MostRecentPay2.ShowBorders = true;
+            this.MostRecentPay2.Size = new System.Drawing.Size(512, 80);
+            this.MostRecentPay2.TabIndex = 13;
             // 
-            // label7
+            // MostRecentPayLabel2
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(102, 8);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 63);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Table:\r\nDescripe:\r\nTotal:";
+            this.MostRecentPayLabel2.AutoSize = true;
+            this.MostRecentPayLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.MostRecentPayLabel2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MostRecentPayLabel2.Location = new System.Drawing.Point(102, 8);
+            this.MostRecentPayLabel2.Name = "MostRecentPayLabel2";
+            this.MostRecentPayLabel2.Size = new System.Drawing.Size(72, 57);
+            this.MostRecentPayLabel2.TabIndex = 1;
+            this.MostRecentPayLabel2.Text = "Table:\r\nDescripe:\r\nTotal:";
             // 
-            // pictureBox3
+            // MostRecentPayImg2
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(17, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(78, 80);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.MostRecentPayImg2.BackColor = System.Drawing.Color.Transparent;
+            this.MostRecentPayImg2.Image = ((System.Drawing.Image)(resources.GetObject("MostRecentPayImg2.Image")));
+            this.MostRecentPayImg2.Location = new System.Drawing.Point(17, 0);
+            this.MostRecentPayImg2.Name = "MostRecentPayImg2";
+            this.MostRecentPayImg2.Size = new System.Drawing.Size(78, 80);
+            this.MostRecentPayImg2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MostRecentPayImg2.TabIndex = 0;
+            this.MostRecentPayImg2.TabStop = false;
             // 
-            // bunifuPanel4
+            // MostRecentPay1
             // 
-            this.bunifuPanel4.BackgroundColor = System.Drawing.Color.LightSalmon;
-            this.bunifuPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel4.BackgroundImage")));
-            this.bunifuPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel4.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel4.BorderRadius = 40;
-            this.bunifuPanel4.BorderThickness = 1;
-            this.bunifuPanel4.Controls.Add(this.label6);
-            this.bunifuPanel4.Controls.Add(this.pictureBox2);
-            this.bunifuPanel4.Location = new System.Drawing.Point(23, 44);
-            this.bunifuPanel4.Name = "bunifuPanel4";
-            this.bunifuPanel4.ShowBorders = true;
-            this.bunifuPanel4.Size = new System.Drawing.Size(512, 80);
-            this.bunifuPanel4.TabIndex = 12;
+            this.MostRecentPay1.BackgroundColor = System.Drawing.Color.LightSalmon;
+            this.MostRecentPay1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MostRecentPay1.BackgroundImage")));
+            this.MostRecentPay1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MostRecentPay1.BorderColor = System.Drawing.Color.Transparent;
+            this.MostRecentPay1.BorderRadius = 40;
+            this.MostRecentPay1.BorderThickness = 1;
+            this.MostRecentPay1.Controls.Add(this.MostRecentPayLabel1);
+            this.MostRecentPay1.Controls.Add(this.MostRecentPayImg1);
+            this.MostRecentPay1.Location = new System.Drawing.Point(23, 44);
+            this.MostRecentPay1.Name = "MostRecentPay1";
+            this.MostRecentPay1.ShowBorders = true;
+            this.MostRecentPay1.Size = new System.Drawing.Size(512, 80);
+            this.MostRecentPay1.TabIndex = 12;
+            this.MostRecentPay1.Click += new System.EventHandler(this.bunifuPanel4_Click);
             // 
-            // label6
+            // MostRecentPayLabel1
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(102, 8);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 63);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Table:\r\nDescripe:\r\nTotal:";
+            this.MostRecentPayLabel1.AutoSize = true;
+            this.MostRecentPayLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.MostRecentPayLabel1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MostRecentPayLabel1.Location = new System.Drawing.Point(102, 8);
+            this.MostRecentPayLabel1.Name = "MostRecentPayLabel1";
+            this.MostRecentPayLabel1.Size = new System.Drawing.Size(72, 57);
+            this.MostRecentPayLabel1.TabIndex = 1;
+            this.MostRecentPayLabel1.Text = "Table:\r\nDescripe:\r\nTotal:";
             // 
-            // pictureBox2
+            // MostRecentPayImg1
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(17, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(78, 80);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.MostRecentPayImg1.BackColor = System.Drawing.Color.Transparent;
+            this.MostRecentPayImg1.Image = ((System.Drawing.Image)(resources.GetObject("MostRecentPayImg1.Image")));
+            this.MostRecentPayImg1.Location = new System.Drawing.Point(17, 0);
+            this.MostRecentPayImg1.Name = "MostRecentPayImg1";
+            this.MostRecentPayImg1.Size = new System.Drawing.Size(78, 80);
+            this.MostRecentPayImg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MostRecentPayImg1.TabIndex = 0;
+            this.MostRecentPayImg1.TabStop = false;
             // 
             // AdminTitle3
             // 
@@ -1094,24 +1095,24 @@
             this.bunifuPanel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminShiftManagementAva)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee1)).EndInit();
             this.bunifuPanel3.ResumeLayout(false);
-            this.bunifuPanel6.ResumeLayout(false);
-            this.bunifuPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.bunifuPanel5.ResumeLayout(false);
-            this.bunifuPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.bunifuPanel4.ResumeLayout(false);
-            this.bunifuPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.MostRecentPay3.ResumeLayout(false);
+            this.MostRecentPay3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MostRecentPayImg3)).EndInit();
+            this.MostRecentPay2.ResumeLayout(false);
+            this.MostRecentPay2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MostRecentPayImg2)).EndInit();
+            this.MostRecentPay1.ResumeLayout(false);
+            this.MostRecentPay1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MostRecentPayImg1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1127,35 +1128,35 @@
         private System.Windows.Forms.Label AdminTitle1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuDatePicker AdminDate1;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminOrder1;
-        private System.Windows.Forms.Label label3;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox6;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminComeOder;
+        private System.Windows.Forms.Label AdminShiftLabel;
+        private Bunifu.UI.WinForms.BunifuPictureBox AdminShiftManagementAva;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminTilte4;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
-        private Bunifu.UI.WinForms.BunifuCircleProgress AdminCircle1;
+        private Bunifu.UI.WinForms.BunifuCircleProgress AdminBillCircle;
         private System.Windows.Forms.Label AdminLabel3;
         private System.Windows.Forms.Label AdminLabel2;
-        private Bunifu.UI.WinForms.BunifuCircleProgress AdminCircle2;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminPayment;
+        private Bunifu.UI.WinForms.BunifuCircleProgress AdminTableCircle;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminComePayment;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel4;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminTilte2;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox5;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox4;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox3;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private Bunifu.UI.WinForms.BunifuPictureBox AdminShowEmployee5;
+        private Bunifu.UI.WinForms.BunifuPictureBox AdminShowEmployee4;
+        private Bunifu.UI.WinForms.BunifuPictureBox AdminShowEmployee3;
+        private Bunifu.UI.WinForms.BunifuPictureBox AdminShowEmployee2;
+        private Bunifu.UI.WinForms.BunifuPictureBox AdminShowEmployee1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminTitle3;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private Bunifu.UI.WinForms.BunifuImageButton AdminFinancial1;
+        private Bunifu.UI.WinForms.BunifuPanel MostRecentPay3;
+        private System.Windows.Forms.Label MostRecentPayLabel3;
+        private System.Windows.Forms.PictureBox MostRecentPayImg3;
+        private Bunifu.UI.WinForms.BunifuPanel MostRecentPay2;
+        private System.Windows.Forms.Label MostRecentPayLabel2;
+        private System.Windows.Forms.PictureBox MostRecentPayImg2;
+        private Bunifu.UI.WinForms.BunifuPanel MostRecentPay1;
+        private System.Windows.Forms.Label MostRecentPayLabel1;
+        private System.Windows.Forms.PictureBox MostRecentPayImg1;
+        private Bunifu.UI.WinForms.BunifuImageButton AdminComeFinancial;
     }
 }
