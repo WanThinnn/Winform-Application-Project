@@ -134,6 +134,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -150,6 +151,24 @@
     </Compile>
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminCustomer.Designer.cs">
+      <DependentUpon>AdminCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminEmployee.Designer.cs">
+      <DependentUpon>AdminEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFinancial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminFinancial.Designer.cs">
+      <DependentUpon>AdminFinancial.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminOrder.cs">
       <SubType>UserControl</SubType>
@@ -185,6 +204,15 @@
     </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCustomer.resx">
+      <DependentUpon>AdminCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEmployee.resx">
+      <DependentUpon>AdminEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFinancial.resx">
+      <DependentUpon>AdminFinancial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminOrder.resx">
       <DependentUpon>AdminOrder.cs</DependentUpon>
