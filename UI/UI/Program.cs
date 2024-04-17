@@ -16,11 +16,8 @@ namespace UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
             Application.Run(new Login());
-=======
-            Application.Run(new AdminFP());
->>>>>>> 3e2f16ade35c987d933cd96acaaac99174a07d73
+            //Application.Run(new AdminFP());
         }
     }
 }

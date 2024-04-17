@@ -239,3 +239,7 @@ C:\Drive\code\N2\LT Mang\Winform-Application-Project\UI\UI\obj\Debug\UI.AdminOrd
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\UI\UI\obj\Debug\UI.AdminEmployee.resources
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\UI\UI\obj\Debug\UI.AdminFinancial.resources
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\UI\UI\obj\Debug\UI.AdminCustomer.resources
+D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.AdminCustomer.resources
+D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.AdminEmployee.resources
+D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.AdminFinancial.resources
+D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.AdminOrder.resources
