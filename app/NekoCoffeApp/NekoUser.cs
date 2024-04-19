@@ -64,7 +64,7 @@ namespace UI
         {
             if (user1 == null || user2 == null) { return false; }
 
-            if (user1.Username != user2.Username || user1.Email != user2.Email)
+            if (user1.Username != user2.Username || user1.Email != user2.Email || user1.PhoneNumber != user2.PhoneNumber)
             {
                 error1 = "Tài khoản không tồn tại!";
                 return false;

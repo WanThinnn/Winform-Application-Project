@@ -1,6 +1,8 @@
 ﻿using BCrypt.Net;
+using FireSharp;
 using FireSharp.Config;
 using FireSharp.Interfaces;
+using FireSharp.Response;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,12 +17,12 @@ namespace UI
 {
     public partial class ChangePwd : Form
     {
-        string VerificationCode;
+        VerificationCodeInfo VerificationCode;
         string Username;
-        public ChangePwd(string verificationCode, string username)
+        public ChangePwd(VerificationCodeInfo verificationCode, string username)
         {
             InitializeComponent();
-            this.VerificationCode = verificationCode;
+            this.VerificationCode = verificationCode; // Gán giá trị của thuộc tính Code
             this.Username = username;
         }
         IFirebaseConfig ifc = new FirebaseConfig()
@@ -71,45 +73,58 @@ namespace UI
             }
         }
 
+
         private void txtChangePass_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txbNewPwd.Text) &&
-                 string.IsNullOrWhiteSpace(txbCfNewPwd.Text) &&
-                 string.IsNullOrWhiteSpace(txbCode.Text) )
+            if (string.IsNullOrWhiteSpace(txbNewPwd.Text) ||
+                string.IsNullOrWhiteSpace(txbCfNewPwd.Text) ||
+                string.IsNullOrWhiteSpace(txbCode.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (this.VerificationCode == txbCode.Text)
+
+            if (DateTime.Now - VerificationCode.CreatedAt > TimeSpan.FromSeconds(15))
+
             {
-                
+                // Mã xác nhận đã hết hạn
+                MessageBox.Show("Mã xác nhận không đúng hoặc hết hạn!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Kiểm tra xem VerificationCode có null không
+            if (VerificationCode == null)
+            {
+                MessageBox.Show("Mã xác nhận không hợp lệ!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Mã xác nhận vẫn còn hiệu lực
+            if (this.VerificationCode.Code == txbCode.Text)
+            {
+                var res = client.Get("Users/" + Username);
+                NekoUser userOld = res.ResultAs<NekoUser>();
                 NekoUser user = new NekoUser()
                 {
-                    Password = BCrypt.Net.BCrypt.EnhancedHashPassword(txbNewPwd.Text, hashType: HashType.SHA384)
-
+                    Username = userOld.Username,
+                    Password = BCrypt.Net.BCrypt.EnhancedHashPassword(txbNewPwd.Text, hashType: HashType.SHA384),
+                    Fullname = userOld.Fullname,
+                    Gender = userOld.Gender,
+                    PhoneNumber = userOld.PhoneNumber,
+                    Email = userOld.Email,
+                    Position = userOld.Position
                 };
-
-       
-
-                var update = client.Update(@"Users/" + Username, user);
-
-                if (update.StatusCode == System.Net.HttpStatusCode.OK)
+                var up = client.Update(@"Users/" + Username, user);
+                if (up.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    MessageBox.Show("Đổi mật khẩu thành công", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //txbUsrname.Clear();
-                    //txbPass.Clear();
-                    //cbGender.SelectedIndex = -1;
-                    //txbFullname.Clear();
-                    //txbPhone.Clear();
-
+                    MessageBox.Show($"Đổi mật khẩu thành công tài khoản {Username}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-
             }
             else
             {
-                MessageBox.Show("Code không đúng hoặc hết hạn!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+                MessageBox.Show("Mã xác nhận không đúng hoặc hết hạn!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
     }
 }

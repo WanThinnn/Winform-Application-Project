@@ -57,7 +57,7 @@ namespace UI
                 bodyBuilder.HtmlBody = $@"
 <p style=""color: black;"">Xin chào,</p>
 <p style=""color: black;"">Chúng tôi nhận được yêu cầu đặt lại mật khẩu cho tài khoản của bạn trên Neko Coffe App. Để hoàn tất quá trình này, vui lòng làm nhập mã xác thực sau:</p>
-<p style=""color: black;""><b>Mã xác thực của bạn là: {verificationCode}</b></p>
+<p style=""color: black;"">Mã xác thực của bạn là: <b>{verificationCode}</b></p>
 <p style=""color: black;"">Nếu bạn không yêu cầu đặt lại mật khẩu hoặc không nhớ đến yêu cầu này, vui lòng bỏ qua email này. Thông tin đăng nhập của bạn vẫn an toàn và không có hành động nào được thực hiện trừ khi bạn yêu cầu.</p>
 <p style=""color: black;"">Nếu bạn cần thêm sự trợ giúp hoặc có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi qua email này.</p>
 <p style=""color: black;"">Trân trọng,<br>Neko Coffe Team.</p>
@@ -120,6 +120,7 @@ namespace UI
             {
                 Username = txtUserName.Text,
                 Email = txtEmail.Text,
+                PhoneNumber = txtPhone.Text
             };
 
             if (NekoUser.IsExist(ResUser, CurUser) == true)
@@ -127,7 +128,9 @@ namespace UI
                 string recipientEmail = txtEmail.Text; // Địa chỉ email của người nhận
 
                 string verificationCode = GenerateVerificationCode(); // Tạo mã code ngẫu nhiên
-                ChangePwd changepwd = new ChangePwd(verificationCode, txtUserName.Text);
+                VerificationCodeInfo verificationInfo = new VerificationCodeInfo { Code = verificationCode };
+                ChangePwd changepwd = new ChangePwd(verificationInfo, txtUserName.Text);
+
 
 
                 // Gửi mã code đến email của người nhận

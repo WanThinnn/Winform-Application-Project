@@ -324,7 +324,6 @@ C:\Hoc_Ky_2\LapTrinhMang\Winform-Application-Project\app\NekoCoffeApp\obj\Debug\
 C:\Hoc_Ky_2\LapTrinhMang\Winform-Application-Project\app\NekoCoffeApp\obj\Debug\UI.AdminFinancial.resources
 C:\Hoc_Ky_2\LapTrinhMang\Winform-Application-Project\app\NekoCoffeApp\obj\Debug\UI.AdminHome.resources
 C:\Hoc_Ky_2\LapTrinhMang\Winform-Application-Project\app\NekoCoffeApp\obj\Debug\UI.AdminOrder.resources
-C:\Hoc_Ky_2\LapTrinhMang\Winform-Application-Project\app\NekoCoffeApp\obj\Debug\UI.ForgotPass.resources
 C:\Hoc_Ky_2\LapTrinhMang\Winform-Application-Project\app\NekoCoffeApp\obj\Debug\UI.AdminFP.resources
 C:\Hoc_Ky_2\LapTrinhMang\Winform-Application-Project\app\NekoCoffeApp\obj\Debug\UI.ForgotPwd.resources
 C:\Hoc_Ky_2\LapTrinhMang\Winform-Application-Project\app\NekoCoffeApp\obj\Debug\UI.Login.resources
@@ -488,3 +487,9 @@ D:\Winform-Application-Project\app\NekoCoffeApp\obj\Debug\NekoCoffeApp.csproj.Co
 D:\Winform-Application-Project\app\NekoCoffeApp\obj\Debug\NekoCoff.CCD3F0E9.Up2Date
 D:\Winform-Application-Project\app\NekoCoffeApp\obj\Debug\UI.exe
 D:\Winform-Application-Project\app\NekoCoffeApp\obj\Debug\UI.pdb
+C:\Hoc_Ky_2\LapTrinhMang\Winform-Application-Project\app\NekoCoffeApp\bin\Debug\Aspose.Email.dll
+C:\Hoc_Ky_2\LapTrinhMang\Winform-Application-Project\app\NekoCoffeApp\bin\Debug\Base32.dll
+C:\Hoc_Ky_2\LapTrinhMang\Winform-Application-Project\app\NekoCoffeApp\bin\Debug\OtpSharp.dll
+C:\Hoc_Ky_2\LapTrinhMang\Winform-Application-Project\app\NekoCoffeApp\bin\Debug\Aspose.Email.xml
+C:\Hoc_Ky_2\LapTrinhMang\Winform-Application-Project\app\NekoCoffeApp\bin\Debug\OtpSharp.xml
+C:\Hoc_Ky_2\LapTrinhMang\Winform-Application-Project\app\NekoCoffeApp\obj\Debug\UI.BeforSignUp.resources

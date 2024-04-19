@@ -8,17 +8,25 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
+using System.Net.Sockets;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Aspose.Email;
 namespace UI
 {
     public partial class Signup : Form
     {
-        public Signup()
+        string newEmail;
+        VerificationCodeInfo VerificationCode;
+
+        public Signup(VerificationCodeInfo verificationCode, string email)
         {
             InitializeComponent();
+            this.VerificationCode = verificationCode;
+            this.newEmail = email;
         }
         IFirebaseConfig ifc = new FirebaseConfig()
         {
@@ -40,15 +48,25 @@ namespace UI
             }
         }
 
+        bool ValidateEmail(string email)
+        {
+            // Xác thực định dạng và cú pháp
+            bool isValidFormat = System.Text.RegularExpressions.Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+            if (!isValidFormat) return false;
+
+    
+
+            return true;
+        }
 
 
         private void txtSignUp_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtFullName.Text) ||
-               string.IsNullOrWhiteSpace(txtEmail.Text) ||
                string.IsNullOrWhiteSpace(txtPhone.Text) ||
                string.IsNullOrWhiteSpace(txPass.Text) ||
                string.IsNullOrWhiteSpace(txtConfirm.Text) ||
+               string.IsNullOrWhiteSpace(txtCode.Text) ||
                string.IsNullOrWhiteSpace(txtUserName.Text))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -75,6 +93,12 @@ namespace UI
                 NekoUser.ShowError_2();
                 return;
             }
+
+            if (txtCode.Text != VerificationCode.Code)
+            {
+                MessageBox.Show("Mã xác nhận không đúng hoặc hết hạn!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             NekoUser user = new NekoUser()
             {
                 Username = txtUserName.Text,
@@ -82,7 +106,7 @@ namespace UI
                 Fullname = txtFullName.Text,
                 Gender = dbGender.Text,
                 PhoneNumber = txtPhone.Text,
-                Email = txtEmail.Text,
+                Email = newEmail,
                 Position = "KH"
             };
 
