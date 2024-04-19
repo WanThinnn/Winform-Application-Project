@@ -243,3 +243,4 @@ D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debu
 D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.AdminEmployee.resources
 D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.AdminFinancial.resources
 D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.AdminOrder.resources
+D:\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\UI\UI\obj\Debug\UI.User.resources
