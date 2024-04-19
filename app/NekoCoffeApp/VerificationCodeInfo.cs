@@ -10,5 +10,13 @@ namespace UI
     {
         public string Code { get; set; }
         public DateTime CreatedAt { get; set; }
+
+        public static VerificationCodeInfo GenerateVerificationCode()
+        {
+            Random random = new Random();
+            int code = random.Next(100000, 999999);
+            DateTime createdAt = DateTime.Now;
+            return new VerificationCodeInfo { Code = code.ToString(), CreatedAt = createdAt };
+        }
     }
 }

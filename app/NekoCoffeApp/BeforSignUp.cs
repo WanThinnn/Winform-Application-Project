@@ -27,24 +27,32 @@ namespace UI
         };
 
         IFirebaseClient client;
-        static string GenerateVerificationCode()
+        //static string GenerateVerificationCode()
+        //{
+        //    // Tạo một đối tượng Random để tạo mã ngẫu nhiên
+        //    Random random = new Random();
+
+        //    // Tạo mã code gồm 6 số ngẫu nhiên
+        //    int code = random.Next(100000, 999999);
+
+        //    return code.ToString();
+        //}
+
+        static VerificationCodeInfo GenerateVerificationCode()
         {
-            // Tạo một đối tượng Random để tạo mã ngẫu nhiên
             Random random = new Random();
-
-            // Tạo mã code gồm 6 số ngẫu nhiên
             int code = random.Next(100000, 999999);
-
-            return code.ToString();
+            DateTime createdAt = DateTime.Now;
+            return new VerificationCodeInfo { Code = code.ToString(), CreatedAt = createdAt };
         }
-        private void SendEmail(string recipientEmail, string verificationCode)
+        private void SendEmail(string recipientEmail, VerificationCodeInfo verificationCode)
         {
             try
             {
                 var email = new MimeMessage();
 
                 email.From.Add(new MailboxAddress("Neko Coffe", "nekocoffe.app@gmail.com"));
-                email.To.Add(new MailboxAddress("Client", "laiquanthien15@gmail.com"));
+                email.To.Add(new MailboxAddress("Client", recipientEmail));
 
                 email.Subject = "[Neko Coffe] - Đăng ký thành viên";
 
@@ -53,7 +61,7 @@ namespace UI
                 bodyBuilder.HtmlBody = $@"
 <p style=""color: black;"">Xin chào,</p>
 <p style=""color: black;"">Chúng tôi nhận được yêu cầu tạo tài khoản mới cho email này của bạn trên Neko Coffe App. Để hoàn tất quá trình này, vui lòng làm nhập mã xác thực sau:</p>
-<p style=""color: black;"">Mã xác thực của bạn là: <b>{verificationCode}</b></p>
+<p style=""color: black;"">Mã xác thực của bạn là: <b>{verificationCode.Code}</b></p>
 <p style=""color: black;"">Nếu bạn không yêu cầu tạo tài khoản hoặc không nhớ đến yêu cầu này, vui lòng bỏ qua email này. <br> 
 Nếu bạn cần thêm sự trợ giúp hoặc có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi qua email này. <br>
 Trân trọng,<br>
@@ -94,14 +102,13 @@ Neko Coffe Team.</p>";
 
             string recipientEmail = txbEmail.Text; // Địa chỉ email của người nhận
 
-            string verificationCode = GenerateVerificationCode(); // Tạo mã code ngẫu nhiên
-            VerificationCodeInfo verificationInfo = new VerificationCodeInfo { Code = verificationCode };
+            VerificationCodeInfo verificationInfo = VerificationCodeInfo.GenerateVerificationCode();
             Signup sigbup = new Signup(verificationInfo, txbEmail.Text);
 
 
 
             // Gửi mã code đến email của người nhận
-            SendEmail(recipientEmail, verificationCode);
+            SendEmail(recipientEmail, verificationInfo);
             MessageBox.Show("Vui lòng kiểm tra hộp thư", "Lưu ý!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             this.Hide();

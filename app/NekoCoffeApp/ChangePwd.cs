@@ -84,7 +84,7 @@ namespace UI
                 return;
             }
 
-            if (DateTime.Now - VerificationCode.CreatedAt > TimeSpan.FromSeconds(15))
+            if (DateTime.Now - VerificationCode.CreatedAt > TimeSpan.FromSeconds(360))
 
             {
                 // Mã xác nhận đã hết hạn

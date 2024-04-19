@@ -97,7 +97,7 @@
             this.txbCode.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbCode.Lines = new string[0];
             this.txbCode.Location = new System.Drawing.Point(314, 327);
-            this.txbCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbCode.Margin = new System.Windows.Forms.Padding(4);
             this.txbCode.MaxLength = 32767;
             this.txbCode.MinimumSize = new System.Drawing.Size(2, 2);
             this.txbCode.Modified = false;
@@ -123,7 +123,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txbCode.OnIdleState = stateProperties4;
-            this.txbCode.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbCode.Padding = new System.Windows.Forms.Padding(4);
             this.txbCode.PasswordChar = '\0';
             this.txbCode.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txbCode.PlaceholderText = "Enter The Code";
@@ -173,7 +173,7 @@
             this.txbCfNewPwd.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbCfNewPwd.Lines = new string[0];
             this.txbCfNewPwd.Location = new System.Drawing.Point(316, 265);
-            this.txbCfNewPwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbCfNewPwd.Margin = new System.Windows.Forms.Padding(4);
             this.txbCfNewPwd.MaxLength = 32767;
             this.txbCfNewPwd.MinimumSize = new System.Drawing.Size(2, 2);
             this.txbCfNewPwd.Modified = false;
@@ -199,7 +199,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txbCfNewPwd.OnIdleState = stateProperties8;
-            this.txbCfNewPwd.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbCfNewPwd.Padding = new System.Windows.Forms.Padding(4);
             this.txbCfNewPwd.PasswordChar = '\0';
             this.txbCfNewPwd.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txbCfNewPwd.PlaceholderText = "Confirm New Password";
@@ -270,7 +270,7 @@
             this.txtChangePass.IdleIconRightImage = null;
             this.txtChangePass.IndicateFocus = false;
             this.txtChangePass.Location = new System.Drawing.Point(314, 412);
-            this.txtChangePass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtChangePass.Margin = new System.Windows.Forms.Padding(4);
             this.txtChangePass.Name = "txtChangePass";
             this.txtChangePass.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.txtChangePass.OnDisabledState.BorderRadius = 40;
@@ -342,7 +342,7 @@
             this.txbNewPwd.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbNewPwd.Lines = new string[0];
             this.txbNewPwd.Location = new System.Drawing.Point(316, 204);
-            this.txbNewPwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbNewPwd.Margin = new System.Windows.Forms.Padding(4);
             this.txbNewPwd.MaxLength = 32767;
             this.txbNewPwd.MinimumSize = new System.Drawing.Size(2, 2);
             this.txbNewPwd.Modified = false;
@@ -368,7 +368,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txbNewPwd.OnIdleState = stateProperties12;
-            this.txbNewPwd.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbNewPwd.Padding = new System.Windows.Forms.Padding(4);
             this.txbNewPwd.PasswordChar = '\0';
             this.txbNewPwd.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txbNewPwd.PlaceholderText = "New Password";
@@ -407,7 +407,7 @@
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
             this.logo.Location = new System.Drawing.Point(250, 71);
-            this.logo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logo.Margin = new System.Windows.Forms.Padding(4);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(168, 152);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -418,7 +418,7 @@
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(774, 471);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(66, 56);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -429,7 +429,7 @@
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(290, 487);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(66, 56);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -440,7 +440,7 @@
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(174, 33);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(64, 62);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -451,7 +451,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(66, 119);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(114, 104);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -462,7 +462,7 @@
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(42, 233);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(196, 190);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -473,7 +473,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(938, 446);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(156, 140);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -484,7 +484,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(858, 233);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(190, 173);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -495,7 +495,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(962, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(156, 140);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -506,7 +506,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(26, 446);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(156, 140);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -534,8 +534,9 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ChangePwd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChangePwd";
             this.Load += new System.EventHandler(this.ChangePwd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();

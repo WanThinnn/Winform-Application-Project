@@ -93,7 +93,13 @@ namespace UI
                 NekoUser.ShowError_2();
                 return;
             }
+            if (DateTime.Now - VerificationCode.CreatedAt > TimeSpan.FromSeconds(360))
 
+            {
+                // Mã xác nhận đã hết hạn
+                MessageBox.Show("Mã xác nhận không đúng hoặc hết hạn!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (txtCode.Text != VerificationCode.Code)
             {
                 MessageBox.Show("Mã xác nhận không đúng hoặc hết hạn!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
