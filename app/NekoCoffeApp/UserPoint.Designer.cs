@@ -93,7 +93,7 @@
             this.AdminShowEmployee4.BorderRadius = 134;
             this.AdminShowEmployee4.Image = ((System.Drawing.Image)(resources.GetObject("AdminShowEmployee4.Image")));
             this.AdminShowEmployee4.IsCircle = true;
-            this.AdminShowEmployee4.Location = new System.Drawing.Point(664, 125);
+            this.AdminShowEmployee4.Location = new System.Drawing.Point(663, 124);
             this.AdminShowEmployee4.Name = "AdminShowEmployee4";
             this.AdminShowEmployee4.Size = new System.Drawing.Size(268, 268);
             this.AdminShowEmployee4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -140,9 +140,9 @@
             this.lbPoint.Location = new System.Drawing.Point(674, 475);
             this.lbPoint.Name = "lbPoint";
             this.lbPoint.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbPoint.Size = new System.Drawing.Size(115, 37);
+            this.lbPoint.Size = new System.Drawing.Size(124, 37);
             this.lbPoint.TabIndex = 84;
-            this.lbPoint.Text = "Tích điểm:";
+            this.lbPoint.Text = "Tổng điểm:";
             this.lbPoint.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lbPoint.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -173,7 +173,7 @@
             this.txtPoint.IconRight = null;
             this.txtPoint.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPoint.Lines = new string[0];
-            this.txtPoint.Location = new System.Drawing.Point(795, 475);
+            this.txtPoint.Location = new System.Drawing.Point(804, 475);
             this.txtPoint.MaxLength = 32767;
             this.txtPoint.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPoint.Modified = false;
@@ -358,8 +358,8 @@
             // 
             // UserPoint
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.txtPoint);
@@ -369,7 +369,7 @@
             this.Controls.Add(this.AdminShowEmployee4);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "UserPoint";
-            this.Size = new System.Drawing.Size(967, 707);
+            this.Size = new System.Drawing.Size(964, 705);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee4)).EndInit();

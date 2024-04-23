@@ -61,7 +61,7 @@ namespace UI
             if (NekoUser.IsEqual(ResUser, CurUser) == true)
             {
                 //formMainApp real = new formMainApp(ResUser.Fullname);
-                MessageBox.Show("OK!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đăng nhập thành công!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 this.Hide();
                 //real.ShowDialog();

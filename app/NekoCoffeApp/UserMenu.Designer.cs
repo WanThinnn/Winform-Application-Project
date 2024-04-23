@@ -234,11 +234,6 @@
             this.AdminOrderNumeric.Name = "AdminOrderNumeric";
             this.AdminOrderNumeric.Size = new System.Drawing.Size(91, 31);
             this.AdminOrderNumeric.TabIndex = 58;
-            this.AdminOrderNumeric.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // numericUpDown1
             // 
@@ -252,11 +247,6 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(91, 31);
             this.numericUpDown1.TabIndex = 62;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // bunifuLabel3
             // 
@@ -385,11 +375,6 @@
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(91, 31);
             this.numericUpDown2.TabIndex = 66;
-            this.numericUpDown2.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // bunifuLabel4
             // 
@@ -518,11 +503,6 @@
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(91, 31);
             this.numericUpDown3.TabIndex = 70;
-            this.numericUpDown3.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // bunifuLabel5
             // 
@@ -651,11 +631,6 @@
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(91, 31);
             this.numericUpDown4.TabIndex = 86;
-            this.numericUpDown4.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // bunifuLabel6
             // 
@@ -784,11 +759,6 @@
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(91, 31);
             this.numericUpDown5.TabIndex = 82;
-            this.numericUpDown5.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // bunifuLabel7
             // 
@@ -917,11 +887,6 @@
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(91, 31);
             this.numericUpDown6.TabIndex = 78;
-            this.numericUpDown6.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // bunifuLabel8
             // 
@@ -1050,11 +1015,6 @@
             this.numericUpDown7.Name = "numericUpDown7";
             this.numericUpDown7.Size = new System.Drawing.Size(91, 31);
             this.numericUpDown7.TabIndex = 74;
-            this.numericUpDown7.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // bunifuLabel9
             // 
@@ -1185,7 +1145,7 @@
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(-24, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1014, 97);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1014, 106);
             this.bunifuGradientPanel1.TabIndex = 87;
             // 
             // bunifuLabel1
@@ -1194,7 +1154,7 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Montserrat Black", 14F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(465, 28);
+            this.bunifuLabel1.Location = new System.Drawing.Point(465, 35);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(85, 39);
@@ -1286,8 +1246,8 @@
             // 
             // UserMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.numericUpDown4);
             this.Controls.Add(this.bunifuLabel6);
@@ -1330,7 +1290,7 @@
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox16);
             this.Name = "UserMenu";
-            this.Size = new System.Drawing.Size(967, 707);
+            this.Size = new System.Drawing.Size(964, 705);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdminOrderNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

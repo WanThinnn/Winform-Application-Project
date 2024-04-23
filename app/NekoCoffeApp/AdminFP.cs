@@ -72,5 +72,15 @@ namespace UI
         {
 
         }
+
+        private void AdminFP_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminMainPanel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

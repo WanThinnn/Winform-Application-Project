@@ -90,10 +90,10 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(1118, 1084);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox9.Location = new System.Drawing.Point(838, 813);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(100, 90);
+            this.pictureBox9.Size = new System.Drawing.Size(75, 68);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 31;
             this.pictureBox9.TabStop = false;
@@ -101,10 +101,10 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(392, 1110);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox8.Location = new System.Drawing.Point(294, 832);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(100, 90);
+            this.pictureBox8.Size = new System.Drawing.Size(75, 68);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 30;
             this.pictureBox8.TabStop = false;
@@ -112,10 +112,10 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(294, 24);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox7.Location = new System.Drawing.Point(220, 18);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(96, 98);
+            this.pictureBox7.Size = new System.Drawing.Size(72, 74);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 29;
             this.pictureBox7.TabStop = false;
@@ -123,10 +123,10 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(56, 174);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox6.Location = new System.Drawing.Point(42, 130);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(172, 166);
+            this.pictureBox6.Size = new System.Drawing.Size(129, 124);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 28;
             this.pictureBox6.TabStop = false;
@@ -134,10 +134,10 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(14, 352);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox5.Location = new System.Drawing.Point(10, 264);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(294, 306);
+            this.pictureBox5.Size = new System.Drawing.Size(220, 230);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 27;
             this.pictureBox5.TabStop = false;
@@ -145,10 +145,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1326, 880);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox3.Location = new System.Drawing.Point(994, 660);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(234, 226);
+            this.pictureBox3.Size = new System.Drawing.Size(176, 170);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 25;
             this.pictureBox3.TabStop = false;
@@ -156,10 +156,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1240, 352);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox4.Location = new System.Drawing.Point(930, 264);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(284, 276);
+            this.pictureBox4.Size = new System.Drawing.Size(213, 207);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 26;
             this.pictureBox4.TabStop = false;
@@ -167,10 +167,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1394, -18);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox2.Location = new System.Drawing.Point(1046, -14);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(234, 226);
+            this.pictureBox2.Size = new System.Drawing.Size(176, 170);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 24;
             this.pictureBox2.TabStop = false;
@@ -178,10 +178,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-46, 840);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox1.Location = new System.Drawing.Point(-34, 630);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(234, 226);
+            this.pictureBox1.Size = new System.Drawing.Size(176, 170);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
@@ -227,17 +227,17 @@
             this.txtSignUp.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.txtSignUp.IconSize = 25;
             this.txtSignUp.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
-            this.txtSignUp.IdleBorderRadius = 40;
+            this.txtSignUp.IdleBorderRadius = 50;
             this.txtSignUp.IdleBorderThickness = 1;
             this.txtSignUp.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
             this.txtSignUp.IdleIconLeftImage = null;
             this.txtSignUp.IdleIconRightImage = null;
             this.txtSignUp.IndicateFocus = false;
-            this.txtSignUp.Location = new System.Drawing.Point(426, 982);
-            this.txtSignUp.Margin = new System.Windows.Forms.Padding(6);
+            this.txtSignUp.Location = new System.Drawing.Point(320, 736);
+            this.txtSignUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSignUp.Name = "txtSignUp";
             this.txtSignUp.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.txtSignUp.OnDisabledState.BorderRadius = 40;
+            this.txtSignUp.OnDisabledState.BorderRadius = 50;
             this.txtSignUp.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.txtSignUp.OnDisabledState.BorderThickness = 1;
             this.txtSignUp.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -245,7 +245,7 @@
             this.txtSignUp.OnDisabledState.IconLeftImage = null;
             this.txtSignUp.OnDisabledState.IconRightImage = null;
             this.txtSignUp.onHoverState.BorderColor = System.Drawing.Color.Chocolate;
-            this.txtSignUp.onHoverState.BorderRadius = 40;
+            this.txtSignUp.onHoverState.BorderRadius = 50;
             this.txtSignUp.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.txtSignUp.onHoverState.BorderThickness = 1;
             this.txtSignUp.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
@@ -253,7 +253,7 @@
             this.txtSignUp.onHoverState.IconLeftImage = null;
             this.txtSignUp.onHoverState.IconRightImage = null;
             this.txtSignUp.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
-            this.txtSignUp.OnIdleState.BorderRadius = 40;
+            this.txtSignUp.OnIdleState.BorderRadius = 50;
             this.txtSignUp.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.txtSignUp.OnIdleState.BorderThickness = 1;
             this.txtSignUp.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
@@ -261,14 +261,14 @@
             this.txtSignUp.OnIdleState.IconLeftImage = null;
             this.txtSignUp.OnIdleState.IconRightImage = null;
             this.txtSignUp.OnPressedState.BorderColor = System.Drawing.Color.Black;
-            this.txtSignUp.OnPressedState.BorderRadius = 40;
+            this.txtSignUp.OnPressedState.BorderRadius = 50;
             this.txtSignUp.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.txtSignUp.OnPressedState.BorderThickness = 1;
             this.txtSignUp.OnPressedState.FillColor = System.Drawing.Color.Black;
             this.txtSignUp.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.txtSignUp.OnPressedState.IconLeftImage = null;
             this.txtSignUp.OnPressedState.IconRightImage = null;
-            this.txtSignUp.Size = new System.Drawing.Size(744, 84);
+            this.txtSignUp.Size = new System.Drawing.Size(558, 52);
             this.txtSignUp.TabIndex = 37;
             this.txtSignUp.TabStop = false;
             this.txtSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -305,8 +305,8 @@
             this.txPass.IconRight = null;
             this.txPass.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txPass.Lines = new string[0];
-            this.txPass.Location = new System.Drawing.Point(426, 640);
-            this.txPass.Margin = new System.Windows.Forms.Padding(6);
+            this.txPass.Location = new System.Drawing.Point(320, 480);
+            this.txPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txPass.MaxLength = 32767;
             this.txPass.MinimumSize = new System.Drawing.Size(2, 2);
             this.txPass.Modified = false;
@@ -332,7 +332,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txPass.OnIdleState = stateProperties4;
-            this.txPass.Padding = new System.Windows.Forms.Padding(6);
+            this.txPass.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txPass.PasswordChar = '\0';
             this.txPass.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txPass.PlaceholderText = "Password";
@@ -342,7 +342,7 @@
             this.txPass.SelectionLength = 0;
             this.txPass.SelectionStart = 0;
             this.txPass.ShortcutsEnabled = true;
-            this.txPass.Size = new System.Drawing.Size(744, 84);
+            this.txPass.Size = new System.Drawing.Size(558, 63);
             this.txPass.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txPass.TabIndex = 36;
             this.txPass.TabStop = false;
@@ -382,8 +382,8 @@
             this.txtUserName.IconRight = null;
             this.txtUserName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUserName.Lines = new string[0];
-            this.txtUserName.Location = new System.Drawing.Point(426, 352);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(6);
+            this.txtUserName.Location = new System.Drawing.Point(320, 264);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUserName.MaxLength = 32767;
             this.txtUserName.MinimumSize = new System.Drawing.Size(2, 2);
             this.txtUserName.Modified = false;
@@ -409,7 +409,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtUserName.OnIdleState = stateProperties8;
-            this.txtUserName.Padding = new System.Windows.Forms.Padding(6);
+            this.txtUserName.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUserName.PasswordChar = '\0';
             this.txtUserName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtUserName.PlaceholderText = "Username";
@@ -419,7 +419,7 @@
             this.txtUserName.SelectionLength = 0;
             this.txtUserName.SelectionStart = 0;
             this.txtUserName.ShortcutsEnabled = true;
-            this.txtUserName.Size = new System.Drawing.Size(744, 84);
+            this.txtUserName.Size = new System.Drawing.Size(558, 63);
             this.txtUserName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtUserName.TabIndex = 35;
             this.txtUserName.TabStop = false;
@@ -436,20 +436,20 @@
             this.lbDangNhap.AutoSize = true;
             this.lbDangNhap.Font = new System.Drawing.Font("Montserrat Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbDangNhap.Location = new System.Drawing.Point(760, 70);
-            this.lbDangNhap.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbDangNhap.Location = new System.Drawing.Point(570, 52);
+            this.lbDangNhap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDangNhap.Name = "lbDangNhap";
-            this.lbDangNhap.Size = new System.Drawing.Size(189, 52);
+            this.lbDangNhap.Size = new System.Drawing.Size(141, 39);
             this.lbDangNhap.TabIndex = 34;
             this.lbDangNhap.Text = "SIGN UP";
             // 
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(548, -6);
-            this.logo.Margin = new System.Windows.Forms.Padding(6);
+            this.logo.Location = new System.Drawing.Point(411, -4);
+            this.logo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(252, 242);
+            this.logo.Size = new System.Drawing.Size(189, 182);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logo.TabIndex = 32;
             this.logo.TabStop = false;
@@ -481,8 +481,8 @@
             this.txtFullName.IconRight = null;
             this.txtFullName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFullName.Lines = new string[0];
-            this.txtFullName.Location = new System.Drawing.Point(426, 256);
-            this.txtFullName.Margin = new System.Windows.Forms.Padding(6);
+            this.txtFullName.Location = new System.Drawing.Point(320, 192);
+            this.txtFullName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFullName.MaxLength = 32767;
             this.txtFullName.MinimumSize = new System.Drawing.Size(2, 2);
             this.txtFullName.Modified = false;
@@ -508,7 +508,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtFullName.OnIdleState = stateProperties12;
-            this.txtFullName.Padding = new System.Windows.Forms.Padding(6);
+            this.txtFullName.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFullName.PasswordChar = '\0';
             this.txtFullName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtFullName.PlaceholderText = "Full name";
@@ -518,7 +518,7 @@
             this.txtFullName.SelectionLength = 0;
             this.txtFullName.SelectionStart = 0;
             this.txtFullName.ShortcutsEnabled = true;
-            this.txtFullName.Size = new System.Drawing.Size(744, 84);
+            this.txtFullName.Size = new System.Drawing.Size(558, 63);
             this.txtFullName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtFullName.TabIndex = 38;
             this.txtFullName.TabStop = false;
@@ -557,8 +557,8 @@
             this.txtPhone.IconRight = null;
             this.txtPhone.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhone.Lines = new string[0];
-            this.txtPhone.Location = new System.Drawing.Point(426, 448);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(6);
+            this.txtPhone.Location = new System.Drawing.Point(320, 336);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPhone.MaxLength = 32767;
             this.txtPhone.MinimumSize = new System.Drawing.Size(2, 2);
             this.txtPhone.Modified = false;
@@ -584,7 +584,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPhone.OnIdleState = stateProperties16;
-            this.txtPhone.Padding = new System.Windows.Forms.Padding(6);
+            this.txtPhone.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtPhone.PlaceholderText = "Phone number";
@@ -594,7 +594,7 @@
             this.txtPhone.SelectionLength = 0;
             this.txtPhone.SelectionStart = 0;
             this.txtPhone.ShortcutsEnabled = true;
-            this.txtPhone.Size = new System.Drawing.Size(744, 84);
+            this.txtPhone.Size = new System.Drawing.Size(558, 63);
             this.txtPhone.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtPhone.TabIndex = 40;
             this.txtPhone.TabStop = false;
@@ -633,8 +633,8 @@
             this.txtConfirm.IconRight = null;
             this.txtConfirm.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtConfirm.Lines = new string[0];
-            this.txtConfirm.Location = new System.Drawing.Point(426, 736);
-            this.txtConfirm.Margin = new System.Windows.Forms.Padding(6);
+            this.txtConfirm.Location = new System.Drawing.Point(320, 552);
+            this.txtConfirm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtConfirm.MaxLength = 32767;
             this.txtConfirm.MinimumSize = new System.Drawing.Size(2, 2);
             this.txtConfirm.Modified = false;
@@ -660,7 +660,7 @@
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtConfirm.OnIdleState = stateProperties20;
-            this.txtConfirm.Padding = new System.Windows.Forms.Padding(6);
+            this.txtConfirm.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtConfirm.PasswordChar = '\0';
             this.txtConfirm.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtConfirm.PlaceholderText = "Confirm password";
@@ -670,7 +670,7 @@
             this.txtConfirm.SelectionLength = 0;
             this.txtConfirm.SelectionStart = 0;
             this.txtConfirm.ShortcutsEnabled = true;
-            this.txtConfirm.Size = new System.Drawing.Size(744, 84);
+            this.txtConfirm.Size = new System.Drawing.Size(558, 63);
             this.txtConfirm.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtConfirm.TabIndex = 41;
             this.txtConfirm.TabStop = false;
@@ -722,10 +722,10 @@
             "Male",
             "Female"});
             this.dbGender.ItemTopMargin = 3;
-            this.dbGender.Location = new System.Drawing.Point(426, 546);
-            this.dbGender.Margin = new System.Windows.Forms.Padding(6);
+            this.dbGender.Location = new System.Drawing.Point(320, 410);
+            this.dbGender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dbGender.Name = "dbGender";
-            this.dbGender.Size = new System.Drawing.Size(744, 84);
+            this.dbGender.Size = new System.Drawing.Size(558, 84);
             this.dbGender.TabIndex = 43;
             this.dbGender.Text = "Gender";
             this.dbGender.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -827,8 +827,8 @@
             this.txtCode.IconRight = null;
             this.txtCode.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCode.Lines = new string[0];
-            this.txtCode.Location = new System.Drawing.Point(426, 832);
-            this.txtCode.Margin = new System.Windows.Forms.Padding(6);
+            this.txtCode.Location = new System.Drawing.Point(320, 624);
+            this.txtCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCode.MaxLength = 32767;
             this.txtCode.MinimumSize = new System.Drawing.Size(2, 2);
             this.txtCode.Modified = false;
@@ -854,7 +854,7 @@
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtCode.OnIdleState = stateProperties24;
-            this.txtCode.Padding = new System.Windows.Forms.Padding(6);
+            this.txtCode.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCode.PasswordChar = '\0';
             this.txtCode.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtCode.PlaceholderText = "Code";
@@ -864,7 +864,7 @@
             this.txtCode.SelectionLength = 0;
             this.txtCode.SelectionStart = 0;
             this.txtCode.ShortcutsEnabled = true;
-            this.txtCode.Size = new System.Drawing.Size(744, 84);
+            this.txtCode.Size = new System.Drawing.Size(558, 63);
             this.txtCode.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtCode.TabIndex = 39;
             this.txtCode.TabStop = false;
@@ -878,11 +878,11 @@
             // 
             // Signup
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1600, 1222);
+            this.ClientSize = new System.Drawing.Size(1200, 788);
             this.Controls.Add(this.dbGender);
             this.Controls.Add(this.txtConfirm);
             this.Controls.Add(this.txtPhone);
@@ -904,7 +904,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Signup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Signup";

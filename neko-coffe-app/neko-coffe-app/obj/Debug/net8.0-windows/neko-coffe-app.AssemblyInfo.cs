@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("neko-coffe-app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ff6dfcab22c8c8858b02c44f9b5a0f302189448")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ddddcb2792bbf3510616bfb84753ae9e19fa23d")]
 [assembly: System.Reflection.AssemblyProductAttribute("neko-coffe-app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("neko-coffe-app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
