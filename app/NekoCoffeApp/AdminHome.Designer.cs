@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminHome));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.AdminPanelGrid = new System.Windows.Forms.Panel();
             this.AdminUserImg = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.AdminUser = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -47,9 +47,11 @@
             this.AdminMenuBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.AdminMainPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.adminOrder1 = new UI.AdminOrder();
             this.AdminPanelGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AdminUserImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.AdminMainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // AdminPanelGrid
@@ -107,11 +109,11 @@
             this.AdminUser.ColorContrastOnClick = 45;
             this.AdminUser.ColorContrastOnHover = 45;
             this.AdminUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.AdminUser.CustomizableEdges = borderEdges8;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.AdminUser.CustomizableEdges = borderEdges1;
             this.AdminUser.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminUser.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminUser.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -196,11 +198,11 @@
             this.AdminReviewBtn.ColorContrastOnClick = 45;
             this.AdminReviewBtn.ColorContrastOnHover = 45;
             this.AdminReviewBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.AdminReviewBtn.CustomizableEdges = borderEdges9;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.AdminReviewBtn.CustomizableEdges = borderEdges2;
             this.AdminReviewBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminReviewBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminReviewBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -286,11 +288,11 @@
             this.AdminCustomerBtn.ColorContrastOnClick = 45;
             this.AdminCustomerBtn.ColorContrastOnHover = 45;
             this.AdminCustomerBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.AdminCustomerBtn.CustomizableEdges = borderEdges10;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.AdminCustomerBtn.CustomizableEdges = borderEdges3;
             this.AdminCustomerBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminCustomerBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminCustomerBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -376,11 +378,11 @@
             this.AdminFinancialBtn.ColorContrastOnClick = 45;
             this.AdminFinancialBtn.ColorContrastOnHover = 45;
             this.AdminFinancialBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.AdminFinancialBtn.CustomizableEdges = borderEdges11;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.AdminFinancialBtn.CustomizableEdges = borderEdges4;
             this.AdminFinancialBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminFinancialBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminFinancialBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -466,11 +468,11 @@
             this.AdminEmployeeBtn.ColorContrastOnClick = 45;
             this.AdminEmployeeBtn.ColorContrastOnHover = 45;
             this.AdminEmployeeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.AdminEmployeeBtn.CustomizableEdges = borderEdges12;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.AdminEmployeeBtn.CustomizableEdges = borderEdges5;
             this.AdminEmployeeBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminEmployeeBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminEmployeeBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -556,11 +558,11 @@
             this.AdminOrderBtn.ColorContrastOnClick = 45;
             this.AdminOrderBtn.ColorContrastOnHover = 45;
             this.AdminOrderBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges13.BottomLeft = true;
-            borderEdges13.BottomRight = true;
-            borderEdges13.TopLeft = true;
-            borderEdges13.TopRight = true;
-            this.AdminOrderBtn.CustomizableEdges = borderEdges13;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.AdminOrderBtn.CustomizableEdges = borderEdges6;
             this.AdminOrderBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminOrderBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminOrderBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -646,11 +648,11 @@
             this.AdminMenuBtn.ColorContrastOnClick = 45;
             this.AdminMenuBtn.ColorContrastOnHover = 45;
             this.AdminMenuBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges14.BottomLeft = true;
-            borderEdges14.BottomRight = true;
-            borderEdges14.TopLeft = true;
-            borderEdges14.TopRight = true;
-            this.AdminMenuBtn.CustomizableEdges = borderEdges14;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.AdminMenuBtn.CustomizableEdges = borderEdges7;
             this.AdminMenuBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminMenuBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminMenuBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -735,23 +737,36 @@
             this.AdminMainPanel.BorderColor = System.Drawing.Color.Transparent;
             this.AdminMainPanel.BorderRadius = 1;
             this.AdminMainPanel.BorderThickness = 1;
-            this.AdminMainPanel.Location = new System.Drawing.Point(262, 0);
+            this.AdminMainPanel.Controls.Add(this.adminOrder1);
+            this.AdminMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AdminMainPanel.Location = new System.Drawing.Point(256, 0);
             this.AdminMainPanel.Name = "AdminMainPanel";
             this.AdminMainPanel.ShowBorders = true;
-            this.AdminMainPanel.Size = new System.Drawing.Size(1005, 704);
+            this.AdminMainPanel.Size = new System.Drawing.Size(1067, 704);
             this.AdminMainPanel.TabIndex = 2;
+            // 
+            // adminOrder1
+            // 
+            this.adminOrder1.BackColor = System.Drawing.Color.White;
+            this.adminOrder1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.adminOrder1.Location = new System.Drawing.Point(0, 0);
+            this.adminOrder1.Name = "adminOrder1";
+            this.adminOrder1.Size = new System.Drawing.Size(1067, 704);
+            this.adminOrder1.TabIndex = 0;
             // 
             // AdminHome
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1268, 704);
+            this.ClientSize = new System.Drawing.Size(1323, 704);
             this.Controls.Add(this.AdminMainPanel);
             this.Controls.Add(this.AdminPanelGrid);
             this.Name = "AdminHome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.AdminPanelGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AdminUserImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.AdminMainPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -769,5 +784,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminMenuBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuPanel AdminMainPanel;
+        private AdminOrder adminOrder1;
     }
 }
