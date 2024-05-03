@@ -259,14 +259,15 @@
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.BorderRadius = 1;
             this.bunifuGradientPanel1.Controls.Add(this.bunifuLabel1);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(177)))), ((int)(((byte)(60)))));
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(177)))), ((int)(((byte)(60)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(114)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(-18, -13);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(993, 111);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(964, 101);
             this.bunifuGradientPanel1.TabIndex = 51;
             // 
             // bunifuLabel1
@@ -276,7 +277,7 @@
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Montserrat Black", 14F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(441, 39);
+            this.bunifuLabel1.Location = new System.Drawing.Point(423, 33);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(118, 39);
