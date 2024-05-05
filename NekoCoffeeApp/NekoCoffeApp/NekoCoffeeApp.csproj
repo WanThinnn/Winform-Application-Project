@@ -243,6 +243,12 @@
     <Compile Include="AdminEmployee.Designer.cs">
       <DependentUpon>AdminEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminEmployeeManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminEmployeeManagement.Designer.cs">
+      <DependentUpon>AdminEmployeeManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminFinancial.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -333,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminEmployee.resx">
       <DependentUpon>AdminEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEmployeeManagement.resx">
+      <DependentUpon>AdminEmployeeManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminFinancial.resx">
       <DependentUpon>AdminFinancial.cs</DependentUpon>
