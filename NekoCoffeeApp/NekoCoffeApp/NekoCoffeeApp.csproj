@@ -267,6 +267,18 @@
     <Compile Include="AdminOrder.Designer.cs">
       <DependentUpon>AdminOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminProduct.Designer.cs">
+      <DependentUpon>AdminProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminTable.Designer.cs">
+      <DependentUpon>AdminTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="BeforSignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -351,6 +363,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminOrder.resx">
       <DependentUpon>AdminOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminProduct.resx">
+      <DependentUpon>AdminProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminTable.resx">
+      <DependentUpon>AdminTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BeforSignUp.resx">
       <DependentUpon>BeforSignUp.cs</DependentUpon>
