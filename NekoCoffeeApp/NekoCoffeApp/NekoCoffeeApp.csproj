@@ -231,11 +231,23 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminCat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminCat.Designer.cs">
+      <DependentUpon>AdminCat.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminCustomer.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="AdminCustomer.Designer.cs">
       <DependentUpon>AdminCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDrink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminDrink.Designer.cs">
+      <DependentUpon>AdminDrink.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminEmployee.cs">
       <SubType>UserControl</SubType>
@@ -346,8 +358,14 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminCat.resx">
+      <DependentUpon>AdminCat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminCustomer.resx">
       <DependentUpon>AdminCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDrink.resx">
+      <DependentUpon>AdminDrink.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminEmployee.resx">
       <DependentUpon>AdminEmployee.cs</DependentUpon>
