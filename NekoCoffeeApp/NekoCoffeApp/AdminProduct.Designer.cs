@@ -903,6 +903,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.AdminUpdateProduct);
             this.Controls.Add(this.AdminDeleteProduct);
             this.Controls.Add(this.AdminAddProduct);

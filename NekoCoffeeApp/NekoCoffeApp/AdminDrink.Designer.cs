@@ -824,6 +824,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.AdminUpdateDrink);
             this.Controls.Add(this.AdminDeleteDrink);
             this.Controls.Add(this.AdminAddDrink);

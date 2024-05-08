@@ -231,6 +231,12 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminAdjust.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminAdjust.Designer.cs">
+      <DependentUpon>AdminAdjust.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminCat.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -357,6 +363,9 @@
     <Compile Include="VerificationCodeInfo.cs" />
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAdjust.resx">
+      <DependentUpon>AdminAdjust.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminCat.resx">
       <DependentUpon>AdminCat.cs</DependentUpon>
