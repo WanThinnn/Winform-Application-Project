@@ -750,13 +750,15 @@
             this.adminEmployeeManagement1.BackColor = System.Drawing.Color.White;
             this.adminEmployeeManagement1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.adminEmployeeManagement1.Location = new System.Drawing.Point(0, 0);
+            this.adminEmployeeManagement1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.adminEmployeeManagement1.Name = "adminEmployeeManagement1";
             this.adminEmployeeManagement1.Size = new System.Drawing.Size(1067, 704);
             this.adminEmployeeManagement1.TabIndex = 0;
             // 
             // AdminHome
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1323, 704);
             this.Controls.Add(this.AdminMainPanel);
             this.Controls.Add(this.AdminPanelGrid);
