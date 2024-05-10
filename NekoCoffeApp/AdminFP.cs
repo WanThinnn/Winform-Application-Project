@@ -13,7 +13,7 @@ namespace UI
 {
     public partial class AdminFP : Form
     {
-        private System.Windows.Forms.Panel panel; // Khai báo biến panel
+        private System.Windows.Forms.Panel panel; 
         private BunifuButton adminMenuBtnInstance;
 
         public AdminFP()
