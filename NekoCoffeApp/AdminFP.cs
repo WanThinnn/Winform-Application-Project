@@ -22,7 +22,7 @@ namespace UI
             panel = new System.Windows.Forms.Panel(); // Khởi tạo biến panel
             panel.Dock = DockStyle.Fill;
             Controls.Add(panel); // Thêm panel vào các điều khiển của form
-            adminMenuBtnInstance = new BunifuButton(); // Khởi tạo biến để lưu trữ phiên bản của BunifuButton
+            adminMenuBtnInstance = new BunifuButton(); // Khởi tạo biến để lưu trữ phiên bản của BunifuButton.
 
 
         }
