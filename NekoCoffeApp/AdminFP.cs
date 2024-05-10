@@ -7,7 +7,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace UI
@@ -15,7 +14,7 @@ namespace UI
     public partial class AdminFP : Form
     {
         private System.Windows.Forms.Panel panel; // Khai báo biến panel
-        private BunifuButton adminMenuButton;
+        private BunifuButton adminMenuBtnInstance;
 
         public AdminFP()
         {
@@ -23,18 +22,24 @@ namespace UI
             panel = new System.Windows.Forms.Panel(); // Khởi tạo biến panel
             panel.Dock = DockStyle.Fill;
             Controls.Add(panel); // Thêm panel vào các điều khiển của form
+            adminMenuBtnInstance = new BunifuButton(); // Khởi tạo biến để lưu trữ phiên bản của BunifuButton
+
 
         }
         private void AdminMenuBtn_Click(object sender, EventArgs e)
         {
-            if (!panel.Controls.Contains(AdminMenuBtn.Instance))
+            // Kiểm tra nếu panel chưa chứa adminMenuBtn thì thêm vào
+            if (!panel.Controls.Contains(adminMenuBtnInstance))
             {
-                panel.Controls.Add(AdminMenuBtn.Instance);
-                AdminMenuBtn.Instance.Dock = DockStyle.Fill;
-                AdminMenuBtn.Instance.BringToFront();
+                adminMenuBtnInstance.Dock = DockStyle.Fill;
+                panel.Controls.Add(adminMenuBtnInstance);
+                adminMenuBtnInstance.BringToFront();
             }
             else
-                AdminMenuBtn.Instance.BringToFront();
+            {
+                // Nếu panel đã chứa adminMenuBtn, đưa nó lên trước
+                adminMenuBtnInstance.BringToFront();
+            }
         }
     }
 }
