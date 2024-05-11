@@ -17,6 +17,15 @@ namespace UI
             InitializeComponent();
         }
 
-        
+        private static AdminFinancial _instance;
+        public static AdminFinancial Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new AdminFinancial();
+                return _instance;
+            }
+        }
     }
 }
