@@ -321,6 +321,7 @@
     <Compile Include="AdminFP.Designer.cs">
       <DependentUpon>AdminFP.cs</DependentUpon>
     </Compile>
+    <Compile Include="NekoEmployee.cs" />
     <Compile Include="employee_edit.cs">
       <SubType>Form</SubType>
     </Compile>
