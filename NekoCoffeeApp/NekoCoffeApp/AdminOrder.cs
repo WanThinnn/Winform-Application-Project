@@ -13,6 +13,18 @@ namespace UI
     public partial class AdminOrder : UserControl
     {
 
+
+        private static AdminOrder _instance;
+        public static AdminOrder Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new AdminOrder();
+                return _instance;
+            }
+        }
+
         public AdminOrder()
         {
             InitializeComponent();
