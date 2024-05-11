@@ -12,6 +12,20 @@ namespace UI
 {
     public partial class AdminCustomer : UserControl
     {
-        
+        public AdminCustomer()
+        {
+            InitializeComponent();
+        }
+
+        private static AdminCustomer _instance;
+        public static AdminCustomer Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new AdminCustomer();
+                return _instance;
+            }
+        }
     }
 }
