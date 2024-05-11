@@ -17,6 +17,15 @@ namespace UI
             InitializeComponent();
         }
 
-       
+        private static AdminEmployee _instance;
+        public static AdminEmployee Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new AdminEmployee();
+                return _instance;
+            }
+        }
     }
 }
