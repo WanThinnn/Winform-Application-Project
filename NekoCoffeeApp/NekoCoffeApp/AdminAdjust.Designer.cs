@@ -97,7 +97,8 @@
             this.AdminAdjustCustomer.IdleIconLeftImage = null;
             this.AdminAdjustCustomer.IdleIconRightImage = null;
             this.AdminAdjustCustomer.IndicateFocus = false;
-            this.AdminAdjustCustomer.Location = new System.Drawing.Point(82, 56);
+            this.AdminAdjustCustomer.Location = new System.Drawing.Point(123, 86);
+            this.AdminAdjustCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AdminAdjustCustomer.Name = "AdminAdjustCustomer";
             this.AdminAdjustCustomer.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAdjustCustomer.OnDisabledState.BorderRadius = 37;
@@ -131,7 +132,7 @@
             this.AdminAdjustCustomer.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAdjustCustomer.OnPressedState.IconLeftImage = null;
             this.AdminAdjustCustomer.OnPressedState.IconRightImage = null;
-            this.AdminAdjustCustomer.Size = new System.Drawing.Size(243, 75);
+            this.AdminAdjustCustomer.Size = new System.Drawing.Size(364, 115);
             this.AdminAdjustCustomer.TabIndex = 66;
             this.AdminAdjustCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAdjustCustomer.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -186,7 +187,8 @@
             this.AdminAdjustEmployee.IdleIconLeftImage = null;
             this.AdminAdjustEmployee.IdleIconRightImage = null;
             this.AdminAdjustEmployee.IndicateFocus = false;
-            this.AdminAdjustEmployee.Location = new System.Drawing.Point(435, 56);
+            this.AdminAdjustEmployee.Location = new System.Drawing.Point(652, 86);
+            this.AdminAdjustEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AdminAdjustEmployee.Name = "AdminAdjustEmployee";
             this.AdminAdjustEmployee.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAdjustEmployee.OnDisabledState.BorderRadius = 37;
@@ -220,7 +222,7 @@
             this.AdminAdjustEmployee.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAdjustEmployee.OnPressedState.IconLeftImage = null;
             this.AdminAdjustEmployee.OnPressedState.IconRightImage = null;
-            this.AdminAdjustEmployee.Size = new System.Drawing.Size(228, 75);
+            this.AdminAdjustEmployee.Size = new System.Drawing.Size(342, 115);
             this.AdminAdjustEmployee.TabIndex = 67;
             this.AdminAdjustEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAdjustEmployee.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -275,7 +277,8 @@
             this.AdminAdjustCat.IdleIconLeftImage = null;
             this.AdminAdjustCat.IdleIconRightImage = null;
             this.AdminAdjustCat.IndicateFocus = false;
-            this.AdminAdjustCat.Location = new System.Drawing.Point(793, 56);
+            this.AdminAdjustCat.Location = new System.Drawing.Point(1190, 86);
+            this.AdminAdjustCat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AdminAdjustCat.Name = "AdminAdjustCat";
             this.AdminAdjustCat.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAdjustCat.OnDisabledState.BorderRadius = 37;
@@ -309,7 +312,7 @@
             this.AdminAdjustCat.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAdjustCat.OnPressedState.IconLeftImage = null;
             this.AdminAdjustCat.OnPressedState.IconRightImage = null;
-            this.AdminAdjustCat.Size = new System.Drawing.Size(194, 75);
+            this.AdminAdjustCat.Size = new System.Drawing.Size(291, 115);
             this.AdminAdjustCat.TabIndex = 68;
             this.AdminAdjustCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAdjustCat.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -364,7 +367,8 @@
             this.AdminAdjustTable.IdleIconLeftImage = null;
             this.AdminAdjustTable.IdleIconRightImage = null;
             this.AdminAdjustTable.IndicateFocus = false;
-            this.AdminAdjustTable.Location = new System.Drawing.Point(793, 433);
+            this.AdminAdjustTable.Location = new System.Drawing.Point(1190, 666);
+            this.AdminAdjustTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AdminAdjustTable.Name = "AdminAdjustTable";
             this.AdminAdjustTable.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAdjustTable.OnDisabledState.BorderRadius = 37;
@@ -398,7 +402,7 @@
             this.AdminAdjustTable.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAdjustTable.OnPressedState.IconLeftImage = null;
             this.AdminAdjustTable.OnPressedState.IconRightImage = null;
-            this.AdminAdjustTable.Size = new System.Drawing.Size(194, 75);
+            this.AdminAdjustTable.Size = new System.Drawing.Size(291, 115);
             this.AdminAdjustTable.TabIndex = 71;
             this.AdminAdjustTable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAdjustTable.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -453,7 +457,8 @@
             this.AdminAdjustDrink.IdleIconLeftImage = null;
             this.AdminAdjustDrink.IdleIconRightImage = null;
             this.AdminAdjustDrink.IndicateFocus = false;
-            this.AdminAdjustDrink.Location = new System.Drawing.Point(435, 433);
+            this.AdminAdjustDrink.Location = new System.Drawing.Point(652, 666);
+            this.AdminAdjustDrink.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AdminAdjustDrink.Name = "AdminAdjustDrink";
             this.AdminAdjustDrink.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAdjustDrink.OnDisabledState.BorderRadius = 37;
@@ -487,7 +492,7 @@
             this.AdminAdjustDrink.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAdjustDrink.OnPressedState.IconLeftImage = null;
             this.AdminAdjustDrink.OnPressedState.IconRightImage = null;
-            this.AdminAdjustDrink.Size = new System.Drawing.Size(228, 75);
+            this.AdminAdjustDrink.Size = new System.Drawing.Size(342, 115);
             this.AdminAdjustDrink.TabIndex = 70;
             this.AdminAdjustDrink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAdjustDrink.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -542,7 +547,8 @@
             this.AdminAdjustProduct.IdleIconLeftImage = null;
             this.AdminAdjustProduct.IdleIconRightImage = null;
             this.AdminAdjustProduct.IndicateFocus = false;
-            this.AdminAdjustProduct.Location = new System.Drawing.Point(82, 433);
+            this.AdminAdjustProduct.Location = new System.Drawing.Point(123, 666);
+            this.AdminAdjustProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AdminAdjustProduct.Name = "AdminAdjustProduct";
             this.AdminAdjustProduct.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAdjustProduct.OnDisabledState.BorderRadius = 37;
@@ -576,7 +582,7 @@
             this.AdminAdjustProduct.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAdjustProduct.OnPressedState.IconLeftImage = null;
             this.AdminAdjustProduct.OnPressedState.IconRightImage = null;
-            this.AdminAdjustProduct.Size = new System.Drawing.Size(243, 75);
+            this.AdminAdjustProduct.Size = new System.Drawing.Size(364, 115);
             this.AdminAdjustProduct.TabIndex = 69;
             this.AdminAdjustProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAdjustProduct.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -586,7 +592,7 @@
             // 
             // AdminAdjust
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.AdminAdjustTable);
@@ -595,8 +601,9 @@
             this.Controls.Add(this.AdminAdjustCat);
             this.Controls.Add(this.AdminAdjustEmployee);
             this.Controls.Add(this.AdminAdjustCustomer);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AdminAdjust";
-            this.Size = new System.Drawing.Size(1069, 705);
+            this.Size = new System.Drawing.Size(1604, 1085);
             this.ResumeLayout(false);
 
         }

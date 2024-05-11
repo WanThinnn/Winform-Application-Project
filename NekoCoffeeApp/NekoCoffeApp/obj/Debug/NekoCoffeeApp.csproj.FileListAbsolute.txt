@@ -424,3 +424,4 @@ C:\Users\huy\Desktop\DoAnLTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffe
 C:\Users\huy\Desktop\DoAnLTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\huy\Desktop\DoAnLTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\System.ValueTuple.xml
 C:\Users\huy\Desktop\DoAnLTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\NekoCoff.167EBE38.Up2Date
+C:\Users\huy\Desktop\DoAnLTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.employee_edit.resources

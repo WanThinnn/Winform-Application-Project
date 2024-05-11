@@ -16,5 +16,17 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private static AdminAdjust _instance;
+        public static AdminAdjust Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new AdminAdjust();
+                return _instance;
+            }
+        }
+
     }
 }

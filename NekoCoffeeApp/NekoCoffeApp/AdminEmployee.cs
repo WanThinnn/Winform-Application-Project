@@ -27,5 +27,14 @@ namespace UI
                 return _instance;
             }
         }
+
+        public event EventHandler SwitchToAdminAdjustClicked;
+
+        private void AdminAdjustEmployee_Click(object sender, EventArgs e)
+        {
+            employee_edit employee_Edit = new employee_edit();
+            employee_Edit.Show();
+        }
     }
 }
+

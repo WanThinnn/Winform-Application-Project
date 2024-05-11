@@ -13,10 +13,7 @@ namespace UI
 {
     public partial class AdminFP : Form
     {
-        public AdminFP()
-        {
-            InitializeComponent();
-        }
+
         private void AdminMenuBtn_Click(object sender, EventArgs e)
         {
             if (!AdminMainPanel.Controls.Contains(AdminMenu.Instance))
@@ -88,5 +85,23 @@ namespace UI
             else
                 AdminReview.Instance.BringToFront();
         }
+
+        public AdminFP()
+        {
+            InitializeComponent();
+            //AdminEmployee.SwitchToAdminAdjustClicked += AdminEmployee_SwitchToAdminAdjustClicked;
+        }
+
+        private void AdminEmployee_SwitchToAdminAdjustClicked(object sender, EventArgs e)
+        {
+            this.Controls.Remove(AdminEmployee.Instance);
+
+            AdminAdjust adminAdjustControl = new AdminAdjust();
+            this.Controls.Add(AdminAdjust.Instance);
+        }
+
     }
+
+
+
 }

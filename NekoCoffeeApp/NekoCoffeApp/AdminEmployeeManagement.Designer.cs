@@ -136,7 +136,8 @@
             this.AdminCheckEmployee.IdleIconLeftImage = null;
             this.AdminCheckEmployee.IdleIconRightImage = null;
             this.AdminCheckEmployee.IndicateFocus = false;
-            this.AdminCheckEmployee.Location = new System.Drawing.Point(716, 96);
+            this.AdminCheckEmployee.Location = new System.Drawing.Point(1074, 144);
+            this.AdminCheckEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.AdminCheckEmployee.Name = "AdminCheckEmployee";
             this.AdminCheckEmployee.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminCheckEmployee.OnDisabledState.BorderRadius = 37;
@@ -170,7 +171,7 @@
             this.AdminCheckEmployee.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminCheckEmployee.OnPressedState.IconLeftImage = null;
             this.AdminCheckEmployee.OnPressedState.IconRightImage = null;
-            this.AdminCheckEmployee.Size = new System.Drawing.Size(330, 36);
+            this.AdminCheckEmployee.Size = new System.Drawing.Size(495, 54);
             this.AdminCheckEmployee.TabIndex = 31;
             this.AdminCheckEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminCheckEmployee.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -205,9 +206,10 @@
             this.AdminFillEmployeeName.IconRight = null;
             this.AdminFillEmployeeName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillEmployeeName.Lines = new string[0];
-            this.AdminFillEmployeeName.Location = new System.Drawing.Point(716, 39);
+            this.AdminFillEmployeeName.Location = new System.Drawing.Point(1074, 58);
+            this.AdminFillEmployeeName.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeeName.MaxLength = 32767;
-            this.AdminFillEmployeeName.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillEmployeeName.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillEmployeeName.Modified = false;
             this.AdminFillEmployeeName.Multiline = false;
             this.AdminFillEmployeeName.Name = "AdminFillEmployeeName";
@@ -231,7 +233,7 @@
             stateProperties32.ForeColor = System.Drawing.Color.Empty;
             stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillEmployeeName.OnIdleState = stateProperties32;
-            this.AdminFillEmployeeName.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillEmployeeName.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeeName.PasswordChar = '\0';
             this.AdminFillEmployeeName.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillEmployeeName.PlaceholderText = "Fill your Employee\'s Name";
@@ -241,7 +243,7 @@
             this.AdminFillEmployeeName.SelectionLength = 0;
             this.AdminFillEmployeeName.SelectionStart = 0;
             this.AdminFillEmployeeName.ShortcutsEnabled = true;
-            this.AdminFillEmployeeName.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillEmployeeName.Size = new System.Drawing.Size(495, 56);
             this.AdminFillEmployeeName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillEmployeeName.TabIndex = 32;
             this.AdminFillEmployeeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -299,7 +301,8 @@
             this.AdminShowAllEmployees.IdleIconLeftImage = null;
             this.AdminShowAllEmployees.IdleIconRightImage = null;
             this.AdminShowAllEmployees.IndicateFocus = false;
-            this.AdminShowAllEmployees.Location = new System.Drawing.Point(22, 647);
+            this.AdminShowAllEmployees.Location = new System.Drawing.Point(33, 970);
+            this.AdminShowAllEmployees.Margin = new System.Windows.Forms.Padding(4);
             this.AdminShowAllEmployees.Name = "AdminShowAllEmployees";
             this.AdminShowAllEmployees.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminShowAllEmployees.OnDisabledState.BorderRadius = 37;
@@ -333,7 +336,7 @@
             this.AdminShowAllEmployees.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminShowAllEmployees.OnPressedState.IconLeftImage = null;
             this.AdminShowAllEmployees.OnPressedState.IconRightImage = null;
-            this.AdminShowAllEmployees.Size = new System.Drawing.Size(214, 36);
+            this.AdminShowAllEmployees.Size = new System.Drawing.Size(321, 54);
             this.AdminShowAllEmployees.TabIndex = 33;
             this.AdminShowAllEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminShowAllEmployees.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -388,7 +391,8 @@
             this.AdminUpdateEmployee.IdleIconLeftImage = null;
             this.AdminUpdateEmployee.IdleIconRightImage = null;
             this.AdminUpdateEmployee.IndicateFocus = false;
-            this.AdminUpdateEmployee.Location = new System.Drawing.Point(716, 602);
+            this.AdminUpdateEmployee.Location = new System.Drawing.Point(1074, 903);
+            this.AdminUpdateEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.AdminUpdateEmployee.Name = "AdminUpdateEmployee";
             this.AdminUpdateEmployee.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminUpdateEmployee.OnDisabledState.BorderRadius = 37;
@@ -422,7 +426,7 @@
             this.AdminUpdateEmployee.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminUpdateEmployee.OnPressedState.IconLeftImage = null;
             this.AdminUpdateEmployee.OnPressedState.IconRightImage = null;
-            this.AdminUpdateEmployee.Size = new System.Drawing.Size(330, 36);
+            this.AdminUpdateEmployee.Size = new System.Drawing.Size(495, 54);
             this.AdminUpdateEmployee.TabIndex = 44;
             this.AdminUpdateEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminUpdateEmployee.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -433,10 +437,9 @@
             // AdminViewAllCustomer
             // 
             this.AdminViewAllCustomer.HideSelection = false;
-            this.AdminViewAllCustomer.Location = new System.Drawing.Point(22, 22);
-            this.AdminViewAllCustomer.Margin = new System.Windows.Forms.Padding(2);
+            this.AdminViewAllCustomer.Location = new System.Drawing.Point(33, 33);
             this.AdminViewAllCustomer.Name = "AdminViewAllCustomer";
-            this.AdminViewAllCustomer.Size = new System.Drawing.Size(672, 616);
+            this.AdminViewAllCustomer.Size = new System.Drawing.Size(1006, 922);
             this.AdminViewAllCustomer.TabIndex = 35;
             this.AdminViewAllCustomer.UseCompatibleStateImageBehavior = false;
             // 
@@ -467,9 +470,10 @@
             this.AdminFillEmployeeDateOfBirth.IconRight = null;
             this.AdminFillEmployeeDateOfBirth.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillEmployeeDateOfBirth.Lines = new string[0];
-            this.AdminFillEmployeeDateOfBirth.Location = new System.Drawing.Point(716, 159);
+            this.AdminFillEmployeeDateOfBirth.Location = new System.Drawing.Point(1074, 238);
+            this.AdminFillEmployeeDateOfBirth.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeeDateOfBirth.MaxLength = 32767;
-            this.AdminFillEmployeeDateOfBirth.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillEmployeeDateOfBirth.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillEmployeeDateOfBirth.Modified = false;
             this.AdminFillEmployeeDateOfBirth.Multiline = false;
             this.AdminFillEmployeeDateOfBirth.Name = "AdminFillEmployeeDateOfBirth";
@@ -493,7 +497,7 @@
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillEmployeeDateOfBirth.OnIdleState = stateProperties28;
-            this.AdminFillEmployeeDateOfBirth.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillEmployeeDateOfBirth.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeeDateOfBirth.PasswordChar = '\0';
             this.AdminFillEmployeeDateOfBirth.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillEmployeeDateOfBirth.PlaceholderText = "Fill your Employee\'s  Date Of Birth";
@@ -503,7 +507,7 @@
             this.AdminFillEmployeeDateOfBirth.SelectionLength = 0;
             this.AdminFillEmployeeDateOfBirth.SelectionStart = 0;
             this.AdminFillEmployeeDateOfBirth.ShortcutsEnabled = true;
-            this.AdminFillEmployeeDateOfBirth.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillEmployeeDateOfBirth.Size = new System.Drawing.Size(495, 56);
             this.AdminFillEmployeeDateOfBirth.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillEmployeeDateOfBirth.TabIndex = 36;
             this.AdminFillEmployeeDateOfBirth.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -541,9 +545,10 @@
             this.AdminFillEmployeeUserName.IconRight = null;
             this.AdminFillEmployeeUserName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillEmployeeUserName.Lines = new string[0];
-            this.AdminFillEmployeeUserName.Location = new System.Drawing.Point(716, 441);
+            this.AdminFillEmployeeUserName.Location = new System.Drawing.Point(1074, 662);
+            this.AdminFillEmployeeUserName.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeeUserName.MaxLength = 32767;
-            this.AdminFillEmployeeUserName.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillEmployeeUserName.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillEmployeeUserName.Modified = false;
             this.AdminFillEmployeeUserName.Multiline = false;
             this.AdminFillEmployeeUserName.Name = "AdminFillEmployeeUserName";
@@ -567,7 +572,7 @@
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillEmployeeUserName.OnIdleState = stateProperties24;
-            this.AdminFillEmployeeUserName.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillEmployeeUserName.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeeUserName.PasswordChar = '\0';
             this.AdminFillEmployeeUserName.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillEmployeeUserName.PlaceholderText = "Fill your Employee\'s User Name";
@@ -577,7 +582,7 @@
             this.AdminFillEmployeeUserName.SelectionLength = 0;
             this.AdminFillEmployeeUserName.SelectionStart = 0;
             this.AdminFillEmployeeUserName.ShortcutsEnabled = true;
-            this.AdminFillEmployeeUserName.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillEmployeeUserName.Size = new System.Drawing.Size(495, 56);
             this.AdminFillEmployeeUserName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillEmployeeUserName.TabIndex = 37;
             this.AdminFillEmployeeUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -615,9 +620,10 @@
             this.AdminFillEmployeeEmail.IconRight = null;
             this.AdminFillEmployeeEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillEmployeeEmail.Lines = new string[0];
-            this.AdminFillEmployeeEmail.Location = new System.Drawing.Point(716, 384);
+            this.AdminFillEmployeeEmail.Location = new System.Drawing.Point(1074, 576);
+            this.AdminFillEmployeeEmail.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeeEmail.MaxLength = 32767;
-            this.AdminFillEmployeeEmail.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillEmployeeEmail.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillEmployeeEmail.Modified = false;
             this.AdminFillEmployeeEmail.Multiline = false;
             this.AdminFillEmployeeEmail.Name = "AdminFillEmployeeEmail";
@@ -641,7 +647,7 @@
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillEmployeeEmail.OnIdleState = stateProperties20;
-            this.AdminFillEmployeeEmail.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillEmployeeEmail.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeeEmail.PasswordChar = '\0';
             this.AdminFillEmployeeEmail.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillEmployeeEmail.PlaceholderText = "Fill your Employee\'s Emai";
@@ -651,7 +657,7 @@
             this.AdminFillEmployeeEmail.SelectionLength = 0;
             this.AdminFillEmployeeEmail.SelectionStart = 0;
             this.AdminFillEmployeeEmail.ShortcutsEnabled = true;
-            this.AdminFillEmployeeEmail.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillEmployeeEmail.Size = new System.Drawing.Size(495, 56);
             this.AdminFillEmployeeEmail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillEmployeeEmail.TabIndex = 38;
             this.AdminFillEmployeeEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -689,9 +695,10 @@
             this.AdminFillEmployeePhoneNumber.IconRight = null;
             this.AdminFillEmployeePhoneNumber.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillEmployeePhoneNumber.Lines = new string[0];
-            this.AdminFillEmployeePhoneNumber.Location = new System.Drawing.Point(716, 329);
+            this.AdminFillEmployeePhoneNumber.Location = new System.Drawing.Point(1074, 494);
+            this.AdminFillEmployeePhoneNumber.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeePhoneNumber.MaxLength = 32767;
-            this.AdminFillEmployeePhoneNumber.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillEmployeePhoneNumber.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillEmployeePhoneNumber.Modified = false;
             this.AdminFillEmployeePhoneNumber.Multiline = false;
             this.AdminFillEmployeePhoneNumber.Name = "AdminFillEmployeePhoneNumber";
@@ -715,7 +722,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillEmployeePhoneNumber.OnIdleState = stateProperties16;
-            this.AdminFillEmployeePhoneNumber.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillEmployeePhoneNumber.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeePhoneNumber.PasswordChar = '\0';
             this.AdminFillEmployeePhoneNumber.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillEmployeePhoneNumber.PlaceholderText = "Fill your Employee\'s Phone Number";
@@ -725,7 +732,7 @@
             this.AdminFillEmployeePhoneNumber.SelectionLength = 0;
             this.AdminFillEmployeePhoneNumber.SelectionStart = 0;
             this.AdminFillEmployeePhoneNumber.ShortcutsEnabled = true;
-            this.AdminFillEmployeePhoneNumber.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillEmployeePhoneNumber.Size = new System.Drawing.Size(495, 56);
             this.AdminFillEmployeePhoneNumber.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillEmployeePhoneNumber.TabIndex = 39;
             this.AdminFillEmployeePhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -763,9 +770,10 @@
             this.AdminFillEmployeeAddress.IconRight = null;
             this.AdminFillEmployeeAddress.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillEmployeeAddress.Lines = new string[0];
-            this.AdminFillEmployeeAddress.Location = new System.Drawing.Point(716, 271);
+            this.AdminFillEmployeeAddress.Location = new System.Drawing.Point(1074, 406);
+            this.AdminFillEmployeeAddress.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeeAddress.MaxLength = 32767;
-            this.AdminFillEmployeeAddress.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillEmployeeAddress.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillEmployeeAddress.Modified = false;
             this.AdminFillEmployeeAddress.Multiline = false;
             this.AdminFillEmployeeAddress.Name = "AdminFillEmployeeAddress";
@@ -789,7 +797,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillEmployeeAddress.OnIdleState = stateProperties12;
-            this.AdminFillEmployeeAddress.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillEmployeeAddress.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeeAddress.PasswordChar = '\0';
             this.AdminFillEmployeeAddress.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillEmployeeAddress.PlaceholderText = "Fill your Employee\'s Address";
@@ -799,7 +807,7 @@
             this.AdminFillEmployeeAddress.SelectionLength = 0;
             this.AdminFillEmployeeAddress.SelectionStart = 0;
             this.AdminFillEmployeeAddress.ShortcutsEnabled = true;
-            this.AdminFillEmployeeAddress.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillEmployeeAddress.Size = new System.Drawing.Size(495, 56);
             this.AdminFillEmployeeAddress.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillEmployeeAddress.TabIndex = 40;
             this.AdminFillEmployeeAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -837,9 +845,10 @@
             this.AdminFillEmployeeGender.IconRight = null;
             this.AdminFillEmployeeGender.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillEmployeeGender.Lines = new string[0];
-            this.AdminFillEmployeeGender.Location = new System.Drawing.Point(716, 215);
+            this.AdminFillEmployeeGender.Location = new System.Drawing.Point(1074, 322);
+            this.AdminFillEmployeeGender.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeeGender.MaxLength = 32767;
-            this.AdminFillEmployeeGender.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillEmployeeGender.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillEmployeeGender.Modified = false;
             this.AdminFillEmployeeGender.Multiline = false;
             this.AdminFillEmployeeGender.Name = "AdminFillEmployeeGender";
@@ -863,7 +872,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillEmployeeGender.OnIdleState = stateProperties8;
-            this.AdminFillEmployeeGender.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillEmployeeGender.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeeGender.PasswordChar = '\0';
             this.AdminFillEmployeeGender.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillEmployeeGender.PlaceholderText = "Fill your Employee\'s Gender";
@@ -873,7 +882,7 @@
             this.AdminFillEmployeeGender.SelectionLength = 0;
             this.AdminFillEmployeeGender.SelectionStart = 0;
             this.AdminFillEmployeeGender.ShortcutsEnabled = true;
-            this.AdminFillEmployeeGender.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillEmployeeGender.Size = new System.Drawing.Size(495, 56);
             this.AdminFillEmployeeGender.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillEmployeeGender.TabIndex = 41;
             this.AdminFillEmployeeGender.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -931,7 +940,8 @@
             this.AdminAddEmployee.IdleIconLeftImage = null;
             this.AdminAddEmployee.IdleIconRightImage = null;
             this.AdminAddEmployee.IndicateFocus = false;
-            this.AdminAddEmployee.Location = new System.Drawing.Point(716, 551);
+            this.AdminAddEmployee.Location = new System.Drawing.Point(1074, 826);
+            this.AdminAddEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.AdminAddEmployee.Name = "AdminAddEmployee";
             this.AdminAddEmployee.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAddEmployee.OnDisabledState.BorderRadius = 37;
@@ -965,13 +975,14 @@
             this.AdminAddEmployee.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAddEmployee.OnPressedState.IconLeftImage = null;
             this.AdminAddEmployee.OnPressedState.IconRightImage = null;
-            this.AdminAddEmployee.Size = new System.Drawing.Size(160, 36);
+            this.AdminAddEmployee.Size = new System.Drawing.Size(240, 54);
             this.AdminAddEmployee.TabIndex = 42;
             this.AdminAddEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAddEmployee.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.AdminAddEmployee.TextMarginLeft = 0;
             this.AdminAddEmployee.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminAddEmployee.UseDefaultRadiusAndThickness = true;
+            this.AdminAddEmployee.Click += new System.EventHandler(this.AdminAddEmployee_Click);
             // 
             // AdminDeleteEmployee
             // 
@@ -1020,7 +1031,8 @@
             this.AdminDeleteEmployee.IdleIconLeftImage = null;
             this.AdminDeleteEmployee.IdleIconRightImage = null;
             this.AdminDeleteEmployee.IndicateFocus = false;
-            this.AdminDeleteEmployee.Location = new System.Drawing.Point(886, 551);
+            this.AdminDeleteEmployee.Location = new System.Drawing.Point(1329, 826);
+            this.AdminDeleteEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.AdminDeleteEmployee.Name = "AdminDeleteEmployee";
             this.AdminDeleteEmployee.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminDeleteEmployee.OnDisabledState.BorderRadius = 37;
@@ -1054,7 +1066,7 @@
             this.AdminDeleteEmployee.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminDeleteEmployee.OnPressedState.IconLeftImage = null;
             this.AdminDeleteEmployee.OnPressedState.IconRightImage = null;
-            this.AdminDeleteEmployee.Size = new System.Drawing.Size(160, 36);
+            this.AdminDeleteEmployee.Size = new System.Drawing.Size(240, 54);
             this.AdminDeleteEmployee.TabIndex = 43;
             this.AdminDeleteEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminDeleteEmployee.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1089,9 +1101,10 @@
             this.AdminFillEmployeeSalary.IconRight = null;
             this.AdminFillEmployeeSalary.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillEmployeeSalary.Lines = new string[0];
-            this.AdminFillEmployeeSalary.Location = new System.Drawing.Point(716, 494);
+            this.AdminFillEmployeeSalary.Location = new System.Drawing.Point(1074, 741);
+            this.AdminFillEmployeeSalary.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeeSalary.MaxLength = 32767;
-            this.AdminFillEmployeeSalary.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillEmployeeSalary.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillEmployeeSalary.Modified = false;
             this.AdminFillEmployeeSalary.Multiline = false;
             this.AdminFillEmployeeSalary.Name = "AdminFillEmployeeSalary";
@@ -1115,7 +1128,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillEmployeeSalary.OnIdleState = stateProperties4;
-            this.AdminFillEmployeeSalary.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillEmployeeSalary.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillEmployeeSalary.PasswordChar = '\0';
             this.AdminFillEmployeeSalary.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillEmployeeSalary.PlaceholderText = "Fill your Employee\'s Salary";
@@ -1125,7 +1138,7 @@
             this.AdminFillEmployeeSalary.SelectionLength = 0;
             this.AdminFillEmployeeSalary.SelectionStart = 0;
             this.AdminFillEmployeeSalary.ShortcutsEnabled = true;
-            this.AdminFillEmployeeSalary.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillEmployeeSalary.Size = new System.Drawing.Size(495, 56);
             this.AdminFillEmployeeSalary.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillEmployeeSalary.TabIndex = 45;
             this.AdminFillEmployeeSalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1138,7 +1151,7 @@
             // 
             // AdminEmployeeManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.AdminFillEmployeeSalary);
@@ -1155,8 +1168,9 @@
             this.Controls.Add(this.AdminShowAllEmployees);
             this.Controls.Add(this.AdminFillEmployeeName);
             this.Controls.Add(this.AdminCheckEmployee);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminEmployeeManagement";
-            this.Size = new System.Drawing.Size(1069, 705);
+            this.Size = new System.Drawing.Size(1604, 1058);
             this.ResumeLayout(false);
 
         }

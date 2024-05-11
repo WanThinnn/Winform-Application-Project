@@ -27,5 +27,20 @@ namespace UI
                 return _instance;
             }
         }
+
+        private void AdminCheckCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminAddCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminCustomer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
