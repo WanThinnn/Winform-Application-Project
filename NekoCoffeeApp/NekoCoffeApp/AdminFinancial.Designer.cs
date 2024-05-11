@@ -111,7 +111,6 @@
             this.AdminFinancialMoneyImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.AdminFinancialMoneyImg.TabIndex = 0;
             this.AdminFinancialMoneyImg.TabStop = false;
-            this.AdminFinancialMoneyImg.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // AdminFinancialViewTable
             // 
@@ -273,7 +272,6 @@
             this.Controls.Add(this.bunifuLabel10);
             this.Name = "AdminFinancial";
             this.Size = new System.Drawing.Size(1069, 705);
-            this.Load += new System.EventHandler(this.AdminFinancial_Load);
             this.AdminFinancialMoney.ResumeLayout(false);
             this.AdminFinancialMoney.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AdminFinancialMoneyImg)).EndInit();

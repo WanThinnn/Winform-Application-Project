@@ -17,9 +17,6 @@ namespace UI
             InitializeComponent();
         }
 
-        private void AdminEmployee_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

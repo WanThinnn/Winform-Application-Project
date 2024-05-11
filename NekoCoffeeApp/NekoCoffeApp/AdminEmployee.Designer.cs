@@ -656,7 +656,6 @@
             this.Controls.Add(this.bunifuLabel10);
             this.Name = "AdminEmployee";
             this.Size = new System.Drawing.Size(1069, 705);
-            this.Load += new System.EventHandler(this.AdminEmployee_Load);
             this.AdminEmployee1.ResumeLayout(false);
             this.AdminEmployee1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();

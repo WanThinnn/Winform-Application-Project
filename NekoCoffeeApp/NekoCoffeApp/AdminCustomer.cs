@@ -12,14 +12,6 @@ namespace UI
 {
     public partial class AdminCustomer : UserControl
     {
-        public AdminCustomer()
-        {
-            InitializeComponent();
-        }
-
-        private void bunifuButton1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

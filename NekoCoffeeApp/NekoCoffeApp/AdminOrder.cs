@@ -12,29 +12,10 @@ namespace UI
 {
     public partial class AdminOrder : UserControl
     {
+
         public AdminOrder()
         {
             InitializeComponent();
-        }
-
-        private void AdminOrder_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

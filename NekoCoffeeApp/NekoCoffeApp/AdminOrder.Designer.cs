@@ -374,7 +374,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox13
             // 
@@ -793,7 +792,6 @@
             0,
             0,
             0});
-            this.AdminOrderNumeric.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // AdminOrderBtn
             // 
@@ -909,7 +907,6 @@
             this.Controls.Add(this.bunifuPanel1);
             this.Name = "AdminOrder";
             this.Size = new System.Drawing.Size(1069, 705);
-            this.Load += new System.EventHandler(this.AdminOrder_Load);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();

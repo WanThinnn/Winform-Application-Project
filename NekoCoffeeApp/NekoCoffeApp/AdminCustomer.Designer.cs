@@ -903,7 +903,6 @@
             this.AdminAddCustomer.TextMarginLeft = 0;
             this.AdminAddCustomer.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminAddCustomer.UseDefaultRadiusAndThickness = true;
-            this.AdminAddCustomer.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
             // AdminDeleteCustomer
             // 

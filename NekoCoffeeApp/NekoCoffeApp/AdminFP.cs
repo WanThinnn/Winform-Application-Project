@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bunifu.UI.WinForms.BunifuButton;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,71 +17,76 @@ namespace UI
         {
             InitializeComponent();
         }
-
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void AdminMenuBtn_Click(object sender, EventArgs e)
         {
-
+            if (!AdminMainPanel.Controls.Contains(AdminMenu.Instance))
+            {
+                AdminMainPanel.Controls.Add(AdminMenu.Instance);
+                AdminMenu.Instance.Dock = DockStyle.Fill;
+                AdminMenu.Instance.BringToFront();
+            }
+            else
+                AdminMenu.Instance.BringToFront();
         }
 
-        private void bunifuButton2_Click(object sender, EventArgs e)
+        private void AdminOrderBtn_Click(object sender, EventArgs e)
         {
-
+            if (!AdminMainPanel.Controls.Contains(AdminOrder.Instance))
+            {
+                AdminMainPanel.Controls.Add(AdminOrder.Instance);
+                AdminOrder.Instance.Dock = DockStyle.Fill;
+                AdminOrder.Instance.BringToFront();
+            }
+            else
+                AdminOrder.Instance.BringToFront();
         }
 
-        private void bunifuButton1_Click(object sender, EventArgs e)
+        private void AdminEmployeeBtn_Click(object sender, EventArgs e)
         {
-
+            if (!AdminMainPanel.Controls.Contains(AdminEmployee.Instance))
+            {
+                AdminMainPanel.Controls.Add(AdminEmployee.Instance);
+                AdminEmployee.Instance.Dock = DockStyle.Fill;
+                AdminEmployee.Instance.BringToFront();
+            }
+            else
+                AdminEmployee.Instance.BringToFront();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void AdminFinancialBtn_Click(object sender, EventArgs e)
         {
-
+            if (!AdminMainPanel.Controls.Contains(AdminFinancial.Instance))
+            {
+                AdminMainPanel.Controls.Add(AdminFinancial.Instance);
+                AdminFinancial.Instance.Dock = DockStyle.Fill;
+                AdminFinancial.Instance.BringToFront();
+            }
+            else
+                AdminFinancial.Instance.BringToFront();
         }
 
-        private void bunifuButton1_Click_1(object sender, EventArgs e)
+        private void AdminCustomerBtn_Click(object sender, EventArgs e)
         {
-
+            if (!AdminMainPanel.Controls.Contains(AdminCustomer.Instance))
+            {
+                AdminMainPanel.Controls.Add(AdminCustomer.Instance);
+                AdminCustomer.Instance.Dock = DockStyle.Fill;
+                AdminCustomer.Instance.BringToFront();
+            }
+            else
+                AdminCustomer.Instance.BringToFront();
         }
 
-        private void bunifuButton2_Click_1(object sender, EventArgs e)
+        private void AdminReviewBtn_Click(object sender, EventArgs e)
         {
-        
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void admin1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuButton7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AdminFP_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AdminMainPanel_Click(object sender, EventArgs e)
-        {
-
+            if (!AdminMainPanel.Controls.Contains(AdminReview.Instance))
+            {
+                AdminMainPanel.Controls.Add(AdminReview.Instance);
+                AdminReview.Instance.Dock = DockStyle.Fill;
+                AdminReview.Instance.BringToFront();
+            }
+            else
+                AdminReview.Instance.BringToFront();
         }
     }
 }

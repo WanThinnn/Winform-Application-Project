@@ -225,11 +225,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs">
+    <Compile Include="AdminMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin.Designer.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <Compile Include="AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminAdjust.cs">
       <SubType>UserControl</SubType>
@@ -290,6 +290,12 @@
     </Compile>
     <Compile Include="AdminProduct.Designer.cs">
       <DependentUpon>AdminProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminReview.Designer.cs">
+      <DependentUpon>AdminReview.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminTable.cs">
       <SubType>UserControl</SubType>
@@ -361,8 +367,8 @@
       <DependentUpon>UserPoint.cs</DependentUpon>
     </Compile>
     <Compile Include="VerificationCodeInfo.cs" />
-    <EmbeddedResource Include="Admin.resx">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <EmbeddedResource Include="AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminAdjust.resx">
       <DependentUpon>AdminAdjust.cs</DependentUpon>
