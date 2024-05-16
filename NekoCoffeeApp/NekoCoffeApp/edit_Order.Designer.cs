@@ -39,6 +39,7 @@
             this.adminDrink1.Name = "adminDrink1";
             this.adminDrink1.Size = new System.Drawing.Size(1604, 1058);
             this.adminDrink1.TabIndex = 0;
+            this.adminDrink1.Load += new System.EventHandler(this.adminDrink1_Load);
             // 
             // edit_Order
             // 

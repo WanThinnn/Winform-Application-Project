@@ -51,6 +51,9 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AdminUpdateDrink = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminDeleteDrink = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -58,10 +61,11 @@
             this.AdminFillDrinkPrice = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminFillDrinkAvailable = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminFillDrinkType = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.AdminViewAllCustomer = new System.Windows.Forms.ListView();
             this.AdminShowAllDrinks = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminFillDrinkName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminCheckDrink = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.AdminViewAllYourDrink = new Bunifu.UI.WinForms.BunifuDataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminViewAllYourDrink)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -116,7 +120,8 @@
             this.AdminUpdateDrink.IdleIconLeftImage = null;
             this.AdminUpdateDrink.IdleIconRightImage = null;
             this.AdminUpdateDrink.IndicateFocus = false;
-            this.AdminUpdateDrink.Location = new System.Drawing.Point(716, 365);
+            this.AdminUpdateDrink.Location = new System.Drawing.Point(1074, 548);
+            this.AdminUpdateDrink.Margin = new System.Windows.Forms.Padding(4);
             this.AdminUpdateDrink.Name = "AdminUpdateDrink";
             this.AdminUpdateDrink.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminUpdateDrink.OnDisabledState.BorderRadius = 37;
@@ -150,7 +155,7 @@
             this.AdminUpdateDrink.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminUpdateDrink.OnPressedState.IconLeftImage = null;
             this.AdminUpdateDrink.OnPressedState.IconRightImage = null;
-            this.AdminUpdateDrink.Size = new System.Drawing.Size(330, 36);
+            this.AdminUpdateDrink.Size = new System.Drawing.Size(495, 54);
             this.AdminUpdateDrink.TabIndex = 58;
             this.AdminUpdateDrink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminUpdateDrink.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -205,7 +210,8 @@
             this.AdminDeleteDrink.IdleIconLeftImage = null;
             this.AdminDeleteDrink.IdleIconRightImage = null;
             this.AdminDeleteDrink.IndicateFocus = false;
-            this.AdminDeleteDrink.Location = new System.Drawing.Point(886, 314);
+            this.AdminDeleteDrink.Location = new System.Drawing.Point(1329, 471);
+            this.AdminDeleteDrink.Margin = new System.Windows.Forms.Padding(4);
             this.AdminDeleteDrink.Name = "AdminDeleteDrink";
             this.AdminDeleteDrink.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminDeleteDrink.OnDisabledState.BorderRadius = 37;
@@ -239,7 +245,7 @@
             this.AdminDeleteDrink.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminDeleteDrink.OnPressedState.IconLeftImage = null;
             this.AdminDeleteDrink.OnPressedState.IconRightImage = null;
-            this.AdminDeleteDrink.Size = new System.Drawing.Size(160, 36);
+            this.AdminDeleteDrink.Size = new System.Drawing.Size(240, 54);
             this.AdminDeleteDrink.TabIndex = 57;
             this.AdminDeleteDrink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminDeleteDrink.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -294,7 +300,8 @@
             this.AdminAddDrink.IdleIconLeftImage = null;
             this.AdminAddDrink.IdleIconRightImage = null;
             this.AdminAddDrink.IndicateFocus = false;
-            this.AdminAddDrink.Location = new System.Drawing.Point(716, 314);
+            this.AdminAddDrink.Location = new System.Drawing.Point(1074, 471);
+            this.AdminAddDrink.Margin = new System.Windows.Forms.Padding(4);
             this.AdminAddDrink.Name = "AdminAddDrink";
             this.AdminAddDrink.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAddDrink.OnDisabledState.BorderRadius = 37;
@@ -328,13 +335,14 @@
             this.AdminAddDrink.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAddDrink.OnPressedState.IconLeftImage = null;
             this.AdminAddDrink.OnPressedState.IconRightImage = null;
-            this.AdminAddDrink.Size = new System.Drawing.Size(160, 36);
+            this.AdminAddDrink.Size = new System.Drawing.Size(240, 54);
             this.AdminAddDrink.TabIndex = 56;
             this.AdminAddDrink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAddDrink.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.AdminAddDrink.TextMarginLeft = 0;
             this.AdminAddDrink.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminAddDrink.UseDefaultRadiusAndThickness = true;
+            this.AdminAddDrink.Click += new System.EventHandler(this.AdminAddDrink_Click);
             // 
             // AdminFillDrinkPrice
             // 
@@ -363,9 +371,10 @@
             this.AdminFillDrinkPrice.IconRight = null;
             this.AdminFillDrinkPrice.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillDrinkPrice.Lines = new string[0];
-            this.AdminFillDrinkPrice.Location = new System.Drawing.Point(716, 215);
+            this.AdminFillDrinkPrice.Location = new System.Drawing.Point(1074, 322);
+            this.AdminFillDrinkPrice.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkPrice.MaxLength = 32767;
-            this.AdminFillDrinkPrice.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillDrinkPrice.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillDrinkPrice.Modified = false;
             this.AdminFillDrinkPrice.Multiline = false;
             this.AdminFillDrinkPrice.Name = "AdminFillDrinkPrice";
@@ -389,7 +398,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillDrinkPrice.OnIdleState = stateProperties4;
-            this.AdminFillDrinkPrice.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillDrinkPrice.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkPrice.PasswordChar = '\0';
             this.AdminFillDrinkPrice.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillDrinkPrice.PlaceholderText = "Fill your Drink\'s Price";
@@ -399,7 +408,7 @@
             this.AdminFillDrinkPrice.SelectionLength = 0;
             this.AdminFillDrinkPrice.SelectionStart = 0;
             this.AdminFillDrinkPrice.ShortcutsEnabled = true;
-            this.AdminFillDrinkPrice.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillDrinkPrice.Size = new System.Drawing.Size(495, 56);
             this.AdminFillDrinkPrice.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillDrinkPrice.TabIndex = 55;
             this.AdminFillDrinkPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -437,9 +446,10 @@
             this.AdminFillDrinkAvailable.IconRight = null;
             this.AdminFillDrinkAvailable.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillDrinkAvailable.Lines = new string[0];
-            this.AdminFillDrinkAvailable.Location = new System.Drawing.Point(716, 271);
+            this.AdminFillDrinkAvailable.Location = new System.Drawing.Point(1074, 406);
+            this.AdminFillDrinkAvailable.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkAvailable.MaxLength = 32767;
-            this.AdminFillDrinkAvailable.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillDrinkAvailable.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillDrinkAvailable.Modified = false;
             this.AdminFillDrinkAvailable.Multiline = false;
             this.AdminFillDrinkAvailable.Name = "AdminFillDrinkAvailable";
@@ -463,7 +473,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillDrinkAvailable.OnIdleState = stateProperties8;
-            this.AdminFillDrinkAvailable.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillDrinkAvailable.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkAvailable.PasswordChar = '\0';
             this.AdminFillDrinkAvailable.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillDrinkAvailable.PlaceholderText = "Fill your Drink\'s Address";
@@ -473,7 +483,7 @@
             this.AdminFillDrinkAvailable.SelectionLength = 0;
             this.AdminFillDrinkAvailable.SelectionStart = 0;
             this.AdminFillDrinkAvailable.ShortcutsEnabled = true;
-            this.AdminFillDrinkAvailable.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillDrinkAvailable.Size = new System.Drawing.Size(495, 56);
             this.AdminFillDrinkAvailable.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillDrinkAvailable.TabIndex = 54;
             this.AdminFillDrinkAvailable.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -511,9 +521,10 @@
             this.AdminFillDrinkType.IconRight = null;
             this.AdminFillDrinkType.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillDrinkType.Lines = new string[0];
-            this.AdminFillDrinkType.Location = new System.Drawing.Point(716, 159);
+            this.AdminFillDrinkType.Location = new System.Drawing.Point(1074, 238);
+            this.AdminFillDrinkType.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkType.MaxLength = 32767;
-            this.AdminFillDrinkType.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillDrinkType.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillDrinkType.Modified = false;
             this.AdminFillDrinkType.Multiline = false;
             this.AdminFillDrinkType.Name = "AdminFillDrinkType";
@@ -537,7 +548,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillDrinkType.OnIdleState = stateProperties12;
-            this.AdminFillDrinkType.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillDrinkType.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkType.PasswordChar = '\0';
             this.AdminFillDrinkType.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillDrinkType.PlaceholderText = "Fill your Drink\'s Type\r\n";
@@ -547,7 +558,7 @@
             this.AdminFillDrinkType.SelectionLength = 0;
             this.AdminFillDrinkType.SelectionStart = 0;
             this.AdminFillDrinkType.ShortcutsEnabled = true;
-            this.AdminFillDrinkType.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillDrinkType.Size = new System.Drawing.Size(495, 56);
             this.AdminFillDrinkType.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillDrinkType.TabIndex = 50;
             this.AdminFillDrinkType.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -557,16 +568,6 @@
             this.AdminFillDrinkType.TextPlaceholder = "Fill your Drink\'s Type\r\n";
             this.AdminFillDrinkType.UseSystemPasswordChar = false;
             this.AdminFillDrinkType.WordWrap = true;
-            // 
-            // AdminViewAllCustomer
-            // 
-            this.AdminViewAllCustomer.HideSelection = false;
-            this.AdminViewAllCustomer.Location = new System.Drawing.Point(22, 22);
-            this.AdminViewAllCustomer.Margin = new System.Windows.Forms.Padding(2);
-            this.AdminViewAllCustomer.Name = "AdminViewAllCustomer";
-            this.AdminViewAllCustomer.Size = new System.Drawing.Size(672, 616);
-            this.AdminViewAllCustomer.TabIndex = 49;
-            this.AdminViewAllCustomer.UseCompatibleStateImageBehavior = false;
             // 
             // AdminShowAllDrinks
             // 
@@ -615,7 +616,8 @@
             this.AdminShowAllDrinks.IdleIconLeftImage = null;
             this.AdminShowAllDrinks.IdleIconRightImage = null;
             this.AdminShowAllDrinks.IndicateFocus = false;
-            this.AdminShowAllDrinks.Location = new System.Drawing.Point(22, 647);
+            this.AdminShowAllDrinks.Location = new System.Drawing.Point(33, 970);
+            this.AdminShowAllDrinks.Margin = new System.Windows.Forms.Padding(4);
             this.AdminShowAllDrinks.Name = "AdminShowAllDrinks";
             this.AdminShowAllDrinks.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminShowAllDrinks.OnDisabledState.BorderRadius = 37;
@@ -649,13 +651,14 @@
             this.AdminShowAllDrinks.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminShowAllDrinks.OnPressedState.IconLeftImage = null;
             this.AdminShowAllDrinks.OnPressedState.IconRightImage = null;
-            this.AdminShowAllDrinks.Size = new System.Drawing.Size(214, 36);
+            this.AdminShowAllDrinks.Size = new System.Drawing.Size(321, 54);
             this.AdminShowAllDrinks.TabIndex = 48;
             this.AdminShowAllDrinks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminShowAllDrinks.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.AdminShowAllDrinks.TextMarginLeft = 0;
             this.AdminShowAllDrinks.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminShowAllDrinks.UseDefaultRadiusAndThickness = true;
+            this.AdminShowAllDrinks.Click += new System.EventHandler(this.AdminShowAllDrinks_Click);
             // 
             // AdminFillDrinkName
             // 
@@ -684,9 +687,10 @@
             this.AdminFillDrinkName.IconRight = null;
             this.AdminFillDrinkName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillDrinkName.Lines = new string[0];
-            this.AdminFillDrinkName.Location = new System.Drawing.Point(716, 39);
+            this.AdminFillDrinkName.Location = new System.Drawing.Point(1074, 58);
+            this.AdminFillDrinkName.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkName.MaxLength = 32767;
-            this.AdminFillDrinkName.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillDrinkName.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillDrinkName.Modified = false;
             this.AdminFillDrinkName.Multiline = false;
             this.AdminFillDrinkName.Name = "AdminFillDrinkName";
@@ -710,7 +714,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillDrinkName.OnIdleState = stateProperties16;
-            this.AdminFillDrinkName.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillDrinkName.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkName.PasswordChar = '\0';
             this.AdminFillDrinkName.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillDrinkName.PlaceholderText = "Fill your Drink\'s Name";
@@ -720,7 +724,7 @@
             this.AdminFillDrinkName.SelectionLength = 0;
             this.AdminFillDrinkName.SelectionStart = 0;
             this.AdminFillDrinkName.ShortcutsEnabled = true;
-            this.AdminFillDrinkName.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillDrinkName.Size = new System.Drawing.Size(495, 56);
             this.AdminFillDrinkName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillDrinkName.TabIndex = 47;
             this.AdminFillDrinkName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -778,7 +782,8 @@
             this.AdminCheckDrink.IdleIconLeftImage = null;
             this.AdminCheckDrink.IdleIconRightImage = null;
             this.AdminCheckDrink.IndicateFocus = false;
-            this.AdminCheckDrink.Location = new System.Drawing.Point(716, 96);
+            this.AdminCheckDrink.Location = new System.Drawing.Point(1074, 144);
+            this.AdminCheckDrink.Margin = new System.Windows.Forms.Padding(4);
             this.AdminCheckDrink.Name = "AdminCheckDrink";
             this.AdminCheckDrink.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminCheckDrink.OnDisabledState.BorderRadius = 37;
@@ -812,7 +817,7 @@
             this.AdminCheckDrink.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminCheckDrink.OnPressedState.IconLeftImage = null;
             this.AdminCheckDrink.OnPressedState.IconRightImage = null;
-            this.AdminCheckDrink.Size = new System.Drawing.Size(330, 36);
+            this.AdminCheckDrink.Size = new System.Drawing.Size(495, 54);
             this.AdminCheckDrink.TabIndex = 46;
             this.AdminCheckDrink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminCheckDrink.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -820,23 +825,87 @@
             this.AdminCheckDrink.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminCheckDrink.UseDefaultRadiusAndThickness = true;
             // 
+            // AdminViewAllYourDrink
+            // 
+            this.AdminViewAllYourDrink.AllowCustomTheming = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.AdminViewAllYourDrink.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.AdminViewAllYourDrink.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.AdminViewAllYourDrink.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AdminViewAllYourDrink.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AdminViewAllYourDrink.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.AdminViewAllYourDrink.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.AdminViewAllYourDrink.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.AdminViewAllYourDrink.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AdminViewAllYourDrink.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.AdminViewAllYourDrink.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.AdminViewAllYourDrink.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.AdminViewAllYourDrink.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.AdminViewAllYourDrink.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.AdminViewAllYourDrink.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.AdminViewAllYourDrink.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.AdminViewAllYourDrink.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.AdminViewAllYourDrink.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.AdminViewAllYourDrink.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.AdminViewAllYourDrink.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.AdminViewAllYourDrink.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.AdminViewAllYourDrink.CurrentTheme.Name = null;
+            this.AdminViewAllYourDrink.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.AdminViewAllYourDrink.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.AdminViewAllYourDrink.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.AdminViewAllYourDrink.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.AdminViewAllYourDrink.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AdminViewAllYourDrink.DefaultCellStyle = dataGridViewCellStyle3;
+            this.AdminViewAllYourDrink.EnableHeadersVisualStyles = false;
+            this.AdminViewAllYourDrink.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.AdminViewAllYourDrink.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.AdminViewAllYourDrink.HeaderBgColor = System.Drawing.Color.Empty;
+            this.AdminViewAllYourDrink.HeaderForeColor = System.Drawing.Color.White;
+            this.AdminViewAllYourDrink.Location = new System.Drawing.Point(33, 32);
+            this.AdminViewAllYourDrink.Name = "AdminViewAllYourDrink";
+            this.AdminViewAllYourDrink.RowHeadersVisible = false;
+            this.AdminViewAllYourDrink.RowHeadersWidth = 62;
+            this.AdminViewAllYourDrink.RowTemplate.Height = 40;
+            this.AdminViewAllYourDrink.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.AdminViewAllYourDrink.Size = new System.Drawing.Size(1006, 922);
+            this.AdminViewAllYourDrink.TabIndex = 59;
+            this.AdminViewAllYourDrink.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
             // AdminDrink
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.AdminViewAllYourDrink);
             this.Controls.Add(this.AdminUpdateDrink);
             this.Controls.Add(this.AdminDeleteDrink);
             this.Controls.Add(this.AdminAddDrink);
             this.Controls.Add(this.AdminFillDrinkPrice);
             this.Controls.Add(this.AdminFillDrinkAvailable);
             this.Controls.Add(this.AdminFillDrinkType);
-            this.Controls.Add(this.AdminViewAllCustomer);
             this.Controls.Add(this.AdminShowAllDrinks);
             this.Controls.Add(this.AdminFillDrinkName);
             this.Controls.Add(this.AdminCheckDrink);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminDrink";
-            this.Size = new System.Drawing.Size(1069, 705);
+            this.Size = new System.Drawing.Size(1604, 1058);
+            this.Load += new System.EventHandler(this.AdminDrink_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.AdminViewAllYourDrink)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -850,9 +919,9 @@
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillDrinkPrice;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillDrinkAvailable;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillDrinkType;
-        private System.Windows.Forms.ListView AdminViewAllCustomer;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminShowAllDrinks;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillDrinkName;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminCheckDrink;
+        private Bunifu.UI.WinForms.BunifuDataGridView AdminViewAllYourDrink;
     }
 }
