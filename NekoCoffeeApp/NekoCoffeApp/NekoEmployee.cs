@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace UI
 {
-    internal class Nekoemployee
+    internal class NekoEmployee
     {
         public string Name { get; set; }
         public string DateOfBirth { get; set; }
@@ -51,7 +51,7 @@ namespace UI
         {
             if (employee1 == null || employee2== null) { return false; }
 
-            if (employee1.Username != employee2.Username || employee1.Email != employee2.Email || employee1.PhoneNumber != employee2.PhoneNumber)
+            if (employee1.UserName != employee2.UserName || employee1.Email != employee2.Email || employee1.PhoneNumber != employee2.PhoneNumber)
             {
                 error1 = "Tài khoản không tồn tại!";
                 return false;
@@ -66,7 +66,7 @@ namespace UI
         {
             if (employee1 == null || employee2== null) { return false; }
 
-            if (employee1.Username != employee2.Username)
+            if (employee1.UserName != employee2.UserName)
             {
                 System.Windows.Forms.MessageBox.Show("Tài khoản không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;

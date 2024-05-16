@@ -67,12 +67,14 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AdminCheckEmployee = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminFillEmployeeName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminShowAllEmployees = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminUpdateEmployee = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.AdminViewAllCustomer = new System.Windows.Forms.ListView();
             this.AdminFillEmployeeDateOfBirth = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminFillEmployeeUserName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminFillEmployeeEmail = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -82,6 +84,8 @@
             this.AdminAddEmployee = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminDeleteEmployee = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminFillEmployeeSalary = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.AdminViewAllCustomer = new Bunifu.UI.WinForms.BunifuDataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminViewAllCustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -433,15 +437,6 @@
             this.AdminUpdateEmployee.TextMarginLeft = 0;
             this.AdminUpdateEmployee.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminUpdateEmployee.UseDefaultRadiusAndThickness = true;
-            // 
-            // AdminViewAllCustomer
-            // 
-            this.AdminViewAllCustomer.HideSelection = false;
-            this.AdminViewAllCustomer.Location = new System.Drawing.Point(33, 33);
-            this.AdminViewAllCustomer.Name = "AdminViewAllCustomer";
-            this.AdminViewAllCustomer.Size = new System.Drawing.Size(1006, 922);
-            this.AdminViewAllCustomer.TabIndex = 35;
-            this.AdminViewAllCustomer.UseCompatibleStateImageBehavior = false;
             // 
             // AdminFillEmployeeDateOfBirth
             // 
@@ -1149,11 +1144,73 @@
             this.AdminFillEmployeeSalary.UseSystemPasswordChar = false;
             this.AdminFillEmployeeSalary.WordWrap = true;
             // 
+            // AdminViewAllCustomer
+            // 
+            this.AdminViewAllCustomer.AllowCustomTheming = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.AdminViewAllCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.AdminViewAllCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.AdminViewAllCustomer.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AdminViewAllCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AdminViewAllCustomer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.AdminViewAllCustomer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.AdminViewAllCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.AdminViewAllCustomer.ColumnHeadersHeight = 40;
+            this.AdminViewAllCustomer.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.AdminViewAllCustomer.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.AdminViewAllCustomer.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.AdminViewAllCustomer.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.AdminViewAllCustomer.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.AdminViewAllCustomer.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.AdminViewAllCustomer.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.AdminViewAllCustomer.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.AdminViewAllCustomer.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.AdminViewAllCustomer.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.AdminViewAllCustomer.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.AdminViewAllCustomer.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.AdminViewAllCustomer.CurrentTheme.Name = null;
+            this.AdminViewAllCustomer.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.AdminViewAllCustomer.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.AdminViewAllCustomer.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.AdminViewAllCustomer.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.AdminViewAllCustomer.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AdminViewAllCustomer.DefaultCellStyle = dataGridViewCellStyle3;
+            this.AdminViewAllCustomer.EnableHeadersVisualStyles = false;
+            this.AdminViewAllCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.AdminViewAllCustomer.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.AdminViewAllCustomer.HeaderBgColor = System.Drawing.Color.Empty;
+            this.AdminViewAllCustomer.HeaderForeColor = System.Drawing.Color.White;
+            this.AdminViewAllCustomer.Location = new System.Drawing.Point(33, 58);
+            this.AdminViewAllCustomer.Name = "AdminViewAllCustomer";
+            this.AdminViewAllCustomer.RowHeadersVisible = false;
+            this.AdminViewAllCustomer.RowHeadersWidth = 62;
+            this.AdminViewAllCustomer.RowTemplate.Height = 40;
+            this.AdminViewAllCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.AdminViewAllCustomer.Size = new System.Drawing.Size(995, 894);
+            this.AdminViewAllCustomer.TabIndex = 46;
+            this.AdminViewAllCustomer.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
             // AdminEmployeeManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.AdminViewAllCustomer);
             this.Controls.Add(this.AdminFillEmployeeSalary);
             this.Controls.Add(this.AdminUpdateEmployee);
             this.Controls.Add(this.AdminDeleteEmployee);
@@ -1164,13 +1221,14 @@
             this.Controls.Add(this.AdminFillEmployeeEmail);
             this.Controls.Add(this.AdminFillEmployeeUserName);
             this.Controls.Add(this.AdminFillEmployeeDateOfBirth);
-            this.Controls.Add(this.AdminViewAllCustomer);
             this.Controls.Add(this.AdminShowAllEmployees);
             this.Controls.Add(this.AdminFillEmployeeName);
             this.Controls.Add(this.AdminCheckEmployee);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminEmployeeManagement";
-            this.Size = new System.Drawing.Size(1604, 1058);
+            this.Size = new System.Drawing.Size(1604, 1144);
+            this.Load += new System.EventHandler(this.AdminEmployeeManagement_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.AdminViewAllCustomer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1187,10 +1245,10 @@
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillEmployeeEmail;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillEmployeeUserName;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillEmployeeDateOfBirth;
-        private System.Windows.Forms.ListView AdminViewAllCustomer;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminShowAllEmployees;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillEmployeeName;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminCheckEmployee;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillEmployeeSalary;
+        private Bunifu.UI.WinForms.BunifuDataGridView AdminViewAllCustomer;
     }
 }

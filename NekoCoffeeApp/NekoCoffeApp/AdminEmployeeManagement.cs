@@ -3,6 +3,7 @@ using BCrypt.Net;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,6 +13,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Input;
+using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 namespace UI
 {
@@ -29,39 +32,82 @@ namespace UI
             BasePath = "https://neko-coffe-database-default-rtdb.firebaseio.com/"
         };
 
-        IFirebaseClient client;
-        private void Signup_Load(object sender, EventArgs e)
+        IFirebaseClient emp;
+        private void AdminEmployeeManagement_Load(object sender, EventArgs e)
         {
+
             try
             {
-                client = new FireSharp.FirebaseClient(ifc);
+                emp = new FireSharp.FirebaseClient(ifc);
             }
 
             catch
             {
                 MessageBox.Show("Kiểm tra lại mạng", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+            viewData();
+
         }
 
         private void AdminAddEmployee_Click(object sender, EventArgs e)
         {
-           se res = client.Get(@"Users/" + AdminFillEmployeeUserName.text);
-            NekoUser ResUser = res.ResultAs<NekoUser>();
-
-            NekoUser employee = new NekoUser()
+            if (
+               string.IsNullOrWhiteSpace(AdminFillEmployeeDateOfBirth.Text) ||
+               string.IsNullOrWhiteSpace(AdminFillEmployeeGender.Text) ||
+            string.IsNullOrWhiteSpace(AdminFillEmployeeAddress.Text) ||
+               string.IsNullOrWhiteSpace(AdminFillEmployeePhoneNumber.Text) ||
+                string.IsNullOrWhiteSpace(AdminFillEmployeeUserName.Text) ||
+               string.IsNullOrWhiteSpace(AdminFillEmployeeSalary.Text))
             {
-                EmployeeName = AdminFillEmployeeName.text,
-                Password = "",
-                DateOfBirth = AdminFillEmployeeDateOfBirth.text,
-                Gender = AdminFillEmployeeGender.text,
-                Address = AdminFillEmployeeAddress.text,
-                PhoneNumber = AdminFillEmployeePhoneNumber.text,
-                Email = AdminFillEmployeeEmail.text,
-                Salary = AdminFillEmployeeSalary.text
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+ 
+            FirebaseResponse res = emp.Get(@"Employees/" + AdminFillEmployeeUserName.Text);
+            NekoEmployee ResEmployee = res.ResultAs<NekoEmployee>();
+
+            NekoEmployee CurEmployee = new NekoEmployee()
+            {
+                UserName = AdminFillEmployeeUserName.Text
             };
 
-            setresponse set = client.set(@"users/" + txtusername.text, user);
+            if (NekoEmployee.Search(ResEmployee, CurEmployee))
+            {
+                NekoEmployee.ShowError_2();
+                return;
+            }
 
+            NekoEmployee employee = new NekoEmployee()
+            {
+                Name = AdminFillEmployeeName.Text,
+                DateOfBirth = AdminFillEmployeeDateOfBirth.Text,
+                Gender = AdminFillEmployeeGender.Text,
+                Address = AdminFillEmployeeAddress.Text,
+                PhoneNumber = AdminFillEmployeePhoneNumber.Text,
+                Email = AdminFillEmployeeEmail.Text,
+                UserName = AdminFillEmployeeUserName.Text,
+                Salary = AdminFillEmployeeSalary.Text
+            };
+
+            SetResponse set = emp.Set(@"employees/" + AdminFillEmployeeUserName.Text, employee);
+
+
+            if (set.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                MessageBox.Show($"Thêm thành công nhân viên {AdminFillEmployeeUserName.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+
+       
+
+        void viewData()
+        {
+            var data = emp.Get(@"/employees");
+            var mList = JsonConvert.DeserializeObject<IDictionary<string, NekoEmployee>>(data.Body);
+            var listNumber = mList.Values.ToList();
+            AdminViewAllCustomer.DataSource = listNumber;
         }
     }
 }
