@@ -347,6 +347,7 @@
             this.AdminShowAllEmployees.TextMarginLeft = 0;
             this.AdminShowAllEmployees.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminShowAllEmployees.UseDefaultRadiusAndThickness = true;
+            this.AdminShowAllEmployees.Click += new System.EventHandler(this.AdminShowAllEmployees_Click);
             // 
             // AdminUpdateEmployee
             // 

@@ -32,7 +32,7 @@ namespace UI
 
         private void AdminAdjustEmployee_Click(object sender, EventArgs e)
         {
-            employee_edit employee_Edit = new employee_edit();
+            edit_Employee employee_Edit = new edit_Employee();
             employee_Edit.Show();
         }
     }

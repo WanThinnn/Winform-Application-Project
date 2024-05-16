@@ -321,12 +321,19 @@
     <Compile Include="AdminFP.Designer.cs">
       <DependentUpon>AdminFP.cs</DependentUpon>
     </Compile>
-    <Compile Include="NekoEmployee.cs" />
-    <Compile Include="employee_edit.cs">
+    <Compile Include="edit_Order.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="employee_edit.Designer.cs">
-      <DependentUpon>employee_edit.cs</DependentUpon>
+    <Compile Include="edit_Order.Designer.cs">
+      <DependentUpon>edit_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NekoDrink.cs" />
+    <Compile Include="NekoEmployee.cs" />
+    <Compile Include="edit_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_Employee.Designer.cs">
+      <DependentUpon>edit_Employee.cs</DependentUpon>
     </Compile>
     <Compile Include="ForgotPwd.cs">
       <SubType>Form</SubType>
@@ -419,8 +426,11 @@
     <EmbeddedResource Include="AdminFP.resx">
       <DependentUpon>AdminFP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="employee_edit.resx">
-      <DependentUpon>employee_edit.cs</DependentUpon>
+    <EmbeddedResource Include="edit_Order.resx">
+      <DependentUpon>edit_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_Employee.resx">
+      <DependentUpon>edit_Employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPwd.resx">
       <DependentUpon>ForgotPwd.cs</DependentUpon>

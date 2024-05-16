@@ -109,5 +109,10 @@ namespace UI
             var listNumber = mList.Values.ToList();
             AdminViewAllCustomer.DataSource = listNumber;
         }
+
+        private void AdminShowAllEmployees_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

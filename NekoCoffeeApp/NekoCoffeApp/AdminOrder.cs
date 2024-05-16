@@ -29,5 +29,16 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private void AdminOrderBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void edit_Order_Btn_Click(object sender, EventArgs e)
+        {
+            edit_Order edit_Order = new edit_Order();
+            edit_Order.Show();
+        }
     }
 }
