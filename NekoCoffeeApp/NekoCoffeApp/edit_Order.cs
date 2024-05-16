@@ -16,5 +16,10 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private void adminDrink1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
