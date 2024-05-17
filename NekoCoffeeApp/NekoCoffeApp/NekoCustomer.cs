@@ -11,7 +11,7 @@ namespace UI
 {
     internal class NekoCustomer
     {
-        public string Username { get; set; }
+        public string UserName { get; set; }
         public string Name { get; set; }
         public string Gender { get; set; }
         public string DateOfBirth { get; set; }
@@ -38,7 +38,7 @@ namespace UI
         {
             if (customer1 == null || customer2 == null) { return false; }
 
-            if (customer1.Username != customer2.Username || customer1.Email != customer2.Email || customer1.PhoneNumber != customer2.PhoneNumber)
+            if (customer1.UserName != customer2.UserName || customer1.Email != customer2.Email || customer1.PhoneNumber != customer2.PhoneNumber)
             {
                 error1 = "Khách hàng không tồn tại!";
                 return false;
@@ -51,7 +51,7 @@ namespace UI
         {
             if (customer1 == null || customer2 == null) { return false; }
 
-            if (customer1.Username != customer2.Username)
+            if (customer1.UserName != customer2.UserName)
             {
                 System.Windows.Forms.MessageBox.Show("Tài khoản không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
