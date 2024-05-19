@@ -12,7 +12,7 @@ namespace UI
     internal class NekoDrink
     {
         public string Name { get; set; }
-        public string Address { get; set; }
+        public string Available { get; set; }
         public string Price { get; set; }
         public string Type { get; set; }
 
@@ -22,7 +22,6 @@ namespace UI
 
         public static void ShowError()
         {
-
             System.Windows.Forms.MessageBox.Show(error1, error2, MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
@@ -35,7 +34,7 @@ namespace UI
         {
             if (drink1 == null || drink2 == null) { return false; }
 
-            if (drink1.Type != drink2.Type)
+            if (drink1.Name != drink2.Name)
             {
                 error1 = " không tồn tại!";
                 return false;
@@ -47,7 +46,7 @@ namespace UI
         {
             if (drink1 == null || drink2 == null) { return false; }
 
-            if (drink1.Type != drink2.Type )
+            if (drink1.Name != drink2.Name )
             {
                 error1 = "Nước không tồn tại!";
                 return false;
