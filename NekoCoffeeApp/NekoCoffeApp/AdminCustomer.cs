@@ -129,6 +129,20 @@ namespace UI
                 return;
             }
 
+            FirebaseResponse res = ctm.Get(@"Customers/" + AdminFillCustomerID.Text);
+            NekoCustomer ResCustomer = res.ResultAs<NekoCustomer>();
+
+            NekoCustomer CurCustomer = new NekoCustomer()
+            {
+                ID = AdminFillCustomerID.Text
+            };
+
+            if (!NekoCustomer.IsExist(ResCustomer, CurCustomer))
+            {
+                NekoCustomer.ShowError_3();
+                return;
+            }
+
             // Hiển thị hộp thoại xác nhận
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xoá khách hàng này?", "Xác nhận xoá", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
