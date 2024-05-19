@@ -121,8 +121,21 @@ namespace UI
                     return;
                 }
 
-                // Hiển thị hộp thoại xác nhận
-                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xoá nước?", "Xác nhận xoá", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            FirebaseResponse res = drk.Get(@"Drinks/" + AdminFillDrinkName.Text);
+            NekoDrink ResDrink = res.ResultAs<NekoDrink>();
+
+            NekoDrink CurDrink = new NekoDrink()
+            {
+                Name = AdminFillDrinkName.Text
+            };
+
+            if (!NekoDrink.IsExist(ResDrink, CurDrink))
+            {
+                NekoDrink.ShowError_3();
+                return;
+            }
+            // Hiển thị hộp thoại xác nhận
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xoá nước?", "Xác nhận xoá", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (result == DialogResult.OK)
                 {
                     var delete = drk.Delete(@"Drinks/" + AdminFillDrinkName.Text);
