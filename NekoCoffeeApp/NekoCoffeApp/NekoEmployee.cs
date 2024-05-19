@@ -11,6 +11,7 @@ namespace UI
 {
     internal class NekoEmployee
     {
+        public string ID { get; set; }
         public string Name { get; set; }
         public string DateOfBirth { get; set; }
         public string Gender { get; set; }
@@ -18,7 +19,6 @@ namespace UI
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         public string Salary { get; set; }
-        public string UserName { get; set; }
 
 
         private static string error1 = "Không tồn tại!";
@@ -32,14 +32,14 @@ namespace UI
 
         public static void ShowError_2()
         {
-            System.Windows.Forms.MessageBox.Show("Không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            System.Windows.Forms.MessageBox.Show("Đã tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         public static bool IsEqual(NekoEmployee employee1, NekoEmployee employee2)
         {
             if (employee1 == null || employee2== null) { return false; }
 
-            if (employee1.Name != employee2.Name)
+            if (employee1.ID != employee2.ID)
             {
                 error1 = "Nhân viên không tồn tại!";
                 return false;
@@ -51,7 +51,7 @@ namespace UI
         {
             if (employee1 == null || employee2== null) { return false; }
 
-            if (employee1.UserName != employee2.UserName || employee1.Email != employee2.Email || employee1.PhoneNumber != employee2.PhoneNumber)
+            if (employee1.ID != employee2.ID || employee1.Email != employee2.Email || employee1.PhoneNumber != employee2.PhoneNumber)
             {
                 error1 = "Tài khoản không tồn tại!";
                 return false;
@@ -66,7 +66,7 @@ namespace UI
         {
             if (employee1 == null || employee2== null) { return false; }
 
-            if (employee1.UserName != employee2.UserName)
+            if (employee1.ID != employee2.ID)
             {
                 System.Windows.Forms.MessageBox.Show("Tài khoản không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
