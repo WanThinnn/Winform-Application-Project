@@ -64,8 +64,8 @@
             this.AdminShowAllDrinks = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminFillDrinkName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminCheckDrink = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.AdminViewAllYourDrink = new Bunifu.UI.WinForms.BunifuDataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.AdminViewAllYourDrink)).BeginInit();
+            this.AdminViewAllYourDrinks = new Bunifu.UI.WinForms.BunifuDataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminViewAllYourDrinks)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -252,6 +252,7 @@
             this.AdminDeleteDrink.TextMarginLeft = 0;
             this.AdminDeleteDrink.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminDeleteDrink.UseDefaultRadiusAndThickness = true;
+            this.AdminDeleteDrink.Click += new System.EventHandler(this.AdminDeleteDrink_Click);
             // 
             // AdminAddDrink
             // 
@@ -825,17 +826,17 @@
             this.AdminCheckDrink.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminCheckDrink.UseDefaultRadiusAndThickness = true;
             // 
-            // AdminViewAllYourDrink
+            // AdminViewAllYourDrinks
             // 
-            this.AdminViewAllYourDrink.AllowCustomTheming = false;
+            this.AdminViewAllYourDrinks.AllowCustomTheming = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.AdminViewAllYourDrink.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.AdminViewAllYourDrink.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.AdminViewAllYourDrink.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AdminViewAllYourDrink.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AdminViewAllYourDrink.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.AdminViewAllYourDrink.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.AdminViewAllYourDrinks.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.AdminViewAllYourDrinks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.AdminViewAllYourDrinks.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AdminViewAllYourDrinks.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AdminViewAllYourDrinks.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.AdminViewAllYourDrinks.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
@@ -843,26 +844,26 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.AdminViewAllYourDrink.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.AdminViewAllYourDrink.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.AdminViewAllYourDrink.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.AdminViewAllYourDrink.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.AdminViewAllYourDrink.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.AdminViewAllYourDrink.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.AdminViewAllYourDrink.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.AdminViewAllYourDrink.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.AdminViewAllYourDrink.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.AdminViewAllYourDrink.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.AdminViewAllYourDrink.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.AdminViewAllYourDrink.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.AdminViewAllYourDrink.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.AdminViewAllYourDrink.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.AdminViewAllYourDrink.CurrentTheme.Name = null;
-            this.AdminViewAllYourDrink.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.AdminViewAllYourDrink.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.AdminViewAllYourDrink.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.AdminViewAllYourDrink.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.AdminViewAllYourDrink.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.AdminViewAllYourDrinks.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.AdminViewAllYourDrinks.ColumnHeadersHeight = 40;
+            this.AdminViewAllYourDrinks.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.AdminViewAllYourDrinks.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.AdminViewAllYourDrinks.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.AdminViewAllYourDrinks.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.AdminViewAllYourDrinks.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.AdminViewAllYourDrinks.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.AdminViewAllYourDrinks.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.AdminViewAllYourDrinks.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.AdminViewAllYourDrinks.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.AdminViewAllYourDrinks.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.AdminViewAllYourDrinks.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.AdminViewAllYourDrinks.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.AdminViewAllYourDrinks.CurrentTheme.Name = null;
+            this.AdminViewAllYourDrinks.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.AdminViewAllYourDrinks.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.AdminViewAllYourDrinks.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.AdminViewAllYourDrinks.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.AdminViewAllYourDrinks.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -870,28 +871,28 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.AdminViewAllYourDrink.DefaultCellStyle = dataGridViewCellStyle3;
-            this.AdminViewAllYourDrink.EnableHeadersVisualStyles = false;
-            this.AdminViewAllYourDrink.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.AdminViewAllYourDrink.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.AdminViewAllYourDrink.HeaderBgColor = System.Drawing.Color.Empty;
-            this.AdminViewAllYourDrink.HeaderForeColor = System.Drawing.Color.White;
-            this.AdminViewAllYourDrink.Location = new System.Drawing.Point(33, 32);
-            this.AdminViewAllYourDrink.Name = "AdminViewAllYourDrink";
-            this.AdminViewAllYourDrink.RowHeadersVisible = false;
-            this.AdminViewAllYourDrink.RowHeadersWidth = 62;
-            this.AdminViewAllYourDrink.RowTemplate.Height = 40;
-            this.AdminViewAllYourDrink.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.AdminViewAllYourDrink.Size = new System.Drawing.Size(1006, 922);
-            this.AdminViewAllYourDrink.TabIndex = 59;
-            this.AdminViewAllYourDrink.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.AdminViewAllYourDrinks.DefaultCellStyle = dataGridViewCellStyle3;
+            this.AdminViewAllYourDrinks.EnableHeadersVisualStyles = false;
+            this.AdminViewAllYourDrinks.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.AdminViewAllYourDrinks.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.AdminViewAllYourDrinks.HeaderBgColor = System.Drawing.Color.Empty;
+            this.AdminViewAllYourDrinks.HeaderForeColor = System.Drawing.Color.White;
+            this.AdminViewAllYourDrinks.Location = new System.Drawing.Point(33, 32);
+            this.AdminViewAllYourDrinks.Name = "AdminViewAllYourDrinks";
+            this.AdminViewAllYourDrinks.RowHeadersVisible = false;
+            this.AdminViewAllYourDrinks.RowHeadersWidth = 62;
+            this.AdminViewAllYourDrinks.RowTemplate.Height = 40;
+            this.AdminViewAllYourDrinks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.AdminViewAllYourDrinks.Size = new System.Drawing.Size(1006, 922);
+            this.AdminViewAllYourDrinks.TabIndex = 59;
+            this.AdminViewAllYourDrinks.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
             // AdminDrink
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.AdminViewAllYourDrink);
+            this.Controls.Add(this.AdminViewAllYourDrinks);
             this.Controls.Add(this.AdminUpdateDrink);
             this.Controls.Add(this.AdminDeleteDrink);
             this.Controls.Add(this.AdminAddDrink);
@@ -905,7 +906,7 @@
             this.Name = "AdminDrink";
             this.Size = new System.Drawing.Size(1604, 1058);
             this.Load += new System.EventHandler(this.AdminDrink_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.AdminViewAllYourDrink)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminViewAllYourDrinks)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -922,6 +923,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminShowAllDrinks;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillDrinkName;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminCheckDrink;
-        private Bunifu.UI.WinForms.BunifuDataGridView AdminViewAllYourDrink;
+        private Bunifu.UI.WinForms.BunifuDataGridView AdminViewAllYourDrinks;
     }
 }
