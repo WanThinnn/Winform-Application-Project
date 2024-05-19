@@ -12,13 +12,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
 using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 namespace UI
 {
-    public partial class AdminEmployeeManagement : UserControl
+    public partial class AdminEmployeeManagement : System.Windows.Forms.UserControl
     {
 
         public AdminEmployeeManagement()
@@ -57,19 +58,20 @@ namespace UI
                string.IsNullOrWhiteSpace(AdminFillEmployeeGender.Text) ||
             string.IsNullOrWhiteSpace(AdminFillEmployeeAddress.Text) ||
                string.IsNullOrWhiteSpace(AdminFillEmployeePhoneNumber.Text) ||
-                string.IsNullOrWhiteSpace(AdminFillEmployeeUserName.Text) ||
+                string.IsNullOrWhiteSpace(AdminFillEmployeeID.Text) ||
+               string.IsNullOrWhiteSpace(AdminFillEmployeeName.Text) ||
                string.IsNullOrWhiteSpace(AdminFillEmployeeSalary.Text))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
  
-            FirebaseResponse res = emp.Get(@"Employees/" + AdminFillEmployeeUserName.Text);
+            FirebaseResponse res = emp.Get(@"Employees/" + AdminFillEmployeeID.Text);
             NekoEmployee ResEmployee = res.ResultAs<NekoEmployee>();
 
             NekoEmployee CurEmployee = new NekoEmployee()
             {
-                UserName = AdminFillEmployeeUserName.Text
+                ID = AdminFillEmployeeID.Text
             };
 
             if (NekoEmployee.Search(ResEmployee, CurEmployee))
@@ -80,22 +82,22 @@ namespace UI
 
             NekoEmployee employee = new NekoEmployee()
             {
+                ID = AdminFillEmployeeID.Text,
                 Name = AdminFillEmployeeName.Text,
                 DateOfBirth = AdminFillEmployeeDateOfBirth.Text,
                 Gender = AdminFillEmployeeGender.Text,
                 Address = AdminFillEmployeeAddress.Text,
                 PhoneNumber = AdminFillEmployeePhoneNumber.Text,
                 Email = AdminFillEmployeeEmail.Text,
-                UserName = AdminFillEmployeeUserName.Text,
                 Salary = AdminFillEmployeeSalary.Text
             };
 
-            SetResponse set = emp.Set(@"employees/" + AdminFillEmployeeUserName.Text, employee);
+            SetResponse set = emp.Set(@"Employees/" + AdminFillEmployeeID.Text, employee);
 
 
             if (set.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                MessageBox.Show($"Thêm thành công nhân viên {AdminFillEmployeeUserName.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Thêm thành công nhân viên {AdminFillEmployeeID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -104,15 +106,45 @@ namespace UI
 
         void viewData()
         {
-            var data = emp.Get(@"/employees");
+            var data = emp.Get(@"/Employees");
             var mList = JsonConvert.DeserializeObject<IDictionary<string, NekoEmployee>>(data.Body);
             var listNumber = mList.Values.ToList();
-            AdminViewAllCustomer.DataSource = listNumber;
+            AdminViewAllEmployees.DataSource = listNumber;
         }
 
         private void AdminShowAllEmployees_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void AdminDeleteEmployee_Click(object sender, EventArgs e)
+        {
+            if (
+                string.IsNullOrWhiteSpace(AdminFillEmployeeID.Text)    )
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Hiển thị hộp thoại xác nhận
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xoá tài khoản này?", "Xác nhận xoá", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.OK)
+            {
+                var delete = emp.Delete(@"Employees/" + AdminFillEmployeeID.Text);
+                if (delete.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    MessageBox.Show($"Xoá nhân viên {AdminFillEmployeeID.Text} thành công!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    AdminFillEmployeeID.Clear();                  
+                }
+            }
+            else
+            {
+                return;
+            }
+            viewData();
+
+        }
+
+        
     }
 }
