@@ -33,6 +33,11 @@ namespace UI
             System.Windows.Forms.MessageBox.Show("Khách hàng đã tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
+        public static void ShowError_3()
+        {
+            System.Windows.Forms.MessageBox.Show("Không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
 
         public static bool IsExist(NekoCustomer customer1, NekoCustomer customer2)
         {
