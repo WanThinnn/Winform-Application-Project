@@ -33,6 +33,10 @@ namespace UI
             System.Windows.Forms.MessageBox.Show("Tài khoản đã tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
+        public static void ShowError_3()
+        {
+            System.Windows.Forms.MessageBox.Show("Không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
         public static bool IsEqual(NekoUser user1, NekoUser user2)
         {
             if (user1 == null || user2 == null) { return false; }
