@@ -62,18 +62,18 @@ namespace UI
                string.IsNullOrWhiteSpace(AdminFillCustomerAddress.Text) ||
                string.IsNullOrWhiteSpace(AdminFillCustomerPhoneNumber.Text) ||
                string.IsNullOrWhiteSpace(AdminFillCustomerEmail.Text) ||
-               string.IsNullOrWhiteSpace(AdminFillCustomerUserName.Text))
+               string.IsNullOrWhiteSpace(AdminFillCustomerID.Text))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            FirebaseResponse res = ctm.Get(@"Customers/" + AdminFillCustomerName.Text);
+            FirebaseResponse res = ctm.Get(@"Customers/" + AdminFillCustomerID.Text);
             NekoCustomer ResCustomer= res.ResultAs<NekoCustomer>();
 
             NekoCustomer CurCustomer = new NekoCustomer()
             {
-                UserName = AdminFillCustomerUserName.Text
+                ID = AdminFillCustomerID.Text
             };
 
             if (NekoCustomer.Search(ResCustomer, CurCustomer))
@@ -84,7 +84,8 @@ namespace UI
 
             NekoCustomer customer  = new NekoCustomer()
             {
-                UserName = AdminFillCustomerUserName.Text,
+                Name = AdminFillCustomerName.Text,
+                ID = AdminFillCustomerID.Text,
                 DateOfBirth = AdminFillCustomerDateOfBirth.Text,
                 Gender = AdminFillCustomerGender.Text,
                 Address = AdminFillCustomerAddress.Text,
@@ -92,24 +93,29 @@ namespace UI
                 Email = AdminFillCustomerEmail.Text,
             };
 
-            SetResponse set = ctm.Set(@"Customers/" + AdminFillCustomerUserName.Text, customer);
+            SetResponse set = ctm.Set(@"Customers/" + AdminFillCustomerID.Text, customer);
 
 
             if (set.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                MessageBox.Show($"Thêm thành công nhân viên {AdminFillCustomerUserName.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Thêm thành công nhân viên {AdminFillCustomerID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         void viewData()
         {
-            var data = ctm.Get(@"/Cusstomers");
+            var data = ctm.Get(@"/Customers");
             var mList = JsonConvert.DeserializeObject<IDictionary<string, NekoCustomer>>(data.Body);
             var listNumber = mList.Values.ToList();
             AdminViewAllYourCustomers.DataSource = listNumber;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void AdminFillCustomerDateOfBirth_TextChanged(object sender, EventArgs e)
         {
 
         }
