@@ -128,7 +128,7 @@ namespace UI
             {
                 Name = AdminFillDrinkName.Text
             };
-
+            
             if (!NekoDrink.IsExist(ResDrink, CurDrink))
             {
                 NekoDrink.ShowError_3();

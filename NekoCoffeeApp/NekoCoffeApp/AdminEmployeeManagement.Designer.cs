@@ -401,7 +401,7 @@
             this.AdminUpdateEmployee.IdleIconLeftImage = null;
             this.AdminUpdateEmployee.IdleIconRightImage = null;
             this.AdminUpdateEmployee.IndicateFocus = false;
-            this.AdminUpdateEmployee.Location = new System.Drawing.Point(1074, 994);
+            this.AdminUpdateEmployee.Location = new System.Drawing.Point(1414, 862);
             this.AdminUpdateEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.AdminUpdateEmployee.Name = "AdminUpdateEmployee";
             this.AdminUpdateEmployee.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -436,13 +436,14 @@
             this.AdminUpdateEmployee.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminUpdateEmployee.OnPressedState.IconLeftImage = null;
             this.AdminUpdateEmployee.OnPressedState.IconRightImage = null;
-            this.AdminUpdateEmployee.Size = new System.Drawing.Size(495, 54);
+            this.AdminUpdateEmployee.Size = new System.Drawing.Size(186, 47);
             this.AdminUpdateEmployee.TabIndex = 44;
             this.AdminUpdateEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminUpdateEmployee.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.AdminUpdateEmployee.TextMarginLeft = 0;
             this.AdminUpdateEmployee.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminUpdateEmployee.UseDefaultRadiusAndThickness = true;
+            this.AdminUpdateEmployee.Click += new System.EventHandler(this.AdminUpdateEmployee_Click);
             // 
             // AdminFillEmployeeDateOfBirth
             // 
