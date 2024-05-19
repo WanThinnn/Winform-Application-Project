@@ -30,6 +30,10 @@ namespace UI
             System.Windows.Forms.MessageBox.Show("Không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
+        public static void ShowError_3()
+        {
+            System.Windows.Forms.MessageBox.Show("Không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
         public static bool IsEqual(NekoDrink drink1, NekoDrink drink2)
         {
             if (drink1 == null || drink2 == null) { return false; }
