@@ -119,5 +119,32 @@ namespace UI
         {
 
         }
+
+        private void AdminDeleteCustomer_Click(object sender, EventArgs e)
+        {
+            if (
+                string.IsNullOrWhiteSpace(AdminFillCustomerID.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Hiển thị hộp thoại xác nhận
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xoá khách hàng này?", "Xác nhận xoá", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.OK)
+            {
+                var delete = ctm.Delete(@"Customers/" + AdminFillCustomerID.Text);
+                if (delete.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    MessageBox.Show($"Xoá khách hàng {AdminFillCustomerID.Text} thành công!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    AdminFillCustomerID.Clear();
+                }
+            }
+            else
+            {
+                return;
+            }
+            viewData();
+        }
     }
 }
