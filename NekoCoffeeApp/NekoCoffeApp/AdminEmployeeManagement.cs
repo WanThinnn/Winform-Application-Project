@@ -125,7 +125,19 @@ namespace UI
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            FirebaseResponse res = emp.Get(@"Employees/" + AdminFillEmployeeID.Text);
+            NekoEmployee ResEmployee = res.ResultAs<NekoEmployee>();
 
+            NekoEmployee CurEmployee = new NekoEmployee()
+            {
+                ID = AdminFillEmployeeID.Text
+            };
+
+            if (!NekoEmployee.IsExist(ResEmployee, CurEmployee))
+            {
+                NekoEmployee.ShowError_3();
+                return;
+            }
             // Hiển thị hộp thoại xác nhận
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xoá tài khoản này?", "Xác nhận xoá", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
@@ -145,6 +157,36 @@ namespace UI
 
         }
 
-        
+        private void AdminUpdateEmployee_Click(object sender, EventArgs e)
+        {
+
+            // Hiển thị hộp thoại xác nhận
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn sửa thông tin ?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.OK)
+            {
+                NekoEmployee employee = new NekoEmployee()
+                {
+                    ID = AdminFillEmployeeID.Text,
+                    Name = AdminFillEmployeeName.Text,
+                    DateOfBirth = AdminFillEmployeeDateOfBirth.Text,
+                    Gender = AdminFillEmployeeGender.Text,
+                    Address = AdminFillEmployeeAddress.Text,
+                    PhoneNumber = AdminFillEmployeePhoneNumber.Text,
+                    Email = AdminFillEmployeeEmail.Text,
+                    Salary = AdminFillEmployeeSalary.Text
+                };
+                FirebaseResponse update = emp.Update(@"Employees/" + AdminFillEmployeeID.Text, employee);
+                if (update.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    MessageBox.Show($"Sửa nhân viên {AdminFillEmployeeID.Text} thành công!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    AdminFillEmployeeID.Clear();
+                }
+            }
+            else
+            {
+                return;
+            }
+            viewData();
+        }
     }
 }
