@@ -55,15 +55,16 @@ namespace UI
         private void AdminAddDrink_Click(object sender, EventArgs e)
         {
             if (
+               string.IsNullOrWhiteSpace(AdminFillDrinkName.Text) ||
                string.IsNullOrWhiteSpace(AdminFillDrinkType.Text) ||
                string.IsNullOrWhiteSpace(AdminFillDrinkPrice.Text) ||
-            string.IsNullOrWhiteSpace(AdminFillDrinkAvailable.Text))
+               string.IsNullOrWhiteSpace(AdminFillDrinkAvailable.Text))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            FirebaseResponse res = drk.Get(@"Drinks/" + AdminFillDrinkType.Text);
+            FirebaseResponse res = drk.Get(@"Drinks/" + AdminFillDrinkName.Text);
             NekoDrink ResDrink = res.ResultAs<NekoDrink>();
 
             NekoDrink CurDrink = new NekoDrink()
@@ -71,15 +72,16 @@ namespace UI
                 Name = AdminFillDrinkName.Text
             };
 
-            //if (NekoDrink.Search(ResDrink, CurDrink))
-            //{
-            //    NekoDrink.ShowError_2();
-            //    return;
-            //}
+            if (NekoDrink.Search(ResDrink, CurDrink))
+            {
+                NekoDrink.ShowError_2();
+                return;
+            }
 
             NekoDrink drink = new NekoDrink()
             {
-                Address = AdminFillDrinkAvailable.Text,
+                Name = AdminFillDrinkName.Text,
+                Available = AdminFillDrinkAvailable.Text,
                 Price = AdminFillDrinkPrice.Text,
                 Type = AdminFillDrinkType.Text
             };
@@ -89,7 +91,7 @@ namespace UI
 
             if (set.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                MessageBox.Show($"Thêm thành công nước {AdminFillDrinkType.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Thêm thành công nước {AdminFillDrinkName.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -101,7 +103,7 @@ namespace UI
             var data = drk.Get(@"/Drinks");
             var mList = JsonConvert.DeserializeObject<IDictionary<string, NekoDrink>>(data.Body);
             var listNumber = mList.Values.ToList();
-            AdminViewAllYourDrink.DataSource = listNumber;
+            AdminViewAllYourDrinks.DataSource = listNumber;
         }
 
         private void AdminShowAllDrinks_Click(object sender, EventArgs e)
@@ -109,5 +111,34 @@ namespace UI
 
         }
 
+        private void AdminDeleteDrink_Click(object sender, EventArgs e)
+        {
+        
+                if (
+                    string.IsNullOrWhiteSpace(AdminFillDrinkName.Text))
+                {
+                    MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Hiển thị hộp thoại xác nhận
+                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xoá nước?", "Xác nhận xoá", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
+                {
+                    var delete = drk.Delete(@"Drinks/" + AdminFillDrinkName.Text);
+                    if (delete.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        MessageBox.Show($"Xoá nước {AdminFillDrinkName.Text} thành công!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        AdminFillDrinkName.Clear();
+                    }
+                }
+                else
+                {
+                    return;
+                }
+                viewData();
+
+            
+        }
     }
 }
