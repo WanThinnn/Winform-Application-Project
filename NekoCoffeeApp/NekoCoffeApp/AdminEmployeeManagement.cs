@@ -99,6 +99,8 @@ namespace UI
             {
                 MessageBox.Show($"Thêm thành công nhân viên {AdminFillEmployeeID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            else return;
+            viewData();
         }
 
 
@@ -159,7 +161,19 @@ namespace UI
 
         private void AdminUpdateEmployee_Click(object sender, EventArgs e)
         {
+            FirebaseResponse res = emp.Get(@"Employees/" + AdminFillEmployeeID.Text);
+            NekoEmployee ResEmployee = res.ResultAs<NekoEmployee>();
 
+            NekoEmployee CurEmployee = new NekoEmployee()
+            {
+                ID = AdminFillEmployeeID.Text
+            };
+
+            if (!NekoEmployee.IsExist(ResEmployee, CurEmployee))
+            {
+                NekoEmployee.ShowError_3();
+                return;
+            }
             // Hiển thị hộp thoại xác nhận
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn sửa thông tin ?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
