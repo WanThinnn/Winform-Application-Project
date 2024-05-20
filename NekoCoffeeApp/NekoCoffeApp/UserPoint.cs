@@ -12,6 +12,17 @@ namespace UI
 {
     public partial class UserPoint : UserControl
     {
+
+        private static UserPoint _instance;
+        public static UserPoint Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UserPoint();
+                return _instance;
+            }
+        }
         public UserPoint()
         {
             InitializeComponent();
