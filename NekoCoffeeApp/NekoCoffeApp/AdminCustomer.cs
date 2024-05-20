@@ -143,6 +143,7 @@ namespace UI
                 return;
             }
 
+
             // Hiển thị hộp thoại xác nhận
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xoá khách hàng này?", "Xác nhận xoá", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
@@ -152,6 +153,63 @@ namespace UI
                 {
                     MessageBox.Show($"Xoá khách hàng {AdminFillCustomerID.Text} thành công!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     AdminFillCustomerID.Clear();
+                }
+            }
+            else
+            {
+                return;
+            }
+            viewData();
+        }
+
+        private void AdminUpdateCustomer_Click(object sender, EventArgs e)
+        {
+            if (
+                string.IsNullOrWhiteSpace(AdminFillCustomerID.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            FirebaseResponse res = ctm.Get(@"Customers/" + AdminFillCustomerID.Text);
+            NekoCustomer ResCustomer = res.ResultAs<NekoCustomer>();
+
+            NekoCustomer CurCustomer = new NekoCustomer()
+            {
+                ID = AdminFillCustomerID.Text
+            };
+
+            if (!NekoCustomer.IsExist(ResCustomer, CurCustomer))
+            {
+                NekoCustomer.ShowError_3();
+                return;
+            }
+
+            NekoCustomer customer = new NekoCustomer()
+            {
+                Name = AdminFillCustomerName.Text,
+                ID = AdminFillCustomerID.Text,
+                DateOfBirth = AdminFillCustomerDateOfBirth.Text,
+                Gender = AdminFillCustomerGender.Text,
+                Address = AdminFillCustomerAddress.Text,
+                PhoneNumber = AdminFillCustomerPhoneNumber.Text,
+                Email = AdminFillCustomerEmail.Text,
+            };
+
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật thông tin?", "Xác nhận ", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.OK)
+            {
+                FirebaseResponse update = ctm.Update(@"Customers/" + AdminFillCustomerID.Text, customer);
+                if (update.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    MessageBox.Show($"Cập nhật khách hàng {AdminFillCustomerID.Text} thành công!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    AdminFillCustomerID.Clear();
+                    AdminFillCustomerAddress.Clear();
+                    AdminFillCustomerName.Clear();
+                    AdminFillCustomerDateOfBirth.Clear();
+                    AdminFillCustomerEmail.Clear();
+                    AdminFillCustomerPhoneNumber.Clear();
+                    AdminFillCustomerGender.Clear();
                 }
             }
             else

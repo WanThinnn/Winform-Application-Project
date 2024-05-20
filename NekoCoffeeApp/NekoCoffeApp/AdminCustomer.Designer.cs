@@ -1091,6 +1091,7 @@
             this.AdminUpdateCustomer.TextMarginLeft = 0;
             this.AdminUpdateCustomer.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminUpdateCustomer.UseDefaultRadiusAndThickness = true;
+            this.AdminUpdateCustomer.Click += new System.EventHandler(this.AdminUpdateCustomer_Click);
             // 
             // AdminViewAllYourCustomers
             // 
