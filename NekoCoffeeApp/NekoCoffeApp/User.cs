@@ -108,7 +108,14 @@ namespace UI
 
         private void btnDiscount_Click(object sender, EventArgs e)
         {
-
+            if (!panelUserControl.Controls.Contains(UserDiscount.Instance))
+            {
+                panelUserControl.Controls.Add(UserDiscount.Instance);
+                UserDiscount.Instance.Dock = DockStyle.Fill;
+                UserDiscount.Instance.BringToFront();
+            }
+            else
+                UserDiscount.Instance.BringToFront();
         }
 
         private void btnOrder_Click(object sender, EventArgs e)

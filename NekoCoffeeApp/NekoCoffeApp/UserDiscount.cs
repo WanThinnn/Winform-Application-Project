@@ -12,6 +12,16 @@ namespace UI
 {
     public partial class UserDiscount : UserControl
     {
+        private static UserDiscount _instance;
+        public static UserDiscount Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UserDiscount();
+                return _instance;
+            }
+        }
         public UserDiscount()
         {
             InitializeComponent();
