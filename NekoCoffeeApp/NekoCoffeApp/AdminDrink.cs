@@ -1,4 +1,5 @@
-﻿using Aspose.Email.PersonalInfo;
+﻿using Aspose.Email.Clients.Exchange.WebService.Schema_2016;
+using Aspose.Email.PersonalInfo;
 using BCrypt.Net;
 using FireSharp.Config;
 using FireSharp.Interfaces;
@@ -50,7 +51,7 @@ namespace UI
             viewData();
         }
 
-       
+
 
         private void AdminAddDrink_Click(object sender, EventArgs e)
         {
@@ -113,13 +114,13 @@ namespace UI
 
         private void AdminDeleteDrink_Click(object sender, EventArgs e)
         {
-        
-                if (
-                    string.IsNullOrWhiteSpace(AdminFillDrinkName.Text))
-                {
-                    MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+
+            if (
+                string.IsNullOrWhiteSpace(AdminFillDrinkName.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             FirebaseResponse res = drk.Get(@"Drinks/" + AdminFillDrinkName.Text);
             NekoDrink ResDrink = res.ResultAs<NekoDrink>();
@@ -128,7 +129,7 @@ namespace UI
             {
                 Name = AdminFillDrinkName.Text
             };
-            
+
             if (!NekoDrink.IsExist(ResDrink, CurDrink))
             {
                 NekoDrink.ShowError_3();
@@ -136,22 +137,72 @@ namespace UI
             }
             // Hiển thị hộp thoại xác nhận
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xoá nước?", "Xác nhận xoá", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                if (result == DialogResult.OK)
+            if (result == DialogResult.OK)
+            {
+                var delete = drk.Delete(@"Drinks/" + AdminFillDrinkName.Text);
+                if (delete.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    var delete = drk.Delete(@"Drinks/" + AdminFillDrinkName.Text);
-                    if (delete.StatusCode == System.Net.HttpStatusCode.OK)
-                    {
-                        MessageBox.Show($"Xoá nước {AdminFillDrinkName.Text} thành công!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        AdminFillDrinkName.Clear();
-                    }
+                    MessageBox.Show($"Xoá nước {AdminFillDrinkName.Text} thành công!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    AdminFillDrinkName.Clear();
                 }
-                else
-                {
-                    return;
-                }
-                viewData();
+            }
+            else
+            {
+                return;
+            }
+            viewData();
 
-            
+
+        }
+
+        private void AdminUpdateDrink_Click(object sender, EventArgs e)
+        {
+            if (
+               string.IsNullOrWhiteSpace(AdminFillDrinkName.Text) ||
+               string.IsNullOrWhiteSpace(AdminFillDrinkType.Text) ||
+               string.IsNullOrWhiteSpace(AdminFillDrinkPrice.Text) ||
+               string.IsNullOrWhiteSpace(AdminFillDrinkAvailable.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            FirebaseResponse res = drk.Get(@"Drinks/" + AdminFillDrinkName.Text);
+            NekoDrink ResDrink = res.ResultAs<NekoDrink>();
+
+            NekoDrink CurDrink = new NekoDrink()
+            {
+                Name = AdminFillDrinkName.Text
+            };
+
+            if (!NekoDrink.IsExist(ResDrink, CurDrink))
+            {
+                NekoDrink.ShowError_3();
+                return;
+            }
+
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn sửa thông tin ?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.OK)
+            {
+                NekoDrink drink = new NekoDrink()
+                {
+                    Name = AdminFillDrinkName.Text,
+                    Available = AdminFillDrinkAvailable.Text,
+                    Price = AdminFillDrinkPrice.Text,
+                    Type = AdminFillDrinkType.Text
+                };
+
+                FirebaseResponse update = drk.Update(@"Drinks/" + AdminFillDrinkName.Text, drink);
+
+
+                if (update.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    MessageBox.Show($"Sửa thành công nước {AdminFillDrinkName.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else { return; }
+                viewData();
+            }
         }
     }
 }

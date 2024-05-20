@@ -162,6 +162,7 @@
             this.AdminUpdateDrink.TextMarginLeft = 0;
             this.AdminUpdateDrink.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminUpdateDrink.UseDefaultRadiusAndThickness = true;
+            this.AdminUpdateDrink.Click += new System.EventHandler(this.AdminUpdateDrink_Click);
             // 
             // AdminDeleteDrink
             // 
