@@ -12,6 +12,16 @@ namespace UI
 {
     public partial class UserMenu : UserControl
     {
+        private static UserMenu _instance;
+        public static UserMenu Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UserMenu();
+                return _instance;
+            }
+        }
         public UserMenu()
         {
             InitializeComponent();
