@@ -15,15 +15,16 @@ namespace UI
         [STAThread]
         static void Main()
         {
-            //if (Environment.OSVersion.Version.Major >= 6)
-            //    SetProcessDPIAware();
+            if (Environment.OSVersion.Version.Major >= 6)
+                SetProcessDPIAware();
 
-                Application.EnableVisualStyles();
+            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // Application.Run(new Login());
+            //Application.Run(new Login());
+            //Application.Run(new User());
             Application.Run(new AdminFP());
-            //Application.Run(new edit_Employee());
-            //Application.Run(new edit_Order());
+
+
 
 
 
