@@ -12,6 +12,17 @@ namespace UI
 {
     public partial class UserCart : UserControl
     {
+        private static UserCart _instance;
+        public static UserCart Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UserCart();
+                return _instance;
+            }
+        }
+
         public UserCart()
         {
             InitializeComponent();
