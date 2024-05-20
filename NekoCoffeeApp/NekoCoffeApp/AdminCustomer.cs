@@ -218,5 +218,31 @@ namespace UI
             }
             viewData();
         }
+
+        private void AdminCheckCustomer_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(AdminFillCustomerSearch.Text))
+            {
+                MessageBox.Show("Vui lòng điền ID khách hàng", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            FirebaseResponse res = ctm.Get(@"Customers/" + AdminFillCustomerSearch.Text);
+            NekoCustomer existingCustomer = res.ResultAs<NekoCustomer>();
+
+            if (existingCustomer == null)
+            {
+                MessageBox.Show("Khách hàng không tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            AdminFillCustomerID.Text = existingCustomer.ID;
+            AdminFillCustomerName.Text = existingCustomer.Name;
+            AdminFillCustomerDateOfBirth.Text = existingCustomer.DateOfBirth;
+            AdminFillCustomerGender.Text = existingCustomer.Gender;
+            AdminFillCustomerAddress.Text = existingCustomer.Address;
+            AdminFillCustomerPhoneNumber.Text = existingCustomer.PhoneNumber;
+            AdminFillCustomerEmail.Text = existingCustomer.Email;
+        }
     }
 }
