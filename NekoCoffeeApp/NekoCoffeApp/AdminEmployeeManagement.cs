@@ -202,5 +202,34 @@ namespace UI
             }
             viewData();
         }
+
+        private void AdminCheckEmployee_Click(object sender, EventArgs e)
+        {
+            
+                if (string.IsNullOrWhiteSpace(AdminFillEmployeeSearch.Text))
+                {
+                    MessageBox.Show("Vui lòng điền ID nhân viên", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                var response = emp.Get(@"Employees/" + AdminFillEmployeeSearch.Text);
+                NekoEmployee existingEmployee = response.ResultAs<NekoEmployee>();
+
+                if (existingEmployee == null)
+                {
+                    MessageBox.Show("Nhân viên không tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                AdminFillEmployeeID.Text = existingEmployee.ID;
+                AdminFillEmployeeName.Text = existingEmployee.Name;
+                AdminFillEmployeeDateOfBirth.Text = existingEmployee.DateOfBirth;
+                AdminFillEmployeeGender.Text = existingEmployee.Gender;
+                AdminFillEmployeeAddress.Text = existingEmployee.Address;
+                AdminFillEmployeePhoneNumber.Text = existingEmployee.PhoneNumber;
+                AdminFillEmployeeEmail.Text = existingEmployee.Email;
+                AdminFillEmployeeSalary.Text = existingEmployee.Salary;
+            
+        }
     }
 }
