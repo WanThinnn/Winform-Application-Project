@@ -368,6 +368,7 @@
             this.AdminCheckCustomer.TextMarginLeft = 0;
             this.AdminCheckCustomer.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminCheckCustomer.UseDefaultRadiusAndThickness = true;
+            this.AdminCheckCustomer.Click += new System.EventHandler(this.AdminCheckCustomer_Click);
             // 
             // AdminFillCustomerDateOfBirth
             // 

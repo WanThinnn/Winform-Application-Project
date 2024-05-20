@@ -187,6 +187,7 @@
             this.AdminCheckEmployee.TextMarginLeft = 0;
             this.AdminCheckEmployee.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminCheckEmployee.UseDefaultRadiusAndThickness = true;
+            this.AdminCheckEmployee.Click += new System.EventHandler(this.AdminCheckEmployee_Click);
             // 
             // AdminFillEmployeeSearch
             // 

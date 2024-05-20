@@ -124,6 +124,28 @@
     <value>25</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="AdminFillDrinkName.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAe8AAAA4CAYAAADUxXDuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEgSURBVHhe7dVBCQQxAATB+FeVJTJOxgm4JZDPOUhDFcxn
+        DPQAAILWWp8558/MzMzu3e71SfcY+wAA7rZ7fdIt3gBQIN4AECPeABAj3gAQI94AECPeABAj3gAQI94A
+        ECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94A
+        ECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94A
+        ECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABDzF+/neb77
+        MDMzs3u3e33SDQB0jPECP3FLHMHYrFgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="AdminFillDrinkSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAe8AAAA4CAYAAADUxXDuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEgSURBVHhe7dVBCQQxAATB+FeVJTJOxgm4JZDPOUhDFcxn
+        DPQAAILWWp8558/MzMzu3e71SfcY+wAA7rZ7fdIt3gBQIN4AECPeABAj3gAQI94AECPeABAj3gAQI94A
+        ECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94A
+        ECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94A
+        ECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABAj3gAQI94AECPeABDzF+/neb77
+        MDMzs3u3e33SDQB0jPECP3FLHMHYrFgAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="AdminUpdateDrink.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAe8AAAA2CAYAAADuzxGeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -238,7 +260,7 @@
         haLxoQBgvDR/Yg75Jy8lAOdTRF2hquo3clwW0sLESUgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="AdminFillDrinkName.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="AdminFillDrinkID.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAe8AAAA4CAYAAADUxXDuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEgSURBVHhe7dVBCQQxAATB+FeVJTJOxgm4JZDPOUhDFcxn
