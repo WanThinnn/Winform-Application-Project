@@ -11,6 +11,7 @@ namespace UI
 {
     internal class NekoDrink
     {
+        public string ID {  get; set; } 
         public string Name { get; set; }
         public string Available { get; set; }
         public string Price { get; set; }
@@ -38,7 +39,7 @@ namespace UI
         {
             if (drink1 == null || drink2 == null) { return false; }
 
-            if (drink1.Name != drink2.Name)
+            if (drink1.ID != drink2.ID)
             {
                 error1 = " không tồn tại!";
                 return false;
@@ -50,7 +51,7 @@ namespace UI
         {
             if (drink1 == null || drink2 == null) { return false; }
 
-            if (drink1.Name != drink2.Name )
+            if (drink1.ID != drink2.ID )
             {
                 error1 = "Nước không tồn tại!";
                 return false;
@@ -65,7 +66,7 @@ namespace UI
         {
             if (drink1 == null || drink2 == null) { return false; }
 
-            if (drink1.Name != drink2.Name)
+            if (drink1.ID != drink2.ID)
             {
                 System.Windows.Forms.MessageBox.Show("Nước không tồn tại2!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
