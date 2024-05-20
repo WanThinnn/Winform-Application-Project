@@ -119,7 +119,6 @@ C:\Users\huy\Desktop\huy\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\
 C:\Users\huy\Desktop\huy\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.AdminEmployee.resources
 C:\Users\huy\Desktop\huy\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.AdminEmployeeManagement.resources
 C:\Users\huy\Desktop\huy\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.AdminFinancial.resources
-C:\Users\huy\Desktop\huy\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.AdminHome.resources
 C:\Users\huy\Desktop\huy\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.AdminOrder.resources
 C:\Users\huy\Desktop\huy\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.AdminProduct.resources
 C:\Users\huy\Desktop\huy\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.AdminTable.resources
@@ -286,3 +285,4 @@ C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCof
 C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.exe
 C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.pdb
 C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserDiscount.resources
+C:\Users\huy\Desktop\huy\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserDiscount.resources

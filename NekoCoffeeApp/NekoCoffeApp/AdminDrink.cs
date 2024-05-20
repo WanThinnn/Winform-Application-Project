@@ -95,6 +95,7 @@ namespace UI
             if (set.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 MessageBox.Show($"Thêm thành công nước {AdminFillDrinkID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                viewData();
             }
         }
 

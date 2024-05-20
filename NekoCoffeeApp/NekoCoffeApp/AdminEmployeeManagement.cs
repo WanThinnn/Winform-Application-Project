@@ -98,9 +98,9 @@ namespace UI
             if (set.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 MessageBox.Show($"Thêm thành công nhân viên {AdminFillEmployeeID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                viewData();
             }
-            else return;
-            viewData();
+            
         }
 
 
