@@ -19,9 +19,9 @@ namespace UI
 
         private void bunifuLabel1_Click(object sender, EventArgs e)
         {
-            if (!userMenu1.Controls.Contains(UserCart.Instance))
+            if (!panelUserControl.Controls.Contains(UserCart.Instance))
             {
-                userMenu1.Controls.Add(UserCart.Instance);
+                panelUserControl.Controls.Add(UserCart.Instance);
                 UserCart.Instance.Dock = DockStyle.Fill;
                 UserCart.Instance.BringToFront();
             }
@@ -96,9 +96,9 @@ namespace UI
 
         private void btnPoint_Click(object sender, EventArgs e)
         {
-            if (!userMenu1.Controls.Contains(UserPoint.Instance))
+            if (!panelUserControl.Controls.Contains(UserPoint.Instance))
             {
-                userMenu1.Controls.Add(UserPoint.Instance);
+                panelUserControl.Controls.Add(UserPoint.Instance);
                 UserPoint.Instance.Dock = DockStyle.Fill;
                 UserPoint.Instance.BringToFront();
             }
@@ -119,9 +119,9 @@ namespace UI
         private void btnMenu_Click(object sender, EventArgs e)
         {
         
-            if (!userMenu1.Controls.Contains(UserMenu.Instance))
+            if (!panelUserControl.Controls.Contains(UserMenu.Instance))
             {
-                userMenu1.Controls.Add(UserMenu.Instance);
+                panelUserControl.Controls.Add(UserMenu.Instance);
                 UserMenu.Instance.Dock = DockStyle.Fill;
                 UserMenu.Instance.BringToFront();
             }

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserPoint));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.AdminShowEmployee4 = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -41,13 +41,8 @@
             this.lbPhone = new Bunifu.UI.WinForms.BunifuLabel();
             this.lbPoint = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtPoint = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.colSTT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colDrink = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colNumber = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colPoint = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnCheck = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.UserViewAllPoint = new System.Windows.Forms.ListView();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee4)).BeginInit();
             this.SuspendLayout();
@@ -180,26 +175,26 @@
             this.txtPoint.Modified = false;
             this.txtPoint.Multiline = false;
             this.txtPoint.Name = "txtPoint";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPoint.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtPoint.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPoint.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPoint.OnIdleState = stateProperties12;
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPoint.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPoint.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPoint.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPoint.OnIdleState = stateProperties4;
             this.txtPoint.Padding = new System.Windows.Forms.Padding(3);
             this.txtPoint.PasswordChar = '\0';
             this.txtPoint.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -221,52 +216,6 @@
             this.txtPoint.UseSystemPasswordChar = false;
             this.txtPoint.WordWrap = true;
             // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colSTT,
-            this.colDrink,
-            this.colNumber,
-            this.colDate,
-            this.colPoint});
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 119);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(623, 583);
-            this.listView1.TabIndex = 86;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // colSTT
-            // 
-            this.colSTT.Text = "STT";
-            this.colSTT.Width = 50;
-            // 
-            // colDrink
-            // 
-            this.colDrink.Text = "Tên món";
-            this.colDrink.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colDrink.Width = 190;
-            // 
-            // colNumber
-            // 
-            this.colNumber.Text = "Số lượng";
-            this.colNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colNumber.Width = 100;
-            // 
-            // colDate
-            // 
-            this.colDate.Text = "Ngày mua";
-            this.colDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colDate.Width = 150;
-            // 
-            // colPoint
-            // 
-            this.colPoint.Text = "Tích điểm";
-            this.colPoint.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colPoint.Width = 130;
-            // 
             // btnCheck
             // 
             this.btnCheck.AllowAnimations = true;
@@ -286,11 +235,11 @@
             this.btnCheck.ColorContrastOnClick = 45;
             this.btnCheck.ColorContrastOnHover = 45;
             this.btnCheck.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnCheck.CustomizableEdges = borderEdges3;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnCheck.CustomizableEdges = borderEdges1;
             this.btnCheck.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCheck.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCheck.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -357,12 +306,21 @@
             this.btnCheck.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnCheck.UseDefaultRadiusAndThickness = true;
             // 
+            // UserViewAllPoint
+            // 
+            this.UserViewAllPoint.HideSelection = false;
+            this.UserViewAllPoint.Location = new System.Drawing.Point(18, 124);
+            this.UserViewAllPoint.Name = "UserViewAllPoint";
+            this.UserViewAllPoint.Size = new System.Drawing.Size(609, 564);
+            this.UserViewAllPoint.TabIndex = 88;
+            this.UserViewAllPoint.UseCompatibleStateImageBehavior = false;
+            // 
             // UserPoint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.UserViewAllPoint);
             this.Controls.Add(this.btnCheck);
-            this.Controls.Add(this.listView1);
             this.Controls.Add(this.txtPoint);
             this.Controls.Add(this.lbPoint);
             this.Controls.Add(this.lbPhone);
@@ -388,12 +346,7 @@
         private Bunifu.UI.WinForms.BunifuLabel lbPhone;
         private Bunifu.UI.WinForms.BunifuLabel lbPoint;
         private Bunifu.UI.WinForms.BunifuTextBox txtPoint;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader colSTT;
-        private System.Windows.Forms.ColumnHeader colDrink;
-        private System.Windows.Forms.ColumnHeader colNumber;
-        private System.Windows.Forms.ColumnHeader colDate;
-        private System.Windows.Forms.ColumnHeader colPoint;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnCheck;
+        private System.Windows.Forms.ListView UserViewAllPoint;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UI
 {
-    public partial class AdminHome : Form
+    public partial class UserDiscount : UserControl
     {
-        public AdminHome()
+        public UserDiscount()
         {
             InitializeComponent();
         }
