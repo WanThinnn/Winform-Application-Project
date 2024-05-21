@@ -29,17 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminOrder));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
@@ -74,6 +73,7 @@
             this.AdminOrderTable6 = new System.Windows.Forms.Label();
             this.AdminOrderTable3 = new System.Windows.Forms.Label();
             this.AdminOrderTable5 = new System.Windows.Forms.Label();
+            this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
             this.AdminOrderNumeric = new System.Windows.Forms.NumericUpDown();
@@ -84,8 +84,6 @@
             this.AdminPaymentBtn1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminFillVoucer = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.edit_Order_Btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -107,11 +105,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
             this.bunifuPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AdminOrderNumeric)).BeginInit();
             this.bunifuPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -164,13 +162,13 @@
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(728, 705);
+            this.bunifuPanel1.Size = new System.Drawing.Size(641, 705);
             this.bunifuPanel1.TabIndex = 0;
             // 
             // pictureBox12
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(549, 522);
+            this.pictureBox12.Location = new System.Drawing.Point(501, 522);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(133, 114);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -180,7 +178,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(301, 522);
+            this.pictureBox11.Location = new System.Drawing.Point(253, 522);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(133, 114);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -190,7 +188,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(45, 522);
+            this.pictureBox10.Location = new System.Drawing.Point(6, 522);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(133, 114);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -200,17 +198,18 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(549, 369);
+            this.pictureBox9.Location = new System.Drawing.Point(501, 369);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(133, 114);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 11;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(301, 369);
+            this.pictureBox8.Location = new System.Drawing.Point(253, 369);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(133, 114);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -220,7 +219,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(45, 369);
+            this.pictureBox7.Location = new System.Drawing.Point(6, 369);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(133, 114);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -230,7 +229,7 @@
             // pictureBox20
             // 
             this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
-            this.pictureBox20.Location = new System.Drawing.Point(301, 522);
+            this.pictureBox20.Location = new System.Drawing.Point(253, 522);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(381, 114);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -240,7 +239,7 @@
             // pictureBox19
             // 
             this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
-            this.pictureBox19.Location = new System.Drawing.Point(45, 522);
+            this.pictureBox19.Location = new System.Drawing.Point(6, 522);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(389, 114);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -250,7 +249,7 @@
             // pictureBox18
             // 
             this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(301, 369);
+            this.pictureBox18.Location = new System.Drawing.Point(253, 369);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(381, 114);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -260,7 +259,7 @@
             // pictureBox17
             // 
             this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(45, 369);
+            this.pictureBox17.Location = new System.Drawing.Point(6, 369);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(389, 114);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -270,7 +269,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(549, 196);
+            this.pictureBox6.Location = new System.Drawing.Point(501, 196);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(133, 114);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -280,7 +279,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(301, 196);
+            this.pictureBox5.Location = new System.Drawing.Point(253, 196);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(133, 114);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -290,7 +289,7 @@
             // pictureBox16
             // 
             this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(301, 196);
+            this.pictureBox16.Location = new System.Drawing.Point(253, 196);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(381, 114);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -300,7 +299,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(45, 196);
+            this.pictureBox4.Location = new System.Drawing.Point(6, 196);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(133, 114);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -310,7 +309,7 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(45, 196);
+            this.pictureBox15.Location = new System.Drawing.Point(6, 196);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(389, 114);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -320,7 +319,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(549, 32);
+            this.pictureBox3.Location = new System.Drawing.Point(501, 32);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(133, 114);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -330,7 +329,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(301, 32);
+            this.pictureBox2.Location = new System.Drawing.Point(253, 32);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(133, 114);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -340,7 +339,7 @@
             // pictureBox14
             // 
             this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(301, 32);
+            this.pictureBox14.Location = new System.Drawing.Point(253, 32);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(381, 114);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -351,7 +350,7 @@
             // 
             this.AdminOrderTable2.AutoSize = true;
             this.AdminOrderTable2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable2.Location = new System.Drawing.Point(342, 149);
+            this.AdminOrderTable2.Location = new System.Drawing.Point(292, 149);
             this.AdminOrderTable2.Name = "AdminOrderTable2";
             this.AdminOrderTable2.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable2.TabIndex = 15;
@@ -361,7 +360,7 @@
             // 
             this.AdminOrderTable1.AutoSize = true;
             this.AdminOrderTable1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable1.Location = new System.Drawing.Point(86, 149);
+            this.AdminOrderTable1.Location = new System.Drawing.Point(45, 149);
             this.AdminOrderTable1.Name = "AdminOrderTable1";
             this.AdminOrderTable1.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable1.TabIndex = 3;
@@ -370,7 +369,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(45, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(6, 32);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 114);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -380,7 +379,7 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(45, 32);
+            this.pictureBox13.Location = new System.Drawing.Point(6, 32);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(389, 114);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -391,7 +390,7 @@
             // 
             this.AdminOrderTable12.AutoSize = true;
             this.AdminOrderTable12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable12.Location = new System.Drawing.Point(588, 639);
+            this.AdminOrderTable12.Location = new System.Drawing.Point(539, 639);
             this.AdminOrderTable12.Name = "AdminOrderTable12";
             this.AdminOrderTable12.Size = new System.Drawing.Size(60, 17);
             this.AdminOrderTable12.TabIndex = 25;
@@ -401,7 +400,7 @@
             // 
             this.AdminOrderTable11.AutoSize = true;
             this.AdminOrderTable11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable11.Location = new System.Drawing.Point(342, 639);
+            this.AdminOrderTable11.Location = new System.Drawing.Point(292, 639);
             this.AdminOrderTable11.Name = "AdminOrderTable11";
             this.AdminOrderTable11.Size = new System.Drawing.Size(60, 17);
             this.AdminOrderTable11.TabIndex = 24;
@@ -411,7 +410,7 @@
             // 
             this.AdminOrderTable10.AutoSize = true;
             this.AdminOrderTable10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable10.Location = new System.Drawing.Point(86, 639);
+            this.AdminOrderTable10.Location = new System.Drawing.Point(45, 639);
             this.AdminOrderTable10.Name = "AdminOrderTable10";
             this.AdminOrderTable10.Size = new System.Drawing.Size(60, 17);
             this.AdminOrderTable10.TabIndex = 23;
@@ -421,7 +420,7 @@
             // 
             this.AdminOrderTable9.AutoSize = true;
             this.AdminOrderTable9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable9.Location = new System.Drawing.Point(588, 486);
+            this.AdminOrderTable9.Location = new System.Drawing.Point(539, 486);
             this.AdminOrderTable9.Name = "AdminOrderTable9";
             this.AdminOrderTable9.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable9.TabIndex = 22;
@@ -431,7 +430,7 @@
             // 
             this.AdminOrderTable8.AutoSize = true;
             this.AdminOrderTable8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable8.Location = new System.Drawing.Point(342, 486);
+            this.AdminOrderTable8.Location = new System.Drawing.Point(292, 486);
             this.AdminOrderTable8.Name = "AdminOrderTable8";
             this.AdminOrderTable8.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable8.TabIndex = 21;
@@ -441,7 +440,7 @@
             // 
             this.AdminOrderTable7.AutoSize = true;
             this.AdminOrderTable7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable7.Location = new System.Drawing.Point(86, 486);
+            this.AdminOrderTable7.Location = new System.Drawing.Point(45, 486);
             this.AdminOrderTable7.Name = "AdminOrderTable7";
             this.AdminOrderTable7.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable7.TabIndex = 20;
@@ -451,7 +450,7 @@
             // 
             this.AdminOrderTable4.AutoSize = true;
             this.AdminOrderTable4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable4.Location = new System.Drawing.Point(86, 313);
+            this.AdminOrderTable4.Location = new System.Drawing.Point(45, 313);
             this.AdminOrderTable4.Name = "AdminOrderTable4";
             this.AdminOrderTable4.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable4.TabIndex = 19;
@@ -461,7 +460,7 @@
             // 
             this.AdminOrderTable6.AutoSize = true;
             this.AdminOrderTable6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable6.Location = new System.Drawing.Point(588, 313);
+            this.AdminOrderTable6.Location = new System.Drawing.Point(539, 313);
             this.AdminOrderTable6.Name = "AdminOrderTable6";
             this.AdminOrderTable6.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable6.TabIndex = 18;
@@ -471,7 +470,7 @@
             // 
             this.AdminOrderTable3.AutoSize = true;
             this.AdminOrderTable3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable3.Location = new System.Drawing.Point(588, 149);
+            this.AdminOrderTable3.Location = new System.Drawing.Point(539, 149);
             this.AdminOrderTable3.Name = "AdminOrderTable3";
             this.AdminOrderTable3.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable3.TabIndex = 17;
@@ -481,11 +480,73 @@
             // 
             this.AdminOrderTable5.AutoSize = true;
             this.AdminOrderTable5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable5.Location = new System.Drawing.Point(342, 313);
+            this.AdminOrderTable5.Location = new System.Drawing.Point(292, 313);
             this.AdminOrderTable5.Name = "AdminOrderTable5";
             this.AdminOrderTable5.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable5.TabIndex = 16;
             this.AdminOrderTable5.Text = "Table 5";
+            // 
+            // bunifuDataGridView1
+            // 
+            this.bunifuDataGridView1.AllowCustomTheming = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.bunifuDataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.Name = null;
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            this.bunifuDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
+            this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuDataGridView1.Name = "bunifuDataGridView1";
+            this.bunifuDataGridView1.RowHeadersVisible = false;
+            this.bunifuDataGridView1.RowHeadersWidth = 51;
+            this.bunifuDataGridView1.RowTemplate.Height = 40;
+            this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.bunifuDataGridView1.Size = new System.Drawing.Size(641, 705);
+            this.bunifuDataGridView1.TabIndex = 2;
+            this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
             // bunifuPanel2
             // 
@@ -498,10 +559,10 @@
             this.bunifuPanel2.Controls.Add(this.bunifuPanel4);
             this.bunifuPanel2.Controls.Add(this.bunifuPanel3);
             this.bunifuPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuPanel2.Location = new System.Drawing.Point(728, 0);
+            this.bunifuPanel2.Location = new System.Drawing.Point(641, 0);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(341, 705);
+            this.bunifuPanel2.Size = new System.Drawing.Size(323, 705);
             this.bunifuPanel2.TabIndex = 1;
             // 
             // bunifuPanel3
@@ -512,7 +573,6 @@
             this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel3.BorderRadius = 35;
             this.bunifuPanel3.BorderThickness = 1;
-            this.bunifuPanel3.Controls.Add(this.edit_Order_Btn);
             this.bunifuPanel3.Controls.Add(this.AdminOrderNumeric);
             this.bunifuPanel3.Controls.Add(this.AdminOrderBtn);
             this.bunifuPanel3.Controls.Add(this.AdminOrderComboBox2);
@@ -522,7 +582,7 @@
             this.bunifuPanel3.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.bunifuPanel3.Name = "bunifuPanel3";
             this.bunifuPanel3.ShowBorders = true;
-            this.bunifuPanel3.Size = new System.Drawing.Size(341, 178);
+            this.bunifuPanel3.Size = new System.Drawing.Size(323, 178);
             this.bunifuPanel3.TabIndex = 0;
             // 
             // AdminOrderNumeric
@@ -590,7 +650,7 @@
             this.AdminOrderBtn.IdleIconLeftImage = null;
             this.AdminOrderBtn.IdleIconRightImage = null;
             this.AdminOrderBtn.IndicateFocus = false;
-            this.AdminOrderBtn.Location = new System.Drawing.Point(208, 32);
+            this.AdminOrderBtn.Location = new System.Drawing.Point(196, 32);
             this.AdminOrderBtn.Name = "AdminOrderBtn";
             this.AdminOrderBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminOrderBtn.OnDisabledState.BorderRadius = 37;
@@ -638,7 +698,7 @@
             this.AdminOrderComboBox2.FormattingEnabled = true;
             this.AdminOrderComboBox2.Location = new System.Drawing.Point(7, 78);
             this.AdminOrderComboBox2.Name = "AdminOrderComboBox2";
-            this.AdminOrderComboBox2.Size = new System.Drawing.Size(183, 24);
+            this.AdminOrderComboBox2.Size = new System.Drawing.Size(183, 21);
             this.AdminOrderComboBox2.TabIndex = 1;
             // 
             // AdminOrderComboBox1
@@ -646,7 +706,7 @@
             this.AdminOrderComboBox1.FormattingEnabled = true;
             this.AdminOrderComboBox1.Location = new System.Drawing.Point(7, 32);
             this.AdminOrderComboBox1.Name = "AdminOrderComboBox1";
-            this.AdminOrderComboBox1.Size = new System.Drawing.Size(183, 24);
+            this.AdminOrderComboBox1.Size = new System.Drawing.Size(183, 21);
             this.AdminOrderComboBox1.TabIndex = 0;
             // 
             // AdminViewTable
@@ -655,7 +715,7 @@
             this.AdminViewTable.HideSelection = false;
             this.AdminViewTable.Location = new System.Drawing.Point(0, 0);
             this.AdminViewTable.Name = "AdminViewTable";
-            this.AdminViewTable.Size = new System.Drawing.Size(341, 414);
+            this.AdminViewTable.Size = new System.Drawing.Size(323, 414);
             this.AdminViewTable.TabIndex = 0;
             this.AdminViewTable.UseCompatibleStateImageBehavior = false;
             // 
@@ -678,11 +738,11 @@
             this.AdminPaymentBtn1.ColorContrastOnClick = 45;
             this.AdminPaymentBtn1.ColorContrastOnHover = 45;
             this.AdminPaymentBtn1.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.AdminPaymentBtn1.CustomizableEdges = borderEdges1;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.AdminPaymentBtn1.CustomizableEdges = borderEdges4;
             this.AdminPaymentBtn1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminPaymentBtn1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminPaymentBtn1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -781,26 +841,26 @@
             this.AdminFillVoucer.Modified = false;
             this.AdminFillVoucer.Multiline = false;
             this.AdminFillVoucer.Name = "AdminFillVoucer";
-            stateProperties1.BorderColor = System.Drawing.Color.Black;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.AdminFillVoucer.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.AdminFillVoucer.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.Black;
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.AdminFillVoucer.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Black;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.AdminFillVoucer.OnIdleState = stateProperties4;
+            stateProperties5.BorderColor = System.Drawing.Color.Black;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.AdminFillVoucer.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.AdminFillVoucer.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.Black;
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.AdminFillVoucer.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Black;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.AdminFillVoucer.OnIdleState = stateProperties8;
             this.AdminFillVoucer.Padding = new System.Windows.Forms.Padding(3);
             this.AdminFillVoucer.PasswordChar = '\0';
             this.AdminFillVoucer.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -811,7 +871,7 @@
             this.AdminFillVoucer.SelectionLength = 0;
             this.AdminFillVoucer.SelectionStart = 0;
             this.AdminFillVoucer.ShortcutsEnabled = true;
-            this.AdminFillVoucer.Size = new System.Drawing.Size(341, 41);
+            this.AdminFillVoucer.Size = new System.Drawing.Size(320, 41);
             this.AdminFillVoucer.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillVoucer.TabIndex = 8;
             this.AdminFillVoucer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -837,160 +897,8 @@
             this.bunifuPanel4.Location = new System.Drawing.Point(0, 178);
             this.bunifuPanel4.Name = "bunifuPanel4";
             this.bunifuPanel4.ShowBorders = true;
-            this.bunifuPanel4.Size = new System.Drawing.Size(341, 527);
+            this.bunifuPanel4.Size = new System.Drawing.Size(323, 527);
             this.bunifuPanel4.TabIndex = 1;
-            // 
-            // bunifuDataGridView1
-            // 
-            this.bunifuDataGridView1.AllowCustomTheming = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuDataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.Name = null;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
-            this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
-            this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuDataGridView1.Name = "bunifuDataGridView1";
-            this.bunifuDataGridView1.RowHeadersVisible = false;
-            this.bunifuDataGridView1.RowHeadersWidth = 51;
-            this.bunifuDataGridView1.RowTemplate.Height = 40;
-            this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(728, 705);
-            this.bunifuDataGridView1.TabIndex = 2;
-            this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            // 
-            // edit_Order_Btn
-            // 
-            this.edit_Order_Btn.AllowAnimations = true;
-            this.edit_Order_Btn.AllowMouseEffects = true;
-            this.edit_Order_Btn.AllowToggling = false;
-            this.edit_Order_Btn.AnimationSpeed = 200;
-            this.edit_Order_Btn.AutoGenerateColors = false;
-            this.edit_Order_Btn.AutoRoundBorders = false;
-            this.edit_Order_Btn.AutoSizeLeftIcon = true;
-            this.edit_Order_Btn.AutoSizeRightIcon = true;
-            this.edit_Order_Btn.BackColor = System.Drawing.Color.Transparent;
-            this.edit_Order_Btn.BackColor1 = System.Drawing.Color.LightSalmon;
-            this.edit_Order_Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("edit_Order_Btn.BackgroundImage")));
-            this.edit_Order_Btn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.edit_Order_Btn.ButtonText = "Order";
-            this.edit_Order_Btn.ButtonTextMarginLeft = 0;
-            this.edit_Order_Btn.ColorContrastOnClick = 45;
-            this.edit_Order_Btn.ColorContrastOnHover = 45;
-            this.edit_Order_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.edit_Order_Btn.CustomizableEdges = borderEdges2;
-            this.edit_Order_Btn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.edit_Order_Btn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.edit_Order_Btn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.edit_Order_Btn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.edit_Order_Btn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.edit_Order_Btn.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edit_Order_Btn.ForeColor = System.Drawing.Color.White;
-            this.edit_Order_Btn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.edit_Order_Btn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.edit_Order_Btn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.edit_Order_Btn.IconMarginLeft = 11;
-            this.edit_Order_Btn.IconPadding = 10;
-            this.edit_Order_Btn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.edit_Order_Btn.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.edit_Order_Btn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.edit_Order_Btn.IconSize = 25;
-            this.edit_Order_Btn.IdleBorderColor = System.Drawing.Color.LightSalmon;
-            this.edit_Order_Btn.IdleBorderRadius = 37;
-            this.edit_Order_Btn.IdleBorderThickness = 1;
-            this.edit_Order_Btn.IdleFillColor = System.Drawing.Color.LightSalmon;
-            this.edit_Order_Btn.IdleIconLeftImage = null;
-            this.edit_Order_Btn.IdleIconRightImage = null;
-            this.edit_Order_Btn.IndicateFocus = false;
-            this.edit_Order_Btn.Location = new System.Drawing.Point(208, 96);
-            this.edit_Order_Btn.Name = "edit_Order_Btn";
-            this.edit_Order_Btn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.edit_Order_Btn.OnDisabledState.BorderRadius = 37;
-            this.edit_Order_Btn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.edit_Order_Btn.OnDisabledState.BorderThickness = 1;
-            this.edit_Order_Btn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.edit_Order_Btn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.edit_Order_Btn.OnDisabledState.IconLeftImage = null;
-            this.edit_Order_Btn.OnDisabledState.IconRightImage = null;
-            this.edit_Order_Btn.onHoverState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.edit_Order_Btn.onHoverState.BorderRadius = 37;
-            this.edit_Order_Btn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.edit_Order_Btn.onHoverState.BorderThickness = 1;
-            this.edit_Order_Btn.onHoverState.FillColor = System.Drawing.Color.LightSalmon;
-            this.edit_Order_Btn.onHoverState.ForeColor = System.Drawing.Color.Black;
-            this.edit_Order_Btn.onHoverState.IconLeftImage = null;
-            this.edit_Order_Btn.onHoverState.IconRightImage = null;
-            this.edit_Order_Btn.OnIdleState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.edit_Order_Btn.OnIdleState.BorderRadius = 37;
-            this.edit_Order_Btn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.edit_Order_Btn.OnIdleState.BorderThickness = 1;
-            this.edit_Order_Btn.OnIdleState.FillColor = System.Drawing.Color.LightSalmon;
-            this.edit_Order_Btn.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.edit_Order_Btn.OnIdleState.IconLeftImage = null;
-            this.edit_Order_Btn.OnIdleState.IconRightImage = null;
-            this.edit_Order_Btn.OnPressedState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.edit_Order_Btn.OnPressedState.BorderRadius = 37;
-            this.edit_Order_Btn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.edit_Order_Btn.OnPressedState.BorderThickness = 1;
-            this.edit_Order_Btn.OnPressedState.FillColor = System.Drawing.Color.LightSalmon;
-            this.edit_Order_Btn.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.edit_Order_Btn.OnPressedState.IconLeftImage = null;
-            this.edit_Order_Btn.OnPressedState.IconRightImage = null;
-            this.edit_Order_Btn.Size = new System.Drawing.Size(121, 36);
-            this.edit_Order_Btn.TabIndex = 34;
-            this.edit_Order_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.edit_Order_Btn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.edit_Order_Btn.TextMarginLeft = 0;
-            this.edit_Order_Btn.TextPadding = new System.Windows.Forms.Padding(0);
-            this.edit_Order_Btn.UseDefaultRadiusAndThickness = true;
-            this.edit_Order_Btn.Click += new System.EventHandler(this.edit_Order_Btn_Click);
             // 
             // AdminOrder
             // 
@@ -1000,7 +908,7 @@
             this.Controls.Add(this.bunifuPanel2);
             this.Controls.Add(this.bunifuPanel1);
             this.Name = "AdminOrder";
-            this.Size = new System.Drawing.Size(1069, 705);
+            this.Size = new System.Drawing.Size(964, 705);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
@@ -1023,11 +931,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
             this.bunifuPanel2.ResumeLayout(false);
             this.bunifuPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AdminOrderNumeric)).EndInit();
             this.bunifuPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1074,11 +982,10 @@
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox13;
+        private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridView1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel4;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillVoucer;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminPaymentBtn1;
         private System.Windows.Forms.ListView AdminViewTable;
-        private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridView1;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton edit_Order_Btn;
     }
 }

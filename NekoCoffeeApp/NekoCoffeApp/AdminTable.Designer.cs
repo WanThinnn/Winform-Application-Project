@@ -111,7 +111,7 @@
             this.AdminUpdateTable.IdleIconLeftImage = null;
             this.AdminUpdateTable.IdleIconRightImage = null;
             this.AdminUpdateTable.IndicateFocus = false;
-            this.AdminUpdateTable.Location = new System.Drawing.Point(716, 323);
+            this.AdminUpdateTable.Location = new System.Drawing.Point(623, 325);
             this.AdminUpdateTable.Name = "AdminUpdateTable";
             this.AdminUpdateTable.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminUpdateTable.OnDisabledState.BorderRadius = 37;
@@ -145,7 +145,7 @@
             this.AdminUpdateTable.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminUpdateTable.OnPressedState.IconLeftImage = null;
             this.AdminUpdateTable.OnPressedState.IconRightImage = null;
-            this.AdminUpdateTable.Size = new System.Drawing.Size(330, 36);
+            this.AdminUpdateTable.Size = new System.Drawing.Size(324, 36);
             this.AdminUpdateTable.TabIndex = 58;
             this.AdminUpdateTable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminUpdateTable.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -200,7 +200,7 @@
             this.AdminDeleteTable.IdleIconLeftImage = null;
             this.AdminDeleteTable.IdleIconRightImage = null;
             this.AdminDeleteTable.IndicateFocus = false;
-            this.AdminDeleteTable.Location = new System.Drawing.Point(886, 272);
+            this.AdminDeleteTable.Location = new System.Drawing.Point(793, 274);
             this.AdminDeleteTable.Name = "AdminDeleteTable";
             this.AdminDeleteTable.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminDeleteTable.OnDisabledState.BorderRadius = 37;
@@ -234,7 +234,7 @@
             this.AdminDeleteTable.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminDeleteTable.OnPressedState.IconLeftImage = null;
             this.AdminDeleteTable.OnPressedState.IconRightImage = null;
-            this.AdminDeleteTable.Size = new System.Drawing.Size(160, 36);
+            this.AdminDeleteTable.Size = new System.Drawing.Size(154, 36);
             this.AdminDeleteTable.TabIndex = 57;
             this.AdminDeleteTable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminDeleteTable.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -289,7 +289,7 @@
             this.AdminAddTable.IdleIconLeftImage = null;
             this.AdminAddTable.IdleIconRightImage = null;
             this.AdminAddTable.IndicateFocus = false;
-            this.AdminAddTable.Location = new System.Drawing.Point(716, 272);
+            this.AdminAddTable.Location = new System.Drawing.Point(623, 274);
             this.AdminAddTable.Name = "AdminAddTable";
             this.AdminAddTable.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAddTable.OnDisabledState.BorderRadius = 37;
@@ -323,7 +323,7 @@
             this.AdminAddTable.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAddTable.OnPressedState.IconLeftImage = null;
             this.AdminAddTable.OnPressedState.IconRightImage = null;
-            this.AdminAddTable.Size = new System.Drawing.Size(160, 36);
+            this.AdminAddTable.Size = new System.Drawing.Size(154, 36);
             this.AdminAddTable.TabIndex = 56;
             this.AdminAddTable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAddTable.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -358,7 +358,7 @@
             this.AdminFillTableStatus.IconRight = null;
             this.AdminFillTableStatus.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillTableStatus.Lines = new string[0];
-            this.AdminFillTableStatus.Location = new System.Drawing.Point(716, 215);
+            this.AdminFillTableStatus.Location = new System.Drawing.Point(623, 217);
             this.AdminFillTableStatus.MaxLength = 32767;
             this.AdminFillTableStatus.MinimumSize = new System.Drawing.Size(1, 1);
             this.AdminFillTableStatus.Modified = false;
@@ -394,7 +394,7 @@
             this.AdminFillTableStatus.SelectionLength = 0;
             this.AdminFillTableStatus.SelectionStart = 0;
             this.AdminFillTableStatus.ShortcutsEnabled = true;
-            this.AdminFillTableStatus.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillTableStatus.Size = new System.Drawing.Size(324, 37);
             this.AdminFillTableStatus.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillTableStatus.TabIndex = 55;
             this.AdminFillTableStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -432,7 +432,7 @@
             this.AdminFillTableName.IconRight = null;
             this.AdminFillTableName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillTableName.Lines = new string[0];
-            this.AdminFillTableName.Location = new System.Drawing.Point(716, 159);
+            this.AdminFillTableName.Location = new System.Drawing.Point(623, 161);
             this.AdminFillTableName.MaxLength = 32767;
             this.AdminFillTableName.MinimumSize = new System.Drawing.Size(1, 1);
             this.AdminFillTableName.Modified = false;
@@ -468,7 +468,7 @@
             this.AdminFillTableName.SelectionLength = 0;
             this.AdminFillTableName.SelectionStart = 0;
             this.AdminFillTableName.ShortcutsEnabled = true;
-            this.AdminFillTableName.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillTableName.Size = new System.Drawing.Size(324, 37);
             this.AdminFillTableName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillTableName.TabIndex = 50;
             this.AdminFillTableName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -485,7 +485,7 @@
             this.AdminViewAllCustomer.Location = new System.Drawing.Point(22, 22);
             this.AdminViewAllCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.AdminViewAllCustomer.Name = "AdminViewAllCustomer";
-            this.AdminViewAllCustomer.Size = new System.Drawing.Size(672, 616);
+            this.AdminViewAllCustomer.Size = new System.Drawing.Size(596, 616);
             this.AdminViewAllCustomer.TabIndex = 49;
             this.AdminViewAllCustomer.UseCompatibleStateImageBehavior = false;
             // 
@@ -605,7 +605,7 @@
             this.AdminFillTableId.IconRight = null;
             this.AdminFillTableId.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillTableId.Lines = new string[0];
-            this.AdminFillTableId.Location = new System.Drawing.Point(716, 39);
+            this.AdminFillTableId.Location = new System.Drawing.Point(623, 41);
             this.AdminFillTableId.MaxLength = 32767;
             this.AdminFillTableId.MinimumSize = new System.Drawing.Size(1, 1);
             this.AdminFillTableId.Modified = false;
@@ -641,7 +641,7 @@
             this.AdminFillTableId.SelectionLength = 0;
             this.AdminFillTableId.SelectionStart = 0;
             this.AdminFillTableId.ShortcutsEnabled = true;
-            this.AdminFillTableId.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillTableId.Size = new System.Drawing.Size(324, 37);
             this.AdminFillTableId.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillTableId.TabIndex = 47;
             this.AdminFillTableId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -699,7 +699,7 @@
             this.AdminCheckTable.IdleIconLeftImage = null;
             this.AdminCheckTable.IdleIconRightImage = null;
             this.AdminCheckTable.IndicateFocus = false;
-            this.AdminCheckTable.Location = new System.Drawing.Point(716, 96);
+            this.AdminCheckTable.Location = new System.Drawing.Point(623, 98);
             this.AdminCheckTable.Name = "AdminCheckTable";
             this.AdminCheckTable.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminCheckTable.OnDisabledState.BorderRadius = 37;
@@ -733,7 +733,7 @@
             this.AdminCheckTable.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminCheckTable.OnPressedState.IconLeftImage = null;
             this.AdminCheckTable.OnPressedState.IconRightImage = null;
-            this.AdminCheckTable.Size = new System.Drawing.Size(330, 36);
+            this.AdminCheckTable.Size = new System.Drawing.Size(324, 36);
             this.AdminCheckTable.TabIndex = 46;
             this.AdminCheckTable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminCheckTable.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -756,7 +756,7 @@
             this.Controls.Add(this.AdminFillTableId);
             this.Controls.Add(this.AdminCheckTable);
             this.Name = "AdminTable";
-            this.Size = new System.Drawing.Size(1069, 705);
+            this.Size = new System.Drawing.Size(964, 705);
             this.ResumeLayout(false);
 
         }

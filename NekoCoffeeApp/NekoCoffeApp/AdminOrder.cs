@@ -36,17 +36,10 @@ namespace UI
             edit_Order.Show();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        
 
-        }
 
-        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void edit_Order_Btn_Click(object sender, EventArgs e)
+        private void pictureBox9_Click(object sender, EventArgs e)
         {
 
         }
