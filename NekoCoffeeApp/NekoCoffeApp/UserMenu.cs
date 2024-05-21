@@ -36,5 +36,10 @@ namespace UI
         {
 
         }
+
+        private void UserMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

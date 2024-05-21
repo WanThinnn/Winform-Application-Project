@@ -114,6 +114,11 @@ namespace UI
         {
 
         }
+
+        private void AdminFP_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

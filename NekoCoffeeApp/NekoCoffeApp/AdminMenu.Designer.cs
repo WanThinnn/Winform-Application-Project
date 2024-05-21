@@ -431,10 +431,10 @@
             this.AdminTableCircle.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
             this.AdminTableCircle.SuperScriptText = "";
             this.AdminTableCircle.TabIndex = 17;
-            this.AdminTableCircle.Text = "19";
+            this.AdminTableCircle.Text = "17";
             this.AdminTableCircle.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.AdminTableCircle.Value = 19;
-            this.AdminTableCircle.ValueByTransition = 19;
+            this.AdminTableCircle.Value = 17;
+            this.AdminTableCircle.ValueByTransition = 17;
             this.AdminTableCircle.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             // 
             // AdminBillCircle
@@ -1056,8 +1056,7 @@
             // 
             // AdminMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

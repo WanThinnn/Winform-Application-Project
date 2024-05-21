@@ -773,6 +773,7 @@
             this.Name = "AdminFP";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.AdminFP_Load);
             this.AdminPanelGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdminUserImg)).EndInit();
