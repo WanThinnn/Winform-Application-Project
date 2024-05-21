@@ -145,7 +145,7 @@
             this.AdminUpdateCat.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminUpdateCat.OnPressedState.IconLeftImage = null;
             this.AdminUpdateCat.OnPressedState.IconRightImage = null;
-            this.AdminUpdateCat.Size = new System.Drawing.Size(330, 36);
+            this.AdminUpdateCat.Size = new System.Drawing.Size(216, 36);
             this.AdminUpdateCat.TabIndex = 67;
             this.AdminUpdateCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminUpdateCat.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -200,7 +200,7 @@
             this.AdminDeleteCat.IdleIconLeftImage = null;
             this.AdminDeleteCat.IdleIconRightImage = null;
             this.AdminDeleteCat.IndicateFocus = false;
-            this.AdminDeleteCat.Location = new System.Drawing.Point(886, 272);
+            this.AdminDeleteCat.Location = new System.Drawing.Point(840, 272);
             this.AdminDeleteCat.Name = "AdminDeleteCat";
             this.AdminDeleteCat.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminDeleteCat.OnDisabledState.BorderRadius = 37;
@@ -234,7 +234,7 @@
             this.AdminDeleteCat.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminDeleteCat.OnPressedState.IconLeftImage = null;
             this.AdminDeleteCat.OnPressedState.IconRightImage = null;
-            this.AdminDeleteCat.Size = new System.Drawing.Size(160, 36);
+            this.AdminDeleteCat.Size = new System.Drawing.Size(92, 36);
             this.AdminDeleteCat.TabIndex = 66;
             this.AdminDeleteCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminDeleteCat.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -323,7 +323,7 @@
             this.AdminAddCat.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAddCat.OnPressedState.IconLeftImage = null;
             this.AdminAddCat.OnPressedState.IconRightImage = null;
-            this.AdminAddCat.Size = new System.Drawing.Size(160, 36);
+            this.AdminAddCat.Size = new System.Drawing.Size(92, 36);
             this.AdminAddCat.TabIndex = 65;
             this.AdminAddCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAddCat.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -394,7 +394,7 @@
             this.AdminFillCatStatus.SelectionLength = 0;
             this.AdminFillCatStatus.SelectionStart = 0;
             this.AdminFillCatStatus.ShortcutsEnabled = true;
-            this.AdminFillCatStatus.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillCatStatus.Size = new System.Drawing.Size(216, 37);
             this.AdminFillCatStatus.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillCatStatus.TabIndex = 64;
             this.AdminFillCatStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -468,7 +468,7 @@
             this.AdminFillCatName.SelectionLength = 0;
             this.AdminFillCatName.SelectionStart = 0;
             this.AdminFillCatName.ShortcutsEnabled = true;
-            this.AdminFillCatName.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillCatName.Size = new System.Drawing.Size(216, 37);
             this.AdminFillCatName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillCatName.TabIndex = 63;
             this.AdminFillCatName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -641,7 +641,7 @@
             this.AdminFillCatId.SelectionLength = 0;
             this.AdminFillCatId.SelectionStart = 0;
             this.AdminFillCatId.ShortcutsEnabled = true;
-            this.AdminFillCatId.Size = new System.Drawing.Size(330, 37);
+            this.AdminFillCatId.Size = new System.Drawing.Size(216, 37);
             this.AdminFillCatId.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillCatId.TabIndex = 60;
             this.AdminFillCatId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -733,7 +733,7 @@
             this.AdminCheckCat.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminCheckCat.OnPressedState.IconLeftImage = null;
             this.AdminCheckCat.OnPressedState.IconRightImage = null;
-            this.AdminCheckCat.Size = new System.Drawing.Size(330, 36);
+            this.AdminCheckCat.Size = new System.Drawing.Size(216, 36);
             this.AdminCheckCat.TabIndex = 59;
             this.AdminCheckCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminCheckCat.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -756,7 +756,8 @@
             this.Controls.Add(this.AdminFillCatId);
             this.Controls.Add(this.AdminCheckCat);
             this.Name = "AdminCat";
-            this.Size = new System.Drawing.Size(1069, 705);
+            this.Size = new System.Drawing.Size(964, 705);
+            this.Load += new System.EventHandler(this.AdminCat_Load);
             this.ResumeLayout(false);
 
         }

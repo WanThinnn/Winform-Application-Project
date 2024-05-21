@@ -100,6 +100,20 @@ namespace UI
             this.Controls.Add(AdminAdjust.Instance);
         }
 
+        private void AdminMainPanel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminPanelGrid_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void adminCat1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

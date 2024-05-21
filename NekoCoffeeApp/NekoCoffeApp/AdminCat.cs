@@ -16,5 +16,10 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private void AdminCat_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

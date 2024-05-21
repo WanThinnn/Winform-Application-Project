@@ -83,7 +83,7 @@
             this.AdminFinancialMoney.Location = new System.Drawing.Point(31, 59);
             this.AdminFinancialMoney.Name = "AdminFinancialMoney";
             this.AdminFinancialMoney.ShowBorders = true;
-            this.AdminFinancialMoney.Size = new System.Drawing.Size(1010, 80);
+            this.AdminFinancialMoney.Size = new System.Drawing.Size(909, 80);
             this.AdminFinancialMoney.TabIndex = 36;
             // 
             // AdminFinancialMoneyLabel
@@ -117,7 +117,7 @@
             this.AdminFinancialViewTable.HideSelection = false;
             this.AdminFinancialViewTable.Location = new System.Drawing.Point(31, 268);
             this.AdminFinancialViewTable.Name = "AdminFinancialViewTable";
-            this.AdminFinancialViewTable.Size = new System.Drawing.Size(1010, 411);
+            this.AdminFinancialViewTable.Size = new System.Drawing.Size(909, 411);
             this.AdminFinancialViewTable.TabIndex = 38;
             this.AdminFinancialViewTable.UseCompatibleStateImageBehavior = false;
             // 
@@ -134,7 +134,7 @@
             this.AdminFinancialBank.Location = new System.Drawing.Point(31, 145);
             this.AdminFinancialBank.Name = "AdminFinancialBank";
             this.AdminFinancialBank.ShowBorders = true;
-            this.AdminFinancialBank.Size = new System.Drawing.Size(1010, 80);
+            this.AdminFinancialBank.Size = new System.Drawing.Size(909, 80);
             this.AdminFinancialBank.TabIndex = 37;
             // 
             // AdminFinancialBankLabel
@@ -209,7 +209,7 @@
             this.AdminFinancialView.IdleIconLeftImage = null;
             this.AdminFinancialView.IdleIconRightImage = null;
             this.AdminFinancialView.IndicateFocus = false;
-            this.AdminFinancialView.Location = new System.Drawing.Point(435, 226);
+            this.AdminFinancialView.Location = new System.Drawing.Point(355, 225);
             this.AdminFinancialView.Name = "AdminFinancialView";
             this.AdminFinancialView.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminFinancialView.OnDisabledState.BorderRadius = 37;
@@ -243,7 +243,7 @@
             this.AdminFinancialView.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminFinancialView.OnPressedState.IconLeftImage = null;
             this.AdminFinancialView.OnPressedState.IconRightImage = null;
-            this.AdminFinancialView.Size = new System.Drawing.Size(105, 37);
+            this.AdminFinancialView.Size = new System.Drawing.Size(126, 37);
             this.AdminFinancialView.TabIndex = 8;
             this.AdminFinancialView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminFinancialView.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -256,7 +256,7 @@
             this.AdminFinancialDate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminFinancialDate.Location = new System.Drawing.Point(31, 231);
             this.AdminFinancialDate.Name = "AdminFinancialDate";
-            this.AdminFinancialDate.Size = new System.Drawing.Size(364, 27);
+            this.AdminFinancialDate.Size = new System.Drawing.Size(302, 27);
             this.AdminFinancialDate.TabIndex = 39;
             // 
             // AdminFinancial
@@ -271,7 +271,7 @@
             this.Controls.Add(this.AdminFinancialMoney);
             this.Controls.Add(this.bunifuLabel10);
             this.Name = "AdminFinancial";
-            this.Size = new System.Drawing.Size(1069, 705);
+            this.Size = new System.Drawing.Size(964, 705);
             this.AdminFinancialMoney.ResumeLayout(false);
             this.AdminFinancialMoney.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AdminFinancialMoneyImg)).EndInit();

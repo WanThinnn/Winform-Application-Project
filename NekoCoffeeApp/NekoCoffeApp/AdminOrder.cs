@@ -32,13 +32,23 @@ namespace UI
 
         private void AdminOrderBtn_Click(object sender, EventArgs e)
         {
+            edit_Order edit_Order = new edit_Order();
+            edit_Order.Show();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
 
         private void edit_Order_Btn_Click(object sender, EventArgs e)
         {
-            edit_Order edit_Order = new edit_Order();
-            edit_Order.Show();
+
         }
     }
 }

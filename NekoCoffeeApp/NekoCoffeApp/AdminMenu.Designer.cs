@@ -57,7 +57,6 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.AdminTilte2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.AdminShowEmployee5 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.AdminShowEmployee4 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.AdminShowEmployee3 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.AdminShowEmployee2 = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -83,7 +82,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.AdminShiftManagementAva)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee2)).BeginInit();
@@ -108,7 +106,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1069, 202);
+            this.panel1.Size = new System.Drawing.Size(964, 202);
             this.panel1.TabIndex = 0;
             // 
             // bunifuPanel1
@@ -129,7 +127,7 @@
             this.bunifuPanel1.Location = new System.Drawing.Point(15, 0);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(1040, 172);
+            this.bunifuPanel1.Size = new System.Drawing.Size(991, 172);
             this.bunifuPanel1.TabIndex = 0;
             // 
             // AdminComeOder
@@ -225,12 +223,13 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(815, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(752, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(222, 169);
+            this.pictureBox1.Size = new System.Drawing.Size(189, 169);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // AdminDate1
             // 
@@ -288,8 +287,9 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 202);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1069, 503);
+            this.panel2.Size = new System.Drawing.Size(964, 503);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // bunifuPanel2
             // 
@@ -304,11 +304,12 @@
             this.bunifuPanel2.Controls.Add(this.AdminBillCircle);
             this.bunifuPanel2.Controls.Add(this.AdminLabel3);
             this.bunifuPanel2.Controls.Add(this.AdminLabel2);
-            this.bunifuPanel2.Location = new System.Drawing.Point(544, 6);
+            this.bunifuPanel2.Location = new System.Drawing.Point(458, 6);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(522, 324);
+            this.bunifuPanel2.Size = new System.Drawing.Size(498, 346);
             this.bunifuPanel2.TabIndex = 2;
+            this.bunifuPanel2.Click += new System.EventHandler(this.bunifuPanel2_Click);
             // 
             // AdminComePayment
             // 
@@ -430,10 +431,10 @@
             this.AdminTableCircle.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
             this.AdminTableCircle.SuperScriptText = "";
             this.AdminTableCircle.TabIndex = 17;
-            this.AdminTableCircle.Text = "12";
+            this.AdminTableCircle.Text = "19";
             this.AdminTableCircle.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.AdminTableCircle.Value = 12;
-            this.AdminTableCircle.ValueByTransition = 12;
+            this.AdminTableCircle.Value = 19;
+            this.AdminTableCircle.ValueByTransition = 19;
             this.AdminTableCircle.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             // 
             // AdminBillCircle
@@ -500,9 +501,9 @@
             this.panel3.Controls.Add(this.AdminShiftManagementAva);
             this.panel3.Controls.Add(this.AdminTilte4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(544, 360);
+            this.panel3.Location = new System.Drawing.Point(502, 360);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(525, 143);
+            this.panel3.Size = new System.Drawing.Size(462, 143);
             this.panel3.TabIndex = 1;
             // 
             // AdminShiftLabel
@@ -510,7 +511,7 @@
             this.AdminShiftLabel.AutoSize = true;
             this.AdminShiftLabel.BackColor = System.Drawing.Color.Transparent;
             this.AdminShiftLabel.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminShiftLabel.Location = new System.Drawing.Point(156, 59);
+            this.AdminShiftLabel.Location = new System.Drawing.Point(164, 57);
             this.AdminShiftLabel.Name = "AdminShiftLabel";
             this.AdminShiftLabel.Size = new System.Drawing.Size(118, 36);
             this.AdminShiftLabel.TabIndex = 5;
@@ -524,7 +525,7 @@
             this.AdminShiftManagementAva.BorderRadius = 42;
             this.AdminShiftManagementAva.Image = ((System.Drawing.Image)(resources.GetObject("AdminShiftManagementAva.Image")));
             this.AdminShiftManagementAva.IsCircle = true;
-            this.AdminShiftManagementAva.Location = new System.Drawing.Point(47, 41);
+            this.AdminShiftManagementAva.Location = new System.Drawing.Point(74, 39);
             this.AdminShiftManagementAva.Name = "AdminShiftManagementAva";
             this.AdminShiftManagementAva.Size = new System.Drawing.Size(84, 84);
             this.AdminShiftManagementAva.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -579,7 +580,7 @@
             this.AdminTilte4.IdleIconLeftImage = null;
             this.AdminTilte4.IdleIconRightImage = null;
             this.AdminTilte4.IndicateFocus = false;
-            this.AdminTilte4.Location = new System.Drawing.Point(47, 3);
+            this.AdminTilte4.Location = new System.Drawing.Point(66, 3);
             this.AdminTilte4.Name = "AdminTilte4";
             this.AdminTilte4.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminTilte4.OnDisabledState.BorderRadius = 35;
@@ -628,13 +629,12 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(544, 503);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(502, 503);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.AdminTilte2);
-            this.panel4.Controls.Add(this.AdminShowEmployee5);
             this.panel4.Controls.Add(this.AdminShowEmployee4);
             this.panel4.Controls.Add(this.AdminShowEmployee3);
             this.panel4.Controls.Add(this.AdminShowEmployee2);
@@ -734,22 +734,6 @@
             this.AdminTilte2.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminTilte2.UseDefaultRadiusAndThickness = true;
             // 
-            // AdminShowEmployee5
-            // 
-            this.AdminShowEmployee5.AllowFocused = false;
-            this.AdminShowEmployee5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AdminShowEmployee5.AutoSizeHeight = true;
-            this.AdminShowEmployee5.BorderRadius = 34;
-            this.AdminShowEmployee5.Image = ((System.Drawing.Image)(resources.GetObject("AdminShowEmployee5.Image")));
-            this.AdminShowEmployee5.IsCircle = true;
-            this.AdminShowEmployee5.Location = new System.Drawing.Point(440, 58);
-            this.AdminShowEmployee5.Name = "AdminShowEmployee5";
-            this.AdminShowEmployee5.Size = new System.Drawing.Size(69, 69);
-            this.AdminShowEmployee5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.AdminShowEmployee5.TabIndex = 10;
-            this.AdminShowEmployee5.TabStop = false;
-            this.AdminShowEmployee5.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
             // AdminShowEmployee4
             // 
             this.AdminShowEmployee4.AllowFocused = false;
@@ -830,7 +814,7 @@
             this.bunifuPanel3.Location = new System.Drawing.Point(3, 157);
             this.bunifuPanel3.Name = "bunifuPanel3";
             this.bunifuPanel3.ShowBorders = true;
-            this.bunifuPanel3.Size = new System.Drawing.Size(541, 343);
+            this.bunifuPanel3.Size = new System.Drawing.Size(499, 343);
             this.bunifuPanel3.TabIndex = 1;
             // 
             // AdminComeFinancial
@@ -853,7 +837,7 @@
             this.AdminComeFinancial.ImageSize = new System.Drawing.Size(69, 43);
             this.AdminComeFinancial.ImageZoomSize = new System.Drawing.Size(70, 44);
             this.AdminComeFinancial.InitialImage = ((System.Drawing.Image)(resources.GetObject("AdminComeFinancial.InitialImage")));
-            this.AdminComeFinancial.Location = new System.Drawing.Point(440, 296);
+            this.AdminComeFinancial.Location = new System.Drawing.Point(354, 296);
             this.AdminComeFinancial.Name = "AdminComeFinancial";
             this.AdminComeFinancial.Rotation = 0;
             this.AdminComeFinancial.ShowActiveImage = true;
@@ -880,7 +864,7 @@
             this.MostRecentPay3.Location = new System.Drawing.Point(23, 216);
             this.MostRecentPay3.Name = "MostRecentPay3";
             this.MostRecentPay3.ShowBorders = true;
-            this.MostRecentPay3.Size = new System.Drawing.Size(512, 80);
+            this.MostRecentPay3.Size = new System.Drawing.Size(404, 80);
             this.MostRecentPay3.TabIndex = 13;
             // 
             // MostRecentPayLabel3
@@ -918,7 +902,7 @@
             this.MostRecentPay2.Location = new System.Drawing.Point(23, 130);
             this.MostRecentPay2.Name = "MostRecentPay2";
             this.MostRecentPay2.ShowBorders = true;
-            this.MostRecentPay2.Size = new System.Drawing.Size(512, 80);
+            this.MostRecentPay2.Size = new System.Drawing.Size(404, 80);
             this.MostRecentPay2.TabIndex = 13;
             // 
             // MostRecentPayLabel2
@@ -956,7 +940,7 @@
             this.MostRecentPay1.Location = new System.Drawing.Point(23, 44);
             this.MostRecentPay1.Name = "MostRecentPay1";
             this.MostRecentPay1.ShowBorders = true;
-            this.MostRecentPay1.Size = new System.Drawing.Size(512, 80);
+            this.MostRecentPay1.Size = new System.Drawing.Size(404, 80);
             this.MostRecentPay1.TabIndex = 12;
             // 
             // MostRecentPayLabel1
@@ -1070,15 +1054,15 @@
             this.AdminTitle3.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminTitle3.UseDefaultRadiusAndThickness = true;
             // 
-            // Admin
+            // AdminMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Admin";
-            this.Size = new System.Drawing.Size(1069, 705);
+            this.Name = "AdminMenu";
+            this.Size = new System.Drawing.Size(964, 705);
             this.panel1.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
@@ -1091,7 +1075,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.AdminShiftManagementAva)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee2)).EndInit();
@@ -1134,7 +1117,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel4;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminTilte2;
-        private Bunifu.UI.WinForms.BunifuPictureBox AdminShowEmployee5;
         private Bunifu.UI.WinForms.BunifuPictureBox AdminShowEmployee4;
         private Bunifu.UI.WinForms.BunifuPictureBox AdminShowEmployee3;
         private Bunifu.UI.WinForms.BunifuPictureBox AdminShowEmployee2;

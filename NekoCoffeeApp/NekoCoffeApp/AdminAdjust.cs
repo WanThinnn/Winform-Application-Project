@@ -28,5 +28,19 @@ namespace UI
             }
         }
 
+        private void AdminAdjust_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminAdjustCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminAdjustProduct_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
