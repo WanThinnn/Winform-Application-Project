@@ -177,7 +177,7 @@
             this.AdminComeOder.IdleIconLeftImage = null;
             this.AdminComeOder.IdleIconRightImage = null;
             this.AdminComeOder.IndicateFocus = false;
-            this.AdminComeOder.Location = new System.Drawing.Point(385, 120);
+            this.AdminComeOder.Location = new System.Drawing.Point(443, 120);
             this.AdminComeOder.Name = "AdminComeOder";
             this.AdminComeOder.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminComeOder.OnDisabledState.BorderRadius = 35;
@@ -253,7 +253,7 @@
             this.AdminDate1.Location = new System.Drawing.Point(30, 125);
             this.AdminDate1.MinimumSize = new System.Drawing.Size(4, 32);
             this.AdminDate1.Name = "AdminDate1";
-            this.AdminDate1.Size = new System.Drawing.Size(318, 32);
+            this.AdminDate1.Size = new System.Drawing.Size(372, 37);
             this.AdminDate1.TabIndex = 2;
             // 
             // AdminLabel1
@@ -263,7 +263,7 @@
             this.AdminLabel1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminLabel1.Location = new System.Drawing.Point(20, 49);
             this.AdminLabel1.Name = "AdminLabel1";
-            this.AdminLabel1.Size = new System.Drawing.Size(570, 46);
+            this.AdminLabel1.Size = new System.Drawing.Size(842, 68);
             this.AdminLabel1.TabIndex = 1;
             this.AdminLabel1.Text = "We serve more than 40 coffee and stay with that is many cats\r\nall will cost with " +
     "a affordable, given you many good time\r\n";
@@ -275,7 +275,7 @@
             this.AdminTitle1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminTitle1.Location = new System.Drawing.Point(18, 6);
             this.AdminTitle1.Name = "AdminTitle1";
-            this.AdminTitle1.Size = new System.Drawing.Size(451, 26);
+            this.AdminTitle1.Size = new System.Drawing.Size(676, 39);
             this.AdminTitle1.TabIndex = 0;
             this.AdminTitle1.Text = "Best place for healing your mental health";
             // 
@@ -431,10 +431,10 @@
             this.AdminTableCircle.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
             this.AdminTableCircle.SuperScriptText = "";
             this.AdminTableCircle.TabIndex = 17;
-            this.AdminTableCircle.Text = "17";
+            this.AdminTableCircle.Text = "11";
             this.AdminTableCircle.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.AdminTableCircle.Value = 17;
-            this.AdminTableCircle.ValueByTransition = 17;
+            this.AdminTableCircle.Value = 11;
+            this.AdminTableCircle.ValueByTransition = 11;
             this.AdminTableCircle.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             // 
             // AdminBillCircle
@@ -480,7 +480,7 @@
             this.AdminLabel3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminLabel3.Location = new System.Drawing.Point(280, 45);
             this.AdminLabel3.Name = "AdminLabel3";
-            this.AdminLabel3.Size = new System.Drawing.Size(182, 23);
+            this.AdminLabel3.Size = new System.Drawing.Size(273, 34);
             this.AdminLabel3.TabIndex = 6;
             this.AdminLabel3.Text = "REMAINING TABLES\r\n";
             // 
@@ -491,7 +491,7 @@
             this.AdminLabel2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminLabel2.Location = new System.Drawing.Point(31, 45);
             this.AdminLabel2.Name = "AdminLabel2";
-            this.AdminLabel2.Size = new System.Drawing.Size(127, 23);
+            this.AdminLabel2.Size = new System.Drawing.Size(190, 34);
             this.AdminLabel2.TabIndex = 5;
             this.AdminLabel2.Text = "UNPAID BILLS";
             // 
@@ -513,7 +513,7 @@
             this.AdminShiftLabel.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminShiftLabel.Location = new System.Drawing.Point(164, 57);
             this.AdminShiftLabel.Name = "AdminShiftLabel";
-            this.AdminShiftLabel.Size = new System.Drawing.Size(118, 36);
+            this.AdminShiftLabel.Size = new System.Drawing.Size(172, 52);
             this.AdminShiftLabel.TabIndex = 5;
             this.AdminShiftLabel.Text = "Mrs. Min Joeng\r\n0843250104";
             // 
@@ -874,7 +874,7 @@
             this.MostRecentPayLabel3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MostRecentPayLabel3.Location = new System.Drawing.Point(102, 8);
             this.MostRecentPayLabel3.Name = "MostRecentPayLabel3";
-            this.MostRecentPayLabel3.Size = new System.Drawing.Size(72, 57);
+            this.MostRecentPayLabel3.Size = new System.Drawing.Size(104, 72);
             this.MostRecentPayLabel3.TabIndex = 1;
             this.MostRecentPayLabel3.Text = "Table:\r\nDescripe:\r\nTotal:";
             // 
@@ -912,7 +912,7 @@
             this.MostRecentPayLabel2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MostRecentPayLabel2.Location = new System.Drawing.Point(102, 8);
             this.MostRecentPayLabel2.Name = "MostRecentPayLabel2";
-            this.MostRecentPayLabel2.Size = new System.Drawing.Size(72, 57);
+            this.MostRecentPayLabel2.Size = new System.Drawing.Size(104, 72);
             this.MostRecentPayLabel2.TabIndex = 1;
             this.MostRecentPayLabel2.Text = "Table:\r\nDescripe:\r\nTotal:";
             // 
@@ -950,7 +950,7 @@
             this.MostRecentPayLabel1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MostRecentPayLabel1.Location = new System.Drawing.Point(102, 8);
             this.MostRecentPayLabel1.Name = "MostRecentPayLabel1";
-            this.MostRecentPayLabel1.Size = new System.Drawing.Size(72, 57);
+            this.MostRecentPayLabel1.Size = new System.Drawing.Size(104, 72);
             this.MostRecentPayLabel1.TabIndex = 1;
             this.MostRecentPayLabel1.Text = "Table:\r\nDescripe:\r\nTotal:";
             // 

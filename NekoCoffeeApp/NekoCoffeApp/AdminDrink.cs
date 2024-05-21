@@ -228,5 +228,20 @@ namespace UI
             AdminFillDrinkPrice.Text = existingDrink.Price;
             AdminFillDrinkAvailable.Text = existingDrink.Available;
         }
+
+        private void AdminViewAllYourDrinks_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void AdminFillDrinkPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminFillDrinkAvailable_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

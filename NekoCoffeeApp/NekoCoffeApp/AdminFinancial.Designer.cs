@@ -30,13 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminFinancial));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
             this.AdminFinancialMoney = new Bunifu.UI.WinForms.BunifuPanel();
             this.AdminFinancialMoneyLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.AdminFinancialMoneyImg = new System.Windows.Forms.PictureBox();
-            this.AdminFinancialViewTable = new System.Windows.Forms.ListView();
             this.AdminFinancialBank = new Bunifu.UI.WinForms.BunifuPanel();
             this.AdminFinancialBankLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.AdminFinancialBankImg = new System.Windows.Forms.PictureBox();
@@ -61,10 +60,11 @@
             this.bunifuLabel10.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel10.Font = new System.Drawing.Font("Courier New", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel10.ForeColor = System.Drawing.Color.LightSalmon;
-            this.bunifuLabel10.Location = new System.Drawing.Point(31, 19);
+            this.bunifuLabel10.Location = new System.Drawing.Point(46, 28);
+            this.bunifuLabel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel10.Name = "bunifuLabel10";
             this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel10.Size = new System.Drawing.Size(323, 33);
+            this.bunifuLabel10.Size = new System.Drawing.Size(494, 50);
             this.bunifuLabel10.TabIndex = 35;
             this.bunifuLabel10.Text = "Total in This Shift";
             this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -80,11 +80,13 @@
             this.AdminFinancialMoney.BorderThickness = 1;
             this.AdminFinancialMoney.Controls.Add(this.AdminFinancialMoneyLabel);
             this.AdminFinancialMoney.Controls.Add(this.AdminFinancialMoneyImg);
-            this.AdminFinancialMoney.Location = new System.Drawing.Point(31, 59);
+            this.AdminFinancialMoney.Location = new System.Drawing.Point(25, 176);
+            this.AdminFinancialMoney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AdminFinancialMoney.Name = "AdminFinancialMoney";
             this.AdminFinancialMoney.ShowBorders = true;
-            this.AdminFinancialMoney.Size = new System.Drawing.Size(909, 80);
+            this.AdminFinancialMoney.Size = new System.Drawing.Size(669, 120);
             this.AdminFinancialMoney.TabIndex = 36;
+            this.AdminFinancialMoney.Click += new System.EventHandler(this.AdminFinancialMoney_Click);
             // 
             // AdminFinancialMoneyLabel
             // 
@@ -93,10 +95,11 @@
             this.AdminFinancialMoneyLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.AdminFinancialMoneyLabel.CursorType = System.Windows.Forms.Cursors.Default;
             this.AdminFinancialMoneyLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminFinancialMoneyLabel.Location = new System.Drawing.Point(179, 17);
+            this.AdminFinancialMoneyLabel.Location = new System.Drawing.Point(268, 26);
+            this.AdminFinancialMoneyLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AdminFinancialMoneyLabel.Name = "AdminFinancialMoneyLabel";
             this.AdminFinancialMoneyLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.AdminFinancialMoneyLabel.Size = new System.Drawing.Size(54, 44);
+            this.AdminFinancialMoneyLabel.Size = new System.Drawing.Size(87, 72);
             this.AdminFinancialMoneyLabel.TabIndex = 1;
             this.AdminFinancialMoneyLabel.Text = "30 Bills\r\nTotal: \r\n";
             this.AdminFinancialMoneyLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -106,20 +109,12 @@
             // 
             this.AdminFinancialMoneyImg.Image = ((System.Drawing.Image)(resources.GetObject("AdminFinancialMoneyImg.Image")));
             this.AdminFinancialMoneyImg.Location = new System.Drawing.Point(0, 0);
+            this.AdminFinancialMoneyImg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AdminFinancialMoneyImg.Name = "AdminFinancialMoneyImg";
-            this.AdminFinancialMoneyImg.Size = new System.Drawing.Size(152, 80);
+            this.AdminFinancialMoneyImg.Size = new System.Drawing.Size(228, 120);
             this.AdminFinancialMoneyImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.AdminFinancialMoneyImg.TabIndex = 0;
             this.AdminFinancialMoneyImg.TabStop = false;
-            // 
-            // AdminFinancialViewTable
-            // 
-            this.AdminFinancialViewTable.HideSelection = false;
-            this.AdminFinancialViewTable.Location = new System.Drawing.Point(31, 268);
-            this.AdminFinancialViewTable.Name = "AdminFinancialViewTable";
-            this.AdminFinancialViewTable.Size = new System.Drawing.Size(909, 411);
-            this.AdminFinancialViewTable.TabIndex = 38;
-            this.AdminFinancialViewTable.UseCompatibleStateImageBehavior = false;
             // 
             // AdminFinancialBank
             // 
@@ -131,10 +126,11 @@
             this.AdminFinancialBank.BorderThickness = 1;
             this.AdminFinancialBank.Controls.Add(this.AdminFinancialBankLabel);
             this.AdminFinancialBank.Controls.Add(this.AdminFinancialBankImg);
-            this.AdminFinancialBank.Location = new System.Drawing.Point(31, 145);
+            this.AdminFinancialBank.Location = new System.Drawing.Point(25, 317);
+            this.AdminFinancialBank.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AdminFinancialBank.Name = "AdminFinancialBank";
             this.AdminFinancialBank.ShowBorders = true;
-            this.AdminFinancialBank.Size = new System.Drawing.Size(909, 80);
+            this.AdminFinancialBank.Size = new System.Drawing.Size(669, 120);
             this.AdminFinancialBank.TabIndex = 37;
             // 
             // AdminFinancialBankLabel
@@ -143,10 +139,11 @@
             this.AdminFinancialBankLabel.AutoEllipsis = false;
             this.AdminFinancialBankLabel.CursorType = null;
             this.AdminFinancialBankLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminFinancialBankLabel.Location = new System.Drawing.Point(179, 18);
+            this.AdminFinancialBankLabel.Location = new System.Drawing.Point(268, 27);
+            this.AdminFinancialBankLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AdminFinancialBankLabel.Name = "AdminFinancialBankLabel";
             this.AdminFinancialBankLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.AdminFinancialBankLabel.Size = new System.Drawing.Size(54, 44);
+            this.AdminFinancialBankLabel.Size = new System.Drawing.Size(87, 72);
             this.AdminFinancialBankLabel.TabIndex = 1;
             this.AdminFinancialBankLabel.Text = "30 Bills\r\nTotal: \r\n";
             this.AdminFinancialBankLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -156,8 +153,9 @@
             // 
             this.AdminFinancialBankImg.Image = ((System.Drawing.Image)(resources.GetObject("AdminFinancialBankImg.Image")));
             this.AdminFinancialBankImg.Location = new System.Drawing.Point(0, 0);
+            this.AdminFinancialBankImg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AdminFinancialBankImg.Name = "AdminFinancialBankImg";
-            this.AdminFinancialBankImg.Size = new System.Drawing.Size(152, 80);
+            this.AdminFinancialBankImg.Size = new System.Drawing.Size(228, 120);
             this.AdminFinancialBankImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.AdminFinancialBankImg.TabIndex = 0;
             this.AdminFinancialBankImg.TabStop = false;
@@ -181,11 +179,11 @@
             this.AdminFinancialView.ColorContrastOnClick = 45;
             this.AdminFinancialView.ColorContrastOnHover = 45;
             this.AdminFinancialView.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.AdminFinancialView.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.AdminFinancialView.CustomizableEdges = borderEdges2;
             this.AdminFinancialView.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminFinancialView.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminFinancialView.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -209,7 +207,8 @@
             this.AdminFinancialView.IdleIconLeftImage = null;
             this.AdminFinancialView.IdleIconRightImage = null;
             this.AdminFinancialView.IndicateFocus = false;
-            this.AdminFinancialView.Location = new System.Drawing.Point(355, 225);
+            this.AdminFinancialView.Location = new System.Drawing.Point(505, 110);
+            this.AdminFinancialView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AdminFinancialView.Name = "AdminFinancialView";
             this.AdminFinancialView.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminFinancialView.OnDisabledState.BorderRadius = 37;
@@ -243,7 +242,7 @@
             this.AdminFinancialView.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminFinancialView.OnPressedState.IconLeftImage = null;
             this.AdminFinancialView.OnPressedState.IconRightImage = null;
-            this.AdminFinancialView.Size = new System.Drawing.Size(126, 37);
+            this.AdminFinancialView.Size = new System.Drawing.Size(189, 37);
             this.AdminFinancialView.TabIndex = 8;
             this.AdminFinancialView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminFinancialView.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -254,24 +253,25 @@
             // AdminFinancialDate
             // 
             this.AdminFinancialDate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminFinancialDate.Location = new System.Drawing.Point(31, 231);
+            this.AdminFinancialDate.Location = new System.Drawing.Point(25, 110);
+            this.AdminFinancialDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AdminFinancialDate.Name = "AdminFinancialDate";
-            this.AdminFinancialDate.Size = new System.Drawing.Size(302, 27);
+            this.AdminFinancialDate.Size = new System.Drawing.Size(445, 37);
             this.AdminFinancialDate.TabIndex = 39;
             // 
             // AdminFinancial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.AdminFinancialDate);
             this.Controls.Add(this.AdminFinancialView);
             this.Controls.Add(this.AdminFinancialBank);
-            this.Controls.Add(this.AdminFinancialViewTable);
             this.Controls.Add(this.AdminFinancialMoney);
             this.Controls.Add(this.bunifuLabel10);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AdminFinancial";
-            this.Size = new System.Drawing.Size(964, 705);
+            this.Size = new System.Drawing.Size(706, 484);
+            this.Load += new System.EventHandler(this.AdminFinancial_Load);
             this.AdminFinancialMoney.ResumeLayout(false);
             this.AdminFinancialMoney.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AdminFinancialMoneyImg)).EndInit();
@@ -293,7 +293,6 @@
         private Bunifu.UI.WinForms.BunifuPanel AdminFinancialBank;
         private Bunifu.UI.WinForms.BunifuLabel AdminFinancialBankLabel;
         private System.Windows.Forms.PictureBox AdminFinancialBankImg;
-        private System.Windows.Forms.ListView AdminFinancialViewTable;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminFinancialView;
         private System.Windows.Forms.DateTimePicker AdminFinancialDate;
     }

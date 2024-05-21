@@ -27,5 +27,15 @@ namespace UI
                 return _instance;
             }
         }
+
+        private void AdminFinancialMoney_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminFinancial_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

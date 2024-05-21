@@ -41,12 +41,11 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AdminUpdateCat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminDeleteCat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -54,7 +53,6 @@
             this.AdminFillCatStatus = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminFillCatName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminViewAllCat = new System.Windows.Forms.ListView();
-            this.AdminShowAllCat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminFillCatId = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminCheckCat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.SuspendLayout();
@@ -93,7 +91,7 @@
             this.AdminUpdateCat.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.AdminUpdateCat.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.AdminUpdateCat.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.AdminUpdateCat.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminUpdateCat.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminUpdateCat.ForeColor = System.Drawing.Color.White;
             this.AdminUpdateCat.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AdminUpdateCat.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -111,7 +109,8 @@
             this.AdminUpdateCat.IdleIconLeftImage = null;
             this.AdminUpdateCat.IdleIconRightImage = null;
             this.AdminUpdateCat.IndicateFocus = false;
-            this.AdminUpdateCat.Location = new System.Drawing.Point(716, 323);
+            this.AdminUpdateCat.Location = new System.Drawing.Point(767, 260);
+            this.AdminUpdateCat.Margin = new System.Windows.Forms.Padding(4);
             this.AdminUpdateCat.Name = "AdminUpdateCat";
             this.AdminUpdateCat.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminUpdateCat.OnDisabledState.BorderRadius = 37;
@@ -145,7 +144,7 @@
             this.AdminUpdateCat.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminUpdateCat.OnPressedState.IconLeftImage = null;
             this.AdminUpdateCat.OnPressedState.IconRightImage = null;
-            this.AdminUpdateCat.Size = new System.Drawing.Size(216, 36);
+            this.AdminUpdateCat.Size = new System.Drawing.Size(119, 50);
             this.AdminUpdateCat.TabIndex = 67;
             this.AdminUpdateCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminUpdateCat.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -200,7 +199,8 @@
             this.AdminDeleteCat.IdleIconLeftImage = null;
             this.AdminDeleteCat.IdleIconRightImage = null;
             this.AdminDeleteCat.IndicateFocus = false;
-            this.AdminDeleteCat.Location = new System.Drawing.Point(840, 272);
+            this.AdminDeleteCat.Location = new System.Drawing.Point(633, 318);
+            this.AdminDeleteCat.Margin = new System.Windows.Forms.Padding(4);
             this.AdminDeleteCat.Name = "AdminDeleteCat";
             this.AdminDeleteCat.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminDeleteCat.OnDisabledState.BorderRadius = 37;
@@ -234,7 +234,7 @@
             this.AdminDeleteCat.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminDeleteCat.OnPressedState.IconLeftImage = null;
             this.AdminDeleteCat.OnPressedState.IconRightImage = null;
-            this.AdminDeleteCat.Size = new System.Drawing.Size(92, 36);
+            this.AdminDeleteCat.Size = new System.Drawing.Size(253, 53);
             this.AdminDeleteCat.TabIndex = 66;
             this.AdminDeleteCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminDeleteCat.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -271,7 +271,7 @@
             this.AdminAddCat.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.AdminAddCat.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.AdminAddCat.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.AdminAddCat.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminAddCat.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminAddCat.ForeColor = System.Drawing.Color.White;
             this.AdminAddCat.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AdminAddCat.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -289,7 +289,8 @@
             this.AdminAddCat.IdleIconLeftImage = null;
             this.AdminAddCat.IdleIconRightImage = null;
             this.AdminAddCat.IndicateFocus = false;
-            this.AdminAddCat.Location = new System.Drawing.Point(716, 272);
+            this.AdminAddCat.Location = new System.Drawing.Point(633, 260);
+            this.AdminAddCat.Margin = new System.Windows.Forms.Padding(4);
             this.AdminAddCat.Name = "AdminAddCat";
             this.AdminAddCat.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAddCat.OnDisabledState.BorderRadius = 37;
@@ -323,7 +324,7 @@
             this.AdminAddCat.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAddCat.OnPressedState.IconLeftImage = null;
             this.AdminAddCat.OnPressedState.IconRightImage = null;
-            this.AdminAddCat.Size = new System.Drawing.Size(92, 36);
+            this.AdminAddCat.Size = new System.Drawing.Size(126, 50);
             this.AdminAddCat.TabIndex = 65;
             this.AdminAddCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAddCat.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -348,7 +349,7 @@
             this.AdminFillCatStatus.BorderThickness = 1;
             this.AdminFillCatStatus.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillCatStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AdminFillCatStatus.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.AdminFillCatStatus.DefaultFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminFillCatStatus.DefaultText = "";
             this.AdminFillCatStatus.FillColor = System.Drawing.Color.White;
             this.AdminFillCatStatus.HideSelection = true;
@@ -358,9 +359,10 @@
             this.AdminFillCatStatus.IconRight = null;
             this.AdminFillCatStatus.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillCatStatus.Lines = new string[0];
-            this.AdminFillCatStatus.Location = new System.Drawing.Point(716, 215);
+            this.AdminFillCatStatus.Location = new System.Drawing.Point(633, 198);
+            this.AdminFillCatStatus.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillCatStatus.MaxLength = 32767;
-            this.AdminFillCatStatus.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillCatStatus.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillCatStatus.Modified = false;
             this.AdminFillCatStatus.Multiline = false;
             this.AdminFillCatStatus.Name = "AdminFillCatStatus";
@@ -384,24 +386,24 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillCatStatus.OnIdleState = stateProperties4;
-            this.AdminFillCatStatus.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillCatStatus.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillCatStatus.PasswordChar = '\0';
             this.AdminFillCatStatus.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.AdminFillCatStatus.PlaceholderText = "Fill your Cat\'s Status";
+            this.AdminFillCatStatus.PlaceholderText = "Fill Cat\'s Status";
             this.AdminFillCatStatus.ReadOnly = false;
             this.AdminFillCatStatus.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.AdminFillCatStatus.SelectedText = "";
             this.AdminFillCatStatus.SelectionLength = 0;
             this.AdminFillCatStatus.SelectionStart = 0;
             this.AdminFillCatStatus.ShortcutsEnabled = true;
-            this.AdminFillCatStatus.Size = new System.Drawing.Size(216, 37);
+            this.AdminFillCatStatus.Size = new System.Drawing.Size(253, 45);
             this.AdminFillCatStatus.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillCatStatus.TabIndex = 64;
             this.AdminFillCatStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.AdminFillCatStatus.TextMarginBottom = 0;
             this.AdminFillCatStatus.TextMarginLeft = 3;
             this.AdminFillCatStatus.TextMarginTop = 0;
-            this.AdminFillCatStatus.TextPlaceholder = "Fill your Cat\'s Status";
+            this.AdminFillCatStatus.TextPlaceholder = "Fill Cat\'s Status";
             this.AdminFillCatStatus.UseSystemPasswordChar = false;
             this.AdminFillCatStatus.WordWrap = true;
             // 
@@ -422,7 +424,7 @@
             this.AdminFillCatName.BorderThickness = 1;
             this.AdminFillCatName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillCatName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AdminFillCatName.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.AdminFillCatName.DefaultFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminFillCatName.DefaultText = "";
             this.AdminFillCatName.FillColor = System.Drawing.Color.White;
             this.AdminFillCatName.HideSelection = true;
@@ -432,9 +434,10 @@
             this.AdminFillCatName.IconRight = null;
             this.AdminFillCatName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillCatName.Lines = new string[0];
-            this.AdminFillCatName.Location = new System.Drawing.Point(716, 159);
+            this.AdminFillCatName.Location = new System.Drawing.Point(633, 134);
+            this.AdminFillCatName.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillCatName.MaxLength = 32767;
-            this.AdminFillCatName.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillCatName.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillCatName.Modified = false;
             this.AdminFillCatName.Multiline = false;
             this.AdminFillCatName.Name = "AdminFillCatName";
@@ -458,125 +461,36 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillCatName.OnIdleState = stateProperties8;
-            this.AdminFillCatName.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillCatName.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillCatName.PasswordChar = '\0';
             this.AdminFillCatName.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.AdminFillCatName.PlaceholderText = "Fill your Cat\'s Name";
+            this.AdminFillCatName.PlaceholderText = "Fill Cat\'s Name";
             this.AdminFillCatName.ReadOnly = false;
             this.AdminFillCatName.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.AdminFillCatName.SelectedText = "";
             this.AdminFillCatName.SelectionLength = 0;
             this.AdminFillCatName.SelectionStart = 0;
             this.AdminFillCatName.ShortcutsEnabled = true;
-            this.AdminFillCatName.Size = new System.Drawing.Size(216, 37);
+            this.AdminFillCatName.Size = new System.Drawing.Size(253, 45);
             this.AdminFillCatName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillCatName.TabIndex = 63;
             this.AdminFillCatName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.AdminFillCatName.TextMarginBottom = 0;
             this.AdminFillCatName.TextMarginLeft = 3;
             this.AdminFillCatName.TextMarginTop = 0;
-            this.AdminFillCatName.TextPlaceholder = "Fill your Cat\'s Name";
+            this.AdminFillCatName.TextPlaceholder = "Fill Cat\'s Name";
             this.AdminFillCatName.UseSystemPasswordChar = false;
             this.AdminFillCatName.WordWrap = true;
             // 
             // AdminViewAllCat
             // 
             this.AdminViewAllCat.HideSelection = false;
-            this.AdminViewAllCat.Location = new System.Drawing.Point(22, 22);
-            this.AdminViewAllCat.Margin = new System.Windows.Forms.Padding(2);
+            this.AdminViewAllCat.Location = new System.Drawing.Point(20, 14);
             this.AdminViewAllCat.Name = "AdminViewAllCat";
-            this.AdminViewAllCat.Size = new System.Drawing.Size(672, 616);
+            this.AdminViewAllCat.Size = new System.Drawing.Size(606, 509);
             this.AdminViewAllCat.TabIndex = 62;
             this.AdminViewAllCat.UseCompatibleStateImageBehavior = false;
-            // 
-            // AdminShowAllCat
-            // 
-            this.AdminShowAllCat.AllowAnimations = true;
-            this.AdminShowAllCat.AllowMouseEffects = true;
-            this.AdminShowAllCat.AllowToggling = false;
-            this.AdminShowAllCat.AnimationSpeed = 200;
-            this.AdminShowAllCat.AutoGenerateColors = false;
-            this.AdminShowAllCat.AutoRoundBorders = false;
-            this.AdminShowAllCat.AutoSizeLeftIcon = true;
-            this.AdminShowAllCat.AutoSizeRightIcon = true;
-            this.AdminShowAllCat.BackColor = System.Drawing.Color.Transparent;
-            this.AdminShowAllCat.BackColor1 = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminShowAllCat.BackgroundImage")));
-            this.AdminShowAllCat.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllCat.ButtonText = "VIEW ALL YOUR CAT";
-            this.AdminShowAllCat.ButtonTextMarginLeft = 0;
-            this.AdminShowAllCat.ColorContrastOnClick = 45;
-            this.AdminShowAllCat.ColorContrastOnHover = 45;
-            this.AdminShowAllCat.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.AdminShowAllCat.CustomizableEdges = borderEdges4;
-            this.AdminShowAllCat.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AdminShowAllCat.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.AdminShowAllCat.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.AdminShowAllCat.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.AdminShowAllCat.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.AdminShowAllCat.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminShowAllCat.ForeColor = System.Drawing.Color.White;
-            this.AdminShowAllCat.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AdminShowAllCat.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.AdminShowAllCat.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.AdminShowAllCat.IconMarginLeft = 11;
-            this.AdminShowAllCat.IconPadding = 10;
-            this.AdminShowAllCat.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AdminShowAllCat.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.AdminShowAllCat.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.AdminShowAllCat.IconSize = 25;
-            this.AdminShowAllCat.IdleBorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCat.IdleBorderRadius = 37;
-            this.AdminShowAllCat.IdleBorderThickness = 1;
-            this.AdminShowAllCat.IdleFillColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCat.IdleIconLeftImage = null;
-            this.AdminShowAllCat.IdleIconRightImage = null;
-            this.AdminShowAllCat.IndicateFocus = false;
-            this.AdminShowAllCat.Location = new System.Drawing.Point(22, 647);
-            this.AdminShowAllCat.Name = "AdminShowAllCat";
-            this.AdminShowAllCat.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.AdminShowAllCat.OnDisabledState.BorderRadius = 37;
-            this.AdminShowAllCat.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllCat.OnDisabledState.BorderThickness = 1;
-            this.AdminShowAllCat.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.AdminShowAllCat.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.AdminShowAllCat.OnDisabledState.IconLeftImage = null;
-            this.AdminShowAllCat.OnDisabledState.IconRightImage = null;
-            this.AdminShowAllCat.onHoverState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCat.onHoverState.BorderRadius = 37;
-            this.AdminShowAllCat.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllCat.onHoverState.BorderThickness = 1;
-            this.AdminShowAllCat.onHoverState.FillColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCat.onHoverState.ForeColor = System.Drawing.Color.Black;
-            this.AdminShowAllCat.onHoverState.IconLeftImage = null;
-            this.AdminShowAllCat.onHoverState.IconRightImage = null;
-            this.AdminShowAllCat.OnIdleState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCat.OnIdleState.BorderRadius = 37;
-            this.AdminShowAllCat.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllCat.OnIdleState.BorderThickness = 1;
-            this.AdminShowAllCat.OnIdleState.FillColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCat.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.AdminShowAllCat.OnIdleState.IconLeftImage = null;
-            this.AdminShowAllCat.OnIdleState.IconRightImage = null;
-            this.AdminShowAllCat.OnPressedState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCat.OnPressedState.BorderRadius = 37;
-            this.AdminShowAllCat.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllCat.OnPressedState.BorderThickness = 1;
-            this.AdminShowAllCat.OnPressedState.FillColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCat.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.AdminShowAllCat.OnPressedState.IconLeftImage = null;
-            this.AdminShowAllCat.OnPressedState.IconRightImage = null;
-            this.AdminShowAllCat.Size = new System.Drawing.Size(214, 36);
-            this.AdminShowAllCat.TabIndex = 61;
-            this.AdminShowAllCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.AdminShowAllCat.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.AdminShowAllCat.TextMarginLeft = 0;
-            this.AdminShowAllCat.TextPadding = new System.Windows.Forms.Padding(0);
-            this.AdminShowAllCat.UseDefaultRadiusAndThickness = true;
+            this.AdminViewAllCat.SelectedIndexChanged += new System.EventHandler(this.AdminViewAllCat_SelectedIndexChanged);
             // 
             // AdminFillCatId
             // 
@@ -595,7 +509,7 @@
             this.AdminFillCatId.BorderThickness = 1;
             this.AdminFillCatId.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillCatId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AdminFillCatId.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.AdminFillCatId.DefaultFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminFillCatId.DefaultText = "";
             this.AdminFillCatId.FillColor = System.Drawing.Color.White;
             this.AdminFillCatId.HideSelection = true;
@@ -605,9 +519,10 @@
             this.AdminFillCatId.IconRight = null;
             this.AdminFillCatId.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillCatId.Lines = new string[0];
-            this.AdminFillCatId.Location = new System.Drawing.Point(716, 39);
+            this.AdminFillCatId.Location = new System.Drawing.Point(633, 24);
+            this.AdminFillCatId.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillCatId.MaxLength = 32767;
-            this.AdminFillCatId.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillCatId.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillCatId.Modified = false;
             this.AdminFillCatId.Multiline = false;
             this.AdminFillCatId.Name = "AdminFillCatId";
@@ -631,7 +546,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillCatId.OnIdleState = stateProperties12;
-            this.AdminFillCatId.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminFillCatId.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillCatId.PasswordChar = '\0';
             this.AdminFillCatId.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillCatId.PlaceholderText = "Fill Cat\'s Id";
@@ -641,7 +556,7 @@
             this.AdminFillCatId.SelectionLength = 0;
             this.AdminFillCatId.SelectionStart = 0;
             this.AdminFillCatId.ShortcutsEnabled = true;
-            this.AdminFillCatId.Size = new System.Drawing.Size(216, 37);
+            this.AdminFillCatId.Size = new System.Drawing.Size(253, 45);
             this.AdminFillCatId.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillCatId.TabIndex = 60;
             this.AdminFillCatId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -671,11 +586,11 @@
             this.AdminCheckCat.ColorContrastOnClick = 45;
             this.AdminCheckCat.ColorContrastOnHover = 45;
             this.AdminCheckCat.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.AdminCheckCat.CustomizableEdges = borderEdges5;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.AdminCheckCat.CustomizableEdges = borderEdges4;
             this.AdminCheckCat.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminCheckCat.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminCheckCat.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -699,7 +614,8 @@
             this.AdminCheckCat.IdleIconLeftImage = null;
             this.AdminCheckCat.IdleIconRightImage = null;
             this.AdminCheckCat.IndicateFocus = false;
-            this.AdminCheckCat.Location = new System.Drawing.Point(716, 96);
+            this.AdminCheckCat.Location = new System.Drawing.Point(633, 77);
+            this.AdminCheckCat.Margin = new System.Windows.Forms.Padding(4);
             this.AdminCheckCat.Name = "AdminCheckCat";
             this.AdminCheckCat.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminCheckCat.OnDisabledState.BorderRadius = 37;
@@ -733,7 +649,7 @@
             this.AdminCheckCat.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminCheckCat.OnPressedState.IconLeftImage = null;
             this.AdminCheckCat.OnPressedState.IconRightImage = null;
-            this.AdminCheckCat.Size = new System.Drawing.Size(216, 36);
+            this.AdminCheckCat.Size = new System.Drawing.Size(253, 37);
             this.AdminCheckCat.TabIndex = 59;
             this.AdminCheckCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminCheckCat.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -743,8 +659,7 @@
             // 
             // AdminCat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.AdminUpdateCat);
             this.Controls.Add(this.AdminDeleteCat);
@@ -752,11 +667,11 @@
             this.Controls.Add(this.AdminFillCatStatus);
             this.Controls.Add(this.AdminFillCatName);
             this.Controls.Add(this.AdminViewAllCat);
-            this.Controls.Add(this.AdminShowAllCat);
             this.Controls.Add(this.AdminFillCatId);
             this.Controls.Add(this.AdminCheckCat);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminCat";
-            this.Size = new System.Drawing.Size(964, 705);
+            this.Size = new System.Drawing.Size(910, 540);
             this.Load += new System.EventHandler(this.AdminCat_Load);
             this.ResumeLayout(false);
 
@@ -771,7 +686,6 @@
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillCatStatus;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillCatName;
         private System.Windows.Forms.ListView AdminViewAllCat;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminShowAllCat;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillCatId;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminCheckCat;
     }

@@ -231,5 +231,15 @@ namespace UI
                 AdminFillEmployeeSalary.Text = existingEmployee.Salary;
             
         }
+
+        private void AdminFillEmployeePhoneNumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminFillEmployeeAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

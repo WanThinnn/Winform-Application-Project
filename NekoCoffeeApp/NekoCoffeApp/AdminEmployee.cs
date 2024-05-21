@@ -35,6 +35,16 @@ namespace UI
             edit_Employee employee_Edit = new edit_Employee();
             employee_Edit.Show();
         }
+
+        private void bunifuLabel10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

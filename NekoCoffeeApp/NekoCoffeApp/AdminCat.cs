@@ -21,5 +21,10 @@ namespace UI
         {
 
         }
+
+        private void AdminViewAllCat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

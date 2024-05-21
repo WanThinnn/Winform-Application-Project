@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -68,8 +67,6 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.AdminShowRating = new Bunifu.UI.WinForms.BunifuRating();
-            this.AdminShowAllCustomers = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminFillCustomerSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminCheckCustomer = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminFillCustomerDateOfBirth = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -91,119 +88,6 @@
             this.bunifuElipse1.ElipseRadius = 35;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // AdminShowRating
-            // 
-            this.AdminShowRating.BackColor = System.Drawing.Color.Transparent;
-            this.AdminShowRating.DisabledEmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.AdminShowRating.DisabledRatedFillColor = System.Drawing.Color.DarkGray;
-            this.AdminShowRating.EmptyBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.AdminShowRating.EmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.AdminShowRating.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminShowRating.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
-            this.AdminShowRating.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
-            this.AdminShowRating.InnerRadius = 2F;
-            this.AdminShowRating.Location = new System.Drawing.Point(563, 642);
-            this.AdminShowRating.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.AdminShowRating.Name = "AdminShowRating";
-            this.AdminShowRating.OuterRadius = 10F;
-            this.AdminShowRating.RatedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
-            this.AdminShowRating.RatedFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
-            this.AdminShowRating.ReadOnly = false;
-            this.AdminShowRating.RightClickToClear = true;
-            this.AdminShowRating.Size = new System.Drawing.Size(121, 22);
-            this.AdminShowRating.TabIndex = 20;
-            this.AdminShowRating.Text = "bunifuRating1";
-            this.AdminShowRating.Value = 2;
-            // 
-            // AdminShowAllCustomers
-            // 
-            this.AdminShowAllCustomers.AllowAnimations = true;
-            this.AdminShowAllCustomers.AllowMouseEffects = true;
-            this.AdminShowAllCustomers.AllowToggling = false;
-            this.AdminShowAllCustomers.AnimationSpeed = 200;
-            this.AdminShowAllCustomers.AutoGenerateColors = false;
-            this.AdminShowAllCustomers.AutoRoundBorders = false;
-            this.AdminShowAllCustomers.AutoSizeLeftIcon = true;
-            this.AdminShowAllCustomers.AutoSizeRightIcon = true;
-            this.AdminShowAllCustomers.BackColor = System.Drawing.Color.Transparent;
-            this.AdminShowAllCustomers.BackColor1 = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCustomers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminShowAllCustomers.BackgroundImage")));
-            this.AdminShowAllCustomers.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllCustomers.ButtonText = "VIEW ALL YOUR CUSTOMERS";
-            this.AdminShowAllCustomers.ButtonTextMarginLeft = 0;
-            this.AdminShowAllCustomers.ColorContrastOnClick = 45;
-            this.AdminShowAllCustomers.ColorContrastOnHover = 45;
-            this.AdminShowAllCustomers.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.AdminShowAllCustomers.CustomizableEdges = borderEdges4;
-            this.AdminShowAllCustomers.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AdminShowAllCustomers.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.AdminShowAllCustomers.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.AdminShowAllCustomers.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.AdminShowAllCustomers.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.AdminShowAllCustomers.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminShowAllCustomers.ForeColor = System.Drawing.Color.White;
-            this.AdminShowAllCustomers.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AdminShowAllCustomers.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.AdminShowAllCustomers.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.AdminShowAllCustomers.IconMarginLeft = 11;
-            this.AdminShowAllCustomers.IconPadding = 10;
-            this.AdminShowAllCustomers.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AdminShowAllCustomers.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.AdminShowAllCustomers.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.AdminShowAllCustomers.IconSize = 25;
-            this.AdminShowAllCustomers.IdleBorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCustomers.IdleBorderRadius = 37;
-            this.AdminShowAllCustomers.IdleBorderThickness = 1;
-            this.AdminShowAllCustomers.IdleFillColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCustomers.IdleIconLeftImage = null;
-            this.AdminShowAllCustomers.IdleIconRightImage = null;
-            this.AdminShowAllCustomers.IndicateFocus = false;
-            this.AdminShowAllCustomers.Location = new System.Drawing.Point(21, 642);
-            this.AdminShowAllCustomers.Name = "AdminShowAllCustomers";
-            this.AdminShowAllCustomers.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.AdminShowAllCustomers.OnDisabledState.BorderRadius = 37;
-            this.AdminShowAllCustomers.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllCustomers.OnDisabledState.BorderThickness = 1;
-            this.AdminShowAllCustomers.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.AdminShowAllCustomers.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.AdminShowAllCustomers.OnDisabledState.IconLeftImage = null;
-            this.AdminShowAllCustomers.OnDisabledState.IconRightImage = null;
-            this.AdminShowAllCustomers.onHoverState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCustomers.onHoverState.BorderRadius = 37;
-            this.AdminShowAllCustomers.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllCustomers.onHoverState.BorderThickness = 1;
-            this.AdminShowAllCustomers.onHoverState.FillColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCustomers.onHoverState.ForeColor = System.Drawing.Color.Black;
-            this.AdminShowAllCustomers.onHoverState.IconLeftImage = null;
-            this.AdminShowAllCustomers.onHoverState.IconRightImage = null;
-            this.AdminShowAllCustomers.OnIdleState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCustomers.OnIdleState.BorderRadius = 37;
-            this.AdminShowAllCustomers.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllCustomers.OnIdleState.BorderThickness = 1;
-            this.AdminShowAllCustomers.OnIdleState.FillColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCustomers.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.AdminShowAllCustomers.OnIdleState.IconLeftImage = null;
-            this.AdminShowAllCustomers.OnIdleState.IconRightImage = null;
-            this.AdminShowAllCustomers.OnPressedState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCustomers.OnPressedState.BorderRadius = 37;
-            this.AdminShowAllCustomers.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllCustomers.OnPressedState.BorderThickness = 1;
-            this.AdminShowAllCustomers.OnPressedState.FillColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllCustomers.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.AdminShowAllCustomers.OnPressedState.IconLeftImage = null;
-            this.AdminShowAllCustomers.OnPressedState.IconRightImage = null;
-            this.AdminShowAllCustomers.Size = new System.Drawing.Size(214, 36);
-            this.AdminShowAllCustomers.TabIndex = 19;
-            this.AdminShowAllCustomers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.AdminShowAllCustomers.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.AdminShowAllCustomers.TextMarginLeft = 0;
-            this.AdminShowAllCustomers.TextPadding = new System.Windows.Forms.Padding(0);
-            this.AdminShowAllCustomers.UseDefaultRadiusAndThickness = true;
-            // 
             // AdminFillCustomerSearch
             // 
             this.AdminFillCustomerSearch.AcceptsReturn = false;
@@ -221,7 +105,7 @@
             this.AdminFillCustomerSearch.BorderThickness = 1;
             this.AdminFillCustomerSearch.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillCustomerSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AdminFillCustomerSearch.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.AdminFillCustomerSearch.DefaultFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminFillCustomerSearch.DefaultText = "";
             this.AdminFillCustomerSearch.FillColor = System.Drawing.Color.White;
             this.AdminFillCustomerSearch.HideSelection = true;
@@ -231,9 +115,10 @@
             this.AdminFillCustomerSearch.IconRight = null;
             this.AdminFillCustomerSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillCustomerSearch.Lines = new string[0];
-            this.AdminFillCustomerSearch.Location = new System.Drawing.Point(706, 34);
+            this.AdminFillCustomerSearch.Location = new System.Drawing.Point(640, 7);
+            this.AdminFillCustomerSearch.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerSearch.MaxLength = 32767;
-            this.AdminFillCustomerSearch.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillCustomerSearch.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillCustomerSearch.Modified = false;
             this.AdminFillCustomerSearch.Multiline = false;
             this.AdminFillCustomerSearch.Name = "AdminFillCustomerSearch";
@@ -257,7 +142,7 @@
             stateProperties32.ForeColor = System.Drawing.Color.Empty;
             stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillCustomerSearch.OnIdleState = stateProperties32;
-            this.AdminFillCustomerSearch.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.AdminFillCustomerSearch.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerSearch.PasswordChar = '\0';
             this.AdminFillCustomerSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillCustomerSearch.PlaceholderText = "Fill your Customer\'s Name or ID";
@@ -267,7 +152,7 @@
             this.AdminFillCustomerSearch.SelectionLength = 0;
             this.AdminFillCustomerSearch.SelectionStart = 0;
             this.AdminFillCustomerSearch.ShortcutsEnabled = true;
-            this.AdminFillCustomerSearch.Size = new System.Drawing.Size(235, 37);
+            this.AdminFillCustomerSearch.Size = new System.Drawing.Size(289, 45);
             this.AdminFillCustomerSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillCustomerSearch.TabIndex = 18;
             this.AdminFillCustomerSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -297,11 +182,11 @@
             this.AdminCheckCustomer.ColorContrastOnClick = 45;
             this.AdminCheckCustomer.ColorContrastOnHover = 45;
             this.AdminCheckCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.AdminCheckCustomer.CustomizableEdges = borderEdges5;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.AdminCheckCustomer.CustomizableEdges = borderEdges4;
             this.AdminCheckCustomer.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminCheckCustomer.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminCheckCustomer.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -325,7 +210,8 @@
             this.AdminCheckCustomer.IdleIconLeftImage = null;
             this.AdminCheckCustomer.IdleIconRightImage = null;
             this.AdminCheckCustomer.IndicateFocus = false;
-            this.AdminCheckCustomer.Location = new System.Drawing.Point(706, 98);
+            this.AdminCheckCustomer.Location = new System.Drawing.Point(640, 60);
+            this.AdminCheckCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.AdminCheckCustomer.Name = "AdminCheckCustomer";
             this.AdminCheckCustomer.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminCheckCustomer.OnDisabledState.BorderRadius = 37;
@@ -359,7 +245,7 @@
             this.AdminCheckCustomer.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminCheckCustomer.OnPressedState.IconLeftImage = null;
             this.AdminCheckCustomer.OnPressedState.IconRightImage = null;
-            this.AdminCheckCustomer.Size = new System.Drawing.Size(235, 36);
+            this.AdminCheckCustomer.Size = new System.Drawing.Size(289, 42);
             this.AdminCheckCustomer.TabIndex = 17;
             this.AdminCheckCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminCheckCustomer.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -385,7 +271,7 @@
             this.AdminFillCustomerDateOfBirth.BorderThickness = 1;
             this.AdminFillCustomerDateOfBirth.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillCustomerDateOfBirth.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AdminFillCustomerDateOfBirth.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.AdminFillCustomerDateOfBirth.DefaultFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminFillCustomerDateOfBirth.DefaultText = "";
             this.AdminFillCustomerDateOfBirth.FillColor = System.Drawing.Color.White;
             this.AdminFillCustomerDateOfBirth.HideSelection = true;
@@ -395,9 +281,10 @@
             this.AdminFillCustomerDateOfBirth.IconRight = null;
             this.AdminFillCustomerDateOfBirth.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillCustomerDateOfBirth.Lines = new string[0];
-            this.AdminFillCustomerDateOfBirth.Location = new System.Drawing.Point(706, 213);
+            this.AdminFillCustomerDateOfBirth.Location = new System.Drawing.Point(640, 157);
+            this.AdminFillCustomerDateOfBirth.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerDateOfBirth.MaxLength = 32767;
-            this.AdminFillCustomerDateOfBirth.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillCustomerDateOfBirth.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillCustomerDateOfBirth.Modified = false;
             this.AdminFillCustomerDateOfBirth.Multiline = false;
             this.AdminFillCustomerDateOfBirth.Name = "AdminFillCustomerDateOfBirth";
@@ -421,7 +308,7 @@
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillCustomerDateOfBirth.OnIdleState = stateProperties28;
-            this.AdminFillCustomerDateOfBirth.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.AdminFillCustomerDateOfBirth.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerDateOfBirth.PasswordChar = '\0';
             this.AdminFillCustomerDateOfBirth.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillCustomerDateOfBirth.PlaceholderText = "Fill your Customer\'s  Date Of Birth";
@@ -431,7 +318,7 @@
             this.AdminFillCustomerDateOfBirth.SelectionLength = 0;
             this.AdminFillCustomerDateOfBirth.SelectionStart = 0;
             this.AdminFillCustomerDateOfBirth.ShortcutsEnabled = true;
-            this.AdminFillCustomerDateOfBirth.Size = new System.Drawing.Size(235, 37);
+            this.AdminFillCustomerDateOfBirth.Size = new System.Drawing.Size(289, 39);
             this.AdminFillCustomerDateOfBirth.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillCustomerDateOfBirth.TabIndex = 22;
             this.AdminFillCustomerDateOfBirth.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -460,7 +347,7 @@
             this.AdminFillCustomerID.BorderThickness = 1;
             this.AdminFillCustomerID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillCustomerID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AdminFillCustomerID.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.AdminFillCustomerID.DefaultFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminFillCustomerID.DefaultText = "";
             this.AdminFillCustomerID.FillColor = System.Drawing.Color.White;
             this.AdminFillCustomerID.HideSelection = true;
@@ -470,9 +357,10 @@
             this.AdminFillCustomerID.IconRight = null;
             this.AdminFillCustomerID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillCustomerID.Lines = new string[0];
-            this.AdminFillCustomerID.Location = new System.Drawing.Point(706, 526);
+            this.AdminFillCustomerID.Location = new System.Drawing.Point(640, 392);
+            this.AdminFillCustomerID.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerID.MaxLength = 32767;
-            this.AdminFillCustomerID.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillCustomerID.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillCustomerID.Modified = false;
             this.AdminFillCustomerID.Multiline = false;
             this.AdminFillCustomerID.Name = "AdminFillCustomerID";
@@ -496,7 +384,7 @@
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillCustomerID.OnIdleState = stateProperties20;
-            this.AdminFillCustomerID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.AdminFillCustomerID.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerID.PasswordChar = '\0';
             this.AdminFillCustomerID.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillCustomerID.PlaceholderText = "Fill your Customer\'s ID";
@@ -506,7 +394,7 @@
             this.AdminFillCustomerID.SelectionLength = 0;
             this.AdminFillCustomerID.SelectionStart = 0;
             this.AdminFillCustomerID.ShortcutsEnabled = true;
-            this.AdminFillCustomerID.Size = new System.Drawing.Size(235, 37);
+            this.AdminFillCustomerID.Size = new System.Drawing.Size(289, 39);
             this.AdminFillCustomerID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillCustomerID.TabIndex = 23;
             this.AdminFillCustomerID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -516,6 +404,7 @@
             this.AdminFillCustomerID.TextPlaceholder = "Fill your Customer\'s ID";
             this.AdminFillCustomerID.UseSystemPasswordChar = false;
             this.AdminFillCustomerID.WordWrap = true;
+            this.AdminFillCustomerID.TextChanged += new System.EventHandler(this.AdminFillCustomerID_TextChanged);
             // 
             // AdminFillCustomerEmail
             // 
@@ -534,7 +423,7 @@
             this.AdminFillCustomerEmail.BorderThickness = 1;
             this.AdminFillCustomerEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillCustomerEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AdminFillCustomerEmail.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.AdminFillCustomerEmail.DefaultFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminFillCustomerEmail.DefaultText = "";
             this.AdminFillCustomerEmail.FillColor = System.Drawing.Color.White;
             this.AdminFillCustomerEmail.HideSelection = true;
@@ -544,9 +433,10 @@
             this.AdminFillCustomerEmail.IconRight = null;
             this.AdminFillCustomerEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillCustomerEmail.Lines = new string[0];
-            this.AdminFillCustomerEmail.Location = new System.Drawing.Point(706, 467);
+            this.AdminFillCustomerEmail.Location = new System.Drawing.Point(640, 345);
+            this.AdminFillCustomerEmail.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerEmail.MaxLength = 32767;
-            this.AdminFillCustomerEmail.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillCustomerEmail.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillCustomerEmail.Modified = false;
             this.AdminFillCustomerEmail.Multiline = false;
             this.AdminFillCustomerEmail.Name = "AdminFillCustomerEmail";
@@ -570,7 +460,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillCustomerEmail.OnIdleState = stateProperties16;
-            this.AdminFillCustomerEmail.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.AdminFillCustomerEmail.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerEmail.PasswordChar = '\0';
             this.AdminFillCustomerEmail.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillCustomerEmail.PlaceholderText = "Fill your Customer\'s Emai";
@@ -580,7 +470,7 @@
             this.AdminFillCustomerEmail.SelectionLength = 0;
             this.AdminFillCustomerEmail.SelectionStart = 0;
             this.AdminFillCustomerEmail.ShortcutsEnabled = true;
-            this.AdminFillCustomerEmail.Size = new System.Drawing.Size(235, 37);
+            this.AdminFillCustomerEmail.Size = new System.Drawing.Size(289, 39);
             this.AdminFillCustomerEmail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillCustomerEmail.TabIndex = 24;
             this.AdminFillCustomerEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -590,6 +480,7 @@
             this.AdminFillCustomerEmail.TextPlaceholder = "Fill your Customer\'s Emai";
             this.AdminFillCustomerEmail.UseSystemPasswordChar = false;
             this.AdminFillCustomerEmail.WordWrap = true;
+            this.AdminFillCustomerEmail.TextChanged += new System.EventHandler(this.AdminFillCustomerEmail_TextChanged);
             // 
             // AdminFillCustomerPhoneNumber
             // 
@@ -608,7 +499,7 @@
             this.AdminFillCustomerPhoneNumber.BorderThickness = 1;
             this.AdminFillCustomerPhoneNumber.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillCustomerPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AdminFillCustomerPhoneNumber.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.AdminFillCustomerPhoneNumber.DefaultFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminFillCustomerPhoneNumber.DefaultText = "";
             this.AdminFillCustomerPhoneNumber.FillColor = System.Drawing.Color.White;
             this.AdminFillCustomerPhoneNumber.HideSelection = true;
@@ -618,9 +509,10 @@
             this.AdminFillCustomerPhoneNumber.IconRight = null;
             this.AdminFillCustomerPhoneNumber.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillCustomerPhoneNumber.Lines = new string[0];
-            this.AdminFillCustomerPhoneNumber.Location = new System.Drawing.Point(706, 403);
+            this.AdminFillCustomerPhoneNumber.Location = new System.Drawing.Point(640, 298);
+            this.AdminFillCustomerPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerPhoneNumber.MaxLength = 32767;
-            this.AdminFillCustomerPhoneNumber.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillCustomerPhoneNumber.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillCustomerPhoneNumber.Modified = false;
             this.AdminFillCustomerPhoneNumber.Multiline = false;
             this.AdminFillCustomerPhoneNumber.Name = "AdminFillCustomerPhoneNumber";
@@ -644,7 +536,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillCustomerPhoneNumber.OnIdleState = stateProperties12;
-            this.AdminFillCustomerPhoneNumber.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.AdminFillCustomerPhoneNumber.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerPhoneNumber.PasswordChar = '\0';
             this.AdminFillCustomerPhoneNumber.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillCustomerPhoneNumber.PlaceholderText = "Fill your Customer\'s Phone Number";
@@ -654,7 +546,7 @@
             this.AdminFillCustomerPhoneNumber.SelectionLength = 0;
             this.AdminFillCustomerPhoneNumber.SelectionStart = 0;
             this.AdminFillCustomerPhoneNumber.ShortcutsEnabled = true;
-            this.AdminFillCustomerPhoneNumber.Size = new System.Drawing.Size(235, 37);
+            this.AdminFillCustomerPhoneNumber.Size = new System.Drawing.Size(289, 39);
             this.AdminFillCustomerPhoneNumber.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillCustomerPhoneNumber.TabIndex = 25;
             this.AdminFillCustomerPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -664,6 +556,7 @@
             this.AdminFillCustomerPhoneNumber.TextPlaceholder = "Fill your Customer\'s Phone Number";
             this.AdminFillCustomerPhoneNumber.UseSystemPasswordChar = false;
             this.AdminFillCustomerPhoneNumber.WordWrap = true;
+            this.AdminFillCustomerPhoneNumber.TextChanged += new System.EventHandler(this.AdminFillCustomerPhoneNumber_TextChanged);
             // 
             // AdminFillCustomerAddress
             // 
@@ -682,7 +575,7 @@
             this.AdminFillCustomerAddress.BorderThickness = 1;
             this.AdminFillCustomerAddress.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillCustomerAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AdminFillCustomerAddress.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.AdminFillCustomerAddress.DefaultFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminFillCustomerAddress.DefaultText = "";
             this.AdminFillCustomerAddress.FillColor = System.Drawing.Color.White;
             this.AdminFillCustomerAddress.HideSelection = true;
@@ -692,9 +585,10 @@
             this.AdminFillCustomerAddress.IconRight = null;
             this.AdminFillCustomerAddress.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillCustomerAddress.Lines = new string[0];
-            this.AdminFillCustomerAddress.Location = new System.Drawing.Point(706, 348);
+            this.AdminFillCustomerAddress.Location = new System.Drawing.Point(640, 251);
+            this.AdminFillCustomerAddress.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerAddress.MaxLength = 32767;
-            this.AdminFillCustomerAddress.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillCustomerAddress.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillCustomerAddress.Modified = false;
             this.AdminFillCustomerAddress.Multiline = false;
             this.AdminFillCustomerAddress.Name = "AdminFillCustomerAddress";
@@ -718,7 +612,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillCustomerAddress.OnIdleState = stateProperties8;
-            this.AdminFillCustomerAddress.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.AdminFillCustomerAddress.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerAddress.PasswordChar = '\0';
             this.AdminFillCustomerAddress.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillCustomerAddress.PlaceholderText = "Fill your Customer\'s Address";
@@ -728,7 +622,7 @@
             this.AdminFillCustomerAddress.SelectionLength = 0;
             this.AdminFillCustomerAddress.SelectionStart = 0;
             this.AdminFillCustomerAddress.ShortcutsEnabled = true;
-            this.AdminFillCustomerAddress.Size = new System.Drawing.Size(235, 37);
+            this.AdminFillCustomerAddress.Size = new System.Drawing.Size(289, 39);
             this.AdminFillCustomerAddress.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillCustomerAddress.TabIndex = 26;
             this.AdminFillCustomerAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -738,6 +632,7 @@
             this.AdminFillCustomerAddress.TextPlaceholder = "Fill your Customer\'s Address";
             this.AdminFillCustomerAddress.UseSystemPasswordChar = false;
             this.AdminFillCustomerAddress.WordWrap = true;
+            this.AdminFillCustomerAddress.TextChanged += new System.EventHandler(this.AdminFillCustomerAddress_TextChanged);
             // 
             // AdminFillCustomerGender
             // 
@@ -756,7 +651,7 @@
             this.AdminFillCustomerGender.BorderThickness = 1;
             this.AdminFillCustomerGender.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillCustomerGender.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AdminFillCustomerGender.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.AdminFillCustomerGender.DefaultFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminFillCustomerGender.DefaultText = "";
             this.AdminFillCustomerGender.FillColor = System.Drawing.Color.White;
             this.AdminFillCustomerGender.HideSelection = true;
@@ -766,9 +661,10 @@
             this.AdminFillCustomerGender.IconRight = null;
             this.AdminFillCustomerGender.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillCustomerGender.Lines = new string[0];
-            this.AdminFillCustomerGender.Location = new System.Drawing.Point(706, 284);
+            this.AdminFillCustomerGender.Location = new System.Drawing.Point(640, 204);
+            this.AdminFillCustomerGender.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerGender.MaxLength = 32767;
-            this.AdminFillCustomerGender.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillCustomerGender.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillCustomerGender.Modified = false;
             this.AdminFillCustomerGender.Multiline = false;
             this.AdminFillCustomerGender.Name = "AdminFillCustomerGender";
@@ -792,7 +688,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillCustomerGender.OnIdleState = stateProperties4;
-            this.AdminFillCustomerGender.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.AdminFillCustomerGender.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerGender.PasswordChar = '\0';
             this.AdminFillCustomerGender.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillCustomerGender.PlaceholderText = "Fill your Customer\'s Gender";
@@ -802,7 +698,7 @@
             this.AdminFillCustomerGender.SelectionLength = 0;
             this.AdminFillCustomerGender.SelectionStart = 0;
             this.AdminFillCustomerGender.ShortcutsEnabled = true;
-            this.AdminFillCustomerGender.Size = new System.Drawing.Size(235, 37);
+            this.AdminFillCustomerGender.Size = new System.Drawing.Size(289, 39);
             this.AdminFillCustomerGender.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillCustomerGender.TabIndex = 27;
             this.AdminFillCustomerGender.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -812,6 +708,7 @@
             this.AdminFillCustomerGender.TextPlaceholder = "Fill your Customer\'s Gender";
             this.AdminFillCustomerGender.UseSystemPasswordChar = false;
             this.AdminFillCustomerGender.WordWrap = true;
+            this.AdminFillCustomerGender.TextChanged += new System.EventHandler(this.AdminFillCustomerGender_TextChanged);
             // 
             // AdminAddCustomer
             // 
@@ -860,7 +757,8 @@
             this.AdminAddCustomer.IdleIconLeftImage = null;
             this.AdminAddCustomer.IdleIconRightImage = null;
             this.AdminAddCustomer.IndicateFocus = false;
-            this.AdminAddCustomer.Location = new System.Drawing.Point(706, 585);
+            this.AdminAddCustomer.Location = new System.Drawing.Point(810, 447);
+            this.AdminAddCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.AdminAddCustomer.Name = "AdminAddCustomer";
             this.AdminAddCustomer.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAddCustomer.OnDisabledState.BorderRadius = 37;
@@ -894,7 +792,7 @@
             this.AdminAddCustomer.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAddCustomer.OnPressedState.IconLeftImage = null;
             this.AdminAddCustomer.OnPressedState.IconRightImage = null;
-            this.AdminAddCustomer.Size = new System.Drawing.Size(98, 36);
+            this.AdminAddCustomer.Size = new System.Drawing.Size(119, 38);
             this.AdminAddCustomer.TabIndex = 28;
             this.AdminAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAddCustomer.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -950,7 +848,8 @@
             this.AdminDeleteCustomer.IdleIconLeftImage = null;
             this.AdminDeleteCustomer.IdleIconRightImage = null;
             this.AdminDeleteCustomer.IndicateFocus = false;
-            this.AdminDeleteCustomer.Location = new System.Drawing.Point(843, 585);
+            this.AdminDeleteCustomer.Location = new System.Drawing.Point(640, 447);
+            this.AdminDeleteCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.AdminDeleteCustomer.Name = "AdminDeleteCustomer";
             this.AdminDeleteCustomer.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminDeleteCustomer.OnDisabledState.BorderRadius = 37;
@@ -984,7 +883,7 @@
             this.AdminDeleteCustomer.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminDeleteCustomer.OnPressedState.IconLeftImage = null;
             this.AdminDeleteCustomer.OnPressedState.IconRightImage = null;
-            this.AdminDeleteCustomer.Size = new System.Drawing.Size(98, 36);
+            this.AdminDeleteCustomer.Size = new System.Drawing.Size(119, 38);
             this.AdminDeleteCustomer.TabIndex = 29;
             this.AdminDeleteCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminDeleteCustomer.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1040,7 +939,8 @@
             this.AdminUpdateCustomer.IdleIconLeftImage = null;
             this.AdminUpdateCustomer.IdleIconRightImage = null;
             this.AdminUpdateCustomer.IndicateFocus = false;
-            this.AdminUpdateCustomer.Location = new System.Drawing.Point(706, 635);
+            this.AdminUpdateCustomer.Location = new System.Drawing.Point(640, 493);
+            this.AdminUpdateCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.AdminUpdateCustomer.Name = "AdminUpdateCustomer";
             this.AdminUpdateCustomer.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminUpdateCustomer.OnDisabledState.BorderRadius = 37;
@@ -1074,7 +974,7 @@
             this.AdminUpdateCustomer.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminUpdateCustomer.OnPressedState.IconLeftImage = null;
             this.AdminUpdateCustomer.OnPressedState.IconRightImage = null;
-            this.AdminUpdateCustomer.Size = new System.Drawing.Size(235, 36);
+            this.AdminUpdateCustomer.Size = new System.Drawing.Size(289, 38);
             this.AdminUpdateCustomer.TabIndex = 30;
             this.AdminUpdateCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminUpdateCustomer.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1087,12 +987,11 @@
             // 
             this.AdminViewAllYourCustomers.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AdminViewAllYourCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.AdminViewAllYourCustomers.Location = new System.Drawing.Point(21, 18);
-            this.AdminViewAllYourCustomers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AdminViewAllYourCustomers.Location = new System.Drawing.Point(17, 10);
             this.AdminViewAllYourCustomers.Name = "AdminViewAllYourCustomers";
             this.AdminViewAllYourCustomers.RowHeadersWidth = 62;
             this.AdminViewAllYourCustomers.RowTemplate.Height = 28;
-            this.AdminViewAllYourCustomers.Size = new System.Drawing.Size(671, 615);
+            this.AdminViewAllYourCustomers.Size = new System.Drawing.Size(616, 521);
             this.AdminViewAllYourCustomers.TabIndex = 31;
             this.AdminViewAllYourCustomers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -1113,7 +1012,7 @@
             this.AdminFillCustomerName.BorderThickness = 1;
             this.AdminFillCustomerName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillCustomerName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AdminFillCustomerName.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.AdminFillCustomerName.DefaultFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminFillCustomerName.DefaultText = "";
             this.AdminFillCustomerName.FillColor = System.Drawing.Color.White;
             this.AdminFillCustomerName.HideSelection = true;
@@ -1123,9 +1022,10 @@
             this.AdminFillCustomerName.IconRight = null;
             this.AdminFillCustomerName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillCustomerName.Lines = new string[0];
-            this.AdminFillCustomerName.Location = new System.Drawing.Point(706, 156);
+            this.AdminFillCustomerName.Location = new System.Drawing.Point(640, 110);
+            this.AdminFillCustomerName.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerName.MaxLength = 32767;
-            this.AdminFillCustomerName.MinimumSize = new System.Drawing.Size(1, 1);
+            this.AdminFillCustomerName.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillCustomerName.Modified = false;
             this.AdminFillCustomerName.Multiline = false;
             this.AdminFillCustomerName.Name = "AdminFillCustomerName";
@@ -1149,7 +1049,7 @@
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillCustomerName.OnIdleState = stateProperties24;
-            this.AdminFillCustomerName.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.AdminFillCustomerName.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillCustomerName.PasswordChar = '\0';
             this.AdminFillCustomerName.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillCustomerName.PlaceholderText = "Fill your Customer\'s Name";
@@ -1159,7 +1059,7 @@
             this.AdminFillCustomerName.SelectionLength = 0;
             this.AdminFillCustomerName.SelectionStart = 0;
             this.AdminFillCustomerName.ShortcutsEnabled = true;
-            this.AdminFillCustomerName.Size = new System.Drawing.Size(235, 37);
+            this.AdminFillCustomerName.Size = new System.Drawing.Size(289, 39);
             this.AdminFillCustomerName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillCustomerName.TabIndex = 22;
             this.AdminFillCustomerName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1173,8 +1073,7 @@
             // 
             // AdminCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.AdminViewAllYourCustomers);
             this.Controls.Add(this.AdminUpdateCustomer);
@@ -1187,12 +1086,11 @@
             this.Controls.Add(this.AdminFillCustomerID);
             this.Controls.Add(this.AdminFillCustomerName);
             this.Controls.Add(this.AdminFillCustomerDateOfBirth);
-            this.Controls.Add(this.AdminShowRating);
-            this.Controls.Add(this.AdminShowAllCustomers);
             this.Controls.Add(this.AdminFillCustomerSearch);
             this.Controls.Add(this.AdminCheckCustomer);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminCustomer";
-            this.Size = new System.Drawing.Size(964, 705);
+            this.Size = new System.Drawing.Size(960, 540);
             this.Load += new System.EventHandler(this.AdminCustomer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.AdminViewAllYourCustomers)).EndInit();
             this.ResumeLayout(false);
@@ -1202,8 +1100,6 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.UI.WinForms.BunifuRating AdminShowRating;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminShowAllCustomers;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillCustomerSearch;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminCheckCustomer;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminAddCustomer;

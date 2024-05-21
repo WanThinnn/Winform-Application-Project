@@ -245,5 +245,30 @@ namespace UI
             AdminFillCustomerPhoneNumber.Text = existingCustomer.PhoneNumber;
             AdminFillCustomerEmail.Text = existingCustomer.Email;
         }
+
+        private void AdminFillCustomerGender_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminFillCustomerAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminFillCustomerPhoneNumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminFillCustomerEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminFillCustomerID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
