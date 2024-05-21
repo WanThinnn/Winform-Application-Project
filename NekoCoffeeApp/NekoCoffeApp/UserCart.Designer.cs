@@ -49,17 +49,12 @@
             this.btnPay = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.colSTT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colDrink = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colNumber = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colSugar = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colNote = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnDelete = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnDeleteAll = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnMenu = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.UserViewAllCart = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -209,7 +204,7 @@
             this.btnPay.IdleIconLeftImage = null;
             this.btnPay.IdleIconRightImage = null;
             this.btnPay.IndicateFocus = false;
-            this.btnPay.Location = new System.Drawing.Point(776, 268);
+            this.btnPay.Location = new System.Drawing.Point(785, 296);
             this.btnPay.Name = "btnPay";
             this.btnPay.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnPay.OnDisabledState.BorderRadius = 40;
@@ -286,51 +281,6 @@
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colSTT,
-            this.colDrink,
-            this.colNumber,
-            this.colSugar,
-            this.colNote});
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(35, 137);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(705, 368);
-            this.listView1.TabIndex = 52;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // colSTT
-            // 
-            this.colSTT.Text = "STT";
-            // 
-            // colDrink
-            // 
-            this.colDrink.Text = "Tên món";
-            this.colDrink.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colDrink.Width = 200;
-            // 
-            // colNumber
-            // 
-            this.colNumber.Text = "Số lượng";
-            this.colNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colNumber.Width = 120;
-            // 
-            // colSugar
-            // 
-            this.colSugar.Text = "Tỉ lệ đường";
-            this.colSugar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colSugar.Width = 120;
-            // 
-            // colNote
-            // 
-            this.colNote.Text = "Ghi chú";
-            this.colNote.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colNote.Width = 200;
-            // 
             // btnDelete
             // 
             this.btnDelete.AllowAnimations = true;
@@ -378,7 +328,7 @@
             this.btnDelete.IdleIconLeftImage = null;
             this.btnDelete.IdleIconRightImage = null;
             this.btnDelete.IndicateFocus = false;
-            this.btnDelete.Location = new System.Drawing.Point(776, 398);
+            this.btnDelete.Location = new System.Drawing.Point(785, 466);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDelete.OnDisabledState.BorderRadius = 40;
@@ -468,7 +418,7 @@
             this.btnDeleteAll.IdleIconLeftImage = null;
             this.btnDeleteAll.IdleIconRightImage = null;
             this.btnDeleteAll.IndicateFocus = false;
-            this.btnDeleteAll.Location = new System.Drawing.Point(776, 463);
+            this.btnDeleteAll.Location = new System.Drawing.Point(785, 544);
             this.btnDeleteAll.Name = "btnDeleteAll";
             this.btnDeleteAll.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDeleteAll.OnDisabledState.BorderRadius = 40;
@@ -517,7 +467,7 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Montserrat ExtraBold", 10F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel2.Location = new System.Drawing.Point(403, 544);
+            this.bunifuLabel2.Location = new System.Drawing.Point(415, 612);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(122, 27);
@@ -553,7 +503,7 @@
             this.bunifuTextBox1.IconRight = null;
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(531, 533);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(543, 601);
             this.bunifuTextBox1.MaxLength = 32767;
             this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
@@ -647,7 +597,7 @@
             this.btnMenu.IdleIconLeftImage = null;
             this.btnMenu.IdleIconRightImage = null;
             this.btnMenu.IndicateFocus = false;
-            this.btnMenu.Location = new System.Drawing.Point(776, 332);
+            this.btnMenu.Location = new System.Drawing.Point(785, 381);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnMenu.OnDisabledState.BorderRadius = 40;
@@ -690,15 +640,24 @@
             this.btnMenu.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnMenu.UseDefaultRadiusAndThickness = true;
             // 
+            // UserViewAllCart
+            // 
+            this.UserViewAllCart.HideSelection = false;
+            this.UserViewAllCart.Location = new System.Drawing.Point(23, 122);
+            this.UserViewAllCart.Name = "UserViewAllCart";
+            this.UserViewAllCart.Size = new System.Drawing.Size(728, 473);
+            this.UserViewAllCart.TabIndex = 58;
+            this.UserViewAllCart.UseCompatibleStateImageBehavior = false;
+            // 
             // UserCart
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.UserViewAllCart);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.bunifuTextBox1);
             this.Controls.Add(this.bunifuLabel2);
             this.Controls.Add(this.btnDeleteAll);
             this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.listView1);
             this.Controls.Add(this.btnPay);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.pictureBox9);
@@ -744,16 +703,11 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnPay;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader colSTT;
-        private System.Windows.Forms.ColumnHeader colDrink;
-        private System.Windows.Forms.ColumnHeader colNumber;
-        private System.Windows.Forms.ColumnHeader colSugar;
-        private System.Windows.Forms.ColumnHeader colNote;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDelete;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDeleteAll;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnMenu;
+        private System.Windows.Forms.ListView UserViewAllCart;
     }
 }

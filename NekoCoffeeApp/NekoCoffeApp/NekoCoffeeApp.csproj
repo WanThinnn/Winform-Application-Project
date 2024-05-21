@@ -273,12 +273,6 @@
     <Compile Include="AdminFinancial.Designer.cs">
       <DependentUpon>AdminFinancial.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminHome.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminHome.Designer.cs">
-      <DependentUpon>AdminHome.cs</DependentUpon>
-    </Compile>
     <Compile Include="AdminOrder.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -349,6 +343,12 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="NekoUser.cs" />
+    <Compile Include="UserDiscount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserDiscount.Designer.cs">
+      <DependentUpon>UserDiscount.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -407,9 +407,6 @@
     <EmbeddedResource Include="AdminFinancial.resx">
       <DependentUpon>AdminFinancial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminHome.resx">
-      <DependentUpon>AdminHome.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AdminOrder.resx">
       <DependentUpon>AdminOrder.cs</DependentUpon>
     </EmbeddedResource>
@@ -458,6 +455,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserCart.resx">
       <DependentUpon>UserCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDiscount.resx">
+      <DependentUpon>UserDiscount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserMenu.resx">
       <DependentUpon>UserMenu.cs</DependentUpon>

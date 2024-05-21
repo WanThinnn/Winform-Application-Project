@@ -34,15 +34,6 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.AdminPanelGrid = new System.Windows.Forms.Panel();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.AdminUserImg = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -54,121 +45,13 @@
             this.btnDiscount = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnMenu = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.userMenu1 = new UI.UserMenu();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelUserControl = new Bunifu.UI.WinForms.BunifuPanel();
             this.AdminPanelGrid.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AdminUserImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(1078, 639);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(50, 45);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 40;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(423, 618);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(50, 49);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 39;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(405, -2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(48, 49);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 38;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(286, 73);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(86, 83);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 37;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(306, 162);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(147, 153);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 36;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1091, 487);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(117, 113);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 34;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1066, 234);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(142, 138);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 35;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1078, -2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(117, 113);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 33;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(262, 522);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 113);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // AdminPanelGrid
             // 
@@ -392,7 +275,7 @@
             this.btnAboutUs.IdleIconLeftImage = null;
             this.btnAboutUs.IdleIconRightImage = null;
             this.btnAboutUs.IndicateFocus = false;
-            this.btnAboutUs.Location = new System.Drawing.Point(3, 439);
+            this.btnAboutUs.Location = new System.Drawing.Point(3, 444);
             this.btnAboutUs.Name = "btnAboutUs";
             this.btnAboutUs.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAboutUs.OnDisabledState.BorderRadius = 1;
@@ -426,7 +309,7 @@
             this.btnAboutUs.OnPressedState.ForeColor = System.Drawing.Color.Black;
             this.btnAboutUs.OnPressedState.IconLeftImage = null;
             this.btnAboutUs.OnPressedState.IconRightImage = null;
-            this.btnAboutUs.Size = new System.Drawing.Size(256, 66);
+            this.btnAboutUs.Size = new System.Drawing.Size(256, 68);
             this.btnAboutUs.TabIndex = 26;
             this.btnAboutUs.TabStop = false;
             this.btnAboutUs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -483,7 +366,7 @@
             this.btnPoint.IdleIconLeftImage = null;
             this.btnPoint.IdleIconRightImage = null;
             this.btnPoint.IndicateFocus = false;
-            this.btnPoint.Location = new System.Drawing.Point(0, 367);
+            this.btnPoint.Location = new System.Drawing.Point(0, 372);
             this.btnPoint.Name = "btnPoint";
             this.btnPoint.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnPoint.OnDisabledState.BorderRadius = 1;
@@ -517,7 +400,7 @@
             this.btnPoint.OnPressedState.ForeColor = System.Drawing.Color.Black;
             this.btnPoint.OnPressedState.IconLeftImage = null;
             this.btnPoint.OnPressedState.IconRightImage = null;
-            this.btnPoint.Size = new System.Drawing.Size(256, 66);
+            this.btnPoint.Size = new System.Drawing.Size(256, 68);
             this.btnPoint.TabIndex = 24;
             this.btnPoint.TabStop = false;
             this.btnPoint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -574,7 +457,7 @@
             this.btnDiscount.IdleIconLeftImage = null;
             this.btnDiscount.IdleIconRightImage = null;
             this.btnDiscount.IndicateFocus = false;
-            this.btnDiscount.Location = new System.Drawing.Point(0, 295);
+            this.btnDiscount.Location = new System.Drawing.Point(0, 300);
             this.btnDiscount.Name = "btnDiscount";
             this.btnDiscount.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDiscount.OnDisabledState.BorderRadius = 1;
@@ -608,7 +491,7 @@
             this.btnDiscount.OnPressedState.ForeColor = System.Drawing.Color.Black;
             this.btnDiscount.OnPressedState.IconLeftImage = null;
             this.btnDiscount.OnPressedState.IconRightImage = null;
-            this.btnDiscount.Size = new System.Drawing.Size(256, 66);
+            this.btnDiscount.Size = new System.Drawing.Size(256, 68);
             this.btnDiscount.TabIndex = 23;
             this.btnDiscount.TabStop = false;
             this.btnDiscount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -665,7 +548,7 @@
             this.btnMenu.IdleIconLeftImage = null;
             this.btnMenu.IdleIconRightImage = null;
             this.btnMenu.IndicateFocus = false;
-            this.btnMenu.Location = new System.Drawing.Point(0, 223);
+            this.btnMenu.Location = new System.Drawing.Point(0, 228);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnMenu.OnDisabledState.BorderRadius = 1;
@@ -699,7 +582,7 @@
             this.btnMenu.OnPressedState.ForeColor = System.Drawing.Color.Black;
             this.btnMenu.OnPressedState.IconLeftImage = null;
             this.btnMenu.OnPressedState.IconRightImage = null;
-            this.btnMenu.Size = new System.Drawing.Size(256, 66);
+            this.btnMenu.Size = new System.Drawing.Size(256, 68);
             this.btnMenu.TabIndex = 21;
             this.btnMenu.TabStop = false;
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -720,29 +603,27 @@
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
-            // userMenu1
+            // panelUserControl
             // 
-            this.userMenu1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userMenu1.Location = new System.Drawing.Point(256, 0);
-            this.userMenu1.Name = "userMenu1";
-            this.userMenu1.Size = new System.Drawing.Size(964, 705);
-            this.userMenu1.TabIndex = 42;
+            this.panelUserControl.BackgroundColor = System.Drawing.Color.Transparent;
+            this.panelUserControl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelUserControl.BackgroundImage")));
+            this.panelUserControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelUserControl.BorderColor = System.Drawing.Color.Transparent;
+            this.panelUserControl.BorderRadius = 3;
+            this.panelUserControl.BorderThickness = 1;
+            this.panelUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelUserControl.Location = new System.Drawing.Point(256, 0);
+            this.panelUserControl.Name = "panelUserControl";
+            this.panelUserControl.ShowBorders = true;
+            this.panelUserControl.Size = new System.Drawing.Size(964, 705);
+            this.panelUserControl.TabIndex = 42;
             // 
             // User
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1220, 705);
-            this.Controls.Add(this.userMenu1);
+            this.Controls.Add(this.panelUserControl);
             this.Controls.Add(this.AdminPanelGrid);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Montserrat SemiBold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -750,15 +631,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User";
             this.Load += new System.EventHandler(this.User_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.AdminPanelGrid.ResumeLayout(false);
             this.AdminPanelGrid.PerformLayout();
             this.bunifuGradientPanel1.ResumeLayout(false);
@@ -770,15 +642,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel AdminPanelGrid;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAboutUs;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnPoint;
@@ -790,6 +653,6 @@
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.UI.WinForms.BunifuPictureBox AdminUserImg;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnUser;
-        private UserMenu userMenu1;
+        private Bunifu.UI.WinForms.BunifuPanel panelUserControl;
     }
 }
