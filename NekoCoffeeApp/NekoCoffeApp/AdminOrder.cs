@@ -43,5 +43,20 @@ namespace UI
         {
 
         }
+
+        
+
+        
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminOrder_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

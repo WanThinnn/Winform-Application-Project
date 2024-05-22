@@ -49,12 +49,11 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AdminUpdateProduct = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminDeleteProduct = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -63,10 +62,10 @@
             this.AdminFillProductPrice = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminFillProductAvailable = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminFillProductType = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.AdminViewAllCustomer = new System.Windows.Forms.ListView();
-            this.AdminShowAllProduct = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminFillProductName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminCheckProduct = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -121,7 +120,7 @@
             this.AdminUpdateProduct.IdleIconLeftImage = null;
             this.AdminUpdateProduct.IdleIconRightImage = null;
             this.AdminUpdateProduct.IndicateFocus = false;
-            this.AdminUpdateProduct.Location = new System.Drawing.Point(632, 432);
+            this.AdminUpdateProduct.Location = new System.Drawing.Point(474, 317);
             this.AdminUpdateProduct.Name = "AdminUpdateProduct";
             this.AdminUpdateProduct.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminUpdateProduct.OnDisabledState.BorderRadius = 37;
@@ -155,7 +154,7 @@
             this.AdminUpdateProduct.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminUpdateProduct.OnPressedState.IconLeftImage = null;
             this.AdminUpdateProduct.OnPressedState.IconRightImage = null;
-            this.AdminUpdateProduct.Size = new System.Drawing.Size(309, 36);
+            this.AdminUpdateProduct.Size = new System.Drawing.Size(201, 36);
             this.AdminUpdateProduct.TabIndex = 58;
             this.AdminUpdateProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminUpdateProduct.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -210,7 +209,7 @@
             this.AdminDeleteProduct.IdleIconLeftImage = null;
             this.AdminDeleteProduct.IdleIconRightImage = null;
             this.AdminDeleteProduct.IndicateFocus = false;
-            this.AdminDeleteProduct.Location = new System.Drawing.Point(802, 381);
+            this.AdminDeleteProduct.Location = new System.Drawing.Point(590, 278);
             this.AdminDeleteProduct.Name = "AdminDeleteProduct";
             this.AdminDeleteProduct.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminDeleteProduct.OnDisabledState.BorderRadius = 37;
@@ -244,7 +243,7 @@
             this.AdminDeleteProduct.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminDeleteProduct.OnPressedState.IconLeftImage = null;
             this.AdminDeleteProduct.OnPressedState.IconRightImage = null;
-            this.AdminDeleteProduct.Size = new System.Drawing.Size(139, 36);
+            this.AdminDeleteProduct.Size = new System.Drawing.Size(85, 36);
             this.AdminDeleteProduct.TabIndex = 57;
             this.AdminDeleteProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminDeleteProduct.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -299,7 +298,7 @@
             this.AdminAddProduct.IdleIconLeftImage = null;
             this.AdminAddProduct.IdleIconRightImage = null;
             this.AdminAddProduct.IndicateFocus = false;
-            this.AdminAddProduct.Location = new System.Drawing.Point(632, 381);
+            this.AdminAddProduct.Location = new System.Drawing.Point(474, 278);
             this.AdminAddProduct.Name = "AdminAddProduct";
             this.AdminAddProduct.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAddProduct.OnDisabledState.BorderRadius = 37;
@@ -333,7 +332,7 @@
             this.AdminAddProduct.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAddProduct.OnPressedState.IconLeftImage = null;
             this.AdminAddProduct.OnPressedState.IconRightImage = null;
-            this.AdminAddProduct.Size = new System.Drawing.Size(139, 36);
+            this.AdminAddProduct.Size = new System.Drawing.Size(85, 36);
             this.AdminAddProduct.TabIndex = 56;
             this.AdminAddProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAddProduct.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -368,7 +367,7 @@
             this.AdminFillEmployeeGender.IconRight = null;
             this.AdminFillEmployeeGender.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillEmployeeGender.Lines = new string[0];
-            this.AdminFillEmployeeGender.Location = new System.Drawing.Point(632, 214);
+            this.AdminFillEmployeeGender.Location = new System.Drawing.Point(474, 149);
             this.AdminFillEmployeeGender.MaxLength = 32767;
             this.AdminFillEmployeeGender.MinimumSize = new System.Drawing.Size(1, 1);
             this.AdminFillEmployeeGender.Modified = false;
@@ -404,7 +403,7 @@
             this.AdminFillEmployeeGender.SelectionLength = 0;
             this.AdminFillEmployeeGender.SelectionStart = 0;
             this.AdminFillEmployeeGender.ShortcutsEnabled = true;
-            this.AdminFillEmployeeGender.Size = new System.Drawing.Size(309, 37);
+            this.AdminFillEmployeeGender.Size = new System.Drawing.Size(201, 37);
             this.AdminFillEmployeeGender.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillEmployeeGender.TabIndex = 55;
             this.AdminFillEmployeeGender.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -442,7 +441,7 @@
             this.AdminFillProductPrice.IconRight = null;
             this.AdminFillProductPrice.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillProductPrice.Lines = new string[0];
-            this.AdminFillProductPrice.Location = new System.Drawing.Point(632, 270);
+            this.AdminFillProductPrice.Location = new System.Drawing.Point(474, 192);
             this.AdminFillProductPrice.MaxLength = 32767;
             this.AdminFillProductPrice.MinimumSize = new System.Drawing.Size(1, 1);
             this.AdminFillProductPrice.Modified = false;
@@ -478,7 +477,7 @@
             this.AdminFillProductPrice.SelectionLength = 0;
             this.AdminFillProductPrice.SelectionStart = 0;
             this.AdminFillProductPrice.ShortcutsEnabled = true;
-            this.AdminFillProductPrice.Size = new System.Drawing.Size(309, 37);
+            this.AdminFillProductPrice.Size = new System.Drawing.Size(201, 37);
             this.AdminFillProductPrice.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillProductPrice.TabIndex = 54;
             this.AdminFillProductPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -516,7 +515,7 @@
             this.AdminFillProductAvailable.IconRight = null;
             this.AdminFillProductAvailable.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillProductAvailable.Lines = new string[0];
-            this.AdminFillProductAvailable.Location = new System.Drawing.Point(632, 328);
+            this.AdminFillProductAvailable.Location = new System.Drawing.Point(474, 235);
             this.AdminFillProductAvailable.MaxLength = 32767;
             this.AdminFillProductAvailable.MinimumSize = new System.Drawing.Size(1, 1);
             this.AdminFillProductAvailable.Modified = false;
@@ -552,7 +551,7 @@
             this.AdminFillProductAvailable.SelectionLength = 0;
             this.AdminFillProductAvailable.SelectionStart = 0;
             this.AdminFillProductAvailable.ShortcutsEnabled = true;
-            this.AdminFillProductAvailable.Size = new System.Drawing.Size(309, 37);
+            this.AdminFillProductAvailable.Size = new System.Drawing.Size(201, 37);
             this.AdminFillProductAvailable.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillProductAvailable.TabIndex = 53;
             this.AdminFillProductAvailable.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -590,7 +589,7 @@
             this.AdminFillProductType.IconRight = null;
             this.AdminFillProductType.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillProductType.Lines = new string[0];
-            this.AdminFillProductType.Location = new System.Drawing.Point(632, 158);
+            this.AdminFillProductType.Location = new System.Drawing.Point(474, 106);
             this.AdminFillProductType.MaxLength = 32767;
             this.AdminFillProductType.MinimumSize = new System.Drawing.Size(1, 1);
             this.AdminFillProductType.Modified = false;
@@ -626,7 +625,7 @@
             this.AdminFillProductType.SelectionLength = 0;
             this.AdminFillProductType.SelectionStart = 0;
             this.AdminFillProductType.ShortcutsEnabled = true;
-            this.AdminFillProductType.Size = new System.Drawing.Size(309, 37);
+            this.AdminFillProductType.Size = new System.Drawing.Size(201, 37);
             this.AdminFillProductType.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillProductType.TabIndex = 50;
             this.AdminFillProductType.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -636,105 +635,6 @@
             this.AdminFillProductType.TextPlaceholder = "Fill your Product\'s  Type\r\n";
             this.AdminFillProductType.UseSystemPasswordChar = false;
             this.AdminFillProductType.WordWrap = true;
-            // 
-            // AdminViewAllCustomer
-            // 
-            this.AdminViewAllCustomer.HideSelection = false;
-            this.AdminViewAllCustomer.Location = new System.Drawing.Point(22, 22);
-            this.AdminViewAllCustomer.Margin = new System.Windows.Forms.Padding(2);
-            this.AdminViewAllCustomer.Name = "AdminViewAllCustomer";
-            this.AdminViewAllCustomer.Size = new System.Drawing.Size(605, 616);
-            this.AdminViewAllCustomer.TabIndex = 49;
-            this.AdminViewAllCustomer.UseCompatibleStateImageBehavior = false;
-            // 
-            // AdminShowAllProduct
-            // 
-            this.AdminShowAllProduct.AllowAnimations = true;
-            this.AdminShowAllProduct.AllowMouseEffects = true;
-            this.AdminShowAllProduct.AllowToggling = false;
-            this.AdminShowAllProduct.AnimationSpeed = 200;
-            this.AdminShowAllProduct.AutoGenerateColors = false;
-            this.AdminShowAllProduct.AutoRoundBorders = false;
-            this.AdminShowAllProduct.AutoSizeLeftIcon = true;
-            this.AdminShowAllProduct.AutoSizeRightIcon = true;
-            this.AdminShowAllProduct.BackColor = System.Drawing.Color.Transparent;
-            this.AdminShowAllProduct.BackColor1 = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminShowAllProduct.BackgroundImage")));
-            this.AdminShowAllProduct.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllProduct.ButtonText = "VIEW ALL YOUR PRODUCTS";
-            this.AdminShowAllProduct.ButtonTextMarginLeft = 0;
-            this.AdminShowAllProduct.ColorContrastOnClick = 45;
-            this.AdminShowAllProduct.ColorContrastOnHover = 45;
-            this.AdminShowAllProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.AdminShowAllProduct.CustomizableEdges = borderEdges4;
-            this.AdminShowAllProduct.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AdminShowAllProduct.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.AdminShowAllProduct.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.AdminShowAllProduct.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.AdminShowAllProduct.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.AdminShowAllProduct.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminShowAllProduct.ForeColor = System.Drawing.Color.White;
-            this.AdminShowAllProduct.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AdminShowAllProduct.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.AdminShowAllProduct.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.AdminShowAllProduct.IconMarginLeft = 11;
-            this.AdminShowAllProduct.IconPadding = 10;
-            this.AdminShowAllProduct.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AdminShowAllProduct.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.AdminShowAllProduct.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.AdminShowAllProduct.IconSize = 25;
-            this.AdminShowAllProduct.IdleBorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllProduct.IdleBorderRadius = 37;
-            this.AdminShowAllProduct.IdleBorderThickness = 1;
-            this.AdminShowAllProduct.IdleFillColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllProduct.IdleIconLeftImage = null;
-            this.AdminShowAllProduct.IdleIconRightImage = null;
-            this.AdminShowAllProduct.IndicateFocus = false;
-            this.AdminShowAllProduct.Location = new System.Drawing.Point(22, 647);
-            this.AdminShowAllProduct.Name = "AdminShowAllProduct";
-            this.AdminShowAllProduct.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.AdminShowAllProduct.OnDisabledState.BorderRadius = 37;
-            this.AdminShowAllProduct.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllProduct.OnDisabledState.BorderThickness = 1;
-            this.AdminShowAllProduct.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.AdminShowAllProduct.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.AdminShowAllProduct.OnDisabledState.IconLeftImage = null;
-            this.AdminShowAllProduct.OnDisabledState.IconRightImage = null;
-            this.AdminShowAllProduct.onHoverState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllProduct.onHoverState.BorderRadius = 37;
-            this.AdminShowAllProduct.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllProduct.onHoverState.BorderThickness = 1;
-            this.AdminShowAllProduct.onHoverState.FillColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllProduct.onHoverState.ForeColor = System.Drawing.Color.Black;
-            this.AdminShowAllProduct.onHoverState.IconLeftImage = null;
-            this.AdminShowAllProduct.onHoverState.IconRightImage = null;
-            this.AdminShowAllProduct.OnIdleState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllProduct.OnIdleState.BorderRadius = 37;
-            this.AdminShowAllProduct.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllProduct.OnIdleState.BorderThickness = 1;
-            this.AdminShowAllProduct.OnIdleState.FillColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllProduct.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.AdminShowAllProduct.OnIdleState.IconLeftImage = null;
-            this.AdminShowAllProduct.OnIdleState.IconRightImage = null;
-            this.AdminShowAllProduct.OnPressedState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllProduct.OnPressedState.BorderRadius = 37;
-            this.AdminShowAllProduct.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminShowAllProduct.OnPressedState.BorderThickness = 1;
-            this.AdminShowAllProduct.OnPressedState.FillColor = System.Drawing.Color.LightSalmon;
-            this.AdminShowAllProduct.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.AdminShowAllProduct.OnPressedState.IconLeftImage = null;
-            this.AdminShowAllProduct.OnPressedState.IconRightImage = null;
-            this.AdminShowAllProduct.Size = new System.Drawing.Size(218, 36);
-            this.AdminShowAllProduct.TabIndex = 48;
-            this.AdminShowAllProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.AdminShowAllProduct.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.AdminShowAllProduct.TextMarginLeft = 0;
-            this.AdminShowAllProduct.TextPadding = new System.Windows.Forms.Padding(0);
-            this.AdminShowAllProduct.UseDefaultRadiusAndThickness = true;
             // 
             // AdminFillProductName
             // 
@@ -763,7 +663,7 @@
             this.AdminFillProductName.IconRight = null;
             this.AdminFillProductName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillProductName.Lines = new string[0];
-            this.AdminFillProductName.Location = new System.Drawing.Point(632, 38);
+            this.AdminFillProductName.Location = new System.Drawing.Point(474, 21);
             this.AdminFillProductName.MaxLength = 32767;
             this.AdminFillProductName.MinimumSize = new System.Drawing.Size(1, 1);
             this.AdminFillProductName.Modified = false;
@@ -799,7 +699,7 @@
             this.AdminFillProductName.SelectionLength = 0;
             this.AdminFillProductName.SelectionStart = 0;
             this.AdminFillProductName.ShortcutsEnabled = true;
-            this.AdminFillProductName.Size = new System.Drawing.Size(309, 37);
+            this.AdminFillProductName.Size = new System.Drawing.Size(201, 37);
             this.AdminFillProductName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillProductName.TabIndex = 47;
             this.AdminFillProductName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -829,11 +729,11 @@
             this.AdminCheckProduct.ColorContrastOnClick = 45;
             this.AdminCheckProduct.ColorContrastOnHover = 45;
             this.AdminCheckProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.AdminCheckProduct.CustomizableEdges = borderEdges5;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.AdminCheckProduct.CustomizableEdges = borderEdges4;
             this.AdminCheckProduct.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminCheckProduct.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminCheckProduct.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -857,7 +757,7 @@
             this.AdminCheckProduct.IdleIconLeftImage = null;
             this.AdminCheckProduct.IdleIconRightImage = null;
             this.AdminCheckProduct.IndicateFocus = false;
-            this.AdminCheckProduct.Location = new System.Drawing.Point(632, 95);
+            this.AdminCheckProduct.Location = new System.Drawing.Point(474, 64);
             this.AdminCheckProduct.Name = "AdminCheckProduct";
             this.AdminCheckProduct.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminCheckProduct.OnDisabledState.BorderRadius = 37;
@@ -891,7 +791,7 @@
             this.AdminCheckProduct.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminCheckProduct.OnPressedState.IconLeftImage = null;
             this.AdminCheckProduct.OnPressedState.IconRightImage = null;
-            this.AdminCheckProduct.Size = new System.Drawing.Size(309, 36);
+            this.AdminCheckProduct.Size = new System.Drawing.Size(201, 36);
             this.AdminCheckProduct.TabIndex = 46;
             this.AdminCheckProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminCheckProduct.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -899,11 +799,20 @@
             this.AdminCheckProduct.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminCheckProduct.UseDefaultRadiusAndThickness = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(18, 10);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(421, 362);
+            this.dataGridView1.TabIndex = 59;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // AdminProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.AdminUpdateProduct);
             this.Controls.Add(this.AdminDeleteProduct);
             this.Controls.Add(this.AdminAddProduct);
@@ -911,12 +820,11 @@
             this.Controls.Add(this.AdminFillProductPrice);
             this.Controls.Add(this.AdminFillProductAvailable);
             this.Controls.Add(this.AdminFillProductType);
-            this.Controls.Add(this.AdminViewAllCustomer);
-            this.Controls.Add(this.AdminShowAllProduct);
             this.Controls.Add(this.AdminFillProductName);
             this.Controls.Add(this.AdminCheckProduct);
             this.Name = "AdminProduct";
-            this.Size = new System.Drawing.Size(964, 705);
+            this.Size = new System.Drawing.Size(699, 388);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -931,9 +839,8 @@
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillProductPrice;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillProductAvailable;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillProductType;
-        private System.Windows.Forms.ListView AdminViewAllCustomer;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminShowAllProduct;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillProductName;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminCheckProduct;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

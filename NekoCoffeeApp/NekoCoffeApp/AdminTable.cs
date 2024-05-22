@@ -16,5 +16,10 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private void AdminTable_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
