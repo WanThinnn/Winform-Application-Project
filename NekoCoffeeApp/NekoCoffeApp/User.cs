@@ -143,7 +143,14 @@ namespace UI
 
         private void pictureBox12_Click(object sender, EventArgs e)
         {
-
+            if (!panelUserControl.Controls.Contains(UserCart.Instance))
+            {
+                panelUserControl.Controls.Add(UserCart.Instance);
+                UserCart.Instance.Dock = DockStyle.Fill;
+                UserCart.Instance.BringToFront();
+            }
+            else
+                UserCart.Instance.BringToFront();
         }
 
         private void User_Load(object sender, EventArgs e)

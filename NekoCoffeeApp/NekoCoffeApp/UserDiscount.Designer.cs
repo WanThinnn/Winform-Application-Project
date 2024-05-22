@@ -64,7 +64,7 @@
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(964, 101);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(731, 80);
             this.bunifuGradientPanel1.TabIndex = 88;
             // 
             // bunifuLabel1
@@ -72,11 +72,11 @@
             this.bunifuLabel1.AllowParentOverrides = false;
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.CursorType = null;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Montserrat Black", 14F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(409, 34);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Montserrat Black", 12F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Location = new System.Drawing.Point(305, 23);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(137, 39);
+            this.bunifuLabel1.Size = new System.Drawing.Size(118, 33);
             this.bunifuLabel1.TabIndex = 52;
             this.bunifuLabel1.Text = "Discount";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -95,7 +95,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(-14, 90);
+            this.pictureBox11.Location = new System.Drawing.Point(0, 86);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(86, 83);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -135,7 +135,7 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(847, 90);
+            this.pictureBox15.Location = new System.Drawing.Point(642, 71);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(117, 113);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -155,16 +155,15 @@
             // UserViewAllPoint
             // 
             this.UserViewAllPoint.HideSelection = false;
-            this.UserViewAllPoint.Location = new System.Drawing.Point(25, 225);
+            this.UserViewAllPoint.Location = new System.Drawing.Point(27, 102);
             this.UserViewAllPoint.Name = "UserViewAllPoint";
-            this.UserViewAllPoint.Size = new System.Drawing.Size(911, 451);
+            this.UserViewAllPoint.Size = new System.Drawing.Size(677, 362);
             this.UserViewAllPoint.TabIndex = 103;
             this.UserViewAllPoint.UseCompatibleStateImageBehavior = false;
             // 
             // UserDiscount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.UserViewAllPoint);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.pictureBox9);
@@ -175,7 +174,7 @@
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox16);
             this.Name = "UserDiscount";
-            this.Size = new System.Drawing.Size(964, 705);
+            this.Size = new System.Drawing.Size(731, 484);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
