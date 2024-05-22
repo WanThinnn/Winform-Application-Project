@@ -90,7 +90,7 @@
             this.txPass.BorderThickness = 1;
             this.txPass.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txPass.DefaultFont = new System.Drawing.Font("UTM Avo", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txPass.DefaultFont = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txPass.DefaultText = "";
             this.txPass.FillColor = System.Drawing.Color.White;
             this.txPass.HideSelection = true;
@@ -165,7 +165,7 @@
             this.txUser.BorderThickness = 1;
             this.txUser.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txUser.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txUser.DefaultFont = new System.Drawing.Font("UTM Avo", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txUser.DefaultFont = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txUser.DefaultText = "";
             this.txUser.FillColor = System.Drawing.Color.White;
             this.txUser.HideSelection = true;
@@ -243,10 +243,10 @@
             this.lkForgotPass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
             this.lkForgotPass.Location = new System.Drawing.Point(503, 238);
             this.lkForgotPass.Name = "lkForgotPass";
-            this.lkForgotPass.Size = new System.Drawing.Size(232, 25);
+            this.lkForgotPass.Size = new System.Drawing.Size(233, 25);
             this.lkForgotPass.TabIndex = 6;
             this.lkForgotPass.TabStop = true;
-            this.lkForgotPass.Text = "Forgot your passwork?";
+            this.lkForgotPass.Text = "Forgot your password?";
             this.lkForgotPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkForgotPass_LinkClicked);
             // 
             // btnLogin

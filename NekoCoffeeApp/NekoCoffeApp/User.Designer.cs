@@ -629,7 +629,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "User";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "User";
+            this.Text = "Neko Coffee";
             this.Load += new System.EventHandler(this.User_Load);
             this.AdminPanelGrid.ResumeLayout(false);
             this.AdminPanelGrid.PerformLayout();
