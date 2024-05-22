@@ -414,6 +414,9 @@
     <EmbeddedResource Include="AdminProduct.resx">
       <DependentUpon>AdminProduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminReview.resx">
+      <DependentUpon>AdminReview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminTable.resx">
       <DependentUpon>AdminTable.cs</DependentUpon>
     </EmbeddedResource>
