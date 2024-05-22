@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(edit_Order));
             this.adminDrink1 = new UI.AdminDrink();
             this.SuspendLayout();
             // 
@@ -35,7 +36,7 @@
             // 
             this.adminDrink1.BackColor = System.Drawing.Color.White;
             this.adminDrink1.Location = new System.Drawing.Point(-20, -1);
-            this.adminDrink1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.adminDrink1.Margin = new System.Windows.Forms.Padding(4);
             this.adminDrink1.Name = "adminDrink1";
             this.adminDrink1.Size = new System.Drawing.Size(1604, 1058);
             this.adminDrink1.TabIndex = 0;
@@ -47,6 +48,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1582, 1050);
             this.Controls.Add(this.adminDrink1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "edit_Order";
             this.Text = "edit_Order";
             this.ResumeLayout(false);
