@@ -1,3 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
 namespace Master_NekoCoffeeApp
 {
     public partial class Form1 : Form
@@ -5,6 +15,7 @@ namespace Master_NekoCoffeeApp
         public Form1()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
         }
     }
 }
