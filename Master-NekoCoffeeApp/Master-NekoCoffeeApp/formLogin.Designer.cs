@@ -536,6 +536,7 @@
             this.btnLogin.TextMarginLeft = 0;
             this.btnLogin.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnLogin.UseDefaultRadiusAndThickness = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // lkForgotPass
             // 

@@ -78,3 +78,14 @@ C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Mas
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.ForgotPwd.resources
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.SignUp.resources
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.ChangePwd.resources
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\System.Buffers.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\System.Memory.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\System.Buffers.xml
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\System.Memory.xml
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.Home.resources

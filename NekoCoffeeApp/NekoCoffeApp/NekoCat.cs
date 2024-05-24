@@ -51,7 +51,7 @@ namespace UI
 
             if (cat1.ID != cat2.ID)
             {
-                error1 = "Nước không tồn tại!";
+                error1 = "Mèo không tồn tại!";
                 return false;
             }
 
@@ -66,7 +66,7 @@ namespace UI
 
             if (cat1.ID != cat2.ID)
             {
-                System.Windows.Forms.MessageBox.Show("Nước không tồn tại2!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                System.Windows.Forms.MessageBox.Show("Mèo không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 
