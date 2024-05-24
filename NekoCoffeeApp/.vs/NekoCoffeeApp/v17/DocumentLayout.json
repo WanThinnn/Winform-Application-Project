@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\nekocoffeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,13 +34,38 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\Login.cs",
+              "RelativeDocumentMoniker": "NekoCoffeApp\\Login.cs",
+              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\Login.cs",
+              "RelativeToolTip": "NekoCoffeApp\\Login.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAA5wIAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T05:30:51.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\Login.cs",
+              "RelativeDocumentMoniker": "NekoCoffeApp\\Login.cs",
+              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\Login.cs [Design]",
+              "RelativeToolTip": "NekoCoffeApp\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T05:16:11.386Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\Program.cs",
               "RelativeDocumentMoniker": "NekoCoffeApp\\Program.cs",
               "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\Program.cs",
               "RelativeToolTip": "NekoCoffeApp\\Program.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBcAAAAqAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-23T18:15:26.538Z",
               "EditorCaption": ""

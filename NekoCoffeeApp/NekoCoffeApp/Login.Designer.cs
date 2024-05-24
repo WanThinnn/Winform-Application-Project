@@ -86,11 +86,11 @@
             this.txPass.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txPass.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txPass.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
-            this.txPass.BorderRadius = 50;
+            this.txPass.BorderRadius = 35;
             this.txPass.BorderThickness = 1;
             this.txPass.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txPass.DefaultFont = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txPass.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txPass.DefaultText = "";
             this.txPass.FillColor = System.Drawing.Color.White;
             this.txPass.HideSelection = true;
@@ -100,9 +100,10 @@
             this.txPass.IconRight = null;
             this.txPass.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txPass.Lines = new string[0];
-            this.txPass.Location = new System.Drawing.Point(180, 183);
+            this.txPass.Location = new System.Drawing.Point(120, 122);
+            this.txPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txPass.MaxLength = 32767;
-            this.txPass.MinimumSize = new System.Drawing.Size(2, 2);
+            this.txPass.MinimumSize = new System.Drawing.Size(1, 1);
             this.txPass.Modified = false;
             this.txPass.Multiline = false;
             this.txPass.Name = "txPass";
@@ -126,7 +127,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txPass.OnIdleState = stateProperties4;
-            this.txPass.Padding = new System.Windows.Forms.Padding(3);
+            this.txPass.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txPass.PasswordChar = '\0';
             this.txPass.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txPass.PlaceholderText = "Password";
@@ -136,7 +137,7 @@
             this.txPass.SelectionLength = 0;
             this.txPass.SelectionStart = 0;
             this.txPass.ShortcutsEnabled = true;
-            this.txPass.Size = new System.Drawing.Size(555, 52);
+            this.txPass.Size = new System.Drawing.Size(370, 35);
             this.txPass.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txPass.TabIndex = 10;
             this.txPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -161,11 +162,11 @@
             this.txUser.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txUser.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txUser.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
-            this.txUser.BorderRadius = 50;
+            this.txUser.BorderRadius = 35;
             this.txUser.BorderThickness = 1;
             this.txUser.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txUser.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txUser.DefaultFont = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txUser.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txUser.DefaultText = "";
             this.txUser.FillColor = System.Drawing.Color.White;
             this.txUser.HideSelection = true;
@@ -175,9 +176,10 @@
             this.txUser.IconRight = null;
             this.txUser.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txUser.Lines = new string[0];
-            this.txUser.Location = new System.Drawing.Point(180, 125);
+            this.txUser.Location = new System.Drawing.Point(120, 83);
+            this.txUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txUser.MaxLength = 32767;
-            this.txUser.MinimumSize = new System.Drawing.Size(2, 2);
+            this.txUser.MinimumSize = new System.Drawing.Size(1, 1);
             this.txUser.Modified = false;
             this.txUser.Multiline = false;
             this.txUser.Name = "txUser";
@@ -201,7 +203,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txUser.OnIdleState = stateProperties8;
-            this.txUser.Padding = new System.Windows.Forms.Padding(3);
+            this.txUser.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txUser.PasswordChar = '\0';
             this.txUser.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txUser.PlaceholderText = "Username";
@@ -211,7 +213,7 @@
             this.txUser.SelectionLength = 0;
             this.txUser.SelectionStart = 0;
             this.txUser.ShortcutsEnabled = true;
-            this.txUser.Size = new System.Drawing.Size(555, 52);
+            this.txUser.Size = new System.Drawing.Size(370, 35);
             this.txUser.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txUser.TabIndex = 9;
             this.txUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -228,9 +230,10 @@
             this.lbDangNhap.AutoSize = true;
             this.lbDangNhap.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbDangNhap.Location = new System.Drawing.Point(434, 54);
+            this.lbDangNhap.Location = new System.Drawing.Point(289, 36);
+            this.lbDangNhap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDangNhap.Name = "lbDangNhap";
-            this.lbDangNhap.Size = new System.Drawing.Size(120, 42);
+            this.lbDangNhap.Size = new System.Drawing.Size(82, 29);
             this.lbDangNhap.TabIndex = 8;
             this.lbDangNhap.Text = "LOGIN";
             this.lbDangNhap.Click += new System.EventHandler(this.lbDangNhap_Click);
@@ -241,9 +244,10 @@
             this.lkForgotPass.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkForgotPass.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.lkForgotPass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
-            this.lkForgotPass.Location = new System.Drawing.Point(503, 238);
+            this.lkForgotPass.Location = new System.Drawing.Point(335, 159);
+            this.lkForgotPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lkForgotPass.Name = "lkForgotPass";
-            this.lkForgotPass.Size = new System.Drawing.Size(233, 25);
+            this.lkForgotPass.Size = new System.Drawing.Size(166, 18);
             this.lkForgotPass.TabIndex = 6;
             this.lkForgotPass.TabStop = true;
             this.lkForgotPass.Text = "Forgot your password?";
@@ -290,16 +294,17 @@
             this.btnLogin.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnLogin.IconSize = 25;
             this.btnLogin.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
-            this.btnLogin.IdleBorderRadius = 50;
+            this.btnLogin.IdleBorderRadius = 35;
             this.btnLogin.IdleBorderThickness = 1;
             this.btnLogin.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
             this.btnLogin.IdleIconLeftImage = null;
             this.btnLogin.IdleIconRightImage = null;
             this.btnLogin.IndicateFocus = false;
-            this.btnLogin.Location = new System.Drawing.Point(180, 309);
+            this.btnLogin.Location = new System.Drawing.Point(120, 206);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnLogin.OnDisabledState.BorderRadius = 50;
+            this.btnLogin.OnDisabledState.BorderRadius = 35;
             this.btnLogin.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnLogin.OnDisabledState.BorderThickness = 1;
             this.btnLogin.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -307,7 +312,7 @@
             this.btnLogin.OnDisabledState.IconLeftImage = null;
             this.btnLogin.OnDisabledState.IconRightImage = null;
             this.btnLogin.onHoverState.BorderColor = System.Drawing.Color.Chocolate;
-            this.btnLogin.onHoverState.BorderRadius = 50;
+            this.btnLogin.onHoverState.BorderRadius = 35;
             this.btnLogin.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnLogin.onHoverState.BorderThickness = 1;
             this.btnLogin.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
@@ -315,7 +320,7 @@
             this.btnLogin.onHoverState.IconLeftImage = null;
             this.btnLogin.onHoverState.IconRightImage = null;
             this.btnLogin.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
-            this.btnLogin.OnIdleState.BorderRadius = 50;
+            this.btnLogin.OnIdleState.BorderRadius = 35;
             this.btnLogin.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnLogin.OnIdleState.BorderThickness = 1;
             this.btnLogin.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
@@ -323,14 +328,14 @@
             this.btnLogin.OnIdleState.IconLeftImage = null;
             this.btnLogin.OnIdleState.IconRightImage = null;
             this.btnLogin.OnPressedState.BorderColor = System.Drawing.Color.DarkRed;
-            this.btnLogin.OnPressedState.BorderRadius = 50;
+            this.btnLogin.OnPressedState.BorderRadius = 35;
             this.btnLogin.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnLogin.OnPressedState.BorderThickness = 1;
             this.btnLogin.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLogin.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnLogin.OnPressedState.IconLeftImage = null;
             this.btnLogin.OnPressedState.IconRightImage = null;
-            this.btnLogin.Size = new System.Drawing.Size(555, 52);
+            this.btnLogin.Size = new System.Drawing.Size(370, 35);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.TabStop = false;
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -381,16 +386,17 @@
             this.btnSignUp.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnSignUp.IconSize = 25;
             this.btnSignUp.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
-            this.btnSignUp.IdleBorderRadius = 50;
+            this.btnSignUp.IdleBorderRadius = 35;
             this.btnSignUp.IdleBorderThickness = 1;
             this.btnSignUp.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
             this.btnSignUp.IdleIconLeftImage = null;
             this.btnSignUp.IdleIconRightImage = null;
             this.btnSignUp.IndicateFocus = false;
-            this.btnSignUp.Location = new System.Drawing.Point(180, 375);
+            this.btnSignUp.Location = new System.Drawing.Point(120, 250);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnSignUp.OnDisabledState.BorderRadius = 50;
+            this.btnSignUp.OnDisabledState.BorderRadius = 35;
             this.btnSignUp.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnSignUp.OnDisabledState.BorderThickness = 1;
             this.btnSignUp.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -398,7 +404,7 @@
             this.btnSignUp.OnDisabledState.IconLeftImage = null;
             this.btnSignUp.OnDisabledState.IconRightImage = null;
             this.btnSignUp.onHoverState.BorderColor = System.Drawing.Color.Chocolate;
-            this.btnSignUp.onHoverState.BorderRadius = 50;
+            this.btnSignUp.onHoverState.BorderRadius = 35;
             this.btnSignUp.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnSignUp.onHoverState.BorderThickness = 1;
             this.btnSignUp.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
@@ -406,7 +412,7 @@
             this.btnSignUp.onHoverState.IconLeftImage = null;
             this.btnSignUp.onHoverState.IconRightImage = null;
             this.btnSignUp.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
-            this.btnSignUp.OnIdleState.BorderRadius = 50;
+            this.btnSignUp.OnIdleState.BorderRadius = 35;
             this.btnSignUp.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnSignUp.OnIdleState.BorderThickness = 1;
             this.btnSignUp.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
@@ -414,14 +420,14 @@
             this.btnSignUp.OnIdleState.IconLeftImage = null;
             this.btnSignUp.OnIdleState.IconRightImage = null;
             this.btnSignUp.OnPressedState.BorderColor = System.Drawing.Color.DarkRed;
-            this.btnSignUp.OnPressedState.BorderRadius = 50;
+            this.btnSignUp.OnPressedState.BorderRadius = 35;
             this.btnSignUp.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnSignUp.OnPressedState.BorderThickness = 1;
             this.btnSignUp.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSignUp.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnSignUp.OnPressedState.IconLeftImage = null;
             this.btnSignUp.OnPressedState.IconRightImage = null;
-            this.btnSignUp.Size = new System.Drawing.Size(555, 52);
+            this.btnSignUp.Size = new System.Drawing.Size(370, 35);
             this.btnSignUp.TabIndex = 11;
             this.btnSignUp.TabStop = false;
             this.btnSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -434,9 +440,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(801, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(534, 8);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(142, 135);
+            this.pictureBox4.Size = new System.Drawing.Size(95, 90);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
@@ -445,9 +452,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-4, 386);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, 257);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 110);
+            this.pictureBox1.Size = new System.Drawing.Size(78, 73);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -456,9 +464,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(982, -8);
+            this.pictureBox2.Location = new System.Drawing.Point(655, -5);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(117, 110);
+            this.pictureBox2.Size = new System.Drawing.Size(78, 73);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
@@ -467,9 +476,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(826, 375);
+            this.pictureBox3.Location = new System.Drawing.Point(551, 250);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(117, 110);
+            this.pictureBox3.Size = new System.Drawing.Size(78, 73);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
@@ -478,9 +488,10 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(16, 152);
+            this.pictureBox5.Location = new System.Drawing.Point(11, 101);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(147, 148);
+            this.pictureBox5.Size = new System.Drawing.Size(98, 99);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 17;
             this.pictureBox5.TabStop = false;
@@ -489,9 +500,10 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(-4, 54);
+            this.pictureBox6.Location = new System.Drawing.Point(-3, 36);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(86, 81);
+            this.pictureBox6.Size = new System.Drawing.Size(57, 54);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 18;
             this.pictureBox6.TabStop = false;
@@ -500,9 +512,10 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(100, -8);
+            this.pictureBox7.Location = new System.Drawing.Point(67, -5);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 19;
             this.pictureBox7.TabStop = false;
@@ -511,9 +524,10 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(213, 452);
+            this.pictureBox8.Location = new System.Drawing.Point(142, 301);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(50, 44);
+            this.pictureBox8.Size = new System.Drawing.Size(33, 29);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 20;
             this.pictureBox8.TabStop = false;
@@ -522,9 +536,10 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(337, 547);
+            this.pictureBox9.Location = new System.Drawing.Point(225, 365);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(50, 44);
+            this.pictureBox9.Size = new System.Drawing.Size(33, 29);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 21;
             this.pictureBox9.TabStop = false;
@@ -533,9 +548,10 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(772, 336);
+            this.pictureBox10.Location = new System.Drawing.Point(515, 224);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 22;
             this.pictureBox10.TabStop = false;
@@ -544,9 +560,10 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(84, 336);
+            this.pictureBox11.Location = new System.Drawing.Point(56, 224);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(50, 48);
+            this.pictureBox11.Size = new System.Drawing.Size(33, 32);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 23;
             this.pictureBox11.TabStop = false;
@@ -555,9 +572,10 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(593, 386);
+            this.pictureBox12.Location = new System.Drawing.Point(395, 257);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(142, 145);
+            this.pictureBox12.Size = new System.Drawing.Size(95, 97);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 24;
             this.pictureBox12.TabStop = false;
@@ -566,19 +584,19 @@
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(338, 12);
+            this.logo.Location = new System.Drawing.Point(225, 8);
+            this.logo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(126, 126);
+            this.logo.Size = new System.Drawing.Size(84, 84);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logo.TabIndex = 96;
             this.logo.TabStop = false;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(938, 484);
+            this.ClientSize = new System.Drawing.Size(625, 323);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
@@ -600,6 +618,7 @@
             this.Controls.Add(this.logo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
