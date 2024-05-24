@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\master-nekocoffeeapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\changepwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\changepwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\forgotpwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\forgotpwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,27 +34,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Form1.cs",
-              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\Form1.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Form1.cs",
-              "RelativeToolTip": "Master-NekoCoffeeApp\\Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAnAAAA",
+              "DocumentIndex": 0,
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Home.cs",
+              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\Home.cs",
+              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Home.cs [Design]",
+              "RelativeToolTip": "Master-NekoCoffeeApp\\Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T19:16:11.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T05:48:19.353Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Form1.cs",
-              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\Form1.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Form1.cs [Design]",
-              "RelativeToolTip": "Master-NekoCoffeeApp\\Form1.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "ChangePwd.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\ChangePwd.cs",
+              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\ChangePwd.cs",
+              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\ChangePwd.cs [Design]",
+              "RelativeToolTip": "Master-NekoCoffeeApp\\ChangePwd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T19:01:03.837Z",
+              "WhenOpened": "2024-05-24T05:46:21.286Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ForgotPwd.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\ForgotPwd.cs",
+              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\ForgotPwd.cs",
+              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\ForgotPwd.cs [Design]",
+              "RelativeToolTip": "Master-NekoCoffeeApp\\ForgotPwd.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T05:44:14.99Z",
               "EditorCaption": " [Design]"
             }
           ]
