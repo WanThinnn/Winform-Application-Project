@@ -265,6 +265,7 @@
             this.txPass.TextPlaceholder = "Password";
             this.txPass.UseSystemPasswordChar = false;
             this.txPass.WordWrap = true;
+            this.txPass.TextChange += new System.EventHandler(this.txPass_TextChanged);
             // 
             // txUser
             // 
@@ -445,6 +446,7 @@
             this.btnSignUp.TextMarginLeft = 0;
             this.btnSignUp.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnSignUp.UseDefaultRadiusAndThickness = true;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // btnLogin
             // 
@@ -551,6 +553,7 @@
             this.lkForgotPass.TabIndex = 115;
             this.lkForgotPass.TabStop = true;
             this.lkForgotPass.Text = "Forgot your password?";
+            this.lkForgotPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkForgotPass_LinkClicked);
             // 
             // lbDangNhap
             // 
@@ -588,7 +591,10 @@
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.logo);
             this.Name = "formLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formLogin_FormClosing);
+            this.Load += new System.EventHandler(this.formLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();

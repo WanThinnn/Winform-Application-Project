@@ -271,6 +271,7 @@
             this.txtSignUp.TextMarginLeft = 0;
             this.txtSignUp.TextPadding = new System.Windows.Forms.Padding(0);
             this.txtSignUp.UseDefaultRadiusAndThickness = true;
+            this.txtSignUp.Click += new System.EventHandler(this.txtSignUp_Click);
             // 
             // txPass
             // 
@@ -347,6 +348,7 @@
             this.txPass.TextPlaceholder = "Password";
             this.txPass.UseSystemPasswordChar = false;
             this.txPass.WordWrap = true;
+            this.txPass.TextChange += new System.EventHandler(this.txPass_TextChanged);
             // 
             // bunifuSnackbar1
             // 
@@ -540,6 +542,7 @@
             this.txtConfirm.TextPlaceholder = "Confirm password";
             this.txtConfirm.UseSystemPasswordChar = false;
             this.txtConfirm.WordWrap = true;
+            this.txtConfirm.TextChange += new System.EventHandler(this.txPass_TextChanged);
             // 
             // txtPhone
             // 
@@ -946,6 +949,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Name = "SignUp";
             this.Text = "SignUp";
+            this.Load += new System.EventHandler(this.SignUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();

@@ -12,9 +12,12 @@ namespace Master_NekoCoffeeApp
 {
     public partial class Home : Form
     {
-        public Home()
+        string Fullname;
+        public Home(string Fullname)
         {
             InitializeComponent();
+            this.Fullname = Fullname;
+            this.linkLBHello.Text = $"Hello {Fullname}, wellcome back!";
         }
     }
 }

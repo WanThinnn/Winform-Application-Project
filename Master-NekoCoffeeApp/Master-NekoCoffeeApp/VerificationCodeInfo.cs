@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Master_NekoCoffeeApp
 {
-    internal class VerificationCodeInfo
+    public class VerificationCodeInfo
     {
         public string Code { get; set; }
         public DateTime CreatedAt { get; set; }
