@@ -117,7 +117,24 @@ namespace UI
 
         private void AdminFP_Load(object sender, EventArgs e)
         {
+            if (!AdminMainPanel.Controls.Contains(AdminMenu.Instance))
+            {
+                AdminMainPanel.Controls.Add(AdminMenu.Instance);
+                AdminMenu.Instance.Dock = DockStyle.Fill;
+                AdminMenu.Instance.BringToFront();
+            }
+            else
+                AdminMenu.Instance.BringToFront();
+        }
 
+        private void AdminFP_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Kiểm tra xem người dùng có chắc chắn muốn đóng form không
+            var result = MessageBox.Show("Bạn có muốn thoát chương trình?", "Lưu ý", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.No)
+            {
+                e.Cancel = true; // Hủy quá trình đóng form
+            }
         }
     }
 

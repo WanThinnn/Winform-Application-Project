@@ -7,15 +7,23 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Util.Store;
+using Google.Apis.Oauth2.v2;
+using Google.Apis.Services;
+using Google.Apis.Oauth2.v2.Data;
 namespace UI
 {
     public partial class Login : Form
     {
+        static string[] Scopes = { Oauth2Service.Scope.UserinfoEmail, Oauth2Service.Scope.UserinfoProfile };
+        static string ApplicationName = "Neko";
         public Login()
         {
             InitializeComponent();
@@ -28,15 +36,7 @@ namespace UI
 
         IFirebaseClient client;
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void lkSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -60,12 +60,23 @@ namespace UI
 
             if (NekoUser.IsEqual(ResUser, CurUser) == true)
             {
-                //formMainApp real = new formMainApp(ResUser.Fullname);
-                MessageBox.Show("Đăng nhập thành công!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (ResUser.Position == "Master" || ResUser.Position == "Admin")
+                {
+      
+                    AdminFP admin = new AdminFP();
+                    this.Hide();
+                    admin.ShowDialog();
+                    this.Show();
+                }
+                else 
+                {
+                    User user = new User();
+                    this.Hide();
+                    user.ShowDialog();
+                    this.Show();
+                }
 
-                this.Hide();
-                //real.ShowDialog();
-                this.Show();
+
 
             }
             else
@@ -87,20 +98,6 @@ namespace UI
             }
         }
 
-        private void txUser_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void logo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
@@ -132,69 +129,155 @@ namespace UI
             this.ShowDialog();
         }
 
-        private void lbDangNhap_Click(object sender, EventArgs e)
-        {
 
+
+
+        private async Task<bool> GoogleLogin()
+        {
+            UserCredential credential;
+            var clientSecrets = new ClientSecrets
+            {
+                ClientId = "38250210888-tcoufrdv7qpni08rll8710nqvqvupnv3.apps.googleusercontent.com",
+                ClientSecret = "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"
+            };
+
+            // Đường dẫn tới thư mục AppData
+            string credPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "NekoGoogleLogin");
+
+            try
+            {
+                // Tạo thư mục nếu không tồn tại
+                Directory.CreateDirectory(credPath);
+
+                credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
+                    clientSecrets,
+                    Scopes,
+                    "user",
+                    CancellationToken.None,
+                    new FileDataStore(credPath, true));
+
+                // Xác định đường dẫn file token mặc định
+                string tokenFilePath = Path.Combine(credPath, "Google.Apis.Auth.OAuth2.Responses.TokenResponse-user");
+
+                // Kiểm tra nếu token đã được lưu thành công
+                if (File.Exists(tokenFilePath))
+                {
+                    //MessageBox.Show($"Token saved successfully at: {tokenFilePath}");
+                }
+                else
+                {
+                    //MessageBox.Show("Token save failed.");
+                    return false;
+                }
+
+                // Đăng nhập thành công, lấy thông tin người dùng
+                var service = new Oauth2Service(new BaseClientService.Initializer()
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = ApplicationName,
+                });
+
+                var userInfo = service.Userinfo.Get().Execute();
+
+
+                // Kiểm tra xem người dùng đã tồn tại trong Firebase chưa
+                FirebaseResponse response = await client.GetAsync("Users/" + userInfo.Id);
+                NekoUser existingUser = response.ResultAs<NekoUser>();
+
+                if (existingUser == null)
+                {
+                    // Người dùng chưa tồn tại, lưu thông tin vào Firebase
+                    NekoUser user = new NekoUser()
+                    {
+                        Username = userInfo.Id,
+                        Fullname = userInfo.Name,
+                        Email = userInfo.Email,
+                        Gender = userInfo.Gender, // Lưu ý: Giới tính có thể không được trả về bởi Google API
+                        Position = "Google User"
+                    };
+
+                    SetResponse set = await client.SetAsync("Users/" + userInfo.Id, user);
+                    if (set.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        //MessageBox.Show("Failed to save user info to database.");
+                        return false;
+                    }
+                }
+                else
+                {
+                    // Người dùng đã tồn tại
+                    //MessageBox.Show("User already exists in the database.");
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Đã xảy ra lỗi trong quá trình đăng nhập: {ex.Message}", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+        }
+        private void LogoutGoogle()
+        {
+            string credPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "NekoGoogleLogin");
+            string tokenFilePath = Path.Combine(credPath, "Google.Apis.Auth.OAuth2.Responses.TokenResponse-user");
+
+            if (File.Exists(tokenFilePath))
+            {
+                try
+                {
+                    File.Delete(tokenFilePath); // Xóa file token chính xác
+                    //MessageBox.Show($"Token file deleted from: {tokenFilePath}");
+                    //MessageBox.Show("See you again!"); // Thông báo đăng xuất thành công
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi trong quá trình đăng xuất: {ex.Message}", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                //MessageBox.Show("No login session found."); // Thông báo nếu file không tồn tại
+                return;
+            }
+        }
+        private async void btnLoginGoogle_Click(object sender, EventArgs e)
+        {
+            bool loginSuccess = await GoogleLogin();
+            if (loginSuccess)
+            {
+
+                FirebaseResponse res = client.Get(@"Users/" + txUser.Text);
+
+                NekoUser ResUser = res.ResultAs<NekoUser>();
+                if (ResUser == null)
+                {
+                    MessageBox.Show("Tài khoản không tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+
+                }
+                if (ResUser.Position != "Master" || ResUser.Position != "Admin")
+                {
+                    User user = new User();
+                    this.Hide();
+                    user.ShowDialog();
+                    this.Show();
+                }
+
+
+            }
+            else
+            {
+                MessageBox.Show($"Đã xảy ra lỗi trong quá trình đăng nhập, vui lòng thử lại sau!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
-        private void pictureBox4_Click_1(object sender, EventArgs e)
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
-
+            LogoutGoogle();
         }
     }
 }

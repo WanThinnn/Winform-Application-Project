@@ -1,13 +1,23 @@
-﻿using System;
+﻿using BCrypt.Net;
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Util.Store;
+using Google.Apis.Oauth2.v2;
+using Google.Apis.Services;
+using Google.Apis.Oauth2.v2.Data;
 namespace UI
 {
     public partial class User : Form
@@ -155,7 +165,52 @@ namespace UI
 
         private void User_Load(object sender, EventArgs e)
         {
+            if (!panelUserControl.Controls.Contains(UserMenu.Instance))
+            {
+                panelUserControl.Controls.Add(UserMenu.Instance);
+                UserMenu.Instance.Dock = DockStyle.Fill;
+                UserMenu.Instance.BringToFront();
+            }
+            else
+                UserMenu.Instance.BringToFront();
+        }
+        private void LogoutGoogle()
+        {
+            string credPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "NekoGoogleLogin");
+            string tokenFilePath = Path.Combine(credPath, "Google.Apis.Auth.OAuth2.Responses.TokenResponse-user");
 
+            if (File.Exists(tokenFilePath))
+            {
+                try
+                {
+                    File.Delete(tokenFilePath); // Xóa file token chính xác
+                    //MessageBox.Show($"Token file deleted from: {tokenFilePath}");
+                    //MessageBox.Show("See you again!"); // Thông báo đăng xuất thành công
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi trong quá trình đăng xuất: {ex.Message}", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                //MessageBox.Show("No login session found."); // Thông báo nếu file không tồn tại
+                return;
+            }
+        }
+        private void User_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            LogoutGoogle();
+        }
+
+        private void User_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Kiểm tra xem người dùng có chắc chắn muốn đóng form không
+            var result = MessageBox.Show("Bạn có muốn thoát chương trình?", "Lưu ý", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.No)
+            {
+                e.Cancel = true; // Hủy quá trình đóng form
+            }
         }
     }
 }

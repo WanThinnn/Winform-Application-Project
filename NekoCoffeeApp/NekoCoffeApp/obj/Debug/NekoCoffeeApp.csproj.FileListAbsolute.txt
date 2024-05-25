@@ -576,3 +576,17 @@ C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Nek
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\NekoCoff.167EBE38.Up2Date
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.exe
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.pdb
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Auth.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Core.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Oauth2.v2.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\System.CodeDom.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.pdb
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.xml
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Auth.xml
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Core.pdb
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Core.xml
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Oauth2.v2.pdb
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Oauth2.v2.xml
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\System.CodeDom.xml
