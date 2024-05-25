@@ -118,7 +118,7 @@ Neko Coffe Team.</p>";
 
             if (emailExistsInMasterUsers || emailExistsInUsers)
             {
-                MessageBox.Show("Email đã tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Email đã tồn tại, vui lòng sử dụng email khác!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

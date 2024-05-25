@@ -24,9 +24,9 @@ namespace Master_NekoCoffeeApp
         {
             InitializeComponent();
             this.VerificationCode = verificationCode;
-            this.newEmail = email;
+            this.Email = email;
         }
-        string newEmail;
+        string Email;
         VerificationCodeInfo VerificationCode;
         IFirebaseConfig ifc = new FirebaseConfig()
         {
@@ -107,7 +107,7 @@ namespace Master_NekoCoffeeApp
                 Fullname = txtFullName.Text,
                 Gender = dbGender.Text,
                 PhoneNumber = txtPhone.Text,
-                Email = newEmail,
+                Email = Email.ToLower(),
                 Position = "Master",
                 RegistrationDate = DateTime.Now // Gán ngày đăng ký tại đây
             };

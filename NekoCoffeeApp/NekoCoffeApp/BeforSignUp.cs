@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -51,10 +52,10 @@ namespace UI
             {
                 var email = new MimeMessage();
 
-                email.From.Add(new MailboxAddress("Neko Coffe", "nekocoffe.app@gmail.com"));
+                email.From.Add(new MailboxAddress("Neko Coffee", "nekocoffe.app@gmail.com"));
                 email.To.Add(new MailboxAddress("Client", recipientEmail));
 
-                email.Subject = "[Neko Coffe] - Đăng ký thành viên";
+                email.Subject = "[Neko Coffee] - Đăng ký thành viên";
 
                 // Tạo nội dung email dạng HTML
                 var bodyBuilder = new BodyBuilder();
@@ -63,7 +64,7 @@ namespace UI
 <p style=""color: black;"">Chúng tôi nhận được yêu cầu tạo tài khoản mới cho email này của bạn trên Neko Coffe App. Để hoàn tất quá trình này, vui lòng làm nhập mã xác thực sau:</p>
 <p style=""color: black;"">Mã xác thực của bạn là: <b>{verificationCode.Code}</b></p>
 <p style=""color: black;"">Nếu bạn không yêu cầu tạo tài khoản hoặc không nhớ đến yêu cầu này, vui lòng bỏ qua email này. <br> 
-Nếu bạn cần thêm sự trợ giúp hoặc có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi qua email này. <br>
+Nếu bạn cần thêm sự trợ giúp hoặc có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi qua email này. <br><br>
 Trân trọng,<br>
 Neko Coffe Team.</p>";
 
@@ -91,11 +92,28 @@ Neko Coffe Team.</p>";
             }
 
         }
-        private void btnSignUp_Click(object sender, EventArgs e)
+        private async void btnSignUp_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txbEmail.Text))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            string emailToCheck = txbEmail.Text;
+
+            // Kiểm tra tính hợp lệ của email
+            if (!IsValidEmail(emailToCheck))
+            {
+                MessageBox.Show("Email không hợp lệ!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+ 
+            // Kiểm tra trong Users
+            bool emailExistsInUsers = await CheckIfEmailExists<NekoUser>("Users", emailToCheck);
+
+            if (emailExistsInUsers)
+            {
+                MessageBox.Show("Email đã tồn tại, vui lòng sử dụng email khác!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -113,10 +131,43 @@ Neko Coffe Team.</p>";
 
             this.Hide();
             sigbup.ShowDialog();
-            this.ShowDialog();
+            this.Close();
 
         }
+        private async Task<bool> CheckIfEmailExists<T>(string userType, string email) where T : class
+        {
+            FirebaseResponse response = await client.GetAsync(userType);
+            var usersDict = response.ResultAs<Dictionary<string, T>>();
 
+            if (usersDict != null)
+            {
+                foreach (var user in usersDict.Values)
+                {
+                    dynamic userDynamic = user;
+                    if (userDynamic.Email == email)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+        public bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            try
+            {
+                // Kiểm tra định dạng email
+                var regex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+                return regex.IsMatch(email);
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
+            }
+        }
         private void BeforSignUp_Load(object sender, EventArgs e)
         {
             try
@@ -135,7 +186,7 @@ Neko Coffe Team.</p>";
             Login res = new Login();
             this.Hide();
             res.ShowDialog();
-            this.ShowDialog();
+            this.Show();
         }
     }
 }

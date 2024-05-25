@@ -65,7 +65,7 @@ namespace UI
 
                 this.Hide();
                 //real.ShowDialog();
-                this.ShowDialog();
+                this.Show();
 
             }
             else

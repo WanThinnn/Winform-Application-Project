@@ -1,32 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\nekouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\nekouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\forgotpwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\forgotpwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\changepwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\changepwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\changepwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\changepwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,81 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\Program.cs",
-              "RelativeDocumentMoniker": "NekoCoffeApp\\Program.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\Program.cs",
-              "RelativeToolTip": "NekoCoffeApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:11:03.829Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NekoUser.cs",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\NekoUser.cs",
-              "RelativeDocumentMoniker": "NekoCoffeApp\\NekoUser.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\NekoUser.cs",
-              "RelativeToolTip": "NekoCoffeApp\\NekoUser.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAYwCkAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:09:55.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ForgotPwd.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\ForgotPwd.cs",
-              "RelativeDocumentMoniker": "NekoCoffeApp\\ForgotPwd.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\ForgotPwd.cs [Design]",
-              "RelativeToolTip": "NekoCoffeApp\\ForgotPwd.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:46:51.152Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ChangePwd.cs",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\ChangePwd.cs",
-              "RelativeDocumentMoniker": "NekoCoffeApp\\ChangePwd.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\ChangePwd.cs",
-              "RelativeToolTip": "NekoCoffeApp\\ChangePwd.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAcwHQAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:45:02.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ChangePwd.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\ChangePwd.cs",
-              "RelativeDocumentMoniker": "NekoCoffeApp\\ChangePwd.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\ChangePwd.cs [Design]",
-              "RelativeToolTip": "NekoCoffeApp\\ChangePwd.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:44:49.107Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\Login.cs",
-              "RelativeDocumentMoniker": "NekoCoffeApp\\Login.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\Login.cs [Design]",
-              "RelativeToolTip": "NekoCoffeApp\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T05:51:51.993Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -19,14 +19,14 @@ namespace UI
 {
     public partial class Signup : Form
     {
-        string newEmail;
+        string Email;
         VerificationCodeInfo VerificationCode;
 
         public Signup(VerificationCodeInfo verificationCode, string email)
         {
             InitializeComponent();
             this.VerificationCode = verificationCode;
-            this.newEmail = email;
+            this.Email = email;
         }
         IFirebaseConfig ifc = new FirebaseConfig()
         {
@@ -112,8 +112,9 @@ namespace UI
                 Fullname = txtFullName.Text,
                 Gender = dbGender.Text,
                 PhoneNumber = txtPhone.Text,
-                Email = newEmail,
-                Position = "KH"
+                Email = Email.ToLower(),
+                Position = "KH",
+                RegistrationDate = DateTime.Now // Gán ngày đăng ký tại đây
             };
 
             SetResponse set = client.Set(@"Users/" + txtUserName.Text, user);
@@ -121,6 +122,8 @@ namespace UI
             if (set.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 MessageBox.Show($"Đăng ký thành công tài khoản {txtUserName.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Login loginForm = new Login();
+                this.Close(); // Đóng form SignUp
             }
         }
 
