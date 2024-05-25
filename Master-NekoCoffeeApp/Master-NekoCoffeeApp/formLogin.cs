@@ -28,7 +28,7 @@ namespace Master_NekoCoffeeApp
         };
 
         IFirebaseClient client;
-   
+
 
         private void formLogin_Load(object sender, EventArgs e)
         {
@@ -67,10 +67,10 @@ namespace Master_NekoCoffeeApp
             {
                 Home home = new Home(ResUser.Fullname);
                 MessageBox.Show("Đăng nhập thành công!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 this.Hide();
                 home.ShowDialog();
-                this.ShowDialog();
+                this.Show(); // Hiển thị lại form đăng nhập sau khi form chính đóng
+
 
             }
             else
@@ -85,7 +85,7 @@ namespace Master_NekoCoffeeApp
             BeforeSignUp frm = new BeforeSignUp();
             this.Hide();
             frm.ShowDialog();
-            this.ShowDialog();
+            this.Show();
         }
 
         private void lkForgotPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -93,12 +93,12 @@ namespace Master_NekoCoffeeApp
             ForgotPwd res = new ForgotPwd();
             this.Hide();
             res.ShowDialog();
-            this.ShowDialog();
+            this.Show();
         }
 
         private void formLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+
         }
         private void txPass_TextChanged(object sender, EventArgs e)
         {

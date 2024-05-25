@@ -169,7 +169,7 @@
             this.txtCode.SelectionLength = 0;
             this.txtCode.SelectionStart = 0;
             this.txtCode.ShortcutsEnabled = true;
-            this.txtCode.Size = new System.Drawing.Size(372, 52);
+            this.txtCode.Size = new System.Drawing.Size(381, 52);
             this.txtCode.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtCode.TabIndex = 115;
             this.txtCode.TabStop = false;
@@ -947,8 +947,12 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignUp";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SignUp_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SignUp_FormClosed);
             this.Load += new System.EventHandler(this.SignUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();

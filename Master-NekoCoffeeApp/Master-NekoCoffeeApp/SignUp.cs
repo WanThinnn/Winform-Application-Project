@@ -79,14 +79,14 @@ namespace Master_NekoCoffeeApp
             {
                 Username = txtUserName.Text
             };
-           
+
             // Nếu ResUser không phải là null, thực hiện kiểm tra
             if ((ResUser != null && MasterUser.Search(ResUser, CurUser)) || NekoResUser != null && NekoUser.Search(NekoResUser, NekoCurUser))
             {
                 MasterUser.ShowError_2();
                 return;
             }
-            
+
             if (DateTime.Now - VerificationCode.CreatedAt > TimeSpan.FromSeconds(360))
             {
                 // Mã xác nhận đã hết hạn
@@ -108,7 +108,8 @@ namespace Master_NekoCoffeeApp
                 Gender = dbGender.Text,
                 PhoneNumber = txtPhone.Text,
                 Email = newEmail,
-                Position = "Master"
+                Position = "Master",
+                RegistrationDate = DateTime.Now // Gán ngày đăng ký tại đây
             };
 
             SetResponse set = await client.SetAsync("Users/" + txtUserName.Text, user);
@@ -117,6 +118,13 @@ namespace Master_NekoCoffeeApp
             if (set.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 MessageBox.Show($"Đăng ký thành công tài khoản {txtUserName.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                formLogin loginForm = new formLogin();
+                this.Close(); // Đóng form SignUp
+            }
+            else
+            {
+                MessageBox.Show($"Đăng ký không thành công tài khoản!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
         }
 
@@ -145,6 +153,17 @@ namespace Master_NekoCoffeeApp
             {
                 MessageBox.Show("Kiểm tra lại mạng", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void SignUp_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+
+        }
+
+        private void SignUp_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
         }
     }
 }

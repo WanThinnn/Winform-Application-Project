@@ -18,6 +18,8 @@ namespace Master_NekoCoffeeApp
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         public string Position { get; set; }
+        public DateTime RegistrationDate { get; set; } // Thêm thuộc tính này
+
 
         private static string error1 = "Tài khoản không tồn tại!";
         private static string error2 = "Cảnh báo";

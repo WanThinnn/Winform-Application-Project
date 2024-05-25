@@ -20,6 +20,7 @@ namespace Master_NekoCoffeeApp
 
         private static string error1 = "Tài khoản không tồn tại!";
         private static string error2 = "Cảnh báo";
+        public DateTime RegistrationDate { get; set; } // Thêm thuộc tính này
 
         public static void ShowError()
         {

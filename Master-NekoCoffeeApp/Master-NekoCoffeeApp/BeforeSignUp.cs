@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -52,10 +53,10 @@ namespace Master_NekoCoffeeApp
             {
                 var email = new MimeMessage();
 
-                email.From.Add(new MailboxAddress("Neko Coffe", "nekocoffe.app@gmail.com"));
+                email.From.Add(new MailboxAddress("Neko Coffee", "nekocoffe.app@gmail.com"));
                 email.To.Add(new MailboxAddress("Client", recipientEmail));
 
-                email.Subject = "[Neko Coffe] - Đăng ký thành viên";
+                email.Subject = "[Neko Coffee] - Đăng ký Master User";
 
                 // Tạo nội dung email dạng HTML
                 var bodyBuilder = new BodyBuilder();
@@ -92,7 +93,6 @@ Neko Coffe Team.</p>";
             }
 
         }
-
         private async void btnSignUp_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txbEmail.Text))
@@ -103,10 +103,18 @@ Neko Coffe Team.</p>";
 
             string emailToCheck = txbEmail.Text;
 
+            // Kiểm tra tính hợp lệ của email
+            if (!IsValidEmail(emailToCheck))
+            {
+                MessageBox.Show("Email không hợp lệ!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
             // Kiểm tra trong MasterUsers
-            bool emailExistsInMasterUsers = await CheckIfEmailExists("MasterUsers", emailToCheck);
+            bool emailExistsInMasterUsers = await CheckIfEmailExists<MasterUser>("MasterUsers", emailToCheck);
             // Kiểm tra trong Users
-            bool emailExistsInUsers = await CheckIfEmailExists("Users", emailToCheck);
+            bool emailExistsInUsers = await CheckIfEmailExists<NekoUser>("Users", emailToCheck);
 
             if (emailExistsInMasterUsers || emailExistsInUsers)
             {
@@ -126,19 +134,35 @@ Neko Coffe Team.</p>";
 
             this.Hide();
             signup.ShowDialog();
-            this.ShowDialog();
+            this.Close();
         }
+        public bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
 
-        private async Task<bool> CheckIfEmailExists(string userType, string email)
+            try
+            {
+                // Kiểm tra định dạng email
+                var regex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+                return regex.IsMatch(email);
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
+            }
+        }
+        private async Task<bool> CheckIfEmailExists<T>(string userType, string email) where T : class
         {
             FirebaseResponse response = await client.GetAsync(userType);
-            var usersDict = response.ResultAs<Dictionary<string, MasterUser>>();
+            var usersDict = response.ResultAs<Dictionary<string, T>>();
 
             if (usersDict != null)
             {
                 foreach (var user in usersDict.Values)
                 {
-                    if (user.Email == email)
+                    dynamic userDynamic = user;
+                    if (userDynamic.Email == email)
                     {
                         return true;
                     }

@@ -814,13 +814,13 @@
             // linkLBHello
             // 
             this.linkLBHello.AutoSize = true;
-            this.linkLBHello.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 10F);
+            this.linkLBHello.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLBHello.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLBHello.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
-            this.linkLBHello.Location = new System.Drawing.Point(214, 111);
+            this.linkLBHello.Location = new System.Drawing.Point(201, 96);
             this.linkLBHello.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLBHello.Name = "linkLBHello";
-            this.linkLBHello.Size = new System.Drawing.Size(43, 18);
+            this.linkLBHello.Size = new System.Drawing.Size(56, 24);
             this.linkLBHello.TabIndex = 141;
             this.linkLBHello.TabStop = true;
             this.linkLBHello.Text = "Hello";
@@ -854,8 +854,12 @@
             this.Controls.Add(this.lbHome);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.linkLabel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Home_FormClosing);
+            this.Load += new System.EventHandler(this.Home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
