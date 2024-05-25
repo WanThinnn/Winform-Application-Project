@@ -314,6 +314,7 @@
             this.txtSendCode.TextMarginLeft = 0;
             this.txtSendCode.TextPadding = new System.Windows.Forms.Padding(0);
             this.txtSendCode.UseDefaultRadiusAndThickness = true;
+            this.txtSendCode.Click += new System.EventHandler(this.txtSendCode_Click);
             // 
             // txtUserName
             // 
@@ -565,6 +566,7 @@
             this.Name = "ForgotPwd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgotPwd";
+            this.Load += new System.EventHandler(this.ForgotPwd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();

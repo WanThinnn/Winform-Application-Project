@@ -333,6 +333,7 @@
             this.txbCfNewPwd.TextPlaceholder = "Confirm New Password";
             this.txbCfNewPwd.UseSystemPasswordChar = false;
             this.txbCfNewPwd.WordWrap = true;
+            this.txbCfNewPwd.TextChange += new System.EventHandler(this.txbCfNewPwd_TextChanged);
             // 
             // txtChangePass
             // 
@@ -424,6 +425,7 @@
             this.txtChangePass.TextMarginLeft = 0;
             this.txtChangePass.TextPadding = new System.Windows.Forms.Padding(0);
             this.txtChangePass.UseDefaultRadiusAndThickness = true;
+            this.txtChangePass.Click += new System.EventHandler(this.txtChangePass_Click);
             // 
             // txbNewPwd
             // 
@@ -500,6 +502,7 @@
             this.txbNewPwd.TextPlaceholder = "New Password";
             this.txbNewPwd.UseSystemPasswordChar = false;
             this.txbNewPwd.WordWrap = true;
+            this.txbNewPwd.TextChange += new System.EventHandler(this.txbNewPwd_TextChanged);
             // 
             // lbDangNhap
             // 
@@ -565,6 +568,8 @@
             this.Name = "ChangePwd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChangePwd";
+            this.Load += new System.EventHandler(this.ChangePwd_Load);
+            this.TextChanged += new System.EventHandler(this.txbNewPwd_TextChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
