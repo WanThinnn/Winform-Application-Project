@@ -76,7 +76,8 @@ namespace Master_NekoCoffeeApp
                     };
 
                     var up = await client.UpdateAsync("MasterUsers/" + Username, updateData);
-                    if (up.StatusCode == System.Net.HttpStatusCode.OK)
+                    var up_2 = await client.UpdateAsync("Users/" + Username, updateData);
+                    if (up.StatusCode == System.Net.HttpStatusCode.OK && up_2.StatusCode == System.Net.HttpStatusCode.OK)
                     {
                         MessageBox.Show($"Đổi mật khẩu thành công tài khoản {Username}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Hide();

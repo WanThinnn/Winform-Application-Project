@@ -108,17 +108,17 @@ Neko Coffe Team.</p>";
 
 
             FirebaseResponse res = client.Get(@"MasterUsers/" + txtUserName.Text);
-            NekoUser ResUser = res.ResultAs<NekoUser>();
+            MasterUsers ResUser = res.ResultAs<MasterUsers>();
 
 
-            NekoUser CurUser = new NekoUser()
+            MasterUsers CurUser = new MasterUsers()
             {
                 Username = txtUserName.Text,
                 Email = txtEmail.Text,
                 PhoneNumber = txtPhone.Text
             };
 
-            if (NekoUser.IsExist(ResUser, CurUser) == true)
+            if (MasterUsers.IsExist(ResUser, CurUser) == true)
             {
                 string recipientEmail = txtEmail.Text; // Địa chỉ email của người nhận
 

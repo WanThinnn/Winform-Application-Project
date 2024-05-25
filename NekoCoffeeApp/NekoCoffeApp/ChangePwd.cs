@@ -1,4 +1,5 @@
-﻿using BCrypt.Net;
+﻿using Aspose.Email.Clients.Graph;
+using BCrypt.Net;
 using FireSharp;
 using FireSharp.Config;
 using FireSharp.Interfaces;
@@ -74,7 +75,7 @@ namespace UI
         }
 
 
-        private void txtChangePass_Click(object sender, EventArgs e)
+        private async void txtChangePass_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txbNewPwd.Text) ||
                 string.IsNullOrWhiteSpace(txbCfNewPwd.Text) ||
@@ -84,40 +85,58 @@ namespace UI
                 return;
             }
 
-            if (DateTime.Now - VerificationCode.CreatedAt > TimeSpan.FromSeconds(360))
-
+            if (txbNewPwd.Text != txbCfNewPwd.Text)
             {
-                // Mã xác nhận đã hết hạn
-                MessageBox.Show("Mã xác nhận không đúng hoặc hết hạn!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Mật khẩu mới và mật khẩu xác nhận không khớp!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Kiểm tra xem VerificationCode có null không
             if (VerificationCode == null)
             {
                 MessageBox.Show("Mã xác nhận không hợp lệ!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Mã xác nhận vẫn còn hiệu lực
+            if (DateTime.Now - VerificationCode.CreatedAt > TimeSpan.FromSeconds(360))
+            {
+                MessageBox.Show("Mã xác nhận không đúng hoặc hết hạn!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (this.VerificationCode.Code == txbCode.Text)
             {
-                var res = client.Get("Users/" + Username);
-                NekoUser userOld = res.ResultAs<NekoUser>();
-                NekoUser user = new NekoUser()
+                try
                 {
-                    Username = userOld.Username,
-                    Password = BCrypt.Net.BCrypt.EnhancedHashPassword(txbNewPwd.Text, hashType: HashType.SHA384),
-                    Fullname = userOld.Fullname,
-                    Gender = userOld.Gender,
-                    PhoneNumber = userOld.PhoneNumber,
-                    Email = userOld.Email,
-                    Position = userOld.Position
-                };
-                var up = client.Update(@"Users/" + Username, user);
-                if (up.StatusCode == System.Net.HttpStatusCode.OK)
+                    var res = await client.GetAsync("Users/" + Username);
+      
+                    if (res.Body == "null")
+                    {
+                        MessageBox.Show("Người dùng không tồn tại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                   
+                    string hashedPassword = BCrypt.Net.BCrypt.EnhancedHashPassword(txbNewPwd.Text, hashType: HashType.SHA384);
+                    var updateData = new Dictionary<string, object>
+                    {
+                        { "Password", hashedPassword }
+                    };
+
+                    var up = await client.UpdateAsync("Users/" + Username, updateData);
+              
+                    if (up.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        MessageBox.Show($"Đổi mật khẩu thành công tài khoản {Username}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+                        return;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Đổi mật khẩu thất bại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
                 {
-                    MessageBox.Show($"Đổi mật khẩu thành công tài khoản {Username}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else

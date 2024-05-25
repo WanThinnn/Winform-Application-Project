@@ -98,7 +98,7 @@
             this.txbCode.IconRight = null;
             this.txbCode.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbCode.Lines = new string[0];
-            this.txbCode.Location = new System.Drawing.Point(113, 169);
+            this.txbCode.Location = new System.Drawing.Point(129, 167);
             this.txbCode.Margin = new System.Windows.Forms.Padding(2);
             this.txbCode.MaxLength = 32767;
             this.txbCode.MinimumSize = new System.Drawing.Size(1, 1);
@@ -174,7 +174,7 @@
             this.txbCfNewPwd.IconRight = null;
             this.txbCfNewPwd.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbCfNewPwd.Lines = new string[0];
-            this.txbCfNewPwd.Location = new System.Drawing.Point(113, 130);
+            this.txbCfNewPwd.Location = new System.Drawing.Point(129, 128);
             this.txbCfNewPwd.Margin = new System.Windows.Forms.Padding(2);
             this.txbCfNewPwd.MaxLength = 32767;
             this.txbCfNewPwd.MinimumSize = new System.Drawing.Size(1, 1);
@@ -272,7 +272,7 @@
             this.txtChangePass.IdleIconLeftImage = null;
             this.txtChangePass.IdleIconRightImage = null;
             this.txtChangePass.IndicateFocus = false;
-            this.txtChangePass.Location = new System.Drawing.Point(113, 221);
+            this.txtChangePass.Location = new System.Drawing.Point(129, 219);
             this.txtChangePass.Margin = new System.Windows.Forms.Padding(2);
             this.txtChangePass.Name = "txtChangePass";
             this.txtChangePass.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -344,7 +344,7 @@
             this.txbNewPwd.IconRight = null;
             this.txbNewPwd.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbNewPwd.Lines = new string[0];
-            this.txbNewPwd.Location = new System.Drawing.Point(113, 91);
+            this.txbNewPwd.Location = new System.Drawing.Point(129, 89);
             this.txbNewPwd.Margin = new System.Windows.Forms.Padding(2);
             this.txbNewPwd.MaxLength = 32767;
             this.txbNewPwd.MinimumSize = new System.Drawing.Size(1, 1);
