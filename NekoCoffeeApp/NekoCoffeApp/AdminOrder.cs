@@ -28,6 +28,7 @@ namespace UI
         public AdminOrder()
         {
             InitializeComponent();
+
         }
 
         private void AdminOrderBtn_Click(object sender, EventArgs e)
@@ -48,15 +49,23 @@ namespace UI
 
         
 
-        private void bunifuPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void AdminOrder_Load(object sender, EventArgs e)
         {
 
         }
 
+        private void AdminOrderTable1_Click(object sender, EventArgs e)
+        {
+            TableDetail tableDetail = new TableDetail();
+            tableDetail.Show();
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            edit_Table edit_Table = new edit_Table();
+            edit_Table.Show();
+        }
     }
 }
