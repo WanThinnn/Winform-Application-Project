@@ -67,5 +67,10 @@ namespace UI
             edit_Table edit_Table = new edit_Table();
             edit_Table.Show();
         }
+
+        private void AdminOrderPanel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

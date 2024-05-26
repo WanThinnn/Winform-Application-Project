@@ -36,6 +36,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.TableDetailsView = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.lbTableStatus = new System.Windows.Forms.Label();
+            this.lbTableName = new System.Windows.Forms.Label();
+            this.lbTableID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TableDetailsView)).BeginInit();
@@ -90,7 +93,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.TableDetailsView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.TableDetailsView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TableDetailsView.ColumnHeadersHeight = 40;
             this.TableDetailsView.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.TableDetailsView.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.TableDetailsView.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -122,7 +125,7 @@
             this.TableDetailsView.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.TableDetailsView.HeaderBgColor = System.Drawing.Color.Empty;
             this.TableDetailsView.HeaderForeColor = System.Drawing.Color.White;
-            this.TableDetailsView.Location = new System.Drawing.Point(294, 132);
+            this.TableDetailsView.Location = new System.Drawing.Point(284, 139);
             this.TableDetailsView.Name = "TableDetailsView";
             this.TableDetailsView.RowHeadersVisible = false;
             this.TableDetailsView.RowHeadersWidth = 62;
@@ -133,11 +136,41 @@
             this.TableDetailsView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.TableDetailsView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridView1_CellContentClick);
             // 
+            // lbTableStatus
+            // 
+            this.lbTableStatus.AutoSize = true;
+            this.lbTableStatus.Location = new System.Drawing.Point(307, 207);
+            this.lbTableStatus.Name = "lbTableStatus";
+            this.lbTableStatus.Size = new System.Drawing.Size(51, 20);
+            this.lbTableStatus.TabIndex = 32;
+            this.lbTableStatus.Text = "label1";
+            // 
+            // lbTableName
+            // 
+            this.lbTableName.AutoSize = true;
+            this.lbTableName.Location = new System.Drawing.Point(307, 172);
+            this.lbTableName.Name = "lbTableName";
+            this.lbTableName.Size = new System.Drawing.Size(51, 20);
+            this.lbTableName.TabIndex = 32;
+            this.lbTableName.Text = "label1";
+            // 
+            // lbTableID
+            // 
+            this.lbTableID.AutoSize = true;
+            this.lbTableID.Location = new System.Drawing.Point(307, 139);
+            this.lbTableID.Name = "lbTableID";
+            this.lbTableID.Size = new System.Drawing.Size(51, 20);
+            this.lbTableID.TabIndex = 32;
+            this.lbTableID.Text = "label1";
+            // 
             // TableDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(703, 438);
+            this.Controls.Add(this.lbTableName);
+            this.Controls.Add(this.lbTableStatus);
+            this.Controls.Add(this.lbTableID);
             this.Controls.Add(this.TableDetailsView);
             this.Controls.Add(this.AdminOrderTable1);
             this.Controls.Add(this.pictureBox1);
@@ -159,5 +192,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox13;
         private Bunifu.UI.WinForms.BunifuDataGridView TableDetailsView;
+        private System.Windows.Forms.Label lbTableStatus;
+        private System.Windows.Forms.Label lbTableName;
+        private System.Windows.Forms.Label lbTableID;
     }
 }

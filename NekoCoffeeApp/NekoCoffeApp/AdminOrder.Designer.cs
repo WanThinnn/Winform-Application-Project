@@ -55,11 +55,11 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.AdminPaymentBtn1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.AdminOrderPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminOrderTable9 = new System.Windows.Forms.Label();
             this.AdminOrderTable8 = new System.Windows.Forms.Label();
             this.AdminOrderTable7 = new System.Windows.Forms.Label();
-            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -75,7 +75,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.bunifuPanel1.SuspendLayout();
+            this.AdminOrderPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -384,75 +384,46 @@
             this.AdminPaymentBtn1.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminPaymentBtn1.UseDefaultRadiusAndThickness = true;
             // 
-            // bunifuPanel1
+            // AdminOrderPanel
             // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
-            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.White;
-            this.bunifuPanel1.BorderRadius = 35;
-            this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.bunifuButton1);
-            this.bunifuPanel1.Controls.Add(this.AdminPaymentBtn1);
-            this.bunifuPanel1.Controls.Add(this.pictureBox9);
-            this.bunifuPanel1.Controls.Add(this.pictureBox8);
-            this.bunifuPanel1.Controls.Add(this.pictureBox7);
-            this.bunifuPanel1.Controls.Add(this.pictureBox18);
-            this.bunifuPanel1.Controls.Add(this.pictureBox17);
-            this.bunifuPanel1.Controls.Add(this.pictureBox6);
-            this.bunifuPanel1.Controls.Add(this.pictureBox5);
-            this.bunifuPanel1.Controls.Add(this.pictureBox16);
-            this.bunifuPanel1.Controls.Add(this.pictureBox4);
-            this.bunifuPanel1.Controls.Add(this.pictureBox15);
-            this.bunifuPanel1.Controls.Add(this.pictureBox3);
-            this.bunifuPanel1.Controls.Add(this.pictureBox2);
-            this.bunifuPanel1.Controls.Add(this.pictureBox14);
-            this.bunifuPanel1.Controls.Add(this.AdminOrderTable2);
-            this.bunifuPanel1.Controls.Add(this.AdminOrderTable1);
-            this.bunifuPanel1.Controls.Add(this.pictureBox1);
-            this.bunifuPanel1.Controls.Add(this.pictureBox13);
-            this.bunifuPanel1.Controls.Add(this.AdminOrderTable9);
-            this.bunifuPanel1.Controls.Add(this.AdminOrderTable8);
-            this.bunifuPanel1.Controls.Add(this.AdminOrderTable7);
-            this.bunifuPanel1.Controls.Add(this.AdminOrderTable4);
-            this.bunifuPanel1.Controls.Add(this.AdminOrderTable6);
-            this.bunifuPanel1.Controls.Add(this.AdminOrderTable3);
-            this.bunifuPanel1.Controls.Add(this.AdminOrderTable5);
-            this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuPanel1.Name = "bunifuPanel1";
-            this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(725, 494);
-            this.bunifuPanel1.TabIndex = 0;
-            // 
-            // AdminOrderTable9
-            // 
-            this.AdminOrderTable9.AutoSize = true;
-            this.AdminOrderTable9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable9.Location = new System.Drawing.Point(570, 457);
-            this.AdminOrderTable9.Name = "AdminOrderTable9";
-            this.AdminOrderTable9.Size = new System.Drawing.Size(81, 23);
-            this.AdminOrderTable9.TabIndex = 22;
-            this.AdminOrderTable9.Text = "Table 9";
-            // 
-            // AdminOrderTable8
-            // 
-            this.AdminOrderTable8.AutoSize = true;
-            this.AdminOrderTable8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable8.Location = new System.Drawing.Point(323, 457);
-            this.AdminOrderTable8.Name = "AdminOrderTable8";
-            this.AdminOrderTable8.Size = new System.Drawing.Size(81, 23);
-            this.AdminOrderTable8.TabIndex = 21;
-            this.AdminOrderTable8.Text = "Table 8";
-            // 
-            // AdminOrderTable7
-            // 
-            this.AdminOrderTable7.AutoSize = true;
-            this.AdminOrderTable7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable7.Location = new System.Drawing.Point(76, 457);
-            this.AdminOrderTable7.Name = "AdminOrderTable7";
-            this.AdminOrderTable7.Size = new System.Drawing.Size(81, 23);
-            this.AdminOrderTable7.TabIndex = 20;
-            this.AdminOrderTable7.Text = "Table 7";
+            this.AdminOrderPanel.BackgroundColor = System.Drawing.Color.White;
+            this.AdminOrderPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminOrderPanel.BackgroundImage")));
+            this.AdminOrderPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AdminOrderPanel.BorderColor = System.Drawing.Color.White;
+            this.AdminOrderPanel.BorderRadius = 35;
+            this.AdminOrderPanel.BorderThickness = 1;
+            this.AdminOrderPanel.Controls.Add(this.bunifuButton1);
+            this.AdminOrderPanel.Controls.Add(this.AdminPaymentBtn1);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox9);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox8);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox7);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox18);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox17);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox6);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox5);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox16);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox4);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox15);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox3);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox2);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox14);
+            this.AdminOrderPanel.Controls.Add(this.AdminOrderTable2);
+            this.AdminOrderPanel.Controls.Add(this.AdminOrderTable1);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox1);
+            this.AdminOrderPanel.Controls.Add(this.pictureBox13);
+            this.AdminOrderPanel.Controls.Add(this.AdminOrderTable9);
+            this.AdminOrderPanel.Controls.Add(this.AdminOrderTable8);
+            this.AdminOrderPanel.Controls.Add(this.AdminOrderTable7);
+            this.AdminOrderPanel.Controls.Add(this.AdminOrderTable4);
+            this.AdminOrderPanel.Controls.Add(this.AdminOrderTable6);
+            this.AdminOrderPanel.Controls.Add(this.AdminOrderTable3);
+            this.AdminOrderPanel.Controls.Add(this.AdminOrderTable5);
+            this.AdminOrderPanel.Location = new System.Drawing.Point(3, 3);
+            this.AdminOrderPanel.Name = "AdminOrderPanel";
+            this.AdminOrderPanel.ShowBorders = true;
+            this.AdminOrderPanel.Size = new System.Drawing.Size(674, 494);
+            this.AdminOrderPanel.TabIndex = 0;
+            this.AdminOrderPanel.Click += new System.EventHandler(this.AdminOrderPanel_Click);
             // 
             // bunifuButton1
             // 
@@ -501,7 +472,7 @@
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(426, 123);
+            this.bunifuButton1.Location = new System.Drawing.Point(442, 123);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 1;
@@ -544,13 +515,43 @@
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
+            // AdminOrderTable9
+            // 
+            this.AdminOrderTable9.AutoSize = true;
+            this.AdminOrderTable9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminOrderTable9.Location = new System.Drawing.Point(570, 457);
+            this.AdminOrderTable9.Name = "AdminOrderTable9";
+            this.AdminOrderTable9.Size = new System.Drawing.Size(81, 23);
+            this.AdminOrderTable9.TabIndex = 22;
+            this.AdminOrderTable9.Text = "Table 9";
+            // 
+            // AdminOrderTable8
+            // 
+            this.AdminOrderTable8.AutoSize = true;
+            this.AdminOrderTable8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminOrderTable8.Location = new System.Drawing.Point(323, 457);
+            this.AdminOrderTable8.Name = "AdminOrderTable8";
+            this.AdminOrderTable8.Size = new System.Drawing.Size(81, 23);
+            this.AdminOrderTable8.TabIndex = 21;
+            this.AdminOrderTable8.Text = "Table 8";
+            // 
+            // AdminOrderTable7
+            // 
+            this.AdminOrderTable7.AutoSize = true;
+            this.AdminOrderTable7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminOrderTable7.Location = new System.Drawing.Point(76, 457);
+            this.AdminOrderTable7.Name = "AdminOrderTable7";
+            this.AdminOrderTable7.Size = new System.Drawing.Size(81, 23);
+            this.AdminOrderTable7.TabIndex = 20;
+            this.AdminOrderTable7.Text = "Table 7";
+            // 
             // AdminOrder
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.bunifuPanel1);
+            this.Controls.Add(this.AdminOrderPanel);
             this.Name = "AdminOrder";
-            this.Size = new System.Drawing.Size(705, 485);
+            this.Size = new System.Drawing.Size(718, 485);
             this.Load += new System.EventHandler(this.AdminOrder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -567,8 +568,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.bunifuPanel1.ResumeLayout(false);
-            this.bunifuPanel1.PerformLayout();
+            this.AdminOrderPanel.ResumeLayout(false);
+            this.AdminOrderPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -576,7 +577,7 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Bunifu.UI.WinForms.BunifuPanel AdminOrderPanel;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminPaymentBtn1;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;

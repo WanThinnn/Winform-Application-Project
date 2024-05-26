@@ -35,9 +35,9 @@
             // 
             this.adminTable1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.adminTable1.BackColor = System.Drawing.Color.White;
-            this.adminTable1.Location = new System.Drawing.Point(0, -7);
+            this.adminTable1.Location = new System.Drawing.Point(-8, -19);
             this.adminTable1.Name = "adminTable1";
-            this.adminTable1.Size = new System.Drawing.Size(1082, 631);
+            this.adminTable1.Size = new System.Drawing.Size(814, 626);
             this.adminTable1.TabIndex = 0;
             // 
             // edit_Table

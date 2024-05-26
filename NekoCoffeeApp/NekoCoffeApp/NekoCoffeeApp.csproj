@@ -306,6 +306,7 @@
     <Compile Include="AdminReview.Designer.cs">
       <DependentUpon>AdminReview.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminShift.cs" />
     <Compile Include="AdminTable.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -364,6 +365,7 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="NekoShift.cs" />
     <Compile Include="NekoTable.cs" />
     <Compile Include="NekoUser.cs" />
     <Compile Include="TableDetail.cs">
