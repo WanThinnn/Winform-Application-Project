@@ -1,4 +1,7 @@
-﻿using System;
+﻿using FireSharp.Config;
+using FireSharp.Interfaces;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,24 +40,18 @@ namespace UI
             edit_Order edit_Order = new edit_Order();
             edit_Order.Show();
         }
-
-
-
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-
-
-
+        
 
         private void AdminOrder_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                tbl = new FireSharp.FirebaseClient(ifc);
+            }
+            catch
+            {
+                MessageBox.Show("Kiểm tra lại mạng", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void AdminOrderTable1_Click(object sender, EventArgs e)
@@ -64,37 +61,32 @@ namespace UI
         }
 
 
-
-        private void AdminOrderPanel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void AdminAdjustTable_Click(object sender, EventArgs e)
         {
             edit_Table edit_Table = new edit_Table();
             edit_Table.Show();
         }
 
-        private void AdminLoadTablesBtn_Click(object sender, EventArgs e)
+        IFirebaseConfig ifc = new FirebaseConfig()
         {
-
-            List<NekoTable> tables = new List<NekoTable>
-        {
-            new NekoTable { ID = "1", Name = "Table 1", Status = "Booked" },
-            new NekoTable { ID = "2", Name = "Table 2", Status = "Booked" },
-            new NekoTable { ID = "3", Name = "Table 3", Status = "Booked" },
-            new NekoTable { ID = "5", Name = "Table 3", Status = "Booked" },
-            new NekoTable { ID = "6", Name = "Table 3", Status = "Booked" },
-            new NekoTable { ID = "7", Name = "Table 3", Status = "Booked" },
-            new NekoTable { ID = "4", Name = "Table 4", Status = "Booked" }
+            AuthSecret = "f5A5LselW6L4lKJHpNGVH6NZHGKIZilErMoUOoLC",
+            BasePath = "https://neko-coffe-database-default-rtdb.firebaseio.com/"
         };
 
-            // Xóa các controls cũ trên flowLayoutPanel1 nếu có
-            flowLayoutPanel1.Controls.Clear();
+        IFirebaseClient tbl;
+
+
+        private async void AdminLoadTablesBtn_Click(object sender, EventArgs e)
+        {
+
+            var response = await tbl.GetAsync("/Tables");
+            var tables = JsonConvert.DeserializeObject<Dictionary<string, NekoTable>>(response.Body);
+
+            // Xóa các controls cũ trên AdminOrderPanel nếu có
+            Table_flowLayoutPanel.Controls.Clear();
 
             // Lặp qua danh sách các bảng và thêm thông tin những bảng có trạng thái "Booked"
-            foreach (var table in tables)
+            foreach (var table in tables.Values)
             {
                 if (table.Status == "Booked")
                 {
@@ -104,13 +96,10 @@ namespace UI
                     btn.BackColor = Color.LightBlue; // Thiết lập màu sắc
                     btn.Text = $"ID: {table.ID}\nName: {table.Name}\nStatus: {table.Status}";
 
+                    // Gán sự kiện Click cho nút
                     btn.Click += (s, args) => OpenTableDetail(table);
 
-
-                    flowLayoutPanel1.Controls.Add(btn);
-
-
-
+                    Table_flowLayoutPanel.Controls.Add(btn);
                 }
             }
 

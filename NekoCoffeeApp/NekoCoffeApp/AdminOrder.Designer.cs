@@ -57,12 +57,12 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.AdminPaymentBtn1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminOrderPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.Table_flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.AdminOrderTable9 = new System.Windows.Forms.Label();
             this.AdminOrderTable8 = new System.Windows.Forms.Label();
             this.AdminOrderTable7 = new System.Windows.Forms.Label();
             this.AdminOrderTableBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminLoadTablesBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -296,7 +296,6 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 11;
             this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // AdminPaymentBtn1
             // 
@@ -395,7 +394,7 @@
             this.AdminOrderPanel.BorderColor = System.Drawing.Color.White;
             this.AdminOrderPanel.BorderRadius = 35;
             this.AdminOrderPanel.BorderThickness = 1;
-            this.AdminOrderPanel.Controls.Add(this.flowLayoutPanel1);
+            this.AdminOrderPanel.Controls.Add(this.Table_flowLayoutPanel);
             this.AdminOrderPanel.Controls.Add(this.AdminPaymentBtn1);
             this.AdminOrderPanel.Controls.Add(this.pictureBox9);
             this.AdminOrderPanel.Controls.Add(this.pictureBox8);
@@ -426,7 +425,13 @@
             this.AdminOrderPanel.ShowBorders = true;
             this.AdminOrderPanel.Size = new System.Drawing.Size(695, 494);
             this.AdminOrderPanel.TabIndex = 0;
-            this.AdminOrderPanel.Click += new System.EventHandler(this.AdminOrderPanel_Click);
+            // 
+            // Table_flowLayoutPanel
+            // 
+            this.Table_flowLayoutPanel.Location = new System.Drawing.Point(37, 3);
+            this.Table_flowLayoutPanel.Name = "Table_flowLayoutPanel";
+            this.Table_flowLayoutPanel.Size = new System.Drawing.Size(628, 451);
+            this.Table_flowLayoutPanel.TabIndex = 32;
             // 
             // AdminOrderTable9
             // 
@@ -638,13 +643,6 @@
             this.AdminLoadTablesBtn.UseDefaultRadiusAndThickness = true;
             this.AdminLoadTablesBtn.Click += new System.EventHandler(this.AdminLoadTablesBtn_Click);
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(37, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(628, 451);
-            this.flowLayoutPanel1.TabIndex = 32;
-            // 
             // AdminOrder
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -707,6 +705,6 @@
         private System.Windows.Forms.Label AdminOrderTable7;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminOrderTableBtn;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminLoadTablesBtn;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel Table_flowLayoutPanel;
     }
 }

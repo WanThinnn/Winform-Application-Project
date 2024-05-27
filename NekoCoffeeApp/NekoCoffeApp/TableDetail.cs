@@ -29,6 +29,7 @@ namespace UI
             lbTableID.Text = _table.ID;
             lbTableName.Text = _table.Name;
             lbTableStatus.Text = _table.Status;
+            AdminOrderTableLabel.Text = _table.Name;
         }
 
 

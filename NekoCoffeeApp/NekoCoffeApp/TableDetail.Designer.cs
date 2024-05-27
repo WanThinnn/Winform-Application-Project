@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TableDetail));
-            this.AdminOrderTable1 = new System.Windows.Forms.Label();
+            this.AdminOrderTableLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.lbTableStatus = new System.Windows.Forms.Label();
@@ -39,15 +39,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
-            // AdminOrderTable1
+            // AdminOrderTableLabel
             // 
-            this.AdminOrderTable1.AutoSize = true;
-            this.AdminOrderTable1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable1.Location = new System.Drawing.Point(51, 313);
-            this.AdminOrderTable1.Name = "AdminOrderTable1";
-            this.AdminOrderTable1.Size = new System.Drawing.Size(81, 23);
-            this.AdminOrderTable1.TabIndex = 28;
-            this.AdminOrderTable1.Text = "Table 1";
+            this.AdminOrderTableLabel.AutoSize = true;
+            this.AdminOrderTableLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminOrderTableLabel.Location = new System.Drawing.Point(51, 313);
+            this.AdminOrderTableLabel.Name = "AdminOrderTableLabel";
+            this.AdminOrderTableLabel.Size = new System.Drawing.Size(81, 23);
+            this.AdminOrderTableLabel.TabIndex = 28;
+            this.AdminOrderTableLabel.Text = "Table 1";
             // 
             // pictureBox1
             // 
@@ -104,7 +104,7 @@
             this.Controls.Add(this.lbTableName);
             this.Controls.Add(this.lbTableStatus);
             this.Controls.Add(this.lbTableID);
-            this.Controls.Add(this.AdminOrderTable1);
+            this.Controls.Add(this.AdminOrderTableLabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox13);
             this.Name = "TableDetail";
@@ -118,7 +118,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label AdminOrderTable1;
+        private System.Windows.Forms.Label AdminOrderTableLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Label lbTableStatus;
