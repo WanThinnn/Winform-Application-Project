@@ -15,44 +15,27 @@ namespace UI
 {
     public partial class TableDetail : Form
     {
-        public TableDetail()
+        public TableDetail() {}
+        private NekoTable _table;
+        public TableDetail(NekoTable table)
         {
             InitializeComponent();
+            _table = table;
+            LoadTableDetails();
         }
 
-
-        IFirebaseConfig ifc = new FirebaseConfig()
+        private void LoadTableDetails()
         {
-            AuthSecret = "f5A5LselW6L4lKJHpNGVH6NZHGKIZilErMoUOoLC",
-            BasePath = "https://neko-coffe-database-default-rtdb.firebaseio.com/"
-        };
-
-        IFirebaseClient tbd;
-
-        private void TableDetail_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                tbd = new FireSharp.FirebaseClient(ifc);
-            }
-
-            catch
-            {
-                MessageBox.Show("Kiểm tra lại mạng", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-
-            viewData();
+            lbTableID.Text = _table.ID;
+            lbTableName.Text = _table.Name;
+            lbTableStatus.Text = _table.Status;
         }
 
 
 
-        void viewData()
-        {
-            var data = tbd.Get(@"/Tables");
-            var mList = JsonConvert.DeserializeObject<IDictionary<string, NekoTable>>(data.Body);
-            var listNumber = mList.Values.ToList();
-            TableDetailsView.DataSource = listNumber;
-        }
+
+
+
         private void label2_Click(object sender, EventArgs e)
         {
 

@@ -103,8 +103,22 @@ namespace UI
                     btn.Size = new Size(109, 109); // Thiết lập kích thước
                     btn.BackColor = Color.LightBlue; // Thiết lập màu sắc
                     btn.Text = $"ID: {table.ID}\nName: {table.Name}\nStatus: {table.Status}";
+
+                    btn.Click += (s, args) => OpenTableDetail(table);
+
+
                     flowLayoutPanel1.Controls.Add(btn);
+
+
+
                 }
+            }
+
+            void OpenTableDetail(NekoTable table)
+            {
+                // Khởi tạo form chi tiết bảng với thông tin bảng được truyền vào
+                TableDetail tableDetail = new TableDetail(table);
+                tableDetail.Show();
             }
         }
 
