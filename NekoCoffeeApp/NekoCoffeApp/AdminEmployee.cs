@@ -28,7 +28,7 @@ namespace UI
             }
         }
 
-        public event EventHandler SwitchToAdminAdjustClicked;
+        //public event EventHandler SwitchToAdminAdjustClicked;
 
         private void AdminAdjustEmployee_Click(object sender, EventArgs e)
         {
