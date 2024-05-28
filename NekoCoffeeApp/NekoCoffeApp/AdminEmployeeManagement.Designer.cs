@@ -1122,7 +1122,7 @@
             this.AdminViewAllEmployees.Size = new System.Drawing.Size(640, 511);
             this.AdminViewAllEmployees.TabIndex = 46;
             this.AdminViewAllEmployees.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            // 
+            // //
             // AdminFillEmployeeID
             // 
             this.AdminFillEmployeeID.AcceptsReturn = false;
