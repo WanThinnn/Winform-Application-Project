@@ -26,9 +26,9 @@ namespace UI
 
         private void LoadTableDetails()
         {
-            lbTableID.Text = _table.ID;
-            lbTableName.Text = _table.Name;
-            lbTableStatus.Text = _table.Status;
+            lbTableID.Text = "ID: "+_table.ID;
+            lbTableName.Text = "Name: "+_table.Name;
+            lbTableStatus.Text = "Status: "+_table.Status;
             AdminOrderTableLabel.Text = _table.Name;
         }
 

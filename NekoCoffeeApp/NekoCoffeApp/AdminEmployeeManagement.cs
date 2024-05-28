@@ -56,7 +56,7 @@ namespace UI
             if (
                string.IsNullOrWhiteSpace(AdminFillEmployeeDateOfBirth.Text) ||
                string.IsNullOrWhiteSpace(AdminFillEmployeeGender.Text) ||
-            string.IsNullOrWhiteSpace(AdminFillEmployeeAddress.Text) ||
+            string.IsNullOrWhiteSpace(AdminFillEmployeeShift.Text) ||
                string.IsNullOrWhiteSpace(AdminFillEmployeePhoneNumber.Text) ||
                 string.IsNullOrWhiteSpace(AdminFillEmployeeID.Text) ||
                string.IsNullOrWhiteSpace(AdminFillEmployeeName.Text) ||
@@ -86,7 +86,7 @@ namespace UI
                 Name = AdminFillEmployeeName.Text,
                 DateOfBirth = AdminFillEmployeeDateOfBirth.Text,
                 Gender = AdminFillEmployeeGender.Text,
-                Address = AdminFillEmployeeAddress.Text,
+                Shift = AdminFillEmployeeShift.Text,
                 PhoneNumber = AdminFillEmployeePhoneNumber.Text,
                 Email = AdminFillEmployeeEmail.Text,
                 Salary = AdminFillEmployeeSalary.Text
@@ -106,12 +106,15 @@ namespace UI
 
        
 
-        void viewData()
+        async void viewData()
         {
-            var data = emp.Get(@"/Employees");
-            var mList = JsonConvert.DeserializeObject<IDictionary<string, NekoEmployee>>(data.Body);
-            var listNumber = mList.Values.ToList();
-            AdminViewAllEmployees.DataSource = listNumber;
+            var data = await emp.GetAsync(@"/Employees");
+            //var mList = JsonConvert.DeserializeObject<Dictionary<string, NekoEmployee>>(data.Body);
+            //var listNumber = mList.Values.ToList();
+            //AdminViewAllEmployees.DataSource = listNumber;
+            var employeeList = JsonConvert.DeserializeObject<List<NekoEmployee>>(data.Body);
+
+            AdminViewAllEmployees.DataSource = employeeList;
         }
 
         private void AdminShowAllEmployees_Click(object sender, EventArgs e)
@@ -184,7 +187,7 @@ namespace UI
                     Name = AdminFillEmployeeName.Text,
                     DateOfBirth = AdminFillEmployeeDateOfBirth.Text,
                     Gender = AdminFillEmployeeGender.Text,
-                    Address = AdminFillEmployeeAddress.Text,
+                    Shift = AdminFillEmployeeShift.Text,
                     PhoneNumber = AdminFillEmployeePhoneNumber.Text,
                     Email = AdminFillEmployeeEmail.Text,
                     Salary = AdminFillEmployeeSalary.Text
@@ -225,7 +228,7 @@ namespace UI
                 AdminFillEmployeeName.Text = existingEmployee.Name;
                 AdminFillEmployeeDateOfBirth.Text = existingEmployee.DateOfBirth;
                 AdminFillEmployeeGender.Text = existingEmployee.Gender;
-                AdminFillEmployeeAddress.Text = existingEmployee.Address;
+                AdminFillEmployeeShift.Text = existingEmployee.Shift;
                 AdminFillEmployeePhoneNumber.Text = existingEmployee.PhoneNumber;
                 AdminFillEmployeeEmail.Text = existingEmployee.Email;
                 AdminFillEmployeeSalary.Text = existingEmployee.Salary;

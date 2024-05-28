@@ -337,6 +337,12 @@
     <Compile Include="edit_Table.Designer.cs">
       <DependentUpon>edit_Table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Detail.Designer.cs">
+      <DependentUpon>Employee_Detail.cs</DependentUpon>
+    </Compile>
     <Compile Include="NekoCat.cs" />
     <Compile Include="NekoCustomer.cs" />
     <Compile Include="edit_Order.cs">
@@ -467,6 +473,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="edit_Table.resx">
       <DependentUpon>edit_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Detail.resx">
+      <DependentUpon>Employee_Detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPwd.resx">
       <DependentUpon>ForgotPwd.cs</DependentUpon>

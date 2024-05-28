@@ -610,7 +610,7 @@
             this.btnLoginGoogle.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.btnLoginGoogle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoginGoogle.Image = ((System.Drawing.Image)(resources.GetObject("btnLoginGoogle.Image")));
-            this.btnLoginGoogle.ImageActive = null;
+            this.btnLoginGoogle.ActiveImage = null;
             this.btnLoginGoogle.ImageLocation = null;
             this.btnLoginGoogle.ImageMargin = 0;
             this.btnLoginGoogle.ImageSize = new System.Drawing.Size(159, 37);
@@ -627,7 +627,7 @@
             this.btnLoginGoogle.TabIndex = 98;
             this.btnLoginGoogle.ToolTipText = "";
             this.btnLoginGoogle.WaitOnLoad = false;
-            this.btnLoginGoogle.Zoom = 0;
+            this.btnLoginGoogle.ImageMargin = 0;
             this.btnLoginGoogle.ZoomSpeed = 10;
             this.btnLoginGoogle.Click += new System.EventHandler(this.btnLoginGoogle_Click);
             // 

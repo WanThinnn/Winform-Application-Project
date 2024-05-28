@@ -796,7 +796,7 @@
             this.AdminViewAllYourDrinks.EnableHeadersVisualStyles = false;
             this.AdminViewAllYourDrinks.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.AdminViewAllYourDrinks.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.AdminViewAllYourDrinks.HeaderBgColor = System.Drawing.Color.Empty;
+            this.AdminViewAllYourDrinks.HeaderBackColor = System.Drawing.Color.Empty;
             this.AdminViewAllYourDrinks.HeaderForeColor = System.Drawing.Color.White;
             this.AdminViewAllYourDrinks.Location = new System.Drawing.Point(21, 21);
             this.AdminViewAllYourDrinks.Name = "AdminViewAllYourDrinks";

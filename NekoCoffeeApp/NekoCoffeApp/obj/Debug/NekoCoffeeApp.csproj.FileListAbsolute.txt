@@ -751,3 +751,4 @@ C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\
 C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.pdb
 C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.TableDetail.resources
 C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.edit_Table.resources
+C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.EmployeeDetail.resources

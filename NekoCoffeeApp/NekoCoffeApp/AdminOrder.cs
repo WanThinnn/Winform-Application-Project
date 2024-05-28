@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
+using static Bunifu.UI.WinForms.BunifuSnackbar;
 
 namespace UI
 {
@@ -85,6 +86,8 @@ namespace UI
             // Xóa các controls cũ trên AdminOrderPanel nếu có
             Table_flowLayoutPanel.Controls.Clear();
 
+            
+
             // Lặp qua danh sách các bảng và thêm thông tin những bảng có trạng thái "Booked"
             foreach (var table in tables.Values)
             {
@@ -98,8 +101,9 @@ namespace UI
 
                     // Gán sự kiện Click cho nút
                     btn.Click += (s, args) => OpenTableDetail(table);
-
                     Table_flowLayoutPanel.Controls.Add(btn);
+
+                    
                 }
             }
 

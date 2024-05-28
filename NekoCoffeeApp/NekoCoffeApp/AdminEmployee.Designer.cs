@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminEmployee));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AdminEmployee1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -55,6 +56,8 @@
             this.bunifuPictureBox6 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Employee_FlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.EmployeeLoadBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminEmployee1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -123,7 +126,7 @@
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(49, 48);
+            this.bunifuLabel1.Size = new System.Drawing.Size(72, 63);
             this.bunifuLabel1.TabIndex = 1;
             this.bunifuLabel1.Text = "Name:\r\nContact:\r\nPosition: \r\n";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -139,7 +142,6 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox14.TabIndex = 28;
             this.pictureBox14.TabStop = false;
-            this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
             // bunifuDatePicker1
             // 
@@ -164,7 +166,7 @@
             this.bunifuDatePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuDatePicker1.MinimumSize = new System.Drawing.Size(4, 32);
             this.bunifuDatePicker1.Name = "bunifuDatePicker1";
-            this.bunifuDatePicker1.Size = new System.Drawing.Size(414, 32);
+            this.bunifuDatePicker1.Size = new System.Drawing.Size(414, 35);
             this.bunifuDatePicker1.TabIndex = 33;
             // 
             // AdminAdjustEmployeeBtn
@@ -186,11 +188,11 @@
             this.AdminAdjustEmployeeBtn.ColorContrastOnClick = 45;
             this.AdminAdjustEmployeeBtn.ColorContrastOnHover = 45;
             this.AdminAdjustEmployeeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.AdminAdjustEmployeeBtn.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.AdminAdjustEmployeeBtn.CustomizableEdges = borderEdges2;
             this.AdminAdjustEmployeeBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminAdjustEmployeeBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAdjustEmployeeBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -249,7 +251,7 @@
             this.AdminAdjustEmployeeBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAdjustEmployeeBtn.OnPressedState.IconLeftImage = null;
             this.AdminAdjustEmployeeBtn.OnPressedState.IconRightImage = null;
-            this.AdminAdjustEmployeeBtn.Size = new System.Drawing.Size(219, 44);
+            this.AdminAdjustEmployeeBtn.Size = new System.Drawing.Size(186, 44);
             this.AdminAdjustEmployeeBtn.TabIndex = 70;
             this.AdminAdjustEmployeeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAdjustEmployeeBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -274,7 +276,6 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(297, 132);
             this.bunifuPanel1.TabIndex = 2;
-            this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
             // 
             // bunifuPictureBox2
             // 
@@ -305,7 +306,7 @@
             this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(49, 48);
+            this.bunifuLabel2.Size = new System.Drawing.Size(72, 63);
             this.bunifuLabel2.TabIndex = 1;
             this.bunifuLabel2.Text = "Name:\r\nContact:\r\nPosition: \r\n";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -357,7 +358,7 @@
             this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(49, 48);
+            this.bunifuLabel3.Size = new System.Drawing.Size(72, 63);
             this.bunifuLabel3.TabIndex = 1;
             this.bunifuLabel3.Text = "Name:\r\nContact:\r\nPosition: \r\n";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -409,7 +410,7 @@
             this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(49, 48);
+            this.bunifuLabel4.Size = new System.Drawing.Size(72, 63);
             this.bunifuLabel4.TabIndex = 1;
             this.bunifuLabel4.Text = "Name:\r\nContact:\r\nPosition: \r\n";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -472,7 +473,7 @@
             this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(49, 48);
+            this.bunifuLabel5.Size = new System.Drawing.Size(72, 63);
             this.bunifuLabel5.TabIndex = 1;
             this.bunifuLabel5.Text = "Name:\r\nContact:\r\nPosition: \r\n";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -524,7 +525,7 @@
             this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(49, 48);
+            this.bunifuLabel6.Size = new System.Drawing.Size(72, 63);
             this.bunifuLabel6.TabIndex = 1;
             this.bunifuLabel6.Text = "Name:\r\nContact:\r\nPosition: \r\n";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -541,24 +542,125 @@
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
             // 
+            // Employee_FlowLayoutPanel
+            // 
+            this.Employee_FlowLayoutPanel.Location = new System.Drawing.Point(5, 58);
+            this.Employee_FlowLayoutPanel.Name = "Employee_FlowLayoutPanel";
+            this.Employee_FlowLayoutPanel.Size = new System.Drawing.Size(684, 412);
+            this.Employee_FlowLayoutPanel.TabIndex = 2;
+            // 
+            // EmployeeLoadBtn
+            // 
+            this.EmployeeLoadBtn.AllowAnimations = true;
+            this.EmployeeLoadBtn.AllowMouseEffects = true;
+            this.EmployeeLoadBtn.AllowToggling = false;
+            this.EmployeeLoadBtn.AnimationSpeed = 200;
+            this.EmployeeLoadBtn.AutoGenerateColors = false;
+            this.EmployeeLoadBtn.AutoRoundBorders = false;
+            this.EmployeeLoadBtn.AutoSizeLeftIcon = true;
+            this.EmployeeLoadBtn.AutoSizeRightIcon = true;
+            this.EmployeeLoadBtn.BackColor = System.Drawing.Color.Transparent;
+            this.EmployeeLoadBtn.BackColor1 = System.Drawing.Color.LightSalmon;
+            this.EmployeeLoadBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EmployeeLoadBtn.BackgroundImage")));
+            this.EmployeeLoadBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.EmployeeLoadBtn.ButtonText = "LOAD";
+            this.EmployeeLoadBtn.ButtonTextMarginLeft = 0;
+            this.EmployeeLoadBtn.ColorContrastOnClick = 45;
+            this.EmployeeLoadBtn.ColorContrastOnHover = 45;
+            this.EmployeeLoadBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.EmployeeLoadBtn.CustomizableEdges = borderEdges1;
+            this.EmployeeLoadBtn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.EmployeeLoadBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.EmployeeLoadBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.EmployeeLoadBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.EmployeeLoadBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.EmployeeLoadBtn.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
+            this.EmployeeLoadBtn.ForeColor = System.Drawing.Color.White;
+            this.EmployeeLoadBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EmployeeLoadBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.EmployeeLoadBtn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.EmployeeLoadBtn.IconMarginLeft = 11;
+            this.EmployeeLoadBtn.IconPadding = 10;
+            this.EmployeeLoadBtn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.EmployeeLoadBtn.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.EmployeeLoadBtn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.EmployeeLoadBtn.IconSize = 25;
+            this.EmployeeLoadBtn.IdleBorderColor = System.Drawing.Color.LightSalmon;
+            this.EmployeeLoadBtn.IdleBorderRadius = 37;
+            this.EmployeeLoadBtn.IdleBorderThickness = 1;
+            this.EmployeeLoadBtn.IdleFillColor = System.Drawing.Color.LightSalmon;
+            this.EmployeeLoadBtn.IdleIconLeftImage = null;
+            this.EmployeeLoadBtn.IdleIconRightImage = null;
+            this.EmployeeLoadBtn.IndicateFocus = false;
+            this.EmployeeLoadBtn.Location = new System.Drawing.Point(199, 7);
+            this.EmployeeLoadBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.EmployeeLoadBtn.Name = "EmployeeLoadBtn";
+            this.EmployeeLoadBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.EmployeeLoadBtn.OnDisabledState.BorderRadius = 37;
+            this.EmployeeLoadBtn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.EmployeeLoadBtn.OnDisabledState.BorderThickness = 1;
+            this.EmployeeLoadBtn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.EmployeeLoadBtn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.EmployeeLoadBtn.OnDisabledState.IconLeftImage = null;
+            this.EmployeeLoadBtn.OnDisabledState.IconRightImage = null;
+            this.EmployeeLoadBtn.onHoverState.BorderColor = System.Drawing.Color.LightSalmon;
+            this.EmployeeLoadBtn.onHoverState.BorderRadius = 37;
+            this.EmployeeLoadBtn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.EmployeeLoadBtn.onHoverState.BorderThickness = 1;
+            this.EmployeeLoadBtn.onHoverState.FillColor = System.Drawing.Color.LightSalmon;
+            this.EmployeeLoadBtn.onHoverState.ForeColor = System.Drawing.Color.Black;
+            this.EmployeeLoadBtn.onHoverState.IconLeftImage = null;
+            this.EmployeeLoadBtn.onHoverState.IconRightImage = null;
+            this.EmployeeLoadBtn.OnIdleState.BorderColor = System.Drawing.Color.LightSalmon;
+            this.EmployeeLoadBtn.OnIdleState.BorderRadius = 37;
+            this.EmployeeLoadBtn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.EmployeeLoadBtn.OnIdleState.BorderThickness = 1;
+            this.EmployeeLoadBtn.OnIdleState.FillColor = System.Drawing.Color.LightSalmon;
+            this.EmployeeLoadBtn.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.EmployeeLoadBtn.OnIdleState.IconLeftImage = null;
+            this.EmployeeLoadBtn.OnIdleState.IconRightImage = null;
+            this.EmployeeLoadBtn.OnPressedState.BorderColor = System.Drawing.Color.LightSalmon;
+            this.EmployeeLoadBtn.OnPressedState.BorderRadius = 37;
+            this.EmployeeLoadBtn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.EmployeeLoadBtn.OnPressedState.BorderThickness = 1;
+            this.EmployeeLoadBtn.OnPressedState.FillColor = System.Drawing.Color.LightSalmon;
+            this.EmployeeLoadBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.EmployeeLoadBtn.OnPressedState.IconLeftImage = null;
+            this.EmployeeLoadBtn.OnPressedState.IconRightImage = null;
+            this.EmployeeLoadBtn.Size = new System.Drawing.Size(68, 44);
+            this.EmployeeLoadBtn.TabIndex = 70;
+            this.EmployeeLoadBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EmployeeLoadBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.EmployeeLoadBtn.TextMarginLeft = 0;
+            this.EmployeeLoadBtn.TextPadding = new System.Windows.Forms.Padding(0);
+            this.EmployeeLoadBtn.UseDefaultRadiusAndThickness = true;
+            this.EmployeeLoadBtn.Click += new System.EventHandler(this.EmployeeLoadBtn_Click);
+            // 
             // AdminEmployee
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.Employee_FlowLayoutPanel);
             this.Controls.Add(this.bunifuPanel4);
             this.Controls.Add(this.bunifuPanel5);
             this.Controls.Add(this.bunifuPanel2);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.bunifuPanel3);
             this.Controls.Add(this.bunifuPanel1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.EmployeeLoadBtn);
             this.Controls.Add(this.AdminAdjustEmployeeBtn);
             this.Controls.Add(this.bunifuDatePicker1);
             this.Controls.Add(this.AdminEmployee1);
             this.Controls.Add(this.pictureBox14);
+            this.Controls.Add(this.bunifuPanel3);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminEmployee";
             this.Size = new System.Drawing.Size(706, 484);
+            this.Load += new System.EventHandler(this.AdminEmployee_Load);
             this.AdminEmployee1.ResumeLayout(false);
             this.AdminEmployee1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
@@ -610,5 +712,7 @@
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox4;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.FlowLayoutPanel Employee_FlowLayoutPanel;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton EmployeeLoadBtn;
     }
 }
