@@ -41,7 +41,7 @@ namespace UI
             edit_Order edit_Order = new edit_Order();
             edit_Order.Show();
         }
-        
+
 
         private void AdminOrder_Load(object sender, EventArgs e)
         {
@@ -53,6 +53,8 @@ namespace UI
             {
                 MessageBox.Show("Kiểm tra lại mạng", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            LoadTable();
+
         }
 
         private void AdminOrderTable1_Click(object sender, EventArgs e)
@@ -80,42 +82,40 @@ namespace UI
         private async void AdminLoadTablesBtn_Click(object sender, EventArgs e)
         {
 
-            var response = await tbl.GetAsync("/Tables");
-            var tables = JsonConvert.DeserializeObject<Dictionary<string, NekoTable>>(response.Body);
+            
 
             // Xóa các controls cũ trên AdminOrderPanel nếu có
             Table_flowLayoutPanel.Controls.Clear();
 
-            
 
-            // Lặp qua danh sách các bảng và thêm thông tin những bảng có trạng thái "Booked"
+        }
+        // Lặp qua danh sách các bảng và thêm thông tin những bảng có trạng thái "Booked"
+        async void LoadTable()
+        {
+            var response = await tbl.GetAsync("/Tables");
+            var tables = JsonConvert.DeserializeObject<Dictionary<string, NekoTable>>(response.Body);
             foreach (var table in tables.Values)
             {
-                if (table.Status == "Booked")
-                {
-                    // Tạo một nút mới để hiển thị thông tin bảng
-                    Button btn = new Button();
-                    btn.Size = new Size(109, 109); // Thiết lập kích thước
-                    btn.BackColor = Color.LightBlue; // Thiết lập màu sắc
-                    btn.Text = $"ID: {table.ID}\nName: {table.Name}\nStatus: {table.Status}";
+                // Tạo một nút mới để hiển thị thông tin bảng
+                Button btn = new Button();
+                btn.Size = new Size(109, 109); // Thiết lập kích thước
+                btn.BackColor = Color.LightBlue; // Thiết lập màu sắc
+                btn.Text = $"ID: {table.ID}\nName: {table.Name}\nStatus: {table.Status}";
 
-                    // Gán sự kiện Click cho nút
-                    btn.Click += (s, args) => OpenTableDetail(table);
-                    Table_flowLayoutPanel.Controls.Add(btn);
-
-                    
-                }
+                // Gán sự kiện Click cho nút
+                btn.Click += (s, args) => OpenTableDetail(table);
+                Table_flowLayoutPanel.Controls.Add(btn);
             }
-
-            void OpenTableDetail(NekoTable table)
-            {
-                // Khởi tạo form chi tiết bảng với thông tin bảng được truyền vào
-                TableDetail tableDetail = new TableDetail(table);
-                tableDetail.Show();
-            }
+        }
+        void OpenTableDetail(NekoTable table)
+        {
+            // Khởi tạo form chi tiết bảng với thông tin bảng được truyền vào
+            TableDetail tableDetail = new TableDetail(table);
+            tableDetail.Show();
         }
 
 
-        
+
+
     }
 }

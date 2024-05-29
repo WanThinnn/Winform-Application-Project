@@ -47,7 +47,10 @@ namespace UI
 
         }
 
-        
+        private void TableDetail_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

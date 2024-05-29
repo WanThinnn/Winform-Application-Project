@@ -100,6 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(703, 438);
             this.Controls.Add(this.lbTableName);
             this.Controls.Add(this.lbTableStatus);
@@ -109,6 +110,7 @@
             this.Controls.Add(this.pictureBox13);
             this.Name = "TableDetail";
             this.Text = "TableDetail";
+            this.Load += new System.EventHandler(this.TableDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
