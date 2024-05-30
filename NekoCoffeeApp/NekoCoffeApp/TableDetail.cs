@@ -43,7 +43,7 @@ namespace UI
             client = new FireSharp.FirebaseClient(config);
             mydt.Columns.Add("Ten Mon");
             mydt.Columns.Add("SL");
-            mydt.Columns.Add("Gia Tien");
+            mydt.Columns.Add("Thanh Tien");
 
             dataGridView1.DataSource = mydt;
             var response = await client.GetAsync("/Drinks");
@@ -72,6 +72,11 @@ namespace UI
                 MessageBox.Show("Vui lòng chọn một mục từ sản phẩm.");
                 return;
             }
+            else if (comboBox1.SelectedIndex >=0 && comboBox2.SelectedIndex >= 0)
+            {
+                MessageBox.Show("Vui lòng chỉ chọn một mục từ sản phẩm.");
+                return;
+            }
 
             string selectedNumber = numericUpDown1.Value.ToString();
             string selectedItem;
@@ -85,6 +90,9 @@ namespace UI
                 selectedItem = comboBox2.SelectedItem.ToString();
             }
             SetResponse response = await client.SetAsync("TableDetails/" + _table.ID + "/" + selectedItem, selectedNumber);
+            comboBox1.SelectedItem = null;
+            comboBox2.SelectedItem = null;
+            numericUpDown1.Value = 0;
         }
     }
 }
