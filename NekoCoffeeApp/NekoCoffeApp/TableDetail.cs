@@ -61,9 +61,36 @@ namespace UI
             }
         }
 
-        private void TableDetailsAdd_Click(object sender, EventArgs e)
+        private async void TableDetailsAdd_Click(object sender, EventArgs e)
         {
+            DialogResult dg = MessageBox.Show("Bạn có chắc chắn muốn xóa món này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dg == DialogResult.Yes)
+            {
+                if (comboBox1.SelectedIndex <= -1 && comboBox2.SelectedIndex <= -1)
+                {
+                    MessageBox.Show("Vui lòng chọn một sản phẩm");
+                    return;
+                }
+                if (comboBox1.SelectedIndex >= 1 && comboBox2.SelectedIndex >= 1)
+                {
+                    MessageBox.Show("Vui lòng chọn một sản phẩm");
+                    return;
+                }
+                string selectedNumber = numericUpDown1.Value.ToString();
+                string selectedItem;
 
+                if (comboBox1.SelectedIndex >= 0)
+                {
+                    selectedItem = comboBox1.SelectedItem.ToString();
+                }
+                else
+                {
+                    selectedItem = comboBox2.SelectedItem.ToString();
+                }
+                FirebaseResponse response = await client.DeleteAsync("TableDetails/" + _table.ID + "/" + selectedItem);
+                mydt.Rows.Clear();
+                MessageBox.Show("Đã xóa thành công !!! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private async void bunifuButton1_Click(object sender, EventArgs e)
