@@ -13,6 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
+using System.Windows.Markup;
 
 namespace UI
 {
@@ -147,23 +148,59 @@ namespace UI
 
         private async void TableDetailsView_Click(object sender, EventArgs e)
         {
-            /*mydt.Rows.Clear();
-            FirebaseResponse resp = await client.GetAsync("1/");
-            var data = resp.ResultAs<Dictionary<string, string>>();
-            if (data == null)
+            try
             {
-                MessageBox.Show("Ban chua duoc su dung");
-            }
-            else
-            {
-                foreach (var item in data)
+                mydt.Rows.Clear();
+                FirebaseResponse resp2 = await client.GetAsync("TableDetails/" + _table.ID);
+
+                if (resp2.Body == "null")
+                {
+                    MessageBox.Show("No details found for this table.");
+                    return;
+                }
+
+                var tableDetails = JsonConvert.DeserializeObject<Dictionary<string, NekoTableDetail>>(resp2.Body);
+
+                foreach (var detail in tableDetails.Values)
                 {
                     DataRow row = mydt.NewRow();
-                    row["Tenmon"] = item.Key; // Khóa là tên món
-                    row["SL"] = item.Value;   // Giá trị là số lượng
+                    row["Ten Mon"] = detail.Name;
+                    row["SL"] = detail.SL;
+                    row["Thanh Tien"] = detail.Total;
                     mydt.Rows.Add(row);
                 }
-            }*/
+
+                dataGridView1.DataSource = mydt; // Bind the updated DataTable to DataGridView
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while retrieving table details: " + ex.Message);
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            comboBox1.SelectedItem = null;
+            comboBox2.SelectedItem = null;
+            numericUpDown1.Value = 0;
+            DataGridViewRow row = new DataGridViewRow();
+            row = dataGridView1.Rows[e.RowIndex];
+            foreach (string s in comboBox1.Items)
+            {
+                if (s == Convert.ToString(row.Cells["Ten Mon"].Value))
+                {
+                    comboBox1.SelectedItem = Convert.ToString(row.Cells["Ten Mon"].Value);
+                }
+            }
+            foreach (string s in comboBox2.Items)
+            {
+                if (s == Convert.ToString(row.Cells["Ten Mon"].Value))
+                {
+                    comboBox2.SelectedItem = Convert.ToString(row.Cells["Ten Mon"].Value);
+                }
+            }
+            numericUpDown1.Value = Convert.ToInt64(row.Cells["SL"].Value);
         }
     }
 }
