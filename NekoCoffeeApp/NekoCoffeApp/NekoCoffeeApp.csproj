@@ -373,6 +373,7 @@
     </Compile>
     <Compile Include="NekoShift.cs" />
     <Compile Include="NekoTable.cs" />
+    <Compile Include="NekoTableDetail.cs" />
     <Compile Include="NekoUser.cs" />
     <Compile Include="TableDetail.cs">
       <SubType>Form</SubType>
