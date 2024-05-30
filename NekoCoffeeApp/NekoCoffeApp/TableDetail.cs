@@ -26,10 +26,7 @@ namespace UI
 
         private void LoadTableDetails()
         {
-            lbTableID.Text = "ID: "+_table.ID;
-            lbTableName.Text = "Name: "+_table.Name;
-            lbTableStatus.Text = "Status: "+_table.Status;
-            AdminOrderTableLabel.Text = _table.Name;
+           
         }
 
 
@@ -48,6 +45,16 @@ namespace UI
         }
 
         private void TableDetail_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TableDetailsAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
         {
 
         }

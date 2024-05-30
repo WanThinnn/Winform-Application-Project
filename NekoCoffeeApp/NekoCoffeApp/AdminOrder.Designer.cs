@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminOrder));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AdminOrderTable5 = new System.Windows.Forms.Label();
             this.AdminOrderTable3 = new System.Windows.Forms.Label();
@@ -58,9 +58,6 @@
             this.AdminPaymentBtn1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminOrderPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.Table_flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.AdminOrderTable9 = new System.Windows.Forms.Label();
-            this.AdminOrderTable8 = new System.Windows.Forms.Label();
-            this.AdminOrderTable7 = new System.Windows.Forms.Label();
             this.AdminOrderTableBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminLoadTablesBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -92,7 +89,7 @@
             this.AdminOrderTable5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminOrderTable5.Location = new System.Drawing.Point(323, 284);
             this.AdminOrderTable5.Name = "AdminOrderTable5";
-            this.AdminOrderTable5.Size = new System.Drawing.Size(81, 23);
+            this.AdminOrderTable5.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable5.TabIndex = 16;
             this.AdminOrderTable5.Text = "Table 5";
             // 
@@ -102,7 +99,7 @@
             this.AdminOrderTable3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminOrderTable3.Location = new System.Drawing.Point(570, 120);
             this.AdminOrderTable3.Name = "AdminOrderTable3";
-            this.AdminOrderTable3.Size = new System.Drawing.Size(81, 23);
+            this.AdminOrderTable3.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable3.TabIndex = 17;
             this.AdminOrderTable3.Text = "Table 3";
             // 
@@ -112,7 +109,7 @@
             this.AdminOrderTable6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminOrderTable6.Location = new System.Drawing.Point(570, 284);
             this.AdminOrderTable6.Name = "AdminOrderTable6";
-            this.AdminOrderTable6.Size = new System.Drawing.Size(81, 23);
+            this.AdminOrderTable6.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable6.TabIndex = 18;
             this.AdminOrderTable6.Text = "Table 6";
             // 
@@ -122,7 +119,7 @@
             this.AdminOrderTable4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminOrderTable4.Location = new System.Drawing.Point(76, 284);
             this.AdminOrderTable4.Name = "AdminOrderTable4";
-            this.AdminOrderTable4.Size = new System.Drawing.Size(81, 23);
+            this.AdminOrderTable4.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable4.TabIndex = 19;
             this.AdminOrderTable4.Text = "Table 4";
             // 
@@ -152,7 +149,7 @@
             this.AdminOrderTable1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminOrderTable1.Location = new System.Drawing.Point(76, 120);
             this.AdminOrderTable1.Name = "AdminOrderTable1";
-            this.AdminOrderTable1.Size = new System.Drawing.Size(81, 23);
+            this.AdminOrderTable1.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable1.TabIndex = 3;
             this.AdminOrderTable1.Text = "Table 1";
             this.AdminOrderTable1.Click += new System.EventHandler(this.AdminOrderTable1_Click);
@@ -163,7 +160,7 @@
             this.AdminOrderTable2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminOrderTable2.Location = new System.Drawing.Point(323, 120);
             this.AdminOrderTable2.Name = "AdminOrderTable2";
-            this.AdminOrderTable2.Size = new System.Drawing.Size(81, 23);
+            this.AdminOrderTable2.Size = new System.Drawing.Size(53, 17);
             this.AdminOrderTable2.TabIndex = 15;
             this.AdminOrderTable2.Text = "Table 2";
             // 
@@ -316,11 +313,11 @@
             this.AdminPaymentBtn1.ColorContrastOnClick = 45;
             this.AdminPaymentBtn1.ColorContrastOnHover = 45;
             this.AdminPaymentBtn1.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.AdminPaymentBtn1.CustomizableEdges = borderEdges6;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.AdminPaymentBtn1.CustomizableEdges = borderEdges12;
             this.AdminPaymentBtn1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminPaymentBtn1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminPaymentBtn1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -413,9 +410,6 @@
             this.AdminOrderPanel.Controls.Add(this.AdminOrderTable1);
             this.AdminOrderPanel.Controls.Add(this.pictureBox1);
             this.AdminOrderPanel.Controls.Add(this.pictureBox13);
-            this.AdminOrderPanel.Controls.Add(this.AdminOrderTable9);
-            this.AdminOrderPanel.Controls.Add(this.AdminOrderTable8);
-            this.AdminOrderPanel.Controls.Add(this.AdminOrderTable7);
             this.AdminOrderPanel.Controls.Add(this.AdminOrderTable4);
             this.AdminOrderPanel.Controls.Add(this.AdminOrderTable6);
             this.AdminOrderPanel.Controls.Add(this.AdminOrderTable3);
@@ -428,40 +422,10 @@
             // 
             // Table_flowLayoutPanel
             // 
-            this.Table_flowLayoutPanel.Location = new System.Drawing.Point(37, 3);
+            this.Table_flowLayoutPanel.Location = new System.Drawing.Point(16, 3);
             this.Table_flowLayoutPanel.Name = "Table_flowLayoutPanel";
-            this.Table_flowLayoutPanel.Size = new System.Drawing.Size(628, 451);
+            this.Table_flowLayoutPanel.Size = new System.Drawing.Size(649, 467);
             this.Table_flowLayoutPanel.TabIndex = 32;
-            // 
-            // AdminOrderTable9
-            // 
-            this.AdminOrderTable9.AutoSize = true;
-            this.AdminOrderTable9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable9.Location = new System.Drawing.Point(570, 457);
-            this.AdminOrderTable9.Name = "AdminOrderTable9";
-            this.AdminOrderTable9.Size = new System.Drawing.Size(81, 23);
-            this.AdminOrderTable9.TabIndex = 22;
-            this.AdminOrderTable9.Text = "Table 9";
-            // 
-            // AdminOrderTable8
-            // 
-            this.AdminOrderTable8.AutoSize = true;
-            this.AdminOrderTable8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable8.Location = new System.Drawing.Point(323, 457);
-            this.AdminOrderTable8.Name = "AdminOrderTable8";
-            this.AdminOrderTable8.Size = new System.Drawing.Size(81, 23);
-            this.AdminOrderTable8.TabIndex = 21;
-            this.AdminOrderTable8.Text = "Table 8";
-            // 
-            // AdminOrderTable7
-            // 
-            this.AdminOrderTable7.AutoSize = true;
-            this.AdminOrderTable7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTable7.Location = new System.Drawing.Point(76, 457);
-            this.AdminOrderTable7.Name = "AdminOrderTable7";
-            this.AdminOrderTable7.Size = new System.Drawing.Size(81, 23);
-            this.AdminOrderTable7.TabIndex = 20;
-            this.AdminOrderTable7.Text = "Table 7";
             // 
             // AdminOrderTableBtn
             // 
@@ -482,11 +446,11 @@
             this.AdminOrderTableBtn.ColorContrastOnClick = 45;
             this.AdminOrderTableBtn.ColorContrastOnHover = 45;
             this.AdminOrderTableBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.AdminOrderTableBtn.CustomizableEdges = borderEdges5;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.AdminOrderTableBtn.CustomizableEdges = borderEdges11;
             this.AdminOrderTableBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminOrderTableBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminOrderTableBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -572,11 +536,11 @@
             this.AdminLoadTablesBtn.ColorContrastOnClick = 45;
             this.AdminLoadTablesBtn.ColorContrastOnHover = 45;
             this.AdminLoadTablesBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.AdminLoadTablesBtn.CustomizableEdges = borderEdges4;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.AdminLoadTablesBtn.CustomizableEdges = borderEdges10;
             this.AdminLoadTablesBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminLoadTablesBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminLoadTablesBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -700,9 +664,6 @@
         private System.Windows.Forms.Label AdminOrderTable6;
         private System.Windows.Forms.Label AdminOrderTable3;
         private System.Windows.Forms.Label AdminOrderTable5;
-        private System.Windows.Forms.Label AdminOrderTable9;
-        private System.Windows.Forms.Label AdminOrderTable8;
-        private System.Windows.Forms.Label AdminOrderTable7;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminOrderTableBtn;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminLoadTablesBtn;
         private System.Windows.Forms.FlowLayoutPanel Table_flowLayoutPanel;

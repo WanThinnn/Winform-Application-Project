@@ -41,10 +41,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.AdminLabel3 = new System.Windows.Forms.Label();
-            this.AdminComePayment = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminTableCircle = new Bunifu.UI.WinForms.BunifuCircleProgress();
             this.AdminBillCircle = new Bunifu.UI.WinForms.BunifuCircleProgress();
             this.AdminLabel2 = new System.Windows.Forms.Label();
+            this.AdminComePayment = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -169,6 +169,7 @@
             this.AdminComeOder.TextMarginLeft = 0;
             this.AdminComeOder.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminComeOder.UseDefaultRadiusAndThickness = true;
+            this.AdminComeOder.Click += new System.EventHandler(this.AdminComeOder_Click);
             // 
             // AdminDate1
             // 
@@ -260,6 +261,91 @@
             this.AdminLabel3.Text = "REMAINING TABLES\r\n";
             this.AdminLabel3.Click += new System.EventHandler(this.AdminLabel3_Click);
             // 
+            // AdminTableCircle
+            // 
+            this.AdminTableCircle.Animated = false;
+            this.AdminTableCircle.AnimationInterval = 1;
+            this.AdminTableCircle.AnimationSpeed = 1;
+            this.AdminTableCircle.BackColor = System.Drawing.Color.Transparent;
+            this.AdminTableCircle.CircleMargin = 10;
+            this.AdminTableCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminTableCircle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AdminTableCircle.IsPercentage = false;
+            this.AdminTableCircle.LineProgressThickness = 10;
+            this.AdminTableCircle.LineThickness = 10;
+            this.AdminTableCircle.Location = new System.Drawing.Point(172, 54);
+            this.AdminTableCircle.Maximum = 20;
+            this.AdminTableCircle.Name = "AdminTableCircle";
+            this.AdminTableCircle.ProgressAnimationSpeed = 200;
+            this.AdminTableCircle.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.AdminTableCircle.ProgressColor = System.Drawing.Color.Black;
+            this.AdminTableCircle.ProgressColor2 = System.Drawing.Color.Black;
+            this.AdminTableCircle.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
+            this.AdminTableCircle.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
+            this.AdminTableCircle.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
+            this.AdminTableCircle.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminTableCircle.Size = new System.Drawing.Size(161, 161);
+            this.AdminTableCircle.SubScriptColor = System.Drawing.Color.Black;
+            this.AdminTableCircle.SubScriptMargin = new System.Windows.Forms.Padding(3, -7, 0, 0);
+            this.AdminTableCircle.SubScriptText = "   TABLES";
+            this.AdminTableCircle.SuperScriptColor = System.Drawing.Color.Black;
+            this.AdminTableCircle.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
+            this.AdminTableCircle.SuperScriptText = "";
+            this.AdminTableCircle.TabIndex = 17;
+            this.AdminTableCircle.Text = "20";
+            this.AdminTableCircle.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.AdminTableCircle.Value = 20;
+            this.AdminTableCircle.ValueByTransition = 20;
+            this.AdminTableCircle.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.AdminTableCircle.ProgressChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCircleProgress.ProgressChangedEventArgs>(this.AdminTableCircle_ProgressChanged);
+            // 
+            // AdminBillCircle
+            // 
+            this.AdminBillCircle.Animated = false;
+            this.AdminBillCircle.AnimationInterval = 1;
+            this.AdminBillCircle.AnimationSpeed = 1;
+            this.AdminBillCircle.BackColor = System.Drawing.Color.Transparent;
+            this.AdminBillCircle.CircleMargin = 10;
+            this.AdminBillCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminBillCircle.ForeColor = System.Drawing.Color.Black;
+            this.AdminBillCircle.IsPercentage = false;
+            this.AdminBillCircle.LineProgressThickness = 10;
+            this.AdminBillCircle.LineThickness = 10;
+            this.AdminBillCircle.Location = new System.Drawing.Point(3, 52);
+            this.AdminBillCircle.Name = "AdminBillCircle";
+            this.AdminBillCircle.ProgressAnimationSpeed = 200;
+            this.AdminBillCircle.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.AdminBillCircle.ProgressColor = System.Drawing.Color.Black;
+            this.AdminBillCircle.ProgressColor2 = System.Drawing.Color.Black;
+            this.AdminBillCircle.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
+            this.AdminBillCircle.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
+            this.AdminBillCircle.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Triangle;
+            this.AdminBillCircle.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminBillCircle.Size = new System.Drawing.Size(163, 163);
+            this.AdminBillCircle.SubScriptColor = System.Drawing.Color.Black;
+            this.AdminBillCircle.SubScriptMargin = new System.Windows.Forms.Padding(3, -7, 0, 0);
+            this.AdminBillCircle.SubScriptText = "   BILLS";
+            this.AdminBillCircle.SuperScriptColor = System.Drawing.Color.Black;
+            this.AdminBillCircle.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
+            this.AdminBillCircle.SuperScriptText = "";
+            this.AdminBillCircle.TabIndex = 16;
+            this.AdminBillCircle.Text = "30";
+            this.AdminBillCircle.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.AdminBillCircle.Value = 30;
+            this.AdminBillCircle.ValueByTransition = 30;
+            this.AdminBillCircle.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            // 
+            // AdminLabel2
+            // 
+            this.AdminLabel2.AutoSize = true;
+            this.AdminLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.AdminLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminLabel2.Location = new System.Drawing.Point(46, 23);
+            this.AdminLabel2.Name = "AdminLabel2";
+            this.AdminLabel2.Size = new System.Drawing.Size(102, 18);
+            this.AdminLabel2.TabIndex = 5;
+            this.AdminLabel2.Text = "UNPAID BILLS";
+            // 
             // AdminComePayment
             // 
             this.AdminComePayment.AllowAnimations = true;
@@ -349,91 +435,6 @@
             this.AdminComePayment.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminComePayment.UseDefaultRadiusAndThickness = true;
             this.AdminComePayment.Click += new System.EventHandler(this.AdminComePayment_Click);
-            // 
-            // AdminTableCircle
-            // 
-            this.AdminTableCircle.Animated = false;
-            this.AdminTableCircle.AnimationInterval = 1;
-            this.AdminTableCircle.AnimationSpeed = 1;
-            this.AdminTableCircle.BackColor = System.Drawing.Color.Transparent;
-            this.AdminTableCircle.CircleMargin = 10;
-            this.AdminTableCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminTableCircle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.AdminTableCircle.IsPercentage = false;
-            this.AdminTableCircle.LineProgressThickness = 10;
-            this.AdminTableCircle.LineThickness = 10;
-            this.AdminTableCircle.Location = new System.Drawing.Point(172, 54);
-            this.AdminTableCircle.Maximum = 20;
-            this.AdminTableCircle.Name = "AdminTableCircle";
-            this.AdminTableCircle.ProgressAnimationSpeed = 200;
-            this.AdminTableCircle.ProgressBackColor = System.Drawing.Color.Gainsboro;
-            this.AdminTableCircle.ProgressColor = System.Drawing.Color.Black;
-            this.AdminTableCircle.ProgressColor2 = System.Drawing.Color.Black;
-            this.AdminTableCircle.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
-            this.AdminTableCircle.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
-            this.AdminTableCircle.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
-            this.AdminTableCircle.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminTableCircle.Size = new System.Drawing.Size(161, 161);
-            this.AdminTableCircle.SubScriptColor = System.Drawing.Color.Black;
-            this.AdminTableCircle.SubScriptMargin = new System.Windows.Forms.Padding(3, -7, 0, 0);
-            this.AdminTableCircle.SubScriptText = "   TABLES";
-            this.AdminTableCircle.SuperScriptColor = System.Drawing.Color.Black;
-            this.AdminTableCircle.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
-            this.AdminTableCircle.SuperScriptText = "";
-            this.AdminTableCircle.TabIndex = 17;
-            this.AdminTableCircle.Text = "2";
-            this.AdminTableCircle.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.AdminTableCircle.Value = 2;
-            this.AdminTableCircle.ValueByTransition = 2;
-            this.AdminTableCircle.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.AdminTableCircle.ProgressChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCircleProgress.ProgressChangedEventArgs>(this.AdminTableCircle_ProgressChanged);
-            // 
-            // AdminBillCircle
-            // 
-            this.AdminBillCircle.Animated = false;
-            this.AdminBillCircle.AnimationInterval = 1;
-            this.AdminBillCircle.AnimationSpeed = 1;
-            this.AdminBillCircle.BackColor = System.Drawing.Color.Transparent;
-            this.AdminBillCircle.CircleMargin = 10;
-            this.AdminBillCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminBillCircle.ForeColor = System.Drawing.Color.Black;
-            this.AdminBillCircle.IsPercentage = false;
-            this.AdminBillCircle.LineProgressThickness = 10;
-            this.AdminBillCircle.LineThickness = 10;
-            this.AdminBillCircle.Location = new System.Drawing.Point(3, 52);
-            this.AdminBillCircle.Name = "AdminBillCircle";
-            this.AdminBillCircle.ProgressAnimationSpeed = 200;
-            this.AdminBillCircle.ProgressBackColor = System.Drawing.Color.Gainsboro;
-            this.AdminBillCircle.ProgressColor = System.Drawing.Color.Black;
-            this.AdminBillCircle.ProgressColor2 = System.Drawing.Color.Black;
-            this.AdminBillCircle.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
-            this.AdminBillCircle.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
-            this.AdminBillCircle.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Triangle;
-            this.AdminBillCircle.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminBillCircle.Size = new System.Drawing.Size(163, 163);
-            this.AdminBillCircle.SubScriptColor = System.Drawing.Color.Black;
-            this.AdminBillCircle.SubScriptMargin = new System.Windows.Forms.Padding(3, -7, 0, 0);
-            this.AdminBillCircle.SubScriptText = "   BILLS";
-            this.AdminBillCircle.SuperScriptColor = System.Drawing.Color.Black;
-            this.AdminBillCircle.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
-            this.AdminBillCircle.SuperScriptText = "";
-            this.AdminBillCircle.TabIndex = 16;
-            this.AdminBillCircle.Text = "30";
-            this.AdminBillCircle.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.AdminBillCircle.Value = 30;
-            this.AdminBillCircle.ValueByTransition = 30;
-            this.AdminBillCircle.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            // 
-            // AdminLabel2
-            // 
-            this.AdminLabel2.AutoSize = true;
-            this.AdminLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.AdminLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminLabel2.Location = new System.Drawing.Point(46, 23);
-            this.AdminLabel2.Name = "AdminLabel2";
-            this.AdminLabel2.Size = new System.Drawing.Size(102, 18);
-            this.AdminLabel2.TabIndex = 5;
-            this.AdminLabel2.Text = "UNPAID BILLS";
             // 
             // panel2
             // 

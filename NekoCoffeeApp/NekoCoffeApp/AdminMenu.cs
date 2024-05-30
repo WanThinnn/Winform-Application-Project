@@ -84,5 +84,10 @@ namespace UI
         {
 
         }
+
+        private void AdminComeOder_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -752,3 +752,21 @@ C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\
 C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.TableDetail.resources
 C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.edit_Table.resources
 C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.EmployeeDetail.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Auth.dll
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Core.dll
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.dll
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Oauth2.v2.dll
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\System.CodeDom.dll
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.pdb
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.xml
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Auth.pdb
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Auth.xml
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Core.pdb
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Core.xml
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Oauth2.v2.pdb
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.Oauth2.v2.xml
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\System.CodeDom.xml
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.AdminReview.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.edit_Table.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.EmployeeDetail.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.TableDetail.resources
