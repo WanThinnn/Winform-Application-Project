@@ -65,9 +65,26 @@ namespace UI
 
         }
 
-        private void bunifuButton1_Click(object sender, EventArgs e)
+        private async void bunifuButton1_Click(object sender, EventArgs e)
         {
+            if (comboBox1.SelectedIndex <= -1 && comboBox2.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Vui lòng chọn một mục từ sản phẩm.");
+                return;
+            }
 
+            string selectedNumber = numericUpDown1.Value.ToString();
+            string selectedItem;
+
+            if (comboBox1.SelectedIndex >= 0)
+            {
+                selectedItem = comboBox1.SelectedItem.ToString();
+            }
+            else
+            {
+                selectedItem = comboBox2.SelectedItem.ToString();
+            }
+            SetResponse response = await client.SetAsync("TableDetails/" + _table.ID + "/" + selectedItem, selectedNumber);
         }
     }
 }
