@@ -71,12 +71,17 @@ namespace UI
                     MessageBox.Show("Vui lòng chọn một sản phẩm");
                     return;
                 }
-                if (comboBox1.SelectedIndex >= 1 && comboBox2.SelectedIndex >= 1)
+                if (comboBox1.SelectedIndex >= 0 && comboBox2.SelectedIndex >= 0)
                 {
-                    MessageBox.Show("Vui lòng chọn một sản phẩm");
+                    MessageBox.Show("Vui lòng chỉ chọn một sản phẩm");
                     return;
                 }
                 string selectedNumber = numericUpDown1.Value.ToString();
+                if(numericUpDown1.Value <= 0)
+                {
+                    MessageBox.Show("Vui lòng chọn số lượng của sản phẩm");
+                    return;
+                }
                 string selectedItem;
 
                 if (comboBox1.SelectedIndex >= 0)
@@ -98,17 +103,22 @@ namespace UI
             // Kiểm tra xem có mục nào được chọn hay không
             if (comboBox1.SelectedIndex == -1 && comboBox2.SelectedIndex == -1)
             {
-                MessageBox.Show("Vui lòng chọn một mục từ sản phẩm.");
+                MessageBox.Show("Vui lòng chọn một sản phẩm.");
                 return;
             }
             // Kiểm tra xem có nhiều hơn một mục được chọn hay không
             else if (comboBox1.SelectedIndex >= 0 && comboBox2.SelectedIndex >= 0)
             {
-                MessageBox.Show("Vui lòng chỉ chọn một mục từ sản phẩm.");
+                MessageBox.Show("Vui lòng chỉ chọn một sản phẩm.");
                 return;
             }
 
             int selectedNumber = (int)numericUpDown1.Value;
+            if (numericUpDown1.Value <= 0)
+            {
+                MessageBox.Show("Vui lòng chọn số lượng của sản phẩm");
+                return;
+            }
             string selectedItem;
             int money = 0;
 
@@ -160,7 +170,7 @@ namespace UI
             SetResponse response1 = await client.SetAsync("TableDetails/" + _table.ID + "/" + selectedItem, data);
             if (response1.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                MessageBox.Show("Đã thêm mục thành công!");
+                MessageBox.Show("Đã thêm món thành công!");
             }
             else
             {
@@ -182,7 +192,7 @@ namespace UI
 
                 if (resp2.Body == "null")
                 {
-                    MessageBox.Show("No details found for this table.");
+                    MessageBox.Show("Bàn này chưa được sử dụng");
                     return;
                 }
 
