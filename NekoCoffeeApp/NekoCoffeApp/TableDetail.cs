@@ -247,7 +247,6 @@ namespace UI
             {
                 try
                 {
-                    // Lấy chi tiết bàn
                     FirebaseResponse resp2 = await client.GetAsync("TableDetails/" + _table.ID);
                     if (resp2.Body == "null")
                     {
@@ -257,32 +256,29 @@ namespace UI
 
                     var tableDetails = JsonConvert.DeserializeObject<Dictionary<string, NekoTableDetail>>(resp2.Body);
 
-                    // Lấy tổng số hóa đơn hiện tại
                     FirebaseResponse resp = await client.GetAsync("Counter/node");
                     CountClass get = resp.ResultAs<CountClass>();
                     int currentBillCount = Convert.ToInt32(get.count);
 
-                    // Tính tổng tiền
                     int total = tableDetails.Values.Sum(detail => detail.Total);
 
-                    // Tạo đối tượng hóa đơn mới
+                    string paymentTime = DateTime.Now.ToString("o"); // ISO 8601 format
+
                     var bill = new Bills
                     {
                         billId = (currentBillCount + 1).ToString(),
                         tableId = _table.ID,
                         Total = total,
-                        Details = tableDetails.Values.ToList()
+                        Details = tableDetails.Values.ToList(),
+                        PaymentTime = paymentTime // Lưu thời gian thanh toán
                     };
 
-                    // Lưu hóa đơn vào nhánh Bills
                     SetResponse response = await client.SetAsync("Bills/" + bill.billId, bill);
                     if (response.StatusCode == System.Net.HttpStatusCode.OK)
                     {
-                        // Cập nhật bộ đếm hóa đơn
                         var updateCount = new CountClass { count = (currentBillCount + 1).ToString() };
                         await client.SetAsync("Counter/node", updateCount);
 
-                        // Xóa chi tiết bàn sau khi thanh toán
                         await client.DeleteAsync("TableDetails/" + _table.ID);
                         mydt.Rows.Clear();
 
