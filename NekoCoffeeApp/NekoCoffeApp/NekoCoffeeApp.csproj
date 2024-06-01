@@ -319,6 +319,12 @@
     <Compile Include="BeforSignUp.Designer.cs">
       <DependentUpon>BeforSignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="BillDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillDetailForm.Designer.cs">
+      <DependentUpon>BillDetailForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bills.cs" />
     <Compile Include="ChangePwd.cs">
       <SubType>Form</SubType>
@@ -461,6 +467,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BeforSignUp.resx">
       <DependentUpon>BeforSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillDetailForm.resx">
+      <DependentUpon>BillDetailForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangePwd.resx">
       <DependentUpon>ChangePwd.cs</DependentUpon>

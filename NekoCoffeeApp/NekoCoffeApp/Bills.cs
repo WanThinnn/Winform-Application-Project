@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UI
 {
-    internal class Bills
+    public class Bills
     {
         public string tableId { get; set; }
         public string billId { get; set; }

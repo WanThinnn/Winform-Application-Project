@@ -242,57 +242,63 @@ namespace UI
 
         private async void TableDetailsPayment_Click(object sender, EventArgs e)
         {
-            DialogResult dg = MessageBox.Show("Bạn có muốn thanh toán bàn này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dg == DialogResult.Yes)
+            try
             {
-                try
+                FirebaseResponse resp2 = await client.GetAsync("TableDetails/" + _table.ID);
+                if (resp2.Body == "null")
                 {
-                    FirebaseResponse resp2 = await client.GetAsync("TableDetails/" + _table.ID);
-                    if (resp2.Body == "null")
+                    MessageBox.Show("Bàn này chưa được sử dụng");
+                    return;
+                }
+
+                var tableDetails = JsonConvert.DeserializeObject<Dictionary<string, NekoTableDetail>>(resp2.Body);
+
+                FirebaseResponse resp = await client.GetAsync("Counter/node");
+                CountClass get = resp.ResultAs<CountClass>();
+                int currentBillCount = Convert.ToInt32(get.count);
+
+                int total = tableDetails.Values.Sum(detail => detail.Total);
+
+                string paymentTime = DateTime.Now.ToString("dd/MM/yy - HH:mm"); // Định dạng dd/MM/yy - HH:mm
+
+                var bill = new Bills
+                {
+                    billId = (currentBillCount + 1).ToString(),
+                    tableId = _table.ID,
+                    Total = total,
+                    Details = tableDetails.Values.ToList(),
+                    PaymentTime = paymentTime // Lưu thời gian thanh toán
+                };
+
+                using (var form = new BillDetailForm(bill))
+                {
+                    if (form.ShowDialog() == DialogResult.OK)
                     {
-                        MessageBox.Show("Bàn này chưa được sử dụng");
-                        return;
-                    }
+                        DialogResult confirmResult = MessageBox.Show("Bạn có muốn thanh toán bàn này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (confirmResult == DialogResult.Yes)
+                        {
+                            SetResponse response = await client.SetAsync("Bills/" + bill.billId, bill);
+                            if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                            {
+                                var updateCount = new CountClass { count = (currentBillCount + 1).ToString() };
+                                await client.SetAsync("Counter/node", updateCount);
 
-                    var tableDetails = JsonConvert.DeserializeObject<Dictionary<string, NekoTableDetail>>(resp2.Body);
+                                await client.DeleteAsync("TableDetails/" + _table.ID);
+                                mydt.Rows.Clear();
 
-                    FirebaseResponse resp = await client.GetAsync("Counter/node");
-                    CountClass get = resp.ResultAs<CountClass>();
-                    int currentBillCount = Convert.ToInt32(get.count);
-
-                    int total = tableDetails.Values.Sum(detail => detail.Total);
-
-                    string paymentTime = DateTime.Now.ToString("dd/MM/yy - HH:mm"); // ISO 8601 format
-
-                    var bill = new Bills
-                    {
-                        billId = (currentBillCount + 1).ToString(),
-                        tableId = _table.ID,
-                        Total = total,
-                        Details = tableDetails.Values.ToList(),
-                        PaymentTime = paymentTime // Lưu thời gian thanh toán
-                    };
-
-                    SetResponse response = await client.SetAsync("Bills/" + bill.billId, bill);
-                    if (response.StatusCode == System.Net.HttpStatusCode.OK)
-                    {
-                        var updateCount = new CountClass { count = (currentBillCount + 1).ToString() };
-                        await client.SetAsync("Counter/node", updateCount);
-
-                        await client.DeleteAsync("TableDetails/" + _table.ID);
-                        mydt.Rows.Clear();
-
-                        MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Có lỗi xảy ra khi lưu hóa đơn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Có lỗi xảy ra khi lưu hóa đơn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
             }
         }
     }

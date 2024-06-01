@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UI
 {
-    internal class NekoTableDetail
+    public class NekoTableDetail
     {
         public int SL { get; set; }
         public string Name { get; set; }
