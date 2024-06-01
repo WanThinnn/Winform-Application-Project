@@ -245,6 +245,16 @@ namespace UI
             DialogResult dg = MessageBox.Show("Bạn có muốn thanh toán bàn này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dg == DialogResult.Yes)
             {
+                FirebaseResponse resp = await client.GetAsync("Counter/node");
+                CountClass get = resp.ResultAs<CountClass>();
+                var data = new Bills
+                {
+                    billId = (Convert.ToInt32(get.count)+1).ToString(),
+                    tableId = _table.ID,
+                    Total = 
+                };
+
+
                 FirebaseResponse response = await client.DeleteAsync("TableDetails/" + _table.ID);
                 mydt.Rows.Clear();
                 MessageBox.Show("Đã xóa thành công !!! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

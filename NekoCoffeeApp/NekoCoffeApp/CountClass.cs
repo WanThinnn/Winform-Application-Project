@@ -8,6 +8,6 @@ namespace UI
 {
     internal class CountClass
     {
-        public int count { get; set; }
+        public string count { get; set; }
     }
 }

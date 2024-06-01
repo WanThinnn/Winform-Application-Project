@@ -11,15 +11,15 @@
       "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\bills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\nekocoffeapp\\countclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\countclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Drive\\code\\N2\\LT Mang\\TEST\\testfirebase\\datban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\nekocoffeapp\\tabledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\tabledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\nekocoffeapp\\countclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\countclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,7 +33,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "datban.cs",
               "DocumentMoniker": "C:\\Drive\\code\\N2\\LT Mang\\TEST\\testfirebase\\datban.cs",
               "RelativeDocumentMoniker": "..\\..\\TEST\\testfirebase\\datban.cs",
@@ -42,8 +42,7 @@
               "ViewState": "AQIAAHkAAAAAAAAAAAAowJIAAAB5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T07:44:48.77Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -53,7 +52,7 @@
               "RelativeDocumentMoniker": "NekoCoffeApp\\TableDetail.cs",
               "ToolTip": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\TableDetail.cs",
               "RelativeToolTip": "NekoCoffeApp\\TableDetail.cs",
-              "ViewState": "AQIAANsAAAAAAAAAAAAlwPkAAAB5AAAA",
+              "ViewState": "AQIAAK4AAAAAAAAAAAAEwP0AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T06:53:45.715Z",
               "EditorCaption": ""
@@ -66,26 +65,27 @@
               "RelativeDocumentMoniker": "NekoCoffeApp\\Bills.cs",
               "ToolTip": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\Bills.cs",
               "RelativeToolTip": "NekoCoffeApp\\Bills.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T06:10:46.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "CountClass.cs",
               "DocumentMoniker": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\CountClass.cs",
               "RelativeDocumentMoniker": "NekoCoffeApp\\CountClass.cs",
               "ToolTip": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\CountClass.cs",
               "RelativeToolTip": "NekoCoffeApp\\CountClass.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T06:09:53.831Z"
+              "WhenOpened": "2024-06-01T06:09:53.831Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TableDetail.cs [Design]",
               "DocumentMoniker": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\TableDetail.cs",
               "RelativeDocumentMoniker": "NekoCoffeApp\\TableDetail.cs",

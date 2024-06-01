@@ -8,7 +8,7 @@ namespace UI
 {
     internal class Bills
     {
-        public int tableId { get; set; }
+        public string tableId { get; set; }
         public string billId { get; set; }
         public int Total { get; set; }
     }
