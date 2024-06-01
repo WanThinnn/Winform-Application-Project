@@ -19,9 +19,9 @@ namespace UI
         }
         private void LoadBillDetails(Bills bill)
         {
-            lblBillId.Text = "Hoa don so " + bill.billId;
-            lblTableId.Text = "Ban so " + bill.tableId;
-            lblTotal.Text = "Tong cong: " + bill.Total.ToString();
+            lblBillId.Text = "Bill ID " + bill.billId;
+            lblTableId.Text = "Table " + bill.tableId;
+            lblTotal.Text = "Total: " + bill.Total.ToString();
             lblPaymentTime.Text = bill.PaymentTime;
 
             dataGridView1.AutoGenerateColumns = false;
