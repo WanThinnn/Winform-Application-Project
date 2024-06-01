@@ -240,12 +240,14 @@ namespace UI
             numericUpDown1.Value = Convert.ToInt64(row.Cells["SL"].Value);
         }
 
-        private void TableDetailsPayment_Click(object sender, EventArgs e)
+        private async void TableDetailsPayment_Click(object sender, EventArgs e)
         {
             DialogResult dg = MessageBox.Show("Bạn có muốn thanh toán bàn này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dg == DialogResult.Yes)
             {
-
+                FirebaseResponse response = await client.DeleteAsync("TableDetails/" + _table.ID);
+                mydt.Rows.Clear();
+                MessageBox.Show("Đã xóa thành công !!! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
