@@ -319,6 +319,7 @@
     <Compile Include="BeforSignUp.Designer.cs">
       <DependentUpon>BeforSignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bills.cs" />
     <Compile Include="ChangePwd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -331,6 +332,7 @@
     <Compile Include="AdminFP.Designer.cs">
       <DependentUpon>AdminFP.cs</DependentUpon>
     </Compile>
+    <Compile Include="CountClass.cs" />
     <Compile Include="edit_Table.cs">
       <SubType>Form</SubType>
     </Compile>

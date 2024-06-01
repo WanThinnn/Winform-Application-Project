@@ -239,6 +239,15 @@ namespace UI
             }
             numericUpDown1.Value = Convert.ToInt64(row.Cells["SL"].Value);
         }
+
+        private void TableDetailsPayment_Click(object sender, EventArgs e)
+        {
+            DialogResult dg = MessageBox.Show("Bạn có muốn thanh toán bàn này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dg == DialogResult.Yes)
+            {
+
+            }
+        }
     }
 }
 

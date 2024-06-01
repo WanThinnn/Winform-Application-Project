@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TableDetail));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.TableDetailsView = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -40,6 +41,7 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.TableDetailsPayment = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -63,6 +65,7 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.LightSalmon;
             this.bunifuPanel1.BorderRadius = 35;
             this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.TableDetailsPayment);
             this.bunifuPanel1.Controls.Add(this.TableDetailsView);
             this.bunifuPanel1.Controls.Add(this.TableDetailsAdd);
             this.bunifuPanel1.Controls.Add(this.TableDetailsDelete);
@@ -95,11 +98,11 @@
             this.TableDetailsView.ColorContrastOnClick = 45;
             this.TableDetailsView.ColorContrastOnHover = 45;
             this.TableDetailsView.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.TableDetailsView.CustomizableEdges = borderEdges4;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.TableDetailsView.CustomizableEdges = borderEdges2;
             this.TableDetailsView.DialogResult = System.Windows.Forms.DialogResult.None;
             this.TableDetailsView.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.TableDetailsView.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -185,11 +188,11 @@
             this.TableDetailsAdd.ColorContrastOnClick = 45;
             this.TableDetailsAdd.ColorContrastOnHover = 45;
             this.TableDetailsAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.TableDetailsAdd.CustomizableEdges = borderEdges5;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.TableDetailsAdd.CustomizableEdges = borderEdges3;
             this.TableDetailsAdd.DialogResult = System.Windows.Forms.DialogResult.None;
             this.TableDetailsAdd.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.TableDetailsAdd.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -275,11 +278,11 @@
             this.TableDetailsDelete.ColorContrastOnClick = 45;
             this.TableDetailsDelete.ColorContrastOnHover = 45;
             this.TableDetailsDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.TableDetailsDelete.CustomizableEdges = borderEdges6;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.TableDetailsDelete.CustomizableEdges = borderEdges4;
             this.TableDetailsDelete.DialogResult = System.Windows.Forms.DialogResult.None;
             this.TableDetailsDelete.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.TableDetailsDelete.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -369,6 +372,96 @@
             this.comboBox1.Size = new System.Drawing.Size(193, 21);
             this.comboBox1.TabIndex = 0;
             // 
+            // TableDetailsPayment
+            // 
+            this.TableDetailsPayment.AllowAnimations = true;
+            this.TableDetailsPayment.AllowMouseEffects = true;
+            this.TableDetailsPayment.AllowToggling = false;
+            this.TableDetailsPayment.AnimationSpeed = 200;
+            this.TableDetailsPayment.AutoGenerateColors = false;
+            this.TableDetailsPayment.AutoRoundBorders = false;
+            this.TableDetailsPayment.AutoSizeLeftIcon = true;
+            this.TableDetailsPayment.AutoSizeRightIcon = true;
+            this.TableDetailsPayment.BackColor = System.Drawing.Color.Transparent;
+            this.TableDetailsPayment.BackColor1 = System.Drawing.Color.White;
+            this.TableDetailsPayment.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TableDetailsPayment.BackgroundImage")));
+            this.TableDetailsPayment.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.TableDetailsPayment.ButtonText = "PAYMENT";
+            this.TableDetailsPayment.ButtonTextMarginLeft = 0;
+            this.TableDetailsPayment.ColorContrastOnClick = 45;
+            this.TableDetailsPayment.ColorContrastOnHover = 45;
+            this.TableDetailsPayment.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.TableDetailsPayment.CustomizableEdges = borderEdges1;
+            this.TableDetailsPayment.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.TableDetailsPayment.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.TableDetailsPayment.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.TableDetailsPayment.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.TableDetailsPayment.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.TableDetailsPayment.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TableDetailsPayment.ForeColor = System.Drawing.Color.LightSalmon;
+            this.TableDetailsPayment.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TableDetailsPayment.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.TableDetailsPayment.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.TableDetailsPayment.IconMarginLeft = 11;
+            this.TableDetailsPayment.IconPadding = 10;
+            this.TableDetailsPayment.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.TableDetailsPayment.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.TableDetailsPayment.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.TableDetailsPayment.IconSize = 25;
+            this.TableDetailsPayment.IdleBorderColor = System.Drawing.Color.White;
+            this.TableDetailsPayment.IdleBorderRadius = 35;
+            this.TableDetailsPayment.IdleBorderThickness = 1;
+            this.TableDetailsPayment.IdleFillColor = System.Drawing.Color.White;
+            this.TableDetailsPayment.IdleIconLeftImage = null;
+            this.TableDetailsPayment.IdleIconRightImage = null;
+            this.TableDetailsPayment.IndicateFocus = false;
+            this.TableDetailsPayment.Location = new System.Drawing.Point(12, 211);
+            this.TableDetailsPayment.Name = "TableDetailsPayment";
+            this.TableDetailsPayment.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.TableDetailsPayment.OnDisabledState.BorderRadius = 35;
+            this.TableDetailsPayment.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.TableDetailsPayment.OnDisabledState.BorderThickness = 1;
+            this.TableDetailsPayment.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.TableDetailsPayment.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.TableDetailsPayment.OnDisabledState.IconLeftImage = null;
+            this.TableDetailsPayment.OnDisabledState.IconRightImage = null;
+            this.TableDetailsPayment.onHoverState.BorderColor = System.Drawing.Color.Black;
+            this.TableDetailsPayment.onHoverState.BorderRadius = 35;
+            this.TableDetailsPayment.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.TableDetailsPayment.onHoverState.BorderThickness = 1;
+            this.TableDetailsPayment.onHoverState.FillColor = System.Drawing.Color.Black;
+            this.TableDetailsPayment.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.TableDetailsPayment.onHoverState.IconLeftImage = null;
+            this.TableDetailsPayment.onHoverState.IconRightImage = null;
+            this.TableDetailsPayment.OnIdleState.BorderColor = System.Drawing.Color.White;
+            this.TableDetailsPayment.OnIdleState.BorderRadius = 35;
+            this.TableDetailsPayment.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.TableDetailsPayment.OnIdleState.BorderThickness = 1;
+            this.TableDetailsPayment.OnIdleState.FillColor = System.Drawing.Color.White;
+            this.TableDetailsPayment.OnIdleState.ForeColor = System.Drawing.Color.LightSalmon;
+            this.TableDetailsPayment.OnIdleState.IconLeftImage = null;
+            this.TableDetailsPayment.OnIdleState.IconRightImage = null;
+            this.TableDetailsPayment.OnPressedState.BorderColor = System.Drawing.Color.Black;
+            this.TableDetailsPayment.OnPressedState.BorderRadius = 35;
+            this.TableDetailsPayment.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.TableDetailsPayment.OnPressedState.BorderThickness = 1;
+            this.TableDetailsPayment.OnPressedState.FillColor = System.Drawing.Color.Black;
+            this.TableDetailsPayment.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.TableDetailsPayment.OnPressedState.IconLeftImage = null;
+            this.TableDetailsPayment.OnPressedState.IconRightImage = null;
+            this.TableDetailsPayment.Size = new System.Drawing.Size(192, 34);
+            this.TableDetailsPayment.TabIndex = 8;
+            this.TableDetailsPayment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TableDetailsPayment.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TableDetailsPayment.TextMarginLeft = 0;
+            this.TableDetailsPayment.TextPadding = new System.Windows.Forms.Padding(0);
+            this.TableDetailsPayment.UseDefaultRadiusAndThickness = true;
+            this.TableDetailsPayment.Click += new System.EventHandler(this.TableDetailsPayment_Click);
+            // 
             // TableDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -398,5 +491,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton TableDetailsDelete;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton TableDetailsView;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton TableDetailsAdd;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton TableDetailsPayment;
     }
 }
