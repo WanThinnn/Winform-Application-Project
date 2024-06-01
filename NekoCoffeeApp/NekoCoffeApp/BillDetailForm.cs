@@ -24,9 +24,17 @@ namespace UI
             lblTotal.Text = "Tong cong: " + bill.Total.ToString();
             lblPaymentTime.Text = bill.PaymentTime;
 
+            dataGridView1.AutoGenerateColumns = false;
+
+            // Tạo các cột trong DataGridView
+            dataGridView1.Columns.Add("Name", "Tên sản phẩm");
+            dataGridView1.Columns.Add("Quantity", "Số lượng");
+            dataGridView1.Columns.Add("Total", "Thành tiền");
+
+            // Thêm dữ liệu vào DataGridView
             foreach (var detail in bill.Details)
             {
-                listViewDetails.Items.Add(new ListViewItem(new[] { detail.Name, detail.SL.ToString(), detail.Total.ToString() }));
+                dataGridView1.Rows.Add(detail.Name, detail.SL, detail.Total);
             }
         }
 
