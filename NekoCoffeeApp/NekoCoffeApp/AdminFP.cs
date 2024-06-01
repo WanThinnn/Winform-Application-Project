@@ -64,14 +64,14 @@ namespace UI
 
         private void AdminCustomerBtn_Click(object sender, EventArgs e)
         {
-            if (!AdminMainPanel.Controls.Contains(AdminCustomer.Instance))
+            if (!AdminMainPanel.Controls.Contains(AdminAdjust.Instance))
             {
-                AdminMainPanel.Controls.Add(AdminCustomer.Instance);
-                AdminCustomer.Instance.Dock = DockStyle.Fill;
-                AdminCustomer.Instance.BringToFront();
+                AdminMainPanel.Controls.Add(AdminAdjust.Instance);
+                AdminAdjust.Instance.Dock = DockStyle.Fill;
+                AdminAdjust.Instance.BringToFront();
             }
             else
-                AdminCustomer.Instance.BringToFront();
+                AdminAdjust.Instance.BringToFront();
         }
 
         private void AdminReviewBtn_Click(object sender, EventArgs e)
