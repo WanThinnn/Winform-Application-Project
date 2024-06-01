@@ -262,7 +262,7 @@ namespace UI
 
                     int total = tableDetails.Values.Sum(detail => detail.Total);
 
-                    string paymentTime = DateTime.Now.ToString("o"); // ISO 8601 format
+                    string paymentTime = DateTime.Now.ToString("dd/MM/yy - HH:mm"); // ISO 8601 format
 
                     var bill = new Bills
                     {
