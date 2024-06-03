@@ -34,22 +34,25 @@
             // 
             // adminDrink1
             // 
+            this.adminDrink1.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.adminDrink1.BackColor = System.Drawing.Color.White;
-            this.adminDrink1.Location = new System.Drawing.Point(-20, -1);
+            this.adminDrink1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.adminDrink1.Location = new System.Drawing.Point(0, 0);
             this.adminDrink1.Margin = new System.Windows.Forms.Padding(4);
             this.adminDrink1.Name = "adminDrink1";
-            this.adminDrink1.Size = new System.Drawing.Size(1604, 1058);
+            this.adminDrink1.Size = new System.Drawing.Size(745, 457);
             this.adminDrink1.TabIndex = 0;
-            this.adminDrink1.Load += new System.EventHandler(this.adminDrink1_Load);
+            this.adminDrink1.Load += new System.EventHandler(this.adminDrink1_Load_1);
             // 
             // edit_Order
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1582, 1050);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.ClientSize = new System.Drawing.Size(745, 457);
             this.Controls.Add(this.adminDrink1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "edit_Order";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "edit_Order";
             this.ResumeLayout(false);
 
