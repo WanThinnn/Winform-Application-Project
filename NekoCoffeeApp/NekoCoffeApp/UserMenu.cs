@@ -72,7 +72,7 @@ namespace UI
 
                 // Gán sự kiện Click cho nút
                 drinksFlowLayoutPanel.Controls.Add(btn);
-                if {drink.Available ==}
+                /*if {drink.Available ==}*/
             }
         }
 

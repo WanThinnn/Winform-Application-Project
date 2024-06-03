@@ -114,8 +114,10 @@ namespace UI
             tableDetail.Show();
         }
 
-
-
-
+        private void AdminOrderBtn_Click_1(object sender, EventArgs e)
+        {
+            edit_Order edit_Order = new edit_Order();
+            edit_Order.Show();
+        }
     }
 }

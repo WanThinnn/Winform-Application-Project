@@ -80,6 +80,7 @@ namespace UI
                 return;
             }
 
+            
             NekoDrink drink = new NekoDrink()
             {
                 ID = AdminFillDrinkID.Text,
@@ -88,6 +89,9 @@ namespace UI
                 Price = AdminFillDrinkPrice.Text,
                 Type = AdminFillDrinkType.Text
             };
+             
+
+            
 
             SetResponse set = drk.Set(@"Drinks/" + AdminFillDrinkID.Text, drink);
 
@@ -148,7 +152,7 @@ namespace UI
                     MessageBox.Show($"Xoá nước {AdminFillDrinkID.Text} thành công!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     AdminFillDrinkID.Clear();
                     AdminFillDrinkName.Clear();
-                    AdminFillDrinkAvailable.Clear();
+                    AdminFillDrinkAvailable.Items.Clear();
                     AdminFillDrinkPrice.Clear();
                     AdminFillDrinkSearch.Clear();
                     AdminFillDrinkType.Clear();
@@ -186,7 +190,7 @@ namespace UI
                 NekoDrink drink = new NekoDrink()
                 {
                     ID = AdminFillDrinkID.Text,
-                    Name = AdminFillDrinkName.Text,
+                    Name = AdminFillDrinkID.Text,
                     Available = AdminFillDrinkAvailable.Text,
                     Price = AdminFillDrinkPrice.Text,
                     Type = AdminFillDrinkType.Text
@@ -226,7 +230,7 @@ namespace UI
             AdminFillDrinkName.Text = existingDrink.Name;
             AdminFillDrinkType.Text = existingDrink.Type;
             AdminFillDrinkPrice.Text = existingDrink.Price;
-            AdminFillDrinkAvailable.Text = existingDrink.Available;
+            AdminFillDrinkAvailable.SelectedItem = existingDrink.Available;
         }
 
         private void AdminViewAllYourDrinks_CellContentClick(object sender, DataGridViewCellEventArgs e)
