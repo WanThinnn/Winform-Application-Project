@@ -28,24 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminOrder));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.AdminPaymentBtn1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminOrderPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.AdminLoadTablesBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Table_flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.AdminOrderTableBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.AdminLoadTablesBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminOrderPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 35;
-            this.bunifuElipse1.TargetControl = this;
             // 
             // AdminPaymentBtn1
             // 
@@ -66,11 +59,11 @@
             this.AdminPaymentBtn1.ColorContrastOnClick = 45;
             this.AdminPaymentBtn1.ColorContrastOnHover = 45;
             this.AdminPaymentBtn1.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.AdminPaymentBtn1.CustomizableEdges = borderEdges6;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.AdminPaymentBtn1.CustomizableEdges = borderEdges1;
             this.AdminPaymentBtn1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminPaymentBtn1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminPaymentBtn1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -151,105 +144,8 @@
             this.AdminOrderPanel.Location = new System.Drawing.Point(3, 3);
             this.AdminOrderPanel.Name = "AdminOrderPanel";
             this.AdminOrderPanel.ShowBorders = true;
-            this.AdminOrderPanel.Size = new System.Drawing.Size(695, 479);
+            this.AdminOrderPanel.Size = new System.Drawing.Size(700, 479);
             this.AdminOrderPanel.TabIndex = 0;
-            // 
-            // Table_flowLayoutPanel
-            // 
-            this.Table_flowLayoutPanel.Location = new System.Drawing.Point(16, 3);
-            this.Table_flowLayoutPanel.Name = "Table_flowLayoutPanel";
-            this.Table_flowLayoutPanel.Size = new System.Drawing.Size(649, 359);
-            this.Table_flowLayoutPanel.TabIndex = 32;
-            // 
-            // AdminOrderTableBtn
-            // 
-            this.AdminOrderTableBtn.AllowAnimations = true;
-            this.AdminOrderTableBtn.AllowMouseEffects = true;
-            this.AdminOrderTableBtn.AllowToggling = false;
-            this.AdminOrderTableBtn.AnimationSpeed = 200;
-            this.AdminOrderTableBtn.AutoGenerateColors = false;
-            this.AdminOrderTableBtn.AutoRoundBorders = false;
-            this.AdminOrderTableBtn.AutoSizeLeftIcon = true;
-            this.AdminOrderTableBtn.AutoSizeRightIcon = true;
-            this.AdminOrderTableBtn.BackColor = System.Drawing.Color.Transparent;
-            this.AdminOrderTableBtn.BackColor1 = System.Drawing.Color.LightSalmon;
-            this.AdminOrderTableBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminOrderTableBtn.BackgroundImage")));
-            this.AdminOrderTableBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminOrderTableBtn.ButtonText = "TABLE";
-            this.AdminOrderTableBtn.ButtonTextMarginLeft = 0;
-            this.AdminOrderTableBtn.ColorContrastOnClick = 45;
-            this.AdminOrderTableBtn.ColorContrastOnHover = 45;
-            this.AdminOrderTableBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.AdminOrderTableBtn.CustomizableEdges = borderEdges5;
-            this.AdminOrderTableBtn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AdminOrderTableBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.AdminOrderTableBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.AdminOrderTableBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.AdminOrderTableBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.AdminOrderTableBtn.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminOrderTableBtn.ForeColor = System.Drawing.Color.White;
-            this.AdminOrderTableBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AdminOrderTableBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.AdminOrderTableBtn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.AdminOrderTableBtn.IconMarginLeft = 11;
-            this.AdminOrderTableBtn.IconPadding = 10;
-            this.AdminOrderTableBtn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AdminOrderTableBtn.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.AdminOrderTableBtn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.AdminOrderTableBtn.IconSize = 25;
-            this.AdminOrderTableBtn.IdleBorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminOrderTableBtn.IdleBorderRadius = 37;
-            this.AdminOrderTableBtn.IdleBorderThickness = 1;
-            this.AdminOrderTableBtn.IdleFillColor = System.Drawing.Color.LightSalmon;
-            this.AdminOrderTableBtn.IdleIconLeftImage = null;
-            this.AdminOrderTableBtn.IdleIconRightImage = null;
-            this.AdminOrderTableBtn.IndicateFocus = false;
-            this.AdminOrderTableBtn.Location = new System.Drawing.Point(193, 390);
-            this.AdminOrderTableBtn.Name = "AdminOrderTableBtn";
-            this.AdminOrderTableBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.AdminOrderTableBtn.OnDisabledState.BorderRadius = 37;
-            this.AdminOrderTableBtn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminOrderTableBtn.OnDisabledState.BorderThickness = 1;
-            this.AdminOrderTableBtn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.AdminOrderTableBtn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.AdminOrderTableBtn.OnDisabledState.IconLeftImage = null;
-            this.AdminOrderTableBtn.OnDisabledState.IconRightImage = null;
-            this.AdminOrderTableBtn.onHoverState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminOrderTableBtn.onHoverState.BorderRadius = 37;
-            this.AdminOrderTableBtn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminOrderTableBtn.onHoverState.BorderThickness = 1;
-            this.AdminOrderTableBtn.onHoverState.FillColor = System.Drawing.Color.LightSalmon;
-            this.AdminOrderTableBtn.onHoverState.ForeColor = System.Drawing.Color.Black;
-            this.AdminOrderTableBtn.onHoverState.IconLeftImage = null;
-            this.AdminOrderTableBtn.onHoverState.IconRightImage = null;
-            this.AdminOrderTableBtn.OnIdleState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminOrderTableBtn.OnIdleState.BorderRadius = 37;
-            this.AdminOrderTableBtn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminOrderTableBtn.OnIdleState.BorderThickness = 1;
-            this.AdminOrderTableBtn.OnIdleState.FillColor = System.Drawing.Color.LightSalmon;
-            this.AdminOrderTableBtn.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.AdminOrderTableBtn.OnIdleState.IconLeftImage = null;
-            this.AdminOrderTableBtn.OnIdleState.IconRightImage = null;
-            this.AdminOrderTableBtn.OnPressedState.BorderColor = System.Drawing.Color.LightSalmon;
-            this.AdminOrderTableBtn.OnPressedState.BorderRadius = 37;
-            this.AdminOrderTableBtn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminOrderTableBtn.OnPressedState.BorderThickness = 1;
-            this.AdminOrderTableBtn.OnPressedState.FillColor = System.Drawing.Color.LightSalmon;
-            this.AdminOrderTableBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.AdminOrderTableBtn.OnPressedState.IconLeftImage = null;
-            this.AdminOrderTableBtn.OnPressedState.IconRightImage = null;
-            this.AdminOrderTableBtn.Size = new System.Drawing.Size(150, 53);
-            this.AdminOrderTableBtn.TabIndex = 72;
-            this.AdminOrderTableBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.AdminOrderTableBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.AdminOrderTableBtn.TextMarginLeft = 0;
-            this.AdminOrderTableBtn.TextPadding = new System.Windows.Forms.Padding(0);
-            this.AdminOrderTableBtn.UseDefaultRadiusAndThickness = true;
-            this.AdminOrderTableBtn.Click += new System.EventHandler(this.AdminAdjustTable_Click);
             // 
             // AdminLoadTablesBtn
             // 
@@ -270,11 +166,11 @@
             this.AdminLoadTablesBtn.ColorContrastOnClick = 45;
             this.AdminLoadTablesBtn.ColorContrastOnHover = 45;
             this.AdminLoadTablesBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.AdminLoadTablesBtn.CustomizableEdges = borderEdges4;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.AdminLoadTablesBtn.CustomizableEdges = borderEdges2;
             this.AdminLoadTablesBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminLoadTablesBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminLoadTablesBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -341,6 +237,103 @@
             this.AdminLoadTablesBtn.UseDefaultRadiusAndThickness = true;
             this.AdminLoadTablesBtn.Click += new System.EventHandler(this.AdminLoadTablesBtn_Click);
             // 
+            // Table_flowLayoutPanel
+            // 
+            this.Table_flowLayoutPanel.Location = new System.Drawing.Point(16, 3);
+            this.Table_flowLayoutPanel.Name = "Table_flowLayoutPanel";
+            this.Table_flowLayoutPanel.Size = new System.Drawing.Size(649, 359);
+            this.Table_flowLayoutPanel.TabIndex = 32;
+            // 
+            // AdminOrderTableBtn
+            // 
+            this.AdminOrderTableBtn.AllowAnimations = true;
+            this.AdminOrderTableBtn.AllowMouseEffects = true;
+            this.AdminOrderTableBtn.AllowToggling = false;
+            this.AdminOrderTableBtn.AnimationSpeed = 200;
+            this.AdminOrderTableBtn.AutoGenerateColors = false;
+            this.AdminOrderTableBtn.AutoRoundBorders = false;
+            this.AdminOrderTableBtn.AutoSizeLeftIcon = true;
+            this.AdminOrderTableBtn.AutoSizeRightIcon = true;
+            this.AdminOrderTableBtn.BackColor = System.Drawing.Color.Transparent;
+            this.AdminOrderTableBtn.BackColor1 = System.Drawing.Color.LightSalmon;
+            this.AdminOrderTableBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminOrderTableBtn.BackgroundImage")));
+            this.AdminOrderTableBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminOrderTableBtn.ButtonText = "TABLE";
+            this.AdminOrderTableBtn.ButtonTextMarginLeft = 0;
+            this.AdminOrderTableBtn.ColorContrastOnClick = 45;
+            this.AdminOrderTableBtn.ColorContrastOnHover = 45;
+            this.AdminOrderTableBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.AdminOrderTableBtn.CustomizableEdges = borderEdges3;
+            this.AdminOrderTableBtn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.AdminOrderTableBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.AdminOrderTableBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.AdminOrderTableBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.AdminOrderTableBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.AdminOrderTableBtn.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminOrderTableBtn.ForeColor = System.Drawing.Color.White;
+            this.AdminOrderTableBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AdminOrderTableBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.AdminOrderTableBtn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.AdminOrderTableBtn.IconMarginLeft = 11;
+            this.AdminOrderTableBtn.IconPadding = 10;
+            this.AdminOrderTableBtn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AdminOrderTableBtn.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.AdminOrderTableBtn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.AdminOrderTableBtn.IconSize = 25;
+            this.AdminOrderTableBtn.IdleBorderColor = System.Drawing.Color.LightSalmon;
+            this.AdminOrderTableBtn.IdleBorderRadius = 37;
+            this.AdminOrderTableBtn.IdleBorderThickness = 1;
+            this.AdminOrderTableBtn.IdleFillColor = System.Drawing.Color.LightSalmon;
+            this.AdminOrderTableBtn.IdleIconLeftImage = null;
+            this.AdminOrderTableBtn.IdleIconRightImage = null;
+            this.AdminOrderTableBtn.IndicateFocus = false;
+            this.AdminOrderTableBtn.Location = new System.Drawing.Point(193, 390);
+            this.AdminOrderTableBtn.Name = "AdminOrderTableBtn";
+            this.AdminOrderTableBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.AdminOrderTableBtn.OnDisabledState.BorderRadius = 37;
+            this.AdminOrderTableBtn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminOrderTableBtn.OnDisabledState.BorderThickness = 1;
+            this.AdminOrderTableBtn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.AdminOrderTableBtn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.AdminOrderTableBtn.OnDisabledState.IconLeftImage = null;
+            this.AdminOrderTableBtn.OnDisabledState.IconRightImage = null;
+            this.AdminOrderTableBtn.onHoverState.BorderColor = System.Drawing.Color.LightSalmon;
+            this.AdminOrderTableBtn.onHoverState.BorderRadius = 37;
+            this.AdminOrderTableBtn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminOrderTableBtn.onHoverState.BorderThickness = 1;
+            this.AdminOrderTableBtn.onHoverState.FillColor = System.Drawing.Color.LightSalmon;
+            this.AdminOrderTableBtn.onHoverState.ForeColor = System.Drawing.Color.Black;
+            this.AdminOrderTableBtn.onHoverState.IconLeftImage = null;
+            this.AdminOrderTableBtn.onHoverState.IconRightImage = null;
+            this.AdminOrderTableBtn.OnIdleState.BorderColor = System.Drawing.Color.LightSalmon;
+            this.AdminOrderTableBtn.OnIdleState.BorderRadius = 37;
+            this.AdminOrderTableBtn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminOrderTableBtn.OnIdleState.BorderThickness = 1;
+            this.AdminOrderTableBtn.OnIdleState.FillColor = System.Drawing.Color.LightSalmon;
+            this.AdminOrderTableBtn.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.AdminOrderTableBtn.OnIdleState.IconLeftImage = null;
+            this.AdminOrderTableBtn.OnIdleState.IconRightImage = null;
+            this.AdminOrderTableBtn.OnPressedState.BorderColor = System.Drawing.Color.LightSalmon;
+            this.AdminOrderTableBtn.OnPressedState.BorderRadius = 37;
+            this.AdminOrderTableBtn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.AdminOrderTableBtn.OnPressedState.BorderThickness = 1;
+            this.AdminOrderTableBtn.OnPressedState.FillColor = System.Drawing.Color.LightSalmon;
+            this.AdminOrderTableBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.AdminOrderTableBtn.OnPressedState.IconLeftImage = null;
+            this.AdminOrderTableBtn.OnPressedState.IconRightImage = null;
+            this.AdminOrderTableBtn.Size = new System.Drawing.Size(150, 53);
+            this.AdminOrderTableBtn.TabIndex = 72;
+            this.AdminOrderTableBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AdminOrderTableBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AdminOrderTableBtn.TextMarginLeft = 0;
+            this.AdminOrderTableBtn.TextPadding = new System.Windows.Forms.Padding(0);
+            this.AdminOrderTableBtn.UseDefaultRadiusAndThickness = true;
+            this.AdminOrderTableBtn.Click += new System.EventHandler(this.AdminAdjustTable_Click);
+            // 
             // AdminOrder
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -355,8 +348,6 @@
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuPanel AdminOrderPanel;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminPaymentBtn1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminOrderTableBtn;

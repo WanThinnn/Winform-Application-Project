@@ -137,5 +137,9 @@ namespace UI
             this.Controls.Remove(pictureBox);
         }
 
+        private void AdminCheckTable_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

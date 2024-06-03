@@ -732,6 +732,7 @@
             this.AdminCheckTable.TextMarginLeft = 0;
             this.AdminCheckTable.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminCheckTable.UseDefaultRadiusAndThickness = true;
+            this.AdminCheckTable.Click += new System.EventHandler(this.AdminCheckTable_Click);
             // 
             // AdminTablesView
             // 

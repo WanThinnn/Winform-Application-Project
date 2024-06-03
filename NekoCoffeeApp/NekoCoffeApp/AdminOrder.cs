@@ -39,7 +39,7 @@ namespace UI
         private void AdminOrderBtn_Click(object sender, EventArgs e)
         {
             edit_Order edit_Order = new edit_Order();
-            edit_Order.Show();
+            edit_Order.Show(); 
         }
 
 
