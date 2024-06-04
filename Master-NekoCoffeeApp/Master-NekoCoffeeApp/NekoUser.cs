@@ -86,7 +86,8 @@ namespace Master_NekoCoffeeApp
 
             if (user1.Username != user2.Username)
             {
-                System.Windows.Forms.MessageBox.Show("Tài khoản không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //System.Windows.Forms.MessageBox.Show("Tài khoản không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                
                 return false;
             }
 
