@@ -288,7 +288,8 @@ namespace UI
 
                                 await client.DeleteAsync("TableDetails/" + _table.ID);
                                 mydt.Rows.Clear();
-
+                                _table.Status = "Available";
+                                var tableUpdateResponse = await client.SetAsync("Tables/" + _table.ID + "/Status", _table.Status);
                                 MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                             else

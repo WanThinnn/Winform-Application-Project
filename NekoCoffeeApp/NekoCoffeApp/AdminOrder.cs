@@ -100,11 +100,9 @@ namespace UI
                 if (table.Status == "Booked")
                 {
                     btn.BackColor = Color.Gray; 
-                    btn.Enabled = false;
                 }
                 else
                 {
-                    btn.Enabled= true;
                     btn.BackColor = Color.LightBlue; // Thiết lập màu sắc
                 }
                 btn.Text = $"ID: {table.ID}\nName: {table.Name}\nStatus: {table.Status}";
