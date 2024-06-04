@@ -21,8 +21,8 @@ namespace UI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Login());
-            Application.Run(new User());
-            //Application.Run(new AdminFP());
+            //Application.Run(new User());
+            Application.Run(new AdminFP());
 
 
 

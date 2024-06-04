@@ -34,7 +34,7 @@ namespace UI
             _table = table;
             LoadTableDetails();
         }
-        private async void LoadTableDetails()
+        private void LoadTableDetails()
         {
 
         }
@@ -171,11 +171,14 @@ namespace UI
             if (response1.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 MessageBox.Show("Đã thêm món thành công!");
+                _table.Status = "Booked";
+                var tableUpdateResponse = await client.SetAsync("Tables/" + _table.ID + "/Status", _table.Status);
             }
             else
             {
-                MessageBox.Show("Có lỗi xảy ra khi thêm mục.");
+                MessageBox.Show("Có lỗi xảy ra khi thêm món.");
             }
+            _table.Status = "Booked";
 
             // Reset các control
             comboBox1.SelectedIndex = -1;
@@ -285,7 +288,8 @@ namespace UI
 
                                 await client.DeleteAsync("TableDetails/" + _table.ID);
                                 mydt.Rows.Clear();
-
+                                _table.Status = "Available";
+                                var tableUpdateResponse = await client.SetAsync("Tables/" + _table.ID + "/Status", _table.Status);
                                 MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                             else

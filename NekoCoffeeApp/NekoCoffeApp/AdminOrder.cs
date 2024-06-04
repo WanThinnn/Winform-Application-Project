@@ -79,14 +79,11 @@ namespace UI
         IFirebaseClient tbl;
 
 
-        private async void AdminLoadTablesBtn_Click(object sender, EventArgs e)
+        private void AdminLoadTablesBtn_Click(object sender, EventArgs e)
         {
-
-            
-
             // Xóa các controls cũ trên AdminOrderPanel nếu có
             Table_flowLayoutPanel.Controls.Clear();
-
+            LoadTable();
 
         }
         // Lặp qua danh sách các bảng và thêm thông tin những bảng có trạng thái "Booked"
@@ -97,9 +94,17 @@ namespace UI
             foreach (var table in tables.Values)
             {
                 // Tạo một nút mới để hiển thị thông tin bảng
+
                 Button btn = new Button();
                 btn.Size = new Size(109, 109); // Thiết lập kích thước
-                btn.BackColor = Color.LightBlue; // Thiết lập màu sắc
+                if (table.Status == "Booked")
+                {
+                    btn.BackColor = Color.Gray; 
+                }
+                else
+                {
+                    btn.BackColor = Color.LightBlue; // Thiết lập màu sắc
+                }
                 btn.Text = $"ID: {table.ID}\nName: {table.Name}\nStatus: {table.Status}";
 
                 // Gán sự kiện Click cho nút
@@ -118,6 +123,11 @@ namespace UI
         {
             edit_Order edit_Order = new edit_Order();
             edit_Order.Show();
+        }
+
+        private void Table_flowLayoutPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

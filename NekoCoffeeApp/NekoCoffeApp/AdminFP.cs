@@ -16,6 +16,7 @@ namespace UI
 
         private void AdminMenuBtn_Click(object sender, EventArgs e)
         {
+            
             if (!AdminMainPanel.Controls.Contains(AdminMenu.Instance))
             {
                 AdminMainPanel.Controls.Add(AdminMenu.Instance);
