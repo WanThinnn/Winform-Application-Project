@@ -187,8 +187,6 @@
             // UserView
             // 
             this.UserView.AllowCustomTheming = false;
-            this.UserView.AllowUserToAddRows = false;
-            this.UserView.AllowUserToDeleteRows = false;
             this.UserView.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
@@ -240,7 +238,6 @@
             this.UserView.HeaderForeColor = System.Drawing.Color.White;
             this.UserView.Location = new System.Drawing.Point(39, 32);
             this.UserView.Name = "UserView";
-            this.UserView.ReadOnly = true;
             this.UserView.RowHeadersVisible = false;
             this.UserView.RowHeadersWidth = 62;
             this.UserView.RowTemplate.Height = 40;
