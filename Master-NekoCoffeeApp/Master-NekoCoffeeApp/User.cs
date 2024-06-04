@@ -183,7 +183,7 @@ namespace Master_NekoCoffeeApp
                 MessageBox.Show("Vui lòng điền tên tài khoản", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
+          
             FirebaseResponse res = client.Get(@"Users/" + tbUsername.Text);
             NekoUser user = res.ResultAs<NekoUser>();
 
@@ -278,7 +278,7 @@ namespace Master_NekoCoffeeApp
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
+            
             var result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật thông tin tài khoản này không?", "Xác nhận cập nhật", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
