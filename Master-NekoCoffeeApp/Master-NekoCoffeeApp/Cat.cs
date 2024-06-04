@@ -114,7 +114,7 @@ namespace Master_NekoCoffeeApp
                         ID = txbIDCat.Text,
                         Name = txbNameCat.Text,
                         Price = int.Parse(txbPrice.Text),
-                        Available = txbAvailable.Text
+                        Available = int.Parse(txbAvailable.Text)
 
                     };
 
@@ -154,13 +154,151 @@ namespace Master_NekoCoffeeApp
             txbIDCat.BorderColorIdle = Color.Black;
 
 
-
+            btnAdd.Enabled = true;
+            btnUpdate.Enabled = false;
+            btnDelete.Enabled = false;
             viewData();
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private async void btnDelete_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(tbCat_Name.Text))
+            {
+                MessageBox.Show("Vui lòng nhập tên mèo để xóa", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var result = MessageBox.Show("Bạn có chắc chắn muốn xóa mèo này không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    FirebaseResponse cat = await client.GetAsync($"/Cats_{MasterUsername}/" + txbNameCat.Text);
+                    NekoCat rescat = cat.ResultAs<NekoCat>();
+
+                    if (rescat == null)
+                    {
+                        MessageBox.Show("Mèo không tồn tại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    FirebaseResponse deleteResponse = await client.DeleteAsync($"/Cats_{MasterUsername}/" + txbNameCat.Text);
+
+                    if (deleteResponse.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        MessageBox.Show($"Xóa thành công mèo {txbNameCat.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Xóa không thành công mèo!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    btnRefresh_Click(sender, e);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbCat_Name.Text))
+            {
+                MessageBox.Show("Vui lòng điền tên tài khoản", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            FirebaseResponse res = client.Get($"/Cats_{MasterUsername}/" + tbCat_Name.Text);
+            NekoCat cat = res.ResultAs<NekoCat>();
+
+            if (cat == null)
+            {
+                MessageBox.Show("Mèo không tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            txbIDCat.ReadOnly = true;
+
+
+            txbIDCat.BorderColorActive = Color.Silver;
+            txbIDCat.BorderColorHover = Color.Silver;
+            txbIDCat.BorderColorDisabled = Color.Silver;
+            txbIDCat.BorderColorIdle = Color.Silver;
+
+
+            txbIDCat.Text = cat.ID;
+            txbNameCat.Text = cat.Name;
+            txbPrice.Text = cat.Price.ToString();
+            txbAvailable.Text = cat.Available.ToString();
+            btnAdd.Enabled = false;
+            btnUpdate.Enabled = true;
+            btnDelete.Enabled = true;
 
         }
+
+        private async void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbCat_Name.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật thông tin mèo này không?", "Xác nhận cập nhật", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    FirebaseResponse res = await client.GetAsync($"/Cats_{MasterUsername}/" + tbCat_Name.Text);
+                    if (res.Body == "null")
+                    {
+                        MessageBox.Show("Mèo này không tồn tại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    NekoCat cat = res.ResultAs<NekoCat>();
+
+                    var updateData = new NekoCat
+                    {
+                        ID = cat.ID,
+                        Name = txbNameCat.Text,
+                        Available = int.Parse(txbAvailable.Text),
+                        Price = int.Parse(txbPrice.Text),
+                    };
+
+                    // Tạo mục mới với tên mới
+                    SetResponse up = await client.SetAsync($"/Cats_{MasterUsername}/" + txbNameCat.Text, updateData);
+                    if (up.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        // Xóa mục cũ sau khi tạo mục mới thành công
+                        FirebaseResponse deleteResponse = await client.DeleteAsync($"/Cats_{MasterUsername}/" + tbCat_Name.Text);
+                        if (deleteResponse.StatusCode == System.Net.HttpStatusCode.OK)
+                        {
+                            MessageBox.Show($"Sửa thông tin thành công và cập nhật tên mèo {tbCat_Name.Text} thành {txbNameCat.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Cập nhật thành công nhưng không thể xóa mèo cũ!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sửa thông tin thất bại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                btnRefresh_Click(sender, e);
+            }
+        }
+
     }
 }
+

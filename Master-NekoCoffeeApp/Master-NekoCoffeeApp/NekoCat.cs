@@ -11,7 +11,7 @@ namespace Master_NekoCoffeeApp
     {
         public string ID { get; set; }
         public string Name { get; set; }
-        public string Available { get; set; }
+        public int Available { get; set; }
 
         public int Price { get; set; }
 

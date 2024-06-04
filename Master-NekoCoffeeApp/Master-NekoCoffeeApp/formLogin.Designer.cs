@@ -209,7 +209,7 @@
             this.txPass.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txPass.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txPass.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txPass.DefaultText = "";
+            this.txPass.DefaultText = "241203";
             this.txPass.FillColor = System.Drawing.Color.White;
             this.txPass.HideSelection = true;
             this.txPass.IconLeft = null;
@@ -217,7 +217,8 @@
             this.txPass.IconPadding = 10;
             this.txPass.IconRight = null;
             this.txPass.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txPass.Lines = new string[0];
+            this.txPass.Lines = new string[] {
+        "241203"};
             this.txPass.Location = new System.Drawing.Point(136, 145);
             this.txPass.Margin = new System.Windows.Forms.Padding(2);
             this.txPass.MaxLength = 32767;
@@ -253,7 +254,7 @@
             this.txPass.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txPass.SelectedText = "";
             this.txPass.SelectionLength = 0;
-            this.txPass.SelectionStart = 0;
+            this.txPass.SelectionStart = 6;
             this.txPass.ShortcutsEnabled = true;
             this.txPass.Size = new System.Drawing.Size(370, 35);
             this.txPass.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
@@ -285,7 +286,7 @@
             this.txUser.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txUser.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txUser.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txUser.DefaultText = "";
+            this.txUser.DefaultText = "thienlai";
             this.txUser.FillColor = System.Drawing.Color.White;
             this.txUser.HideSelection = true;
             this.txUser.IconLeft = null;
@@ -293,7 +294,8 @@
             this.txUser.IconPadding = 10;
             this.txUser.IconRight = null;
             this.txUser.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txUser.Lines = new string[0];
+            this.txUser.Lines = new string[] {
+        "thienlai"};
             this.txUser.Location = new System.Drawing.Point(136, 106);
             this.txUser.Margin = new System.Windows.Forms.Padding(2);
             this.txUser.MaxLength = 32767;
@@ -329,7 +331,7 @@
             this.txUser.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txUser.SelectedText = "";
             this.txUser.SelectionLength = 0;
-            this.txUser.SelectionStart = 0;
+            this.txUser.SelectionStart = 8;
             this.txUser.ShortcutsEnabled = true;
             this.txUser.Size = new System.Drawing.Size(370, 35);
             this.txUser.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
