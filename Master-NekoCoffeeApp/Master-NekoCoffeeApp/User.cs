@@ -192,8 +192,13 @@ namespace Master_NekoCoffeeApp
                 return;
             }
             dbGender.ForeColor = Color.Black;
-
+            tbPwd.ReadOnly = true;
             txbUsername.Text = user.Username;
+           
+            tbPwd.BorderColorActive = Color.Silver;
+            tbPwd.BorderColorHover = Color.Silver;
+            tbPwd.BorderColorDisabled = Color.Silver;
+            tbPwd.BorderColorIdle = Color.Silver;
             tbPwd.Text = user.Password;
             tbFullname.Text = user.Fullname;
             tbEmail.Text = user.Email;
