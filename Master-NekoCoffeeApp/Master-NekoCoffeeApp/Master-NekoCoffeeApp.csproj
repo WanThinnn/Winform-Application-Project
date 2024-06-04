@@ -224,12 +224,14 @@
     <Compile Include="BeforeSignUp.Designer.cs">
       <DependentUpon>BeforeSignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bills.cs" />
     <Compile Include="ChangePwd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChangePwd.Designer.cs">
       <DependentUpon>ChangePwd.cs</DependentUpon>
     </Compile>
+    <Compile Include="CountClass.cs" />
     <Compile Include="ForgotPwd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,6 +255,9 @@
     <Compile Include="NekoCustomer.cs" />
     <Compile Include="NekoDrink.cs" />
     <Compile Include="NekoEmployee.cs" />
+    <Compile Include="NekoShift.cs" />
+    <Compile Include="NekoTable.cs" />
+    <Compile Include="NekoTableDetail.cs" />
     <Compile Include="NekoUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -261,6 +266,12 @@
     </Compile>
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
     </Compile>
     <Compile Include="VerificationCodeInfo.cs" />
     <EmbeddedResource Include="BeforeSignUp.resx">
@@ -290,6 +301,9 @@
     </Compile>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />

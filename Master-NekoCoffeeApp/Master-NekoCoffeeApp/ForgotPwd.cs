@@ -13,6 +13,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Master_NekoCoffeeApp
 {
     public partial class ForgotPwd : Form
@@ -108,17 +109,17 @@ Neko Coffe Team.</p>";
 
 
             FirebaseResponse res = client.Get(@"MasterUsers/" + txtUserName.Text);
-            MasterUsers ResUser = res.ResultAs<MasterUsers>();
+            MasterUser ResUser = res.ResultAs<MasterUser>();
 
 
-            MasterUsers CurUser = new MasterUsers()
+            MasterUser CurUser = new MasterUser()
             {
                 Username = txtUserName.Text,
                 Email = txtEmail.Text,
                 PhoneNumber = txtPhone.Text
             };
 
-            if (MasterUsers.IsExist(ResUser, CurUser) == true)
+            if (MasterUser.IsExist(ResUser, CurUser) == true)
             {
                 string recipientEmail = txtEmail.Text; // Địa chỉ email của người nhận
 

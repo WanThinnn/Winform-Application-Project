@@ -9,7 +9,7 @@ using BCrypt.Net;
 
 namespace Master_NekoCoffeeApp
 {
-    internal class MasterUser
+    public class MasterUser
     {
         public string Username { get; set; }
         public string Password { get; set; }

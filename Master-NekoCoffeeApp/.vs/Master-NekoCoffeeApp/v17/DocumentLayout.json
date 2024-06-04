@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\changepwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\changepwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\changepwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\changepwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\forgotpwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\forgotpwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\beforesignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\beforesignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,53 +30,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BeforeSignUp.cs",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\BeforeSignUp.cs",
-              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\BeforeSignUp.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\BeforeSignUp.cs",
-              "RelativeToolTip": "Master-NekoCoffeeApp\\BeforeSignUp.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAIwG8AAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "SignUp.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\SignUp.cs",
+              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\SignUp.cs",
+              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\SignUp.cs [Design]",
+              "RelativeToolTip": "Master-NekoCoffeeApp\\SignUp.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:30:33.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ForgotPwd.cs",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\ForgotPwd.cs",
-              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\ForgotPwd.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\ForgotPwd.cs",
-              "RelativeToolTip": "Master-NekoCoffeeApp\\ForgotPwd.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAowHAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:28:30.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T17:59:37.15Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ChangePwd.cs",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\ChangePwd.cs",
-              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\ChangePwd.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\ChangePwd.cs",
-              "RelativeToolTip": "Master-NekoCoffeeApp\\ChangePwd.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAIwHMAAAA1AAAA",
+              "Title": "User.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\User.cs",
+              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\User.cs",
+              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\User.cs [Design]",
+              "RelativeToolTip": "Master-NekoCoffeeApp\\User.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:23:40.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ChangePwd.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\ChangePwd.cs",
-              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\ChangePwd.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\ChangePwd.cs [Design]",
-              "RelativeToolTip": "Master-NekoCoffeeApp\\ChangePwd.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:22:38.017Z",
+              "WhenOpened": "2024-06-04T17:59:10.789Z",
               "EditorCaption": " [Design]"
             }
           ]
