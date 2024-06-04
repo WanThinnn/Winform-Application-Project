@@ -67,7 +67,7 @@ namespace UI
                 // Tạo một nút mới để hiển thị thông tin bảng
                 Button btn = new Button();
                 btn.Size = new Size(109, 109); // Thiết lập kích thước
-                btn.BackColor = Color.LightBlue; // Thiết lập màu sắc
+                btn.BackColor = Color.LightSalmon; // Thiết lập màu sắc
                 btn.Text = $"ID: {drink.ID}\nName: {drink.Name}\nPrice: {drink.Price}";
 
                 // Gán sự kiện Click cho nút
