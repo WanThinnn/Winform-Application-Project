@@ -114,7 +114,8 @@ namespace UI
                 PhoneNumber = txtPhone.Text,
                 Email = Email.ToLower(),
                 Position = "KH",
-                RegistrationDate = DateTime.Now // Gán ngày đăng ký tại đây
+                RegistrationDate = DateTime.Now, // Gán ngày đăng ký tại đây,
+                Point = 0
             };
 
             SetResponse set = client.Set(@"Users/" + txtUserName.Text, user);
