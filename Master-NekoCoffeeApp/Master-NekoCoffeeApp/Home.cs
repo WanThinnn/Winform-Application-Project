@@ -15,11 +15,12 @@ namespace Master_NekoCoffeeApp
     public partial class Home : Form
     {
         string Fullname;
-        string username;
-        public Home(string Fullname)
+        string Username;
+        public Home(string Fullname, string Username)
         {
             InitializeComponent();
             this.Fullname = Fullname;
+            this.Username = Username;
             this.linkLBHello.Text = $"Hello {Fullname}, wellcome back!";
         }
         IFirebaseConfig ifc = new FirebaseConfig()
@@ -58,6 +59,12 @@ namespace Master_NekoCoffeeApp
             User frm = new User();
             frm.Show();
 
+        }
+
+        private void btnCat_Click(object sender, EventArgs e)
+        {
+            Cat frm = new Cat(this.Username);
+            frm.Show();
         }
     }
 }

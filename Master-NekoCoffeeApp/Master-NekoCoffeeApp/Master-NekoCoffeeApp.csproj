@@ -225,6 +225,12 @@
       <DependentUpon>BeforeSignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Bills.cs" />
+    <Compile Include="Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat.Designer.cs">
+      <DependentUpon>Cat.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangePwd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -276,6 +282,9 @@
     <Compile Include="VerificationCodeInfo.cs" />
     <EmbeddedResource Include="BeforeSignUp.resx">
       <DependentUpon>BeforeSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat.resx">
+      <DependentUpon>Cat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangePwd.resx">
       <DependentUpon>ChangePwd.cs</DependentUpon>

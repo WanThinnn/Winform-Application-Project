@@ -16,8 +16,9 @@ namespace Master_NekoCoffeeApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new formLogin());
-            Application.Run(new User());
+            Application.Run(new formLogin());
+            //Application.Run(new User());
+
         }
     }
 }

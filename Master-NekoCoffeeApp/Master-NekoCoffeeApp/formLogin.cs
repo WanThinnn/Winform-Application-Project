@@ -65,8 +65,8 @@ namespace Master_NekoCoffeeApp
 
             if (MasterUser.IsEqual(ResUser, CurUser) == true)
             {
-                Home home = new Home(ResUser.Fullname);
-                MessageBox.Show("Đăng nhập thành công!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Home home = new Home(ResUser.Fullname, ResUser.Username);
+                //MessageBox.Show("Đăng nhập thành công!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
                 home.ShowDialog();
                 this.Show(); // Hiển thị lại form đăng nhập sau khi form chính đóng

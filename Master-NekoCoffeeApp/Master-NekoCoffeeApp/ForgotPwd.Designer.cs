@@ -128,7 +128,7 @@
             this.txtPhone.OnIdleState = stateProperties4;
             this.txtPhone.Padding = new System.Windows.Forms.Padding(2);
             this.txtPhone.PasswordChar = '\0';
-            this.txtPhone.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtPhone.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.txtPhone.PlaceholderText = "Phone number";
             this.txtPhone.ReadOnly = false;
             this.txtPhone.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -204,7 +204,7 @@
             this.txtEmail.OnIdleState = stateProperties8;
             this.txtEmail.Padding = new System.Windows.Forms.Padding(2);
             this.txtEmail.PasswordChar = '\0';
-            this.txtEmail.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtEmail.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.txtEmail.PlaceholderText = "Email";
             this.txtEmail.ReadOnly = false;
             this.txtEmail.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -372,7 +372,7 @@
             this.txtUserName.OnIdleState = stateProperties12;
             this.txtUserName.Padding = new System.Windows.Forms.Padding(2);
             this.txtUserName.PasswordChar = '\0';
-            this.txtUserName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtUserName.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.txtUserName.PlaceholderText = "Username";
             this.txtUserName.ReadOnly = false;
             this.txtUserName.ScrollBars = System.Windows.Forms.ScrollBars.None;

@@ -1013,6 +1013,7 @@
             this.btnCat.TextMarginLeft = 0;
             this.btnCat.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnCat.UseDefaultRadiusAndThickness = true;
+            this.btnCat.Click += new System.EventHandler(this.btnCat_Click);
             // 
             // btnTable
             // 

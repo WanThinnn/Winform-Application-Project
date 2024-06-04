@@ -13,6 +13,8 @@ namespace Master_NekoCoffeeApp
         public string Name { get; set; }
         public string Available { get; set; }
 
+        public int Price { get; set; }
+
 
         private static string error1 = "Không tồn tại!";
         private static string error2 = "Cảnh báo";
@@ -31,7 +33,7 @@ namespace Master_NekoCoffeeApp
         {
             System.Windows.Forms.MessageBox.Show("Không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
-        public static bool IsEqual(NekoDrink cat1, NekoDrink cat2)
+        public static bool IsEqual(NekoCat cat1, NekoCat cat2)
         {
             if (cat1 == null || cat2 == null) { return false; }
 
@@ -43,7 +45,7 @@ namespace Master_NekoCoffeeApp
             return true;
         }
 
-        public static bool IsExist(NekoDrink cat1, NekoDrink cat2)
+        public static bool IsExist(NekoCat cat1, NekoCat cat2)
         {
             if (cat1 == null || cat2 == null) { return false; }
 
@@ -58,13 +60,13 @@ namespace Master_NekoCoffeeApp
         }
 
 
-        public static bool Search(NekoDrink cat1, NekoDrink cat2)
+        public static bool Search(NekoCat cat1, NekoCat cat2)
         {
             if (cat1 == null || cat2 == null) { return false; }
 
             if (cat1.ID != cat2.ID)
             {
-                System.Windows.Forms.MessageBox.Show("Mèo không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //System.Windows.Forms.MessageBox.Show("Mèo không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 

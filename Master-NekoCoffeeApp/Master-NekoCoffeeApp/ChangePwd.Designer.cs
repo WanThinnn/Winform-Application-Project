@@ -238,7 +238,7 @@
             this.txbCode.OnIdleState = stateProperties4;
             this.txbCode.Padding = new System.Windows.Forms.Padding(2);
             this.txbCode.PasswordChar = '\0';
-            this.txbCode.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txbCode.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.txbCode.PlaceholderText = "Enter The Code";
             this.txbCode.ReadOnly = false;
             this.txbCode.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -314,7 +314,7 @@
             this.txbCfNewPwd.OnIdleState = stateProperties8;
             this.txbCfNewPwd.Padding = new System.Windows.Forms.Padding(2);
             this.txbCfNewPwd.PasswordChar = '\0';
-            this.txbCfNewPwd.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txbCfNewPwd.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.txbCfNewPwd.PlaceholderText = "Confirm New Password";
             this.txbCfNewPwd.ReadOnly = false;
             this.txbCfNewPwd.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -483,7 +483,7 @@
             this.txbNewPwd.OnIdleState = stateProperties12;
             this.txbNewPwd.Padding = new System.Windows.Forms.Padding(2);
             this.txbNewPwd.PasswordChar = '\0';
-            this.txbNewPwd.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txbNewPwd.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.txbNewPwd.PlaceholderText = "New Password";
             this.txbNewPwd.ReadOnly = false;
             this.txbNewPwd.ScrollBars = System.Windows.Forms.ScrollBars.None;
