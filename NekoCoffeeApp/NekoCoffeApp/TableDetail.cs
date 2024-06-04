@@ -34,7 +34,7 @@ namespace UI
             _table = table;
             LoadTableDetails();
         }
-        private async void LoadTableDetails()
+        private void LoadTableDetails()
         {
 
         }

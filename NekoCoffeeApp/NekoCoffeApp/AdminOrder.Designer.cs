@@ -287,7 +287,7 @@
             this.AdminLoadTablesBtn.IdleIconLeftImage = null;
             this.AdminLoadTablesBtn.IdleIconRightImage = null;
             this.AdminLoadTablesBtn.IndicateFocus = false;
-            this.AdminLoadTablesBtn.Location = new System.Drawing.Point(349, 390);
+            this.AdminLoadTablesBtn.Location = new System.Drawing.Point(359, 390);
             this.AdminLoadTablesBtn.Name = "AdminLoadTablesBtn";
             this.AdminLoadTablesBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminLoadTablesBtn.OnDisabledState.BorderRadius = 37;
@@ -385,7 +385,7 @@
             this.AdminOrderTableBtn.IdleIconLeftImage = null;
             this.AdminOrderTableBtn.IdleIconRightImage = null;
             this.AdminOrderTableBtn.IndicateFocus = false;
-            this.AdminOrderTableBtn.Location = new System.Drawing.Point(193, 390);
+            this.AdminOrderTableBtn.Location = new System.Drawing.Point(203, 390);
             this.AdminOrderTableBtn.Name = "AdminOrderTableBtn";
             this.AdminOrderTableBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminOrderTableBtn.OnDisabledState.BorderRadius = 37;

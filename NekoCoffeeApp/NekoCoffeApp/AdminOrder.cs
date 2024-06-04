@@ -79,7 +79,7 @@ namespace UI
         IFirebaseClient tbl;
 
 
-        private async void AdminLoadTablesBtn_Click(object sender, EventArgs e)
+        private void AdminLoadTablesBtn_Click(object sender, EventArgs e)
         {
             // Xóa các controls cũ trên AdminOrderPanel nếu có
             Table_flowLayoutPanel.Controls.Clear();

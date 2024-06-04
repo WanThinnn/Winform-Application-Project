@@ -62,7 +62,7 @@ namespace UI
             if (
               string.IsNullOrWhiteSpace(AdminFillTableID.Text) ||
               string.IsNullOrWhiteSpace(AdminFillTableName.Text) ||
-              string.IsNullOrWhiteSpace(AdminFillTableStatus.Text))
+              string.IsNullOrWhiteSpace(comboBox1.SelectedItem.ToString()))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -85,7 +85,7 @@ namespace UI
             {
                 ID = AdminFillTableID.Text,
                 Name = AdminFillTableID.Text,
-                Status = AdminFillTableStatus.Text
+                Status = comboBox1.SelectedItem.ToString()
             };
 
             SetResponse set = tb.Set(@"Tables/" + AdminFillTableID.Text, table);
