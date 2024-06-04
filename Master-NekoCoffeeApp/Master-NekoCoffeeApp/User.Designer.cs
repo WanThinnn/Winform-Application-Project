@@ -187,6 +187,8 @@
             // UserView
             // 
             this.UserView.AllowCustomTheming = false;
+            this.UserView.AllowUserToAddRows = false;
+            this.UserView.AllowUserToDeleteRows = false;
             this.UserView.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
@@ -238,6 +240,7 @@
             this.UserView.HeaderForeColor = System.Drawing.Color.White;
             this.UserView.Location = new System.Drawing.Point(39, 32);
             this.UserView.Name = "UserView";
+            this.UserView.ReadOnly = true;
             this.UserView.RowHeadersVisible = false;
             this.UserView.RowHeadersWidth = 62;
             this.UserView.RowTemplate.Height = 40;
@@ -1254,6 +1257,7 @@
             this.dbGender.Name = "dbGender";
             this.dbGender.Size = new System.Drawing.Size(251, 31);
             this.dbGender.TabIndex = 119;
+            this.dbGender.Text = null;
             this.dbGender.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.dbGender.TextLeftMargin = 5;
             // 
@@ -1352,6 +1356,7 @@
             // 
             this.bunifuLabel1.AllowParentOverrides = false;
             this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.SaddleBrown;

@@ -92,75 +92,74 @@ namespace Master_NekoCoffeeApp
                 return;
             }
 
-            FirebaseResponse res = await client.GetAsync("MasterUsers/" + txbUsername.Text);
-            FirebaseResponse nekores = await client.GetAsync("Users/" + txbUsername.Text);
-            MasterUser ResUser = res.ResultAs<MasterUser>();
-            NekoUser NekoResUser = nekores.ResultAs<NekoUser>();
+            var result = MessageBox.Show("Bạn có chắc chắn muốn thêm tài khoản này không?", "Xác nhận thêm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            MasterUser CurUser = new MasterUser()
+            if (result == DialogResult.Yes)
             {
-                Username = txbUsername.Text
-            };
+                try
+                {
+                    FirebaseResponse res = await client.GetAsync("MasterUsers/" + txbUsername.Text);
+                    FirebaseResponse nekores = await client.GetAsync("Users/" + txbUsername.Text);
+                    MasterUser ResUser = res.ResultAs<MasterUser>();
+                    NekoUser NekoResUser = nekores.ResultAs<NekoUser>();
 
-            NekoUser NekoCurUser = new NekoUser()
-            {
-                Username = txbUsername.Text
-            };
+                    MasterUser CurUser = new MasterUser()
+                    {
+                        Username = txbUsername.Text
+                    };
 
-            // Nếu ResUser không phải là null, thực hiện kiểm tra
-            if ((ResUser != null && MasterUser.Search(ResUser, CurUser)) || NekoResUser != null && NekoUser.Search(NekoResUser, NekoCurUser))
-            {
-                NekoUser.ShowError_2();
-                return;
+                    NekoUser NekoCurUser = new NekoUser()
+                    {
+                        Username = txbUsername.Text
+                    };
+
+                    // Nếu ResUser không phải là null, thực hiện kiểm tra
+                    if ((ResUser != null && MasterUser.Search(ResUser, CurUser)) || (NekoResUser != null && NekoUser.Search(NekoResUser, NekoCurUser)))
+                    {
+                        NekoUser.ShowError_2();
+                        return;
+                    }
+
+                    // Kiểm tra tính hợp lệ của email
+                    if (!IsValidEmail(tbEmail.Text.ToLower()))
+                    {
+                        MessageBox.Show("Email không hợp lệ!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    NekoUser user = new NekoUser()
+                    {
+                        Username = txbUsername.Text,
+                        Password = BCrypt.Net.BCrypt.EnhancedHashPassword(tbPwd.Text, hashType: HashType.SHA384),
+                        Fullname = tbFullname.Text,
+                        Gender = dbGender.Text,
+                        PhoneNumber = tbPhone.Text,
+                        Email = tbEmail.Text.ToLower(),
+                        Position = "KH",
+                        RegistrationDate = DateTime.Now, // Gán ngày đăng ký tại đây
+                        Point = 0,
+                    };
+
+                    SetResponse set = await client.SetAsync("Users/" + txbUsername.Text, user);
+
+                    if (set.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        MessageBox.Show($"Thêm thành công tài khoản {txbUsername.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Thêm không thành công tài khoản!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    btnRefresh_Click(sender, e);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            // Kiểm tra tính hợp lệ của email
-            if (!IsValidEmail(tbEmail.Text.ToLower()))
-            {
-                MessageBox.Show("Email không hợp lệ!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            NekoUser user = new NekoUser()
-            {
-                Username = txbUsername.Text,
-                Password = BCrypt.Net.BCrypt.EnhancedHashPassword(tbPwd.Text, hashType: HashType.SHA384),
-                Fullname = tbFullname.Text,
-                Gender = dbGender.Text,
-                PhoneNumber = tbPhone.Text,
-                Email = tbEmail.Text.ToLower(),
-                Position = "KH",
-                RegistrationDate = DateTime.Now, // Gán ngày đăng ký tại đây
-                Point = 0,
-            };
-
-            SetResponse set = await client.SetAsync("Users/" + txbUsername.Text, user);
-
-
-            if (set.StatusCode == System.Net.HttpStatusCode.OK)
-            {
-                MessageBox.Show($"Đăng ký thành công tài khoản {txbUsername.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            }
-            else
-            {
-                MessageBox.Show($"Đăng ký không thành công tài khoản!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
-            tbUsername.Clear();
-            txbUsername.Clear();
-            tbPwd.Clear();
-            dbGender.Text = string.Empty; // Đặt giá trị hiển thị về rỗng
-            tbFullname.Clear();
-            tbEmail.Clear();
-            tbPoint.Clear();
-            tbType.Clear();
-            tbPhone.Clear();
-            tbDate.Clear();
-            UserAdd.Enabled = true;
-            UserUpdate.Enabled = false;
-            UserDelete.Enabled = false;
-            viewData();
-
         }
+
         public bool IsValidEmail(string email)
         {
             if (string.IsNullOrWhiteSpace(email))
@@ -223,69 +222,119 @@ namespace Master_NekoCoffeeApp
 
         }
 
-        private void UserDelete_Click(object sender, EventArgs e)
+        private async void UserDelete_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private async void UserUpdate_Click(object sender, EventArgs e)
-        {
-            if (
-                 string.IsNullOrWhiteSpace(tbUsername.Text))
+            if (string.IsNullOrWhiteSpace(tbUsername.Text))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            try
+            var result = MessageBox.Show("Bạn có chắc chắn muốn xóa tài khoản này không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
             {
-                FirebaseResponse res = await client.GetAsync("Users/" + tbUsername.Text);
-                if (res.Body == "null")
+                try
                 {
-                    MessageBox.Show("Người dùng không tồn tại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    FirebaseResponse res = await client.GetAsync("Users/" + tbUsername.Text);
+                    if (res.Body == "null")
+                    {
+                        MessageBox.Show("Người dùng không tồn tại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    NekoUser user = res.ResultAs<NekoUser>();
+
+                    if (user.Position == "Master")
+                    {
+                        MessageBox.Show("Bạn không được phép xóa tài khoản Master", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    FirebaseResponse del = await client.DeleteAsync("Users/" + tbUsername.Text);
+                    if (del.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        MessageBox.Show($"Xóa thông tin tài khoản {tbUsername.Text} thành công!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa thông tin thất bại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-                NekoUser user = res.ResultAs<NekoUser>();
-
-                if (user.Position == "Master")
-                {
-                    MessageBox.Show("Bạn không được phép đổi thông tin tài khoản Master khác", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                var updateData = new NekoUser
-                {
-                    Username = user.Username,
-                    Password = user.Password,
-                    Fullname = tbFullname.Text,
-                    Gender = dbGender.Text,
-                    PhoneNumber = tbPhone.Text,
-                    Email = tbEmail.Text.ToLower(),
-                    Position = "KH",
-                    RegistrationDate = user.RegistrationDate, // giữ nguyên ngày đăng ký
-                    Point = user.Point // giữ nguyên điểm
-                };
-
-                SetResponse up = await client.SetAsync("Users/" + txbUsername.Text, updateData);
-                if (up.StatusCode == System.Net.HttpStatusCode.OK)
-                {
-                    MessageBox.Show($"Sửa thông tin thành công tài khoản {txbUsername.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Sửa thông tin thất bại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                // Làm mới dữ liệu sau khi xóa
+                btnRefresh_Click(sender, e);
             }
-            catch (Exception ex)
+        }
+
+        private async void UserUpdate_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbUsername.Text))
             {
-                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            btnRefresh_Click(sender, e);
+
+            var result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật thông tin tài khoản này không?", "Xác nhận cập nhật", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    FirebaseResponse res = await client.GetAsync("Users/" + tbUsername.Text);
+                    if (res.Body == "null")
+                    {
+                        MessageBox.Show("Người dùng không tồn tại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    NekoUser user = res.ResultAs<NekoUser>();
+
+                    if (user.Position == "Master")
+                    {
+                        MessageBox.Show("Bạn không được phép đổi thông tin tài khoản Master khác", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    var updateData = new NekoUser
+                    {
+                        Username = user.Username,
+                        Password = user.Password,
+                        Fullname = tbFullname.Text,
+                        Gender = dbGender.Text,
+                        PhoneNumber = tbPhone.Text,
+                        Email = tbEmail.Text.ToLower(),
+                        Position = "KH",
+                        RegistrationDate = user.RegistrationDate, // giữ nguyên ngày đăng ký
+                        Point = user.Point // giữ nguyên điểm
+                    };
+
+                    SetResponse up = await client.SetAsync("Users/" + tbUsername.Text, updateData);
+                    if (up.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        MessageBox.Show($"Sửa thông tin thành công tài khoản {tbUsername.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sửa thông tin thất bại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                btnRefresh_Click(sender, e);
+            }
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
+            tbPwd.ReadOnly = txbUsername.ReadOnly = false;
             tbUsername.Clear();
             txbUsername.Clear();
             tbPwd.Clear();
