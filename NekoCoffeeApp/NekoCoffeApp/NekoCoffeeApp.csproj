@@ -389,6 +389,7 @@
     <Compile Include="TableDetail.Designer.cs">
       <DependentUpon>TableDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestTable.cs" />
     <Compile Include="UserDiscount.cs">
       <SubType>UserControl</SubType>
     </Compile>

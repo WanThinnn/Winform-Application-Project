@@ -81,12 +81,9 @@ namespace UI
 
         private async void AdminLoadTablesBtn_Click(object sender, EventArgs e)
         {
-
-            
-
             // Xóa các controls cũ trên AdminOrderPanel nếu có
             Table_flowLayoutPanel.Controls.Clear();
-
+            LoadTable();
 
         }
         // Lặp qua danh sách các bảng và thêm thông tin những bảng có trạng thái "Booked"
