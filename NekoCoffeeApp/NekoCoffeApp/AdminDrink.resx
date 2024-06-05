@@ -124,6 +124,19 @@
     <value>25</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnImage.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAF4AAAApCAYAAAC89Z4XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGgSURBVGhD7du7SgNBFMbxKS19BEtLn8TaQl28xKyCvoKl
+        jbqa1Q3aBawEKw0WgpBCUomIqAhKiOAtu7MhF6MxJmNOEi/FdM5ymm/gl2ZPmj/JJM0Rf09hZXREevax
+        dKf9wBlX8H/UMkzOZv3VMbuX+fcUHaufHpb3lkr1i0PVfDxXqpwHA6hl/epIVdJrr9KLX7dbD/SyC0HR
+        38/2tW8Ecxq3J6p9o+Rzi1afCNzJ+cqBU9YNgnnVTOpNJu1E59NOXwXdEJj3eX+q5GbsQQSJiVoruNEO
+        QTToR1fQi+4hRAfhmSA8E4RngvBMEJ4JwjNBeCYIzwThmSA8E4RngvBMEJ4JwjNBeCYIzwThmSA8E4Rn
+        gvBMEJ4JwjNBeCYIzwThmSA8E4RngvBMuuHXrUYrvNMOQDQ64Wk9hDYVdANgXvP5Ukl3qiTkRsypZlIN
+        3RCYRytPoWenBe3jSG/mCQtn0aMrXW7NFX8W0F4ca0gm44VadvcD2yHmUXDapgy3F6TvxYY70b8PrVxK
+        z96h1Ry6/MGg9h8Y2h/2l63Bbm0hvgCi0Su8li1QRgAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="AdminFillDrinkName.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAApCAYAAADapvcsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -204,29 +217,29 @@
   </data>
   <data name="AdminFillDrinkPrice.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIAAAAAqCAYAAAB7uVNDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACfSURBVHhe7dKxDQMxDARB9l+VHirDZbgAPwQocQ07AzBh
-        ejswe+/PWuvnOnc2v/PPnActZ/M7vwCKBBAngDgBxAkgTgBxAogTQJwA4gQQJ4A4AcQJIE4AcQKIE0Cc
-        AOIEECeAOAHECSBOAHECiBNAnADiBBAngDgBxAkgTgBxAogTQJwA4gQQJ4A4AcQJIO4vgOd5vufhOnc2
-        v/PTNfMCBFGDVEtIXSQAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAHcAAAAqCAYAAACJKcSjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACYSURBVHhe7dGxCcQwAARB9V+VhMr4MlyAjUDJt7DMwiWX
+        zlC8vfdvzvlaY8fz0o5xDnU6npcWbi244eCGgxsObji44eCGgxsObji44eCGgxsObji44eCGgxsObji4
+        4eCGgxsObji44eCGgxsObji44eCGgxsObji44eCGgxsObji44eCGgxsObrg/3LXWcw5r7HheWjUb4wM7
+        OvXkDKKriAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="AdminFillDrinkType.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAKcAAAAqCAYAAADWOEvqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACpSURBVHhe7dKxCcQwAARB9V+VhMr4MlyAjUDJd7DBDFxy
-        8Q5I23v/5pyvWWGnx5vmGOeAitPjTVOctIiTLHGSJU6yxEmWOMkSJ1niJEucZImTLHGSJU6yxEmWOMkS
-        J1niJEucZImTLHGSJU6yxEmWOMkSJ1niJEucZImTLHGSJU6yxEmWOMkSJ1niJEucZImTLHGSJU6yxEnW
-        X5xrreccZoWdHm+aUDTGBxK9ksZuU58SAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAqCAYAAAB4Ip8uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACZSURBVHhe7dGxCQMxAARB9V+VhMr4MlyAjUCJW9ifhUsu
+        naEXtPd+5pxf6+yYXt4xzqFWx/TyAi4GOB7geIDjAY4HOB7geIDjAY4HOB7geIDjAY4HOB7geIDjAY4H
+        OB7geIDjAY4HOB7geIDjAY4HOB7geIDjAY4HOB7geIDjAY4HOB7geIDjAY73B7zW+pzDOjuml1fdxvgB
+        hJ+T2VRWaqUAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="AdminFillDrinkID.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAFEAAAAqCAYAAADLarc0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACXSURBVGhD7dCxCQMxAARB9V+VHpXhMlyAH4ESh29vOAuX
-        XDhDUWut15zzY8+23Q7hGPvQ87bbIYT4axCDIAZBDIIYBDEIYhDEIIhBEIMgBkEMghgEMQhiEMQgiEEQ
-        gyAGQQyCGAQxCGIQxCCIQRCDIAZBDIIYBDEIYhDEIIhBEIMgBkEMghj0hXhd13sf9mzb7RDqv8a4AfZH
-        hGfbO8XJAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAHcAAAAqCAYAAACJKcSjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACYSURBVHhe7dGxCcQwAARB9V+VhMr4MlyAjUDJt7DMwiWX
+        zlC8vfdvzvlaY8fz0o5xDnU6npcWbi244eCGgxsObji44eCGgxsObji44eCGgxsObji44eCGgxsObji4
+        4eCGgxsObji44eCGgxsObji44eCGgxsObji44eCGgxsObji44eCGgxsObrg/3LXWcw5r7HheWjUb4wM7
+        OvXkDKKriAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="AdminCheckDrink.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

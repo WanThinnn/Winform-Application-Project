@@ -793,3 +793,6 @@ C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCof
 C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.edit_Table.resources
 C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.EmployeeDetail.resources
 C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.TableDetail.resources
+C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Firebase.Storage.dll
+C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
