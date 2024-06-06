@@ -208,7 +208,7 @@ namespace Master_NekoCoffeeApp
         {
             if (string.IsNullOrWhiteSpace(tbCat_Name.Text))
             {
-                MessageBox.Show("Vui lòng điền tên tài khoản", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng điền tên mèo!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

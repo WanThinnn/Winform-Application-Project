@@ -240,5 +240,48 @@ namespace Master_NekoCoffeeApp
             btnUpdate.Enabled = true;
             btnDelete.Enabled = true;
         }
+
+        private async void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbIDEmployee.Text))
+            {
+                MessageBox.Show("Vui lòng điền mã số nhân viên!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var result = MessageBox.Show("Bạn có chắc chắn muốn xóa nhân viên này không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    FirebaseResponse emp = await client.GetAsync($"/Employees_{this.MasterUsername}/" + txbIDEmployee.Text);
+                    NekoEmployee resemp = emp.ResultAs<NekoEmployee>();
+
+                    if (resemp == null)
+                    {
+                        MessageBox.Show("Nhân viên không tồn tại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    FirebaseResponse deleteResponse = await client.DeleteAsync($"/Employees_{this.MasterUsername}/" + txbIDEmployee.Text);
+
+                    if (deleteResponse.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        MessageBox.Show($"Xóa thành công nhân viên {txbIDEmployee.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Xóa không thành công nhân viên!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    btnRefresh_Click(sender, e);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }
