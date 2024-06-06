@@ -109,6 +109,7 @@ namespace UI
 
             if (set.StatusCode == System.Net.HttpStatusCode.OK)
             {
+                pictureBox.Image = null;
                 MessageBox.Show($"Thêm thành công nước {AdminFillDrinkID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 viewData();
             }
@@ -122,7 +123,7 @@ namespace UI
             AdminViewAllYourDrinks.DataSource = listNumber;
         }
 
-        private void AdminDeleteDrink_Click(object sender, EventArgs e)
+        private async void AdminDeleteDrink_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(AdminFillDrinkID.Text))
             {
@@ -151,7 +152,6 @@ namespace UI
                 // Xóa ảnh từ Firebase Storage
                 try
                 {
-                    var storage = new FirebaseStorage("neko-coffe-database.appspot.com");
                     var imageUrl = ResDrink.ImageURL; // Assuming the ImageURL is stored in ResDrink
                     var fileName = new Uri(imageUrl).Segments.Last();
 
@@ -161,17 +161,11 @@ namespace UI
                         fileName = fileName.Substring(1);
                     }
 
-                    var task = storage
-                        .Child("images")
-                        .Child(fileName)
-                        .DeleteAsync();
+                    var imageReference = firebaseStorage.Child(fileName);
 
-                    task.Wait(); // Wait for the delete operation to complete
+                    await imageReference.DeleteAsync();
 
-                    if (task.IsCompleted)
-                    {
-                        MessageBox.Show("Ảnh đã được xoá thành công từ Firebase Storage", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
+                    MessageBox.Show("Ảnh đã được xoá thành công từ Firebase Storage", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
@@ -189,6 +183,9 @@ namespace UI
                     AdminFillDrinkPrice.Clear();
                     AdminFillDrinkSearch.Clear();
                     AdminFillDrinkType.Clear();
+
+                    // Làm trống PictureBox
+                    pictureBox.Image = null;
                 }
                 else
                 {
@@ -201,6 +198,8 @@ namespace UI
             }
             viewData();
         }
+
+
 
 
         private void AdminUpdateDrink_Click(object sender, EventArgs e)
@@ -271,10 +270,6 @@ namespace UI
         }
 
         private void AdminFillDrinkPrice_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void AdminFillDrinkAvailable_TextChanged(object sender, EventArgs e)
         {
         }
 

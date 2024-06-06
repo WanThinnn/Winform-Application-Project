@@ -56,8 +56,8 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDrink));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDrink));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AdminUpdateDrink = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminDeleteDrink = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -70,9 +70,9 @@
             this.AdminFillDrinkSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminFillDrinkName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminFillDrinkAvailable = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnImage = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.AdminViewAllYourDrinks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -932,15 +932,6 @@
             this.AdminFillDrinkAvailable.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.AdminFillDrinkAvailable.TextLeftMargin = 5;
             // 
-            // label1
-            // 
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(454, 125);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 20);
-            this.label1.TabIndex = 64;
-            this.label1.Text = "----------------------------------------------------";
-            // 
             // btnImage
             // 
             this.btnImage.AllowAnimations = true;
@@ -1015,11 +1006,11 @@
             this.btnImage.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
             this.btnImage.OnIdleState.IconLeftImage = null;
             this.btnImage.OnIdleState.IconRightImage = null;
-            this.btnImage.OnPressedState.BorderColor = System.Drawing.Color.Black;
+            this.btnImage.OnPressedState.BorderColor = System.Drawing.Color.Chocolate;
             this.btnImage.OnPressedState.BorderRadius = 10;
             this.btnImage.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnImage.OnPressedState.BorderThickness = 1;
-            this.btnImage.OnPressedState.FillColor = System.Drawing.Color.Black;
+            this.btnImage.OnPressedState.FillColor = System.Drawing.Color.Sienna;
             this.btnImage.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnImage.OnPressedState.IconLeftImage = null;
             this.btnImage.OnPressedState.IconRightImage = null;
@@ -1042,13 +1033,28 @@
             this.pictureBox.TabIndex = 67;
             this.pictureBox.TabStop = false;
             // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel1.Location = new System.Drawing.Point(463, 128);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(252, 25);
+            this.bunifuLabel1.TabIndex = 68;
+            this.bunifuLabel1.Text = "------------------------------------";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // AdminDrink
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.btnImage);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.AdminFillDrinkAvailable);
             this.Controls.Add(this.AdminFillDrinkName);
             this.Controls.Add(this.AdminFillDrinkSearch);
@@ -1067,6 +1073,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.AdminViewAllYourDrinks)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1084,8 +1091,8 @@
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillDrinkName;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillDrinkSearch;
         private Bunifu.UI.WinForms.BunifuDropdown AdminFillDrinkAvailable;
-        private System.Windows.Forms.Label label1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnImage;
         private System.Windows.Forms.PictureBox pictureBox;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
     }
 }
