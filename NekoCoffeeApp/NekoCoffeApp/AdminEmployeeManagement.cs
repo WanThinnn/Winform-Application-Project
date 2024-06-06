@@ -89,7 +89,7 @@ namespace UI
                 Shift = AdminFillEmployeeShift.Text,
                 PhoneNumber = AdminFillEmployeePhoneNumber.Text,
                 Email = AdminFillEmployeeEmail.Text,
-                Salary = AdminFillEmployeeSalary.Text
+                Salary = int.Parse(AdminFillEmployeeSalary.Text)
             };
 
             SetResponse set = emp.Set(@"Employees/" + AdminFillEmployeeID.Text, employee);
@@ -190,7 +190,7 @@ namespace UI
                     Shift = AdminFillEmployeeShift.Text,
                     PhoneNumber = AdminFillEmployeePhoneNumber.Text,
                     Email = AdminFillEmployeeEmail.Text,
-                    Salary = AdminFillEmployeeSalary.Text
+                    Salary = int.Parse(AdminFillEmployeeSalary.Text)
                 };
                 FirebaseResponse update = emp.Update(@"Employees/" + AdminFillEmployeeID.Text, employee);
                 if (update.StatusCode == System.Net.HttpStatusCode.OK)
@@ -231,7 +231,7 @@ namespace UI
                 AdminFillEmployeeShift.Text = existingEmployee.Shift;
                 AdminFillEmployeePhoneNumber.Text = existingEmployee.PhoneNumber;
                 AdminFillEmployeeEmail.Text = existingEmployee.Email;
-                AdminFillEmployeeSalary.Text = existingEmployee.Salary;
+                AdminFillEmployeeSalary.Text = existingEmployee.Salary.ToString();
             
         }
 

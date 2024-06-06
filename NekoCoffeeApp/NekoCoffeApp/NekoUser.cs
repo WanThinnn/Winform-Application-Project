@@ -18,6 +18,10 @@ namespace UI
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         public string Position { get; set; }
+
+        public string Birthday { get; set; }
+
+        public string Master { get; set; }
         public int Point { get; set; }
 
         private static string error1 = "Tài khoản không tồn tại!";

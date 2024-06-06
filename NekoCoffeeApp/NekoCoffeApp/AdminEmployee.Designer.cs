@@ -126,7 +126,7 @@
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(72, 63);
+            this.bunifuLabel1.Size = new System.Drawing.Size(49, 48);
             this.bunifuLabel1.TabIndex = 1;
             this.bunifuLabel1.Text = "Name:\r\nContact:\r\nPosition: \r\n";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -166,7 +166,7 @@
             this.bunifuDatePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuDatePicker1.MinimumSize = new System.Drawing.Size(4, 32);
             this.bunifuDatePicker1.Name = "bunifuDatePicker1";
-            this.bunifuDatePicker1.Size = new System.Drawing.Size(414, 35);
+            this.bunifuDatePicker1.Size = new System.Drawing.Size(414, 32);
             this.bunifuDatePicker1.TabIndex = 33;
             // 
             // AdminAdjustEmployeeBtn
@@ -251,7 +251,7 @@
             this.AdminAdjustEmployeeBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAdjustEmployeeBtn.OnPressedState.IconLeftImage = null;
             this.AdminAdjustEmployeeBtn.OnPressedState.IconRightImage = null;
-            this.AdminAdjustEmployeeBtn.Size = new System.Drawing.Size(186, 44);
+            this.AdminAdjustEmployeeBtn.Size = new System.Drawing.Size(162, 44);
             this.AdminAdjustEmployeeBtn.TabIndex = 70;
             this.AdminAdjustEmployeeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAdjustEmployeeBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -306,7 +306,7 @@
             this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(72, 63);
+            this.bunifuLabel2.Size = new System.Drawing.Size(49, 48);
             this.bunifuLabel2.TabIndex = 1;
             this.bunifuLabel2.Text = "Name:\r\nContact:\r\nPosition: \r\n";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -358,7 +358,7 @@
             this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(72, 63);
+            this.bunifuLabel3.Size = new System.Drawing.Size(49, 48);
             this.bunifuLabel3.TabIndex = 1;
             this.bunifuLabel3.Text = "Name:\r\nContact:\r\nPosition: \r\n";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -410,7 +410,7 @@
             this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(72, 63);
+            this.bunifuLabel4.Size = new System.Drawing.Size(49, 48);
             this.bunifuLabel4.TabIndex = 1;
             this.bunifuLabel4.Text = "Name:\r\nContact:\r\nPosition: \r\n";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -473,7 +473,7 @@
             this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(72, 63);
+            this.bunifuLabel5.Size = new System.Drawing.Size(49, 48);
             this.bunifuLabel5.TabIndex = 1;
             this.bunifuLabel5.Text = "Name:\r\nContact:\r\nPosition: \r\n";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -525,7 +525,7 @@
             this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(72, 63);
+            this.bunifuLabel6.Size = new System.Drawing.Size(49, 48);
             this.bunifuLabel6.TabIndex = 1;
             this.bunifuLabel6.Text = "Name:\r\nContact:\r\nPosition: \r\n";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -596,7 +596,7 @@
             this.EmployeeLoadBtn.IdleIconLeftImage = null;
             this.EmployeeLoadBtn.IdleIconRightImage = null;
             this.EmployeeLoadBtn.IndicateFocus = false;
-            this.EmployeeLoadBtn.Location = new System.Drawing.Point(199, 7);
+            this.EmployeeLoadBtn.Location = new System.Drawing.Point(175, 6);
             this.EmployeeLoadBtn.Margin = new System.Windows.Forms.Padding(4);
             this.EmployeeLoadBtn.Name = "EmployeeLoadBtn";
             this.EmployeeLoadBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -631,7 +631,7 @@
             this.EmployeeLoadBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.EmployeeLoadBtn.OnPressedState.IconLeftImage = null;
             this.EmployeeLoadBtn.OnPressedState.IconRightImage = null;
-            this.EmployeeLoadBtn.Size = new System.Drawing.Size(68, 44);
+            this.EmployeeLoadBtn.Size = new System.Drawing.Size(92, 44);
             this.EmployeeLoadBtn.TabIndex = 70;
             this.EmployeeLoadBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.EmployeeLoadBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;

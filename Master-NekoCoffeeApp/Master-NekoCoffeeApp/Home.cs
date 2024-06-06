@@ -56,7 +56,7 @@ namespace Master_NekoCoffeeApp
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-            User frm = new User();
+            User frm = new User(this.Username);
             frm.Show();
 
         }

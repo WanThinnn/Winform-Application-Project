@@ -24,9 +24,11 @@ namespace Master_NekoCoffeeApp
 {
     public partial class User : Form
     {
-        public User()
+        string MasterUserName;
+        public User(string MasterUserName)
         {
             InitializeComponent();
+            this.MasterUserName = MasterUserName;
         }
         IFirebaseConfig ifc = new FirebaseConfig()
         {
@@ -136,10 +138,11 @@ namespace Master_NekoCoffeeApp
                         Gender = dbGender.Text,
                         PhoneNumber = tbPhone.Text,
                         Email = tbEmail.Text.ToLower(),
-                        Position = "KH",
+                        Position = tbType.Text,
                         RegistrationDate = DateTime.Now, // Gán ngày đăng ký tại đây
                         Point = 0,
-                        Birthday = txbBirthday.Text
+                        Birthday = txbBirthday.Text,
+                        Master = this.MasterUserName
                     };
 
                     SetResponse set = await client.SetAsync("Users/" + txbUsername.Text, user);
@@ -218,6 +221,7 @@ namespace Master_NekoCoffeeApp
             tbDate.Text = user.RegistrationDate.ToString();
             dbGender.Text = user.Gender;
             txbBirthday.Text = user.Birthday;
+            txbChinhanh.Text = user.Master;
             UserAdd.Enabled = false;
             UserUpdate.Enabled = true;
             UserDelete.Enabled = true;
@@ -314,7 +318,8 @@ namespace Master_NekoCoffeeApp
                         Position = "KH",
                         RegistrationDate = user.RegistrationDate, // giữ nguyên ngày đăng ký
                         Point = user.Point, // giữ nguyên điểm
-                        Birthday = txbBirthday.Text
+                        Birthday = txbBirthday.Text,
+                        Master = this.MasterUserName
                     };
 
                     SetResponse up = await client.SetAsync("Users/" + tbUsername.Text, updateData);

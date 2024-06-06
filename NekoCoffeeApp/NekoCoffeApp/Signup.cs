@@ -115,7 +115,9 @@ namespace UI
                 Email = Email.ToLower(),
                 Position = "KH",
                 RegistrationDate = DateTime.Now, // Gán ngày đăng ký tại đây,
-                Point = 0
+                Point = 0,
+                Birthday = txbBirthday.Text,
+                Master = ""
             };
 
             SetResponse set = client.Set(@"Users/" + txtUserName.Text, user);

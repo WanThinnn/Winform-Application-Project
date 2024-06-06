@@ -471,6 +471,18 @@
       <DependentUpon>AdminFP.cs</DependentUpon>
     </Compile>
     <Compile Include="CountClass.cs" />
+    <Compile Include="edit_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_Customer.Designer.cs">
+      <DependentUpon>edit_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit_Employee_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_Employee_2.Designer.cs">
+      <DependentUpon>edit_Employee_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="edit_Table.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -483,6 +495,7 @@
     <Compile Include="Employee_Detail.Designer.cs">
       <DependentUpon>Employee_Detail.cs</DependentUpon>
     </Compile>
+    <Compile Include="MasterUser.cs" />
     <Compile Include="NekoCat.cs" />
     <Compile Include="NekoCustomer.cs" />
     <Compile Include="edit_Order.cs">
@@ -608,6 +621,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminFP.resx">
       <DependentUpon>AdminFP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_Customer.resx">
+      <DependentUpon>edit_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_Employee_2.resx">
+      <DependentUpon>edit_Employee_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="edit_Order.resx">
       <DependentUpon>edit_Order.cs</DependentUpon>

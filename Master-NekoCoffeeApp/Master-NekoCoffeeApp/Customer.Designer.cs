@@ -581,7 +581,7 @@
             this.tbDate.Padding = new System.Windows.Forms.Padding(4);
             this.tbDate.PasswordChar = '\0';
             this.tbDate.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.tbDate.PlaceholderText = "Date Join";
+            this.tbDate.PlaceholderText = "Ngày tham gia";
             this.tbDate.ReadOnly = true;
             this.tbDate.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.tbDate.SelectedText = "";
@@ -595,7 +595,7 @@
             this.tbDate.TextMarginBottom = 0;
             this.tbDate.TextMarginLeft = 3;
             this.tbDate.TextMarginTop = 0;
-            this.tbDate.TextPlaceholder = "Date Join";
+            this.tbDate.TextPlaceholder = "Ngày tham gia";
             this.tbDate.UseSystemPasswordChar = false;
             this.tbDate.WordWrap = true;
             // 
@@ -731,7 +731,7 @@
             this.tbPoint.Padding = new System.Windows.Forms.Padding(4);
             this.tbPoint.PasswordChar = '\0';
             this.tbPoint.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.tbPoint.PlaceholderText = "Point";
+            this.tbPoint.PlaceholderText = "Điểm";
             this.tbPoint.ReadOnly = true;
             this.tbPoint.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.tbPoint.SelectedText = "";
@@ -745,7 +745,7 @@
             this.tbPoint.TextMarginBottom = 0;
             this.tbPoint.TextMarginLeft = 3;
             this.tbPoint.TextMarginTop = 0;
-            this.tbPoint.TextPlaceholder = "Point";
+            this.tbPoint.TextPlaceholder = "Điểm";
             this.tbPoint.UseSystemPasswordChar = false;
             this.tbPoint.WordWrap = true;
             // 
@@ -806,7 +806,7 @@
             this.tbType.Padding = new System.Windows.Forms.Padding(4);
             this.tbType.PasswordChar = '\0';
             this.tbType.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.tbType.PlaceholderText = "User Type";
+            this.tbType.PlaceholderText = "Loại KH";
             this.tbType.ReadOnly = true;
             this.tbType.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.tbType.SelectedText = "";
@@ -820,7 +820,7 @@
             this.tbType.TextMarginBottom = 0;
             this.tbType.TextMarginLeft = 3;
             this.tbType.TextMarginTop = 0;
-            this.tbType.TextPlaceholder = "User Type";
+            this.tbType.TextPlaceholder = "Loại KH";
             this.tbType.UseSystemPasswordChar = false;
             this.tbType.WordWrap = true;
             // 

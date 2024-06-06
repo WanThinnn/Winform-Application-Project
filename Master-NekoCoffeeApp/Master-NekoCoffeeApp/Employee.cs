@@ -173,7 +173,8 @@ namespace Master_NekoCoffeeApp
                         Salary = int.Parse(txbSalary.Text),
                         Address = txbAdrr.Text,
                         Gender = dbGender.Text,
-                        DateOfBirth = txbBirthday.Text
+                        DateOfBirth = txbBirthday.Text,
+                        Shift = txbShift.Text
 
                     };
 
@@ -259,6 +260,8 @@ namespace Master_NekoCoffeeApp
             txbAdrr.Text = emp.Address;
             txbEmail.Text = emp.Email;
             dbGender.SelectedItem = emp.Gender;
+
+            
             btnAdd.Enabled = false;
             btnUpdate.Enabled = true;
             btnDelete.Enabled = true;
@@ -339,7 +342,8 @@ namespace Master_NekoCoffeeApp
                         Salary = int.Parse(txbSalary.Text),
                         Address = txbAdrr.Text,
                         Gender = dbGender.Text,
-                        DateOfBirth = txbBirthday.Text
+                        DateOfBirth = txbBirthday.Text,
+                        Shift = txbShift.Text
                     };
 
                     // Tạo mục mới với tên mới

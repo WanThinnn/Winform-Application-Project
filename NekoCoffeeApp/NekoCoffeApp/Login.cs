@@ -63,7 +63,7 @@ namespace UI
                 if (ResUser.Position == "Master" || ResUser.Position == "Admin")
                 {
       
-                    AdminFP admin = new AdminFP();
+                    AdminFP admin = new AdminFP(ResUser.Master);
                     this.Hide();
                     admin.ShowDialog();
                     this.Show();

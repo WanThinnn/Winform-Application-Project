@@ -41,14 +41,20 @@ namespace UI
 
         private void AdminEmployeeBtn_Click(object sender, EventArgs e)
         {
-            if (!AdminMainPanel.Controls.Contains(AdminEmployee.Instance))
+            string masterUserName = this.MasterUserName; // Assuming MasterUserName is available in this context
+
+            AdminEmployee adminEmployee = AdminEmployee.Instance(masterUserName);
+
+            if (!AdminMainPanel.Controls.Contains(adminEmployee))
             {
-                AdminMainPanel.Controls.Add(AdminEmployee.Instance);
-                AdminEmployee.Instance.Dock = DockStyle.Fill;
-                AdminEmployee.Instance.BringToFront();
+                AdminMainPanel.Controls.Add(adminEmployee);
+                adminEmployee.Dock = DockStyle.Fill;
+                adminEmployee.BringToFront();
             }
             else
-                AdminEmployee.Instance.BringToFront();
+            {
+                adminEmployee.BringToFront();
+            }
         }
 
         private void AdminFinancialBtn_Click(object sender, EventArgs e)
@@ -87,15 +93,18 @@ namespace UI
                 AdminReview.Instance.BringToFront();
         }
 
-        public AdminFP()
+        string MasterUserName;
+        public AdminFP(string MasterUserName)
         {
             InitializeComponent();
             //AdminEmployee.SwitchToAdminAdjustClicked += AdminEmployee_SwitchToAdminAdjustClicked;
+            this.MasterUserName = MasterUserName;
         }
 
         private void AdminEmployee_SwitchToAdminAdjustClicked(object sender, EventArgs e)
         {
-            this.Controls.Remove(AdminEmployee.Instance);
+            string masterUserName = this.MasterUserName;
+            this.Controls.Remove(AdminEmployee.Instance(masterUserName));
 
             AdminAdjust adminAdjustControl = new AdminAdjust();
             this.Controls.Add(AdminAdjust.Instance);

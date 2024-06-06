@@ -20,6 +20,8 @@ namespace Master_NekoCoffeeApp
         public int Point { get; set; }
         public string Birthday { get; set; }
 
+        public string Master { get; set; }
+
         private static string error1 = "Tài khoản không tồn tại!";
         private static string error2 = "Cảnh báo";
         public DateTime RegistrationDate { get; set; } // Thêm thuộc tính này

@@ -77,6 +77,10 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties38 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties39 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties40 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties41 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties42 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties43 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties44 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.label1 = new System.Windows.Forms.Label();
             this.tbUsername = new Bunifu.UI.WinForms.BunifuTextBox();
             this.UserView = new Bunifu.UI.WinForms.BunifuDataGridView();
@@ -103,6 +107,7 @@
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.txbBirthday = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txbChinhanh = new Bunifu.UI.WinForms.BunifuTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.UserView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -853,10 +858,10 @@
             this.tbType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
             this.tbType.BackColor = System.Drawing.Color.Transparent;
             this.tbType.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tbType.BackgroundImage")));
-            this.tbType.BorderColorActive = System.Drawing.Color.Silver;
+            this.tbType.BorderColorActive = System.Drawing.Color.DodgerBlue;
             this.tbType.BorderColorDisabled = System.Drawing.Color.Silver;
-            this.tbType.BorderColorHover = System.Drawing.Color.Silver;
-            this.tbType.BorderColorIdle = System.Drawing.Color.Silver;
+            this.tbType.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.tbType.BorderColorIdle = System.Drawing.Color.Black;
             this.tbType.BorderRadius = 30;
             this.tbType.BorderThickness = 1;
             this.tbType.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -878,7 +883,7 @@
             this.tbType.Modified = false;
             this.tbType.Multiline = false;
             this.tbType.Name = "tbType";
-            stateProperties17.BorderColor = System.Drawing.Color.Silver;
+            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
             stateProperties17.FillColor = System.Drawing.Color.Empty;
             stateProperties17.ForeColor = System.Drawing.Color.Empty;
             stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -888,12 +893,12 @@
             stateProperties18.ForeColor = System.Drawing.Color.Transparent;
             stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.tbType.OnDisabledState = stateProperties18;
-            stateProperties19.BorderColor = System.Drawing.Color.Silver;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties19.FillColor = System.Drawing.Color.Empty;
             stateProperties19.ForeColor = System.Drawing.Color.Empty;
             stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbType.OnHoverState = stateProperties19;
-            stateProperties20.BorderColor = System.Drawing.Color.Silver;
+            stateProperties20.BorderColor = System.Drawing.Color.Black;
             stateProperties20.FillColor = System.Drawing.Color.White;
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -901,8 +906,8 @@
             this.tbType.Padding = new System.Windows.Forms.Padding(4);
             this.tbType.PasswordChar = '\0';
             this.tbType.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.tbType.PlaceholderText = "User Type";
-            this.tbType.ReadOnly = true;
+            this.tbType.PlaceholderText = "Loại KH";
+            this.tbType.ReadOnly = false;
             this.tbType.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.tbType.SelectedText = "";
             this.tbType.SelectionLength = 0;
@@ -915,7 +920,7 @@
             this.tbType.TextMarginBottom = 0;
             this.tbType.TextMarginLeft = 3;
             this.tbType.TextMarginTop = 0;
-            this.tbType.TextPlaceholder = "User Type";
+            this.tbType.TextPlaceholder = "Loại KH";
             this.tbType.UseSystemPasswordChar = false;
             this.tbType.WordWrap = true;
             // 
@@ -976,7 +981,7 @@
             this.tbPoint.Padding = new System.Windows.Forms.Padding(4);
             this.tbPoint.PasswordChar = '\0';
             this.tbPoint.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.tbPoint.PlaceholderText = "Point";
+            this.tbPoint.PlaceholderText = "Điểm";
             this.tbPoint.ReadOnly = true;
             this.tbPoint.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.tbPoint.SelectedText = "";
@@ -990,7 +995,7 @@
             this.tbPoint.TextMarginBottom = 0;
             this.tbPoint.TextMarginLeft = 3;
             this.tbPoint.TextMarginTop = 0;
-            this.tbPoint.TextPlaceholder = "Point";
+            this.tbPoint.TextPlaceholder = "Điểm";
             this.tbPoint.UseSystemPasswordChar = false;
             this.tbPoint.WordWrap = true;
             // 
@@ -1126,21 +1131,21 @@
             this.tbDate.Padding = new System.Windows.Forms.Padding(4);
             this.tbDate.PasswordChar = '\0';
             this.tbDate.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.tbDate.PlaceholderText = "Date Join";
+            this.tbDate.PlaceholderText = "Ngày tham gia";
             this.tbDate.ReadOnly = true;
             this.tbDate.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.tbDate.SelectedText = "";
             this.tbDate.SelectionLength = 0;
             this.tbDate.SelectionStart = 0;
             this.tbDate.ShortcutsEnabled = true;
-            this.tbDate.Size = new System.Drawing.Size(253, 37);
+            this.tbDate.Size = new System.Drawing.Size(126, 37);
             this.tbDate.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tbDate.TabIndex = 83;
             this.tbDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tbDate.TextMarginBottom = 0;
             this.tbDate.TextMarginLeft = 3;
             this.tbDate.TextMarginTop = 0;
-            this.tbDate.TextPlaceholder = "Date Join";
+            this.tbDate.TextPlaceholder = "Ngày tham gia";
             this.tbDate.UseSystemPasswordChar = false;
             this.tbDate.WordWrap = true;
             // 
@@ -1562,12 +1567,88 @@
             this.txbBirthday.UseSystemPasswordChar = false;
             this.txbBirthday.WordWrap = true;
             // 
+            // txbChinhanh
+            // 
+            this.txbChinhanh.AcceptsReturn = false;
+            this.txbChinhanh.AcceptsTab = false;
+            this.txbChinhanh.AnimationSpeed = 200;
+            this.txbChinhanh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txbChinhanh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txbChinhanh.BackColor = System.Drawing.Color.Transparent;
+            this.txbChinhanh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txbChinhanh.BackgroundImage")));
+            this.txbChinhanh.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txbChinhanh.BorderColorDisabled = System.Drawing.Color.Silver;
+            this.txbChinhanh.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txbChinhanh.BorderColorIdle = System.Drawing.Color.Black;
+            this.txbChinhanh.BorderRadius = 30;
+            this.txbChinhanh.BorderThickness = 1;
+            this.txbChinhanh.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txbChinhanh.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbChinhanh.DefaultFont = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 8F);
+            this.txbChinhanh.DefaultText = "";
+            this.txbChinhanh.FillColor = System.Drawing.Color.White;
+            this.txbChinhanh.HideSelection = true;
+            this.txbChinhanh.IconLeft = null;
+            this.txbChinhanh.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbChinhanh.IconPadding = 10;
+            this.txbChinhanh.IconRight = null;
+            this.txbChinhanh.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbChinhanh.Lines = new string[0];
+            this.txbChinhanh.Location = new System.Drawing.Point(1001, 485);
+            this.txbChinhanh.Margin = new System.Windows.Forms.Padding(4);
+            this.txbChinhanh.MaxLength = 32767;
+            this.txbChinhanh.MinimumSize = new System.Drawing.Size(2, 2);
+            this.txbChinhanh.Modified = false;
+            this.txbChinhanh.Multiline = false;
+            this.txbChinhanh.Name = "txbChinhanh";
+            stateProperties41.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties41.FillColor = System.Drawing.Color.Empty;
+            stateProperties41.ForeColor = System.Drawing.Color.Empty;
+            stateProperties41.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbChinhanh.OnActiveState = stateProperties41;
+            stateProperties42.BorderColor = System.Drawing.Color.Silver;
+            stateProperties42.FillColor = System.Drawing.Color.Transparent;
+            stateProperties42.ForeColor = System.Drawing.Color.Transparent;
+            stateProperties42.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txbChinhanh.OnDisabledState = stateProperties42;
+            stateProperties43.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties43.FillColor = System.Drawing.Color.Empty;
+            stateProperties43.ForeColor = System.Drawing.Color.Empty;
+            stateProperties43.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbChinhanh.OnHoverState = stateProperties43;
+            stateProperties44.BorderColor = System.Drawing.Color.Black;
+            stateProperties44.FillColor = System.Drawing.Color.White;
+            stateProperties44.ForeColor = System.Drawing.Color.Empty;
+            stateProperties44.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbChinhanh.OnIdleState = stateProperties44;
+            this.txbChinhanh.Padding = new System.Windows.Forms.Padding(4);
+            this.txbChinhanh.PasswordChar = '\0';
+            this.txbChinhanh.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txbChinhanh.PlaceholderText = "Chi nhánh";
+            this.txbChinhanh.ReadOnly = false;
+            this.txbChinhanh.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txbChinhanh.SelectedText = "";
+            this.txbChinhanh.SelectionLength = 0;
+            this.txbChinhanh.SelectionStart = 0;
+            this.txbChinhanh.ShortcutsEnabled = true;
+            this.txbChinhanh.Size = new System.Drawing.Size(126, 37);
+            this.txbChinhanh.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txbChinhanh.TabIndex = 131;
+            this.txbChinhanh.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txbChinhanh.TextMarginBottom = 0;
+            this.txbChinhanh.TextMarginLeft = 3;
+            this.txbChinhanh.TextMarginTop = 0;
+            this.txbChinhanh.TextPlaceholder = "Chi nhánh";
+            this.txbChinhanh.UseSystemPasswordChar = false;
+            this.txbChinhanh.WordWrap = true;
+            // 
             // User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1159, 599);
+            this.Controls.Add(this.txbChinhanh);
             this.Controls.Add(this.bunifuLabel8);
             this.Controls.Add(this.txbBirthday);
             this.Controls.Add(this.bunifuLabel7);
@@ -1635,5 +1716,6 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
         private Bunifu.UI.WinForms.BunifuTextBox txbBirthday;
+        private Bunifu.UI.WinForms.BunifuTextBox txbChinhanh;
     }
 }

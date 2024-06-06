@@ -18,7 +18,9 @@ namespace UI
         public string Shift { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-        public string Salary { get; set; }
+        public int Salary { get; set; }
+
+        public string Address { get; set; }
 
 
         private static string error1 = "Không tồn tại!";

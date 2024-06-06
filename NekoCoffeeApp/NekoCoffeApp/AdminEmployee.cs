@@ -16,25 +16,28 @@ namespace UI
 {
     public partial class AdminEmployee : UserControl
     {
-        public AdminEmployee()
+        private string _masterUserName;
+        public AdminEmployee(string masterUserName)
         {
             InitializeComponent();
+            _masterUserName = masterUserName;
         }
 
         private static AdminEmployee _instance;
-        public static AdminEmployee Instance
+        public static AdminEmployee Instance(string masterUserName)
         {
-            get
+            if (_instance == null || _instance._masterUserName != masterUserName)
             {
-                if (_instance == null)
-                    _instance = new AdminEmployee();
-                return _instance;
+                _instance = new AdminEmployee(masterUserName);
             }
+            return _instance;
+
         }
 
         private void AdminAdjustEmployee_Click(object sender, EventArgs e)
         {
-            edit_Employee employee_Edit = new edit_Employee();
+
+            edit_Employee_2 employee_Edit = new edit_Employee_2(_masterUserName);
             employee_Edit.Show();
         }
 
@@ -105,7 +108,6 @@ namespace UI
 
         private async void EmployeeLoadBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("EmployeeLoadBtn_Click started"); // Kiểm tra sự kiện click được kích hoạt
             try
             {
                 if (empp == null)
@@ -117,47 +119,100 @@ namespace UI
                 {
                     throw new Exception("Failed to connect to Firebase.");
                 }
+                var data = await empp.GetAsync($"/Employees_{_masterUserName}/");
 
-                var response = await empp.GetAsync(@"Employees/");
-                if (response == null || string.IsNullOrEmpty(response.Body))
+                // Check if data or data.Body is null
+                if (data == null || data.Body == null)
                 {
-                    throw new Exception("Received an empty response from Firebase.");
+
+                    return;
                 }
 
-                var json = response.Body;
-                //MessageBox.Show($"Received JSON: {json}"); // Kiểm tra JSON nhận được
+                string jsonData = data.Body;
 
-                var employees = JsonConvert.DeserializeObject<List<NekoEmployee>>(json);
 
-                if (employees == null)
+                if (jsonData.TrimStart().StartsWith("["))
                 {
-                    throw new Exception("Failed to deserialize employees data.");
-                }
+                    // Nếu là mảng JSON, xử lý nó như một danh sách
+                    var mListArray = JsonConvert.DeserializeObject<List<NekoEmployee>>(jsonData);
 
-                // Lọc các phần tử null khỏi danh sách nhân viên
-                employees = employees.Where(employee => employee != null).ToList();
-
-                // Xóa các controls cũ trên Employee_FlowLayoutPanel nếu có
-                Employee_FlowLayoutPanel.Controls.Clear();
-
-                DateTime now = DateTime.Now;
-                int currentHour = now.Hour;
-                string currentShift = GetCurrentShift(currentHour);
-                MessageBox.Show($"Current Hour: {currentHour}, Current Shift: {currentShift}"); // Kiểm tra giá trị của currentShift
-
-                foreach (var employee in employees)
-                {
-                    if (employee.Shift == currentShift)
+                    // Check if mListArray is null or empty
+                    if (mListArray == null || !mListArray.Any())
                     {
-                        Button btn = new Button();
-                        btn.Size = new Size(109, 109);
-                        btn.BackColor = Color.LightBlue;
-                        btn.Text = $"ID: {employee.ID}\nName: {employee.Name}\nShift: {employee.Shift}";
-                        btn.Click += (s, args) => OpenEmployeeDetail(employee);
-                        Employee_FlowLayoutPanel.Controls.Add(btn);
-                        MessageBox.Show($"Added button for employee: {employee.Name}"); // Kiểm tra nút được thêm
+
+                        return;
+                    }
+
+
+                    // Lọc các phần tử null khỏi danh sách nhân viên
+                    mListArray = mListArray.Where(employee => employee != null).ToList();
+
+                    // Xóa các controls cũ trên Employee_FlowLayoutPanel nếu có
+                    Employee_FlowLayoutPanel.Controls.Clear();
+
+                    DateTime now = DateTime.Now;
+                    int currentHour = now.Hour;
+                    string currentShift = GetCurrentShift(currentHour);
+                    //MessageBox.Show($"Current Hour: {currentHour}, Current Shift: {currentShift}"); // Kiểm tra giá trị của currentShift
+
+                    foreach (var employee in mListArray)
+                    {
+                        if (employee.Shift == currentShift)
+                        {
+                            Button btn = new Button();
+                            btn.Size = new Size(109, 109);
+                            btn.BackColor = Color.LightBlue;
+                            btn.Text = $"ID: {employee.ID}\nName: {employee.Name}\nShift: {employee.Shift}";
+                            btn.Click += (s, args) => OpenEmployeeDetail(employee);
+                            Employee_FlowLayoutPanel.Controls.Add(btn);
+                            //MessageBox.Show($"Added button for employee: {employee.Name}"); // Kiểm tra nút được thêm
+                        }
+                    }
+
+                }
+                else
+                {
+                    // Nếu không phải mảng JSON, xử lý nó như một đối tượng JSON
+                    var mList = JsonConvert.DeserializeObject<IDictionary<string, NekoEmployee>>(jsonData);
+
+                    // Check if mList is null or empty
+                    if (mList == null || !mList.Any())
+                    {
+
+                        return;
+                    }
+
+                    var listNumber = mList.Values.ToList();
+                    // Lọc các phần tử null khỏi danh sách nhân viên
+                    listNumber = listNumber.Where(employee => employee != null).ToList();
+
+                    // Xóa các controls cũ trên Employee_FlowLayoutPanel nếu có
+                    Employee_FlowLayoutPanel.Controls.Clear();
+
+                    DateTime now = DateTime.Now;
+                    int currentHour = now.Hour;
+                    string currentShift = GetCurrentShift(currentHour);
+                    //MessageBox.Show($"Current Hour: {currentHour}, Current Shift: {currentShift}"); // Kiểm tra giá trị của currentShift
+
+                    foreach (var employee in listNumber)
+                    {
+                        if (employee.Shift == currentShift)
+                        {
+                            Button btn = new Button();
+                            btn.Size = new Size(109, 109);
+                            btn.BackColor = Color.LightBlue;
+                            btn.Text = $"ID: {employee.ID}\nName: {employee.Name}\nShift: {employee.Shift}";
+                            btn.Click += (s, args) => OpenEmployeeDetail(employee);
+                            Employee_FlowLayoutPanel.Controls.Add(btn);
+                            //MessageBox.Show($"Added button for employee: {employee.Name}"); // Kiểm tra nút được thêm
+                        }
                     }
                 }
+                
+                
+                
+
+               
 
                 
             }
@@ -188,6 +243,7 @@ namespace UI
             {
                 MessageBox.Show($"Kiểm tra lại mạng: {ex.Message}", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            EmployeeLoadBtn_Click(sender, e);
         }
 
         private string GetCurrentShift(int currentHour)
@@ -203,6 +259,10 @@ namespace UI
             else if (currentHour >= 18 && currentHour < 23)
             {
                 return "3";
+            }
+            else if (currentHour >= 1 && currentHour < 7)
+            {
+                return "4";
             }
             else
             {

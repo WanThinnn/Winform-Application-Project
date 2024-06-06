@@ -69,6 +69,10 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties33 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties34 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties35 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties36 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -93,6 +97,8 @@
             this.txbSalary = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.dbGender = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.txbShift = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.DataView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1327,7 +1333,7 @@
             this.txbSalary.SelectionLength = 0;
             this.txbSalary.SelectionStart = 0;
             this.txbSalary.ShortcutsEnabled = true;
-            this.txbSalary.Size = new System.Drawing.Size(253, 38);
+            this.txbSalary.Size = new System.Drawing.Size(140, 38);
             this.txbSalary.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txbSalary.TabIndex = 171;
             this.txbSalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1402,11 +1408,104 @@
             this.dbGender.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.dbGender.TextLeftMargin = 5;
             // 
+            // txbShift
+            // 
+            this.txbShift.AcceptsReturn = false;
+            this.txbShift.AcceptsTab = false;
+            this.txbShift.AnimationSpeed = 200;
+            this.txbShift.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txbShift.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txbShift.BackColor = System.Drawing.Color.Transparent;
+            this.txbShift.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txbShift.BackgroundImage")));
+            this.txbShift.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txbShift.BorderColorDisabled = System.Drawing.Color.Black;
+            this.txbShift.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txbShift.BorderColorIdle = System.Drawing.Color.Black;
+            this.txbShift.BorderRadius = 30;
+            this.txbShift.BorderThickness = 1;
+            this.txbShift.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txbShift.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbShift.DefaultFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbShift.DefaultText = "";
+            this.txbShift.FillColor = System.Drawing.Color.White;
+            this.txbShift.HideSelection = true;
+            this.txbShift.IconLeft = null;
+            this.txbShift.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbShift.IconPadding = 10;
+            this.txbShift.IconRight = null;
+            this.txbShift.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbShift.Lines = new string[0];
+            this.txbShift.Location = new System.Drawing.Point(1012, 513);
+            this.txbShift.Margin = new System.Windows.Forms.Padding(4);
+            this.txbShift.MaxLength = 32767;
+            this.txbShift.MinimumSize = new System.Drawing.Size(2, 2);
+            this.txbShift.Modified = false;
+            this.txbShift.Multiline = false;
+            this.txbShift.Name = "txbShift";
+            stateProperties33.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties33.FillColor = System.Drawing.Color.Empty;
+            stateProperties33.ForeColor = System.Drawing.Color.Empty;
+            stateProperties33.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbShift.OnActiveState = stateProperties33;
+            stateProperties34.BorderColor = System.Drawing.Color.Black;
+            stateProperties34.FillColor = System.Drawing.Color.Transparent;
+            stateProperties34.ForeColor = System.Drawing.Color.Transparent;
+            stateProperties34.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txbShift.OnDisabledState = stateProperties34;
+            stateProperties35.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties35.FillColor = System.Drawing.Color.Empty;
+            stateProperties35.ForeColor = System.Drawing.Color.Empty;
+            stateProperties35.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbShift.OnHoverState = stateProperties35;
+            stateProperties36.BorderColor = System.Drawing.Color.Black;
+            stateProperties36.FillColor = System.Drawing.Color.White;
+            stateProperties36.ForeColor = System.Drawing.Color.Empty;
+            stateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbShift.OnIdleState = stateProperties36;
+            this.txbShift.Padding = new System.Windows.Forms.Padding(4);
+            this.txbShift.PasswordChar = '\0';
+            this.txbShift.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txbShift.PlaceholderText = "";
+            this.txbShift.ReadOnly = false;
+            this.txbShift.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txbShift.SelectedText = "";
+            this.txbShift.SelectionLength = 0;
+            this.txbShift.SelectionStart = 0;
+            this.txbShift.ShortcutsEnabled = true;
+            this.txbShift.Size = new System.Drawing.Size(109, 38);
+            this.txbShift.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txbShift.TabIndex = 175;
+            this.txbShift.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txbShift.TextMarginBottom = 0;
+            this.txbShift.TextMarginLeft = 3;
+            this.txbShift.TextMarginTop = 0;
+            this.txbShift.TextPlaceholder = "";
+            this.txbShift.UseSystemPasswordChar = false;
+            this.txbShift.WordWrap = true;
+            // 
+            // bunifuLabel9
+            // 
+            this.bunifuLabel9.AllowParentOverrides = false;
+            this.bunifuLabel9.AutoEllipsis = false;
+            this.bunifuLabel9.CursorType = null;
+            this.bunifuLabel9.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel9.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.bunifuLabel9.Location = new System.Drawing.Point(1012, 490);
+            this.bunifuLabel9.Name = "bunifuLabel9";
+            this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel9.Size = new System.Drawing.Size(47, 16);
+            this.bunifuLabel9.TabIndex = 176;
+            this.bunifuLabel9.Text = "Ca làm:";
+            this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // Employee
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1159, 599);
+            this.Controls.Add(this.bunifuLabel9);
+            this.Controls.Add(this.txbShift);
             this.Controls.Add(this.bunifuLabel8);
             this.Controls.Add(this.dbGender);
             this.Controls.Add(this.bunifuLabel7);
@@ -1468,5 +1567,7 @@
         private Bunifu.UI.WinForms.BunifuTextBox txbSalary;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
         private Bunifu.UI.WinForms.BunifuDropdown dbGender;
+        private Bunifu.UI.WinForms.BunifuTextBox txbShift;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
     }
 }
