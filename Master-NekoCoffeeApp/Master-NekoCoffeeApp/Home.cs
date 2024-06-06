@@ -72,5 +72,11 @@ namespace Master_NekoCoffeeApp
             Employee frm = new Employee(this.Username);
             frm.Show();
         }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            Customer frm = new Customer(this.Username);
+            frm.Show();
+        }
     }
 }

@@ -86,6 +86,7 @@ namespace Master_NekoCoffeeApp
                string.IsNullOrWhiteSpace(tbEmail.Text) ||
                string.IsNullOrWhiteSpace(tbPhone.Text) ||
                string.IsNullOrWhiteSpace(dbGender.Text) ||
+               string.IsNullOrWhiteSpace(txbBirthday.Text) ||
                string.IsNullOrWhiteSpace(tbFullname.Text))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -138,6 +139,7 @@ namespace Master_NekoCoffeeApp
                         Position = "KH",
                         RegistrationDate = DateTime.Now, // Gán ngày đăng ký tại đây
                         Point = 0,
+                        Birthday = txbBirthday.Text
                     };
 
                     SetResponse set = await client.SetAsync("Users/" + txbUsername.Text, user);
@@ -215,6 +217,7 @@ namespace Master_NekoCoffeeApp
             tbPhone.Text = user.PhoneNumber;
             tbDate.Text = user.RegistrationDate.ToString();
             dbGender.Text = user.Gender;
+            txbBirthday.Text = user.Birthday;
             UserAdd.Enabled = false;
             UserUpdate.Enabled = true;
             UserDelete.Enabled = true;
@@ -310,7 +313,8 @@ namespace Master_NekoCoffeeApp
                         Email = tbEmail.Text.ToLower(),
                         Position = "KH",
                         RegistrationDate = user.RegistrationDate, // giữ nguyên ngày đăng ký
-                        Point = user.Point // giữ nguyên điểm
+                        Point = user.Point, // giữ nguyên điểm
+                        Birthday = txbBirthday.Text
                     };
 
                     SetResponse up = await client.SetAsync("Users/" + tbUsername.Text, updateData);
@@ -344,6 +348,7 @@ namespace Master_NekoCoffeeApp
             tbType.Clear();
             tbPhone.Clear();
             tbDate.Clear();
+            txbBirthday.Clear();
             UserAdd.Enabled = true;
             UserUpdate.Enabled = false;
             UserDelete.Enabled = false;

@@ -1,4 +1,5 @@
-﻿using FireSharp.Config;
+﻿using Aspose.Email.Clients.ActiveSync.TransportLayer;
+using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
 using Newtonsoft.Json;
@@ -9,6 +10,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -44,6 +46,22 @@ namespace Master_NekoCoffeeApp
             btnAdd.Enabled = true;
             btnUpdate.Enabled = false;
             btnDelete.Enabled = false;
+        }
+        public bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            try
+            {
+                // Kiểm tra định dạng email
+                var regex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+                return regex.IsMatch(email);
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
+            }
         }
         async void viewData()
         {
@@ -139,7 +157,12 @@ namespace Master_NekoCoffeeApp
                         NekoEmployee.ShowError_2();
                         return;
                     }
-
+                    // Kiểm tra tính hợp lệ của email
+                    if (!IsValidEmail(txbEmail.Text.ToLower()))
+                    {
+                        MessageBox.Show("Email không hợp lệ!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
 
                     NekoEmployee newemp = new NekoEmployee()
                     {

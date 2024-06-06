@@ -124,3 +124,4 @@ C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Mas
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.User.resources
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.Cat.resources
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.Employee.resources
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.Customer.resources

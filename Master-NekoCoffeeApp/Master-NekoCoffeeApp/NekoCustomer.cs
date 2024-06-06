@@ -17,7 +17,7 @@ namespace Master_NekoCoffeeApp
         public string Email { get; set; }
         public string Address { get; set; }
 
-        private static string error1 = "Tài khoản không tồn tại!";
+        private static string error1 = "Khách hàng không tồn tại!";
         private static string error2 = "Cảnh báo";
 
         public static void ShowError()
@@ -56,7 +56,7 @@ namespace Master_NekoCoffeeApp
 
             if (customer1.ID != customer2.ID)
             {
-                System.Windows.Forms.MessageBox.Show("Tài khoản không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                System.Windows.Forms.MessageBox.Show("Khách hàng không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 

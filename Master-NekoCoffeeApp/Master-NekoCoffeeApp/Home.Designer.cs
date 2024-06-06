@@ -727,6 +727,7 @@
             this.btnCustomer.TextMarginLeft = 0;
             this.btnCustomer.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnCustomer.UseDefaultRadiusAndThickness = true;
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 
             // btnInvoice
             // 

@@ -73,6 +73,10 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties35 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties36 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties37 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties38 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties39 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties40 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.label1 = new System.Windows.Forms.Label();
             this.tbUsername = new Bunifu.UI.WinForms.BunifuTextBox();
             this.UserView = new Bunifu.UI.WinForms.BunifuDataGridView();
@@ -97,6 +101,8 @@
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.txbBirthday = new Bunifu.UI.WinForms.BunifuTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.UserView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,7 +172,7 @@
             this.tbUsername.Padding = new System.Windows.Forms.Padding(4);
             this.tbUsername.PasswordChar = '\0';
             this.tbUsername.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.tbUsername.PlaceholderText = "Enter Username to search";
+            this.tbUsername.PlaceholderText = "Nhập tên tài khoản để tìm kiếm";
             this.tbUsername.ReadOnly = false;
             this.tbUsername.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.tbUsername.SelectedText = "";
@@ -180,7 +186,7 @@
             this.tbUsername.TextMarginBottom = 0;
             this.tbUsername.TextMarginLeft = 3;
             this.tbUsername.TextMarginTop = 0;
-            this.tbUsername.TextPlaceholder = "Enter Username to search";
+            this.tbUsername.TextPlaceholder = "Nhập tên tài khoản để tìm kiếm";
             this.tbUsername.UseSystemPasswordChar = false;
             this.tbUsername.WordWrap = true;
             // 
@@ -263,7 +269,7 @@
             this.UserUpdate.BackColor1 = System.Drawing.Color.LightSalmon;
             this.UserUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UserUpdate.BackgroundImage")));
             this.UserUpdate.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.UserUpdate.ButtonText = "UPDATE";
+            this.UserUpdate.ButtonText = "SỬA";
             this.UserUpdate.ButtonTextMarginLeft = 0;
             this.UserUpdate.ColorContrastOnClick = 45;
             this.UserUpdate.ColorContrastOnHover = 45;
@@ -354,7 +360,7 @@
             this.UserDelete.BackColor1 = System.Drawing.Color.LightSalmon;
             this.UserDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UserDelete.BackgroundImage")));
             this.UserDelete.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.UserDelete.ButtonText = "DELETE";
+            this.UserDelete.ButtonText = "XOÁ";
             this.UserDelete.ButtonTextMarginLeft = 0;
             this.UserDelete.ColorContrastOnClick = 45;
             this.UserDelete.ColorContrastOnHover = 45;
@@ -445,7 +451,7 @@
             this.UserAdd.BackColor1 = System.Drawing.Color.LightSalmon;
             this.UserAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UserAdd.BackgroundImage")));
             this.UserAdd.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.UserAdd.ButtonText = "ADD";
+            this.UserAdd.ButtonText = "THÊM";
             this.UserAdd.ButtonTextMarginLeft = 0;
             this.UserAdd.ColorContrastOnClick = 45;
             this.UserAdd.ColorContrastOnHover = 45;
@@ -1255,7 +1261,7 @@
             this.dbGender.Location = new System.Drawing.Point(877, 228);
             this.dbGender.Margin = new System.Windows.Forms.Padding(4);
             this.dbGender.Name = "dbGender";
-            this.dbGender.Size = new System.Drawing.Size(251, 36);
+            this.dbGender.Size = new System.Drawing.Size(101, 36);
             this.dbGender.TabIndex = 119;
             this.dbGender.Text = null;
             this.dbGender.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -1363,9 +1369,9 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(878, 87);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(68, 16);
+            this.bunifuLabel1.Size = new System.Drawing.Size(91, 16);
             this.bunifuLabel1.TabIndex = 122;
-            this.bunifuLabel1.Text = "Username:";
+            this.bunifuLabel1.Text = "Tên tài khoản:";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1379,9 +1385,9 @@
             this.bunifuLabel2.Location = new System.Drawing.Point(878, 147);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(65, 16);
+            this.bunifuLabel2.Size = new System.Drawing.Size(63, 16);
             this.bunifuLabel2.TabIndex = 123;
-            this.bunifuLabel2.Text = "Password:";
+            this.bunifuLabel2.Text = "Mật khẩu:";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1395,9 +1401,9 @@
             this.bunifuLabel3.Location = new System.Drawing.Point(879, 211);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(52, 16);
+            this.bunifuLabel3.Size = new System.Drawing.Size(60, 16);
             this.bunifuLabel3.TabIndex = 124;
-            this.bunifuLabel3.Text = "Gender:";
+            this.bunifuLabel3.Text = "Giới tính:";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1411,9 +1417,9 @@
             this.bunifuLabel4.Location = new System.Drawing.Point(879, 271);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(63, 16);
+            this.bunifuLabel4.Size = new System.Drawing.Size(46, 16);
             this.bunifuLabel4.TabIndex = 125;
-            this.bunifuLabel4.Text = "Fullname:";
+            this.bunifuLabel4.Text = "Họ tên:";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1443,9 +1449,9 @@
             this.bunifuLabel6.Location = new System.Drawing.Point(879, 399);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(99, 16);
+            this.bunifuLabel6.Size = new System.Drawing.Size(87, 16);
             this.bunifuLabel6.TabIndex = 127;
-            this.bunifuLabel6.Text = "Phone Number:";
+            this.bunifuLabel6.Text = "Số điện thoại:";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1459,11 +1465,102 @@
             this.bunifuLabel7.Location = new System.Drawing.Point(879, 463);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(42, 16);
+            this.bunifuLabel7.Size = new System.Drawing.Size(35, 16);
             this.bunifuLabel7.TabIndex = 128;
-            this.bunifuLabel7.Text = "Other:";
+            this.bunifuLabel7.Text = "Khác:";
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel8
+            // 
+            this.bunifuLabel8.AllowParentOverrides = false;
+            this.bunifuLabel8.AutoEllipsis = false;
+            this.bunifuLabel8.CursorType = null;
+            this.bunifuLabel8.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel8.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.bunifuLabel8.Location = new System.Drawing.Point(988, 211);
+            this.bunifuLabel8.Name = "bunifuLabel8";
+            this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel8.Size = new System.Drawing.Size(65, 16);
+            this.bunifuLabel8.TabIndex = 130;
+            this.bunifuLabel8.Text = "Sinh nhật:";
+            this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // txbBirthday
+            // 
+            this.txbBirthday.AcceptsReturn = false;
+            this.txbBirthday.AcceptsTab = false;
+            this.txbBirthday.AnimationSpeed = 200;
+            this.txbBirthday.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txbBirthday.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txbBirthday.BackColor = System.Drawing.Color.Transparent;
+            this.txbBirthday.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txbBirthday.BackgroundImage")));
+            this.txbBirthday.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txbBirthday.BorderColorDisabled = System.Drawing.Color.Black;
+            this.txbBirthday.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txbBirthday.BorderColorIdle = System.Drawing.Color.Black;
+            this.txbBirthday.BorderRadius = 30;
+            this.txbBirthday.BorderThickness = 1;
+            this.txbBirthday.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txbBirthday.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbBirthday.DefaultFont = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbBirthday.DefaultText = "";
+            this.txbBirthday.FillColor = System.Drawing.Color.White;
+            this.txbBirthday.HideSelection = true;
+            this.txbBirthday.IconLeft = null;
+            this.txbBirthday.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbBirthday.IconPadding = 10;
+            this.txbBirthday.IconRight = null;
+            this.txbBirthday.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbBirthday.Lines = new string[0];
+            this.txbBirthday.Location = new System.Drawing.Point(988, 228);
+            this.txbBirthday.Margin = new System.Windows.Forms.Padding(4);
+            this.txbBirthday.MaxLength = 32767;
+            this.txbBirthday.MinimumSize = new System.Drawing.Size(2, 2);
+            this.txbBirthday.Modified = false;
+            this.txbBirthday.Multiline = false;
+            this.txbBirthday.Name = "txbBirthday";
+            stateProperties37.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties37.FillColor = System.Drawing.Color.Empty;
+            stateProperties37.ForeColor = System.Drawing.Color.Empty;
+            stateProperties37.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbBirthday.OnActiveState = stateProperties37;
+            stateProperties38.BorderColor = System.Drawing.Color.Black;
+            stateProperties38.FillColor = System.Drawing.Color.Transparent;
+            stateProperties38.ForeColor = System.Drawing.Color.Transparent;
+            stateProperties38.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txbBirthday.OnDisabledState = stateProperties38;
+            stateProperties39.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties39.FillColor = System.Drawing.Color.Empty;
+            stateProperties39.ForeColor = System.Drawing.Color.Empty;
+            stateProperties39.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbBirthday.OnHoverState = stateProperties39;
+            stateProperties40.BorderColor = System.Drawing.Color.Black;
+            stateProperties40.FillColor = System.Drawing.Color.White;
+            stateProperties40.ForeColor = System.Drawing.Color.Empty;
+            stateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbBirthday.OnIdleState = stateProperties40;
+            this.txbBirthday.Padding = new System.Windows.Forms.Padding(4);
+            this.txbBirthday.PasswordChar = '\0';
+            this.txbBirthday.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txbBirthday.PlaceholderText = "";
+            this.txbBirthday.ReadOnly = false;
+            this.txbBirthday.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txbBirthday.SelectedText = "";
+            this.txbBirthday.SelectionLength = 0;
+            this.txbBirthday.SelectionStart = 0;
+            this.txbBirthday.ShortcutsEnabled = true;
+            this.txbBirthday.Size = new System.Drawing.Size(140, 38);
+            this.txbBirthday.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txbBirthday.TabIndex = 129;
+            this.txbBirthday.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txbBirthday.TextMarginBottom = 0;
+            this.txbBirthday.TextMarginLeft = 3;
+            this.txbBirthday.TextMarginTop = 0;
+            this.txbBirthday.TextPlaceholder = "";
+            this.txbBirthday.UseSystemPasswordChar = false;
+            this.txbBirthday.WordWrap = true;
             // 
             // User
             // 
@@ -1471,6 +1568,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1159, 599);
+            this.Controls.Add(this.bunifuLabel8);
+            this.Controls.Add(this.txbBirthday);
             this.Controls.Add(this.bunifuLabel7);
             this.Controls.Add(this.bunifuLabel6);
             this.Controls.Add(this.bunifuLabel5);
@@ -1534,5 +1633,7 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
+        private Bunifu.UI.WinForms.BunifuTextBox txbBirthday;
     }
 }
