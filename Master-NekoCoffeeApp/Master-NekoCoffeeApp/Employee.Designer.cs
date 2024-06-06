@@ -715,6 +715,7 @@
             this.btnUpdate.TextMarginLeft = 0;
             this.btnUpdate.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnUpdate.UseDefaultRadiusAndThickness = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 

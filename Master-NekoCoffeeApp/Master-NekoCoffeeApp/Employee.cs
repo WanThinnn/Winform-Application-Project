@@ -283,5 +283,60 @@ namespace Master_NekoCoffeeApp
                 }
             }
         }
+
+        private async void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txbIDEmployee.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật thông tin nhân viên này không?", "Xác nhận cập nhật", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    FirebaseResponse res = await client.GetAsync($"/Employees_{this.MasterUsername}/" + txbIDEmployee.Text);
+                    if (res.Body == "null")
+                    {
+                        MessageBox.Show("Nhân viên này không tồn tại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    NekoEmployee emp = res.ResultAs<NekoEmployee>();
+
+                    var updateData = new NekoEmployee
+                    {
+                        ID = txbIDEmployee.Text,
+                        Name = txbNameEmployee.Text,
+                        Email = txbEmail.Text,
+                        PhoneNumber = txbPhone.Text,
+                        Salary = int.Parse(txbSalary.Text),
+                        Address = txbAdrr.Text,
+                        Gender = dbGender.Text,
+                        DateOfBirth = txbBirthday.Text
+                    };
+
+                    // Tạo mục mới với tên mới
+                    SetResponse up = await client.SetAsync($"/Employees_{this.MasterUsername}/" + txbIDEmployee.Text, updateData);
+                    if (up.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        MessageBox.Show("Cập nhật nhân viên thành công!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sửa thông tin thất bại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                btnRefresh_Click(sender, e);
+            }
+        }
     }
 }
