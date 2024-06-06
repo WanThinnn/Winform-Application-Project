@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Master_NekoCoffeeApp
 {
-    internal class NekoEmployee
+    public class NekoEmployee
     {
         public string ID { get; set; }
         public string Name { get; set; }
@@ -16,7 +16,7 @@ namespace Master_NekoCoffeeApp
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-        public string Salary { get; set; }
+        public int Salary { get; set; }
 
 
         private static string error1 = "Không tồn tại!";
@@ -71,7 +71,7 @@ namespace Master_NekoCoffeeApp
 
             if (employee1.ID != employee2.ID)
             {
-                System.Windows.Forms.MessageBox.Show("Tài khoản không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //System.Windows.Forms.MessageBox.Show("Tài khoản không tồn tại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 

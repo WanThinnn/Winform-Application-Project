@@ -66,5 +66,11 @@ namespace Master_NekoCoffeeApp
             Cat frm = new Cat(this.Username);
             frm.Show();
         }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            Employee frm = new Employee(this.Username);
+            frm.Show();
+        }
     }
 }

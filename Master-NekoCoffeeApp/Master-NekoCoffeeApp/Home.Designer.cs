@@ -454,6 +454,7 @@
             this.btnEmployee.TextMarginLeft = 0;
             this.btnEmployee.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnEmployee.UseDefaultRadiusAndThickness = true;
+            this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
             // 
             // btnFoods
             // 
