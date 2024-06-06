@@ -110,6 +110,10 @@ namespace UI
             if (set.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 pictureBox.Image = null;
+                AdminFillDrinkID.Text = "";
+                AdminFillDrinkName.Text = "";
+                AdminFillDrinkPrice.Text = "";
+                AdminFillDrinkType.Text = "";
                 MessageBox.Show($"Thêm thành công nước {AdminFillDrinkID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 viewData();
             }
@@ -152,6 +156,8 @@ namespace UI
                 // Xóa ảnh từ Firebase Storage
                 try
                 {
+                    var storage = new FirebaseStorage("neko-coffe-database.appspot.com");
+                    await storage.Child("Drinks").Child(AdminFillDrinkID.Text + ".jpeg").DeleteAsync();
                     var imageUrl = ResDrink.ImageURL; // Assuming the ImageURL is stored in ResDrink
                     var fileName = new Uri(imageUrl).Segments.Last();
 
@@ -263,7 +269,26 @@ namespace UI
             AdminFillDrinkType.Text = existingDrink.Type;
             AdminFillDrinkPrice.Text = existingDrink.Price;
             AdminFillDrinkAvailable.SelectedItem = existingDrink.Available;
+
+            // Load ảnh vào PictureBox
+            if (!string.IsNullOrEmpty(existingDrink.ImageURL))
+            {
+                try
+                {
+                    pictureBox.Load(existingDrink.ImageURL);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi tải ảnh: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    pictureBox.Image = null; // Clear PictureBox if loading fails
+                }
+            }
+            else
+            {
+                pictureBox.Image = null; // Clear PictureBox if no image URL
+            }
         }
+
 
         private void AdminViewAllYourDrinks_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

@@ -928,7 +928,7 @@
             this.AdminFillDrinkAvailable.Name = "AdminFillDrinkAvailable";
             this.AdminFillDrinkAvailable.Size = new System.Drawing.Size(153, 41);
             this.AdminFillDrinkAvailable.TabIndex = 63;
-            this.AdminFillDrinkAvailable.Text = "Availability";
+            this.AdminFillDrinkAvailable.Text = "Status";
             this.AdminFillDrinkAvailable.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.AdminFillDrinkAvailable.TextLeftMargin = 5;
             // 
@@ -1037,6 +1037,7 @@
             // 
             this.bunifuLabel1.AllowParentOverrides = false;
             this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel1.Location = new System.Drawing.Point(463, 128);
