@@ -219,7 +219,26 @@ namespace Master_NekoCoffeeApp
                 return;
             }
 
-            
+            txbIDEmployee.ReadOnly = true;
+
+
+            txbIDEmployee.BorderColorActive = Color.Silver;
+            txbIDEmployee.BorderColorHover = Color.Silver;
+            txbIDEmployee.BorderColorDisabled = Color.Silver;
+            txbIDEmployee.BorderColorIdle = Color.Silver;
+
+
+            txbIDEmployee.Text = emp.ID;
+            txbNameEmployee.Text = emp.Name;
+            txbBirthday.Text = emp.DateOfBirth;
+            txbPhone.Text = emp.PhoneNumber;
+            txbSalary.Text = emp.Salary.ToString();
+            txbAdrr.Text = emp.Address;
+            txbEmail.Text = emp.Email;
+            dbGender.SelectedItem = emp.Gender;
+            btnAdd.Enabled = false;
+            btnUpdate.Enabled = true;
+            btnDelete.Enabled = true;
         }
     }
 }
