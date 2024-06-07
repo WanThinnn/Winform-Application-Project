@@ -70,7 +70,7 @@ namespace UI
 
             if (drink1.ID != drink2.ID)
             {
-                System.Windows.Forms.MessageBox.Show("Nước không tồn tại2!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //System.Windows.Forms.MessageBox.Show("Nước không tồn tại2!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 

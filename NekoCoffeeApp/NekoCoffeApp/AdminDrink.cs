@@ -26,9 +26,21 @@ namespace UI
 {
     public partial class AdminDrink : UserControl
     {
-        public AdminDrink()
+        private string _masterUserName;
+        public AdminDrink(string masterUserName)
         {
             InitializeComponent();
+            _masterUserName = masterUserName;
+        }
+        private static AdminDrink _instance;
+        public static AdminDrink Instance(string masterUserName)
+        {
+            if (_instance == null || _instance._masterUserName != masterUserName)
+            {
+                _instance = new AdminDrink(masterUserName);
+            }
+            return _instance;
+
         }
 
         IFirebaseConfig ifc = new FirebaseConfig()
@@ -67,7 +79,7 @@ namespace UI
                 return;
             }
 
-            FirebaseResponse res = drk.Get(@"Drinks/" + AdminFillDrinkID.Text);
+            FirebaseResponse res = drk.Get($"Drinks_{_masterUserName}/" + AdminFillDrinkID.Text);
             NekoDrink ResDrink = res.ResultAs<NekoDrink>();
 
             NekoDrink CurDrink = new NekoDrink()
@@ -105,7 +117,7 @@ namespace UI
                 ImageURL = imageUrl
             };
 
-            SetResponse set = drk.Set(@"Drinks/" + AdminFillDrinkID.Text, drink);
+            SetResponse set = drk.Set($"Drinks_{_masterUserName}/" + AdminFillDrinkID.Text, drink);
 
             if (set.StatusCode == System.Net.HttpStatusCode.OK)
             {
@@ -119,12 +131,56 @@ namespace UI
             }
         }
 
-        void viewData()
+        async void viewData()
         {
-            var data = drk.Get(@"/Drinks");
-            var mList = JsonConvert.DeserializeObject<IDictionary<string, NekoDrink>>(data.Body);
-            var listNumber = mList.Values.ToList();
-            AdminViewAllYourDrinks.DataSource = listNumber;
+            try
+            {
+                var data = await drk.GetAsync($"/Drinks_{_masterUserName}/");
+
+                // Check if data or data.Body is null
+                if (data == null || data.Body == null)
+                {
+                    AdminViewAllYourDrinks.DataSource = null;
+                    return;
+                }
+
+                string jsonData = data.Body;
+
+                // Kiểm tra xem jsonData có phải là mảng JSON không
+                if (jsonData.TrimStart().StartsWith("["))
+                {
+                    // Nếu là mảng JSON, xử lý nó như một danh sách
+                    var mListArray = JsonConvert.DeserializeObject<List<NekoDrink>>(jsonData);
+
+                    // Check if mListArray is null or empty
+                    if (mListArray == null || !mListArray.Any())
+                    {
+                        AdminViewAllYourDrinks.DataSource = null;
+                        return;
+                    }
+
+                    AdminViewAllYourDrinks.DataSource = mListArray;
+                }
+                else
+                {
+                    // Nếu không phải mảng JSON, xử lý nó như một đối tượng JSON
+                    var mList = JsonConvert.DeserializeObject<IDictionary<string, NekoDrink>>(jsonData);
+
+                    // Check if mList is null or empty
+                    if (mList == null || !mList.Any())
+                    {
+                        AdminViewAllYourDrinks.DataSource = null;
+                        return;
+                    }
+
+                    var listNumber = mList.Values.ToList();
+                    AdminViewAllYourDrinks.DataSource = listNumber;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private async void AdminDeleteDrink_Click(object sender, EventArgs e)
@@ -135,7 +191,7 @@ namespace UI
                 return;
             }
 
-            FirebaseResponse res = drk.Get(@"Drinks/" + AdminFillDrinkID.Text);
+            FirebaseResponse res = drk.Get($"Drinks_{_masterUserName}/" + AdminFillDrinkID.Text);
             NekoDrink ResDrink = res.ResultAs<NekoDrink>();
 
             NekoDrink CurDrink = new NekoDrink()
@@ -179,7 +235,7 @@ namespace UI
                 }
 
                 // Xóa dữ liệu từ Firebase Database
-                var delete = drk.Delete(@"Drinks/" + AdminFillDrinkID.Text);
+                var delete = drk.Delete($"Drinks_{_masterUserName}/" + AdminFillDrinkID.Text);
                 if (delete.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     MessageBox.Show($"Xoá nước {AdminFillDrinkID.Text} thành công!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -210,7 +266,7 @@ namespace UI
 
         private void AdminUpdateDrink_Click(object sender, EventArgs e)
         {
-            FirebaseResponse res = drk.Get(@"Drinks/" + AdminFillDrinkID.Text);
+            FirebaseResponse res = drk.Get($"Drinks_{_masterUserName}/" + AdminFillDrinkID.Text);
             NekoDrink ResDrink = res.ResultAs<NekoDrink>();
 
             NekoDrink CurDrink = new NekoDrink()
@@ -236,7 +292,7 @@ namespace UI
                     Type = AdminFillDrinkType.Text
                 };
 
-                FirebaseResponse update = drk.Update(@"Drinks/" + AdminFillDrinkID.Text, drink);
+                FirebaseResponse update = drk.Update($"Drinks_{_masterUserName}/" + AdminFillDrinkID.Text, drink);
 
                 if (update.StatusCode == System.Net.HttpStatusCode.OK)
                 {
@@ -255,7 +311,7 @@ namespace UI
                 return;
             }
 
-            FirebaseResponse res = drk.Get(@"Drinks/" + AdminFillDrinkSearch.Text);
+            FirebaseResponse res = drk.Get($"Drinks_{_masterUserName}/" + AdminFillDrinkSearch.Text);
             NekoDrink existingDrink = res.ResultAs<NekoDrink>();
 
             if (existingDrink == null)

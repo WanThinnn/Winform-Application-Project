@@ -16,15 +16,34 @@ namespace UI
         {
             InitializeComponent();
         }
-
+        string MasterUserName;
         private void adminDrink1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void adminDrink1_Load_1(object sender, EventArgs e)
         {
 
         }
+
+        private void edit_Order_Load(object sender, EventArgs e)
+        {
+            string masterUserName = this.MasterUserName; // Assuming MasterUserName is available in this context
+
+            AdminDrink adDrink = AdminDrink.Instance(masterUserName);
+
+            if (!AdminMainPanel.Controls.Contains(adDrink))
+            {
+                AdminMainPanel.Controls.Add(adDrink);
+                adDrink.Dock = DockStyle.Fill;
+                adDrink.BringToFront();
+            }
+            else
+            {
+                adDrink.BringToFront();
+            }
+        }
+        
     }
 }

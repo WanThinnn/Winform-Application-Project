@@ -55,6 +55,7 @@ namespace UI
             {
                 adminEmployee.BringToFront();
             }
+
         }
 
         private void AdminFinancialBtn_Click(object sender, EventArgs e)
