@@ -121,41 +121,22 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="AdminUpdateTable.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAPsAAAApCAYAAADzhF+CAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALrSURBVHhe7d0/aBRBFMfxKy0tLS0tLVNaWomNvaUI6QLu
-        7glapLAQ7Cwsbja1YCdYCVaWFhaCRUAQIonh1kSNGG7W9+YmQs6X42LudGfu++CTIjs3d82PmdnZP72/
-        rdb1r7SuvO83qqe+7r9RbV21AObnKFuaM82buB4juNjyrloJ4Xbld19XQ+vHAVioRvJ3KPl7vpDgt+7O
-        RQn6S1+XBBzojibMqF11OUb1bOUHxUNCDnSajvbPWnfvXIzt6Uo/KB28EPtG5wA6ZFSXP2WUf9u6tQsx
-        wrNVmLbX5XvtwOoYQDdJbrdmntaHEV2CbnUEoPt8XW3rgB0jfXLJtP3VyBWM6EDCwoA9bQ0fTsaxRgeS
-        pwO2Dtwx2sdL5/kjV322PgggSY25F6/76EZjAAmT0X0zRnxceukrV8QB+ZFc70ngV2PUZVTXS++MhgDS
-        5+viXQh63Go7sBoBSJ/kez9sxXlXXGUKD+RLwv7Nu+qWhn3DagAgH3oCnrPwwBII63b9Yx0EkA9Zqu/o
-        mfgd6yCAvPSsfwLID2EHlgRhB5aEno3/Yh0AkBcJe7lpHQCQDx3Ue77uv7YOAshHuPstPHzeOAggHzqo
-        60MrboYL5Y0GANLnXXHoB+W63vV2XsL+w2oEIAvN7yfOhrdK2I0AJC5cKntUevub3gZnNQSQrpFO4ev+
-        oxj1cbEFB+RHRvVtXarHmI9Ln0IpB5vJxgDSJCP6V18XazHix4u1O5APGdW3TnxRRDgz78qP1gcBpEOC
-        /klm65ditO3SBqGh0QGA7vN1udu6/o0Y6ekl8/xrvB0GSI8G3Q+q2zHKs5VuwntXfbA6BNA94zX6jCP6
-        ZOmL3fUZddLJntU5gP9PMnoQzrXN+l72aSUdrUrgd7VT68sA/HvjC2aqYevKB3/spZ+l9BS+diqd6wMq
-        G724fvLLASxaqevyod6fLll8MteQWxXW84NyXfflY/iNHwVgXjRnIW/u7mMJ+kqM4imq1/sFDpb0gNfh
-        L0AAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="AdminDeleteTable.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
 </value>
   </data>
   <data name="AdminAddTable.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

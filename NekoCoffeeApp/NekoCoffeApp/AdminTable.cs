@@ -94,7 +94,7 @@ namespace UI
 
             if (set.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                MessageBox.Show($"Thêm thành công nước {AdminFillTableID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Thêm thành công bàn {AdminFillTableID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 TableAdded?.Invoke(this, table); // Kích hoạt sự kiện TableAdded
                 viewData();
             }
@@ -163,6 +163,16 @@ namespace UI
                 {
                     comboBox1.SelectedItem = Convert.ToString(row.Cells[2].Value);
                 }
+            }
+        }
+
+        private async void AdminDeleteTable_Click(object sender, EventArgs e)
+        {
+            DialogResult dg = MessageBox.Show("Bạn có chắc chắn muốn xóa bàn này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dg == DialogResult.Yes)
+            {
+                FirebaseResponse response = await tb.DeleteAsync(@"Tables/" + AdminFillTableID.Text);
+                MessageBox.Show("Đã xóa bàn thành công !!! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
