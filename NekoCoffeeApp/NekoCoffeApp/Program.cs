@@ -22,7 +22,7 @@ namespace UI
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Login());
             //Application.Run(new User());
-            Application.Run(new AdminFP("thienlai"));
+            Application.Run(new AdminFP());
 
 
 

@@ -41,9 +41,8 @@ namespace UI
 
         private void AdminEmployeeBtn_Click(object sender, EventArgs e)
         {
-            string masterUserName = this.MasterUserName; // Assuming MasterUserName is available in this context
 
-            AdminEmployee adminEmployee = AdminEmployee.Instance(masterUserName);
+            AdminEmployee adminEmployee = AdminEmployee.Instance();
 
             if (!AdminMainPanel.Controls.Contains(adminEmployee))
             {
@@ -94,18 +93,17 @@ namespace UI
                 AdminReview.Instance.BringToFront();
         }
 
-        string MasterUserName;
-        public AdminFP(string MasterUserName)
+        public AdminFP()
         {
             InitializeComponent();
             //AdminEmployee.SwitchToAdminAdjustClicked += AdminEmployee_SwitchToAdminAdjustClicked;
-            this.MasterUserName = MasterUserName;
+     
         }
 
         private void AdminEmployee_SwitchToAdminAdjustClicked(object sender, EventArgs e)
         {
-            string masterUserName = this.MasterUserName;
-            this.Controls.Remove(AdminEmployee.Instance(masterUserName));
+        
+            this.Controls.Remove(AdminEmployee.Instance());
 
             AdminAdjust adminAdjustControl = new AdminAdjust();
             this.Controls.Add(AdminAdjust.Instance);

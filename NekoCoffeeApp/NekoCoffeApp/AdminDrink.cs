@@ -26,18 +26,18 @@ namespace UI
 {
     public partial class AdminDrink : UserControl
     {
-        private string _masterUserName;
-        public AdminDrink(string masterUserName)
+      
+        public AdminDrink()
         {
             InitializeComponent();
-            _masterUserName = masterUserName;
+            
         }
         private static AdminDrink _instance;
-        public static AdminDrink Instance(string masterUserName)
+        public static AdminDrink Instance()
         {
-            if (_instance == null || _instance._masterUserName != masterUserName)
+            if (_instance == null)
             {
-                _instance = new AdminDrink(masterUserName);
+                _instance = new AdminDrink();
             }
             return _instance;
 
@@ -79,7 +79,7 @@ namespace UI
                 return;
             }
 
-            FirebaseResponse res = drk.Get($"Drinks_{_masterUserName}/" + AdminFillDrinkID.Text);
+            FirebaseResponse res = drk.Get($"Drinks/" + AdminFillDrinkID.Text);
             NekoDrink ResDrink = res.ResultAs<NekoDrink>();
 
             NekoDrink CurDrink = new NekoDrink()
@@ -117,7 +117,7 @@ namespace UI
                 ImageURL = imageUrl
             };
 
-            SetResponse set = drk.Set($"Drinks_{_masterUserName}/" + AdminFillDrinkID.Text, drink);
+            SetResponse set = drk.Set($"Drinks/" + AdminFillDrinkID.Text, drink);
 
             if (set.StatusCode == System.Net.HttpStatusCode.OK)
             {
@@ -135,7 +135,7 @@ namespace UI
         {
             try
             {
-                var data = await drk.GetAsync($"/Drinks_{_masterUserName}/");
+                var data = await drk.GetAsync($"Drinks/");
 
                 // Check if data or data.Body is null
                 if (data == null || data.Body == null)
@@ -191,7 +191,7 @@ namespace UI
                 return;
             }
 
-            FirebaseResponse res = drk.Get($"Drinks_{_masterUserName}/" + AdminFillDrinkID.Text);
+            FirebaseResponse res = drk.Get($"Drinks/" + AdminFillDrinkID.Text);
             NekoDrink ResDrink = res.ResultAs<NekoDrink>();
 
             NekoDrink CurDrink = new NekoDrink()
@@ -235,7 +235,7 @@ namespace UI
                 }
 
                 // Xóa dữ liệu từ Firebase Database
-                var delete = drk.Delete($"Drinks_{_masterUserName}/" + AdminFillDrinkID.Text);
+                var delete = drk.Delete($"Drinks/" + AdminFillDrinkID.Text);
                 if (delete.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     MessageBox.Show($"Xoá nước {AdminFillDrinkID.Text} thành công!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -266,7 +266,7 @@ namespace UI
 
         private void AdminUpdateDrink_Click(object sender, EventArgs e)
         {
-            FirebaseResponse res = drk.Get($"Drinks_{_masterUserName}/" + AdminFillDrinkID.Text);
+            FirebaseResponse res = drk.Get($"Drinks/" + AdminFillDrinkID.Text);
             NekoDrink ResDrink = res.ResultAs<NekoDrink>();
 
             NekoDrink CurDrink = new NekoDrink()
@@ -292,7 +292,7 @@ namespace UI
                     Type = AdminFillDrinkType.Text
                 };
 
-                FirebaseResponse update = drk.Update($"Drinks_{_masterUserName}/" + AdminFillDrinkID.Text, drink);
+                FirebaseResponse update = drk.Update($"Drinks/" + AdminFillDrinkID.Text, drink);
 
                 if (update.StatusCode == System.Net.HttpStatusCode.OK)
                 {
@@ -311,7 +311,7 @@ namespace UI
                 return;
             }
 
-            FirebaseResponse res = drk.Get($"Drinks_{_masterUserName}/" + AdminFillDrinkSearch.Text);
+            FirebaseResponse res = drk.Get($"Drinks/" + AdminFillDrinkSearch.Text);
             NekoDrink existingDrink = res.ResultAs<NekoDrink>();
 
             if (existingDrink == null)

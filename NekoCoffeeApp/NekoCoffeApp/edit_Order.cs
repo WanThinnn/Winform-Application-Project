@@ -31,7 +31,7 @@ namespace UI
         {
             string masterUserName = this.MasterUserName; // Assuming MasterUserName is available in this context
 
-            AdminDrink adDrink = AdminDrink.Instance(masterUserName);
+            AdminDrink adDrink = AdminDrink.Instance();
 
             if (!AdminMainPanel.Controls.Contains(adDrink))
             {

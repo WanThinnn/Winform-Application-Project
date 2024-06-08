@@ -17,18 +17,17 @@ namespace UI
     public partial class AdminEmployee : UserControl
     {
         private string _masterUserName;
-        public AdminEmployee(string masterUserName)
+        public AdminEmployee()
         {
             InitializeComponent();
-            _masterUserName = masterUserName;
         }
 
         private static AdminEmployee _instance;
-        public static AdminEmployee Instance(string masterUserName)
+        public static AdminEmployee Instance()
         {
-            if (_instance == null || _instance._masterUserName != masterUserName)
+            if (_instance == null)
             {
-                _instance = new AdminEmployee(masterUserName);
+                _instance = new AdminEmployee();
             }
             return _instance;
 
