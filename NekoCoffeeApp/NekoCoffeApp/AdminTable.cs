@@ -50,12 +50,50 @@ namespace UI
             viewData();
         }
 
-        void viewData()
+        async void viewData()
         {
-            var data = tb.Get(@"/Tables");
-            var mList = JsonConvert.DeserializeObject<IDictionary<string, NekoTable>>(data.Body);
-            var listNumber = mList.Values.ToList();
-            bunifuDataGridView1.DataSource = listNumber;
+            if (tb == null)
+            {
+                MessageBox.Show("Tham chiếu bảng là null.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var data = await tb.GetAsync("Tables");
+
+            // Kiểm tra nếu data hoặc data.Body là null
+            if (data == null || data.Body == null)
+            {
+                MessageBox.Show("Không có dữ liệu nào được lấy từ Firebase.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string jsonData = data.Body;
+
+            // Kiểm tra xem jsonData có phải là mảng JSON không
+            if (jsonData.TrimStart().StartsWith("["))
+            {
+                var mListArray = JsonConvert.DeserializeObject<List<NekoTable>>(jsonData);
+
+                // Kiểm tra nếu mListArray là null hoặc rỗng
+                if (mListArray == null || !mListArray.Any())
+                {
+                    MessageBox.Show("Không tìm thấy nhân viên nào.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                // Loại bỏ các giá trị null
+                var filteredList = mListArray.Where(item => item != null).ToList();
+
+                // Kiểm tra nếu filteredList là null hoặc rỗng
+                if (filteredList == null || !filteredList.Any())
+                {
+                    MessageBox.Show("Không tìm thấy nhân viên nào sau khi lọc bỏ các giá trị null.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                // Sử dụng filteredList làm nguồn dữ liệu cho DataGridView
+                bunifuDataGridView1.DataSource = filteredList;
+            }
         }
 
         private void AdminAddTable_Click(object sender, EventArgs e)
@@ -140,7 +178,20 @@ namespace UI
 
         private void AdminCheckTable_Click(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrWhiteSpace(AdminFillTableID.Text))
+            {
+                MessageBox.Show("Vui lòng điền mã số nhân viên!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            FirebaseResponse res = tb.Get("/Tables/" + AdminFillTableID.Text);
+            NekoTable emp = res.ResultAs<NekoTable>();
+            if (emp == null)
+            {
+                MessageBox.Show("Bàn không tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            AdminFillTableName.Text = emp.Name;
+            comboBox1.SelectedItem = emp.Status;
         }
 
         private void AdminTablesView_CellContentClick(object sender, DataGridViewCellEventArgs e)
