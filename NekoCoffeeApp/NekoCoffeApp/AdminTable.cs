@@ -147,5 +147,23 @@ namespace UI
         {
 
         }
+
+        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            AdminFillTableID.Text = "";
+            AdminFillTableName.Text = "";
+            comboBox1.SelectedItem = null;
+            DataGridViewRow row = new DataGridViewRow();
+            row = bunifuDataGridView1.Rows[e.RowIndex];
+            AdminFillTableID.Text = Convert.ToString(row.Cells[0].Value);
+            AdminFillTableName.Text = Convert.ToString(row.Cells[1].Value);
+            foreach (string s in comboBox1.Items)
+            {
+                if (s == Convert.ToString(row.Cells[2].Value))
+                {
+                    comboBox1.SelectedItem = Convert.ToString(row.Cells[2].Value);
+                }
+            }
+        }
     }
 }
