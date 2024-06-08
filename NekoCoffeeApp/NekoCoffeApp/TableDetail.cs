@@ -26,7 +26,7 @@ namespace UI
             BasePath = "https://neko-coffe-database-default-rtdb.firebaseio.com/"
         };
         IFirebaseClient client;
-        public TableDetail() {}
+        public TableDetail() { }
         private NekoTable _table;
         public TableDetail(NekoTable table)
         {
@@ -47,11 +47,69 @@ namespace UI
             mydt.Columns.Add("Thanh Tien");
 
             dataGridView1.DataSource = mydt;
-            var response = await client.GetAsync("/Drinks");
-            var drinks = JsonConvert.DeserializeObject<Dictionary<string, NekoDrink>>(response.Body);
-            foreach (var drink in drinks.Values)
+            try
             {
-                comboBox1.Items.Add(drink.Name);
+                var response = await client.GetAsync("/Drinks");
+
+                // Check if response or response.Body is null
+                if (response == null || response.Body == null)
+                {
+                    MessageBox.Show("No data retrieved from Firebase.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                string jsonData = response.Body;
+
+                // Clear existing items in the ComboBox
+                comboBox1.Items.Clear();
+
+                // Kiểm tra xem jsonData có phải là mảng JSON không
+                if (jsonData.TrimStart().StartsWith("["))
+                {
+                    // Nếu là mảng JSON, xử lý nó như một danh sách
+                    var drinksList = JsonConvert.DeserializeObject<List<NekoDrink>>(jsonData);
+
+                    // Check if drinksList is null or empty
+                    if (drinksList == null || !drinksList.Any())
+                    {
+                        MessageBox.Show("No drinks found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+
+                    // Add drink names to the ComboBox
+                    foreach (var drink in drinksList)
+                    {
+                        if (drink != null && !string.IsNullOrEmpty(drink.Name))
+                        {
+                            comboBox1.Items.Add(drink.Name);
+                        }
+                    }
+                }
+                else
+                {
+                    // Nếu không phải mảng JSON, xử lý nó như một đối tượng JSON
+                    var drinksDict = JsonConvert.DeserializeObject<Dictionary<string, NekoDrink>>(jsonData);
+
+                    // Check if drinksDict is null or empty
+                    if (drinksDict == null || !drinksDict.Any())
+                    {
+                        MessageBox.Show("No drinks found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+
+                    // Add drink names to the ComboBox
+                    foreach (var drink in drinksDict.Values)
+                    {
+                        if (drink != null && !string.IsNullOrEmpty(drink.Name))
+                        {
+                            comboBox1.Items.Add(drink.Name);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             var response1 = await client.GetAsync("/Cats");
             var cats = JsonConvert.DeserializeObject<Dictionary<string, NekoCat>>(response1.Body);
@@ -77,7 +135,7 @@ namespace UI
                     return;
                 }
                 string selectedNumber = numericUpDown1.Value.ToString();
-                if(numericUpDown1.Value <= 0)
+                if (numericUpDown1.Value <= 0)
                 {
                     MessageBox.Show("Vui lòng chọn số lượng của sản phẩm");
                     return;
@@ -219,30 +277,6 @@ namespace UI
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            comboBox1.SelectedItem = null;
-            comboBox2.SelectedItem = null;
-            numericUpDown1.Value = 0;
-            DataGridViewRow row = new DataGridViewRow();
-            row = dataGridView1.Rows[e.RowIndex];
-            foreach (string s in comboBox1.Items)
-            {
-                if (s == Convert.ToString(row.Cells["Ten Mon"].Value))
-                {
-                    comboBox1.SelectedItem = Convert.ToString(row.Cells["Ten Mon"].Value);
-                }
-            }
-            foreach (string s in comboBox2.Items)
-            {
-                if (s == Convert.ToString(row.Cells["Ten Mon"].Value))
-                {
-                    comboBox2.SelectedItem = Convert.ToString(row.Cells["Ten Mon"].Value);
-                }
-            }
-            numericUpDown1.Value = Convert.ToInt64(row.Cells["SL"].Value);
-        }
-
         private async void TableDetailsPayment_Click(object sender, EventArgs e)
         {
             try
@@ -304,6 +338,30 @@ namespace UI
             {
                 MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
             }
+        }
+
+        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            comboBox1.SelectedItem = null;
+            comboBox2.SelectedItem = null;
+            numericUpDown1.Value = 0;
+            DataGridViewRow row = new DataGridViewRow();
+            row = dataGridView1.Rows[e.RowIndex];
+            foreach (string s in comboBox1.Items)
+            {
+                if (s == Convert.ToString(row.Cells["Ten Mon"].Value))
+                {
+                    comboBox1.SelectedItem = Convert.ToString(row.Cells["Ten Mon"].Value);
+                }
+            }
+            foreach (string s in comboBox2.Items)
+            {
+                if (s == Convert.ToString(row.Cells["Ten Mon"].Value))
+                {
+                    comboBox2.SelectedItem = Convert.ToString(row.Cells["Ten Mon"].Value);
+                }
+            }
+            numericUpDown1.Value = Convert.ToInt64(row.Cells["SL"].Value);
         }
     }
 }

@@ -801,3 +801,8 @@ C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Nek
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.edit_Employee_2.resources
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.edit_Customer.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Firebase.Storage.dll
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.edit_Customer.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.edit_Employee_2.resources
