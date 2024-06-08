@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\drive\\code\\n2\\lt mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\edit_employee_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\edit_employee_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\drive\\code\\n2\\lt mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\tabledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\tabledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\drive\\code\\n2\\lt mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\admintable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\admintable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\drive\\code\\n2\\lt mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\tabledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\tabledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\drive\\code\\n2\\lt mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\admintable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\admintable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\drive\\code\\n2\\lt mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\edit_employee_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\edit_employee_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\drive\\code\\n2\\lt mang\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\admintable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\admintable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,37 +31,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "edit_Employee_2.cs",
-              "DocumentMoniker": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\edit_Employee_2.cs",
-              "RelativeDocumentMoniker": "NekoCoffeApp\\edit_Employee_2.cs",
-              "ToolTip": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\edit_Employee_2.cs",
-              "RelativeToolTip": "NekoCoffeApp\\edit_Employee_2.cs",
-              "ViewState": "AQIAAE0BAAAAAAAAAAAswFEBAAANAAAA",
+              "Title": "TableDetail.cs",
+              "DocumentMoniker": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\TableDetail.cs",
+              "RelativeDocumentMoniker": "NekoCoffeApp\\TableDetail.cs",
+              "ToolTip": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\TableDetail.cs",
+              "RelativeToolTip": "NekoCoffeApp\\TableDetail.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAIAwwHwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T15:36:35.694Z",
+              "WhenOpened": "2024-06-08T15:41:56.093Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "edit_Employee_2.cs [Design]",
-              "DocumentMoniker": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\edit_Employee_2.cs",
-              "RelativeDocumentMoniker": "NekoCoffeApp\\edit_Employee_2.cs",
-              "ToolTip": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\edit_Employee_2.cs [Design]",
-              "RelativeToolTip": "NekoCoffeApp\\edit_Employee_2.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "TableDetail.cs [Design]",
+              "DocumentMoniker": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\TableDetail.cs",
+              "RelativeDocumentMoniker": "NekoCoffeApp\\TableDetail.cs",
+              "ToolTip": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\TableDetail.cs [Design]",
+              "RelativeToolTip": "NekoCoffeApp\\TableDetail.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T15:36:27.687Z",
+              "WhenOpened": "2024-06-08T15:41:54.746Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AdminTable.cs",
               "DocumentMoniker": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\AdminTable.cs",
               "RelativeDocumentMoniker": "NekoCoffeApp\\AdminTable.cs",
-              "ToolTip": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\AdminTable.cs*",
-              "RelativeToolTip": "NekoCoffeApp\\AdminTable.cs*",
-              "ViewState": "AQIAAK0AAAAAAAAAAAAkwMEAAAAwAAAA",
+              "ToolTip": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\AdminTable.cs",
+              "RelativeToolTip": "NekoCoffeApp\\AdminTable.cs",
+              "ViewState": "AQIAANAAAAAAAAAAAAAtwN0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T14:05:46.148Z",
               "EditorCaption": ""
@@ -72,8 +72,8 @@
               "Title": "AdminTable.cs [Design]",
               "DocumentMoniker": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\AdminTable.cs",
               "RelativeDocumentMoniker": "NekoCoffeApp\\AdminTable.cs",
-              "ToolTip": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\AdminTable.cs [Design]*",
-              "RelativeToolTip": "NekoCoffeApp\\AdminTable.cs [Design]*",
+              "ToolTip": "C:\\Drive\\code\\N2\\LT Mang\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\AdminTable.cs [Design]",
+              "RelativeToolTip": "NekoCoffeApp\\AdminTable.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T13:59:28.782Z",
               "EditorCaption": " [Design]"
