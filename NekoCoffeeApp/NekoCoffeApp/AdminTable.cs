@@ -1,4 +1,5 @@
-﻿using FireSharp.Config;
+﻿using Bunifu.UI.WinForms;
+using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
 using Newtonsoft.Json;
@@ -54,7 +55,7 @@ namespace UI
             var data = tb.Get(@"/Tables");
             var mList = JsonConvert.DeserializeObject<IDictionary<string, NekoTable>>(data.Body);
             var listNumber = mList.Values.ToList();
-            AdminTablesView.DataSource = listNumber;
+            bunifuDataGridView1.DataSource = listNumber;
         }
 
         private void AdminAddTable_Click(object sender, EventArgs e)
@@ -138,6 +139,11 @@ namespace UI
         }
 
         private void AdminCheckTable_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminTablesView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

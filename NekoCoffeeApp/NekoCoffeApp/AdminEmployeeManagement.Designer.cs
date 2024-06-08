@@ -200,7 +200,7 @@
             this.AdminFillEmployeeSearch.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.AdminFillEmployeeSearch.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.AdminFillEmployeeSearch.BorderColorIdle = System.Drawing.Color.Silver;
-            this.AdminFillEmployeeSearch.BorderRadius = 1;
+            this.AdminFillEmployeeSearch.BorderRadius = 30;
             this.AdminFillEmployeeSearch.BorderThickness = 1;
             this.AdminFillEmployeeSearch.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillEmployeeSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -366,7 +366,7 @@
             this.AdminFillEmployeeDateOfBirth.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.AdminFillEmployeeDateOfBirth.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.AdminFillEmployeeDateOfBirth.BorderColorIdle = System.Drawing.Color.Silver;
-            this.AdminFillEmployeeDateOfBirth.BorderRadius = 1;
+            this.AdminFillEmployeeDateOfBirth.BorderRadius = 30;
             this.AdminFillEmployeeDateOfBirth.BorderThickness = 1;
             this.AdminFillEmployeeDateOfBirth.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillEmployeeDateOfBirth.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -441,7 +441,7 @@
             this.AdminFillEmployeeName.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.AdminFillEmployeeName.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.AdminFillEmployeeName.BorderColorIdle = System.Drawing.Color.Silver;
-            this.AdminFillEmployeeName.BorderRadius = 1;
+            this.AdminFillEmployeeName.BorderRadius = 30;
             this.AdminFillEmployeeName.BorderThickness = 1;
             this.AdminFillEmployeeName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillEmployeeName.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -516,7 +516,7 @@
             this.AdminFillEmployeeEmail.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.AdminFillEmployeeEmail.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.AdminFillEmployeeEmail.BorderColorIdle = System.Drawing.Color.Silver;
-            this.AdminFillEmployeeEmail.BorderRadius = 1;
+            this.AdminFillEmployeeEmail.BorderRadius = 30;
             this.AdminFillEmployeeEmail.BorderThickness = 1;
             this.AdminFillEmployeeEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillEmployeeEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -591,7 +591,7 @@
             this.AdminFillEmployeePhoneNumber.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.AdminFillEmployeePhoneNumber.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.AdminFillEmployeePhoneNumber.BorderColorIdle = System.Drawing.Color.Silver;
-            this.AdminFillEmployeePhoneNumber.BorderRadius = 1;
+            this.AdminFillEmployeePhoneNumber.BorderRadius = 30;
             this.AdminFillEmployeePhoneNumber.BorderThickness = 1;
             this.AdminFillEmployeePhoneNumber.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillEmployeePhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -667,7 +667,7 @@
             this.AdminFillEmployeeShift.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.AdminFillEmployeeShift.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.AdminFillEmployeeShift.BorderColorIdle = System.Drawing.Color.Silver;
-            this.AdminFillEmployeeShift.BorderRadius = 1;
+            this.AdminFillEmployeeShift.BorderRadius = 30;
             this.AdminFillEmployeeShift.BorderThickness = 1;
             this.AdminFillEmployeeShift.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillEmployeeShift.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -743,7 +743,7 @@
             this.AdminFillEmployeeGender.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.AdminFillEmployeeGender.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.AdminFillEmployeeGender.BorderColorIdle = System.Drawing.Color.Silver;
-            this.AdminFillEmployeeGender.BorderRadius = 1;
+            this.AdminFillEmployeeGender.BorderRadius = 30;
             this.AdminFillEmployeeGender.BorderThickness = 1;
             this.AdminFillEmployeeGender.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillEmployeeGender.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -1000,7 +1000,7 @@
             this.AdminFillEmployeeSalary.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.AdminFillEmployeeSalary.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.AdminFillEmployeeSalary.BorderColorIdle = System.Drawing.Color.Silver;
-            this.AdminFillEmployeeSalary.BorderRadius = 1;
+            this.AdminFillEmployeeSalary.BorderRadius = 30;
             this.AdminFillEmployeeSalary.BorderThickness = 1;
             this.AdminFillEmployeeSalary.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillEmployeeSalary.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -1111,7 +1111,7 @@
             this.AdminViewAllEmployees.EnableHeadersVisualStyles = false;
             this.AdminViewAllEmployees.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.AdminViewAllEmployees.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.AdminViewAllEmployees.HeaderBackColor = System.Drawing.Color.Empty;
+            this.AdminViewAllEmployees.HeaderBgColor = System.Drawing.Color.Empty;
             this.AdminViewAllEmployees.HeaderForeColor = System.Drawing.Color.White;
             this.AdminViewAllEmployees.Location = new System.Drawing.Point(16, 13);
             this.AdminViewAllEmployees.Name = "AdminViewAllEmployees";
@@ -1122,7 +1122,7 @@
             this.AdminViewAllEmployees.Size = new System.Drawing.Size(640, 511);
             this.AdminViewAllEmployees.TabIndex = 46;
             this.AdminViewAllEmployees.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            // //
+            // 
             // AdminFillEmployeeID
             // 
             this.AdminFillEmployeeID.AcceptsReturn = false;
@@ -1136,7 +1136,7 @@
             this.AdminFillEmployeeID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.AdminFillEmployeeID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.AdminFillEmployeeID.BorderColorIdle = System.Drawing.Color.Silver;
-            this.AdminFillEmployeeID.BorderRadius = 1;
+            this.AdminFillEmployeeID.BorderRadius = 30;
             this.AdminFillEmployeeID.BorderThickness = 1;
             this.AdminFillEmployeeID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillEmployeeID.Cursor = System.Windows.Forms.Cursors.IBeam;

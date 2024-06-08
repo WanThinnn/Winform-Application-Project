@@ -30,19 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminTable));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AdminUpdateTable = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminDeleteTable = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -51,9 +54,13 @@
             this.AdminShowAllTables = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminFillTableID = new Bunifu.UI.WinForms.BunifuTextBox();
             this.AdminCheckTable = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.AdminTablesView = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.AdminTablesView)).BeginInit();
+            this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -80,11 +87,11 @@
             this.AdminUpdateTable.ColorContrastOnClick = 45;
             this.AdminUpdateTable.ColorContrastOnHover = 45;
             this.AdminUpdateTable.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.AdminUpdateTable.CustomizableEdges = borderEdges6;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.AdminUpdateTable.CustomizableEdges = borderEdges1;
             this.AdminUpdateTable.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminUpdateTable.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminUpdateTable.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -108,7 +115,7 @@
             this.AdminUpdateTable.IdleIconLeftImage = null;
             this.AdminUpdateTable.IdleIconRightImage = null;
             this.AdminUpdateTable.IndicateFocus = false;
-            this.AdminUpdateTable.Location = new System.Drawing.Point(441, 249);
+            this.AdminUpdateTable.Location = new System.Drawing.Point(459, 419);
             this.AdminUpdateTable.Name = "AdminUpdateTable";
             this.AdminUpdateTable.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminUpdateTable.OnDisabledState.BorderRadius = 37;
@@ -142,7 +149,7 @@
             this.AdminUpdateTable.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminUpdateTable.OnPressedState.IconLeftImage = null;
             this.AdminUpdateTable.OnPressedState.IconRightImage = null;
-            this.AdminUpdateTable.Size = new System.Drawing.Size(270, 36);
+            this.AdminUpdateTable.Size = new System.Drawing.Size(251, 41);
             this.AdminUpdateTable.TabIndex = 58;
             this.AdminUpdateTable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminUpdateTable.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -169,11 +176,11 @@
             this.AdminDeleteTable.ColorContrastOnClick = 45;
             this.AdminDeleteTable.ColorContrastOnHover = 45;
             this.AdminDeleteTable.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.AdminDeleteTable.CustomizableEdges = borderEdges7;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.AdminDeleteTable.CustomizableEdges = borderEdges2;
             this.AdminDeleteTable.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminDeleteTable.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminDeleteTable.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -197,7 +204,7 @@
             this.AdminDeleteTable.IdleIconLeftImage = null;
             this.AdminDeleteTable.IdleIconRightImage = null;
             this.AdminDeleteTable.IndicateFocus = false;
-            this.AdminDeleteTable.Location = new System.Drawing.Point(611, 207);
+            this.AdminDeleteTable.Location = new System.Drawing.Point(605, 368);
             this.AdminDeleteTable.Name = "AdminDeleteTable";
             this.AdminDeleteTable.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminDeleteTable.OnDisabledState.BorderRadius = 37;
@@ -231,7 +238,7 @@
             this.AdminDeleteTable.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminDeleteTable.OnPressedState.IconLeftImage = null;
             this.AdminDeleteTable.OnPressedState.IconRightImage = null;
-            this.AdminDeleteTable.Size = new System.Drawing.Size(100, 36);
+            this.AdminDeleteTable.Size = new System.Drawing.Size(105, 45);
             this.AdminDeleteTable.TabIndex = 57;
             this.AdminDeleteTable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminDeleteTable.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -258,11 +265,11 @@
             this.AdminAddTable.ColorContrastOnClick = 45;
             this.AdminAddTable.ColorContrastOnHover = 45;
             this.AdminAddTable.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.AdminAddTable.CustomizableEdges = borderEdges8;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.AdminAddTable.CustomizableEdges = borderEdges3;
             this.AdminAddTable.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminAddTable.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAddTable.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -286,7 +293,7 @@
             this.AdminAddTable.IdleIconLeftImage = null;
             this.AdminAddTable.IdleIconRightImage = null;
             this.AdminAddTable.IndicateFocus = false;
-            this.AdminAddTable.Location = new System.Drawing.Point(441, 207);
+            this.AdminAddTable.Location = new System.Drawing.Point(459, 368);
             this.AdminAddTable.Name = "AdminAddTable";
             this.AdminAddTable.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAddTable.OnDisabledState.BorderRadius = 37;
@@ -320,7 +327,7 @@
             this.AdminAddTable.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminAddTable.OnPressedState.IconLeftImage = null;
             this.AdminAddTable.OnPressedState.IconRightImage = null;
-            this.AdminAddTable.Size = new System.Drawing.Size(100, 36);
+            this.AdminAddTable.Size = new System.Drawing.Size(112, 45);
             this.AdminAddTable.TabIndex = 56;
             this.AdminAddTable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminAddTable.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -342,8 +349,8 @@
             this.AdminFillTableName.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.AdminFillTableName.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.AdminFillTableName.BorderColorIdle = System.Drawing.Color.Silver;
-            this.AdminFillTableName.BorderRadius = 1;
-            this.AdminFillTableName.BorderThickness = 1;
+            this.AdminFillTableName.BorderRadius = 30;
+            this.AdminFillTableName.BorderThickness = 3;
             this.AdminFillTableName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillTableName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillTableName.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
@@ -356,32 +363,32 @@
             this.AdminFillTableName.IconRight = null;
             this.AdminFillTableName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillTableName.Lines = new string[0];
-            this.AdminFillTableName.Location = new System.Drawing.Point(441, 119);
+            this.AdminFillTableName.Location = new System.Drawing.Point(459, 216);
             this.AdminFillTableName.MaxLength = 32767;
             this.AdminFillTableName.MinimumSize = new System.Drawing.Size(1, 1);
             this.AdminFillTableName.Modified = false;
             this.AdminFillTableName.Multiline = false;
             this.AdminFillTableName.Name = "AdminFillTableName";
-            stateProperties9.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.AdminFillTableName.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties10.FillColor = System.Drawing.Color.Transparent;
-            stateProperties10.ForeColor = System.Drawing.Color.Transparent;
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.AdminFillTableName.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.AdminFillTableName.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.AdminFillTableName.OnIdleState = stateProperties12;
+            stateProperties1.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.AdminFillTableName.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties2.FillColor = System.Drawing.Color.Transparent;
+            stateProperties2.ForeColor = System.Drawing.Color.Transparent;
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.AdminFillTableName.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.AdminFillTableName.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.AdminFillTableName.OnIdleState = stateProperties4;
             this.AdminFillTableName.Padding = new System.Windows.Forms.Padding(3);
             this.AdminFillTableName.PasswordChar = '\0';
             this.AdminFillTableName.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -392,7 +399,7 @@
             this.AdminFillTableName.SelectionLength = 0;
             this.AdminFillTableName.SelectionStart = 0;
             this.AdminFillTableName.ShortcutsEnabled = true;
-            this.AdminFillTableName.Size = new System.Drawing.Size(270, 37);
+            this.AdminFillTableName.Size = new System.Drawing.Size(251, 48);
             this.AdminFillTableName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillTableName.TabIndex = 50;
             this.AdminFillTableName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -422,11 +429,11 @@
             this.AdminShowAllTables.ColorContrastOnClick = 45;
             this.AdminShowAllTables.ColorContrastOnHover = 45;
             this.AdminShowAllTables.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.AdminShowAllTables.CustomizableEdges = borderEdges9;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.AdminShowAllTables.CustomizableEdges = borderEdges4;
             this.AdminShowAllTables.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminShowAllTables.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminShowAllTables.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -505,8 +512,8 @@
             this.AdminFillTableID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.AdminFillTableID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.AdminFillTableID.BorderColorIdle = System.Drawing.Color.Silver;
-            this.AdminFillTableID.BorderRadius = 1;
-            this.AdminFillTableID.BorderThickness = 1;
+            this.AdminFillTableID.BorderRadius = 30;
+            this.AdminFillTableID.BorderThickness = 3;
             this.AdminFillTableID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.AdminFillTableID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillTableID.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
@@ -519,32 +526,32 @@
             this.AdminFillTableID.IconRight = null;
             this.AdminFillTableID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillTableID.Lines = new string[0];
-            this.AdminFillTableID.Location = new System.Drawing.Point(441, 34);
+            this.AdminFillTableID.Location = new System.Drawing.Point(459, 40);
             this.AdminFillTableID.MaxLength = 32767;
             this.AdminFillTableID.MinimumSize = new System.Drawing.Size(1, 1);
             this.AdminFillTableID.Modified = false;
             this.AdminFillTableID.Multiline = false;
             this.AdminFillTableID.Name = "AdminFillTableID";
-            stateProperties13.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.AdminFillTableID.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties14.FillColor = System.Drawing.Color.Transparent;
-            stateProperties14.ForeColor = System.Drawing.Color.Transparent;
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.AdminFillTableID.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.AdminFillTableID.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.Silver;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.AdminFillTableID.OnIdleState = stateProperties16;
+            stateProperties5.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.AdminFillTableID.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties6.FillColor = System.Drawing.Color.Transparent;
+            stateProperties6.ForeColor = System.Drawing.Color.Transparent;
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.AdminFillTableID.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.AdminFillTableID.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.AdminFillTableID.OnIdleState = stateProperties8;
             this.AdminFillTableID.Padding = new System.Windows.Forms.Padding(3);
             this.AdminFillTableID.PasswordChar = '\0';
             this.AdminFillTableID.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -555,7 +562,7 @@
             this.AdminFillTableID.SelectionLength = 0;
             this.AdminFillTableID.SelectionStart = 0;
             this.AdminFillTableID.ShortcutsEnabled = true;
-            this.AdminFillTableID.Size = new System.Drawing.Size(270, 37);
+            this.AdminFillTableID.Size = new System.Drawing.Size(251, 48);
             this.AdminFillTableID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillTableID.TabIndex = 47;
             this.AdminFillTableID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -585,11 +592,11 @@
             this.AdminCheckTable.ColorContrastOnClick = 45;
             this.AdminCheckTable.ColorContrastOnHover = 45;
             this.AdminCheckTable.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.AdminCheckTable.CustomizableEdges = borderEdges10;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.AdminCheckTable.CustomizableEdges = borderEdges5;
             this.AdminCheckTable.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminCheckTable.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminCheckTable.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -613,7 +620,7 @@
             this.AdminCheckTable.IdleIconLeftImage = null;
             this.AdminCheckTable.IdleIconRightImage = null;
             this.AdminCheckTable.IndicateFocus = false;
-            this.AdminCheckTable.Location = new System.Drawing.Point(441, 77);
+            this.AdminCheckTable.Location = new System.Drawing.Point(459, 94);
             this.AdminCheckTable.Name = "AdminCheckTable";
             this.AdminCheckTable.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminCheckTable.OnDisabledState.BorderRadius = 37;
@@ -647,7 +654,7 @@
             this.AdminCheckTable.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.AdminCheckTable.OnPressedState.IconLeftImage = null;
             this.AdminCheckTable.OnPressedState.IconRightImage = null;
-            this.AdminCheckTable.Size = new System.Drawing.Size(270, 36);
+            this.AdminCheckTable.Size = new System.Drawing.Size(251, 36);
             this.AdminCheckTable.TabIndex = 46;
             this.AdminCheckTable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AdminCheckTable.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -656,15 +663,6 @@
             this.AdminCheckTable.UseDefaultRadiusAndThickness = true;
             this.AdminCheckTable.Click += new System.EventHandler(this.AdminCheckTable_Click);
             // 
-            // AdminTablesView
-            // 
-            this.AdminTablesView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.AdminTablesView.Location = new System.Drawing.Point(22, 34);
-            this.AdminTablesView.Name = "AdminTablesView";
-            this.AdminTablesView.RowHeadersWidth = 62;
-            this.AdminTablesView.Size = new System.Drawing.Size(397, 424);
-            this.AdminTablesView.TabIndex = 59;
-            // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -672,18 +670,127 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Available",
             "Booked"});
-            this.comboBox1.Location = new System.Drawing.Point(441, 162);
+            this.comboBox1.Location = new System.Drawing.Point(459, 316);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(270, 28);
+            this.comboBox1.Size = new System.Drawing.Size(251, 33);
             this.comboBox1.TabIndex = 60;
+            // 
+            // bunifuDataGridView1
+            // 
+            this.bunifuDataGridView1.AllowCustomTheming = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.bunifuDataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.bunifuDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.Name = null;
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
+            this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.Location = new System.Drawing.Point(35, 19);
+            this.bunifuDataGridView1.Name = "bunifuDataGridView1";
+            this.bunifuDataGridView1.RowHeadersVisible = false;
+            this.bunifuDataGridView1.RowHeadersWidth = 51;
+            this.bunifuDataGridView1.RowTemplate.Height = 40;
+            this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.bunifuDataGridView1.Size = new System.Drawing.Size(406, 501);
+            this.bunifuDataGridView1.TabIndex = 61;
+            this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.LightSalmon;
+            this.label1.Location = new System.Drawing.Point(455, 291);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(166, 22);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "Trạng thái của bàn:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.LightSalmon;
+            this.label2.Location = new System.Drawing.Point(455, 191);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(116, 22);
+            this.label2.TabIndex = 63;
+            this.label2.Text = "Tên của bàn:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.LightSalmon;
+            this.label3.Location = new System.Drawing.Point(455, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(101, 22);
+            this.label3.TabIndex = 64;
+            this.label3.Text = "ID của bàn:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(455, 155);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(256, 22);
+            this.label4.TabIndex = 65;
+            this.label4.Text = "-----------------------------------------";
             // 
             // AdminTable
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bunifuDataGridView1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.AdminTablesView);
             this.Controls.Add(this.AdminUpdateTable);
             this.Controls.Add(this.AdminDeleteTable);
             this.Controls.Add(this.AdminAddTable);
@@ -692,10 +799,11 @@
             this.Controls.Add(this.AdminFillTableID);
             this.Controls.Add(this.AdminCheckTable);
             this.Name = "AdminTable";
-            this.Size = new System.Drawing.Size(731, 483);
+            this.Size = new System.Drawing.Size(735, 540);
             this.Load += new System.EventHandler(this.AdminTable_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.AdminTablesView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -709,7 +817,11 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminShowAllTables;
         private Bunifu.UI.WinForms.BunifuTextBox AdminFillTableID;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminCheckTable;
-        private System.Windows.Forms.DataGridView AdminTablesView;
         private System.Windows.Forms.ComboBox comboBox1;
+        private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridView1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
