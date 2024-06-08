@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Markup;
+using static Google.Apis.Requests.BatchRequest;
 
 namespace UI
 {
@@ -268,21 +269,25 @@ namespace UI
                 mydt.Rows.Clear();
                 FirebaseResponse resp2 = await client.GetAsync("TableDetails/" + _table.ID);
 
-                if (resp2.Body == "null")
+                if (resp2.Body == "null" || resp2 == null)
                 {
                     MessageBox.Show("Bàn này chưa được sử dụng");
                     return;
                 }
-
-                var tableDetails = JsonConvert.DeserializeObject<Dictionary<string, NekoTableDetail>>(resp2.Body);
-
-                foreach (var detail in tableDetails.Values)
+                string jsonData = resp2.Body;
+                if (jsonData.TrimStart().StartsWith("["))
                 {
-                    DataRow row = mydt.NewRow();
-                    row["Ten Mon"] = detail.Name;
-                    row["SL"] = detail.SL;
-                    row["Thanh Tien"] = detail.Total;
-                    mydt.Rows.Add(row);
+                    var tableDetailsList = JsonConvert.DeserializeObject<List<NekoTableDetail>>(jsonData);
+                    foreach (var detail in tableDetailsList)
+                    {
+                        if (detail != null && !string.IsNullOrEmpty(detail.Name)){
+                            DataRow row = mydt.NewRow();
+                            row["Ten Mon"] = detail.Name;
+                            row["SL"] = detail.SL;
+                            row["Thanh Tien"] = detail.Total;
+                            mydt.Rows.Add(row);
+                        }
+                    }
                 }
 
                 dataGridView1.DataSource = mydt; // Bind the updated DataTable to DataGridView
