@@ -183,16 +183,33 @@ namespace UI
             // Lấy mục được chọn từ ComboBox1 hoặc ComboBox2
             if (comboBox1.SelectedIndex >= 0)
             {
-                selectedItem = comboBox1.SelectedItem.ToString();
+                selectedItem = comboBox1.SelectedItem?.ToString(); // Use null-conditional operator
                 var response = await client.GetAsync("/Drinks");
-                var drinks = JsonConvert.DeserializeObject<Dictionary<string, NekoDrink>>(response.Body);
-                foreach (var drink in drinks.Values)
+                if (response == null || response.Body == null)
                 {
-                    if (drink.Name == selectedItem)
+                    MessageBox.Show("No data retrieved from Firebase.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                string jsonData = response.Body;
+                if (jsonData?.TrimStart().StartsWith("[") == true) // Use null-conditional operator
+                {
+                    // Nếu là mảng JSON, xử lý nó như một danh sách
+                    var drinksList = JsonConvert.DeserializeObject<List<NekoDrink>>(jsonData);
+
+                    // Check if drinksList is null or empty
+                    if (drinksList == null || !drinksList.Any())
                     {
-                        if (int.TryParse(drink.Price, out int price))
+                        MessageBox.Show("No drinks found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+                    foreach (var drink in drinksList)
+                    {
+                        if (drink?.Name == selectedItem && !string.IsNullOrEmpty(drink.Name)) // Use null-conditional operator
                         {
-                            money = price * selectedNumber;
+                            if (int.TryParse(drink.Price, out int price))
+                            {
+                                money = price * selectedNumber;
+                            }
                         }
                     }
                 }
