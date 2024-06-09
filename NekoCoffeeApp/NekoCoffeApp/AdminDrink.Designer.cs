@@ -729,7 +729,7 @@
             this.AdminViewAllYourDrinks.RowHeadersWidth = 62;
             this.AdminViewAllYourDrinks.RowTemplate.Height = 40;
             this.AdminViewAllYourDrinks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.AdminViewAllYourDrinks.Size = new System.Drawing.Size(417, 449);
+            this.AdminViewAllYourDrinks.Size = new System.Drawing.Size(600, 449);
             this.AdminViewAllYourDrinks.TabIndex = 59;
             this.AdminViewAllYourDrinks.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.AdminViewAllYourDrinks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AdminViewAllYourDrinks_CellContentClick);
@@ -1043,7 +1043,7 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(642, 133);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(252, 25);
+            this.bunifuLabel1.Size = new System.Drawing.Size(180, 15);
             this.bunifuLabel1.TabIndex = 68;
             this.bunifuLabel1.Text = "------------------------------------";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;

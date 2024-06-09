@@ -59,52 +59,119 @@ namespace UI
 
         async void Loaddrinks()
         {
-            var response = await tbl.GetAsync("/Drinks");
-            var drinks = JsonConvert.DeserializeObject<Dictionary<string, NekoDrink>>(response.Body);
-
-            foreach (var drink in drinks.Values)
+            try
             {
-                // Tạo một panel mới cho mỗi drink
-                Panel panel = new Panel();
-                panel.Size = new Size(150, 150); // Thiết lập kích thước của Panel
-                panel.BorderStyle = BorderStyle.FixedSingle; // Thêm viền cho Panel (tùy chọn)
+                var response = await tbl.GetAsync("/Drinks");
 
-                // Tạo một PictureBox để hiển thị ảnh của drink
-                PictureBox pictureBox = new PictureBox();
-                pictureBox.Size = new Size(100, 100); // Thiết lập kích thước của PictureBox
-                pictureBox.Location = new Point(25, 10); // Thiết lập vị trí của PictureBox trong Panel
-
-                // Kiểm tra và tải ảnh từ URL
-                if (!string.IsNullOrEmpty(drink.ImageURL))
+                // Check if response or response.Body is null
+                if (response == null || response.Body == null)
                 {
-                    try
-                    {
-                        pictureBox.Load(drink.ImageURL);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"Lỗi khi tải ảnh: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                    MessageBox.Show("No data available", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
 
-                // Tạo một Button để hiển thị thông tin của drink
-                Button btn = new Button();
-                btn.Size = new Size(130, 30); // Thiết lập kích thước của Button
-                btn.Location = new Point(10, 115); // Thiết lập vị trí của Button trong Panel
-                btn.BackColor = Color.LightSalmon; // Thiết lập màu sắc của Button
-                btn.Text = $"ID: {drink.ID}\nName: {drink.Name}\nPrice: {drink.Price}";
+                string jsonData = response.Body;
 
-                // Gán sự kiện Click cho Button (nếu cần)
-                // btn.Click += (s, e) => { /* Code xử lý khi Button được nhấn */ };
+                // Check if jsonData is a JSON array
+                List<NekoDrink> drinksList;
 
-                // Thêm PictureBox và Button vào Panel
-                panel.Controls.Add(pictureBox);
-                panel.Controls.Add(btn);
+                if (jsonData.TrimStart().StartsWith("["))
+                {
+                    // If it's a JSON array, deserialize it as a list
+                    drinksList = JsonConvert.DeserializeObject<List<NekoDrink>>(jsonData);
+                }
+                else
+                {
+                    // If it's not a JSON array, deserialize it as a dictionary
+                    var drinksDict = JsonConvert.DeserializeObject<IDictionary<string, NekoDrink>>(jsonData);
+                    drinksList = drinksDict?.Values.ToList();
+                }
 
-                // Thêm Panel vào drinksFlowLayoutPanel
-                drinksFlowLayoutPanel.Controls.Add(panel);
+                // Check if drinksList is null or empty
+                if (drinksList == null || !drinksList.Any())
+                {
+                    MessageBox.Show("No data available", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Clear the previous controls
+                drinksFlowLayoutPanel.Controls.Clear();
+
+                foreach (var drink in drinksList)
+                {
+                    // Check if drink is null
+                    if (drink == null)
+                    {
+                        continue;
+                    }
+
+                    // Create a new panel for each drink
+                    Panel panel = new Panel();
+                    panel.Size = new Size(200, 180); // Adjust the size of the Panel
+                    panel.BorderStyle = BorderStyle.None;
+
+                    // Create a PictureBox to display the drink's image
+                    PictureBox pictureBox = new PictureBox();
+                    pictureBox.Size = new Size(130, 110);
+                    pictureBox.Location = new Point(50, 10); // Set the position of the PictureBox within the Panel
+                    pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+
+
+
+                    // Check and load the image from URL
+                    if (!string.IsNullOrEmpty(drink.ImageURL))
+                    {
+                        try
+                        {
+                            pictureBox.Load(drink.ImageURL);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Error loading image: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+
+                    // Create a Label to display the drink's name
+                    Label nameLabel = new Label();
+                    nameLabel.Text = drink.Name ?? "Unknown";
+                    nameLabel.Location = new Point(50, 120); // Set the position of the Label below the PictureBox
+                    nameLabel.AutoSize = true;
+                    nameLabel.Font = new Font("UTM Avo", 10, FontStyle.Bold);
+
+
+                    // Create a Label to display the drink's price
+                    Label priceLabel = new Label();
+                    priceLabel.Text = drink.Price.ToString();
+                    priceLabel.Location = new Point(50, 140); // Set the position of the Label below the name
+                    priceLabel.AutoSize = true;
+                    priceLabel.Font = new Font("UTM Avo", 8, FontStyle.Bold);
+
+                    // Create a Button to display the drink's information
+                    Button btn = new Button();
+                    btn.Size = new Size(60, 30);
+                    btn.Location = new Point(120, 135); // Set the position of the Button within the Panel
+                    btn.BackColor = Color.LightSalmon;
+                    btn.Text = "BUY";
+
+                    // Add event handler for Button click (if needed)
+                    // btn.Click += (s, e) => { /* Code to handle button click */ };
+
+                    // Add PictureBox, Labels, and Button to the Panel
+                    panel.Controls.Add(pictureBox);
+                    panel.Controls.Add(nameLabel);
+                    panel.Controls.Add(priceLabel);
+                    panel.Controls.Add(btn);
+
+                    // Add the Panel to drinksFlowLayoutPanel
+                    drinksFlowLayoutPanel.Controls.Add(panel);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
 
 
