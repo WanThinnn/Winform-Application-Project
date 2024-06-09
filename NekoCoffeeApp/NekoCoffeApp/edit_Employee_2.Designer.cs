@@ -109,7 +109,7 @@
             this.bunifuLabel9.CursorType = null;
             this.bunifuLabel9.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel9.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel9.Location = new System.Drawing.Point(1013, 485);
+            this.bunifuLabel9.Location = new System.Drawing.Point(1037, 475);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel9.Size = new System.Drawing.Size(47, 16);
@@ -145,7 +145,7 @@
             this.txbShift.IconRight = null;
             this.txbShift.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbShift.Lines = new string[0];
-            this.txbShift.Location = new System.Drawing.Point(1013, 508);
+            this.txbShift.Location = new System.Drawing.Point(1037, 498);
             this.txbShift.Margin = new System.Windows.Forms.Padding(4);
             this.txbShift.MaxLength = 32767;
             this.txbShift.MinimumSize = new System.Drawing.Size(2, 2);
@@ -200,7 +200,7 @@
             this.bunifuLabel8.CursorType = null;
             this.bunifuLabel8.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel8.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel8.Location = new System.Drawing.Point(867, 221);
+            this.bunifuLabel8.Location = new System.Drawing.Point(891, 211);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel8.Size = new System.Drawing.Size(60, 16);
@@ -248,7 +248,7 @@
             "Nam",
             "Nữ"});
             this.dbGender.ItemTopMargin = 3;
-            this.dbGender.Location = new System.Drawing.Point(865, 238);
+            this.dbGender.Location = new System.Drawing.Point(889, 228);
             this.dbGender.Margin = new System.Windows.Forms.Padding(4);
             this.dbGender.Name = "dbGender";
             this.dbGender.Size = new System.Drawing.Size(251, 36);
@@ -264,7 +264,7 @@
             this.bunifuLabel7.CursorType = null;
             this.bunifuLabel7.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel7.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel7.Location = new System.Drawing.Point(868, 485);
+            this.bunifuLabel7.Location = new System.Drawing.Point(892, 475);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel7.Size = new System.Drawing.Size(44, 16);
@@ -300,7 +300,7 @@
             this.txbSalary.IconRight = null;
             this.txbSalary.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbSalary.Lines = new string[0];
-            this.txbSalary.Location = new System.Drawing.Point(868, 508);
+            this.txbSalary.Location = new System.Drawing.Point(892, 498);
             this.txbSalary.Margin = new System.Windows.Forms.Padding(4);
             this.txbSalary.MaxLength = 32767;
             this.txbSalary.MinimumSize = new System.Drawing.Size(2, 2);
@@ -355,7 +355,7 @@
             this.bunifuLabel6.CursorType = null;
             this.bunifuLabel6.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel6.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel6.Location = new System.Drawing.Point(869, 417);
+            this.bunifuLabel6.Location = new System.Drawing.Point(893, 407);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel6.Size = new System.Drawing.Size(47, 16);
@@ -391,7 +391,7 @@
             this.txbAdrr.IconRight = null;
             this.txbAdrr.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbAdrr.Lines = new string[0];
-            this.txbAdrr.Location = new System.Drawing.Point(869, 440);
+            this.txbAdrr.Location = new System.Drawing.Point(893, 430);
             this.txbAdrr.Margin = new System.Windows.Forms.Padding(4);
             this.txbAdrr.MaxLength = 32767;
             this.txbAdrr.MinimumSize = new System.Drawing.Size(2, 2);
@@ -446,7 +446,7 @@
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel3.Location = new System.Drawing.Point(869, 349);
+            this.bunifuLabel3.Location = new System.Drawing.Point(893, 339);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(87, 16);
@@ -482,7 +482,7 @@
             this.txbPhone.IconRight = null;
             this.txbPhone.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbPhone.Lines = new string[0];
-            this.txbPhone.Location = new System.Drawing.Point(869, 372);
+            this.txbPhone.Location = new System.Drawing.Point(893, 362);
             this.txbPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txbPhone.MaxLength = 32767;
             this.txbPhone.MinimumSize = new System.Drawing.Size(2, 2);
@@ -537,7 +537,7 @@
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel5.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel5.Location = new System.Drawing.Point(993, 282);
+            this.bunifuLabel5.Location = new System.Drawing.Point(1017, 272);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(39, 16);
@@ -553,7 +553,7 @@
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel4.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel4.Location = new System.Drawing.Point(869, 282);
+            this.bunifuLabel4.Location = new System.Drawing.Point(893, 272);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel4.Size = new System.Drawing.Size(65, 16);
@@ -569,7 +569,7 @@
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel2.Location = new System.Drawing.Point(868, 158);
+            this.bunifuLabel2.Location = new System.Drawing.Point(892, 148);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(46, 16);
@@ -586,7 +586,7 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel1.Location = new System.Drawing.Point(868, 98);
+            this.bunifuLabel1.Location = new System.Drawing.Point(892, 88);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(18, 16);
@@ -642,7 +642,7 @@
             this.btnRefresh.IdleIconLeftImage = null;
             this.btnRefresh.IdleIconRightImage = null;
             this.btnRefresh.IndicateFocus = false;
-            this.btnRefresh.Location = new System.Drawing.Point(246, 522);
+            this.btnRefresh.Location = new System.Drawing.Point(270, 512);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -713,7 +713,7 @@
             this.txbIDEmployee.IconRight = null;
             this.txbIDEmployee.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbIDEmployee.Lines = new string[0];
-            this.txbIDEmployee.Location = new System.Drawing.Point(869, 116);
+            this.txbIDEmployee.Location = new System.Drawing.Point(893, 106);
             this.txbIDEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.txbIDEmployee.MaxLength = 32767;
             this.txbIDEmployee.MinimumSize = new System.Drawing.Size(2, 2);
@@ -788,7 +788,7 @@
             this.txbEmail.IconRight = null;
             this.txbEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbEmail.Lines = new string[0];
-            this.txbEmail.Location = new System.Drawing.Point(988, 303);
+            this.txbEmail.Location = new System.Drawing.Point(1012, 293);
             this.txbEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txbEmail.MaxLength = 32767;
             this.txbEmail.MinimumSize = new System.Drawing.Size(2, 2);
@@ -863,7 +863,7 @@
             this.txbBirthday.IconRight = null;
             this.txbBirthday.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbBirthday.Lines = new string[0];
-            this.txbBirthday.Location = new System.Drawing.Point(865, 303);
+            this.txbBirthday.Location = new System.Drawing.Point(889, 293);
             this.txbBirthday.Margin = new System.Windows.Forms.Padding(4);
             this.txbBirthday.MaxLength = 32767;
             this.txbBirthday.MinimumSize = new System.Drawing.Size(2, 2);
@@ -914,7 +914,7 @@
             // label1
             // 
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(866, 83);
+            this.label1.Location = new System.Drawing.Point(890, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(260, 20);
             this.label1.TabIndex = 184;
@@ -947,7 +947,7 @@
             this.tbIDEmployee.IconRight = null;
             this.tbIDEmployee.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbIDEmployee.Lines = new string[0];
-            this.tbIDEmployee.Location = new System.Drawing.Point(865, 33);
+            this.tbIDEmployee.Location = new System.Drawing.Point(889, 23);
             this.tbIDEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.tbIDEmployee.MaxLength = 32767;
             this.tbIDEmployee.MinimumSize = new System.Drawing.Size(2, 2);
@@ -1049,7 +1049,7 @@
             this.DataView.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.DataView.HeaderBgColor = System.Drawing.Color.Empty;
             this.DataView.HeaderForeColor = System.Drawing.Color.White;
-            this.DataView.Location = new System.Drawing.Point(32, 30);
+            this.DataView.Location = new System.Drawing.Point(56, 20);
             this.DataView.Name = "DataView";
             this.DataView.ReadOnly = true;
             this.DataView.RowHeadersVisible = false;
@@ -1107,7 +1107,7 @@
             this.btnUpdate.IdleIconLeftImage = null;
             this.btnUpdate.IdleIconRightImage = null;
             this.btnUpdate.IndicateFocus = false;
-            this.btnUpdate.Location = new System.Drawing.Point(513, 522);
+            this.btnUpdate.Location = new System.Drawing.Point(537, 512);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -1198,7 +1198,7 @@
             this.btnDelete.IdleIconLeftImage = null;
             this.btnDelete.IdleIconRightImage = null;
             this.btnDelete.IndicateFocus = false;
-            this.btnDelete.Location = new System.Drawing.Point(424, 522);
+            this.btnDelete.Location = new System.Drawing.Point(448, 512);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -1289,7 +1289,7 @@
             this.btnAdd.IdleIconLeftImage = null;
             this.btnAdd.IdleIconRightImage = null;
             this.btnAdd.IndicateFocus = false;
-            this.btnAdd.Location = new System.Drawing.Point(335, 522);
+            this.btnAdd.Location = new System.Drawing.Point(359, 512);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -1360,7 +1360,7 @@
             this.txbNameEmployee.IconRight = null;
             this.txbNameEmployee.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbNameEmployee.Lines = new string[0];
-            this.txbNameEmployee.Location = new System.Drawing.Point(865, 180);
+            this.txbNameEmployee.Location = new System.Drawing.Point(889, 170);
             this.txbNameEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.txbNameEmployee.MaxLength = 32767;
             this.txbNameEmployee.MinimumSize = new System.Drawing.Size(2, 2);
@@ -1455,7 +1455,7 @@
             this.btnCheck.IdleIconLeftImage = null;
             this.btnCheck.IdleIconRightImage = null;
             this.btnCheck.IndicateFocus = false;
-            this.btnCheck.Location = new System.Drawing.Point(1040, 33);
+            this.btnCheck.Location = new System.Drawing.Point(1064, 23);
             this.btnCheck.Margin = new System.Windows.Forms.Padding(4);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
