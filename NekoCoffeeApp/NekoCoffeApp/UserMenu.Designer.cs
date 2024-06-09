@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserMenu));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -38,6 +39,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.drinksFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.btnTable = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -73,7 +75,7 @@
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(73, 33);
+            this.bunifuLabel1.Size = new System.Drawing.Size(47, 22);
             this.bunifuLabel1.TabIndex = 52;
             this.bunifuLabel1.Text = "Menu";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -90,7 +92,7 @@
             0,
             -2147483648});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(65, 31);
+            this.numericUpDown1.Size = new System.Drawing.Size(65, 23);
             this.numericUpDown1.TabIndex = 91;
             // 
             // bunifuLabel3
@@ -103,7 +105,7 @@
             this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(85, 25);
+            this.bunifuLabel3.Size = new System.Drawing.Size(60, 16);
             this.bunifuLabel3.TabIndex = 90;
             this.bunifuLabel3.Text = "Tên món";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -128,11 +130,11 @@
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges1;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -203,19 +205,19 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 25);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(188, 111);
+            this.pictureBox2.Size = new System.Drawing.Size(165, 88);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 88;
             this.pictureBox2.TabStop = false;
             // 
             // drinksFlowLayoutPanel
             // 
-            this.drinksFlowLayoutPanel.Location = new System.Drawing.Point(14, 97);
+            this.drinksFlowLayoutPanel.Location = new System.Drawing.Point(14, 139);
             this.drinksFlowLayoutPanel.Name = "drinksFlowLayoutPanel";
-            this.drinksFlowLayoutPanel.Size = new System.Drawing.Size(699, 366);
+            this.drinksFlowLayoutPanel.Size = new System.Drawing.Size(699, 324);
             this.drinksFlowLayoutPanel.TabIndex = 92;
             // 
             // bunifuPanel1
@@ -230,15 +232,107 @@
             this.bunifuPanel1.Controls.Add(this.bunifuButton1);
             this.bunifuPanel1.Controls.Add(this.bunifuLabel3);
             this.bunifuPanel1.Controls.Add(this.pictureBox2);
-            this.bunifuPanel1.Location = new System.Drawing.Point(27, 114);
+            this.bunifuPanel1.Location = new System.Drawing.Point(208, 283);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(190, 180);
             this.bunifuPanel1.TabIndex = 0;
             // 
+            // btnTable
+            // 
+            this.btnTable.AllowAnimations = true;
+            this.btnTable.AllowMouseEffects = true;
+            this.btnTable.AllowToggling = false;
+            this.btnTable.AnimationSpeed = 200;
+            this.btnTable.AutoGenerateColors = false;
+            this.btnTable.AutoRoundBorders = false;
+            this.btnTable.AutoSizeLeftIcon = true;
+            this.btnTable.AutoSizeRightIcon = true;
+            this.btnTable.BackColor = System.Drawing.Color.Transparent;
+            this.btnTable.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
+            this.btnTable.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTable.BackgroundImage")));
+            this.btnTable.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnTable.ButtonText = "Đặt bàn";
+            this.btnTable.ButtonTextMarginLeft = 0;
+            this.btnTable.ColorContrastOnClick = 45;
+            this.btnTable.ColorContrastOnHover = 45;
+            this.btnTable.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnTable.CustomizableEdges = borderEdges2;
+            this.btnTable.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnTable.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnTable.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnTable.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnTable.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnTable.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
+            this.btnTable.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTable.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnTable.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnTable.IconMarginLeft = 11;
+            this.btnTable.IconPadding = 10;
+            this.btnTable.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTable.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnTable.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnTable.IconSize = 25;
+            this.btnTable.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
+            this.btnTable.IdleBorderRadius = 40;
+            this.btnTable.IdleBorderThickness = 1;
+            this.btnTable.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
+            this.btnTable.IdleIconLeftImage = null;
+            this.btnTable.IdleIconRightImage = null;
+            this.btnTable.IndicateFocus = false;
+            this.btnTable.Location = new System.Drawing.Point(616, 94);
+            this.btnTable.Name = "btnTable";
+            this.btnTable.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnTable.OnDisabledState.BorderRadius = 40;
+            this.btnTable.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnTable.OnDisabledState.BorderThickness = 1;
+            this.btnTable.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnTable.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnTable.OnDisabledState.IconLeftImage = null;
+            this.btnTable.OnDisabledState.IconRightImage = null;
+            this.btnTable.onHoverState.BorderColor = System.Drawing.Color.Chocolate;
+            this.btnTable.onHoverState.BorderRadius = 40;
+            this.btnTable.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnTable.onHoverState.BorderThickness = 1;
+            this.btnTable.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
+            this.btnTable.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnTable.onHoverState.IconLeftImage = null;
+            this.btnTable.onHoverState.IconRightImage = null;
+            this.btnTable.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
+            this.btnTable.OnIdleState.BorderRadius = 40;
+            this.btnTable.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnTable.OnIdleState.BorderThickness = 1;
+            this.btnTable.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
+            this.btnTable.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
+            this.btnTable.OnIdleState.IconLeftImage = null;
+            this.btnTable.OnIdleState.IconRightImage = null;
+            this.btnTable.OnPressedState.BorderColor = System.Drawing.Color.DarkRed;
+            this.btnTable.OnPressedState.BorderRadius = 40;
+            this.btnTable.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnTable.OnPressedState.BorderThickness = 1;
+            this.btnTable.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnTable.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnTable.OnPressedState.IconLeftImage = null;
+            this.btnTable.OnPressedState.IconRightImage = null;
+            this.btnTable.Size = new System.Drawing.Size(87, 39);
+            this.btnTable.TabIndex = 93;
+            this.btnTable.TabStop = false;
+            this.btnTable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTable.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnTable.TextMarginLeft = 0;
+            this.btnTable.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnTable.UseDefaultRadiusAndThickness = true;
+            this.btnTable.Click += new System.EventHandler(this.btnTable_Click);
+            // 
             // UserMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.btnTable);
             this.Controls.Add(this.drinksFlowLayoutPanel);
             this.Controls.Add(this.bunifuPanel1);
             this.Controls.Add(this.bunifuGradientPanel1);
@@ -265,5 +359,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.FlowLayoutPanel drinksFlowLayoutPanel;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnTable;
     }
 }

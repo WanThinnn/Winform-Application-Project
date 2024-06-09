@@ -172,9 +172,10 @@ namespace UI
             }
         }
 
+        private void btnTable_Click(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 
 
