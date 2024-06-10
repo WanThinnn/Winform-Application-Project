@@ -59,13 +59,6 @@ namespace UI
 
         }
 
-        private void AdminOrderTable1_Click(object sender, EventArgs e)
-        {
-            TableDetail tableDetail = new TableDetail();
-            tableDetail.Show();
-        }
-
-
         private void AdminAdjustTable_Click(object sender, EventArgs e)
         {
             edit_Table edit_Table = new edit_Table();

@@ -974,3 +974,4 @@ C:\MyData\UIT\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\N
 C:\MyData\UIT\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\NekoCoff.167EBE38.Up2Date
 C:\MyData\UIT\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.exe
 C:\MyData\UIT\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.pdb
+C:\MyData\UIT\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserBookTable.resources

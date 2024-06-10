@@ -534,6 +534,12 @@
     <Compile Include="TableDetail.Designer.cs">
       <DependentUpon>TableDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserBookTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserBookTable.Designer.cs">
+      <DependentUpon>UserBookTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserDiscount.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -664,6 +670,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserBookTable.resx">
+      <DependentUpon>UserBookTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserCart.resx">
       <DependentUpon>UserCart.cs</DependentUpon>
