@@ -157,5 +157,15 @@ namespace UI
                 this.txtConfirm.PasswordChar = '●';
             }
         }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbDangNhap_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

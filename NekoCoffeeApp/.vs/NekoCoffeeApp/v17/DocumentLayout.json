@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\MyData\\UIT\\Winform-Application-Project\\NekoCoffeeApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\mydata\\uit\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\tabledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\tabledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\mydata\\uit\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\tabledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\tabledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\mydata\\uit\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\tabledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\tabledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\mydata\\uit\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\nekotabledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\nekotabledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\mydata\\uit\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\nekotable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\nekotable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|c:\\mydata\\uit\\winform-application-project\\nekocoffeeapp\\nekocoffeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{985CF213-04FB-480D-8212-A613C36B722B}|NekoCoffeApp\\NekoCoffeeApp.csproj|solutionrelative:nekocoffeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +50,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "NekoTable.cs",
+              "DocumentMoniker": "C:\\MyData\\UIT\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\NekoTable.cs",
+              "RelativeDocumentMoniker": "NekoCoffeApp\\NekoTable.cs",
+              "ToolTip": "C:\\MyData\\UIT\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\NekoTable.cs",
+              "RelativeToolTip": "NekoCoffeApp\\NekoTable.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBkAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T17:11:18.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\MyData\\UIT\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\Program.cs",
+              "RelativeDocumentMoniker": "NekoCoffeApp\\Program.cs",
+              "ToolTip": "C:\\MyData\\UIT\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\Program.cs",
+              "RelativeToolTip": "NekoCoffeApp\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T17:07:57.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "TableDetail.cs [Design]",
               "DocumentMoniker": "C:\\MyData\\UIT\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\TableDetail.cs",
               "RelativeDocumentMoniker": "NekoCoffeApp\\TableDetail.cs",
@@ -54,13 +88,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TableDetail.cs",
               "DocumentMoniker": "C:\\MyData\\UIT\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\TableDetail.cs",
               "RelativeDocumentMoniker": "NekoCoffeApp\\TableDetail.cs",
               "ToolTip": "C:\\MyData\\UIT\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\TableDetail.cs",
               "RelativeToolTip": "NekoCoffeApp\\TableDetail.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAIwBcBAAA9AAAA",
+              "ViewState": "AQIAAEMBAAAAAAAAAAAAwFABAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T16:41:10.845Z",
               "EditorCaption": ""
@@ -73,7 +107,7 @@
               "RelativeDocumentMoniker": "NekoCoffeApp\\NekoTableDetail.cs",
               "ToolTip": "C:\\MyData\\UIT\\Winform-Application-Project\\NekoCoffeeApp\\NekoCoffeApp\\NekoTableDetail.cs",
               "RelativeToolTip": "NekoCoffeApp\\NekoTableDetail.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T16:39:54.043Z",
               "EditorCaption": ""
