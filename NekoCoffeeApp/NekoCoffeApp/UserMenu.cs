@@ -146,21 +146,34 @@ namespace UI
                     priceLabel.AutoSize = true;
                     priceLabel.Font = new Font("UTM Avo", 8, FontStyle.Bold);
 
+
+                    // Create a NumericUpDown for quantity selection
+                    NumericUpDown numericUpDown = new NumericUpDown();
+                    numericUpDown.Size = new Size(30, 20);
+                    numericUpDown.Location = new Point(100, 145); // Set the position of the NumericUpDown within the Panel
+                    numericUpDown.Minimum = 1;
+                    numericUpDown.Maximum = 100;
+
+
                     // Create a Button to display the drink's information
                     Button btn = new Button();
-                    btn.Size = new Size(60, 30);
-                    btn.Location = new Point(120, 135); // Set the position of the Button within the Panel
+                    btn.Size = new Size(60, 28);
+                    btn.Location = new Point(130, 140); // Set the position of the Button within the Panel
                     btn.BackColor = Color.LightSalmon;
-                    btn.Text = "Thêm";
+                    btn.Text = "Mua";
+
 
                     // Add event handler for Button click (if needed)
                     // btn.Click += (s, e) => { /* Code to handle button click */ };
 
                     // Add PictureBox, Labels, and Button to the Panel
+                    panel.Controls.Add(btn);
                     panel.Controls.Add(pictureBox);
                     panel.Controls.Add(nameLabel);
                     panel.Controls.Add(priceLabel);
-                    panel.Controls.Add(btn);
+                    panel.Controls.Add(numericUpDown);
+
+
 
                     // Add the Panel to drinksFlowLayoutPanel
                     drinksFlowLayoutPanel.Controls.Add(panel);
