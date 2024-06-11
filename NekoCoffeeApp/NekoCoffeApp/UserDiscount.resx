@@ -121,7 +121,7 @@
   <data name="bunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAtsAAABQCAYAAADImLmaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAADiKSURBVHhe7dZnmyVJdeBxvhgraSVkVyvvDSBASEIIIRiG
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAADiKSURBVHhe7dZnmyVJdeBxvhgraSVkVyvvDSBASEIIIRiG
         8d3Tbtr7ri7vva/uWX04xPT+I2oiKjIzzMmIU4zE5IvfU0+9qFv35o045/+VN//5n7/65tNPrzR59eoS
         nF55c3oZjq+8OdZ2eOXN4WXYv/JmX9vuuV1t2+e2NW1e2NS0fm5d0+qFVU3LF5a1LHYtapnvmtcwOzSr
         YaZrRsPzoecang49bfU47nGrh3EPW9yPu9/qbtzdFrfTbre4lXar1o28G7Wu5V2rcTXvaq2P8j6q8UHZ
@@ -367,7 +367,7 @@
 </value>
   </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Montserrat Black'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Montserrat Black'; font-size: 16pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="pictureBox9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

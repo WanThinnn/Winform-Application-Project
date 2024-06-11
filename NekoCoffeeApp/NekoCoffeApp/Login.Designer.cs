@@ -88,11 +88,11 @@
             this.txPass.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txPass.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txPass.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
-            this.txPass.BorderRadius = 30;
+            this.txPass.BorderRadius = 40;
             this.txPass.BorderThickness = 1;
             this.txPass.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txPass.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txPass.DefaultFont = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold);
             this.txPass.DefaultText = "";
             this.txPass.FillColor = System.Drawing.Color.White;
             this.txPass.HideSelection = true;
@@ -139,7 +139,7 @@
             this.txPass.SelectionLength = 0;
             this.txPass.SelectionStart = 0;
             this.txPass.ShortcutsEnabled = true;
-            this.txPass.Size = new System.Drawing.Size(370, 35);
+            this.txPass.Size = new System.Drawing.Size(370, 41);
             this.txPass.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txPass.TabIndex = 10;
             this.txPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -164,11 +164,11 @@
             this.txUser.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txUser.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txUser.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
-            this.txUser.BorderRadius = 30;
+            this.txUser.BorderRadius = 40;
             this.txUser.BorderThickness = 1;
             this.txUser.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txUser.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txUser.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txUser.DefaultFont = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold);
             this.txUser.DefaultText = "";
             this.txUser.FillColor = System.Drawing.Color.White;
             this.txUser.HideSelection = true;
@@ -178,7 +178,7 @@
             this.txUser.IconRight = null;
             this.txUser.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txUser.Lines = new string[0];
-            this.txUser.Location = new System.Drawing.Point(128, 120);
+            this.txUser.Location = new System.Drawing.Point(128, 114);
             this.txUser.Margin = new System.Windows.Forms.Padding(2);
             this.txUser.MaxLength = 32767;
             this.txUser.MinimumSize = new System.Drawing.Size(1, 1);
@@ -215,7 +215,7 @@
             this.txUser.SelectionLength = 0;
             this.txUser.SelectionStart = 0;
             this.txUser.ShortcutsEnabled = true;
-            this.txUser.Size = new System.Drawing.Size(370, 35);
+            this.txUser.Size = new System.Drawing.Size(370, 41);
             this.txUser.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txUser.TabIndex = 9;
             this.txUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -231,7 +231,7 @@
             this.lbDangNhap.AutoSize = true;
             this.lbDangNhap.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbDangNhap.Location = new System.Drawing.Point(276, 50);
+            this.lbDangNhap.Location = new System.Drawing.Point(275, 61);
             this.lbDangNhap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDangNhap.Name = "lbDangNhap";
             this.lbDangNhap.Size = new System.Drawing.Size(143, 29);
@@ -244,7 +244,7 @@
             this.lkForgotPass.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkForgotPass.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.lkForgotPass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
-            this.lkForgotPass.Location = new System.Drawing.Point(378, 196);
+            this.lkForgotPass.Location = new System.Drawing.Point(381, 202);
             this.lkForgotPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lkForgotPass.Name = "lkForgotPass";
             this.lkForgotPass.Size = new System.Drawing.Size(117, 18);
@@ -335,7 +335,7 @@
             this.btnLogin.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnLogin.OnPressedState.IconLeftImage = null;
             this.btnLogin.OnPressedState.IconRightImage = null;
-            this.btnLogin.Size = new System.Drawing.Size(370, 35);
+            this.btnLogin.Size = new System.Drawing.Size(370, 38);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.TabStop = false;
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -392,7 +392,7 @@
             this.btnSignUp.IdleIconLeftImage = null;
             this.btnSignUp.IdleIconRightImage = null;
             this.btnSignUp.IndicateFocus = false;
-            this.btnSignUp.Location = new System.Drawing.Point(129, 295);
+            this.btnSignUp.Location = new System.Drawing.Point(128, 292);
             this.btnSignUp.Margin = new System.Windows.Forms.Padding(2);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -427,7 +427,7 @@
             this.btnSignUp.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnSignUp.OnPressedState.IconLeftImage = null;
             this.btnSignUp.OnPressedState.IconRightImage = null;
-            this.btnSignUp.Size = new System.Drawing.Size(160, 35);
+            this.btnSignUp.Size = new System.Drawing.Size(160, 38);
             this.btnSignUp.TabIndex = 11;
             this.btnSignUp.TabStop = false;
             this.btnSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -572,7 +572,7 @@
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(192, 25);
+            this.logo.Location = new System.Drawing.Point(191, 36);
             this.logo.Margin = new System.Windows.Forms.Padding(2);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(97, 91);
@@ -636,6 +636,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(625, 392);
+            this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnLoginGoogle);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pictureBox11);
@@ -645,7 +646,6 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.txPass);
             this.Controls.Add(this.txUser);
             this.Controls.Add(this.lbDangNhap);

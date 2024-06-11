@@ -121,7 +121,7 @@
   <data name="bunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAtsAAABQCAYAAADImLmaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAADiKSURBVHhe7dZnmyVJdeBxvhgraSVkVyvvDSBASEIIIRiG
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAADiKSURBVHhe7dZnmyVJdeBxvhgraSVkVyvvDSBASEIIIRiG
         8d3Tbtr7ri7vva/uWX04xPT+I2oiKjIzzMmIU4zE5IvfU0+9qFv35o045/+VN//5n7/65tNPrzR59eoS
         nF55c3oZjq+8OdZ2eOXN4WXYv/JmX9vuuV1t2+e2NW1e2NS0fm5d0+qFVU3LF5a1LHYtapnvmtcwOzSr
         YaZrRsPzoecang49bfU47nGrh3EPW9yPu9/qbtzdFrfTbre4lXar1o28G7Wu5V2rcTXvaq2P8j6q8UHZ
@@ -367,7 +367,7 @@
 </value>
   </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Montserrat Black'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Montserrat Black'; font-size: 16pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="lbPoint.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Montserrat SemiBold'; font-size: 8pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
@@ -375,7 +375,7 @@
   <data name="btnCheck.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHEAAAAqCAYAAACEN7TkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAPbSURBVHhe7ZzPTxNBFMf36NGjR48ePXr0LzBeTDyAFUJL
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPbSURBVHhe7ZzPTxNBFMf36NGjR48ePXr0LzBeTDyAFUJL
         C6gkakKMiXryB2K1tNtSiIJiNBIhahB/EJLGEIIJEkKUYBSCEfmxu1NKS1uosO53WRoNAy5Q6DR5L/nc
         ZqfNfHdm3rz3ZqWdWNTrOKjcKXYr3uKrmuzuMRjU6ssU1XtKJ/hgfDBOLOjpw7gZ41ej3HYcsoZ0bwzC
         qb6SWi3gnGRBdzzeeXdhIfJAXxzu0pdGI/ryryFdn58gNgDjg3Fa/PJex7gluhszLFwZM8X1u1rUOscR
@@ -3056,7 +3056,7 @@
   <data name="txtPoint.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFUAAAAoCAYAAACPSbZFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACSSURBVGhD7dCxDcMwAANB7T+VDI2RMTJADAFqUtvf3QNs
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACSSURBVGhD7dCxDcMwAANB7T+VDI2RMTJADAFqUtvf3QNs
         WN5Q1FrrM+f82bNtx0M6xj70vO14SKG+FdQgqEFQg6AGQQ2CGgQ1CGoQ1CCoQVCDoAZBDYIaBDUIahDU
         IKhBUIOgBkENghoENQhqENQgqEFQg6AGQQ2CGgQ1CGoQ1CCoQX+o13V992HPth0Pqd5tjBur12mLKil8
         AAAAAABJRU5ErkJggg==

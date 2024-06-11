@@ -88,7 +88,7 @@
             this.txtPhone.BorderThickness = 1;
             this.txtPhone.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPhone.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.DefaultFont = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold);
             this.txtPhone.DefaultText = "";
             this.txtPhone.FillColor = System.Drawing.Color.White;
             this.txtPhone.HideSelection = true;
@@ -165,7 +165,7 @@
             this.txtEmail.BorderThickness = 1;
             this.txtEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.DefaultFont = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold);
             this.txtEmail.DefaultText = "";
             this.txtEmail.FillColor = System.Drawing.Color.White;
             this.txtEmail.HideSelection = true;
@@ -272,7 +272,7 @@
             this.txtSendCode.IdleIconLeftImage = null;
             this.txtSendCode.IdleIconRightImage = null;
             this.txtSendCode.IndicateFocus = false;
-            this.txtSendCode.Location = new System.Drawing.Point(121, 239);
+            this.txtSendCode.Location = new System.Drawing.Point(121, 240);
             this.txtSendCode.Margin = new System.Windows.Forms.Padding(2);
             this.txtSendCode.Name = "txtSendCode";
             this.txtSendCode.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -334,7 +334,7 @@
             this.txtUserName.BorderThickness = 1;
             this.txtUserName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUserName.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtUserName.DefaultFont = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold);
             this.txtUserName.DefaultText = "";
             this.txtUserName.FillColor = System.Drawing.Color.White;
             this.txtUserName.HideSelection = true;
@@ -399,7 +399,7 @@
             this.lbDangNhap.AutoSize = true;
             this.lbDangNhap.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbDangNhap.Location = new System.Drawing.Point(238, 35);
+            this.lbDangNhap.Location = new System.Drawing.Point(237, 35);
             this.lbDangNhap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDangNhap.Name = "lbDangNhap";
             this.lbDangNhap.Size = new System.Drawing.Size(200, 29);
@@ -410,7 +410,7 @@
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(163, 11);
+            this.logo.Location = new System.Drawing.Point(162, 11);
             this.logo.Margin = new System.Windows.Forms.Padding(2);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(95, 90);

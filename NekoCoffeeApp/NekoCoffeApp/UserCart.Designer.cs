@@ -48,7 +48,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPay = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnDelete = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnDeleteAll = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -56,6 +55,7 @@
             this.btnMenu = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.UserViewAllCart = new System.Windows.Forms.ListView();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -273,22 +273,6 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(731, 80);
             this.bunifuGradientPanel1.TabIndex = 51;
-            // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Montserrat Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.Location = new System.Drawing.Point(313, 26);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(66, 22);
-            this.bunifuLabel1.TabIndex = 52;
-            this.bunifuLabel1.Text = "My Cart";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // btnDelete
             // 
@@ -671,6 +655,22 @@
             this.pictureBox14.TabIndex = 100;
             this.pictureBox14.TabStop = false;
             // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.CursorType = null;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Montserrat Black", 16F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Location = new System.Drawing.Point(313, 26);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(114, 29);
+            this.bunifuLabel1.TabIndex = 53;
+            this.bunifuLabel1.Text = "GIỎ HÀNG";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // UserCart
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -726,7 +726,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnPay;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDelete;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDeleteAll;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
@@ -734,5 +733,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnMenu;
         private System.Windows.Forms.ListView UserViewAllCart;
         private System.Windows.Forms.PictureBox pictureBox14;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
     }
 }

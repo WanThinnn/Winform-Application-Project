@@ -427,7 +427,7 @@
             this.dbGender.FormattingEnabled = true;
             this.dbGender.Icon = null;
             this.dbGender.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.dbGender.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
+            this.dbGender.IndicatorColor = System.Drawing.Color.Black;
             this.dbGender.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
             this.dbGender.IntegralHeight = false;
             this.dbGender.ItemBackColor = System.Drawing.Color.White;
