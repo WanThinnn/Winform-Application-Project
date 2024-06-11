@@ -290,6 +290,28 @@ namespace UI
                         }
                     }
                 }
+                else
+                {
+                    mydt.Rows.Clear();
+                    FirebaseResponse resp3 = await client.GetAsync("TableDetails/" + _table.ID);
+
+                    if (resp3.Body == "null")
+                    {
+                        MessageBox.Show("Bàn này chưa được sử dụng");
+                        return;
+                    }
+
+                    var tableDetails = JsonConvert.DeserializeObject<Dictionary<string, NekoTableDetail>>(resp2.Body);
+
+                    foreach (var detail in tableDetails.Values)
+                    {
+                        DataRow row = mydt.NewRow();
+                        row["Ten Mon"] = detail.Name;
+                        row["SL"] = detail.SL;
+                        row["Thanh Tien"] = detail.Total;
+                        mydt.Rows.Add(row);
+                    }
+                }
 
                 dataGridView1.DataSource = mydt; // Bind the updated DataTable to DataGridView
 
