@@ -15,6 +15,7 @@ namespace UI
         public string Name { get; set; }
         public string Status { get; set; }
 
+
         private static string error1 = "Không tồn tại!";
         private static string error2 = "Cảnh báo";
 

@@ -132,6 +132,13 @@ namespace UI
             }
             else
                 UserMenu.Instance.BringToFront();
+
+            if (GlobalVars.CurrentUser != null)
+            {
+                btnUser.Text = GlobalVars.CurrentUser.Username;
+            }
+
+            
         }
         private void LogoutGoogle()
         {

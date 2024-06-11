@@ -151,7 +151,7 @@ namespace UI
                     btn.Size = new Size(60, 30);
                     btn.Location = new Point(120, 135); // Set the position of the Button within the Panel
                     btn.BackColor = Color.LightSalmon;
-                    btn.Text = "BUY";
+                    btn.Text = "Thêm";
 
                     // Add event handler for Button click (if needed)
                     // btn.Click += (s, e) => { /* Code to handle button click */ };
@@ -171,7 +171,6 @@ namespace UI
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
     }
 
 
