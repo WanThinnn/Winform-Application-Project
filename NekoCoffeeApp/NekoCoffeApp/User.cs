@@ -57,7 +57,14 @@ namespace UI
 
         private void btnAboutUs_Click(object sender, EventArgs e)
         {
-
+            if (!panelUserControl.Controls.Contains(UserBooking.Instance))
+            {
+                panelUserControl.Controls.Add(UserBooking.Instance);
+                UserBooking.Instance.Dock = DockStyle.Fill;
+                UserBooking.Instance.BringToFront();
+            }
+            else
+                UserPoint.Instance.BringToFront();
         }
 
         private void btnPoint_Click(object sender, EventArgs e)

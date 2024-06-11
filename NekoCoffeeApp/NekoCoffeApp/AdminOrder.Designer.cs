@@ -332,9 +332,9 @@
             // 
             // Table_flowLayoutPanel
             // 
-            this.Table_flowLayoutPanel.Location = new System.Drawing.Point(16, 3);
+            this.Table_flowLayoutPanel.Location = new System.Drawing.Point(35, 33);
             this.Table_flowLayoutPanel.Name = "Table_flowLayoutPanel";
-            this.Table_flowLayoutPanel.Size = new System.Drawing.Size(665, 359);
+            this.Table_flowLayoutPanel.Size = new System.Drawing.Size(630, 329);
             this.Table_flowLayoutPanel.TabIndex = 32;
             this.Table_flowLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Table_flowLayoutPanel_Paint);
             // 

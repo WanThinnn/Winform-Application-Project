@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace UI
 {
-    internal class NekoUser
+    public class NekoUser
     {
         public string Username { get; set; }
         public string Password { get; set; }

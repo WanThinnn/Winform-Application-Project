@@ -203,9 +203,9 @@
             // 
             this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(38, 107);
+            this.pictureBox12.Location = new System.Drawing.Point(38, 112);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(34, 39);
+            this.pictureBox12.Size = new System.Drawing.Size(34, 34);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 43;
             this.pictureBox12.TabStop = false;
@@ -222,9 +222,9 @@
             this.lbCart.Location = new System.Drawing.Point(78, 119);
             this.lbCart.Name = "lbCart";
             this.lbCart.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbCart.Size = new System.Drawing.Size(73, 23);
+            this.lbCart.Size = new System.Drawing.Size(77, 23);
             this.lbCart.TabIndex = 44;
-            this.lbCart.Text = "MY CART";
+            this.lbCart.Text = "Giỏ hàng";
             this.lbCart.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lbCart.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.lbCart.Click += new System.EventHandler(this.bunifuLabel1_Click);
@@ -243,7 +243,7 @@
             this.btnAboutUs.BackColor1 = System.Drawing.Color.LightSalmon;
             this.btnAboutUs.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAboutUs.BackgroundImage")));
             this.btnAboutUs.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnAboutUs.ButtonText = "ABOUT US ";
+            this.btnAboutUs.ButtonText = "ĐẶT BÀN";
             this.btnAboutUs.ButtonTextMarginLeft = 0;
             this.btnAboutUs.ColorContrastOnClick = 45;
             this.btnAboutUs.ColorContrastOnHover = 45;
@@ -258,7 +258,7 @@
             this.btnAboutUs.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnAboutUs.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnAboutUs.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnAboutUs.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnAboutUs.Font = new System.Drawing.Font("Montserrat ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnAboutUs.ForeColor = System.Drawing.Color.Snow;
             this.btnAboutUs.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAboutUs.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -334,7 +334,7 @@
             this.btnPoint.BackColor1 = System.Drawing.Color.LightSalmon;
             this.btnPoint.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPoint.BackgroundImage")));
             this.btnPoint.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnPoint.ButtonText = "LOYALTY POINT";
+            this.btnPoint.ButtonText = "ĐIỂM THÀNH VIÊN";
             this.btnPoint.ButtonTextMarginLeft = 0;
             this.btnPoint.ColorContrastOnClick = 45;
             this.btnPoint.ColorContrastOnHover = 45;
@@ -349,7 +349,7 @@
             this.btnPoint.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnPoint.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnPoint.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnPoint.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnPoint.Font = new System.Drawing.Font("Montserrat ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnPoint.ForeColor = System.Drawing.Color.Snow;
             this.btnPoint.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPoint.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -425,7 +425,7 @@
             this.btnDiscount.BackColor1 = System.Drawing.Color.LightSalmon;
             this.btnDiscount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDiscount.BackgroundImage")));
             this.btnDiscount.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDiscount.ButtonText = "DISCOUNT";
+            this.btnDiscount.ButtonText = "KHUYẾN MÃI";
             this.btnDiscount.ButtonTextMarginLeft = 0;
             this.btnDiscount.ColorContrastOnClick = 45;
             this.btnDiscount.ColorContrastOnHover = 45;
@@ -440,7 +440,7 @@
             this.btnDiscount.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnDiscount.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnDiscount.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnDiscount.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnDiscount.Font = new System.Drawing.Font("Montserrat ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnDiscount.ForeColor = System.Drawing.Color.Snow;
             this.btnDiscount.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDiscount.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -516,7 +516,7 @@
             this.btnMenu.BackColor1 = System.Drawing.Color.LightSalmon;
             this.btnMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenu.BackgroundImage")));
             this.btnMenu.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnMenu.ButtonText = "MENU";
+            this.btnMenu.ButtonText = "THỰC ĐƠN";
             this.btnMenu.ButtonTextMarginLeft = 0;
             this.btnMenu.ColorContrastOnClick = 45;
             this.btnMenu.ColorContrastOnHover = 45;
@@ -531,7 +531,7 @@
             this.btnMenu.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnMenu.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnMenu.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnMenu.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnMenu.Font = new System.Drawing.Font("Montserrat ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnMenu.ForeColor = System.Drawing.Color.Snow;
             this.btnMenu.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenu.IconLeftCursor = System.Windows.Forms.Cursors.Default;

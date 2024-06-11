@@ -458,6 +458,7 @@
       <DependentUpon>BillDetailForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Bills.cs" />
+    <Compile Include="Booking.cs" />
     <Compile Include="ChangePwd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -495,7 +496,9 @@
     <Compile Include="Employee_Detail.Designer.cs">
       <DependentUpon>Employee_Detail.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalVars.cs" />
     <Compile Include="MasterUser.cs" />
+    <Compile Include="NekoBookingDetails.cs" />
     <Compile Include="NekoCat.cs" />
     <Compile Include="NekoCustomer.cs" />
     <Compile Include="edit_Order.cs">
@@ -534,11 +537,11 @@
     <Compile Include="TableDetail.Designer.cs">
       <DependentUpon>TableDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserBookTable.cs">
-      <SubType>Form</SubType>
+    <Compile Include="UserBooking.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserBookTable.Designer.cs">
-      <DependentUpon>UserBookTable.cs</DependentUpon>
+    <Compile Include="UserBooking.Designer.cs">
+      <DependentUpon>UserBooking.cs</DependentUpon>
     </Compile>
     <Compile Include="UserDiscount.cs">
       <SubType>UserControl</SubType>
@@ -671,8 +674,8 @@
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserBookTable.resx">
-      <DependentUpon>UserBookTable.cs</DependentUpon>
+    <EmbeddedResource Include="UserBooking.resx">
+      <DependentUpon>UserBooking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserCart.resx">
       <DependentUpon>UserCart.cs</DependentUpon>

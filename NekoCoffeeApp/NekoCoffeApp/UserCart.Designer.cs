@@ -179,7 +179,7 @@
             this.btnPay.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
             this.btnPay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPay.BackgroundImage")));
             this.btnPay.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnPay.ButtonText = "Pay";
+            this.btnPay.ButtonText = "Thanh toán";
             this.btnPay.ButtonTextMarginLeft = 0;
             this.btnPay.ColorContrastOnClick = 45;
             this.btnPay.ColorContrastOnHover = 45;
@@ -284,7 +284,7 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(313, 26);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(100, 33);
+            this.bunifuLabel1.Size = new System.Drawing.Size(66, 22);
             this.bunifuLabel1.TabIndex = 52;
             this.bunifuLabel1.Text = "My Cart";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -304,7 +304,7 @@
             this.btnDelete.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
             this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
             this.btnDelete.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDelete.ButtonText = "Delete";
+            this.btnDelete.ButtonText = "Xóa";
             this.btnDelete.ButtonTextMarginLeft = 0;
             this.btnDelete.ColorContrastOnClick = 45;
             this.btnDelete.ColorContrastOnHover = 45;
@@ -395,7 +395,7 @@
             this.btnDeleteAll.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
             this.btnDeleteAll.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeleteAll.BackgroundImage")));
             this.btnDeleteAll.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDeleteAll.ButtonText = "Delete All";
+            this.btnDeleteAll.ButtonText = "Xóa tất cả";
             this.btnDeleteAll.ButtonTextMarginLeft = 0;
             this.btnDeleteAll.ColorContrastOnClick = 45;
             this.btnDeleteAll.ColorContrastOnHover = 45;
@@ -478,12 +478,12 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Montserrat ExtraBold", 10F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel2.Location = new System.Drawing.Point(253, 432);
+            this.bunifuLabel2.Location = new System.Drawing.Point(297, 441);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(122, 27);
+            this.bunifuLabel2.Size = new System.Drawing.Size(70, 18);
             this.bunifuLabel2.TabIndex = 55;
-            this.bunifuLabel2.Text = "Thành tiền:";
+            this.bunifuLabel2.Text = "Tổng tiền:";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -575,7 +575,7 @@
             this.btnMenu.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
             this.btnMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenu.BackgroundImage")));
             this.btnMenu.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnMenu.ButtonText = "Add";
+            this.btnMenu.ButtonText = "Thêm";
             this.btnMenu.ButtonTextMarginLeft = 0;
             this.btnMenu.ColorContrastOnClick = 45;
             this.btnMenu.ColorContrastOnHover = 45;

@@ -38,13 +38,6 @@ namespace UI
 
         }
 
-        private void AdminOrderBtn_Click(object sender, EventArgs e)
-        {
-            edit_Order edit_Order = new edit_Order();
-            edit_Order.Show(); 
-        }
-
-
         private void AdminOrder_Load(object sender, EventArgs e)
         {
             try
