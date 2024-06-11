@@ -110,7 +110,7 @@ namespace UI
             NekoDrink drink = new NekoDrink()
             {
                 ID = AdminFillDrinkID.Text,
-                Name = AdminFillDrinkID.Text,
+                Name = AdminFillDrinkName.Text,
                 Available = AdminFillDrinkAvailable.Text,
                 Price = AdminFillDrinkPrice.Text,
                 Type = AdminFillDrinkType.Text,
@@ -121,11 +121,13 @@ namespace UI
 
             if (set.StatusCode == System.Net.HttpStatusCode.OK)
             {
+                AdminFillDrinkID.Clear();
+                AdminFillDrinkName.Clear();
+                AdminFillDrinkAvailable.Items.Clear();
+                AdminFillDrinkPrice.Clear();
+                AdminFillDrinkSearch.Clear();
+                AdminFillDrinkType.Clear();
                 pictureBox.Image = null;
-                AdminFillDrinkID.Text = "";
-                AdminFillDrinkName.Text = "";
-                AdminFillDrinkPrice.Text = "";
-                AdminFillDrinkType.Text = "";
                 MessageBox.Show($"Thêm thành công nước {AdminFillDrinkID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 viewData();
             }
@@ -179,7 +181,8 @@ namespace UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //
+                //MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -231,7 +234,7 @@ namespace UI
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Lỗi khi xoá ảnh từ Firebase Storage: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show($"Lỗi khi xoá ảnh từ Firebase Storage: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
                 // Xóa dữ liệu từ Firebase Database
@@ -245,8 +248,6 @@ namespace UI
                     AdminFillDrinkPrice.Clear();
                     AdminFillDrinkSearch.Clear();
                     AdminFillDrinkType.Clear();
-
-                    // Làm trống PictureBox
                     pictureBox.Image = null;
                 }
                 else
@@ -286,7 +287,7 @@ namespace UI
                 NekoDrink drink = new NekoDrink()
                 {
                     ID = AdminFillDrinkID.Text,
-                    Name = AdminFillDrinkID.Text,
+                    Name = AdminFillDrinkName.Text,
                     Available = AdminFillDrinkAvailable.Text,
                     Price = AdminFillDrinkPrice.Text,
                     Type = AdminFillDrinkType.Text
@@ -296,6 +297,14 @@ namespace UI
 
                 if (update.StatusCode == System.Net.HttpStatusCode.OK)
                 {
+                    AdminFillDrinkID.Clear();
+                    AdminFillDrinkName.Clear();
+                    AdminFillDrinkAvailable.Items.Clear();
+                    AdminFillDrinkPrice.Clear();
+                    AdminFillDrinkSearch.Clear();
+                    AdminFillDrinkType.Clear();
+                    pictureBox.Image = null;
+
                     MessageBox.Show($"Sửa thành công nước {AdminFillDrinkID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else { return; }
@@ -363,7 +372,8 @@ namespace UI
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 Image img = new Bitmap(ofd.FileName);
-                pictureBox.Image = img.GetThumbnailImage(461, 154, null, new IntPtr());
+                pictureBox.Image = img.GetThumbnailImage(127, 141, null, new IntPtr());
+                pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             }
         }
     }

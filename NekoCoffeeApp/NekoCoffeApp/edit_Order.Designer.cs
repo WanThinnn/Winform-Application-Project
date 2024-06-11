@@ -29,31 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(edit_Order));
-            this.AdminMainPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.adminDrink1 = new UI.AdminDrink();
             this.SuspendLayout();
             // 
-            // AdminMainPanel
+            // adminDrink1
             // 
-            this.AdminMainPanel.BackgroundColor = System.Drawing.Color.Transparent;
-            this.AdminMainPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminMainPanel.BackgroundImage")));
-            this.AdminMainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.AdminMainPanel.BorderColor = System.Drawing.Color.Transparent;
-            this.AdminMainPanel.BorderRadius = 1;
-            this.AdminMainPanel.BorderThickness = 1;
-            this.AdminMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AdminMainPanel.Location = new System.Drawing.Point(0, 0);
-            this.AdminMainPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.AdminMainPanel.Name = "AdminMainPanel";
-            this.AdminMainPanel.ShowBorders = true;
-            this.AdminMainPanel.Size = new System.Drawing.Size(745, 457);
-            this.AdminMainPanel.TabIndex = 2;
+            this.adminDrink1.BackColor = System.Drawing.Color.White;
+            this.adminDrink1.Location = new System.Drawing.Point(-16, -1);
+            this.adminDrink1.Margin = new System.Windows.Forms.Padding(4);
+            this.adminDrink1.Name = "adminDrink1";
+            this.adminDrink1.Size = new System.Drawing.Size(924, 493);
+            this.adminDrink1.TabIndex = 3;
             // 
             // edit_Order
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ClientSize = new System.Drawing.Size(745, 457);
-            this.Controls.Add(this.AdminMainPanel);
+            this.ClientSize = new System.Drawing.Size(899, 474);
+            this.Controls.Add(this.adminDrink1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "edit_Order";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -65,6 +58,6 @@
 
         #endregion
 
-        private Bunifu.UI.WinForms.BunifuPanel AdminMainPanel;
+        private AdminDrink adminDrink1;
     }
 }

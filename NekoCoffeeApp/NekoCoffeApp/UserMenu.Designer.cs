@@ -178,9 +178,9 @@
             // 
             // drinksFlowLayoutPanel
             // 
-            this.drinksFlowLayoutPanel.Location = new System.Drawing.Point(13, 85);
+            this.drinksFlowLayoutPanel.Location = new System.Drawing.Point(13, 99);
             this.drinksFlowLayoutPanel.Name = "drinksFlowLayoutPanel";
-            this.drinksFlowLayoutPanel.Size = new System.Drawing.Size(705, 378);
+            this.drinksFlowLayoutPanel.Size = new System.Drawing.Size(705, 364);
             this.drinksFlowLayoutPanel.TabIndex = 92;
             // 
             // bunifuPanel1

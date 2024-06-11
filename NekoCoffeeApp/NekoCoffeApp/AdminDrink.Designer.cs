@@ -906,7 +906,7 @@
             this.AdminFillDrinkAvailable.FillIndicator = false;
             this.AdminFillDrinkAvailable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AdminFillDrinkAvailable.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminFillDrinkAvailable.ForeColor = System.Drawing.Color.Silver;
+            this.AdminFillDrinkAvailable.ForeColor = System.Drawing.Color.Black;
             this.AdminFillDrinkAvailable.FormattingEnabled = true;
             this.AdminFillDrinkAvailable.Icon = null;
             this.AdminFillDrinkAvailable.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
@@ -1043,9 +1043,9 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(642, 133);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(180, 15);
+            this.bunifuLabel1.Size = new System.Drawing.Size(255, 15);
             this.bunifuLabel1.TabIndex = 68;
-            this.bunifuLabel1.Text = "------------------------------------";
+            this.bunifuLabel1.Text = "---------------------------------------------------";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 

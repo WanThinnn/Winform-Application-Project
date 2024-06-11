@@ -29,7 +29,7 @@ namespace UI
 
         private void edit_Order_Load(object sender, EventArgs e)
         {
-            string masterUserName = this.MasterUserName; // Assuming MasterUserName is available in this context
+            /*string masterUserName = this.MasterUserName; // Assuming MasterUserName is available in this context
 
             AdminDrink adDrink = AdminDrink.Instance();
 
@@ -42,7 +42,7 @@ namespace UI
             else
             {
                 adDrink.BringToFront();
-            }
+            }*/
         }
         
     }
