@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminEmployee));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AdminEmployee1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -147,6 +147,7 @@
             // 
             this.bunifuDatePicker1.BackColor = System.Drawing.Color.LightSalmon;
             this.bunifuDatePicker1.BorderRadius = 1;
+            this.bunifuDatePicker1.CalendarFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuDatePicker1.CalendarForeColor = System.Drawing.Color.White;
             this.bunifuDatePicker1.Color = System.Drawing.Color.LightSalmon;
             this.bunifuDatePicker1.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
@@ -156,7 +157,7 @@
             this.bunifuDatePicker1.DPHeight = 0;
             this.bunifuDatePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.bunifuDatePicker1.FillDatePicker = false;
-            this.bunifuDatePicker1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuDatePicker1.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.bunifuDatePicker1.ForeColor = System.Drawing.Color.White;
             this.bunifuDatePicker1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuDatePicker1.Icon")));
             this.bunifuDatePicker1.IconColor = System.Drawing.Color.White;
@@ -183,22 +184,22 @@
             this.AdminAdjustEmployeeBtn.BackColor1 = System.Drawing.Color.LightSalmon;
             this.AdminAdjustEmployeeBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminAdjustEmployeeBtn.BackgroundImage")));
             this.AdminAdjustEmployeeBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminAdjustEmployeeBtn.ButtonText = "VIEW ALL EMMPLOYEES";
+            this.AdminAdjustEmployeeBtn.ButtonText = "XEM NHÂN VIÊN";
             this.AdminAdjustEmployeeBtn.ButtonTextMarginLeft = 0;
             this.AdminAdjustEmployeeBtn.ColorContrastOnClick = 45;
             this.AdminAdjustEmployeeBtn.ColorContrastOnHover = 45;
             this.AdminAdjustEmployeeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.AdminAdjustEmployeeBtn.CustomizableEdges = borderEdges2;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.AdminAdjustEmployeeBtn.CustomizableEdges = borderEdges6;
             this.AdminAdjustEmployeeBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminAdjustEmployeeBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminAdjustEmployeeBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.AdminAdjustEmployeeBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.AdminAdjustEmployeeBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.AdminAdjustEmployeeBtn.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
+            this.AdminAdjustEmployeeBtn.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.AdminAdjustEmployeeBtn.ForeColor = System.Drawing.Color.White;
             this.AdminAdjustEmployeeBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AdminAdjustEmployeeBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -568,17 +569,17 @@
             this.EmployeeLoadBtn.ColorContrastOnClick = 45;
             this.EmployeeLoadBtn.ColorContrastOnHover = 45;
             this.EmployeeLoadBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.EmployeeLoadBtn.CustomizableEdges = borderEdges1;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.EmployeeLoadBtn.CustomizableEdges = borderEdges5;
             this.EmployeeLoadBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.EmployeeLoadBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.EmployeeLoadBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.EmployeeLoadBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.EmployeeLoadBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.EmployeeLoadBtn.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
+            this.EmployeeLoadBtn.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.EmployeeLoadBtn.ForeColor = System.Drawing.Color.White;
             this.EmployeeLoadBtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EmployeeLoadBtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;

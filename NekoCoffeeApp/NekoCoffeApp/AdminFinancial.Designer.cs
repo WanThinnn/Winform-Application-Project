@@ -252,6 +252,7 @@
             // 
             // AdminFinancialDate
             // 
+            this.AdminFinancialDate.CalendarFont = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminFinancialDate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminFinancialDate.Location = new System.Drawing.Point(25, 69);
             this.AdminFinancialDate.Margin = new System.Windows.Forms.Padding(4);
