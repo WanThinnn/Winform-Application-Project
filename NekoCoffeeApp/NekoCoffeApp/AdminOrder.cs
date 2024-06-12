@@ -123,7 +123,7 @@ namespace UI
 
                     if (table.Status == "Booked" && hasBookings)
                     {
-                        btn.BackColor = Color.DarkBlue; // Dark blue if booking details are present
+                        btn.BackColor = Color.DeepSkyBlue; // Dark blue if booking details are present
                     }
                     else if (table.Status == "Booked")
                     {
@@ -135,7 +135,7 @@ namespace UI
                     }
 
                     btn.Text = $"ID: {table.ID}\nName: {table.Name}\nStatus: {table.Status}";
-
+                    
                     // Gán sự kiện Click cho nút
                     btn.Click += (s, args) => OpenTableDetail(table);
                     Table_flowLayoutPanel.Controls.Add(btn);
