@@ -498,7 +498,6 @@
     </Compile>
     <Compile Include="GlobalVars.cs" />
     <Compile Include="MasterUser.cs" />
-    <Compile Include="NekoBookingDetails.cs" />
     <Compile Include="NekoCat.cs" />
     <Compile Include="NekoCustomer.cs" />
     <Compile Include="edit_Order.cs">
