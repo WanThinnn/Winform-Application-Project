@@ -26,5 +26,11 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private void UserRating_Load(object sender, EventArgs e)
+        {
+            RatingStar rate = new RatingStar();
+            rate.Show();
+        }
     }
 }

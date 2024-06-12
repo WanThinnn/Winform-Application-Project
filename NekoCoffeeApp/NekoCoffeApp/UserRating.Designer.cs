@@ -84,6 +84,7 @@
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "UserRating";
             this.Size = new System.Drawing.Size(731, 484);
+            this.Load += new System.EventHandler(this.UserRating_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             this.ResumeLayout(false);

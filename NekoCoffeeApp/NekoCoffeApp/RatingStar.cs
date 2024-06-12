@@ -1,5 +1,6 @@
 ﻿using FireSharp.Config;
 using FireSharp.Interfaces;
+using FireSharp.Response;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,12 +9,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using System.Windows.Forms;
 
 namespace UI
 {
     public partial class RatingStar : Form
     {
+        //public event EventHandler<NekoRating> RateAdded;
         public RatingStar()
         {
             InitializeComponent();
@@ -54,9 +57,44 @@ namespace UI
                 return;
             }
 
+            if (GlobalVars.CurrentUser == null)
+            {
+                MessageBox.Show("Bạn cần đăng nhập để thực hiện đánh giá!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+            } else
+            {
+                string fullname = GlobalVars.CurrentUser.Fullname;
 
+                FirebaseResponse res = tb.Get(@"Ratings/" + fullname);
+                NekoRating ResTable = res.ResultAs<NekoRating>();
 
+                NekoRating CurTable = new NekoRating()
+                {
+                    Fullname = fullname
+                };
 
+                if (NekoRating.Search(ResTable, CurTable))
+                {
+                    NekoRating.ShowError_1();
+                    return;
+                }
+
+                NekoRating rate = new NekoRating()
+                {
+                    Fullname = fullname,
+                    Star = ratingStars.Value,
+                    Comment = tbComment.Text,
+                };
+
+                SetResponse set = tb.Set(@"Ratings/" + fullname, rate);
+
+                if (set.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    MessageBox.Show($"Tài khoản {fullname} đã gửi một nhận xét!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    /*RateAdded?.Invoke(this, rate); // Kích hoạt sự kiện TableAdded
+                    viewData();*/
+                }
+            }
 
         }
     }

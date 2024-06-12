@@ -150,7 +150,7 @@ namespace UI
                     // Create a NumericUpDown for quantity selection
                     NumericUpDown numericUpDown = new NumericUpDown();
                     numericUpDown.Size = new Size(30, 20);
-                    numericUpDown.Location = new Point(100, 145); // Set the position of the NumericUpDown within the Panel
+                    numericUpDown.Location = new Point(95, 145); // Set the position of the NumericUpDown within the Panel
                     numericUpDown.Minimum = 1;
                     numericUpDown.Maximum = 100;
 
