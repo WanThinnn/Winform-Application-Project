@@ -15,6 +15,7 @@ namespace Master_NekoCoffeeApp
         public string Price { get; set; }
         public string Type { get; set; }
 
+        public string ImageURL { get; set; }
 
         private static string error1 = "Không tồn tại!";
         private static string error2 = "Cảnh báo";

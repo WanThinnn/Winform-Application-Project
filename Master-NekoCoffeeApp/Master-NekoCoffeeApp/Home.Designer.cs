@@ -637,6 +637,7 @@
             this.btnDrink.TextMarginLeft = 0;
             this.btnDrink.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnDrink.UseDefaultRadiusAndThickness = true;
+            this.btnDrink.Click += new System.EventHandler(this.btnDrink_Click);
             // 
             // btnCustomer
             // 

@@ -84,5 +84,11 @@ namespace Master_NekoCoffeeApp
             Tables frm = new Tables(this.Username);
             frm.Show();
         }
+
+        private void btnDrink_Click(object sender, EventArgs e)
+        {
+            Drinks frm = new Drinks(this.Username);
+            frm.Show();
+        }
     }
 }

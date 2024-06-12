@@ -126,3 +126,13 @@ C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Mas
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.Employee.resources
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.Customer.resources
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.Tables.resources
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\Firebase.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\Firebase.Storage.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\LiteDB.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\System.Reactive.dll
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\Firebase.xml
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\LiteDB.xml
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\System.Reactive.xml
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.Drinks.resources
