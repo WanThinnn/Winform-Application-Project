@@ -134,7 +134,7 @@ namespace UI
         {
             if (GlobalVars.CurrentUser == null)
             {
-                MessageBox.Show("User not logged in.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Bạn cần đăng nhập để đặt bàn!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

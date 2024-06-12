@@ -34,12 +34,12 @@
             this.AvatarPictureBox = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lbFullname = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbDay = new System.Windows.Forms.Label();
+            this.lbPhone = new System.Windows.Forms.Label();
+            this.lbEmail = new System.Windows.Forms.Label();
+            this.lbGender = new System.Windows.Forms.Label();
+            this.lbBirthday = new System.Windows.Forms.Label();
+            this.lbUsername = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -112,7 +112,7 @@
             this.lbFullname.Cursor = System.Windows.Forms.Cursors.Default;
             this.lbFullname.CursorType = System.Windows.Forms.Cursors.Default;
             this.lbFullname.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold);
-            this.lbFullname.Location = new System.Drawing.Point(78, 341);
+            this.lbFullname.Location = new System.Drawing.Point(54, 341);
             this.lbFullname.Name = "lbFullname";
             this.lbFullname.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbFullname.Size = new System.Drawing.Size(113, 32);
@@ -129,12 +129,12 @@
             this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel3.BorderRadius = 35;
             this.bunifuPanel3.BorderThickness = 1;
-            this.bunifuPanel3.Controls.Add(this.label15);
-            this.bunifuPanel3.Controls.Add(this.label14);
-            this.bunifuPanel3.Controls.Add(this.label13);
-            this.bunifuPanel3.Controls.Add(this.label12);
-            this.bunifuPanel3.Controls.Add(this.label11);
-            this.bunifuPanel3.Controls.Add(this.label10);
+            this.bunifuPanel3.Controls.Add(this.lbDay);
+            this.bunifuPanel3.Controls.Add(this.lbPhone);
+            this.bunifuPanel3.Controls.Add(this.lbEmail);
+            this.bunifuPanel3.Controls.Add(this.lbGender);
+            this.bunifuPanel3.Controls.Add(this.lbBirthday);
+            this.bunifuPanel3.Controls.Add(this.lbUsername);
             this.bunifuPanel3.Controls.Add(this.label4);
             this.bunifuPanel3.Controls.Add(this.label8);
             this.bunifuPanel3.Controls.Add(this.label7);
@@ -148,77 +148,77 @@
             this.bunifuPanel3.Size = new System.Drawing.Size(428, 340);
             this.bunifuPanel3.TabIndex = 91;
             // 
-            // label15
+            // lbDay
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.LightSalmon;
-            this.label15.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(169, 278);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(45, 21);
-            this.label15.TabIndex = 98;
-            this.label15.Text = "Text";
+            this.lbDay.AutoSize = true;
+            this.lbDay.BackColor = System.Drawing.Color.LightSalmon;
+            this.lbDay.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbDay.Location = new System.Drawing.Point(169, 278);
+            this.lbDay.Name = "lbDay";
+            this.lbDay.Size = new System.Drawing.Size(45, 21);
+            this.lbDay.TabIndex = 98;
+            this.lbDay.Text = "Text";
             // 
-            // label14
+            // lbPhone
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.LightSalmon;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(158, 226);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(45, 21);
-            this.label14.TabIndex = 97;
-            this.label14.Text = "Text";
+            this.lbPhone.AutoSize = true;
+            this.lbPhone.BackColor = System.Drawing.Color.LightSalmon;
+            this.lbPhone.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPhone.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbPhone.Location = new System.Drawing.Point(158, 226);
+            this.lbPhone.Name = "lbPhone";
+            this.lbPhone.Size = new System.Drawing.Size(45, 21);
+            this.lbPhone.TabIndex = 97;
+            this.lbPhone.Text = "Text";
             // 
-            // label13
+            // lbEmail
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.LightSalmon;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(101, 176);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(45, 21);
-            this.label13.TabIndex = 96;
-            this.label13.Text = "Text";
+            this.lbEmail.AutoSize = true;
+            this.lbEmail.BackColor = System.Drawing.Color.LightSalmon;
+            this.lbEmail.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbEmail.Location = new System.Drawing.Point(101, 176);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(45, 21);
+            this.lbEmail.TabIndex = 96;
+            this.lbEmail.Text = "Text";
             // 
-            // label12
+            // lbGender
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.LightSalmon;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(125, 126);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(45, 21);
-            this.label12.TabIndex = 95;
-            this.label12.Text = "Text";
+            this.lbGender.AutoSize = true;
+            this.lbGender.BackColor = System.Drawing.Color.LightSalmon;
+            this.lbGender.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGender.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbGender.Location = new System.Drawing.Point(125, 126);
+            this.lbGender.Name = "lbGender";
+            this.lbGender.Size = new System.Drawing.Size(45, 21);
+            this.lbGender.TabIndex = 95;
+            this.lbGender.Text = "Text";
             // 
-            // label11
+            // lbBirthday
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.LightSalmon;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(134, 78);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(45, 21);
-            this.label11.TabIndex = 94;
-            this.label11.Text = "Text";
+            this.lbBirthday.AutoSize = true;
+            this.lbBirthday.BackColor = System.Drawing.Color.LightSalmon;
+            this.lbBirthday.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBirthday.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbBirthday.Location = new System.Drawing.Point(134, 78);
+            this.lbBirthday.Name = "lbBirthday";
+            this.lbBirthday.Size = new System.Drawing.Size(45, 21);
+            this.lbBirthday.TabIndex = 94;
+            this.lbBirthday.Text = "Text";
             // 
-            // label10
+            // lbUsername
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.LightSalmon;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(169, 34);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(45, 21);
-            this.label10.TabIndex = 93;
-            this.label10.Text = "Text";
+            this.lbUsername.AutoSize = true;
+            this.lbUsername.BackColor = System.Drawing.Color.LightSalmon;
+            this.lbUsername.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUsername.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbUsername.Location = new System.Drawing.Point(169, 34);
+            this.lbUsername.Name = "lbUsername";
+            this.lbUsername.Size = new System.Drawing.Size(45, 21);
+            this.lbUsername.TabIndex = 93;
+            this.lbUsername.Text = "Text";
             // 
             // label4
             // 
@@ -361,11 +361,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lbUsername;
+        private System.Windows.Forms.Label lbDay;
+        private System.Windows.Forms.Label lbPhone;
+        private System.Windows.Forms.Label lbEmail;
+        private System.Windows.Forms.Label lbGender;
+        private System.Windows.Forms.Label lbBirthday;
     }
 }

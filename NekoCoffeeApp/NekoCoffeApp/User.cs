@@ -56,10 +56,10 @@ namespace UI
             {
                 panelUserControl.Controls.Add(UserAccount.Instance);
                 UserAccount.Instance.Dock = DockStyle.Fill;
-                UserMenu.Instance.BringToFront();
+                UserAccount.Instance.BringToFront();
             }
             else
-                UserMenu.Instance.BringToFront();
+                UserAccount.Instance.BringToFront();
         }
 
         private void btnAboutUs_Click(object sender, EventArgs e)
