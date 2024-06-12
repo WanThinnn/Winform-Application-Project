@@ -78,5 +78,11 @@ namespace Master_NekoCoffeeApp
             Customer frm = new Customer(this.Username);
             frm.Show();
         }
+
+        private void btnTable_Click(object sender, EventArgs e)
+        {
+            Tables frm = new Tables(this.Username);
+            frm.Show();
+        }
     }
 }

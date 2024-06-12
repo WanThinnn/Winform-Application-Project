@@ -50,7 +50,7 @@ namespace Master_NekoCoffeeApp
         }
         void viewData()
         {
-            var data = client.Get($"/Cats_{this.MasterUsername}/");
+            var data = client.Get($"/Cats/");
 
             // Check if data or data.Body is null
             if (data == null || data.Body == null)
@@ -92,7 +92,7 @@ namespace Master_NekoCoffeeApp
             {
                 try
                 {
-                    FirebaseResponse cat = await client.GetAsync($"/Cats_{this.MasterUsername}/" + txbNameCat.Text);
+                    FirebaseResponse cat = await client.GetAsync($"/Cats/" + txbNameCat.Text);
                     NekoCat rescat = cat.ResultAs<NekoCat>();
 
                     NekoCat curcat = new NekoCat()
@@ -118,7 +118,7 @@ namespace Master_NekoCoffeeApp
 
                     };
 
-                    SetResponse set = await client.SetAsync($"/Cats_{this.MasterUsername}/" + txbNameCat.Text, nekoCat);
+                    SetResponse set = await client.SetAsync($"/Cats/" + txbNameCat.Text, nekoCat);
 
                     if (set.StatusCode == System.Net.HttpStatusCode.OK)
                     {
@@ -175,7 +175,7 @@ namespace Master_NekoCoffeeApp
             {
                 try
                 {
-                    FirebaseResponse cat = await client.GetAsync($"/Cats_{this.MasterUsername}/" + txbNameCat.Text);
+                    FirebaseResponse cat = await client.GetAsync($"/Cats/" + txbNameCat.Text);
                     NekoCat rescat = cat.ResultAs<NekoCat>();
 
                     if (rescat == null)
@@ -184,7 +184,7 @@ namespace Master_NekoCoffeeApp
                         return;
                     }
 
-                    FirebaseResponse deleteResponse = await client.DeleteAsync($"/Cats_{this.MasterUsername}/" + txbNameCat.Text);
+                    FirebaseResponse deleteResponse = await client.DeleteAsync($"/Cats/" + txbNameCat.Text);
 
                     if (deleteResponse.StatusCode == System.Net.HttpStatusCode.OK)
                     {
@@ -212,7 +212,7 @@ namespace Master_NekoCoffeeApp
                 return;
             }
 
-            FirebaseResponse res = client.Get($"/Cats_{this.MasterUsername}/" + tbCat_Name.Text);
+            FirebaseResponse res = client.Get($"/Cats/" + tbCat_Name.Text);
             NekoCat cat = res.ResultAs<NekoCat>();
 
             if (cat == null)
@@ -254,7 +254,7 @@ namespace Master_NekoCoffeeApp
             {
                 try
                 {
-                    FirebaseResponse res = await client.GetAsync($"/Cats_{this.MasterUsername}/" + tbCat_Name.Text);
+                    FirebaseResponse res = await client.GetAsync($"/Cats/" + tbCat_Name.Text);
                     if (res.Body == "null")
                     {
                         MessageBox.Show("Mèo này không tồn tại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -272,11 +272,11 @@ namespace Master_NekoCoffeeApp
                     };
 
                     // Tạo mục mới với tên mới
-                    SetResponse up = await client.SetAsync($"/Cats_{this.MasterUsername}/" + txbNameCat.Text, updateData);
+                    SetResponse up = await client.SetAsync($"/Cats/" + txbNameCat.Text, updateData);
                     if (up.StatusCode == System.Net.HttpStatusCode.OK)
                     {
                         // Xóa mục cũ sau khi tạo mục mới thành công
-                        FirebaseResponse deleteResponse = await client.DeleteAsync($"/Cats_{this.MasterUsername}/" + tbCat_Name.Text);
+                        FirebaseResponse deleteResponse = await client.DeleteAsync($"/Cats/" + tbCat_Name.Text);
                         if (deleteResponse.StatusCode == System.Net.HttpStatusCode.OK)
                         {
                             MessageBox.Show($"Sửa thông tin thành công và cập nhật tên mèo {tbCat_Name.Text} thành {txbNameCat.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);

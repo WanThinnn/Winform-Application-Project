@@ -88,7 +88,7 @@
             this.linkLabel1.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 10F);
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
-            this.linkLabel1.Location = new System.Drawing.Point(325, 54);
+            this.linkLabel1.Location = new System.Drawing.Point(412, 54);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(113, 18);
@@ -99,7 +99,7 @@
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(237, -2);
+            this.logo.Location = new System.Drawing.Point(324, -2);
             this.logo.Margin = new System.Windows.Forms.Padding(2);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(84, 84);
@@ -112,7 +112,7 @@
             this.lbHome.AutoSize = true;
             this.lbHome.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbHome.Location = new System.Drawing.Point(302, 25);
+            this.lbHome.Location = new System.Drawing.Point(389, 25);
             this.lbHome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbHome.Name = "lbHome";
             this.lbHome.Size = new System.Drawing.Size(79, 29);
@@ -826,7 +826,7 @@
             this.linkLBHello.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLBHello.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLBHello.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
-            this.linkLBHello.Location = new System.Drawing.Point(201, 96);
+            this.linkLBHello.Location = new System.Drawing.Point(288, 96);
             this.linkLBHello.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLBHello.Name = "linkLBHello";
             this.linkLBHello.Size = new System.Drawing.Size(56, 24);
@@ -1107,6 +1107,7 @@
             this.btnTable.TextMarginLeft = 0;
             this.btnTable.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnTable.UseDefaultRadiusAndThickness = true;
+            this.btnTable.Click += new System.EventHandler(this.btnTable_Click);
             // 
             // Home
             // 
