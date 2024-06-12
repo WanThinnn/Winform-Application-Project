@@ -1150,3 +1150,7 @@ C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCof
 C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserBooking.resources
 C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserRating.resources
 C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.RatingStar.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.RatingStar.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserAccount.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserBooking.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserRating.resources
