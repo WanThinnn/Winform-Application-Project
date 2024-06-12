@@ -12,6 +12,17 @@ namespace UI
 {
     public partial class UserAccount : UserControl
     {
+
+        private static UserAccount _instance;
+        public static UserAccount Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new UserAccount();
+                return _instance;
+            }
+        }
         public UserAccount()
         {
             InitializeComponent();

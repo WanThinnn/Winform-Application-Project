@@ -52,7 +52,14 @@ namespace UI
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-
+            if (!panelUserControl.Controls.Contains(UserAccount.Instance))
+            {
+                panelUserControl.Controls.Add(UserAccount.Instance);
+                UserAccount.Instance.Dock = DockStyle.Fill;
+                UserMenu.Instance.BringToFront();
+            }
+            else
+                UserMenu.Instance.BringToFront();
         }
 
         private void btnAboutUs_Click(object sender, EventArgs e)
@@ -136,9 +143,17 @@ namespace UI
             if (GlobalVars.CurrentUser != null)
             {
                 btnUser.Text = GlobalVars.CurrentUser.Username;
+                try
+                {
+                    AdminUserImg.Load(GlobalVars.CurrentUser.Avatar);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi tải ảnh: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    AdminUserImg.Image = null; // Clear PictureBox if loading fails
+                }
             }
 
-            
         }
         private void LogoutGoogle()
         {
