@@ -166,6 +166,97 @@ namespace Master_NekoCoffeeApp
             btnDelete.Enabled = true;
         }
 
+        private async void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (
+              string.IsNullOrWhiteSpace(txbID.Text) ||
+              string.IsNullOrWhiteSpace(txbName.Text) ||
+              string.IsNullOrWhiteSpace(dbStatus.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            var result = MessageBox.Show("Bạn có chắc chắn muốn thêm bàn này không?", "Xác nhận thêm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    FirebaseResponse emp = await client.GetAsync($"/Tables/" + txbID.Text);
+                    NekoTable restbl = emp.ResultAs<NekoTable>();
+
+                    NekoTable curtbl = new NekoTable()
+                    {
+                        ID = txbID.Text
+
+
+                    };
+
+
+                    // Nếu ResUser không phải là null, thực hiện kiểm tra
+                    if ((restbl != null && NekoTable.Search(restbl, curtbl)))
+                    {
+                        NekoTable.ShowError_2();
+                        return;
+                    }
+                 
+
+                    NekoTable newtbl = new NekoTable()
+                    {
+                        ID = txbID.Text,
+                        Name = txbName.Text,
+                        Status = dbStatus.Text,
+
+
+                    };
+
+                    SetResponse set = await client.SetAsync($"/Tables/" + txbID.Text, newtbl);
+
+                    if (set.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        MessageBox.Show($"Thêm thành công bàn {txbID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Thêm không thành công bàn!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    btnRefresh_Click(sender, e);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            txbID.Clear();
+            txbID.ReadOnly = false;
+
+            txbID.Clear();
+            txbName.Clear();
+            dbStatus.Text = string.Empty;
+
+
+
+            txbID.BorderColorActive = Color.DodgerBlue;
+            txbID.BorderColorHover = Color.FromArgb(105, 181, 255);
+            txbID.BorderColorDisabled = Color.Silver;
+            txbID.BorderColorIdle = Color.Black;
+
+
+            btnAdd.Enabled = true;
+            btnUpdate.Enabled = false;
+            btnDelete.Enabled = false;
+            viewData();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
