@@ -527,6 +527,7 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="NekoRating.cs" />
     <Compile Include="NekoShift.cs" />
     <Compile Include="NekoTable.cs" />
     <Compile Include="NekoTableDetail.cs" />
