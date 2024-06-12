@@ -15157,7 +15157,7 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="AdminFinancialView.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAvatar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAL0AAAAoCAYAAACrfPvAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALVSURBVHhe7d0xaBRBFAbgKy0tLS0tLVNaWomNvaUI6QLu

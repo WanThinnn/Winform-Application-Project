@@ -15,12 +15,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Aspose.Email;
+using Firebase.Storage;
 namespace UI
 {
     public partial class Signup : Form
     {
         string Email;
         VerificationCodeInfo VerificationCode;
+
+        string selectedImagePath; // Add this property
 
         public Signup(VerificationCodeInfo verificationCode, string email)
         {
@@ -34,12 +37,15 @@ namespace UI
             BasePath = "https://neko-coffe-database-default-rtdb.firebaseio.com/"
         };
 
+        FirebaseStorage firebaseStorage;
+
         IFirebaseClient client;
         private void Signup_Load(object sender, EventArgs e)
         {
             try
             {
                 client = new FireSharp.FirebaseClient(ifc);
+                firebaseStorage = new FirebaseStorage("neko-coffe-database.appspot.com");
             }
 
             catch
@@ -60,7 +66,7 @@ namespace UI
         }
 
 
-        private void txtSignUp_Click(object sender, EventArgs e)
+        private async void txtSignUp_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtFullName.Text) ||
                string.IsNullOrWhiteSpace(txtPhone.Text) ||
@@ -74,7 +80,6 @@ namespace UI
             }
 
             if (txPass.Text != txtConfirm.Text)
-
             {
                 MessageBox.Show("Mật khẩu không khớp!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -94,7 +99,6 @@ namespace UI
                 return;
             }
             if (DateTime.Now - VerificationCode.CreatedAt > TimeSpan.FromSeconds(360))
-
             {
                 // Mã xác nhận đã hết hạn
                 MessageBox.Show("Mã xác nhận không đúng hoặc hết hạn!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -105,6 +109,27 @@ namespace UI
                 MessageBox.Show("Mã xác nhận không đúng hoặc hết hạn!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
+            string avatarUrl = null;
+            if (!string.IsNullOrEmpty(selectedImagePath))
+            {
+                var stream = System.IO.File.Open(selectedImagePath, System.IO.FileMode.Open);
+                var task = new FirebaseStorage("neko-coffe-database.appspot.com")
+                    .Child("avatars")
+                    .Child(txtUserName.Text + System.IO.Path.GetExtension(selectedImagePath))
+                    .PutAsync(stream);
+
+                try
+                {
+                    avatarUrl = await task;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi tải ảnh lên Firebase Storage: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
             NekoUser user = new NekoUser()
             {
                 Username = txtUserName.Text,
@@ -114,10 +139,11 @@ namespace UI
                 PhoneNumber = txtPhone.Text,
                 Email = Email.ToLower(),
                 Position = "KH",
-                RegistrationDate = DateTime.Now, // Gán ngày đăng ký tại đây,
+                RegistrationDate = DateTime.Now, // Gán ngày đăng ký tại đây
                 Point = 0,
                 Birthday = txbBirthday.Text,
-                Master = ""
+                Master = "",
+                Avatar = avatarUrl // Save the avatar URL
             };
 
             SetResponse set = client.Set(@"Users/" + txtUserName.Text, user);
@@ -158,14 +184,18 @@ namespace UI
             }
         }
 
-        private void logo_Click(object sender, EventArgs e)
+        private void btnAvatar_Click(object sender, EventArgs e)
         {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "Select Image";
+            ofd.Filter = "Image File(*.jpg; *.jpeg; *.png) | *.jpg; *.jpeg; *.png";
 
-        }
-
-        private void lbDangNhap_Click(object sender, EventArgs e)
-        {
-
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                selectedImagePath = ofd.FileName; // Save the selected image path
+                // Optionally, show the selected image in a PictureBox or similar control
+                // pictureBoxAvatar.Image = Image.FromFile(selectedImagePath);
+            }
         }
     }
 }
