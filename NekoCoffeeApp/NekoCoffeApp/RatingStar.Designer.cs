@@ -252,8 +252,7 @@
             // 
             // RatingStar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(416, 352);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.tbComment);
@@ -262,6 +261,7 @@
             this.Controls.Add(this.pictureBox10);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RatingStar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Neko Coffee";
             this.Load += new System.EventHandler(this.RatingStar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
