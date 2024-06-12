@@ -178,5 +178,17 @@ namespace UI
                 e.Cancel = true; // Hủy quá trình đóng form
             }
         }
+
+        private void btnRating_Click(object sender, EventArgs e)
+        {
+            if (!panelUserControl.Controls.Contains(UserRating.Instance))
+            {
+                panelUserControl.Controls.Add(UserRating.Instance);
+                UserRating.Instance.Dock = DockStyle.Fill;
+                UserRating.Instance.BringToFront();
+            }
+            else
+                UserRating.Instance.BringToFront();
+        }
     }
 }

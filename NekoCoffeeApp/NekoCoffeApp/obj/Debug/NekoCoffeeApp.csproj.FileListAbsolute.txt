@@ -1144,3 +1144,8 @@ C:\ltmang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\NekoC
 C:\ltmang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\NekoCoff.167EBE38.Up2Date
 C:\ltmang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.exe
 C:\ltmang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.pdb
+C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.edit_Customer.resources
+C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.edit_Employee_2.resources
+C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserAccount.resources
+C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserBooking.resources
+C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserRating.resources

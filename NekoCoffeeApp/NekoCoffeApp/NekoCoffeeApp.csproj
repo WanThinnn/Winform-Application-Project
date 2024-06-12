@@ -531,11 +531,23 @@
     <Compile Include="NekoTable.cs" />
     <Compile Include="NekoTableDetail.cs" />
     <Compile Include="NekoUser.cs" />
+    <Compile Include="RatingStar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RatingStar.Designer.cs">
+      <DependentUpon>RatingStar.cs</DependentUpon>
+    </Compile>
     <Compile Include="TableDetail.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TableDetail.Designer.cs">
       <DependentUpon>TableDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserAccount.Designer.cs">
+      <DependentUpon>UserAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="UserBooking.cs">
       <SubType>UserControl</SubType>
@@ -580,6 +592,12 @@
     </Compile>
     <Compile Include="UserPoint.Designer.cs">
       <DependentUpon>UserPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRating.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserRating.Designer.cs">
+      <DependentUpon>UserRating.cs</DependentUpon>
     </Compile>
     <Compile Include="VerificationCodeInfo.cs" />
     <EmbeddedResource Include="AdminMenu.resx">
@@ -665,6 +683,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RatingStar.resx">
+      <DependentUpon>RatingStar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
     </EmbeddedResource>
@@ -673,6 +694,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccount.resx">
+      <DependentUpon>UserAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserBooking.resx">
       <DependentUpon>UserBooking.cs</DependentUpon>
@@ -688,6 +712,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserPoint.resx">
       <DependentUpon>UserPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRating.resx">
+      <DependentUpon>UserRating.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />
