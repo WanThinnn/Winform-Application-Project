@@ -80,14 +80,7 @@ namespace Master_NekoCoffeeApp
             {
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        /*    foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                if (row.Cells["Ten Mon"].Value != null && row.Cells["Ten Mon"].Value.ToString() == selectedItem)
-                {
-                    dataGridView1.Rows.Remove(row);
-                    break;
-                }
-            }*/
+
         }
 
         private void Tables_Load(object sender, EventArgs e)
@@ -254,7 +247,50 @@ namespace Master_NekoCoffeeApp
             viewData();
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private async void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbID.Text))
+            {
+                MessageBox.Show("Vui lòng điền mã số bàn!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var result = MessageBox.Show("Bạn có chắc chắn muốn xóa bàn này không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    FirebaseResponse emp = await client.GetAsync($"/Tables/" + tbID.Text);
+                    NekoTable resemp = emp.ResultAs<NekoTable>();
+
+                    if (resemp == null)
+                    {
+                        MessageBox.Show("Nhân viên không tồn tại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    FirebaseResponse deleteResponse = await client.DeleteAsync($"/Tables/" + tbID.Text);
+                      
+                    if (deleteResponse.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        MessageBox.Show($"Xóa thành công bàn {txbID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Xóa không thành công bàn {txbID.Text}!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    btnRefresh_Click(sender, e);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
 
         }
