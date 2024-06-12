@@ -725,6 +725,7 @@
             this.AdminViewAllYourDrinks.HeaderForeColor = System.Drawing.Color.White;
             this.AdminViewAllYourDrinks.Location = new System.Drawing.Point(16, 14);
             this.AdminViewAllYourDrinks.Name = "AdminViewAllYourDrinks";
+            this.AdminViewAllYourDrinks.ReadOnly = true;
             this.AdminViewAllYourDrinks.RowHeadersVisible = false;
             this.AdminViewAllYourDrinks.RowHeadersWidth = 62;
             this.AdminViewAllYourDrinks.RowTemplate.Height = 40;

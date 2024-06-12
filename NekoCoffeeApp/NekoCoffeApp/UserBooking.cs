@@ -102,10 +102,16 @@ namespace UI
                     Button btn = new Button();
                     btn.Size = new Size(109, 109);
 
+                    var bookingData = await tbl.GetAsync($"Tables/{table.ID}/Bookings");
+                    bool hasBookings = bookingData != null && bookingData.Body != "null";
+
                     if (table.Status != null && table.Status == "Booked")
                     {
                         btn.BackColor = Color.Gray;
-                        btn.Enabled = false; // Disable the button if the table is booked
+                    }
+                    else if (hasBookings)
+                    {
+                        btn.BackColor = Color.DarkBlue; // Dark blue if booking details are present
                     }
                     else
                     {

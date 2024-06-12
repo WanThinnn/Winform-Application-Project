@@ -9,18 +9,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Documents;
 using System.Windows.Forms;
-using System.Windows.Input;
-using static Bunifu.UI.WinForms.BunifuSnackbar;
-using static System.Windows.Forms.LinkLabel;
 
 namespace UI
 {
     public partial class AdminOrder : UserControl
     {
-
-
         private static AdminOrder _instance;
         public static AdminOrder Instance
         {
@@ -35,7 +29,6 @@ namespace UI
         public AdminOrder()
         {
             InitializeComponent();
-
         }
 
         private void AdminOrder_Load(object sender, EventArgs e)
@@ -49,7 +42,6 @@ namespace UI
                 MessageBox.Show("Kiểm tra lại mạng", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             LoadTable();
-
         }
 
         private void AdminAdjustTable_Click(object sender, EventArgs e)
@@ -66,14 +58,13 @@ namespace UI
 
         IFirebaseClient tbl;
 
-
         private void AdminLoadTablesBtn_Click(object sender, EventArgs e)
         {
             // Xóa các controls cũ trên AdminOrderPanel nếu có
             Table_flowLayoutPanel.Controls.Clear();
             LoadTable();
-
         }
+
         // Lặp qua danh sách các bảng và thêm thông tin những bảng có trạng thái "Booked"
         async void LoadTable()
         {
@@ -119,7 +110,7 @@ namespace UI
                 {
                     // Kiểm tra nếu table là null
                     if (table == null)
-                    { 
+                    {
                         continue;
                     }
 
@@ -127,13 +118,20 @@ namespace UI
                     Button btn = new Button();
                     btn.Size = new Size(109, 109); // Thiết lập kích thước
 
-                    if (table.Status != null && table.Status == "Booked")
+                    var bookingData = await tbl.GetAsync($"Tables/{table.ID}/Bookings");
+                    bool hasBookings = bookingData != null && bookingData.Body != null;
+
+                    if (table.Status == "Booked" && hasBookings)
                     {
-                        btn.BackColor = Color.Gray;
+                        btn.BackColor = Color.DarkBlue; // Dark blue if booking details are present
+                    }
+                    else if (table.Status == "Booked")
+                    {
+                        btn.BackColor = Color.Gray; // Gray if status is booked but no booking details
                     }
                     else
                     {
-                        btn.BackColor = Color.LightBlue; // Thiết lập màu sắc
+                        btn.BackColor = Color.LightBlue; // Light blue if available
                     }
 
                     btn.Text = $"ID: {table.ID}\nName: {table.Name}\nStatus: {table.Status}";
@@ -147,8 +145,8 @@ namespace UI
             {
                 MessageBox.Show("Dữ liệu JSON không ở định dạng mong đợi.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
+
         void OpenTableDetail(NekoTable table)
         {
             // Khởi tạo form chi tiết bảng với thông tin bảng được truyền vào
@@ -164,7 +162,6 @@ namespace UI
 
         private void Table_flowLayoutPanel_Paint(object sender, PaintEventArgs e)
         {
-
         }
     }
 }
