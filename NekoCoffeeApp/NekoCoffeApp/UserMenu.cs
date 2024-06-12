@@ -136,7 +136,7 @@ namespace UI
                     nameLabel.Text = drink.Name ?? "Unknown";
                     nameLabel.Location = new Point(50, 120); // Set the position of the Label below the PictureBox
                     nameLabel.AutoSize = true;
-                    nameLabel.Font = new Font("UTM Avo", 10, FontStyle.Bold);
+                    nameLabel.Font = new Font("Segoe UI", 10, FontStyle.Bold);
 
 
                     // Create a Label to display the drink's price
@@ -144,7 +144,7 @@ namespace UI
                     priceLabel.Text = drink.Price.ToString();
                     priceLabel.Location = new Point(50, 140); // Set the position of the Label below the name
                     priceLabel.AutoSize = true;
-                    priceLabel.Font = new Font("UTM Avo", 8, FontStyle.Bold);
+                    priceLabel.Font = new Font("Segoe UI", 8, FontStyle.Bold);
 
 
                     // Create a NumericUpDown for quantity selection

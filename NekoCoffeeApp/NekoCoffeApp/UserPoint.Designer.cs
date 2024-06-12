@@ -39,11 +39,11 @@
             this.lbPoint = new Bunifu.UI.WinForms.BunifuLabel();
             this.UserViewAllPoint = new System.Windows.Forms.ListView();
             this.btnCheck = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.AdminShowEmployee4 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.lbName = new Bunifu.UI.WinForms.BunifuLabel();
+            this.AvatarPictureBox = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.lbFullname = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtPoint = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
@@ -69,12 +69,12 @@
             this.bunifuLabel1.AllowParentOverrides = false;
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.CursorType = null;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Montserrat Black", 16F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.Location = new System.Drawing.Point(264, 25);
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(208, 29);
+            this.bunifuLabel1.Size = new System.Drawing.Size(199, 30);
             this.bunifuLabel1.TabIndex = 53;
             this.bunifuLabel1.Text = "ĐIỂM THÀNH VIÊN";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -85,11 +85,11 @@
             this.lbPoint.AllowParentOverrides = false;
             this.lbPoint.AutoEllipsis = false;
             this.lbPoint.CursorType = null;
-            this.lbPoint.Font = new System.Drawing.Font("Montserrat SemiBold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPoint.Location = new System.Drawing.Point(536, 355);
+            this.lbPoint.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lbPoint.Location = new System.Drawing.Point(546, 359);
             this.lbPoint.Name = "lbPoint";
             this.lbPoint.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbPoint.Size = new System.Drawing.Size(63, 18);
+            this.lbPoint.Size = new System.Drawing.Size(63, 15);
             this.lbPoint.TabIndex = 84;
             this.lbPoint.Text = "Tổng điểm:";
             this.lbPoint.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -194,36 +194,36 @@
             this.btnCheck.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnCheck.UseDefaultRadiusAndThickness = true;
             // 
-            // AdminShowEmployee4
+            // AvatarPictureBox
             // 
-            this.AdminShowEmployee4.AllowFocused = false;
-            this.AdminShowEmployee4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AdminShowEmployee4.AutoSizeHeight = true;
-            this.AdminShowEmployee4.BorderRadius = 85;
-            this.AdminShowEmployee4.Image = ((System.Drawing.Image)(resources.GetObject("AdminShowEmployee4.Image")));
-            this.AdminShowEmployee4.IsCircle = true;
-            this.AdminShowEmployee4.Location = new System.Drawing.Point(546, 135);
-            this.AdminShowEmployee4.Name = "AdminShowEmployee4";
-            this.AdminShowEmployee4.Size = new System.Drawing.Size(170, 170);
-            this.AdminShowEmployee4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.AdminShowEmployee4.TabIndex = 53;
-            this.AdminShowEmployee4.TabStop = false;
-            this.AdminShowEmployee4.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.AvatarPictureBox.AllowFocused = false;
+            this.AvatarPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AvatarPictureBox.AutoSizeHeight = true;
+            this.AvatarPictureBox.BorderRadius = 85;
+            this.AvatarPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("AvatarPictureBox.Image")));
+            this.AvatarPictureBox.IsCircle = true;
+            this.AvatarPictureBox.Location = new System.Drawing.Point(546, 135);
+            this.AvatarPictureBox.Name = "AvatarPictureBox";
+            this.AvatarPictureBox.Size = new System.Drawing.Size(170, 170);
+            this.AvatarPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AvatarPictureBox.TabIndex = 53;
+            this.AvatarPictureBox.TabStop = false;
+            this.AvatarPictureBox.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // lbName
+            // lbFullname
             // 
-            this.lbName.AllowParentOverrides = false;
-            this.lbName.AutoEllipsis = false;
-            this.lbName.CursorType = null;
-            this.lbName.Font = new System.Drawing.Font("Montserrat ExtraBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(574, 311);
-            this.lbName.Name = "lbName";
-            this.lbName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbName.Size = new System.Drawing.Size(117, 16);
-            this.lbName.TabIndex = 82;
-            this.lbName.Text = "Nguyễn Thị Bunifu";
-            this.lbName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lbName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lbFullname.AllowParentOverrides = false;
+            this.lbFullname.AutoEllipsis = false;
+            this.lbFullname.CursorType = null;
+            this.lbFullname.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFullname.Location = new System.Drawing.Point(546, 311);
+            this.lbFullname.Name = "lbFullname";
+            this.lbFullname.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbFullname.Size = new System.Drawing.Size(137, 20);
+            this.lbFullname.TabIndex = 82;
+            this.lbFullname.Text = "Nguyễn Thị Bunifu";
+            this.lbFullname.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbFullname.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // txtPoint
             // 
@@ -252,7 +252,7 @@
             this.txtPoint.IconRight = null;
             this.txtPoint.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPoint.Lines = new string[0];
-            this.txtPoint.Location = new System.Drawing.Point(631, 342);
+            this.txtPoint.Location = new System.Drawing.Point(615, 348);
             this.txtPoint.MaxLength = 32767;
             this.txtPoint.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPoint.Modified = false;
@@ -288,7 +288,7 @@
             this.txtPoint.SelectionLength = 0;
             this.txtPoint.SelectionStart = 0;
             this.txtPoint.ShortcutsEnabled = true;
-            this.txtPoint.Size = new System.Drawing.Size(85, 40);
+            this.txtPoint.Size = new System.Drawing.Size(85, 29);
             this.txtPoint.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtPoint.TabIndex = 85;
             this.txtPoint.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -306,14 +306,15 @@
             this.Controls.Add(this.UserViewAllPoint);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.lbPoint);
-            this.Controls.Add(this.lbName);
-            this.Controls.Add(this.AdminShowEmployee4);
+            this.Controls.Add(this.lbFullname);
+            this.Controls.Add(this.AvatarPictureBox);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "UserPoint";
             this.Size = new System.Drawing.Size(731, 484);
+            this.Load += new System.EventHandler(this.UserPoint_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AdminShowEmployee4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,8 +326,8 @@
         private Bunifu.UI.WinForms.BunifuLabel lbPoint;
         private System.Windows.Forms.ListView UserViewAllPoint;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnCheck;
-        private Bunifu.UI.WinForms.BunifuPictureBox AdminShowEmployee4;
-        private Bunifu.UI.WinForms.BunifuLabel lbName;
+        private Bunifu.UI.WinForms.BunifuPictureBox AvatarPictureBox;
+        private Bunifu.UI.WinForms.BunifuLabel lbFullname;
         private Bunifu.UI.WinForms.BunifuTextBox txtPoint;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
     }
