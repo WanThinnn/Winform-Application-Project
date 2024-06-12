@@ -16,5 +16,10 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private void UserAccount_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
