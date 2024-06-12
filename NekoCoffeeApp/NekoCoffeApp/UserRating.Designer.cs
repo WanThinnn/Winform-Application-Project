@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserRating));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.commentsFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -78,9 +78,9 @@
             // 
             // commentsFlowLayoutPanel
             // 
-            this.commentsFlowLayoutPanel.Location = new System.Drawing.Point(13, 165);
+            this.commentsFlowLayoutPanel.Location = new System.Drawing.Point(40, 165);
             this.commentsFlowLayoutPanel.Name = "commentsFlowLayoutPanel";
-            this.commentsFlowLayoutPanel.Size = new System.Drawing.Size(705, 295);
+            this.commentsFlowLayoutPanel.Size = new System.Drawing.Size(678, 295);
             this.commentsFlowLayoutPanel.TabIndex = 94;
             // 
             // ratingStars
@@ -170,11 +170,11 @@
             this.AdminOrderTableBtn.ColorContrastOnClick = 45;
             this.AdminOrderTableBtn.ColorContrastOnHover = 45;
             this.AdminOrderTableBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.AdminOrderTableBtn.CustomizableEdges = borderEdges2;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.AdminOrderTableBtn.CustomizableEdges = borderEdges4;
             this.AdminOrderTableBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminOrderTableBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminOrderTableBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));

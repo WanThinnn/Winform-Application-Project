@@ -96,7 +96,7 @@ namespace UI
                 // Update lbPoint and lbPeople
                 lbPoint.Text = $"{averageRating:F1}/5"; // Format to 2 decimal places
                 lbPeople.Text = $"{numberOfRatings} nhận xét";
-                ratingStars.Value = numberOfRatings;
+                ratingStars.Value = (int)(averageRating / numberOfRatings);
 
                 // Clear the previous controls
                 commentsFlowLayoutPanel.Controls.Clear();
@@ -128,7 +128,10 @@ namespace UI
                     BunifuRating pointLabel = new BunifuRating();
                     pointLabel.Value = rating.Star;
                     pointLabel.Location = new Point(10, 40); // Set the position of the BunifuRating inside the Button
-                    pointLabel.Size = new Size(150, 20); // Adjust the size of the BunifuRating
+                    pointLabel.Size = new Size(70, 6); // Điều chỉnh kích thước của BunifuRating
+                    pointLabel.AutoSize = true;
+                    pointLabel.Enabled = false;
+
 
                     // Create a Label to display the rating's comment
                     Label commentLabel = new Label();
