@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserRating));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.commentsFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -103,7 +103,7 @@
             this.ratingStars.Size = new System.Drawing.Size(121, 22);
             this.ratingStars.TabIndex = 95;
             this.ratingStars.Text = "bunifuRating1";
-            this.ratingStars.Value = 2;
+            this.ratingStars.Value = 5;
             // 
             // bunifuPictureBox1
             // 
@@ -125,6 +125,7 @@
             // 
             this.lbPeople.AllowParentOverrides = false;
             this.lbPeople.AutoEllipsis = false;
+            this.lbPeople.Cursor = System.Windows.Forms.Cursors.Default;
             this.lbPeople.CursorType = System.Windows.Forms.Cursors.Default;
             this.lbPeople.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.lbPeople.Location = new System.Drawing.Point(319, 123);
@@ -140,6 +141,7 @@
             // 
             this.lbPoint.AllowParentOverrides = false;
             this.lbPoint.AutoEllipsis = false;
+            this.lbPoint.Cursor = System.Windows.Forms.Cursors.Default;
             this.lbPoint.CursorType = System.Windows.Forms.Cursors.Default;
             this.lbPoint.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold);
             this.lbPoint.Location = new System.Drawing.Point(127, 73);
@@ -170,11 +172,11 @@
             this.AdminOrderTableBtn.ColorContrastOnClick = 45;
             this.AdminOrderTableBtn.ColorContrastOnHover = 45;
             this.AdminOrderTableBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.AdminOrderTableBtn.CustomizableEdges = borderEdges4;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.AdminOrderTableBtn.CustomizableEdges = borderEdges1;
             this.AdminOrderTableBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminOrderTableBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminOrderTableBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));

@@ -96,7 +96,7 @@ namespace UI
                 // Update lbPoint and lbPeople
                 lbPoint.Text = $"{averageRating:F1}/5"; // Format to 2 decimal places
                 lbPeople.Text = $"{numberOfRatings} nhận xét";
-                ratingStars.Value = (int)(averageRating / numberOfRatings);
+                ratingStars.Value = (int)(averageRating);
 
                 // Clear the previous controls
                 commentsFlowLayoutPanel.Controls.Clear();
