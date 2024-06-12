@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserAccount));
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.AvatarPictureBox = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lbFullname = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
             this.lbDay = new System.Windows.Forms.Label();
@@ -49,9 +48,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.AvatarPictureBox = new System.Windows.Forms.PictureBox();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AvatarPictureBox)).BeginInit();
             this.bunifuPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuLabel1
@@ -88,22 +88,6 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(731, 80);
             this.bunifuGradientPanel1.TabIndex = 88;
-            // 
-            // AvatarPictureBox
-            // 
-            this.AvatarPictureBox.AllowFocused = false;
-            this.AvatarPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AvatarPictureBox.AutoSizeHeight = true;
-            this.AvatarPictureBox.BorderRadius = 111;
-            this.AvatarPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("AvatarPictureBox.Image")));
-            this.AvatarPictureBox.IsCircle = true;
-            this.AvatarPictureBox.Location = new System.Drawing.Point(28, 112);
-            this.AvatarPictureBox.Name = "AvatarPictureBox";
-            this.AvatarPictureBox.Size = new System.Drawing.Size(223, 223);
-            this.AvatarPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.AvatarPictureBox.TabIndex = 89;
-            this.AvatarPictureBox.TabStop = false;
-            this.AvatarPictureBox.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // lbFullname
             // 
@@ -323,23 +307,32 @@
             this.label9.TabIndex = 93;
             this.label9.Text = "Tích điểm:";
             // 
+            // AvatarPictureBox
+            // 
+            this.AvatarPictureBox.Location = new System.Drawing.Point(29, 112);
+            this.AvatarPictureBox.Name = "AvatarPictureBox";
+            this.AvatarPictureBox.Size = new System.Drawing.Size(223, 223);
+            this.AvatarPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AvatarPictureBox.TabIndex = 94;
+            this.AvatarPictureBox.TabStop = false;
+            // 
             // UserAccount
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.AvatarPictureBox);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.bunifuPanel3);
             this.Controls.Add(this.lbFullname);
-            this.Controls.Add(this.AvatarPictureBox);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "UserAccount";
             this.Size = new System.Drawing.Size(731, 484);
             this.Load += new System.EventHandler(this.UserAccount_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AvatarPictureBox)).EndInit();
             this.bunifuPanel3.ResumeLayout(false);
             this.bunifuPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AvatarPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,7 +342,6 @@
 
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.UI.WinForms.BunifuPictureBox AvatarPictureBox;
         private Bunifu.UI.WinForms.BunifuLabel lbFullname;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
         private System.Windows.Forms.Label label2;
@@ -367,5 +359,6 @@
         private System.Windows.Forms.Label lbEmail;
         private System.Windows.Forms.Label lbGender;
         private System.Windows.Forms.Label lbBirthday;
+        private System.Windows.Forms.PictureBox AvatarPictureBox;
     }
 }

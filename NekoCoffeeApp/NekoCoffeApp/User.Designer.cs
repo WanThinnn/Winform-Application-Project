@@ -104,7 +104,7 @@
             this.btnRating.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnRating.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnRating.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnRating.Font = new System.Drawing.Font("Montserrat ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnRating.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold);
             this.btnRating.ForeColor = System.Drawing.Color.Snow;
             this.btnRating.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRating.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -232,7 +232,7 @@
             this.btnUser.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnUser.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnUser.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnUser.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUser.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUser.ForeColor = System.Drawing.Color.LightSalmon;
             this.btnUser.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUser.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -311,12 +311,12 @@
             this.lbCart.AutoEllipsis = false;
             this.lbCart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbCart.CursorType = System.Windows.Forms.Cursors.Hand;
-            this.lbCart.Font = new System.Drawing.Font("UTM Avo", 12F, System.Drawing.FontStyle.Bold);
+            this.lbCart.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCart.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbCart.Location = new System.Drawing.Point(81, 103);
             this.lbCart.Name = "lbCart";
             this.lbCart.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbCart.Size = new System.Drawing.Size(77, 23);
+            this.lbCart.Size = new System.Drawing.Size(65, 20);
             this.lbCart.TabIndex = 44;
             this.lbCart.Text = "Giỏ hàng";
             this.lbCart.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -352,7 +352,7 @@
             this.btnBooking.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnBooking.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnBooking.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnBooking.Font = new System.Drawing.Font("Montserrat ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnBooking.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold);
             this.btnBooking.ForeColor = System.Drawing.Color.Snow;
             this.btnBooking.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBooking.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -443,7 +443,7 @@
             this.btnPoint.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnPoint.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnPoint.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnPoint.Font = new System.Drawing.Font("Montserrat ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnPoint.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold);
             this.btnPoint.ForeColor = System.Drawing.Color.Snow;
             this.btnPoint.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPoint.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -534,7 +534,7 @@
             this.btnDiscount.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnDiscount.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnDiscount.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnDiscount.Font = new System.Drawing.Font("Montserrat ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnDiscount.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold);
             this.btnDiscount.ForeColor = System.Drawing.Color.Snow;
             this.btnDiscount.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDiscount.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -625,7 +625,7 @@
             this.btnMenu.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnMenu.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnMenu.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnMenu.Font = new System.Drawing.Font("Montserrat ExtraBold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnMenu.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold);
             this.btnMenu.ForeColor = System.Drawing.Color.Snow;
             this.btnMenu.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMenu.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -720,7 +720,7 @@
             this.ClientSize = new System.Drawing.Size(938, 484);
             this.Controls.Add(this.panelUserControl);
             this.Controls.Add(this.AdminPanelGrid);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

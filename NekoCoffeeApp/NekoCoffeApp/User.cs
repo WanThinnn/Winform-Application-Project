@@ -142,7 +142,18 @@ namespace UI
 
             if (GlobalVars.CurrentUser != null)
             {
-                btnUser.Text = GlobalVars.CurrentUser.Username;
+                string fullName = GlobalVars.CurrentUser.Fullname;
+                if (!string.IsNullOrWhiteSpace(fullName))
+                {
+                    // Tách chuỗi thành các từ và lấy từ cuối cùng
+                    string[] nameParts = fullName.Split(' ');
+                    string lastName = nameParts.Last();
+                    btnUser.Text = lastName;
+                }
+                else
+                {
+                    btnUser.Text = string.Empty; // Xử lý trường hợp Fullname rỗng hoặc null
+                }
                 try
                 {
                     AdminUserImg.Load(GlobalVars.CurrentUser.Avatar);

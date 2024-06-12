@@ -128,7 +128,7 @@ namespace UI
                     BunifuRating pointLabel = new BunifuRating();
                     pointLabel.Value = rating.Star;
                     pointLabel.Location = new Point(10, 40); // Set the position of the BunifuRating inside the Button
-                    pointLabel.Size = new Size(70, 6); // Điều chỉnh kích thước của BunifuRating
+                    pointLabel.Size = new Size(80, 4); // Điều chỉnh kích thước của BunifuRating
                     pointLabel.AutoSize = true;
                     pointLabel.Enabled = false;
 

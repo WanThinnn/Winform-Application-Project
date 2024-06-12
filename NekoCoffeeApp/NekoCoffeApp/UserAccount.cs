@@ -43,6 +43,14 @@ namespace UI
                 lbGender.Text = GlobalVars.CurrentUser.Gender;
                 lbPhone.Text = GlobalVars.CurrentUser.PhoneNumber;
                 lbUsername.Text = GlobalVars.CurrentUser.Username;
+                try
+                {
+                    AvatarPictureBox.Load(GlobalVars.CurrentUser.Avatar);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi tải ảnh: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
          
 
