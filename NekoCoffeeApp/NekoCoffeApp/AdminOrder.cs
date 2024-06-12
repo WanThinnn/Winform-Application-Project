@@ -137,7 +137,7 @@ namespace UI
                     }
 
                     btn.Text = $"ID: {table.ID}\nName: {table.Name}\nStatus: {table.Status}";
-
+                    
                     // Gán sự kiện Click cho nút
                     btn.Click += (s, args) => OpenTableDetail(table);
                     Table_flowLayoutPanel.Controls.Add(btn);

@@ -43,6 +43,7 @@ namespace UI
             client = new FireSharp.FirebaseClient(ifc);
             // Đảm bảo tbl không null trước khi cố gắng sử dụng nó
             checkprogress();
+            checkpayment();
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -97,15 +98,112 @@ namespace UI
 
         }
 
-        private void AdminComePayment_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void AdminComeOder_Click(object sender, EventArgs e)
         {
 
         }
+        private async void checkpayment()
+        {
+            // Đảm bảo client không null trước khi cố gắng sử dụng nó
+            if (client == null)
+            {
+                MessageBox.Show("Client chưa được khởi tạo.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var data = await client.GetAsync("Bills");
+
+            // Kiểm tra nếu data hoặc data.Body là null
+            if (data == null || data.Body == null)
+            {
+                MessageBox.Show("Không có dữ liệu nào được lấy từ Firebase.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string jsonData = data.Body;
+
+            // Kiểm tra xem jsonData có phải là mảng JSON không
+            if (jsonData.TrimStart().StartsWith("["))
+            {
+                // Nếu là mảng JSON, xử lý nó như một danh sách
+                var billList = JsonConvert.DeserializeObject<List<Bills>>(jsonData);
+
+                // Kiểm tra nếu billList là null hoặc rỗng
+                if (billList == null || !billList.Any())
+                {
+                    MessageBox.Show("Không tìm thấy hóa đơn nào.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                // Lọc các hóa đơn có billId không null và chuyển đổi billId thành số nguyên
+                var validBills = billList.Where(b => b != null && int.TryParse(b.billId, out _)).ToList();
+
+                // Kiểm tra nếu validBills là null hoặc rỗng
+                if (!validBills.Any())
+                {
+                    MessageBox.Show("Không có hóa đơn hợp lệ.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                // Sắp xếp các hóa đơn theo billId đã chuyển đổi sang số nguyên
+                var topBills = validBills.OrderByDescending(b => int.Parse(b.billId)).Take(3).ToList();
+
+                // Đảm bảo flowLayoutPanel1 không null trước khi sử dụng
+                if (flowLayoutPanel1 == null)
+                {
+                    MessageBox.Show("Bảng điều khiển bố trí dòng chưa được khởi tạo.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Xóa các control cũ trước khi thêm mới
+                flowLayoutPanel1.Controls.Clear();
+
+                foreach (var bill in topBills)
+                {
+                    // Kiểm tra các thuộc tính của bill để đảm bảo chúng không null
+                    if (bill.tableId == null || bill.Total.ToString() == null)
+                    {
+                        continue;
+                    }
+
+                    // Tạo một BunifuButton mới để hiển thị thông tin hóa đơn
+                    var btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+                    btn.Size = new Size(290, 55); // Thiết lập kích thước
+                    btn.IdleFillColor = Color.Black;
+                    btn.IdleBorderColor = Color.Black;
+                    btn.ForeColor = Color.LightSalmon;
+                    btn.IdleBorderRadius = 35;
+                    btn.Font = new Font("Century Gothic", 9, FontStyle.Regular);
+                    // Thiết lập để tắt hiệu ứng hover
+                    btn.onHoverState.BorderColor = Color.Black;
+                    btn.onHoverState.FillColor = Color.Black;
+                    btn.onHoverState.ForeColor = Color.LightSalmon;
+
+                    // Thiết lập để tắt hiệu ứng khi click vào
+                    btn.OnPressedState.BorderColor = Color.Black;
+                    btn.OnPressedState.FillColor = Color.Black;
+                    btn.OnPressedState.ForeColor = Color.LightSalmon;
+
+                    btn.OnDisabledState.FillColor = Color.White;
+                    btn.OnDisabledState.BorderColor = Color.White;
+                    btn.OnDisabledState.ForeColor = Color.LightSalmon;
+
+
+                    btn.ButtonText = $"Hoá đơn số: {bill.billId}\nBàn số : {bill.tableId}\nTổng cộng: {bill.Total}";
+
+                    // Thêm button vào flowLayoutPanel1
+                    flowLayoutPanel1.Controls.Add(btn);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Dữ liệu JSON không ở định dạng mong đợi.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
         private async void checkprogress()
         {
             int book = 0, avai = 0;
@@ -175,6 +273,18 @@ namespace UI
             client = new FireSharp.FirebaseClient(ifc);
             // Đảm bảo tbl không null trước khi cố gắng sử dụng nó
             checkprogress();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            client = new FireSharp.FirebaseClient(ifc);
+            // Đảm bảo tbl không null trước khi cố gắng sử dụng nó
+            checkpayment();
         }
     }
 }
