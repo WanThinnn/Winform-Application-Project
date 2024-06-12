@@ -1154,3 +1154,13 @@ C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserAccount.resources
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserBooking.resources
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserRating.resources
+C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Firebase.Storage.dll
+C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.BillDetailForm.resources
+C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.edit_Customer.resources
+C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.edit_Employee_2.resources
+C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.RatingStar.resources
+C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserAccount.resources
+C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserBooking.resources
+C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserRating.resources

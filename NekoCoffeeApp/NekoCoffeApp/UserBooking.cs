@@ -24,6 +24,14 @@ namespace UI
             }
         }
 
+        IFirebaseClient client;
+
+        private IFirebaseConfig firebaseConfig = new FirebaseConfig()
+        {
+            AuthSecret = "f5A5LselW6L4lKJHpNGVH6NZHGKIZilErMoUOoLC",
+            BasePath = "https://neko-coffe-database-default-rtdb.firebaseio.com/"
+        };
+
         public UserBooking()
         {
             InitializeComponent();
@@ -33,112 +41,98 @@ namespace UI
         {
             try
             {
-                tbl = new FireSharp.FirebaseClient(ifc);
+                client = new FireSharp.FirebaseClient(firebaseConfig);
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Kiểm tra lại mạng", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show($"Không thể kết nối đến Firebase: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            LoadTable();
+            LoadTables();
         }
 
-        private void AdminAdjustTable_Click(object sender, EventArgs e)
+        private async void LoadTables()
         {
-            edit_Table edit_Table = new edit_Table();
-            edit_Table.Show();
-        }
-
-        IFirebaseConfig ifc = new FirebaseConfig()
-        {
-            AuthSecret = "f5A5LselW6L4lKJHpNGVH6NZHGKIZilErMoUOoLC",
-            BasePath = "https://neko-coffe-database-default-rtdb.firebaseio.com/"
-        };
-
-        IFirebaseClient tbl;
-
-        async void LoadTable()
-        {
-            if (tbl == null)
+            if (client == null)
             {
-                MessageBox.Show("Tham chiếu bảng là null.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Tham chiếu Firebase không hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            var data = await tbl.GetAsync("Tables");
-
-            if (data == null || data.Body == null)
+            try
             {
-                MessageBox.Show("Không có dữ liệu nào được lấy từ Firebase.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+                var response = await client.GetAsync("Tables");
 
-            string jsonData = data.Body;
-
-            if (jsonData.TrimStart().StartsWith("["))
-            {
-                var mListArray = JsonConvert.DeserializeObject<List<NekoTable>>(jsonData);
-
-                if (mListArray == null || !mListArray.Any())
+                if (response == null || response.Body == null)
                 {
-                    MessageBox.Show("Không tìm thấy bàn nào.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Không có dữ liệu từ Firebase.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                if (Table_flowLayoutPanel == null)
+                string jsonData = response.Body;
+
+                if (jsonData.TrimStart().StartsWith("["))
                 {
-                    MessageBox.Show("Bảng điều khiển bố trí dòng chưa được khởi tạo.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    var tableList = JsonConvert.DeserializeObject<List<NekoTable>>(jsonData);
+
+                    if (tableList == null || !tableList.Any())
+                    {
+                        MessageBox.Show("Không tìm thấy bàn nào.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+
+                    Table_flowLayoutPanel.Controls.Clear(); 
+
+                    foreach (var table in tableList)
+                    {
+                        if (table == null)
+                        {
+                            continue;
+                        }
+
+                        Button btn = new Button();
+                        btn.Size = new Size(109, 109);
+
+                        var bookingData = await client.GetAsync($"Tables/{table.ID}/Bookings");
+                        bool hasBookings = bookingData != null && bookingData.Body != "null";
+
+                        if (table.Status != null && table.Status == "Booked")
+                        {
+                            btn.BackColor = Color.Gray;
+                        }
+                        else if (hasBookings)
+                        {
+                            btn.BackColor = Color.DarkBlue; // Màu xanh đậm nếu có thông tin đặt bàn
+                        }
+                        else
+                        {
+                            btn.BackColor = Color.LightBlue;
+                        }
+
+                        btn.Text = $"ID: {table.ID}\nTên: {table.Name}\nTrạng thái: {table.Status}";
+
+                        btn.Click += (s, args) => BookingTable(table);
+                        Table_flowLayoutPanel.Controls.Add(btn);
+                    }
                 }
-
-                Table_flowLayoutPanel.Controls.Clear(); // Clear existing buttons before loading new ones
-
-                foreach (var table in mListArray)
+                else
                 {
-                    if (table == null)
-                    {
-                        continue;
-                    }
-
-                    Button btn = new Button();
-                    btn.Size = new Size(109, 109);
-
-                    var bookingData = await tbl.GetAsync($"Tables/{table.ID}/Bookings");
-                    bool hasBookings = bookingData != null && bookingData.Body != "null";
-
-                    if (table.Status != null && table.Status == "Booked")
-                    {
-                        btn.BackColor = Color.Gray;
-                    }
-                    else if (hasBookings)
-                    {
-                        btn.BackColor = Color.DarkBlue; // Dark blue if booking details are present
-                    }
-                    else
-                    {
-                        btn.BackColor = Color.LightBlue;
-                    }
-
-                    btn.Text = $"ID: {table.ID}\nName: {table.Name}\nStatus: {table.Status}";
-
-                    btn.Click += (s, args) => BookingTable(table);
-                    Table_flowLayoutPanel.Controls.Add(btn);
+                    MessageBox.Show("Dữ liệu JSON không hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Dữ liệu JSON không ở định dạng mong đợi.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Lỗi khi tải danh sách bàn: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        async void BookingTable(NekoTable table)
+        private async void BookingTable(NekoTable table)
         {
             if (GlobalVars.CurrentUser == null)
             {
-                MessageBox.Show("Bạn cần đăng nhập để đặt bàn!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Bạn cần đăng nhập để đặt bàn!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Tạo thông tin đặt bàn mới
             var booking = new Booking
             {
                 Username = GlobalVars.CurrentUser.Username,
@@ -149,35 +143,59 @@ namespace UI
 
             try
             {
-                // Thêm thông tin đặt bàn vào thông tin con của bảng cụ thể
-                PushResponse response = await tbl.PushAsync($"Tables/{table.ID}/Bookings", booking);
+                PushResponse response = await client.PushAsync($"Tables/{table.ID}/Bookings", booking);
 
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    // Đặt trạng thái của bàn là "Booked"
                     table.Status = "Booked";
-                    SetResponse updateResponse = await tbl.SetAsync($"Tables/{table.ID}/Status", "Booked");
+                    SetResponse updateResponse = await client.SetAsync($"Tables/{table.ID}/Status", "Booked");
 
                     if (updateResponse.StatusCode == System.Net.HttpStatusCode.OK)
                     {
-                        MessageBox.Show("Table booked successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadTable(); // Refresh the table list
+                        MessageBox.Show("Đặt bàn thành công.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadTables(); // Làm mới danh sách bàn
                     }
                     else
                     {
-                        MessageBox.Show("Failed to update table status.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Cập nhật trạng thái bàn không thành công.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Failed to book the table.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Đặt bàn không thành công.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error booking the table: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Lỗi khi đặt bàn: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+        private async Task UpdateTableStatus(string tableId, string status)
+        {
+            try
+            {
+                var updateTable = new NekoTable
+                {
+                    ID = tableId,
+                    Status = status
+                };
+
+                FirebaseResponse response = await client.SetAsync($"Tables/{tableId}", updateTable);
+
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    MessageBox.Show("Cập nhật trạng thái bàn thành công.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhật trạng thái bàn không thành công.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi cập nhật trạng thái bàn: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

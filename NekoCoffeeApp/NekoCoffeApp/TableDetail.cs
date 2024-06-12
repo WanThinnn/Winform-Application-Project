@@ -1,83 +1,118 @@
-﻿using FireSharp;
-using FireSharp.Config;
+﻿using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Documents;
 using System.Windows.Forms;
-using System.Windows.Markup;
-using static Google.Apis.Requests.BatchRequest;
 
 namespace UI
 {
     public partial class TableDetail : Form
     {
         DataTable mydt = new DataTable();
-        IFirebaseConfig config = new FirebaseConfig
+        private IFirebaseClient client;
+        private IFirebaseConfig config = new FirebaseConfig
         {
             AuthSecret = "f5A5LselW6L4lKJHpNGVH6NZHGKIZilErMoUOoLC",
             BasePath = "https://neko-coffe-database-default-rtdb.firebaseio.com/"
         };
-        IFirebaseClient client;
-        public TableDetail() { }
+
+        private void InitializeFirebaseClient()
+        {
+            client = new FireSharp.FirebaseClient(config);
+            if (client == null)
+            {
+                MessageBox.Show("Không thể kết nối đến Firebase. Vui lòng kiểm tra kết nối mạng.", "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
         private NekoTable _table;
+
+
+        private static TableDetail _instance;
+        public static TableDetail Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new TableDetail();
+                return _instance;
+            }
+        }
+
+        public TableDetail() { }
+
         public TableDetail(NekoTable table)
         {
             InitializeComponent();
             _table = table;
+            InitializeFirebaseClient();
             LoadTableDetails();
         }
-        private void LoadTableDetails()
-        {
 
+       
+
+        private async void LoadTableDetails()
+        {
+            try
+            {
+                FirebaseResponse response = await client.GetAsync($"TableDetails/{_table.ID}");
+                if (response.Body == "null")
+                {
+                    MessageBox.Show($"Không tìm thấy chi tiết cho Bàn {_table.ID}.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                string jsonData = response.Body;
+                List<NekoTableDetail> tableDetails;
+
+                if (jsonData.StartsWith("["))
+                {
+                    tableDetails = JsonConvert.DeserializeObject<List<NekoTableDetail>>(jsonData);
+                }
+                else
+                {
+                    var detailsDict = JsonConvert.DeserializeObject<Dictionary<string, NekoTableDetail>>(jsonData);
+                    tableDetails = detailsDict.Values.ToList();
+                }
+
+                foreach (var detail in tableDetails)
+                {
+                    DataRow row = mydt.NewRow();
+                    row["Tên Món"] = detail.Name;
+                    row["SL"] = detail.SL;
+                    row["Thành Tiền"] = detail.Total;
+                    mydt.Rows.Add(row);
+                }
+                dataGridView1.DataSource = mydt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi tải chi tiết bàn: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private async void TableDetail_Load(object sender, EventArgs e)
         {
-            client = new FireSharp.FirebaseClient(config);
             mydt.Columns.Add("Tên Món");
             mydt.Columns.Add("SL");
             mydt.Columns.Add("Thành Tiền");
 
             dataGridView1.DataSource = mydt;
+
             try
             {
                 var response = await client.GetAsync("/Drinks");
-
-                // Check if response or response.Body is null
-                if (response == null || response.Body == null)
-                {
-                    MessageBox.Show("No data retrieved from Firebase.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
                 string jsonData = response.Body;
 
-                // Clear existing items in the ComboBox
                 comboBox1.Items.Clear();
-
-                // Kiểm tra xem jsonData có phải là mảng JSON không
                 if (jsonData.TrimStart().StartsWith("["))
                 {
-                    // Nếu là mảng JSON, xử lý nó như một danh sách
                     var drinksList = JsonConvert.DeserializeObject<List<NekoDrink>>(jsonData);
-
-                    // Check if drinksList is null or empty
-                    if (drinksList == null || !drinksList.Any())
-                    {
-                        MessageBox.Show("No drinks found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        return;
-                    }
-
-                    // Add drink names to the ComboBox
                     foreach (var drink in drinksList)
                     {
                         if (drink != null && !string.IsNullOrEmpty(drink.Name))
@@ -88,17 +123,7 @@ namespace UI
                 }
                 else
                 {
-                    // Nếu không phải mảng JSON, xử lý nó như một đối tượng JSON
                     var drinksDict = JsonConvert.DeserializeObject<Dictionary<string, NekoDrink>>(jsonData);
-
-                    // Check if drinksDict is null or empty
-                    if (drinksDict == null || !drinksDict.Any())
-                    {
-                        MessageBox.Show("No drinks found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        return;
-                    }
-
-                    // Add drink names to the ComboBox
                     foreach (var drink in drinksDict.Values)
                     {
                         if (drink != null && !string.IsNullOrEmpty(drink.Name))
@@ -110,126 +135,55 @@ namespace UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Lỗi khi tải danh sách đồ uống: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            var response1 = await client.GetAsync("/Cats");
-            var cats = JsonConvert.DeserializeObject<Dictionary<string, NekoCat>>(response1.Body);
-            foreach (var cat in cats.Values)
+
+            try
             {
-                comboBox2.Items.Add(cat.Name);
+                var response = await client.GetAsync("/Cats");
+                var catsDict = JsonConvert.DeserializeObject<Dictionary<string, NekoCat>>(response.Body);
+                foreach (var cat in catsDict.Values)
+                {
+                    comboBox2.Items.Add(cat.Name);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi tải danh sách mèo: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private async void TableDetailsAdd_Click(object sender, EventArgs e)
+        private async void btnAddToTable_Click(object sender, EventArgs e)
         {
-            DialogResult dg = MessageBox.Show("Bạn có chắc chắn muốn xóa món này ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dg == DialogResult.Yes)
-            {
-                if (comboBox1.SelectedIndex <= -1 && comboBox2.SelectedIndex <= -1)
-                {
-                    MessageBox.Show("Vui lòng chọn một sản phẩm");
-                    return;
-                }
-                if (comboBox1.SelectedIndex >= 0 && comboBox2.SelectedIndex >= 0)
-                {
-                    MessageBox.Show("Vui lòng chỉ chọn một sản phẩm");
-                    return;
-                }
-                string selectedNumber = numericUpDown1.Value.ToString();
-                if (numericUpDown1.Value <= 0)
-                {
-                    MessageBox.Show("Vui lòng chọn số lượng của sản phẩm");
-                    return;
-                }
-                string selectedItem;
-
-                if (comboBox1.SelectedIndex >= 0)
-                {
-                    selectedItem = comboBox1.SelectedItem.ToString();
-                }
-                else
-                {
-                    selectedItem = comboBox2.SelectedItem.ToString();
-                }
-                FirebaseResponse response = await client.DeleteAsync("TableDetails/" + _table.ID + "/" + selectedItem);
-                foreach (DataGridViewRow row in dataGridView1.Rows)
-                {
-                    if (row.Cells["Tên Món"].Value != null && row.Cells["Tên Món"].Value.ToString() == selectedItem)
-                    {
-                        dataGridView1.Rows.Remove(row);
-                        break;
-                    }
-                }
-                MessageBox.Show("Đã xóa thành công !!! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-        private async void bunifuButton1_Click(object sender, EventArgs e)
-        {
-            // Kiểm tra xem có mục nào được chọn hay không
             if (comboBox1.SelectedIndex == -1 && comboBox2.SelectedIndex == -1)
             {
-                MessageBox.Show("Vui lòng chọn một sản phẩm.");
+                MessageBox.Show("Vui lòng chọn một sản phẩm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            // Kiểm tra xem có nhiều hơn một mục được chọn hay không
             else if (comboBox1.SelectedIndex >= 0 && comboBox2.SelectedIndex >= 0)
             {
-                MessageBox.Show("Vui lòng chỉ chọn một sản phẩm.");
+                MessageBox.Show("Vui lòng chỉ chọn một sản phẩm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
             int selectedNumber = (int)numericUpDown1.Value;
             if (numericUpDown1.Value <= 0)
             {
-                MessageBox.Show("Vui lòng chọn số lượng của sản phẩm");
+                MessageBox.Show("Vui lòng chọn số lượng của sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+
             string selectedItem;
             int money = 0;
 
-            // Lấy mục được chọn từ ComboBox1 hoặc ComboBox2
             if (comboBox1.SelectedIndex >= 0)
             {
-                selectedItem = comboBox1.SelectedItem?.ToString(); // Use null-conditional operator
+                selectedItem = comboBox1.SelectedItem?.ToString();
                 var response = await client.GetAsync("/Drinks");
-                if (response == null || response.Body == null)
+                var drinksList = JsonConvert.DeserializeObject<List<NekoDrink>>(response.Body);
+                foreach (var drink in drinksList)
                 {
-                    MessageBox.Show("No data retrieved from Firebase.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-                string jsonData = response.Body;
-                if (jsonData?.TrimStart().StartsWith("[") == true) // Use null-conditional operator
-                {
-                    // Nếu là mảng JSON, xử lý nó như một danh sách
-                    var drinksList = JsonConvert.DeserializeObject<List<NekoDrink>>(jsonData);
-
-                    // Check if drinksList is null or empty
-                    if (drinksList == null || !drinksList.Any())
-                    {
-                        MessageBox.Show("No drinks found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        return;
-                    }
-                    foreach (var drink in drinksList)
-                    {
-                        if (drink?.Name == selectedItem && !string.IsNullOrEmpty(drink.Name)) // Use null-conditional operator
-                        {
-                            if (int.TryParse(drink.Price, out int price))
-                            {
-                                money = price * selectedNumber;
-                            }
-                        }
-                    }
-                }
-            }
-            else
-            {
-                selectedItem = comboBox2.SelectedItem.ToString();
-                var response = await client.GetAsync("/Cats");
-                var drinks = JsonConvert.DeserializeObject<Dictionary<string, NekoCat>>(response.Body);
-                foreach (var drink in drinks.Values)
-                {
-                    if (drink.Name == selectedItem)
+                    if (drink?.Name == selectedItem && !string.IsNullOrEmpty(drink.Name))
                     {
                         if (int.TryParse(drink.Price, out int price))
                         {
@@ -238,10 +192,23 @@ namespace UI
                     }
                 }
             }
+            else
+            {
+                selectedItem = comboBox2.SelectedItem.ToString();
+                var response = await client.GetAsync("/Cats");
+                var catsDict = JsonConvert.DeserializeObject<Dictionary<string, NekoCat>>(response.Body);
+                foreach (var cat in catsDict.Values)
+                {
+                    if (cat.Name == selectedItem)
+                    {
+                        if (int.TryParse(cat.Price, out int price))
+                        {
+                            money = price * selectedNumber;
+                        }
+                    }
+                }
+            }
 
-            // Lấy dữ liệu từ Firebase
-
-            // Tạo dữ liệu chi tiết bàn
             var data = new NekoTableDetail
             {
                 Name = selectedItem,
@@ -249,24 +216,75 @@ namespace UI
                 Total = money
             };
 
-            // Lưu dữ liệu chi tiết bàn vào Firebase
-            SetResponse response1 = await client.SetAsync("TableDetails/" + _table.ID + "/" + selectedItem, data);
-            if (response1.StatusCode == System.Net.HttpStatusCode.OK)
+            try
             {
-                MessageBox.Show("Đã thêm món thành công!");
-                _table.Status = "Booked";
-                var tableUpdateResponse = await client.SetAsync("Tables/" + _table.ID + "/Status", _table.Status);
+                SetResponse response1 = await client.SetAsync($"TableDetails/{_table.ID}/{selectedItem}", data);
+                if (response1.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    MessageBox.Show("Đã thêm món thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    _table.Status = "Booked";
+                    await client.SetAsync($"Tables/{_table.ID}/Status", _table.Status);
+                    DataRow row = mydt.NewRow();
+                    row["Tên Món"] = selectedItem;
+                    row["SL"] = selectedNumber;
+                    row["Thành Tiền"] = money;
+                    mydt.Rows.Add(row);
+                    dataGridView1.DataSource = mydt;
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi xảy ra khi thêm món.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Có lỗi xảy ra khi thêm món.");
+                MessageBox.Show($"Lỗi khi thêm món vào chi tiết bàn: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            _table.Status = "Booked";
 
-            // Reset các control
             comboBox1.SelectedIndex = -1;
             comboBox2.SelectedIndex = -1;
             numericUpDown1.Value = 0;
+        }
+
+        private async void TableDetailsDelete_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DataGridViewRow dgvRow = dataGridView1.SelectedRows[0];
+
+                string selectedItem = dgvRow.Cells["Tên Món"].Value.ToString();
+
+                try
+                {
+                    await client.DeleteAsync($"TableDetails/{_table.ID}/{selectedItem}");
+
+                    // Xóa dòng trong DataTable (mydt)
+                    DataRow[] foundRows = mydt.Select($"[Tên Món] = '{selectedItem}'");
+                    foreach (DataRow dr in foundRows)
+                    {
+                        mydt.Rows.Remove(dr);
+                    }
+
+                    dataGridView1.DataSource = mydt;
+
+                    // Kiểm tra nếu không còn món nào thì chuyển trạng thái bàn về Available
+                    if (mydt.Rows.Count == 0)
+                    {
+                        _table.Status = "Available";
+                        await client.SetAsync($"Tables/{_table.ID}/Status", _table.Status);
+                    }
+
+                    MessageBox.Show("Đã xóa món thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi xóa món: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn món cần xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private async void TableDetailsView_Click(object sender, EventArgs e)
@@ -274,13 +292,13 @@ namespace UI
             try
             {
                 mydt.Rows.Clear();
-                FirebaseResponse resp2 = await client.GetAsync("TableDetails/" + _table.ID);
-
-                if (resp2.Body == "null" || resp2 == null)
+                FirebaseResponse resp2 = await client.GetAsync($"TableDetails/{_table.ID}");
+                if (resp2.Body == "null")
                 {
-                    MessageBox.Show("Bàn này chưa được sử dụng");
+                    MessageBox.Show("Bàn này chưa được sử dụng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
+
                 string jsonData = resp2.Body;
                 if (jsonData.TrimStart().StartsWith("["))
                 {
@@ -299,33 +317,24 @@ namespace UI
                 }
                 else
                 {
-                    mydt.Rows.Clear();
-                    FirebaseResponse resp3 = await client.GetAsync("TableDetails/" + _table.ID);
-
-                    if (resp3.Body == "null")
+                    var tableDetailsDict = JsonConvert.DeserializeObject<Dictionary<string, NekoTableDetail>>(jsonData);
+                    foreach (var detail in tableDetailsDict.Values)
                     {
-                        MessageBox.Show("Bàn này chưa được sử dụng");
-                        return;
-                    }
-
-                    var tableDetails = JsonConvert.DeserializeObject<Dictionary<string, NekoTableDetail>>(resp2.Body);
-
-                    foreach (var detail in tableDetails.Values)
-                    {
-                        DataRow row = mydt.NewRow();
-                        row["Tên Món"] = detail.Name;
-                        row["SL"] = detail.SL;
-                        row["Thành Tiền"] = detail.Total;
-                        mydt.Rows.Add(row);
+                        if (detail != null && !string.IsNullOrEmpty(detail.Name))
+                        {
+                            DataRow row = mydt.NewRow();
+                            row["Tên Món"] = detail.Name;
+                            row["SL"] = detail.SL;
+                            row["Thành Tiền"] = detail.Total;
+                            mydt.Rows.Add(row);
+                        }
                     }
                 }
-
-                dataGridView1.DataSource = mydt; // Bind the updated DataTable to DataGridView
-
+                dataGridView1.DataSource = mydt;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while retrieving table details: " + ex.Message);
+                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -333,54 +342,64 @@ namespace UI
         {
             try
             {
-                FirebaseResponse resp2 = await client.GetAsync("TableDetails/" + _table.ID);
-                if (resp2.Body == "null")
+                if (dataGridView1.Rows.Count == 0)
                 {
-                    MessageBox.Show("Bàn này chưa được sử dụng");
+                    MessageBox.Show("Không có món nào trong danh sách để thanh toán.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
 
-                var tableDetails = JsonConvert.DeserializeObject<Dictionary<string, NekoTableDetail>>(resp2.Body);
+                int total = 0;
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    total += Convert.ToInt32(row.Cells["Thành Tiền"].Value);
+                }
 
-                FirebaseResponse resp = await client.GetAsync("Counter/node");
-                CountClass get = resp.ResultAs<CountClass>();
-                int currentBillCount = Convert.ToInt32(get.count);
+                FirebaseResponse resp1 = await client.GetAsync("Counter/node");
+                var currentBillCount = JsonConvert.DeserializeObject<CountClass>(resp1.Body).count;
+                var paymentTime = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss");
 
-                int total = tableDetails.Values.Sum(detail => detail.Total);
-
-                string paymentTime = DateTime.Now.ToString("dd/MM/yy - HH:mm"); // Định dạng dd/MM/yy - HH:mm
+                var tableDetailsDict = new Dictionary<string, NekoTableDetail>();
+                foreach (DataRow row in mydt.Rows)
+                {
+                    var detail = new NekoTableDetail
+                    {
+                        Name = row["Tên Món"].ToString(),
+                        SL = Convert.ToInt32(row["SL"]),
+                        Total = Convert.ToInt32(row["Thành Tiền"])
+                    };
+                    tableDetailsDict[detail.Name] = detail;
+                }
 
                 var bill = new Bills
                 {
                     billId = (currentBillCount + 1).ToString(),
                     tableId = _table.ID,
                     Total = total,
-                    Details = tableDetails.Values.ToList(),
-                    PaymentTime = paymentTime // Lưu thời gian thanh toán
+                    Details = tableDetailsDict.Values.ToList(),
+                    PaymentTime = paymentTime
                 };
 
                 using (var form = new BillDetailForm(bill))
                 {
                     if (form.ShowDialog() == DialogResult.OK)
                     {
-                        DialogResult confirmResult = MessageBox.Show("Bạn có muốn thanh toán bàn này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        DialogResult confirmResult = MessageBox.Show("Bạn có muốn thanh toán bàn này?", "Xác nhận thanh toán", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                         if (confirmResult == DialogResult.Yes)
                         {
-                            SetResponse response = await client.SetAsync("Bills/" + bill.billId, bill);
+                            SetResponse response = await client.SetAsync($"Bills/{bill.billId}", bill);
                             if (response.StatusCode == System.Net.HttpStatusCode.OK)
                             {
                                 var updateCount = new CountClass { count = (currentBillCount + 1).ToString() };
                                 await client.SetAsync("Counter/node", updateCount);
-
-                                await client.DeleteAsync("TableDetails/" + _table.ID);
+                                await client.DeleteAsync($"TableDetails/{_table.ID}");
                                 mydt.Rows.Clear();
                                 _table.Status = "Available";
-                                var tableUpdateResponse = await client.SetAsync("Tables/" + _table.ID + "/Status", _table.Status);
+                                await client.SetAsync($"Tables/{_table.ID}/Status", _table.Status);
                                 MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                             else
                             {
-                                MessageBox.Show("Có lỗi xảy ra khi lưu hóa đơn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Có lỗi xảy ra khi lưu hóa đơn.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
                     }
@@ -388,32 +407,46 @@ namespace UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
+                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             comboBox1.SelectedItem = null;
             comboBox2.SelectedItem = null;
             numericUpDown1.Value = 0;
-            DataGridViewRow row = new DataGridViewRow();
-            row = dataGridView1.Rows[e.RowIndex];
-            foreach (string s in comboBox1.Items)
+            if (e.RowIndex >= 0)
             {
-                if (s == Convert.ToString(row.Cells["Tên Món"].Value))
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                foreach (string s in comboBox1.Items)
                 {
-                    comboBox1.SelectedItem = Convert.ToString(row.Cells["Tên Món"].Value);
+                    if (s == Convert.ToString(row.Cells["Tên Món"].Value))
+                    {
+                        comboBox1.SelectedItem = Convert.ToString(row.Cells["Tên Món"].Value);
+                    }
                 }
-            }
-            foreach (string s in comboBox2.Items)
-            {
-                if (s == Convert.ToString(row.Cells["Tên Món"].Value))
+                foreach (string s in comboBox2.Items)
                 {
-                    comboBox2.SelectedItem = Convert.ToString(row.Cells["Tên Món"].Value);
+                    if (s == Convert.ToString(row.Cells["Tên Món"].Value))
+                    {
+                        comboBox2.SelectedItem = Convert.ToString(row.Cells["Tên Món"].Value);
+                    }
                 }
+                numericUpDown1.Value = Convert.ToInt64(row.Cells["SL"].Value);
             }
-            numericUpDown1.Value = Convert.ToInt64(row.Cells["SL"].Value);
         }
+
+        public void AddItemToTableDetail(string drinkName, int quantity, int price)
+        {
+            DataRow row = mydt.NewRow();
+            row["Tên Món"] = drinkName;
+            row["SL"] = quantity;
+            row["Thành Tiền"] = price * quantity;
+            mydt.Rows.Add(row);
+            dataGridView1.DataSource = mydt;
+        }
+
     }
 }
 

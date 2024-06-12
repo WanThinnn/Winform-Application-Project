@@ -375,7 +375,7 @@
             this.TableDetailsAdd.TextMarginLeft = 0;
             this.TableDetailsAdd.TextPadding = new System.Windows.Forms.Padding(0);
             this.TableDetailsAdd.UseDefaultRadiusAndThickness = true;
-            this.TableDetailsAdd.Click += new System.EventHandler(this.bunifuButton1_Click);
+            this.TableDetailsAdd.Click += new System.EventHandler(this.btnAddToTable_Click);
             // 
             // TableDetailsDelete
             // 
@@ -467,7 +467,7 @@
             this.TableDetailsDelete.TextMarginLeft = 0;
             this.TableDetailsDelete.TextPadding = new System.Windows.Forms.Padding(0);
             this.TableDetailsDelete.UseDefaultRadiusAndThickness = true;
-            this.TableDetailsDelete.Click += new System.EventHandler(this.TableDetailsAdd_Click);
+            this.TableDetailsDelete.Click += new System.EventHandler(this.TableDetailsDelete_Click);
             // 
             // numericUpDown1
             // 

@@ -4,22 +4,14 @@ using FireSharp.Response;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Documents;
 using System.Windows.Forms;
-using System.Windows.Input;
-using static Bunifu.UI.WinForms.BunifuSnackbar;
 
 namespace UI
 {
     public partial class UserMenu : UserControl
     {
-
         private static UserMenu _instance;
         public static UserMenu Instance
         {
@@ -31,42 +23,49 @@ namespace UI
             }
         }
 
-        public UserMenu()
-        {
-            InitializeComponent();
-        }
+        IFirebaseClient client;
 
-        IFirebaseConfig ifc = new FirebaseConfig()
+        private IFirebaseConfig ifc = new FirebaseConfig()
         {
             AuthSecret = "f5A5LselW6L4lKJHpNGVH6NZHGKIZilErMoUOoLC",
             BasePath = "https://neko-coffe-database-default-rtdb.firebaseio.com/"
         };
 
-        IFirebaseClient tbl;
+        public UserMenu()
+        {
+            InitializeComponent();
+        }
 
         private void UserMenu_Load(object sender, EventArgs e)
         {
             try
             {
-                tbl = new FireSharp.FirebaseClient(ifc);
+                client = new FireSharp.FirebaseClient(ifc);
+                if (client == null)
+                {
+                    MessageBox.Show("Không thể kết nối đến Firebase.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    LoadDrinks();
+                }
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Kiểm tra lại mạng", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show($"Lỗi kết nối Firebase: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            Loaddrinks();
         }
 
-        async void Loaddrinks()
+        private async void LoadDrinks()
         {
             try
             {
-                var response = await tbl.GetAsync("/Drinks");
+                var response = await client.GetAsync("/Drinks");
 
                 // Check if response or response.Body is null
                 if (response == null || response.Body == null)
                 {
-                    MessageBox.Show("No data available", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Không có dữ liệu từ Firebase.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -90,7 +89,7 @@ namespace UI
                 // Check if drinksList is null or empty
                 if (drinksList == null || !drinksList.Any())
                 {
-                    MessageBox.Show("No data available", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Không tìm thấy dữ liệu đồ uống.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
 
@@ -108,15 +107,13 @@ namespace UI
                     // Create a new panel for each drink
                     Panel panel = new Panel();
                     panel.Size = new Size(200, 180); // Adjust the size of the Panel
-                    panel.BorderStyle = BorderStyle.None;
+                    panel.BorderStyle = BorderStyle.FixedSingle;
 
                     // Create a PictureBox to display the drink's image
                     PictureBox pictureBox = new PictureBox();
                     pictureBox.Size = new Size(130, 110);
-                    pictureBox.Location = new Point(50, 10); // Set the position of the PictureBox within the Panel
+                    pictureBox.Location = new Point(35, 10); // Set the position of the PictureBox within the Panel
                     pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-
-
 
                     // Check and load the image from URL
                     if (!string.IsNullOrEmpty(drink.ImageURL))
@@ -134,46 +131,44 @@ namespace UI
                     // Create a Label to display the drink's name
                     Label nameLabel = new Label();
                     nameLabel.Text = drink.Name ?? "Unknown";
-                    nameLabel.Location = new Point(50, 120); // Set the position of the Label below the PictureBox
+                    nameLabel.Location = new Point(10, 130); // Set the position of the Label below the PictureBox
                     nameLabel.AutoSize = true;
                     nameLabel.Font = new Font("Segoe UI", 10, FontStyle.Bold);
 
-
                     // Create a Label to display the drink's price
                     Label priceLabel = new Label();
-                    priceLabel.Text = drink.Price.ToString();
-                    priceLabel.Location = new Point(50, 140); // Set the position of the Label below the name
+                    priceLabel.Text = $"{drink.Price} VND";
+                    priceLabel.Location = new Point(10, 150); // Set the position of the Label below the name
                     priceLabel.AutoSize = true;
                     priceLabel.Font = new Font("Segoe UI", 8, FontStyle.Bold);
 
-
                     // Create a NumericUpDown for quantity selection
                     NumericUpDown numericUpDown = new NumericUpDown();
-                    numericUpDown.Size = new Size(30, 20);
-                    numericUpDown.Location = new Point(95, 145); // Set the position of the NumericUpDown within the Panel
+                    numericUpDown.Size = new Size(50, 20);
+                    numericUpDown.Location = new Point(145, 150); // Set the position of the NumericUpDown within the Panel
                     numericUpDown.Minimum = 1;
                     numericUpDown.Maximum = 100;
 
-
-                    // Create a Button to display the drink's information
+                    // Create a Button to add the drink to cart and table detail
                     Button btn = new Button();
-                    btn.Size = new Size(60, 28);
-                    btn.Location = new Point(130, 140); // Set the position of the Button within the Panel
+                    btn.Size = new Size(50, 28);
+                    btn.Location = new Point(135, 120); // Set the position of the Button within the Panel
                     btn.BackColor = Color.LightSalmon;
                     btn.Text = "Mua";
 
+                    btn.Click += (s, e) =>
+                    {
+                        int quantity = (int)numericUpDown.Value;
+                        int price = Convert.ToInt32(drink.Price);
+                        AddToCartAndTableDetail(drink.Name, quantity, price);
+                    };
 
-                    // Add event handler for Button click (if needed)
-                    // btn.Click += (s, e) => { /* Code to handle button click */ };
-
-                    // Add PictureBox, Labels, and Button to the Panel
-                    panel.Controls.Add(btn);
+                    // Add PictureBox, Labels, NumericUpDown, and Button to the Panel
                     panel.Controls.Add(pictureBox);
                     panel.Controls.Add(nameLabel);
                     panel.Controls.Add(priceLabel);
                     panel.Controls.Add(numericUpDown);
-
-
+                    panel.Controls.Add(btn);
 
                     // Add the Panel to drinksFlowLayoutPanel
                     drinksFlowLayoutPanel.Controls.Add(panel);
@@ -181,12 +176,21 @@ namespace UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Lỗi khi tải danh sách đồ uống: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void AddToCartAndTableDetail(string drinkName, int quantity, int price)
+        {
+            // Add to UserCart
+            UserCart.Instance.AddItemToCart(drinkName, quantity, price);
+
+            // Add to TableDetail (if the form is open)
+            var tableDetailForm = Application.OpenForms.OfType<TableDetail>().FirstOrDefault();
+            if (tableDetailForm != null)
+            {
+                tableDetailForm.AddItemToTableDetail(drinkName, quantity, price);
             }
         }
     }
-
-
 }
-
-
