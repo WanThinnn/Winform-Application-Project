@@ -70,10 +70,11 @@
             this.bunifuPanel1.Controls.Add(this.comboBox2);
             this.bunifuPanel1.Controls.Add(this.comboBox1);
             this.bunifuPanel1.ForeColor = System.Drawing.Color.LightSalmon;
-            this.bunifuPanel1.Location = new System.Drawing.Point(351, 4);
+            this.bunifuPanel1.Location = new System.Drawing.Point(468, 5);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(212, 389);
+            this.bunifuPanel1.Size = new System.Drawing.Size(283, 479);
             this.bunifuPanel1.TabIndex = 1;
             // 
             // label2
@@ -82,8 +83,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Candara", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(9, 67);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(12, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 18);
             this.label2.TabIndex = 10;
@@ -95,8 +95,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Candara", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(9, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(12, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 18);
             this.label1.TabIndex = 9;
@@ -149,7 +148,8 @@
             this.TableDetailsPayment.IdleIconLeftImage = null;
             this.TableDetailsPayment.IdleIconRightImage = null;
             this.TableDetailsPayment.IndicateFocus = false;
-            this.TableDetailsPayment.Location = new System.Drawing.Point(11, 202);
+            this.TableDetailsPayment.Location = new System.Drawing.Point(15, 249);
+            this.TableDetailsPayment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TableDetailsPayment.Name = "TableDetailsPayment";
             this.TableDetailsPayment.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.TableDetailsPayment.OnDisabledState.BorderRadius = 35;
@@ -183,7 +183,7 @@
             this.TableDetailsPayment.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.TableDetailsPayment.OnPressedState.IconLeftImage = null;
             this.TableDetailsPayment.OnPressedState.IconRightImage = null;
-            this.TableDetailsPayment.Size = new System.Drawing.Size(192, 34);
+            this.TableDetailsPayment.Size = new System.Drawing.Size(256, 42);
             this.TableDetailsPayment.TabIndex = 8;
             this.TableDetailsPayment.TabStop = false;
             this.TableDetailsPayment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -240,7 +240,8 @@
             this.TableDetailsView.IdleIconLeftImage = null;
             this.TableDetailsView.IdleIconRightImage = null;
             this.TableDetailsView.IndicateFocus = false;
-            this.TableDetailsView.Location = new System.Drawing.Point(11, 162);
+            this.TableDetailsView.Location = new System.Drawing.Point(15, 199);
+            this.TableDetailsView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TableDetailsView.Name = "TableDetailsView";
             this.TableDetailsView.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.TableDetailsView.OnDisabledState.BorderRadius = 35;
@@ -274,7 +275,7 @@
             this.TableDetailsView.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.TableDetailsView.OnPressedState.IconLeftImage = null;
             this.TableDetailsView.OnPressedState.IconRightImage = null;
-            this.TableDetailsView.Size = new System.Drawing.Size(192, 34);
+            this.TableDetailsView.Size = new System.Drawing.Size(256, 42);
             this.TableDetailsView.TabIndex = 7;
             this.TableDetailsView.TabStop = false;
             this.TableDetailsView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -331,7 +332,8 @@
             this.TableDetailsAdd.IdleIconLeftImage = null;
             this.TableDetailsAdd.IdleIconRightImage = null;
             this.TableDetailsAdd.IndicateFocus = false;
-            this.TableDetailsAdd.Location = new System.Drawing.Point(110, 122);
+            this.TableDetailsAdd.Location = new System.Drawing.Point(147, 150);
+            this.TableDetailsAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TableDetailsAdd.Name = "TableDetailsAdd";
             this.TableDetailsAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.TableDetailsAdd.OnDisabledState.BorderRadius = 35;
@@ -365,7 +367,7 @@
             this.TableDetailsAdd.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.TableDetailsAdd.OnPressedState.IconLeftImage = null;
             this.TableDetailsAdd.OnPressedState.IconRightImage = null;
-            this.TableDetailsAdd.Size = new System.Drawing.Size(93, 34);
+            this.TableDetailsAdd.Size = new System.Drawing.Size(124, 42);
             this.TableDetailsAdd.TabIndex = 6;
             this.TableDetailsAdd.TabStop = false;
             this.TableDetailsAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -422,7 +424,8 @@
             this.TableDetailsDelete.IdleIconLeftImage = null;
             this.TableDetailsDelete.IdleIconRightImage = null;
             this.TableDetailsDelete.IndicateFocus = false;
-            this.TableDetailsDelete.Location = new System.Drawing.Point(11, 122);
+            this.TableDetailsDelete.Location = new System.Drawing.Point(15, 150);
+            this.TableDetailsDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TableDetailsDelete.Name = "TableDetailsDelete";
             this.TableDetailsDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.TableDetailsDelete.OnDisabledState.BorderRadius = 35;
@@ -456,7 +459,7 @@
             this.TableDetailsDelete.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.TableDetailsDelete.OnPressedState.IconLeftImage = null;
             this.TableDetailsDelete.OnPressedState.IconRightImage = null;
-            this.TableDetailsDelete.Size = new System.Drawing.Size(93, 34);
+            this.TableDetailsDelete.Size = new System.Drawing.Size(124, 42);
             this.TableDetailsDelete.TabIndex = 5;
             this.TableDetailsDelete.TabStop = false;
             this.TableDetailsDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -468,26 +471,29 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(12, 88);
+            this.numericUpDown1.Location = new System.Drawing.Point(16, 108);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(160, 22);
             this.numericUpDown1.TabIndex = 2;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(12, 353);
+            this.comboBox2.Location = new System.Drawing.Point(16, 434);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(192, 21);
+            this.comboBox2.Size = new System.Drawing.Size(255, 24);
             this.comboBox2.TabIndex = 1;
             this.comboBox2.Visible = false;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(11, 35);
+            this.comboBox1.Location = new System.Drawing.Point(15, 43);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(193, 21);
+            this.comboBox1.Size = new System.Drawing.Size(256, 24);
             this.comboBox1.TabIndex = 0;
             // 
             // dataGridView1
@@ -541,13 +547,14 @@
             this.dataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.dataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
             this.dataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(4, 5);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 40;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(342, 389);
+            this.dataGridView1.Size = new System.Drawing.Size(456, 479);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridView1_CellContentClick);
@@ -555,14 +562,15 @@
             // 
             // TableDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(565, 397);
+            this.ClientSize = new System.Drawing.Size(753, 489);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bunifuPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TableDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TableDetail";
             this.Load += new System.EventHandler(this.TableDetail_Load);
             this.bunifuPanel1.ResumeLayout(false);

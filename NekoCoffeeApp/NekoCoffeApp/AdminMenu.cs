@@ -1,4 +1,5 @@
-﻿using FireSharp.Config;
+﻿using Aspose.Email.Clients.Exchange.WebService.Schema_2016;
+using FireSharp.Config;
 using FireSharp.Interfaces;
 using Newtonsoft.Json;
 using System;
@@ -41,67 +42,7 @@ namespace UI
         {
             client = new FireSharp.FirebaseClient(ifc);
             // Đảm bảo tbl không null trước khi cố gắng sử dụng nó
-            int book =0, avai=0;
-            if (client == null)
-            {
-                MessageBox.Show("Tham chiếu bảng là null.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            var data = await client.GetAsync("Tables");
-
-            // Kiểm tra nếu data hoặc data.Body là null
-            if (data == null || data.Body == null)
-            {
-                MessageBox.Show("Không có dữ liệu nào được lấy từ Firebase.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            string jsonData = data.Body;
-
-            // Kiểm tra xem jsonData có phải là mảng JSON không
-            if (jsonData.TrimStart().StartsWith("["))
-            {
-                // Nếu là mảng JSON, xử lý nó như một danh sách
-                var mListArray = JsonConvert.DeserializeObject<List<NekoTable>>(jsonData);
-
-                // Kiểm tra nếu mListArray là null hoặc rỗng
-                if (mListArray == null || !mListArray.Any())
-                {
-                    MessageBox.Show("Không tìm thấy bàn nào.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-
-                foreach (var table in mListArray)
-                {
-                    // Kiểm tra nếu table là null
-                    if (table == null)
-                    {
-                        continue;
-                    }
-
-                    // Tạo một nút mới để hiển thị thông tin bảng
-                    Button btn = new Button();
-                    btn.Size = new Size(109, 109); // Thiết lập kích thước
-
-                    if (table.Status != null && table.Status == "Booked")
-                    {
-                        book++;
-                    }
-                    else
-                    {
-                        avai++;
-                    }
-                    AdminBillCircle.Maximum = avai + book;
-                    AdminTableCircle.Maximum = avai + book;
-                    AdminTableCircle.Value = avai;
-                    AdminBillCircle.Value = book;   
-                }
-            }
-            else
-            {
-                MessageBox.Show("Dữ liệu JSON không ở định dạng mong đợi.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            checkprogress();
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -164,6 +105,76 @@ namespace UI
         private void AdminComeOder_Click(object sender, EventArgs e)
         {
 
+        }
+        private async void checkprogress()
+        {
+            int book = 0, avai = 0;
+            if (client == null)
+            {
+                MessageBox.Show("Tham chiếu bảng là null.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var data = await client.GetAsync("Tables");
+
+            // Kiểm tra nếu data hoặc data.Body là null
+            if (data == null || data.Body == null)
+            {
+                MessageBox.Show("Không có dữ liệu nào được lấy từ Firebase.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string jsonData = data.Body;
+
+            // Kiểm tra xem jsonData có phải là mảng JSON không
+            if (jsonData.TrimStart().StartsWith("["))
+            {
+                // Nếu là mảng JSON, xử lý nó như một danh sách
+                var mListArray = JsonConvert.DeserializeObject<List<NekoTable>>(jsonData);
+
+                // Kiểm tra nếu mListArray là null hoặc rỗng
+                if (mListArray == null || !mListArray.Any())
+                {
+                    MessageBox.Show("Không tìm thấy bàn nào.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                foreach (var table in mListArray)
+                {
+                    // Kiểm tra nếu table là null
+                    if (table == null)
+                    {
+                        continue;
+                    }
+
+                    // Tạo một nút mới để hiển thị thông tin bảng
+                    Button btn = new Button();
+                    btn.Size = new Size(109, 109); // Thiết lập kích thước
+
+                    if (table.Status != null && table.Status == "Booked")
+                    {
+                        book++;
+                    }
+                    else
+                    {
+                        avai++;
+                    }
+                    AdminBillCircle.Maximum = avai + book;
+                    AdminTableCircle.Maximum = avai + book;
+                    AdminTableCircle.Value = avai;
+                    AdminBillCircle.Value = book;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Dữ liệu JSON không ở định dạng mong đợi.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void bunifuButton1_Click_1(object sender, EventArgs e)
+        {
+            client = new FireSharp.FirebaseClient(ifc);
+            // Đảm bảo tbl không null trước khi cố gắng sử dụng nó
+            checkprogress();
         }
     }
 }

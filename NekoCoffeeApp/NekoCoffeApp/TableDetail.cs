@@ -43,9 +43,9 @@ namespace UI
         private async void TableDetail_Load(object sender, EventArgs e)
         {
             client = new FireSharp.FirebaseClient(config);
-            mydt.Columns.Add("Ten Mon");
+            mydt.Columns.Add("Tên Món");
             mydt.Columns.Add("SL");
-            mydt.Columns.Add("Thanh Tien");
+            mydt.Columns.Add("Thành Tiền");
 
             dataGridView1.DataSource = mydt;
             try
@@ -154,7 +154,7 @@ namespace UI
                 FirebaseResponse response = await client.DeleteAsync("TableDetails/" + _table.ID + "/" + selectedItem);
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
-                    if (row.Cells["Ten Mon"].Value != null && row.Cells["Ten Mon"].Value.ToString() == selectedItem)
+                    if (row.Cells["Tên Món"].Value != null && row.Cells["Tên Món"].Value.ToString() == selectedItem)
                     {
                         dataGridView1.Rows.Remove(row);
                         break;
@@ -290,9 +290,9 @@ namespace UI
                         if (detail != null && !string.IsNullOrEmpty(detail.Name))
                         {
                             DataRow row = mydt.NewRow();
-                            row["Ten Mon"] = detail.Name;
+                            row["Tên Món"] = detail.Name;
                             row["SL"] = detail.SL;
-                            row["Thanh Tien"] = detail.Total;
+                            row["Thành Tiền"] = detail.Total;
                             mydt.Rows.Add(row);
                         }
                     }
@@ -313,9 +313,9 @@ namespace UI
                     foreach (var detail in tableDetails.Values)
                     {
                         DataRow row = mydt.NewRow();
-                        row["Ten Mon"] = detail.Name;
+                        row["Tên Món"] = detail.Name;
                         row["SL"] = detail.SL;
-                        row["Thanh Tien"] = detail.Total;
+                        row["Thành Tiền"] = detail.Total;
                         mydt.Rows.Add(row);
                     }
                 }
@@ -400,16 +400,16 @@ namespace UI
             row = dataGridView1.Rows[e.RowIndex];
             foreach (string s in comboBox1.Items)
             {
-                if (s == Convert.ToString(row.Cells["Ten Mon"].Value))
+                if (s == Convert.ToString(row.Cells["Tên Món"].Value))
                 {
-                    comboBox1.SelectedItem = Convert.ToString(row.Cells["Ten Mon"].Value);
+                    comboBox1.SelectedItem = Convert.ToString(row.Cells["Tên Món"].Value);
                 }
             }
             foreach (string s in comboBox2.Items)
             {
-                if (s == Convert.ToString(row.Cells["Ten Mon"].Value))
+                if (s == Convert.ToString(row.Cells["Tên Món"].Value))
                 {
-                    comboBox2.SelectedItem = Convert.ToString(row.Cells["Ten Mon"].Value);
+                    comboBox2.SelectedItem = Convert.ToString(row.Cells["Tên Món"].Value);
                 }
             }
             numericUpDown1.Value = Convert.ToInt64(row.Cells["SL"].Value);

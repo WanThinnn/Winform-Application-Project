@@ -44,9 +44,9 @@
             // 
             this.lblBillId.AutoSize = true;
             this.lblBillId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBillId.Location = new System.Drawing.Point(200, 23);
+            this.lblBillId.Location = new System.Drawing.Point(205, 19);
             this.lblBillId.Name = "lblBillId";
-            this.lblBillId.Size = new System.Drawing.Size(85, 29);
+            this.lblBillId.Size = new System.Drawing.Size(66, 24);
             this.lblBillId.TabIndex = 0;
             this.lblBillId.Text = "label1";
             // 
@@ -56,7 +56,7 @@
             this.lblTableId.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTableId.Location = new System.Drawing.Point(64, 56);
             this.lblTableId.Name = "lblTableId";
-            this.lblTableId.Size = new System.Drawing.Size(60, 24);
+            this.lblTableId.Size = new System.Drawing.Size(46, 18);
             this.lblTableId.TabIndex = 1;
             this.lblTableId.Text = "label1";
             // 
@@ -66,7 +66,7 @@
             this.lblPaymentTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPaymentTime.Location = new System.Drawing.Point(370, 56);
             this.lblPaymentTime.Name = "lblPaymentTime";
-            this.lblPaymentTime.Size = new System.Drawing.Size(60, 24);
+            this.lblPaymentTime.Size = new System.Drawing.Size(46, 18);
             this.lblPaymentTime.TabIndex = 2;
             this.lblPaymentTime.Text = "label1";
             // 
@@ -76,7 +76,7 @@
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.Location = new System.Drawing.Point(370, 78);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(60, 24);
+            this.lblTotal.Size = new System.Drawing.Size(46, 18);
             this.lblTotal.TabIndex = 3;
             this.lblTotal.Text = "label1";
             // 
@@ -109,7 +109,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ColumnHeadersHeight = 40;
             this.dataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
