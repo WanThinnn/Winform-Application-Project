@@ -199,7 +199,7 @@
             this.txbCode.BorderThickness = 1;
             this.txbCode.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbCode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbCode.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCode.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbCode.DefaultText = "";
             this.txbCode.FillColor = System.Drawing.Color.White;
             this.txbCode.HideSelection = true;
@@ -239,14 +239,14 @@
             this.txbCode.Padding = new System.Windows.Forms.Padding(2);
             this.txbCode.PasswordChar = '\0';
             this.txbCode.PlaceholderForeColor = System.Drawing.Color.DimGray;
-            this.txbCode.PlaceholderText = "Enter The Code";
+            this.txbCode.PlaceholderText = "Nhập mã Code";
             this.txbCode.ReadOnly = false;
             this.txbCode.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txbCode.SelectedText = "";
             this.txbCode.SelectionLength = 0;
             this.txbCode.SelectionStart = 0;
             this.txbCode.ShortcutsEnabled = true;
-            this.txbCode.Size = new System.Drawing.Size(370, 35);
+            this.txbCode.Size = new System.Drawing.Size(370, 33);
             this.txbCode.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txbCode.TabIndex = 100;
             this.txbCode.TabStop = false;
@@ -254,7 +254,7 @@
             this.txbCode.TextMarginBottom = 0;
             this.txbCode.TextMarginLeft = 3;
             this.txbCode.TextMarginTop = 0;
-            this.txbCode.TextPlaceholder = "Enter The Code";
+            this.txbCode.TextPlaceholder = "Nhập mã Code";
             this.txbCode.UseSystemPasswordChar = false;
             this.txbCode.WordWrap = true;
             // 
@@ -275,7 +275,7 @@
             this.txbCfNewPwd.BorderThickness = 1;
             this.txbCfNewPwd.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbCfNewPwd.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbCfNewPwd.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCfNewPwd.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbCfNewPwd.DefaultText = "";
             this.txbCfNewPwd.FillColor = System.Drawing.Color.White;
             this.txbCfNewPwd.HideSelection = true;
@@ -315,14 +315,14 @@
             this.txbCfNewPwd.Padding = new System.Windows.Forms.Padding(2);
             this.txbCfNewPwd.PasswordChar = '\0';
             this.txbCfNewPwd.PlaceholderForeColor = System.Drawing.Color.DimGray;
-            this.txbCfNewPwd.PlaceholderText = "Confirm New Password";
+            this.txbCfNewPwd.PlaceholderText = "Nhập lại Mật khẩu mới";
             this.txbCfNewPwd.ReadOnly = false;
             this.txbCfNewPwd.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txbCfNewPwd.SelectedText = "";
             this.txbCfNewPwd.SelectionLength = 0;
             this.txbCfNewPwd.SelectionStart = 0;
             this.txbCfNewPwd.ShortcutsEnabled = true;
-            this.txbCfNewPwd.Size = new System.Drawing.Size(370, 35);
+            this.txbCfNewPwd.Size = new System.Drawing.Size(370, 33);
             this.txbCfNewPwd.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txbCfNewPwd.TabIndex = 99;
             this.txbCfNewPwd.TabStop = false;
@@ -330,7 +330,7 @@
             this.txbCfNewPwd.TextMarginBottom = 0;
             this.txbCfNewPwd.TextMarginLeft = 3;
             this.txbCfNewPwd.TextMarginTop = 0;
-            this.txbCfNewPwd.TextPlaceholder = "Confirm New Password";
+            this.txbCfNewPwd.TextPlaceholder = "Nhập lại Mật khẩu mới";
             this.txbCfNewPwd.UseSystemPasswordChar = false;
             this.txbCfNewPwd.WordWrap = true;
             this.txbCfNewPwd.TextChange += new System.EventHandler(this.txbCfNewPwd_TextChanged);
@@ -349,7 +349,7 @@
             this.txtChangePass.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
             this.txtChangePass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtChangePass.BackgroundImage")));
             this.txtChangePass.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.txtChangePass.ButtonText = "Change password";
+            this.txtChangePass.ButtonText = "Đổi Mật Khẩu";
             this.txtChangePass.ButtonTextMarginLeft = 0;
             this.txtChangePass.ColorContrastOnClick = 45;
             this.txtChangePass.ColorContrastOnHover = 45;
@@ -364,7 +364,7 @@
             this.txtChangePass.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txtChangePass.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.txtChangePass.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.txtChangePass.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChangePass.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtChangePass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
             this.txtChangePass.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.txtChangePass.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -444,7 +444,7 @@
             this.txbNewPwd.BorderThickness = 1;
             this.txbNewPwd.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbNewPwd.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbNewPwd.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNewPwd.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbNewPwd.DefaultText = "";
             this.txbNewPwd.FillColor = System.Drawing.Color.White;
             this.txbNewPwd.HideSelection = true;
@@ -484,14 +484,14 @@
             this.txbNewPwd.Padding = new System.Windows.Forms.Padding(2);
             this.txbNewPwd.PasswordChar = '\0';
             this.txbNewPwd.PlaceholderForeColor = System.Drawing.Color.DimGray;
-            this.txbNewPwd.PlaceholderText = "New Password";
+            this.txbNewPwd.PlaceholderText = "Mật khẩu mới";
             this.txbNewPwd.ReadOnly = false;
             this.txbNewPwd.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txbNewPwd.SelectedText = "";
             this.txbNewPwd.SelectionLength = 0;
             this.txbNewPwd.SelectionStart = 0;
             this.txbNewPwd.ShortcutsEnabled = true;
-            this.txbNewPwd.Size = new System.Drawing.Size(370, 35);
+            this.txbNewPwd.Size = new System.Drawing.Size(370, 33);
             this.txbNewPwd.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txbNewPwd.TabIndex = 97;
             this.txbNewPwd.TabStop = false;
@@ -499,7 +499,7 @@
             this.txbNewPwd.TextMarginBottom = 0;
             this.txbNewPwd.TextMarginLeft = 3;
             this.txbNewPwd.TextMarginTop = 0;
-            this.txbNewPwd.TextPlaceholder = "New Password";
+            this.txbNewPwd.TextPlaceholder = "Mật khẩu mới";
             this.txbNewPwd.UseSystemPasswordChar = false;
             this.txbNewPwd.WordWrap = true;
             this.txbNewPwd.TextChange += new System.EventHandler(this.txbNewPwd_TextChanged);
@@ -507,14 +507,14 @@
             // lbDangNhap
             // 
             this.lbDangNhap.AutoSize = true;
-            this.lbDangNhap.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDangNhap.Font = new System.Drawing.Font("Segoe UI Black", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbDangNhap.Location = new System.Drawing.Point(221, 38);
+            this.lbDangNhap.Location = new System.Drawing.Point(215, 36);
             this.lbDangNhap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDangNhap.Name = "lbDangNhap";
-            this.lbDangNhap.Size = new System.Drawing.Size(238, 29);
+            this.lbDangNhap.Size = new System.Drawing.Size(216, 31);
             this.lbDangNhap.TabIndex = 96;
-            this.lbDangNhap.Text = "CHANGE PASSWORD";
+            this.lbDangNhap.Text = "QUÊN MẬT KHẨU";
             // 
             // logo
             // 
@@ -530,13 +530,13 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 10F);
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
             this.linkLabel1.Location = new System.Drawing.Point(346, 67);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(113, 18);
+            this.linkLabel1.Size = new System.Drawing.Size(106, 17);
             this.linkLabel1.TabIndex = 115;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "For MasterUser";
