@@ -1345,3 +1345,6 @@ C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Backup\Winform-Application-
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.TableMng.resources
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.DrinkMng.resources
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.ProductMng.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.PeopleService.v1.dll
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.PeopleService.v1.pdb
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.PeopleService.v1.xml

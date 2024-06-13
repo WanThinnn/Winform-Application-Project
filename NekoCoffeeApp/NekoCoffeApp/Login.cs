@@ -12,6 +12,8 @@ using Google.Apis.Util.Store;
 using Google.Apis.Oauth2.v2;
 using Google.Apis.Services;
 using Google.Apis.Oauth2.v2.Data;
+using Newtonsoft.Json.Linq;
+using System.Net.Http;
 
 namespace UI
 {
@@ -147,13 +149,16 @@ namespace UI
                     return false;
                 }
 
-                var service = new Oauth2Service(new BaseClientService.Initializer()
+                var oauth2Service = new Oauth2Service(new BaseClientService.Initializer()
                 {
                     HttpClientInitializer = credential,
                     ApplicationName = ApplicationName,
                 });
 
-                var userInfo = service.Userinfo.Get().Execute();
+                var userInfoRequest = oauth2Service.Userinfo.Get();
+                var userInfo = await userInfoRequest.ExecuteAsync();
+
+                string avatarUrl = await GetAvatarUrl(credential.Token.AccessToken);
 
                 FirebaseResponse response = await client.GetAsync("Users/" + userInfo.Id);
                 NekoUser existingUser = response.ResultAs<NekoUser>();
@@ -166,7 +171,10 @@ namespace UI
                         Fullname = userInfo.Name,
                         Email = userInfo.Email,
                         Gender = userInfo.Gender,
-                        Position = "Google User"
+                        Position = "Google User",
+                        Point = 0,
+                        hasBooking = "false",
+                        Avatar = avatarUrl
                     };
 
                     SetResponse set = await client.SetAsync("Users/" + userInfo.Id, user);
@@ -192,6 +200,41 @@ namespace UI
                 return false;
             }
         }
+
+        private async Task<string> GetAvatarUrl(string accessToken)
+        {
+            using (var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken);
+                var response = await client.GetAsync("https://www.googleapis.com/oauth2/v3/userinfo");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var json = await response.Content.ReadAsStringAsync();
+                    var userInfo = JObject.Parse(json);
+                    var pictureUrl = userInfo["picture"]?.ToString();
+
+                    if (!string.IsNullOrEmpty(pictureUrl))
+                    {
+                        if (pictureUrl.Contains("=s"))
+                        {
+                            pictureUrl = System.Text.RegularExpressions.Regex.Replace(pictureUrl, @"=s\d+", "=s200");
+                        }
+                        else
+                        {
+                            pictureUrl += "?sz=200"; // Tăng kích thước ảnh lên 200x200
+                        }
+                    }
+
+                    return pictureUrl;
+                }
+                else
+                {
+                    throw new Exception("Unable to retrieve user info");
+                }
+            }
+        }
+
 
         private void LogoutGoogle()
         {
