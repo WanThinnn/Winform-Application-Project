@@ -113,26 +113,27 @@ namespace Master_NekoCoffeeApp
             }
 
             FirebaseResponse res = item.Get($"Items/" + txbSearch.Text);
-            NekoItem existingDrink = res.ResultAs<NekoItem>();
+            NekoItem existingItem = res.ResultAs<NekoItem>();
 
-            if (existingDrink == null)
+            if (existingItem == null)
             {
                 MessageBox.Show("sản phẩm không tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            txbID.Text = existingDrink.ID;
-            txbNameItem.Text = existingDrink.Name;
-            dbType.Text = existingDrink.Type;
-            txbPrice.Text = existingDrink.Price;
-            dbStatus.SelectedItem = existingDrink.Available;
+            txbID.Text = existingItem.ID;
+            txbNameItem.Text = existingItem.Name;
+            dbType.Text = existingItem.Type;
+            txbPrice.Text = existingItem.Price;
+            dbStatus.SelectedItem = existingItem.Available;
+            txbPoint.Text = existingItem.Point;
 
             // Load ảnh vào PictureBox
-            if (!string.IsNullOrEmpty(existingDrink.ImageURL))
+            if (!string.IsNullOrEmpty(existingItem.ImageURL))
             {
                 try
                 {
-                    pictureBox.Load(existingDrink.ImageURL);
+                    pictureBox.Load(existingItem.ImageURL);
                 }
                 catch (Exception ex)
                 {
@@ -144,6 +145,14 @@ namespace Master_NekoCoffeeApp
             {
                 pictureBox.Image = null; // Clear PictureBox if no image URL
             }
+            btnAdd.Enabled = false;
+            btnUpdate.Enabled = true;
+            btnDelete.Enabled = true;
+            txbID.ReadOnly = true;
+            txbID.BorderColorActive = Color.Silver;
+            txbID.BorderColorHover = Color.Silver;
+            txbID.BorderColorDisabled = Color.Silver;
+            txbID.BorderColorIdle = Color.Black;
         }
 
         private void btnImage_Click(object sender, EventArgs e)
@@ -207,7 +216,8 @@ namespace Master_NekoCoffeeApp
                 Available = dbStatus.Text,
                 Price = txbPrice.Text,
                 Type = dbType.Text,
-                ImageURL = imageUrl
+                ImageURL = imageUrl,
+                Point = txbPoint.Text,  
             };
 
             SetResponse set = item.Set($"Items/" + txbID.Text, drink);
@@ -305,14 +315,14 @@ namespace Master_NekoCoffeeApp
         private async void btnUpdate_Click(object sender, EventArgs e)
         {
             FirebaseResponse res = item.Get($"Items/" + txbID.Text);
-            NekoItem ResDrink = res.ResultAs<NekoItem>();
+            NekoItem ResItem = res.ResultAs<NekoItem>();
 
-            NekoItem CurDrink = new NekoItem()
+            NekoItem CurItem = new NekoItem()
             {
                 ID = txbID.Text
             };
 
-            if (!NekoItem.IsExist(ResDrink, CurDrink))
+            if (!NekoItem.IsExist(ResItem, CurItem))
             {
                 NekoItem.ShowError_3();
                 return;
@@ -321,19 +331,52 @@ namespace Master_NekoCoffeeApp
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn sửa thông tin?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
             {
-                NekoItem drink = new NekoItem()
+                // Delete the existing image from Firebase Storage
+                try
+                {
+                    await firebaseStorage
+                        .Child("Items")
+                        .Child(txbID.Text + ".jpg")
+                        .DeleteAsync();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi xóa ảnh cũ: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Convert the new image to a MemoryStream
+                MemoryStream ms = new MemoryStream();
+                pictureBox.Image.Save(ms, ImageFormat.Jpeg);
+                ms.Position = 0;
+
+                // Upload the new image to Firebase Storage
+                var uploadTask = firebaseStorage
+                    .Child("Items")
+                    .Child(txbID.Text + ".jpg")
+                    .PutAsync(ms);
+
+                // Get the URL of the new image
+                string imageUrl = await uploadTask;
+
+                // Create a new NekoItem object with the updated details
+                NekoItem upitem = new NekoItem()
                 {
                     ID = txbID.Text,
                     Name = txbNameItem.Text,
                     Available = dbStatus.Text,
                     Price = txbPrice.Text,
-                    Type = dbType.Text
+                    Type = dbType.Text,
+                    Point = txbPoint.Text,
+                    ImageURL = imageUrl // Update the ImageURL with the new image URL
                 };
 
-                FirebaseResponse update = item.Update($"Items/" + txbID.Text, drink);
+                // Update the item details in Firebase
+                FirebaseResponse update = item.Update($"Items/" + txbID.Text, upitem);
 
                 if (update.StatusCode == System.Net.HttpStatusCode.OK)
                 {
+                    // Clear the form fields and notify the user of the success
                     txbID.Clear();
                     txbNameItem.Clear();
                     dbStatus.Items.Clear();
@@ -344,10 +387,17 @@ namespace Master_NekoCoffeeApp
 
                     MessageBox.Show($"Sửa thành công sản phẩm {txbID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                else { return; }
+                else
+                {
+                    MessageBox.Show("Cập nhật thất bại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Refresh the view data
                 viewData();
             }
         }
+
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
@@ -357,11 +407,13 @@ namespace Master_NekoCoffeeApp
             txbID.Clear();
             txbNameItem.Clear();
             dbStatus.Text = string.Empty;
+            dbType.Text = string.Empty;
 
             txbPrice.Clear();
             txbSearch.Clear();
             dbType.Items.Clear();
-
+            txbPoint.Clear();
+            pictureBox.Image = null;
 
 
             txbID.BorderColorActive = Color.DodgerBlue;

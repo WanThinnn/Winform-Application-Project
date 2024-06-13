@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\drinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\drinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\drinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\drinks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\nekobill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\nekobill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|c:\\users\\thien\\uit\\nam_2\\hoc_ky_2\\lap_trinh_mang\\winform-application-project\\master-nekocoffeeapp\\master-nekocoffeeapp\\nekoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}|Master-NekoCoffeeApp\\Master-NekoCoffeeApp.csproj|solutionrelative:master-nekocoffeeapp\\nekoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,103 +46,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Drinks.cs",
               "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Drinks.cs",
               "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\Drinks.cs",
               "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Drinks.cs",
               "RelativeToolTip": "Master-NekoCoffeeApp\\Drinks.cs",
-              "ViewState": "AQIAAHMAAAAAAAAAAADwv4EAAAAoAAAA",
+              "ViewState": "AQIAAF4BAAAAAAAAAAAAwDcBAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T02:30:31.666Z",
+              "WhenOpened": "2024-06-13T02:48:17.644Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Drinks.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Drinks.cs",
-              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\Drinks.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Drinks.cs [Design]",
-              "RelativeToolTip": "Master-NekoCoffeeApp\\Drinks.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "Items.cs",
+              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Items.cs",
+              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\Items.cs",
+              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Items.cs",
+              "RelativeToolTip": "Master-NekoCoffeeApp\\Items.cs",
+              "ViewState": "AQIAAIwBAAAAAAAAAAAwwJ8BAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T02:30:28.681Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Employee.cs",
-              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\Employee.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Employee.cs",
-              "RelativeToolTip": "Master-NekoCoffeeApp\\Employee.cs",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAAANMAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T02:10:10.578Z",
+              "WhenOpened": "2024-06-13T02:47:51.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Home.cs",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Home.cs",
-              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\Home.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Home.cs",
-              "RelativeToolTip": "Master-NekoCoffeeApp\\Home.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAiwEcAAAAnAAAA",
+              "Title": "NekoItem.cs",
+              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\NekoItem.cs",
+              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\NekoItem.cs",
+              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\NekoItem.cs",
+              "RelativeToolTip": "Master-NekoCoffeeApp\\NekoItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T02:06:46.145Z",
+              "WhenOpened": "2024-06-13T02:47:03.756Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Invoice.cs",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Invoice.cs",
-              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\Invoice.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Invoice.cs",
-              "RelativeToolTip": "Master-NekoCoffeeApp\\Invoice.cs",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAgwNIAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Items.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Items.cs",
+              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\Items.cs",
+              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Items.cs [Design]",
+              "RelativeToolTip": "Master-NekoCoffeeApp\\Items.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T02:06:27.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Invoice.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Invoice.cs",
-              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\Invoice.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Invoice.cs [Design]",
-              "RelativeToolTip": "Master-NekoCoffeeApp\\Invoice.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T02:03:52.465Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NekoBill.cs",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\NekoBill.cs",
-              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\NekoBill.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\NekoBill.cs",
-              "RelativeToolTip": "Master-NekoCoffeeApp\\NekoBill.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T02:03:04.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Home.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Home.cs",
-              "RelativeDocumentMoniker": "Master-NekoCoffeeApp\\Home.cs",
-              "ToolTip": "C:\\Users\\Thien\\UIT\\Nam_2\\Hoc_Ky_2\\Lap_Trinh_Mang\\Winform-Application-Project\\Master-NekoCoffeeApp\\Master-NekoCoffeeApp\\Home.cs [Design]",
-              "RelativeToolTip": "Master-NekoCoffeeApp\\Home.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T02:01:13.071Z",
+              "WhenOpened": "2024-06-13T02:45:08.548Z",
               "EditorCaption": " [Design]"
             }
           ]
