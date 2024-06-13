@@ -85,13 +85,13 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
-            this.linkLabel1.Location = new System.Drawing.Point(412, 54);
+            this.linkLabel1.Location = new System.Drawing.Point(388, 63);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(148, 25);
+            this.linkLabel1.Size = new System.Drawing.Size(155, 25);
             this.linkLabel1.TabIndex = 113;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "For MasterUser";
@@ -99,7 +99,7 @@
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(324, -2);
+            this.logo.Location = new System.Drawing.Point(300, 7);
             this.logo.Margin = new System.Windows.Forms.Padding(2);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(84, 84);
@@ -112,7 +112,7 @@
             this.lbHome.AutoSize = true;
             this.lbHome.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbHome.Location = new System.Drawing.Point(389, 25);
+            this.lbHome.Location = new System.Drawing.Point(365, 34);
             this.lbHome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbHome.Name = "lbHome";
             this.lbHome.Size = new System.Drawing.Size(79, 30);
@@ -734,13 +734,13 @@
             // linkLBHello
             // 
             this.linkLBHello.AutoSize = true;
-            this.linkLBHello.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLBHello.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLBHello.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLBHello.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
             this.linkLBHello.Location = new System.Drawing.Point(288, 96);
             this.linkLBHello.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLBHello.Name = "linkLBHello";
-            this.linkLBHello.Size = new System.Drawing.Size(59, 25);
+            this.linkLBHello.Size = new System.Drawing.Size(62, 25);
             this.linkLBHello.TabIndex = 141;
             this.linkLBHello.TabStop = true;
             this.linkLBHello.Text = "Hello";
@@ -1111,6 +1111,7 @@
             this.bunifuButton2.TextMarginLeft = 0;
             this.bunifuButton2.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton2.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton2.Click += new System.EventHandler(this.bunifuButton2_Click);
             // 
             // Home
             // 

@@ -102,5 +102,11 @@ namespace Master_NekoCoffeeApp
             Invoice frm = new Invoice(this.Username);
             frm.Show();
         }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            Reviews frm = new Reviews(this.Username);
+            frm.Show();
+        }
     }
 }

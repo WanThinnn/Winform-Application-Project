@@ -435,12 +435,19 @@
     <Compile Include="NekoDrink.cs" />
     <Compile Include="NekoEmployee.cs" />
     <Compile Include="NekoItem.cs" />
+    <Compile Include="NekoRating.cs" />
     <Compile Include="NekoShift.cs" />
     <Compile Include="NekoTable.cs" />
     <Compile Include="NekoTableDetail.cs" />
     <Compile Include="NekoUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reviews.Designer.cs">
+      <DependentUpon>Reviews.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -503,6 +510,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reviews.resx">
+      <DependentUpon>Reviews.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
