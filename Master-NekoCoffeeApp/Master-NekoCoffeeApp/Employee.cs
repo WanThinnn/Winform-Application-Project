@@ -259,7 +259,7 @@ namespace Master_NekoCoffeeApp
             txbSalary.Text = emp.Salary.ToString();
             txbAdrr.Text = emp.Address;
             txbEmail.Text = emp.Email;
-            dbGender.SelectedItem = emp.Gender;
+            dbGender.Text = emp.Gender;
 
             
             btnAdd.Enabled = false;

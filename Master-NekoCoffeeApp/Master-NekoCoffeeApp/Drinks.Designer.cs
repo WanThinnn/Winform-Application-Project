@@ -1105,7 +1105,7 @@
             this.AdminFillDrinkAvailable.ItemHighLightForeColor = System.Drawing.Color.White;
             this.AdminFillDrinkAvailable.Items.AddRange(new object[] {
             "Available",
-            "Booked"});
+            "Unavailable"});
             this.AdminFillDrinkAvailable.ItemTopMargin = 3;
             this.AdminFillDrinkAvailable.Location = new System.Drawing.Point(870, 379);
             this.AdminFillDrinkAvailable.Margin = new System.Windows.Forms.Padding(4);

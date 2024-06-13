@@ -137,3 +137,4 @@ C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Mas
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\bin\Debug\System.Reactive.xml
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.Drinks.resources
 C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.Items.resources
+C:\Users\Thien\UIT\Nam_2\Hoc_Ky_2\Lap_Trinh_Mang\Winform-Application-Project\Master-NekoCoffeeApp\Master-NekoCoffeeApp\obj\Debug\Master_NekoCoffeeApp.Invoice.resources

@@ -96,5 +96,11 @@ namespace Master_NekoCoffeeApp
             Items frm = new Items(this.Username);
             frm.Show();
         }
+
+        private void btnInvoice_Click(object sender, EventArgs e)
+        {
+            Invoice frm = new Invoice(this.Username);
+            frm.Show();
+        }
     }
 }

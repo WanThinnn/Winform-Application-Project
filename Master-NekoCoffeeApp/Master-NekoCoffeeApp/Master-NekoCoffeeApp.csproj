@@ -410,6 +410,12 @@
     <Compile Include="formLogin.Designer.cs">
       <DependentUpon>formLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -423,6 +429,7 @@
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="MasterUser.cs" />
+    <Compile Include="NekoBill.cs" />
     <Compile Include="NekoCat.cs" />
     <Compile Include="NekoCustomer.cs" />
     <Compile Include="NekoDrink.cs" />
@@ -476,6 +483,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items.resx">
       <DependentUpon>Items.cs</DependentUpon>

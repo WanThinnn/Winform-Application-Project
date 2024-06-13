@@ -1,4 +1,5 @@
-﻿using Firebase.Storage;
+﻿using Aspose.Email.PersonalInfo;
+using Firebase.Storage;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
@@ -126,7 +127,7 @@ namespace Master_NekoCoffeeApp
             AdminFillDrinkName.Text = existingDrink.Name;
             AdminFillDrinkType.Text = existingDrink.Type;
             AdminFillDrinkPrice.Text = existingDrink.Price;
-            AdminFillDrinkAvailable.SelectedItem = existingDrink.Available;
+            AdminFillDrinkAvailable.Text = existingDrink.Available;
 
             // Load ảnh vào PictureBox
             if (!string.IsNullOrEmpty(existingDrink.ImageURL))
@@ -145,6 +146,10 @@ namespace Master_NekoCoffeeApp
             {
                 pictureBox.Image = null; // Clear PictureBox if no image URL
             }
+
+            btnAdd.Enabled = false;
+            btnUpdate.Enabled = true;
+            btnDelete.Enabled = true;
         }
 
         private void btnImage_Click(object sender, EventArgs e)
@@ -218,7 +223,7 @@ namespace Master_NekoCoffeeApp
             {
                 AdminFillDrinkID.Clear();
                 AdminFillDrinkName.Clear();
-                AdminFillDrinkAvailable.Items.Clear();
+                AdminFillDrinkAvailable.Text = string.Empty;
                 AdminFillDrinkPrice.Clear();
                 AdminFillDrinkSearch.Clear();
                 AdminFillDrinkType.Clear();
@@ -286,7 +291,7 @@ namespace Master_NekoCoffeeApp
                     MessageBox.Show($"Xoá nước {AdminFillDrinkID.Text} thành công!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     AdminFillDrinkID.Clear();
                     AdminFillDrinkName.Clear();
-                    AdminFillDrinkAvailable.Items.Clear();
+                    AdminFillDrinkAvailable.Text = string.Empty;
                     AdminFillDrinkPrice.Clear();
                     AdminFillDrinkSearch.Clear();
                     AdminFillDrinkType.Clear();
@@ -306,39 +311,75 @@ namespace Master_NekoCoffeeApp
 
         private async void btnUpdate_Click(object sender, EventArgs e)
         {
+            // Fetch the current drink details from Firebase
             FirebaseResponse res = drk.Get($"Drinks/" + AdminFillDrinkID.Text);
             NekoDrink ResDrink = res.ResultAs<NekoDrink>();
 
+            // Create a new NekoDrink instance with the current ID
             NekoDrink CurDrink = new NekoDrink()
             {
                 ID = AdminFillDrinkID.Text
             };
 
+            // Check if the drink exists
             if (!NekoDrink.IsExist(ResDrink, CurDrink))
             {
                 NekoDrink.ShowError_3();
                 return;
             }
 
+            // Confirm the update action with the user
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn sửa thông tin?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
             {
+                // Delete the existing image from Firebase Storage
+                try
+                {
+                    await firebaseStorage
+                        .Child("Drinks")
+                        .Child(AdminFillDrinkID.Text + ".jpg")
+                        .DeleteAsync();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi xóa ảnh cũ: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Convert the new image to a MemoryStream
+                MemoryStream ms = new MemoryStream();
+                pictureBox.Image.Save(ms, ImageFormat.Jpeg);
+                ms.Position = 0;
+
+                // Upload the new image to Firebase Storage
+                var uploadTask = firebaseStorage
+                    .Child("Drinks")
+                    .Child(AdminFillDrinkID.Text + ".jpg")
+                    .PutAsync(ms);
+
+                // Get the URL of the new image
+                string imageUrl = await uploadTask;
+
+                // Create a new NekoDrink object with the updated details
                 NekoDrink drink = new NekoDrink()
                 {
                     ID = AdminFillDrinkID.Text,
                     Name = AdminFillDrinkName.Text,
                     Available = AdminFillDrinkAvailable.Text,
                     Price = AdminFillDrinkPrice.Text,
-                    Type = AdminFillDrinkType.Text
+                    Type = AdminFillDrinkType.Text,
+                    ImageURL = imageUrl // Update the ImageURL with the new image URL
                 };
 
+                // Update the drink details in Firebase
                 FirebaseResponse update = drk.Update($"Drinks/" + AdminFillDrinkID.Text, drink);
 
                 if (update.StatusCode == System.Net.HttpStatusCode.OK)
                 {
+                    // Clear the form fields and notify the user of the success
                     AdminFillDrinkID.Clear();
                     AdminFillDrinkName.Clear();
-                    AdminFillDrinkAvailable.Items.Clear();
+                    AdminFillDrinkAvailable.Text = string.Empty;
                     AdminFillDrinkPrice.Clear();
                     AdminFillDrinkSearch.Clear();
                     AdminFillDrinkType.Clear();
@@ -346,10 +387,17 @@ namespace Master_NekoCoffeeApp
 
                     MessageBox.Show($"Sửa thành công nước {AdminFillDrinkID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                else { return; }
+                else
+                {
+                    MessageBox.Show("Cập nhật thất bại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Refresh the view data
                 viewData();
             }
         }
+
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
