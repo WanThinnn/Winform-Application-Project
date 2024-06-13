@@ -93,7 +93,7 @@ namespace UI
             BeforSignUp reg = new BeforSignUp();
             this.Hide();
             reg.ShowDialog();
-            this.ShowDialog();
+            this.Show();
         }
 
         private void txPass_TextChanged(object sender, EventArgs e)

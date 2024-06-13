@@ -137,7 +137,7 @@ namespace UI
                 return;
             }
 
-            if (GlobalVars.CurrentTable != null)
+            if (GlobalVars.CurrentUser.hasBooking == "true")
             {
                 MessageBox.Show("Bạn đã đặt bàn rồi, không thể đặt thêm bàn.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -154,12 +154,13 @@ namespace UI
 
             try
             {
-                PushResponse pushResponse = await client.PushAsync($"Tables/{table.ID}/Bookings", GlobalVars.CurrentUser.Username);
+                PushResponse pushResponse = await client.PushAsync($"Tables/{table.ID}/Bookings/{GlobalVars.CurrentUser.Username}", booking);
 
                 if (pushResponse.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     table.Status = "Booked";
-                    GlobalVars.CurrentTable = table;
+                    GlobalVars.CurrentUser.hasBooking = "true";
+                    SetResponse res = await client.SetAsync($"Users/{GlobalVars.CurrentUser.Username}", GlobalVars.CurrentUser);
                     SetResponse updateResponse = await client.SetAsync($"Tables/{table.ID}/Status", "Booked");
 
                     if (updateResponse.StatusCode == System.Net.HttpStatusCode.OK)

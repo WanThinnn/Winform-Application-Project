@@ -21,6 +21,7 @@ namespace UI
         public string Birthday { get; set; }
         public string Avatar { get; set; }
         public string Master { get; set; }
+        public string hasBooking { get; set; }
         public int Point { get; set; }
 
         private static string error1 = "Tài khoản không tồn tại!";

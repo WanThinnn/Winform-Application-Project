@@ -143,7 +143,8 @@ namespace UI
                 Point = 0,
                 Birthday = txbBirthday.Text,
                 Master = "",
-                Avatar = avatarUrl // Save the avatar URL
+                Avatar = avatarUrl, // Save the avatar URL
+                hasBooking = "false"
             };
 
             SetResponse set = client.Set(@"Users/" + txtUserName.Text, user);
