@@ -18112,6 +18112,29 @@
         gg==
 </value>
   </data>
+  <data name="bunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALAAAABJCAYAAACdKqyPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPhSURBVHhe7d1NaBRnGMDxOfbo0WOPPXr06LGn0kuhh6Sj
+        bbLdTSy2ePFStFBo0cat2ezmw5BqSz9ASmmhKFoCoZSQgw0StKRggoVq1pl3JptsPjZrMt1nMrZY30ZN
+        E/M+8H/gl4vvjh7+vrwzOxDvWSbs8Q8GxfZTUX9h3FTyk6bUEYTFNxJgu6ShtKUWaava0/ZyltvOTFz0
+        90Xl3JApvVWLLhyPl8Y+Sxq3riVr02PJ+t0bSbJwB9g2aUhaEtJW7av34/Cc34zK+Uut9l7MMtzehH2d
+        H5tyLq7/8mVzfe6m9R8A7LSN6Hayev27xAx2xbJ5zp70X8iSfLpJd92Bron66PDKRjht/UuA3SYhy+Zp
+        Bgq/V0/7+7M8tx7ZtqOhd35bnbrasF0UeN6asxNJNNh9r1r0D2SZ2ifdeVvxygdsFwL2ihxho6Gj97c8
+        F8uxgZ0Xrnrwx3U5F8/IRpsl+8+Y/nxvfeziiu2DgCuWf/1hLRooXMmy3Rw5IEeVt2tyaLZ9CHBJPHxs
+        /pHzsDyqkLs922LANY2py4mp5EfTeOUZm+nrWOBxGTQx5c6l9NGafHUn337YFgGuWvzx06XgbHveM6WO
+        yvL419ZFgKv+PkbIiznyboNtEeCq9JFaufNPz5RzM3xxAW3kni3sPbLsyQ9u4KCRvI7pyQ/bHwKuI2Co
+        RsBQjYChGgFDNQKGagQM1QgYqhEwVCNgqEbAUI2AoRoBQzUChmoEDNUIGKoRMFQjYKhGwFCNgKEaAUM1
+        AoZqBAzVCBiqETBUI2CoRsBQjYChGgFDNQKGagQM1QgYqhEwVCNgqEbAUI2AoRoBQzUChmoEDNUIGKoR
+        MFTbDPic39yIblsXAC5LA5ZfmCy/ONm2AHCVbLqy+Xqmkp9cmx6zLgJctX73RmJKHYFn+nIXVyYuWRcB
+        rmrcupZE/YXx1k1c2+HF788s2hYBrqqPjjSD3sMfenHR3xeW3ly1LQJcFQ8fm68W/QOeTOscPNqYumxd
+        CLimOTuRmHJuJo1XRkqWom2LAdfUvvlgPii2vZrluznswtDgsd334VRP+/vN+aN35PGE7YPAXtsIp5No
+        5N254BP/pSzbR0eOEmbkvZBv5uCi1tHBmErutSxX+wSVzlck4vW5m9aLAM+b7LwSb9Rf6Moy3XpkJ44G
+        u+/xDR32mpx55djwxJ3335OeiSv5yfnPT8RyEdvFgd0i92IL335Ukxu2/zzzPs0ERf+QXCQa6q7Vfzrf
+        lF2ZMzJ2g7S1/PMXSXTheCzvOdzvaXs9y/D/j/wvCM62n5BdWd4CklfZgJ2UttV75EzY4x/MsnvCeN5f
+        nfTwIuW8ApUAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIADfIQAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAAAFv
