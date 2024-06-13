@@ -1,6 +1,7 @@
 ﻿using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -159,11 +160,12 @@ namespace UI
 
                     cartItems.Clear();
                     RefreshCartUI();
+                    MessageBox.Show($"Đã thêm các mặt hàng vào Bàn {selectedTable.ID} thành công.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
             {
-                MessageBox.Show("Chưa chọn bàn để thêm mặt hàng.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Không thể thêm mặt hàng vào chi tiết bàn.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             cartItems.Clear();
             RefreshCartUI();
@@ -195,12 +197,12 @@ namespace UI
                 FirebaseResponse response = await client.SetAsync($"TableDetails/{selectedTable.ID}/{drinkName}", tableDetail);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    MessageBox.Show($"Đã thêm mặt hàng {drinkName} vào Bàn {selectedTable.ID} thành công.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    selectedTable.Status = "Using";
+                    await client.SetAsync($"Tables/{selectedTable.ID}/Status", selectedTable.Status);
                     return true;
                 }
                 else
                 {
-                    MessageBox.Show("Không thể thêm mặt hàng vào chi tiết bàn.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
             }
