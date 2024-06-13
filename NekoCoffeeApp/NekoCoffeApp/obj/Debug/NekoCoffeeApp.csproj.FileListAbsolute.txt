@@ -1164,3 +1164,6 @@ C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\
 C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserAccount.resources
 C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserBooking.resources
 C:\Users\huy\Desktop\LTM\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserRating.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.CustomerMng.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.EmployeeMng.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.CatMng.resources

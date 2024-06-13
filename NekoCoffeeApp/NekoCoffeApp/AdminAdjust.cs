@@ -35,12 +35,25 @@ namespace UI
 
         private void AdminAdjustCustomer_Click(object sender, EventArgs e)
         {
-
+            CustomerMng form1 = new CustomerMng();
+            form1.Show();
         }
 
         private void AdminAdjustProduct_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void AdminAdjustEmployee_Click(object sender, EventArgs e)
+        {
+            EmployeeMng form1 = new EmployeeMng();
+            form1.Show();
+        }
+
+        private void AdminAdjustCat_Click(object sender, EventArgs e)
+        {
+            CatMng form1 = new CatMng();
+            form1.Show();
         }
     }
 }

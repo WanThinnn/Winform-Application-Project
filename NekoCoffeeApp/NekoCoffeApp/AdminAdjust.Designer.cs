@@ -228,6 +228,7 @@
             this.AdminAdjustEmployee.TextMarginLeft = 0;
             this.AdminAdjustEmployee.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminAdjustEmployee.UseDefaultRadiusAndThickness = true;
+            this.AdminAdjustEmployee.Click += new System.EventHandler(this.AdminAdjustEmployee_Click);
             // 
             // AdminAdjustCat
             // 
@@ -317,6 +318,7 @@
             this.AdminAdjustCat.TextMarginLeft = 0;
             this.AdminAdjustCat.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminAdjustCat.UseDefaultRadiusAndThickness = true;
+            this.AdminAdjustCat.Click += new System.EventHandler(this.AdminAdjustCat_Click);
             // 
             // AdminAdjustTable
             // 

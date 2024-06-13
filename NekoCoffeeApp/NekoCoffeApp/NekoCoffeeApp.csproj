@@ -459,6 +459,12 @@
     </Compile>
     <Compile Include="Bills.cs" />
     <Compile Include="Booking.cs" />
+    <Compile Include="CatMng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatMng.Designer.cs">
+      <DependentUpon>CatMng.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangePwd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -472,6 +478,12 @@
       <DependentUpon>AdminFP.cs</DependentUpon>
     </Compile>
     <Compile Include="CountClass.cs" />
+    <Compile Include="CustomerMng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMng.Designer.cs">
+      <DependentUpon>CustomerMng.cs</DependentUpon>
+    </Compile>
     <Compile Include="edit_Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -489,6 +501,12 @@
     </Compile>
     <Compile Include="edit_Table.Designer.cs">
       <DependentUpon>edit_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeMng.Designer.cs">
+      <DependentUpon>EmployeeMng.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee_Detail.cs">
       <SubType>Form</SubType>
@@ -644,11 +662,17 @@
     <EmbeddedResource Include="BillDetailForm.resx">
       <DependentUpon>BillDetailForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CatMng.resx">
+      <DependentUpon>CatMng.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChangePwd.resx">
       <DependentUpon>ChangePwd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminFP.resx">
       <DependentUpon>AdminFP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMng.resx">
+      <DependentUpon>CustomerMng.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="edit_Customer.resx">
       <DependentUpon>edit_Customer.cs</DependentUpon>
@@ -664,6 +688,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="edit_Table.resx">
       <DependentUpon>edit_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeMng.resx">
+      <DependentUpon>EmployeeMng.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee_Detail.resx">
       <DependentUpon>Employee_Detail.cs</DependentUpon>

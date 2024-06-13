@@ -14,7 +14,7 @@ namespace UI
         public string ID { get; set; }
         public string Name { get; set; }
         public string Price { get; set; }
-        public string Available { get; set; }
+        public int Available { get; set; }
 
 
         private static string error1 = "Không tồn tại!";
@@ -61,7 +61,7 @@ namespace UI
         }
 
 
-        public static bool Search(NekoDrink cat1, NekoDrink cat2)
+        public static bool Search(NekoCat cat1, NekoCat cat2)
         {
             if (cat1 == null || cat2 == null) { return false; }
 
