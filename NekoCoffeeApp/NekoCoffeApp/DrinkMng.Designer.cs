@@ -86,10 +86,9 @@
             // pictureBox
             // 
             this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox.Location = new System.Drawing.Point(1159, 164);
-            this.pictureBox.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox.Location = new System.Drawing.Point(869, 133);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(169, 156);
+            this.pictureBox.Size = new System.Drawing.Size(127, 127);
             this.pictureBox.TabIndex = 222;
             this.pictureBox.TabStop = false;
             // 
@@ -100,11 +99,10 @@
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel3.Location = new System.Drawing.Point(1181, 394);
-            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel3.Location = new System.Drawing.Point(886, 320);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(38, 21);
+            this.bunifuLabel3.Size = new System.Drawing.Size(30, 17);
             this.bunifuLabel3.TabIndex = 216;
             this.bunifuLabel3.Text = "Loại:";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -117,11 +115,10 @@
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel2.Location = new System.Drawing.Point(1181, 327);
-            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel2.Location = new System.Drawing.Point(886, 266);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(31, 21);
+            this.bunifuLabel2.Size = new System.Drawing.Size(24, 17);
             this.bunifuLabel2.TabIndex = 214;
             this.bunifuLabel2.Text = "Giá:";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -154,10 +151,10 @@
             this.AdminFillDrinkPrice.IconRight = null;
             this.AdminFillDrinkPrice.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillDrinkPrice.Lines = new string[0];
-            this.AdminFillDrinkPrice.Location = new System.Drawing.Point(1161, 338);
-            this.AdminFillDrinkPrice.Margin = new System.Windows.Forms.Padding(5);
+            this.AdminFillDrinkPrice.Location = new System.Drawing.Point(871, 275);
+            this.AdminFillDrinkPrice.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkPrice.MaxLength = 32767;
-            this.AdminFillDrinkPrice.MinimumSize = new System.Drawing.Size(3, 2);
+            this.AdminFillDrinkPrice.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillDrinkPrice.Modified = false;
             this.AdminFillDrinkPrice.Multiline = false;
             this.AdminFillDrinkPrice.Name = "AdminFillDrinkPrice";
@@ -181,7 +178,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillDrinkPrice.OnIdleState = stateProperties4;
-            this.AdminFillDrinkPrice.Padding = new System.Windows.Forms.Padding(5);
+            this.AdminFillDrinkPrice.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkPrice.PasswordChar = '\0';
             this.AdminFillDrinkPrice.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillDrinkPrice.PlaceholderText = "";
@@ -191,7 +188,7 @@
             this.AdminFillDrinkPrice.SelectionLength = 0;
             this.AdminFillDrinkPrice.SelectionStart = 0;
             this.AdminFillDrinkPrice.ShortcutsEnabled = true;
-            this.AdminFillDrinkPrice.Size = new System.Drawing.Size(341, 47);
+            this.AdminFillDrinkPrice.Size = new System.Drawing.Size(256, 38);
             this.AdminFillDrinkPrice.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillDrinkPrice.TabIndex = 215;
             this.AdminFillDrinkPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -249,8 +246,8 @@
             this.btnImage.IdleIconLeftImage = null;
             this.btnImage.IdleIconRightImage = null;
             this.btnImage.IndicateFocus = false;
-            this.btnImage.Location = new System.Drawing.Point(1272, 548);
-            this.btnImage.Margin = new System.Windows.Forms.Padding(5);
+            this.btnImage.Location = new System.Drawing.Point(954, 445);
+            this.btnImage.Margin = new System.Windows.Forms.Padding(4);
             this.btnImage.Name = "btnImage";
             this.btnImage.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnImage.OnDisabledState.BorderRadius = 35;
@@ -284,7 +281,7 @@
             this.btnImage.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnImage.OnPressedState.IconLeftImage = null;
             this.btnImage.OnPressedState.IconRightImage = null;
-            this.btnImage.Size = new System.Drawing.Size(125, 50);
+            this.btnImage.Size = new System.Drawing.Size(94, 41);
             this.btnImage.TabIndex = 221;
             this.btnImage.TabStop = false;
             this.btnImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -301,11 +298,10 @@
             this.bunifuLabel6.CursorType = null;
             this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel6.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel6.Location = new System.Drawing.Point(1160, 137);
-            this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel6.Location = new System.Drawing.Point(870, 111);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(76, 21);
+            this.bunifuLabel6.Size = new System.Drawing.Size(61, 17);
             this.bunifuLabel6.TabIndex = 220;
             this.bunifuLabel6.Text = "Hình ảnh:";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -318,11 +314,10 @@
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel5.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel5.Location = new System.Drawing.Point(1179, 460);
-            this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel5.Location = new System.Drawing.Point(884, 374);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(86, 21);
+            this.bunifuLabel5.Size = new System.Drawing.Size(69, 17);
             this.bunifuLabel5.TabIndex = 219;
             this.bunifuLabel5.Text = "Trạng thái:";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -367,10 +362,10 @@
             "Available",
             "Unavailable"});
             this.AdminFillDrinkAvailable.ItemTopMargin = 3;
-            this.AdminFillDrinkAvailable.Location = new System.Drawing.Point(1159, 474);
-            this.AdminFillDrinkAvailable.Margin = new System.Windows.Forms.Padding(5);
+            this.AdminFillDrinkAvailable.Location = new System.Drawing.Point(869, 385);
+            this.AdminFillDrinkAvailable.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkAvailable.Name = "AdminFillDrinkAvailable";
-            this.AdminFillDrinkAvailable.Size = new System.Drawing.Size(341, 36);
+            this.AdminFillDrinkAvailable.Size = new System.Drawing.Size(257, 36);
             this.AdminFillDrinkAvailable.TabIndex = 218;
             this.AdminFillDrinkAvailable.Text = null;
             this.AdminFillDrinkAvailable.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -383,11 +378,10 @@
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel4.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel4.Location = new System.Drawing.Point(1353, 241);
-            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel4.Location = new System.Drawing.Point(1015, 196);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(77, 21);
+            this.bunifuLabel4.Size = new System.Drawing.Size(62, 17);
             this.bunifuLabel4.TabIndex = 213;
             this.bunifuLabel4.Text = "Tên nước:";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -401,11 +395,10 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel1.Location = new System.Drawing.Point(1353, 174);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel1.Location = new System.Drawing.Point(1015, 141);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(23, 21);
+            this.bunifuLabel1.Size = new System.Drawing.Size(19, 17);
             this.bunifuLabel1.TabIndex = 212;
             this.bunifuLabel1.Text = "ID:";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -458,8 +451,8 @@
             this.btnRefresh.IdleIconLeftImage = null;
             this.btnRefresh.IdleIconRightImage = null;
             this.btnRefresh.IndicateFocus = false;
-            this.btnRefresh.Location = new System.Drawing.Point(327, 649);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRefresh.Location = new System.Drawing.Point(245, 527);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRefresh.OnDisabledState.BorderRadius = 40;
@@ -493,7 +486,7 @@
             this.btnRefresh.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnRefresh.OnPressedState.IconLeftImage = null;
             this.btnRefresh.OnPressedState.IconRightImage = null;
-            this.btnRefresh.Size = new System.Drawing.Size(108, 57);
+            this.btnRefresh.Size = new System.Drawing.Size(81, 46);
             this.btnRefresh.TabIndex = 211;
             this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRefresh.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -529,10 +522,10 @@
             this.AdminFillDrinkID.IconRight = null;
             this.AdminFillDrinkID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillDrinkID.Lines = new string[0];
-            this.AdminFillDrinkID.Location = new System.Drawing.Point(1337, 186);
-            this.AdminFillDrinkID.Margin = new System.Windows.Forms.Padding(5);
+            this.AdminFillDrinkID.Location = new System.Drawing.Point(1003, 151);
+            this.AdminFillDrinkID.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkID.MaxLength = 32767;
-            this.AdminFillDrinkID.MinimumSize = new System.Drawing.Size(3, 2);
+            this.AdminFillDrinkID.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillDrinkID.Modified = false;
             this.AdminFillDrinkID.Multiline = false;
             this.AdminFillDrinkID.Name = "AdminFillDrinkID";
@@ -556,7 +549,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillDrinkID.OnIdleState = stateProperties8;
-            this.AdminFillDrinkID.Padding = new System.Windows.Forms.Padding(5);
+            this.AdminFillDrinkID.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkID.PasswordChar = '\0';
             this.AdminFillDrinkID.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillDrinkID.PlaceholderText = "";
@@ -566,7 +559,7 @@
             this.AdminFillDrinkID.SelectionLength = 0;
             this.AdminFillDrinkID.SelectionStart = 0;
             this.AdminFillDrinkID.ShortcutsEnabled = true;
-            this.AdminFillDrinkID.Size = new System.Drawing.Size(164, 47);
+            this.AdminFillDrinkID.Size = new System.Drawing.Size(123, 38);
             this.AdminFillDrinkID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillDrinkID.TabIndex = 210;
             this.AdminFillDrinkID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -604,10 +597,10 @@
             this.AdminFillDrinkName.IconRight = null;
             this.AdminFillDrinkName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillDrinkName.Lines = new string[0];
-            this.AdminFillDrinkName.Location = new System.Drawing.Point(1337, 252);
-            this.AdminFillDrinkName.Margin = new System.Windows.Forms.Padding(5);
+            this.AdminFillDrinkName.Location = new System.Drawing.Point(1003, 205);
+            this.AdminFillDrinkName.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkName.MaxLength = 32767;
-            this.AdminFillDrinkName.MinimumSize = new System.Drawing.Size(3, 2);
+            this.AdminFillDrinkName.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillDrinkName.Modified = false;
             this.AdminFillDrinkName.Multiline = false;
             this.AdminFillDrinkName.Name = "AdminFillDrinkName";
@@ -631,7 +624,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillDrinkName.OnIdleState = stateProperties12;
-            this.AdminFillDrinkName.Padding = new System.Windows.Forms.Padding(5);
+            this.AdminFillDrinkName.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkName.PasswordChar = '\0';
             this.AdminFillDrinkName.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillDrinkName.PlaceholderText = "";
@@ -641,7 +634,7 @@
             this.AdminFillDrinkName.SelectionLength = 0;
             this.AdminFillDrinkName.SelectionStart = 0;
             this.AdminFillDrinkName.ShortcutsEnabled = true;
-            this.AdminFillDrinkName.Size = new System.Drawing.Size(164, 47);
+            this.AdminFillDrinkName.Size = new System.Drawing.Size(123, 38);
             this.AdminFillDrinkName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillDrinkName.TabIndex = 209;
             this.AdminFillDrinkName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -655,10 +648,9 @@
             // label1
             // 
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(1156, 108);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(867, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(347, 25);
+            this.label1.Size = new System.Drawing.Size(260, 20);
             this.label1.TabIndex = 208;
             this.label1.Text = resources.GetString("label1.Text");
             // 
@@ -689,10 +681,10 @@
             this.AdminFillDrinkSearch.IconRight = null;
             this.AdminFillDrinkSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillDrinkSearch.Lines = new string[0];
-            this.AdminFillDrinkSearch.Location = new System.Drawing.Point(1156, 31);
-            this.AdminFillDrinkSearch.Margin = new System.Windows.Forms.Padding(5);
+            this.AdminFillDrinkSearch.Location = new System.Drawing.Point(867, 25);
+            this.AdminFillDrinkSearch.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkSearch.MaxLength = 32767;
-            this.AdminFillDrinkSearch.MinimumSize = new System.Drawing.Size(3, 2);
+            this.AdminFillDrinkSearch.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillDrinkSearch.Modified = false;
             this.AdminFillDrinkSearch.Multiline = false;
             this.AdminFillDrinkSearch.Name = "AdminFillDrinkSearch";
@@ -716,7 +708,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillDrinkSearch.OnIdleState = stateProperties16;
-            this.AdminFillDrinkSearch.Padding = new System.Windows.Forms.Padding(5);
+            this.AdminFillDrinkSearch.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkSearch.PasswordChar = '\0';
             this.AdminFillDrinkSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillDrinkSearch.PlaceholderText = "Nhập ID nước để tìm";
@@ -726,7 +718,7 @@
             this.AdminFillDrinkSearch.SelectionLength = 0;
             this.AdminFillDrinkSearch.SelectionStart = 0;
             this.AdminFillDrinkSearch.ShortcutsEnabled = true;
-            this.AdminFillDrinkSearch.Size = new System.Drawing.Size(223, 57);
+            this.AdminFillDrinkSearch.Size = new System.Drawing.Size(167, 46);
             this.AdminFillDrinkSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillDrinkSearch.TabIndex = 207;
             this.AdminFillDrinkSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -791,15 +783,14 @@
             this.AdminViewAllYourDrinks.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.AdminViewAllYourDrinks.HeaderBgColor = System.Drawing.Color.Empty;
             this.AdminViewAllYourDrinks.HeaderForeColor = System.Drawing.Color.White;
-            this.AdminViewAllYourDrinks.Location = new System.Drawing.Point(41, 43);
-            this.AdminViewAllYourDrinks.Margin = new System.Windows.Forms.Padding(4);
+            this.AdminViewAllYourDrinks.Location = new System.Drawing.Point(31, 35);
             this.AdminViewAllYourDrinks.Name = "AdminViewAllYourDrinks";
             this.AdminViewAllYourDrinks.ReadOnly = true;
             this.AdminViewAllYourDrinks.RowHeadersVisible = false;
             this.AdminViewAllYourDrinks.RowHeadersWidth = 62;
             this.AdminViewAllYourDrinks.RowTemplate.Height = 40;
             this.AdminViewAllYourDrinks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.AdminViewAllYourDrinks.Size = new System.Drawing.Size(1067, 587);
+            this.AdminViewAllYourDrinks.Size = new System.Drawing.Size(800, 477);
             this.AdminViewAllYourDrinks.TabIndex = 206;
             this.AdminViewAllYourDrinks.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -850,8 +841,8 @@
             this.btnUpdate.IdleIconLeftImage = null;
             this.btnUpdate.IdleIconRightImage = null;
             this.btnUpdate.IndicateFocus = false;
-            this.btnUpdate.Location = new System.Drawing.Point(683, 649);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(5);
+            this.btnUpdate.Location = new System.Drawing.Point(512, 527);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnUpdate.OnDisabledState.BorderRadius = 40;
@@ -885,7 +876,7 @@
             this.btnUpdate.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.OnPressedState.IconLeftImage = null;
             this.btnUpdate.OnPressedState.IconRightImage = null;
-            this.btnUpdate.Size = new System.Drawing.Size(108, 57);
+            this.btnUpdate.Size = new System.Drawing.Size(81, 46);
             this.btnUpdate.TabIndex = 205;
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnUpdate.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -941,8 +932,8 @@
             this.btnDelete.IdleIconLeftImage = null;
             this.btnDelete.IdleIconRightImage = null;
             this.btnDelete.IndicateFocus = false;
-            this.btnDelete.Location = new System.Drawing.Point(564, 649);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(5);
+            this.btnDelete.Location = new System.Drawing.Point(423, 527);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDelete.OnDisabledState.BorderRadius = 40;
@@ -976,7 +967,7 @@
             this.btnDelete.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnDelete.OnPressedState.IconLeftImage = null;
             this.btnDelete.OnPressedState.IconRightImage = null;
-            this.btnDelete.Size = new System.Drawing.Size(108, 57);
+            this.btnDelete.Size = new System.Drawing.Size(81, 46);
             this.btnDelete.TabIndex = 204;
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDelete.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1032,8 +1023,8 @@
             this.btnAdd.IdleIconLeftImage = null;
             this.btnAdd.IdleIconRightImage = null;
             this.btnAdd.IndicateFocus = false;
-            this.btnAdd.Location = new System.Drawing.Point(445, 649);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAdd.Location = new System.Drawing.Point(334, 527);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAdd.OnDisabledState.BorderRadius = 40;
@@ -1067,7 +1058,7 @@
             this.btnAdd.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAdd.OnPressedState.IconLeftImage = null;
             this.btnAdd.OnPressedState.IconRightImage = null;
-            this.btnAdd.Size = new System.Drawing.Size(108, 57);
+            this.btnAdd.Size = new System.Drawing.Size(81, 46);
             this.btnAdd.TabIndex = 203;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAdd.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1123,8 +1114,8 @@
             this.btnCheck.IdleIconLeftImage = null;
             this.btnCheck.IdleIconRightImage = null;
             this.btnCheck.IndicateFocus = false;
-            this.btnCheck.Location = new System.Drawing.Point(1389, 31);
-            this.btnCheck.Margin = new System.Windows.Forms.Padding(5);
+            this.btnCheck.Location = new System.Drawing.Point(1042, 25);
+            this.btnCheck.Margin = new System.Windows.Forms.Padding(4);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCheck.OnDisabledState.BorderRadius = 40;
@@ -1158,13 +1149,14 @@
             this.btnCheck.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnCheck.OnPressedState.IconLeftImage = null;
             this.btnCheck.OnPressedState.IconRightImage = null;
-            this.btnCheck.Size = new System.Drawing.Size(113, 57);
+            this.btnCheck.Size = new System.Drawing.Size(85, 46);
             this.btnCheck.TabIndex = 202;
             this.btnCheck.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCheck.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnCheck.TextMarginLeft = 0;
             this.btnCheck.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnCheck.UseDefaultRadiusAndThickness = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // AdminFillDrinkType
             // 
@@ -1193,10 +1185,10 @@
             this.AdminFillDrinkType.IconRight = null;
             this.AdminFillDrinkType.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.AdminFillDrinkType.Lines = new string[0];
-            this.AdminFillDrinkType.Location = new System.Drawing.Point(1159, 406);
-            this.AdminFillDrinkType.Margin = new System.Windows.Forms.Padding(5);
+            this.AdminFillDrinkType.Location = new System.Drawing.Point(869, 330);
+            this.AdminFillDrinkType.Margin = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkType.MaxLength = 32767;
-            this.AdminFillDrinkType.MinimumSize = new System.Drawing.Size(3, 2);
+            this.AdminFillDrinkType.MinimumSize = new System.Drawing.Size(2, 2);
             this.AdminFillDrinkType.Modified = false;
             this.AdminFillDrinkType.Multiline = false;
             this.AdminFillDrinkType.Name = "AdminFillDrinkType";
@@ -1220,7 +1212,7 @@
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.AdminFillDrinkType.OnIdleState = stateProperties20;
-            this.AdminFillDrinkType.Padding = new System.Windows.Forms.Padding(5);
+            this.AdminFillDrinkType.Padding = new System.Windows.Forms.Padding(4);
             this.AdminFillDrinkType.PasswordChar = '\0';
             this.AdminFillDrinkType.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.AdminFillDrinkType.PlaceholderText = "";
@@ -1230,7 +1222,7 @@
             this.AdminFillDrinkType.SelectionLength = 0;
             this.AdminFillDrinkType.SelectionStart = 0;
             this.AdminFillDrinkType.ShortcutsEnabled = true;
-            this.AdminFillDrinkType.Size = new System.Drawing.Size(343, 47);
+            this.AdminFillDrinkType.Size = new System.Drawing.Size(257, 38);
             this.AdminFillDrinkType.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.AdminFillDrinkType.TabIndex = 217;
             this.AdminFillDrinkType.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1243,10 +1235,10 @@
             // 
             // DrinkMng
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1545, 737);
+            this.ClientSize = new System.Drawing.Size(1155, 599);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.bunifuLabel3);
             this.Controls.Add(this.bunifuLabel2);
@@ -1268,9 +1260,11 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.AdminFillDrinkType);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DrinkMng";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DrinkMng";
+            this.Text = "Quản Lý Nước Uống";
             this.Load += new System.EventHandler(this.Drinks_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdminViewAllYourDrinks)).EndInit();

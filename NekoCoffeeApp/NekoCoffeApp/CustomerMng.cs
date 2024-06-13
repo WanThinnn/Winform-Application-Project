@@ -323,7 +323,12 @@ namespace UI
                         Position = "KH",
                         RegistrationDate = user.RegistrationDate, // giữ nguyên ngày đăng ký
                         Point = user.Point, // giữ nguyên điểm
-                        Birthday = txbBirthday.Text
+                        Birthday = txbBirthday.Text,
+                        Master = user.Master,
+                        hasBooking = user.hasBooking,
+                        Avatar = user.Avatar,
+
+                       
                     };
 
                     SetResponse up = await client.SetAsync("Users/" + tbUsername.Text, updateData);

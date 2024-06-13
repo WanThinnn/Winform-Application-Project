@@ -76,7 +76,7 @@
             this.btnSignUp.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
             this.btnSignUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSignUp.BackgroundImage")));
             this.btnSignUp.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnSignUp.ButtonText = "Sign Up";
+            this.btnSignUp.ButtonText = "Đăng Ký";
             this.btnSignUp.ButtonTextMarginLeft = 0;
             this.btnSignUp.ColorContrastOnClick = 45;
             this.btnSignUp.ColorContrastOnHover = 45;
@@ -91,7 +91,7 @@
             this.btnSignUp.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnSignUp.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnSignUp.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnSignUp.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignUp.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
             this.btnSignUp.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSignUp.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -110,7 +110,7 @@
             this.btnSignUp.IdleIconRightImage = null;
             this.btnSignUp.IndicateFocus = false;
             this.btnSignUp.Location = new System.Drawing.Point(123, 203);
-            this.btnSignUp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(2);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSignUp.OnDisabledState.BorderRadius = 35;
@@ -181,7 +181,7 @@
             this.txbEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbEmail.Lines = new string[0];
             this.txbEmail.Location = new System.Drawing.Point(123, 123);
-            this.txbEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txbEmail.MaxLength = 32767;
             this.txbEmail.MinimumSize = new System.Drawing.Size(1, 1);
             this.txbEmail.Modified = false;
@@ -207,10 +207,10 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txbEmail.OnIdleState = stateProperties4;
-            this.txbEmail.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbEmail.Padding = new System.Windows.Forms.Padding(2);
             this.txbEmail.PasswordChar = '\0';
             this.txbEmail.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txbEmail.PlaceholderText = "Enter Your Email";
+            this.txbEmail.PlaceholderText = "Nhập mail của bạn để đăng ký";
             this.txbEmail.ReadOnly = false;
             this.txbEmail.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txbEmail.SelectedText = "";
@@ -225,27 +225,27 @@
             this.txbEmail.TextMarginBottom = 0;
             this.txbEmail.TextMarginLeft = 3;
             this.txbEmail.TextMarginTop = 0;
-            this.txbEmail.TextPlaceholder = "Enter Your Email";
+            this.txbEmail.TextPlaceholder = "Nhập mail của bạn để đăng ký";
             this.txbEmail.UseSystemPasswordChar = false;
             this.txbEmail.WordWrap = true;
             // 
             // lbDangNhap
             // 
             this.lbDangNhap.AutoSize = true;
-            this.lbDangNhap.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDangNhap.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbDangNhap.Location = new System.Drawing.Point(290, 59);
+            this.lbDangNhap.Location = new System.Drawing.Point(293, 57);
             this.lbDangNhap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDangNhap.Name = "lbDangNhap";
-            this.lbDangNhap.Size = new System.Drawing.Size(101, 29);
+            this.lbDangNhap.Size = new System.Drawing.Size(111, 30);
             this.lbDangNhap.TabIndex = 28;
-            this.lbDangNhap.Text = "SIGN UP";
+            this.lbDangNhap.Text = "ĐĂNG KÝ";
             // 
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
             this.logo.Location = new System.Drawing.Point(220, 33);
-            this.logo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logo.Margin = new System.Windows.Forms.Padding(2);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(84, 82);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -255,23 +255,23 @@
             // lkForgotPass
             // 
             this.lkForgotPass.AutoSize = true;
-            this.lkForgotPass.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lkForgotPass.Font = new System.Drawing.Font("Segoe UI Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkForgotPass.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.lkForgotPass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
             this.lkForgotPass.Location = new System.Drawing.Point(333, 163);
             this.lkForgotPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lkForgotPass.Name = "lkForgotPass";
-            this.lkForgotPass.Size = new System.Drawing.Size(169, 18);
+            this.lkForgotPass.Size = new System.Drawing.Size(156, 13);
             this.lkForgotPass.TabIndex = 27;
             this.lkForgotPass.TabStop = true;
-            this.lkForgotPass.Text = "Have an account? Login";
+            this.lkForgotPass.Text = "Dã có tài khoản? Đăng nhập";
             this.lkForgotPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkForgotPass_LinkClicked);
             // 
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
             this.pictureBox11.Location = new System.Drawing.Point(56, 220);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(33, 29);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -282,7 +282,7 @@
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(515, 217);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(32, 31);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -293,7 +293,7 @@
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(142, 292);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(33, 29);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -304,7 +304,7 @@
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(67, -6);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(32, 31);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -315,7 +315,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(-3, 34);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(57, 53);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -326,7 +326,7 @@
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(11, 98);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(98, 96);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -337,7 +337,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(551, 242);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(78, 72);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -348,7 +348,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(534, 6);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(95, 88);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -359,7 +359,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-3, 250);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(78, 72);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -370,7 +370,7 @@
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
             this.pictureBox12.Location = new System.Drawing.Point(392, 257);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(95, 94);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -399,7 +399,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox12);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "BeforSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BeforSignUp";

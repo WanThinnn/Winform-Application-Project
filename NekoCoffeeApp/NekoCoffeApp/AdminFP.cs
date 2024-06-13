@@ -83,14 +83,14 @@ namespace UI
 
         private void AdminReviewBtn_Click(object sender, EventArgs e)
         {
-            if (!AdminMainPanel.Controls.Contains(AdminReview.Instance))
+            if (!AdminMainPanel.Controls.Contains(AdminItems.Instance))
             {
-                AdminMainPanel.Controls.Add(AdminReview.Instance);
-                AdminReview.Instance.Dock = DockStyle.Fill;
-                AdminReview.Instance.BringToFront();
+                AdminMainPanel.Controls.Add(AdminItems.Instance);
+                AdminItems.Instance.Dock = DockStyle.Fill;
+                AdminItems.Instance.BringToFront();
             }
             else
-                AdminReview.Instance.BringToFront();
+                AdminItems.Instance.BringToFront();
         }
 
         public AdminFP()

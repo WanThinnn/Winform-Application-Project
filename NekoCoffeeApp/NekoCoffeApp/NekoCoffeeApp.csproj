@@ -375,6 +375,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminItems.Designer.cs">
+      <DependentUpon>AdminItems.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -523,6 +529,12 @@
     <Compile Include="Employee_Detail.Designer.cs">
       <DependentUpon>Employee_Detail.cs</DependentUpon>
     </Compile>
+    <Compile Include="GetItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetItems.Designer.cs">
+      <DependentUpon>GetItems.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlobalVars.cs" />
     <Compile Include="MasterUser.cs" />
     <Compile Include="NekoCartItem.cs" />
@@ -603,6 +615,12 @@
     <Compile Include="UserDiscount.Designer.cs">
       <DependentUpon>UserDiscount.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserGetItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserGetItem.Designer.cs">
+      <DependentUpon>UserGetItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -642,6 +660,9 @@
       <DependentUpon>UserRating.cs</DependentUpon>
     </Compile>
     <Compile Include="VerificationCodeInfo.cs" />
+    <EmbeddedResource Include="AdminItems.resx">
+      <DependentUpon>AdminItems.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -724,6 +745,9 @@
     <EmbeddedResource Include="ForgotPwd.resx">
       <DependentUpon>ForgotPwd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GetItems.resx">
+      <DependentUpon>GetItems.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -766,6 +790,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserDiscount.resx">
       <DependentUpon>UserDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserGetItem.resx">
+      <DependentUpon>UserGetItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserMenu.resx">
       <DependentUpon>UserMenu.cs</DependentUpon>

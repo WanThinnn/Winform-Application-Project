@@ -50,37 +50,39 @@
             this.bunifuPanel1.Controls.Add(this.lbEmployeeName);
             this.bunifuPanel1.Controls.Add(this.lbEmployeeID);
             this.bunifuPanel1.Controls.Add(this.bunifuPictureBox2);
-            this.bunifuPanel1.Location = new System.Drawing.Point(60, 119);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuPanel1.Location = new System.Drawing.Point(54, 34);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(499, 197);
+            this.bunifuPanel1.Size = new System.Drawing.Size(417, 223);
             this.bunifuPanel1.TabIndex = 3;
             // 
             // lbEmployeeShift
             // 
             this.lbEmployeeShift.AutoSize = true;
-            this.lbEmployeeShift.Location = new System.Drawing.Point(233, 130);
+            this.lbEmployeeShift.Location = new System.Drawing.Point(167, 125);
+            this.lbEmployeeShift.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbEmployeeShift.Name = "lbEmployeeShift";
-            this.lbEmployeeShift.Size = new System.Drawing.Size(51, 20);
+            this.lbEmployeeShift.Size = new System.Drawing.Size(35, 13);
             this.lbEmployeeShift.TabIndex = 1;
             this.lbEmployeeShift.Text = "label1";
             // 
             // lbEmployeeName
             // 
             this.lbEmployeeName.AutoSize = true;
-            this.lbEmployeeName.Location = new System.Drawing.Point(233, 94);
+            this.lbEmployeeName.Location = new System.Drawing.Point(167, 102);
+            this.lbEmployeeName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbEmployeeName.Name = "lbEmployeeName";
-            this.lbEmployeeName.Size = new System.Drawing.Size(51, 20);
+            this.lbEmployeeName.Size = new System.Drawing.Size(35, 13);
             this.lbEmployeeName.TabIndex = 1;
             this.lbEmployeeName.Text = "label1";
             // 
             // lbEmployeeID
             // 
             this.lbEmployeeID.AutoSize = true;
-            this.lbEmployeeID.Location = new System.Drawing.Point(233, 57);
+            this.lbEmployeeID.Location = new System.Drawing.Point(167, 78);
+            this.lbEmployeeID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbEmployeeID.Name = "lbEmployeeID";
-            this.lbEmployeeID.Size = new System.Drawing.Size(51, 20);
+            this.lbEmployeeID.Size = new System.Drawing.Size(35, 13);
             this.lbEmployeeID.TabIndex = 1;
             this.lbEmployeeID.Text = "label1";
             // 
@@ -89,13 +91,12 @@
             this.bunifuPictureBox2.AllowFocused = false;
             this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox2.AutoSizeHeight = true;
-            this.bunifuPictureBox2.BorderRadius = 46;
+            this.bunifuPictureBox2.BorderRadius = 51;
             this.bunifuPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox2.Image")));
             this.bunifuPictureBox2.IsCircle = true;
-            this.bunifuPictureBox2.Location = new System.Drawing.Point(110, 57);
-            this.bunifuPictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(45, 64);
             this.bunifuPictureBox2.Name = "bunifuPictureBox2";
-            this.bunifuPictureBox2.Size = new System.Drawing.Size(93, 93);
+            this.bunifuPictureBox2.Size = new System.Drawing.Size(102, 102);
             this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox2.TabIndex = 0;
             this.bunifuPictureBox2.TabStop = false;
@@ -103,12 +104,16 @@
             // 
             // EmployeeDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(527, 305);
             this.Controls.Add(this.bunifuPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EmployeeDetail";
-            this.Text = "Employee_Detail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thông Tin Nhân Viên";
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();

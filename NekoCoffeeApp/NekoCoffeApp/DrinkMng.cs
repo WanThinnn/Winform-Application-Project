@@ -34,9 +34,9 @@ namespace UI
         {
             try
             {
-                var data = await drk.GetAsync($"Drinks/");
+                var data = await drk.GetAsync("Drinks/");
 
-                // Check if data or data.Body is null
+                // Kiểm tra nếu data hoặc data.Body là null
                 if (data == null || data.Body == null)
                 {
                     AdminViewAllYourDrinks.DataSource = null;
@@ -51,8 +51,8 @@ namespace UI
                     // Nếu là mảng JSON, xử lý nó như một danh sách
                     var mListArray = JsonConvert.DeserializeObject<List<NekoDrink>>(jsonData);
 
-                    // Check if mListArray is null or empty
-                    if (mListArray == null || !mListArray.Any())
+                    // Kiểm tra xem danh sách có rỗng không
+                    if (!mListArray.Any())
                     {
                         AdminViewAllYourDrinks.DataSource = null;
                         return;
@@ -65,8 +65,8 @@ namespace UI
                     // Nếu không phải mảng JSON, xử lý nó như một đối tượng JSON
                     var mList = JsonConvert.DeserializeObject<IDictionary<string, NekoDrink>>(jsonData);
 
-                    // Check if mList is null or empty
-                    if (mList == null || !mList.Any())
+                    // Kiểm tra xem danh sách có rỗng không
+                    if (!mList.Any())
                     {
                         AdminViewAllYourDrinks.DataSource = null;
                         return;
@@ -78,11 +78,11 @@ namespace UI
             }
             catch (Exception ex)
             {
-                //
-                //MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Xử lý ngoại lệ nếu cần thiết
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
+
 
         private void Drinks_Load(object sender, EventArgs e)
         {

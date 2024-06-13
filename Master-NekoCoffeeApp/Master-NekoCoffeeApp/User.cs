@@ -315,7 +315,7 @@ namespace Master_NekoCoffeeApp
                         Gender = dbGender.Text,
                         PhoneNumber = tbPhone.Text,
                         Email = tbEmail.Text.ToLower(),
-                        Position = "KH",
+                        Position = tbType.Text,
                         RegistrationDate = user.RegistrationDate, // giữ nguyên ngày đăng ký
                         Point = user.Point, // giữ nguyên điểm
                         Birthday = txbBirthday.Text,

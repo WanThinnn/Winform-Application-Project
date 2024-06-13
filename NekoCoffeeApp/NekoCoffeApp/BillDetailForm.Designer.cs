@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BillDetailForm));
             this.lblBillId = new System.Windows.Forms.Label();
             this.lblTableId = new System.Windows.Forms.Label();
             this.lblPaymentTime = new System.Windows.Forms.Label();
@@ -161,6 +162,7 @@
             this.Controls.Add(this.lblPaymentTime);
             this.Controls.Add(this.lblTableId);
             this.Controls.Add(this.lblBillId);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BillDetailForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BillDetailForm";

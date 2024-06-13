@@ -35,17 +35,18 @@
             // adminDrink1
             // 
             this.adminDrink1.BackColor = System.Drawing.Color.White;
-            this.adminDrink1.Location = new System.Drawing.Point(-16, -1);
+            this.adminDrink1.Location = new System.Drawing.Point(-3, 2);
             this.adminDrink1.Margin = new System.Windows.Forms.Padding(4);
             this.adminDrink1.Name = "adminDrink1";
-            this.adminDrink1.Size = new System.Drawing.Size(924, 493);
+            this.adminDrink1.Size = new System.Drawing.Size(939, 518);
             this.adminDrink1.TabIndex = 3;
             // 
             // edit_Order
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ClientSize = new System.Drawing.Size(899, 474);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(934, 519);
             this.Controls.Add(this.adminDrink1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "edit_Order";

@@ -428,7 +428,45 @@ namespace UI
                         }
                     }
                 }
+
+                FirebaseResponse res = await client.GetAsync("Users/" + txbUsername.Text);
+
+
+                NekoUser user = res.ResultAs<NekoUser>();
+
+
+
+                var updateData = new NekoUser
+                {
+                    Username = user.Username,
+                    Password = user.Password,
+                    Fullname = user.Fullname,
+                    Gender = user.Gender,
+                    PhoneNumber = user.PhoneNumber,
+                    Email = user.Email,
+                    Position = user.Position,
+                    RegistrationDate = user.RegistrationDate,
+                    Point = user.Point + total/10000,
+                    Birthday = user.Birthday,
+                    Master = user.Master,
+                    hasBooking = user.hasBooking,
+                    Avatar = user.Avatar,
+
+                };
+
+                SetResponse up = await client.SetAsync("Users/" + user.Username, updateData);
+                if (up.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    MessageBox.Show($"Tích điểm thành công tài khoản {user.Username}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Tích điểm thất bại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+
+
+
             catch (Exception ex)
             {
                 MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -471,7 +509,8 @@ namespace UI
             mydt.Rows.Add(row);
             dataGridView1.DataSource = mydt;
         }
-
+       
+       
     }
 }
 

@@ -88,6 +88,50 @@ namespace UI
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void UserCheck_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbUsername.Text))
+            {
+                MessageBox.Show("Vui lòng điền tên tài khoản", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            FirebaseResponse res = client.Get(@"Users/" + tbUsername.Text);
+            NekoUser user = res.ResultAs<NekoUser>();
+
+            if (user == null)
+            {
+                MessageBox.Show("Tài không không tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            dbGender.ForeColor = Color.Black;
+            tbPwd.ReadOnly = true;
+            txbUsername.ReadOnly = true;
+            txbUsername.Text = user.Username;
+
+            tbPwd.BorderColorActive = Color.Silver;
+            tbPwd.BorderColorHover = Color.Silver;
+            tbPwd.BorderColorDisabled = Color.Silver;
+            tbPwd.BorderColorIdle = Color.Silver;
+
+            txbUsername.BorderColorActive = Color.Silver;
+            txbUsername.BorderColorHover = Color.Silver;
+            txbUsername.BorderColorDisabled = Color.Silver;
+            txbUsername.BorderColorIdle = Color.Silver;
+
+            tbPwd.Text = user.Password;
+            tbFullname.Text = user.Fullname;
+            tbEmail.Text = user.Email;
+            tbPoint.Text = user.Point.ToString();
+            tbType.Text = user.Position;
+            tbPhone.Text = user.PhoneNumber;
+            tbDate.Text = user.RegistrationDate.ToString();
+            dbGender.Text = user.Gender;
+            txbBirthday.Text = user.Birthday;
+            UserAdd.Enabled = false;
+            UserUpdate.Enabled = true;
+            UserDelete.Enabled = true;
+        }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {

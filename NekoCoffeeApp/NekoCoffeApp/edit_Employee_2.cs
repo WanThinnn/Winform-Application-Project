@@ -65,7 +65,7 @@ namespace UI
         {
             try
             {
-                var data = await client.GetAsync($"/Employees_{this.MasterUsername}/");
+                var data = await client.GetAsync($"/Employees/");
 
                 // Check if data or data.Body is null
                 if (data == null || data.Body == null)
@@ -135,7 +135,7 @@ namespace UI
             {
                 try
                 {
-                    FirebaseResponse emp = await client.GetAsync($"/Employees_{this.MasterUsername}/" + txbIDEmployee.Text);
+                    FirebaseResponse emp = await client.GetAsync($"/Employees/" + txbIDEmployee.Text);
                     NekoEmployee resemp = emp.ResultAs<NekoEmployee>();
 
                     NekoEmployee curemp = new NekoEmployee()
@@ -173,7 +173,7 @@ namespace UI
 
                     };
 
-                    SetResponse set = await client.SetAsync($"/Employees_{this.MasterUsername}/" + txbIDEmployee.Text, newemp);
+                    SetResponse set = await client.SetAsync($"/Employees/" + txbIDEmployee.Text, newemp);
 
                     if (set.StatusCode == System.Net.HttpStatusCode.OK)
                     {
@@ -207,7 +207,7 @@ namespace UI
             {
                 try
                 {
-                    FirebaseResponse emp = await client.GetAsync($"/Employees_{this.MasterUsername}/" + txbIDEmployee.Text);
+                    FirebaseResponse emp = await client.GetAsync($"/Employees/" + txbIDEmployee.Text);
                     NekoEmployee resemp = emp.ResultAs<NekoEmployee>();
 
                     if (resemp == null)
@@ -216,7 +216,7 @@ namespace UI
                         return;
                     }
 
-                    FirebaseResponse deleteResponse = await client.DeleteAsync($"/Employees_{this.MasterUsername}/" + txbIDEmployee.Text);
+                    FirebaseResponse deleteResponse = await client.DeleteAsync($"/Employees/" + txbIDEmployee.Text);
 
                     if (deleteResponse.StatusCode == System.Net.HttpStatusCode.OK)
                     {
@@ -250,7 +250,7 @@ namespace UI
             {
                 try
                 {
-                    FirebaseResponse res = await client.GetAsync($"/Employees_{this.MasterUsername}/" + txbIDEmployee.Text);
+                    FirebaseResponse res = await client.GetAsync($"/Employees/" + txbIDEmployee.Text);
                     if (res.Body == "null")
                     {
                         MessageBox.Show("Nhân viên này không tồn tại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -273,7 +273,7 @@ namespace UI
                     };
 
                     // Tạo mục mới với tên mới
-                    SetResponse up = await client.SetAsync($"/Employees_{this.MasterUsername}/" + txbIDEmployee.Text, updateData);
+                    SetResponse up = await client.SetAsync($"/Employees/" + txbIDEmployee.Text, updateData);
                     if (up.StatusCode == System.Net.HttpStatusCode.OK)
                     {
                         MessageBox.Show("Cập nhật nhân viên thành công!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -328,7 +328,7 @@ namespace UI
                 return;
             }
 
-            FirebaseResponse res = client.Get($"/Employees_{this.MasterUsername}/" + tbIDEmployee.Text);
+            FirebaseResponse res = client.Get($"/Employees/" + tbIDEmployee.Text);
             NekoEmployee emp = res.ResultAs<NekoEmployee>();
 
             if (emp == null)

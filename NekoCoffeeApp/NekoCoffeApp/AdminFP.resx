@@ -118,6 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="AdminEmployeeBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAOoAAAAvCAYAAADtsVZJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC4SURBVHhe7dOxDYAwAMCwvg3X9C/OYC+InQMayYOnzBlr
+        ntczzwfY0/fo+AvAXowKAUaFAKNCgFEhwKgQYFQIMCoEGBUCjAoBRoUAo0KAUSHAqBBgVAgwKgQYFQKM
+        CgFGhQCjQoBRIcCoEGBUCDAqBBgVAowKAUaFAKNCgFEhwKgQYFQIMCoEGBUCjAoBRoUAo0KAUSHAqBBg
+        VAgwKgQYFQKMCgFGhQCjQoBRIWCsedx/AdjDmsf9AgT48GdLJoOHAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="AdminReviewBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOoAAAAvCAYAAADtsVZJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -2826,15 +2835,6 @@
 </value>
   </data>
   <data name="AdminOrderBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAOoAAAAvCAYAAADtsVZJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC4SURBVHhe7dOxDYAwAMCwvg3X9C/OYC+InQMayYOnzBlr
-        ntczzwfY0/fo+AvAXowKAUaFAKNCgFEhwKgQYFQIMCoEGBUCjAoBRoUAo0KAUSHAqBBgVAgwKgQYFQKM
-        CgFGhQCjQoBRIcCoEGBUCDAqBBgVAowKAUaFAKNCgFEhwKgQYFQIMCoEGBUCjAoBRoUAo0KAUSHAqBBg
-        VAgwKgQYFQKMCgFGhQCjQoBRIWCsedx/AdjDmsf9AgT48GdLJoOHAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="AdminEmployeeBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOoAAAAvCAYAAADtsVZJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC4SURBVHhe7dOxDYAwAMCwvg3X9C/OYC+InQMayYOnzBlr

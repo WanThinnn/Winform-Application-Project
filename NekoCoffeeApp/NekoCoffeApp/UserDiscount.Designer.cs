@@ -38,7 +38,7 @@
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.UserViewAllPoint = new System.Windows.Forms.ListView();
+            this.itemsFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -153,19 +153,18 @@
             this.pictureBox16.TabIndex = 96;
             this.pictureBox16.TabStop = false;
             // 
-            // UserViewAllPoint
+            // itemsFlowLayoutPanel
             // 
-            this.UserViewAllPoint.HideSelection = false;
-            this.UserViewAllPoint.Location = new System.Drawing.Point(27, 102);
-            this.UserViewAllPoint.Name = "UserViewAllPoint";
-            this.UserViewAllPoint.Size = new System.Drawing.Size(677, 362);
-            this.UserViewAllPoint.TabIndex = 103;
-            this.UserViewAllPoint.UseCompatibleStateImageBehavior = false;
+            this.itemsFlowLayoutPanel.AutoScroll = true;
+            this.itemsFlowLayoutPanel.Location = new System.Drawing.Point(23, 125);
+            this.itemsFlowLayoutPanel.Name = "itemsFlowLayoutPanel";
+            this.itemsFlowLayoutPanel.Size = new System.Drawing.Size(691, 323);
+            this.itemsFlowLayoutPanel.TabIndex = 103;
             // 
             // UserDiscount
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.UserViewAllPoint);
+            this.Controls.Add(this.itemsFlowLayoutPanel);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox11);
@@ -176,6 +175,7 @@
             this.Controls.Add(this.pictureBox16);
             this.Name = "UserDiscount";
             this.Size = new System.Drawing.Size(731, 484);
+            this.Load += new System.EventHandler(this.AdminItems_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -199,7 +199,7 @@
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.ListView UserViewAllPoint;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private System.Windows.Forms.FlowLayoutPanel itemsFlowLayoutPanel;
     }
 }

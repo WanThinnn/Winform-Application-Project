@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace UI
 {
-    internal class NekoItem
+    public class NekoItem
     {
         public string ID { get; set; }
         public string Name { get; set; }

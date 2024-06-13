@@ -213,7 +213,10 @@ namespace Master_NekoCoffeeApp
                         Position = "KH",
                         RegistrationDate = DateTime.Now, // Gán ngày đăng ký tại đây
                         Point = 0,
-                        Birthday = txbBirthday.Text
+                        Birthday = txbBirthday.Text,
+                        Avatar = '',
+                        Master = '',
+                        hasBooking = "false"
                     };
 
                     SetResponse set = await client.SetAsync("Users/" + txbUsername.Text, user);
@@ -325,7 +328,10 @@ namespace Master_NekoCoffeeApp
                         Position = "KH",
                         RegistrationDate = user.RegistrationDate, // giữ nguyên ngày đăng ký
                         Point = user.Point, // giữ nguyên điểm
-                        Birthday = txbBirthday.Text
+                        Birthday = txbBirthday.Text,
+                        Master = user.Master,
+                        hasBooking = user.hasBooking,
+                        Avatar = user.Avatar,
                     };
 
                     SetResponse up = await client.SetAsync("Users/" + tbUsername.Text, updateData);

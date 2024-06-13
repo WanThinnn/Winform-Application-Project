@@ -1535,3 +1535,6 @@ D:\ProjectAll\testwinformgroup6\Winform-Application-Project\NekoCoffeeApp\NekoCo
 D:\ProjectAll\testwinformgroup6\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\NekoCoff.167EBE38.Up2Date
 D:\ProjectAll\testwinformgroup6\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.exe
 D:\ProjectAll\testwinformgroup6\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.pdb
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.AdminItems.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.GetItems.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.UserGetItem.resources

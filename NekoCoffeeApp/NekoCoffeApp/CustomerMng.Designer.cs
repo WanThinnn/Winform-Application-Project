@@ -1242,6 +1242,7 @@
             this.UserDelete.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.UserDelete.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.UserDelete.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.UserDelete.Enabled = false;
             this.UserDelete.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             this.UserDelete.Font = new System.Drawing.Font("Segoe UI Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserDelete.ForeColor = System.Drawing.Color.White;
@@ -1560,6 +1561,7 @@
             this.UserCheck.TextMarginLeft = 0;
             this.UserCheck.TextPadding = new System.Windows.Forms.Padding(0);
             this.UserCheck.UseDefaultRadiusAndThickness = true;
+            this.UserCheck.Click += new System.EventHandler(this.UserCheck_Click);
             // 
             // CustomerMng
             // 
@@ -1593,9 +1595,10 @@
             this.Controls.Add(this.UserAdd);
             this.Controls.Add(this.tbPwd);
             this.Controls.Add(this.UserCheck);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CustomerMng";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CustomerMng";
+            this.Text = "Quản Lý Khách Hàng";
             this.Load += new System.EventHandler(this.Customer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.UserView)).EndInit();
             this.ResumeLayout(false);
