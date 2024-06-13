@@ -92,7 +92,7 @@
             this.btnSignUp.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnSignUp.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnSignUp.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnSignUp.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignUp.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
             this.btnSignUp.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSignUp.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -233,12 +233,12 @@
             // lbDangNhap
             // 
             this.lbDangNhap.AutoSize = true;
-            this.lbDangNhap.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDangNhap.Font = new System.Drawing.Font("Segoe UI Black", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbDangNhap.Location = new System.Drawing.Point(289, 44);
+            this.lbDangNhap.Location = new System.Drawing.Point(285, 41);
             this.lbDangNhap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDangNhap.Name = "lbDangNhap";
-            this.lbDangNhap.Size = new System.Drawing.Size(101, 29);
+            this.lbDangNhap.Size = new System.Drawing.Size(109, 31);
             this.lbDangNhap.TabIndex = 44;
             this.lbDangNhap.Text = "SIGN UP";
             // 
@@ -256,13 +256,13 @@
             // lkForgotPass
             // 
             this.lkForgotPass.AutoSize = true;
-            this.lkForgotPass.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lkForgotPass.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkForgotPass.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.lkForgotPass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
             this.lkForgotPass.Location = new System.Drawing.Point(332, 148);
             this.lkForgotPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lkForgotPass.Name = "lkForgotPass";
-            this.lkForgotPass.Size = new System.Drawing.Size(169, 18);
+            this.lkForgotPass.Size = new System.Drawing.Size(155, 17);
             this.lkForgotPass.TabIndex = 43;
             this.lkForgotPass.TabStop = true;
             this.lkForgotPass.Text = "Have an account? Login";
@@ -381,13 +381,13 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 10F);
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
             this.linkLabel1.Location = new System.Drawing.Point(307, 73);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(113, 18);
+            this.linkLabel1.Size = new System.Drawing.Size(106, 17);
             this.linkLabel1.TabIndex = 113;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "For MasterUser";

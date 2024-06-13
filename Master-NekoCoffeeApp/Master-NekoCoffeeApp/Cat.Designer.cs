@@ -81,12 +81,12 @@
             this.bunifuLabel5.AllowParentOverrides = false;
             this.bunifuLabel5.AutoEllipsis = false;
             this.bunifuLabel5.CursorType = null;
-            this.bunifuLabel5.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel5.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel5.Location = new System.Drawing.Point(871, 281);
+            this.bunifuLabel5.Location = new System.Drawing.Point(893, 295);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(38, 16);
+            this.bunifuLabel5.Size = new System.Drawing.Size(34, 17);
             this.bunifuLabel5.TabIndex = 150;
             this.bunifuLabel5.Text = "Price:";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -97,12 +97,12 @@
             this.bunifuLabel4.AllowParentOverrides = false;
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel4.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel4.Location = new System.Drawing.Point(871, 217);
+            this.bunifuLabel4.Location = new System.Drawing.Point(891, 229);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(65, 16);
+            this.bunifuLabel4.Size = new System.Drawing.Size(61, 17);
             this.bunifuLabel4.TabIndex = 149;
             this.bunifuLabel4.Text = "Available:";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -113,12 +113,12 @@
             this.bunifuLabel2.AllowParentOverrides = false;
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.CursorType = null;
-            this.bunifuLabel2.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel2.Location = new System.Drawing.Point(870, 150);
+            this.bunifuLabel2.Location = new System.Drawing.Point(891, 162);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(40, 16);
+            this.bunifuLabel2.Size = new System.Drawing.Size(40, 17);
             this.bunifuLabel2.TabIndex = 147;
             this.bunifuLabel2.Text = "Name:";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -130,12 +130,12 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel1.Location = new System.Drawing.Point(870, 90);
+            this.bunifuLabel1.Location = new System.Drawing.Point(891, 98);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(18, 16);
+            this.bunifuLabel1.Size = new System.Drawing.Size(18, 17);
             this.bunifuLabel1.TabIndex = 146;
             this.bunifuLabel1.Text = "ID:";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -170,7 +170,7 @@
             this.btnRefresh.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnRefresh.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnRefresh.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnRefresh.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 8.25F);
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
             this.btnRefresh.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRefresh.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -483,7 +483,7 @@
             this.tbCat_Name.BorderThickness = 1;
             this.tbCat_Name.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.tbCat_Name.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbCat_Name.DefaultFont = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 8F);
+            this.tbCat_Name.DefaultFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCat_Name.DefaultText = "";
             this.tbCat_Name.FillColor = System.Drawing.Color.White;
             this.tbCat_Name.HideSelection = true;
@@ -523,7 +523,7 @@
             this.tbCat_Name.Padding = new System.Windows.Forms.Padding(4);
             this.tbCat_Name.PasswordChar = '\0';
             this.tbCat_Name.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.tbCat_Name.PlaceholderText = "Enter name of Cat to search";
+            this.tbCat_Name.PlaceholderText = "Nhập tên mèo để tìm kiếm";
             this.tbCat_Name.ReadOnly = false;
             this.tbCat_Name.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.tbCat_Name.SelectedText = "";
@@ -537,7 +537,7 @@
             this.tbCat_Name.TextMarginBottom = 0;
             this.tbCat_Name.TextMarginLeft = 3;
             this.tbCat_Name.TextMarginTop = 0;
-            this.tbCat_Name.TextPlaceholder = "Enter name of Cat to search";
+            this.tbCat_Name.TextPlaceholder = "Nhập tên mèo để tìm kiếm";
             this.tbCat_Name.UseSystemPasswordChar = false;
             this.tbCat_Name.WordWrap = true;
             // 
@@ -620,7 +620,7 @@
             this.btnUpdate.BackColor1 = System.Drawing.Color.LightSalmon;
             this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
             this.btnUpdate.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnUpdate.ButtonText = "UPDATE";
+            this.btnUpdate.ButtonText = "SỬA";
             this.btnUpdate.ButtonTextMarginLeft = 0;
             this.btnUpdate.ColorContrastOnClick = 45;
             this.btnUpdate.ColorContrastOnHover = 45;
@@ -635,7 +635,7 @@
             this.btnUpdate.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnUpdate.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnUpdate.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnUpdate.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 8.25F);
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUpdate.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -711,7 +711,7 @@
             this.btnDelete.BackColor1 = System.Drawing.Color.LightSalmon;
             this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
             this.btnDelete.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDelete.ButtonText = "DELETE";
+            this.btnDelete.ButtonText = "XOÁ";
             this.btnDelete.ButtonTextMarginLeft = 0;
             this.btnDelete.ColorContrastOnClick = 45;
             this.btnDelete.ColorContrastOnHover = 45;
@@ -726,7 +726,7 @@
             this.btnDelete.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnDelete.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnDelete.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnDelete.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 8.25F);
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDelete.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -802,7 +802,7 @@
             this.btnAdd.BackColor1 = System.Drawing.Color.LightSalmon;
             this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
             this.btnAdd.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnAdd.ButtonText = "ADD";
+            this.btnAdd.ButtonText = "THÊM";
             this.btnAdd.ButtonTextMarginLeft = 0;
             this.btnAdd.ColorContrastOnClick = 45;
             this.btnAdd.ColorContrastOnHover = 45;
@@ -817,7 +817,7 @@
             this.btnAdd.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnAdd.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnAdd.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnAdd.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 8.25F);
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdd.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -983,7 +983,7 @@
             this.btnCheck.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnCheck.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnCheck.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnCheck.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 8.25F);
+            this.btnCheck.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheck.ForeColor = System.Drawing.Color.White;
             this.btnCheck.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCheck.IconLeftCursor = System.Windows.Forms.Cursors.Default;
