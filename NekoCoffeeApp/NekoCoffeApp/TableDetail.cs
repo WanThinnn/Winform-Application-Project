@@ -61,11 +61,11 @@ namespace UI
             try
             {
                 FirebaseResponse response = await client.GetAsync($"TableDetails/{_table.ID}");
-                if (response.Body == "null")
+                /*if (response.Body == "null")
                 {
                     MessageBox.Show($"Không tìm thấy chi tiết cho Bàn {_table.ID}.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
-                }
+                }*/
 
                 string jsonData = response.Body;
                 List<NekoTableDetail> tableDetails;

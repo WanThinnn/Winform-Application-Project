@@ -119,9 +119,17 @@ namespace UI
                     btn.Size = new Size(109, 109); // Thiết lập kích thước
 
                     var bookingData = await tbl.GetAsync($"Tables/{table.ID}/Bookings");
-                    bool hasBookings = bookingData != null && bookingData.Body != null;
+                    bool hasBookings;
+                    if (bookingData == null)
+                    {
+                        hasBookings = false;
+                    }
+                    else
+                    {
+                        hasBookings = true;
+                    }
 
-                    if (table.Status == "Booked" && hasBookings)
+                    if (table.Status == "Booked" && hasBookings) 
                     {
                         btn.BackColor = Color.DeepSkyBlue; // Dark blue if booking details are present
                     }
