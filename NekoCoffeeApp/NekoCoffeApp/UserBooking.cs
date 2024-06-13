@@ -50,7 +50,7 @@ namespace UI
             LoadTables();
         }
 
-        private async void LoadTables()
+        private void LoadTables()
         {
             if (client == null)
             {
@@ -60,7 +60,7 @@ namespace UI
 
             try
             {
-                var response = await client.GetAsync("Tables");
+                var response =  client.Get("Tables");
 
                 if (response == null || response.Body == null)
                 {
@@ -92,16 +92,13 @@ namespace UI
                         Button btn = new Button();
                         btn.Size = new Size(109, 109);
 
-                        var bookingData = await client.GetAsync($"Tables/{table.ID}/Bookings");
+                        var bookingData = client.Get($"Tables/{table.ID}/Bookings");
                         bool hasBookings = bookingData != null && bookingData.Body != null;
 
                         if (table.Status == "Booked")
                         {
                             btn.BackColor = Color.Gray;
-                        }
-                        else if (hasBookings)
-                        {
-                            btn.BackColor = Color.DarkBlue; // Dark blue if booking details are present
+                            btn.Enabled = false;
                         }
                         else
                         {
@@ -148,6 +145,8 @@ namespace UI
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     table.Status = "Booked";
+                    GlobalVars.CurrentTable = table;
+                   
                     SetResponse updateResponse = await client.SetAsync($"Tables/{table.ID}/Status", "Booked");
 
                     if (updateResponse.StatusCode == System.Net.HttpStatusCode.OK)
@@ -196,6 +195,11 @@ namespace UI
             {
                 MessageBox.Show($"Lỗi khi cập nhật trạng thái bàn: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Table_flowLayoutPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

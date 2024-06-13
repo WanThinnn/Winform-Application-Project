@@ -41,6 +41,7 @@
             this.Table_flowLayoutPanel.Name = "Table_flowLayoutPanel";
             this.Table_flowLayoutPanel.Size = new System.Drawing.Size(647, 341);
             this.Table_flowLayoutPanel.TabIndex = 33;
+            this.Table_flowLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Table_flowLayoutPanel_Paint);
             // 
             // bunifuLabel1
             // 
@@ -52,7 +53,7 @@
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(99, 30);
+            this.bunifuLabel1.Size = new System.Drawing.Size(708, 199);
             this.bunifuLabel1.TabIndex = 52;
             this.bunifuLabel1.Text = "ĐẶT BÀN";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;

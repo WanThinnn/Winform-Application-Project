@@ -32,7 +32,7 @@ namespace UI
         };
 
         private List<NekoCartItem> cartItems = new List<NekoCartItem>();
-        private NekoTable selectedTable;
+        private NekoTable selectedTable = GlobalVars.CurrentTable;
 
         public UserCart()
         {

@@ -71,7 +71,7 @@ namespace UI
                 UserBooking.Instance.BringToFront();
             }
             else
-                UserPoint.Instance.BringToFront();
+                UserBooking.Instance.BringToFront();
         }
 
         private void btnPoint_Click(object sender, EventArgs e)
