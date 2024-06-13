@@ -54,21 +54,16 @@ namespace UI
             LoadTableDetails();
         }
 
-       
+
 
         private async void LoadTableDetails()
         {
             try
             {
                 FirebaseResponse response = await client.GetAsync($"TableDetails/{_table.ID}");
-                /*if (response.Body == "null")
-                {
-                    MessageBox.Show($"Không tìm thấy chi tiết cho Bàn {_table.ID}.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }*/
-
                 string jsonData = response.Body;
-                List<NekoTableDetail> tableDetails;
+
+                List<NekoTableDetail> tableDetails = new List<NekoTableDetail>();
 
                 if (jsonData.StartsWith("["))
                 {
@@ -77,8 +72,14 @@ namespace UI
                 else
                 {
                     var detailsDict = JsonConvert.DeserializeObject<Dictionary<string, NekoTableDetail>>(jsonData);
-                    tableDetails = detailsDict.Values.ToList();
+                    if (detailsDict != null)
+                    {
+                        tableDetails = detailsDict.Values.ToList();
+                    }
                 }
+
+                // Kiểm tra nếu tableDetails vẫn rỗng
+                
 
                 foreach (var detail in tableDetails)
                 {
@@ -95,6 +96,7 @@ namespace UI
                 MessageBox.Show($"Lỗi khi tải chi tiết bàn: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private async void TableDetail_Load(object sender, EventArgs e)
         {
@@ -356,6 +358,7 @@ namespace UI
 
                 FirebaseResponse resp1 = await client.GetAsync("Counter/node");
                 var currentBillCount = JsonConvert.DeserializeObject<CountClass>(resp1.Body).count;
+                var nextBillCount = int.Parse(currentBillCount) + 1; // Correctly increment the bill count
                 var paymentTime = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss");
 
                 var tableDetailsDict = new Dictionary<string, NekoTableDetail>();
@@ -372,7 +375,7 @@ namespace UI
 
                 var bill = new Bills
                 {
-                    billId = (currentBillCount + 1).ToString(),
+                    billId = nextBillCount.ToString(), // Use the correctly incremented bill count
                     tableId = _table.ID,
                     Total = total,
                     Details = tableDetailsDict.Values.ToList(),
@@ -389,7 +392,7 @@ namespace UI
                             SetResponse response = await client.SetAsync($"Bills/{bill.billId}", bill);
                             if (response.StatusCode == System.Net.HttpStatusCode.OK)
                             {
-                                var updateCount = new CountClass { count = (currentBillCount + 1).ToString() };
+                                var updateCount = new CountClass { count = nextBillCount.ToString() };
                                 await client.SetAsync("Counter/node", updateCount);
                                 await client.DeleteAsync($"TableDetails/{_table.ID}");
                                 mydt.Rows.Clear();
@@ -410,6 +413,7 @@ namespace UI
                 MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
