@@ -233,7 +233,7 @@ namespace UI
                     {
                         if (pictureUrl.Contains("=s"))
                         {
-                            pictureUrl = Regex.Replace(pictureUrl, @"=s\d+", "=s200");
+                            pictureUrl = Regex.Replace(pictureUrl, @"=s\d+", "=s300");
                         }
                         else
                         {
