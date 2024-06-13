@@ -104,7 +104,14 @@ namespace UI
 
                         btn.Text = $"ID: {table.ID}\nTên: {table.Name}\nTrạng thái: {table.Status}";
 
-                        btn.Click += (s, args) => BookingTable(table);
+                        var tempTable = table; // Sử dụng biến tạm thời để giữ giá trị của table
+
+                        btn.Click += (s, args) =>
+                        {
+                            GlobalVars.CurrentTable = tempTable;
+                            BookingTable(GlobalVars.CurrentTable);
+                        };
+
                         Table_flowLayoutPanel.Controls.Add(btn);
                     }
                 }
@@ -121,6 +128,12 @@ namespace UI
 
         private async void BookingTable(NekoTable table)
         {
+            if (table == null)
+            {
+                MessageBox.Show("Bàn được truyền vào là null.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (GlobalVars.CurrentUser == null)
             {
                 MessageBox.Show("Bạn cần đăng nhập để đặt bàn!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -132,7 +145,7 @@ namespace UI
             {
                 return;
             }
-            // Truy vấn tất cả các bàn từ Firebase
+
             var response = await client.GetAsync("Tables");
 
             if (response == null || response.Body == null)
@@ -147,7 +160,6 @@ namespace UI
                 return;
             }
 
-            // Tạo đối tượng booking
             var booking = new Booking
             {
                 Username = GlobalVars.CurrentUser.Username,

@@ -71,7 +71,7 @@
             this.bunifuPanel1.Controls.Add(this.comboBox1);
             this.bunifuPanel1.ForeColor = System.Drawing.Color.LightSalmon;
             this.bunifuPanel1.Location = new System.Drawing.Point(468, 5);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(283, 479);
@@ -85,7 +85,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(12, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 18);
+            this.label2.Size = new System.Drawing.Size(79, 22);
             this.label2.TabIndex = 10;
             this.label2.Text = "Số lượng";
             // 
@@ -97,7 +97,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 18);
+            this.label1.Size = new System.Drawing.Size(81, 22);
             this.label1.TabIndex = 9;
             this.label1.Text = "Tên món:";
             // 
@@ -149,7 +149,7 @@
             this.TableDetailsPayment.IdleIconRightImage = null;
             this.TableDetailsPayment.IndicateFocus = false;
             this.TableDetailsPayment.Location = new System.Drawing.Point(15, 249);
-            this.TableDetailsPayment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TableDetailsPayment.Margin = new System.Windows.Forms.Padding(4);
             this.TableDetailsPayment.Name = "TableDetailsPayment";
             this.TableDetailsPayment.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.TableDetailsPayment.OnDisabledState.BorderRadius = 35;
@@ -241,7 +241,7 @@
             this.TableDetailsView.IdleIconRightImage = null;
             this.TableDetailsView.IndicateFocus = false;
             this.TableDetailsView.Location = new System.Drawing.Point(15, 199);
-            this.TableDetailsView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TableDetailsView.Margin = new System.Windows.Forms.Padding(4);
             this.TableDetailsView.Name = "TableDetailsView";
             this.TableDetailsView.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.TableDetailsView.OnDisabledState.BorderRadius = 35;
@@ -333,7 +333,7 @@
             this.TableDetailsAdd.IdleIconRightImage = null;
             this.TableDetailsAdd.IndicateFocus = false;
             this.TableDetailsAdd.Location = new System.Drawing.Point(147, 150);
-            this.TableDetailsAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TableDetailsAdd.Margin = new System.Windows.Forms.Padding(4);
             this.TableDetailsAdd.Name = "TableDetailsAdd";
             this.TableDetailsAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.TableDetailsAdd.OnDisabledState.BorderRadius = 35;
@@ -425,7 +425,7 @@
             this.TableDetailsDelete.IdleIconRightImage = null;
             this.TableDetailsDelete.IndicateFocus = false;
             this.TableDetailsDelete.Location = new System.Drawing.Point(15, 150);
-            this.TableDetailsDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TableDetailsDelete.Margin = new System.Windows.Forms.Padding(4);
             this.TableDetailsDelete.Name = "TableDetailsDelete";
             this.TableDetailsDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.TableDetailsDelete.OnDisabledState.BorderRadius = 35;
@@ -472,7 +472,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(16, 108);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(160, 22);
             this.numericUpDown1.TabIndex = 2;
@@ -481,7 +481,7 @@
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(16, 434);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(255, 24);
             this.comboBox2.TabIndex = 1;
@@ -491,7 +491,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(15, 43);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(256, 24);
             this.comboBox1.TabIndex = 0;
@@ -548,7 +548,7 @@
             this.dataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
             this.dataGridView1.HeaderForeColor = System.Drawing.Color.White;
             this.dataGridView1.Location = new System.Drawing.Point(4, 5);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -562,8 +562,8 @@
             // 
             // TableDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(753, 489);
             this.Controls.Add(this.dataGridView1);
