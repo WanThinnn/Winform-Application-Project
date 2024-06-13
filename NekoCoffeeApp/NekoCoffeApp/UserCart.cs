@@ -113,7 +113,7 @@ namespace UI
             {
                 Panel panel = new Panel();
                 panel.Size = new Size(200, 50);
-                panel.BorderStyle = BorderStyle.FixedSingle ;
+                panel.BorderStyle = BorderStyle.FixedSingle;
 
                 Label nameLabel = new Label();
                 nameLabel.Text = item.DrinkName;
@@ -148,11 +148,22 @@ namespace UI
         {
             if (selectedTable != null)
             {
-                foreach (var item in cartItems)
+                DialogResult confirmResult = MessageBox.Show("Bạn có chắc chắn muốn thêm các mặt hàng này vào bàn?", "Xác nhận mua hàng", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (confirmResult == DialogResult.Yes)
                 {
-                    await AddItemToTableDetail(item.DrinkName, item.Quantity, item.Price);
-                    
+                    foreach (var item in cartItems)
+                    {
+                        await AddItemToTableDetail(item.DrinkName, item.Quantity, item.Price);
+                    }
+
+                    cartItems.Clear();
+                    RefreshCartUI();
                 }
+            }
+            else
+            {
+                MessageBox.Show("Chưa chọn bàn để thêm mặt hàng.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             cartItems.Clear();
             RefreshCartUI();
@@ -199,6 +210,7 @@ namespace UI
                 return false;
             }
         }
+
 
         private void btnPay_Click(object sender, EventArgs e)
         {
