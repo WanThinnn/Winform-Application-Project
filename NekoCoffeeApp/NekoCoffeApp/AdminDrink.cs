@@ -303,8 +303,6 @@ namespace UI
                     AdminFillDrinkPrice.Clear();
                     AdminFillDrinkSearch.Clear();
                     AdminFillDrinkType.Clear();
-                    pictureBox.Image = null;
-
                     MessageBox.Show($"Sửa thành công nước {AdminFillDrinkID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else { return; }
