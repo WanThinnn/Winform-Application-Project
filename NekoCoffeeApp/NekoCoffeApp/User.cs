@@ -160,8 +160,8 @@ namespace UI
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Lỗi khi tải ảnh: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    AdminUserImg.Image = null; // Clear PictureBox if loading fails
+                    /*MessageBox.Show($"Lỗi khi tải ảnh: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    AdminUserImg.Image = null; // Clear PictureBox if loading fails*/
                 }
             }
 
