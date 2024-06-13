@@ -107,7 +107,7 @@ namespace UI
                     // Create a new panel for each drink
                     Panel panel = new Panel();
                     panel.Size = new Size(200, 180); // Adjust the size of the Panel
-                    panel.BorderStyle = BorderStyle.FixedSingle;
+                    //panel.BorderStyle = BorderStyle.FixedSingle;
 
                     // Create a PictureBox to display the drink's image
                     PictureBox pictureBox = new PictureBox();

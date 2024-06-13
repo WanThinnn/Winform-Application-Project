@@ -98,10 +98,7 @@ namespace UI
                         if (table.Status != null && table.Status == "Booked")
                         {
                             btn.BackColor = Color.Gray;
-                        }
-                        else if (hasBookings)
-                        {
-                            btn.BackColor = Color.DarkBlue; // Màu xanh đậm nếu có thông tin đặt bàn
+                            btn.Enabled = false;
                         }
                         else
                         {
