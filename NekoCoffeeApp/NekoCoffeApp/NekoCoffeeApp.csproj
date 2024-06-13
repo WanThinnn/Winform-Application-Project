@@ -581,6 +581,7 @@
     <Compile Include="TableMng.Designer.cs">
       <DependentUpon>TableMng.cs</DependentUpon>
     </Compile>
+    <Compile Include="TakeUserName.cs" />
     <Compile Include="UserAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>

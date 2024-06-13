@@ -209,7 +209,7 @@ namespace UI
 
         private async void checkprogress()
         {
-            int book = 0, avai = 0;
+            int use = 0, avai = 0, max = 0;
             if (client == null)
             {
                 MessageBox.Show("Tham chiếu bảng là null.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -252,18 +252,22 @@ namespace UI
                     Button btn = new Button();
                     btn.Size = new Size(109, 109); // Thiết lập kích thước
 
-                    if (table.Status != null && table.Status == "Booked")
+                    if (table.Status != null && table.Status == "Using")
                     {
-                        book++;
+                        use++;
                     }
-                    else
+                    else if (table.Status != null && table.Status == "Available")
                     {
                         avai++;
                     }
-                    AdminBillCircle.Maximum = avai + book;
-                    AdminTableCircle.Maximum = avai + book;
+                    if (table.Status != null)
+                    {
+                        max++;
+                    }
+                    AdminBillCircle.Maximum = max;
+                    AdminTableCircle.Maximum = max;
                     AdminTableCircle.Value = avai;
-                    AdminBillCircle.Value = book;
+                    AdminBillCircle.Value = use;
                 }
             }
             else

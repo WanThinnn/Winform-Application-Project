@@ -2,11 +2,13 @@
 using FireSharp.Interfaces;
 using FireSharp.Response;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
+using System.Windows.Markup;
 
 namespace UI
 {
@@ -224,7 +226,7 @@ namespace UI
                 if (response1.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     MessageBox.Show("Đã thêm món thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    _table.Status = "Booked";
+                    _table.Status = "Using";
                     await client.SetAsync($"Tables/{_table.ID}/Status", _table.Status);
                     DataRow row = mydt.NewRow();
                     row["Tên Món"] = selectedItem;
@@ -349,7 +351,24 @@ namespace UI
                     MessageBox.Show("Không có món nào trong danh sách để thanh toán.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
+                FirebaseResponse resp2 = await client.GetAsync($"Tables/{_table.ID}/Bookings");
 
+                if (resp2.Body != null)
+                {
+                    // Kiểm tra nội dung phản hồi
+                    string jsonResponse = resp2.Body;
+                    var bookingsDict = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, object>>(jsonResponse);
+
+                    if (bookingsDict != null && bookingsDict.Count > 0)
+                    {
+                        // Lấy khóa đầu tiên
+                        string firstKey = bookingsDict.Keys.FirstOrDefault();
+                        string path = "Users/" + firstKey + "/hasBooking";
+                        string value = "false";
+                        SetResponse response = await client.SetAsync(path, value);
+                    }
+
+                }
                 int total = 0;
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
@@ -397,6 +416,8 @@ namespace UI
                                 await client.DeleteAsync($"TableDetails/{_table.ID}");
                                 mydt.Rows.Clear();
                                 _table.Status = "Available";
+                                
+                                await client.DeleteAsync($"Tables/{_table.ID}/Bookings");
                                 await client.SetAsync($"Tables/{_table.ID}/Status", _table.Status);
                                 MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
