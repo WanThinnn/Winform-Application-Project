@@ -1348,3 +1348,9 @@ C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.PeopleService.v1.dll
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.PeopleService.v1.pdb
 C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.PeopleService.v1.xml
+C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Backup\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.PeopleService.v1.dll
+C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Backup\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.PeopleService.v1.pdb
+C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Backup\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\bin\Debug\Google.Apis.PeopleService.v1.xml
+C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Backup\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.DrinkMng.resources
+C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Backup\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.ProductMng.resources
+C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Backup\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.TableMng.resources

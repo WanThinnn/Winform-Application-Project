@@ -134,6 +134,30 @@ namespace UI
             }
             else
                 AdminMenu.Instance.BringToFront();
+            if (GlobalVars.CurrentUser != null)
+            {
+                string fullName = GlobalVars.CurrentUser.Fullname;
+                if (!string.IsNullOrWhiteSpace(fullName))
+                {
+                    // Tách chuỗi thành các từ và lấy từ cuối cùng
+                    string[] nameParts = fullName.Split(' ');
+                    string lastName = nameParts.Last();
+                    AdminUser.Text = lastName;
+                }
+                else
+                {
+                    AdminUser.Text = string.Empty; // Xử lý trường hợp Fullname rỗng hoặc null
+                }
+                try
+                {
+                    AdminUserImg.Load(GlobalVars.CurrentUser.Avatar);
+                }
+                catch (Exception ex)
+                {
+                    /*MessageBox.Show($"Lỗi khi tải ảnh: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    AdminUserImg.Image = null; // Clear PictureBox if loading fails*/
+                }
+            }
         }
 
         private void AdminFP_FormClosing(object sender, FormClosingEventArgs e)
@@ -144,6 +168,18 @@ namespace UI
             {
                 e.Cancel = true; // Hủy quá trình đóng form
             }
+        }
+
+        private void AdminUser_Click(object sender, EventArgs e)
+        {
+            if (!AdminMainPanel.Controls.Contains(UserAccount.Instance))
+            {
+                AdminMainPanel.Controls.Add(UserAccount.Instance);
+                UserAccount.Instance.Dock = DockStyle.Fill;
+                UserAccount.Instance.BringToFront();
+            }
+            else
+                UserAccount.Instance.BringToFront();
         }
     }
 

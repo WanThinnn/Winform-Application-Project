@@ -127,7 +127,11 @@ namespace UI
                 return;
             }
 
-
+            DialogResult result = MessageBox.Show($"Xác nhận đặt bàn {table.ID}?", "Thông tin", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (result == DialogResult.Cancel)
+            {
+                return;
+            }
             // Truy vấn tất cả các bàn từ Firebase
             var response = await client.GetAsync("Tables");
 
