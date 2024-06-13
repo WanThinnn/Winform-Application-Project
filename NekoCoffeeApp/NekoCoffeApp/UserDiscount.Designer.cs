@@ -77,9 +77,9 @@
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(139, 30);
+            this.bunifuLabel1.Size = new System.Drawing.Size(143, 36);
             this.bunifuLabel1.TabIndex = 53;
-            this.bunifuLabel1.Text = "KHUYẾN MÃI";
+            this.bunifuLabel1.Text = "QUÀ TẶNG";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 

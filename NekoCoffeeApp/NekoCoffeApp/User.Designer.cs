@@ -316,7 +316,7 @@
             this.lbCart.Location = new System.Drawing.Point(81, 103);
             this.lbCart.Name = "lbCart";
             this.lbCart.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbCart.Size = new System.Drawing.Size(65, 20);
+            this.lbCart.Size = new System.Drawing.Size(84, 25);
             this.lbCart.TabIndex = 44;
             this.lbCart.Text = "Giỏ hàng";
             this.lbCart.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -519,7 +519,7 @@
             this.btnDiscount.BackColor1 = System.Drawing.Color.LightSalmon;
             this.btnDiscount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDiscount.BackgroundImage")));
             this.btnDiscount.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDiscount.ButtonText = "KHUYẾN MÃI";
+            this.btnDiscount.ButtonText = "QUÀ TẶNG";
             this.btnDiscount.ButtonTextMarginLeft = 0;
             this.btnDiscount.ColorContrastOnClick = 45;
             this.btnDiscount.ColorContrastOnHover = 45;
