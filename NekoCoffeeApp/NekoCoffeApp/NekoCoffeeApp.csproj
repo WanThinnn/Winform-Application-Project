@@ -484,6 +484,12 @@
     <Compile Include="CustomerMng.Designer.cs">
       <DependentUpon>CustomerMng.cs</DependentUpon>
     </Compile>
+    <Compile Include="DrinkMng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrinkMng.Designer.cs">
+      <DependentUpon>DrinkMng.cs</DependentUpon>
+    </Compile>
     <Compile Include="edit_Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -545,11 +551,18 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="NekoItem.cs" />
     <Compile Include="NekoRating.cs" />
     <Compile Include="NekoShift.cs" />
     <Compile Include="NekoTable.cs" />
     <Compile Include="NekoTableDetail.cs" />
     <Compile Include="NekoUser.cs" />
+    <Compile Include="ProductMng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductMng.Designer.cs">
+      <DependentUpon>ProductMng.cs</DependentUpon>
+    </Compile>
     <Compile Include="RatingStar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -561,6 +574,12 @@
     </Compile>
     <Compile Include="TableDetail.Designer.cs">
       <DependentUpon>TableDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableMng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableMng.Designer.cs">
+      <DependentUpon>TableMng.cs</DependentUpon>
     </Compile>
     <Compile Include="UserAccount.cs">
       <SubType>UserControl</SubType>
@@ -674,6 +693,9 @@
     <EmbeddedResource Include="CustomerMng.resx">
       <DependentUpon>CustomerMng.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DrinkMng.resx">
+      <DependentUpon>DrinkMng.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="edit_Customer.resx">
       <DependentUpon>edit_Customer.cs</DependentUpon>
     </EmbeddedResource>
@@ -701,6 +723,9 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProductMng.resx">
+      <DependentUpon>ProductMng.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -719,6 +744,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TableDetail.resx">
       <DependentUpon>TableDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableMng.resx">
+      <DependentUpon>TableMng.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>

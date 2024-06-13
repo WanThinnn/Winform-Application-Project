@@ -41,7 +41,8 @@ namespace UI
 
         private void AdminAdjustProduct_Click(object sender, EventArgs e)
         {
-
+            ProductMng form1 = new ProductMng();
+            form1.Show();
         }
 
         private void AdminAdjustEmployee_Click(object sender, EventArgs e)
@@ -53,6 +54,18 @@ namespace UI
         private void AdminAdjustCat_Click(object sender, EventArgs e)
         {
             CatMng form1 = new CatMng();
+            form1.Show();
+        }
+
+        private void AdminAdjustTable_Click(object sender, EventArgs e)
+        {
+            TableMng form1 = new TableMng();
+            form1.Show();
+        }
+
+        private void AdminAdjustDrink_Click(object sender, EventArgs e)
+        {
+            DrinkMng form1 = new DrinkMng();
             form1.Show();
         }
     }

@@ -1342,3 +1342,6 @@ C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Backup\Winform-Application-
 C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Backup\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\NekoCoff.167EBE38.Up2Date
 C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Backup\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.exe
 C:\MyData\UIT\Semester_4\Lập trình Mạng\Winform-Backup\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.pdb
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.TableMng.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.DrinkMng.resources
+C:\Drive\code\N2\LT Mang\Winform-Application-Project\NekoCoffeeApp\NekoCoffeApp\obj\Debug\UI.ProductMng.resources

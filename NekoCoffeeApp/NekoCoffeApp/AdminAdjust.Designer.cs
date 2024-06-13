@@ -408,6 +408,7 @@
             this.AdminAdjustTable.TextMarginLeft = 0;
             this.AdminAdjustTable.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminAdjustTable.UseDefaultRadiusAndThickness = true;
+            this.AdminAdjustTable.Click += new System.EventHandler(this.AdminAdjustTable_Click);
             // 
             // AdminAdjustDrink
             // 
@@ -497,6 +498,7 @@
             this.AdminAdjustDrink.TextMarginLeft = 0;
             this.AdminAdjustDrink.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminAdjustDrink.UseDefaultRadiusAndThickness = true;
+            this.AdminAdjustDrink.Click += new System.EventHandler(this.AdminAdjustDrink_Click);
             // 
             // AdminAdjustProduct
             // 
