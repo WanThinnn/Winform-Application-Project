@@ -567,7 +567,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChangePwd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ChangePwd";
+            this.Text = "Quên Mật Khẩu";
             this.Load += new System.EventHandler(this.ChangePwd_Load);
             this.TextChanged += new System.EventHandler(this.txbNewPwd_TextChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();

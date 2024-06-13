@@ -347,13 +347,13 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 10F);
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
             this.linkLabel1.Location = new System.Drawing.Point(330, 66);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(113, 18);
+            this.linkLabel1.Size = new System.Drawing.Size(106, 17);
             this.linkLabel1.TabIndex = 112;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "For MasterUser";
@@ -372,7 +372,7 @@
             this.btnSignUp.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
             this.btnSignUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSignUp.BackgroundImage")));
             this.btnSignUp.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnSignUp.ButtonText = "Sign Up";
+            this.btnSignUp.ButtonText = "Đăng ký";
             this.btnSignUp.ButtonTextMarginLeft = 0;
             this.btnSignUp.ColorContrastOnClick = 45;
             this.btnSignUp.ColorContrastOnHover = 45;
@@ -387,7 +387,7 @@
             this.btnSignUp.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnSignUp.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnSignUp.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnSignUp.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignUp.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
             this.btnSignUp.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSignUp.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -464,7 +464,7 @@
             this.btnLogin.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(225)))));
             this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
             this.btnLogin.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnLogin.ButtonText = "Login";
+            this.btnLogin.ButtonText = "Đăng nhập";
             this.btnLogin.ButtonTextMarginLeft = 0;
             this.btnLogin.ColorContrastOnClick = 45;
             this.btnLogin.ColorContrastOnHover = 45;
@@ -479,7 +479,7 @@
             this.btnLogin.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnLogin.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnLogin.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnLogin.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
             this.btnLogin.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogin.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -548,26 +548,26 @@
             this.lkForgotPass.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkForgotPass.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.lkForgotPass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
-            this.lkForgotPass.Location = new System.Drawing.Point(338, 182);
+            this.lkForgotPass.Location = new System.Drawing.Point(387, 182);
             this.lkForgotPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lkForgotPass.Name = "lkForgotPass";
-            this.lkForgotPass.Size = new System.Drawing.Size(166, 18);
+            this.lkForgotPass.Size = new System.Drawing.Size(117, 18);
             this.lkForgotPass.TabIndex = 115;
             this.lkForgotPass.TabStop = true;
-            this.lkForgotPass.Text = "Forgot your password?";
+            this.lkForgotPass.Text = "Quên mật khẩu?";
             this.lkForgotPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkForgotPass_LinkClicked);
             // 
             // lbDangNhap
             // 
             this.lbDangNhap.AutoSize = true;
-            this.lbDangNhap.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDangNhap.Font = new System.Drawing.Font("Segoe UI Black", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lbDangNhap.Location = new System.Drawing.Point(307, 37);
+            this.lbDangNhap.Location = new System.Drawing.Point(307, 35);
             this.lbDangNhap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDangNhap.Name = "lbDangNhap";
-            this.lbDangNhap.Size = new System.Drawing.Size(82, 29);
+            this.lbDangNhap.Size = new System.Drawing.Size(159, 31);
             this.lbDangNhap.TabIndex = 116;
-            this.lbDangNhap.Text = "LOGIN";
+            this.lbDangNhap.Text = "ĐĂNG NHẬP";
             // 
             // formLogin
             // 
@@ -595,7 +595,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "Đăng Nhập";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formLogin_FormClosing);
             this.Load += new System.EventHandler(this.formLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
