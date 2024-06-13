@@ -60,7 +60,7 @@ namespace UI
 
             try
             {
-                var response =  client.Get("Tables");
+                var response = client.Get("Tables");
 
                 if (response == null || response.Body == null)
                 {
@@ -80,7 +80,7 @@ namespace UI
                         return;
                     }
 
-                    Table_flowLayoutPanel.Controls.Clear(); 
+                    Table_flowLayoutPanel.Controls.Clear();
 
                     foreach (var table in tableList)
                     {
@@ -91,9 +91,6 @@ namespace UI
 
                         Button btn = new Button();
                         btn.Size = new Size(109, 109);
-
-                        var bookingData = client.Get($"Tables/{table.ID}/Bookings");
-                        bool hasBookings = bookingData != null && bookingData.Body != null;
 
                         if (table.Status == "Booked" || table.Status == "Using")
                         {
@@ -130,6 +127,23 @@ namespace UI
                 return;
             }
 
+
+            // Truy vấn tất cả các bàn từ Firebase
+            var response = await client.GetAsync("Tables");
+
+            if (response == null || response.Body == null)
+            {
+                MessageBox.Show("Không có dữ liệu từ Firebase.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (GlobalVars.CurrentTable != null)
+            {
+                MessageBox.Show("Bạn đã đặt bàn rồi, không thể đặt thêm bàn.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Tạo đối tượng booking
             var booking = new Booking
             {
                 Username = GlobalVars.CurrentUser.Username,
@@ -140,14 +154,13 @@ namespace UI
 
             try
             {
-                PushResponse response = await client.PushAsync($"Tables/{table.ID}/Bookings", booking);
+                PushResponse pushResponse = await client.PushAsync($"Tables/{table.ID}/Bookings", GlobalVars.CurrentUser.Username);
 
-                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                if (pushResponse.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    table.Status = "Using";
+                    table.Status = "Booked";
                     GlobalVars.CurrentTable = table;
-                   
-                    SetResponse updateResponse = await client.SetAsync($"Tables/{table.ID}/Status", "Using");
+                    SetResponse updateResponse = await client.SetAsync($"Tables/{table.ID}/Status", "Booked");
 
                     if (updateResponse.StatusCode == System.Net.HttpStatusCode.OK)
                     {
@@ -169,6 +182,7 @@ namespace UI
                 MessageBox.Show($"Lỗi khi đặt bàn: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private async Task UpdateTableStatus(string tableId, string status)
         {
