@@ -147,11 +147,11 @@ namespace UI
 /*                    var bookingData = await tbl.GetAsync($"Tables/{table.ID}/Bookings");
                     bool hasBookings = bookingData != null && bookingData.Body != null;*/
 
-                    if (table.Status == "Booked")
+                    if (table.Status == "Using")
                     {
                         btn.BackColor = Color.Gray; // Dark blue if booking details are present
                     }
-                    else if (table.Status == "Using")
+                    else if (table.Status == "Booked")
                     {
                         btn.BackColor = Color.DeepSkyBlue; // Gray if status is booked but no booking details
                     }
