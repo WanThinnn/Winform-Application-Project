@@ -90,5 +90,11 @@ namespace Master_NekoCoffeeApp
             Drinks frm = new Drinks(this.Username);
             frm.Show();
         }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            Items frm = new Items(this.Username);
+            frm.Show();
+        }
     }
 }
