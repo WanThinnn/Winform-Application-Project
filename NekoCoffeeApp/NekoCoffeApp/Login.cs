@@ -14,6 +14,7 @@ using Google.Apis.Services;
 using Google.Apis.Oauth2.v2.Data;
 using Newtonsoft.Json.Linq;
 using System.Net.Http;
+using System.Text.RegularExpressions;
 
 namespace UI
 {
@@ -149,35 +150,30 @@ namespace UI
                     return false;
                 }
 
-                var oauth2Service = new Oauth2Service(new BaseClientService.Initializer()
-                {
-                    HttpClientInitializer = credential,
-                    ApplicationName = ApplicationName,
-                });
+                var userInfo = await GetUserInfo(credential.Token.AccessToken);
+                var avatarUrl = await GetAvatarUrl(credential.Token.AccessToken);
+                var birthday = await GetUserBirthday(credential.Token.AccessToken);
 
-                var userInfoRequest = oauth2Service.Userinfo.Get();
-                var userInfo = await userInfoRequest.ExecuteAsync();
-
-                string avatarUrl = await GetAvatarUrl(credential.Token.AccessToken);
-
-                FirebaseResponse response = await client.GetAsync("Users/" + userInfo.Id);
+                FirebaseResponse response = await client.GetAsync("Users/" + userInfo["sub"].ToString());
                 NekoUser existingUser = response.ResultAs<NekoUser>();
 
                 if (existingUser == null)
                 {
                     NekoUser user = new NekoUser()
                     {
-                        Username = userInfo.Id,
-                        Fullname = userInfo.Name,
-                        Email = userInfo.Email,
-                        Gender = userInfo.Gender,
+                        Username = userInfo["sub"].ToString(),
+                        Fullname = userInfo["name"]?.ToString(),
+                        Email = userInfo["email"]?.ToString(),
+                        Gender = userInfo["gender"]?.ToString(),
                         Position = "Google User",
                         Point = 0,
                         hasBooking = "false",
-                        Avatar = avatarUrl
+                        Avatar = avatarUrl,
+                        Birthday = birthday,
+                        RegistrationDate = DateTime.Now,
                     };
 
-                    SetResponse set = await client.SetAsync("Users/" + userInfo.Id, user);
+                    SetResponse set = await client.SetAsync("Users/" + userInfo["sub"].ToString(), user);
                     if (set.StatusCode == System.Net.HttpStatusCode.OK)
                     {
                         GlobalVars.CurrentUser = user;
@@ -201,6 +197,25 @@ namespace UI
             }
         }
 
+        private async Task<JObject> GetUserInfo(string accessToken)
+        {
+            using (var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken);
+                var response = await client.GetAsync("https://www.googleapis.com/oauth2/v3/userinfo");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var json = await response.Content.ReadAsStringAsync();
+                    return JObject.Parse(json);
+                }
+                else
+                {
+                    throw new Exception("Unable to retrieve user info");
+                }
+            }
+        }
+
         private async Task<string> GetAvatarUrl(string accessToken)
         {
             using (var client = new HttpClient())
@@ -218,11 +233,11 @@ namespace UI
                     {
                         if (pictureUrl.Contains("=s"))
                         {
-                            pictureUrl = System.Text.RegularExpressions.Regex.Replace(pictureUrl, @"=s\d+", "=s200");
+                            pictureUrl = Regex.Replace(pictureUrl, @"=s\d+", "=s200");
                         }
                         else
                         {
-                            pictureUrl += "?sz=200"; // Tăng kích thước ảnh lên 200x200
+                            pictureUrl += "?sz=300"; // Tăng kích thước ảnh lên 300x300
                         }
                     }
 
@@ -235,6 +250,28 @@ namespace UI
             }
         }
 
+        private async Task<string> GetUserBirthday(string accessToken)
+        {
+            using (var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken);
+                var response = await client.GetAsync("https://people.googleapis.com/v1/people/me?personFields=birthdays");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var json = await response.Content.ReadAsStringAsync();
+                    var userInfo = JObject.Parse(json);
+                    var birthdays = userInfo["birthdays"];
+                    if (birthdays != null && birthdays.HasValues)
+                    {
+                        var birthday = birthdays[0]["date"];
+                        return $"{birthday["year"]}-{birthday["month"]}-{birthday["day"]}";
+                    }
+                }
+            }
+
+            return null;
+        }
 
         private void LogoutGoogle()
         {
