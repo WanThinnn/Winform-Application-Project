@@ -95,7 +95,7 @@ namespace UI
                         var bookingData = client.Get($"Tables/{table.ID}/Bookings");
                         bool hasBookings = bookingData != null && bookingData.Body != null;
 
-                        if (table.Status == "Booked")
+                        if (table.Status == "Booked" || table.Status == "Using")
                         {
                             btn.BackColor = Color.Gray;
                             btn.Enabled = false;
@@ -144,10 +144,10 @@ namespace UI
 
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    table.Status = "Booked";
+                    table.Status = "Using";
                     GlobalVars.CurrentTable = table;
                    
-                    SetResponse updateResponse = await client.SetAsync($"Tables/{table.ID}/Status", "Booked");
+                    SetResponse updateResponse = await client.SetAsync($"Tables/{table.ID}/Status", "Using");
 
                     if (updateResponse.StatusCode == System.Net.HttpStatusCode.OK)
                     {

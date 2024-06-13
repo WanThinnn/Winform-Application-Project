@@ -118,9 +118,9 @@ namespace UI
                     Button btn = new Button();
                     btn.Size = new Size(109, 109); // Thiết lập kích thước
 
-                    var bookingData = await tbl.GetAsync($"Tables/{table.ID}/Bookings");
+                    /*var bookingData = await tbl.GetAsync($"Tables/{table.ID}/Bookings");
                     bool hasBookings;
-                    if (bookingData == null)
+                    if (bookingData == null && bookingData.Body == null)
                     {
                         hasBookings = false;
                     }
@@ -129,18 +129,38 @@ namespace UI
                         hasBookings = true;
                     }
 
-                    if (table.Status == "Booked" && hasBookings) 
+                    if (table.Status == "Booked")
                     {
-                        btn.BackColor = Color.DeepSkyBlue; // Dark blue if booking details are present
+                        if (hasBookings)
+                        {
+                            btn.BackColor = Color.DeepSkyBlue; // DeepSkyBlue if booking details are present
+                        }
+                        else
+                        {
+                            btn.BackColor = Color.Gray; // Gray if no booking details
+                        }
                     }
-                    else if (table.Status == "Booked")
+                    else
                     {
-                        btn.BackColor = Color.Gray; // Gray if status is booked but no booking details
+                        btn.BackColor = Color.LightBlue; // LightBlue if Available
+                    }*/
+/*                    var bookingData = await tbl.GetAsync($"Tables/{table.ID}/Bookings");
+                    bool hasBookings = bookingData != null && bookingData.Body != null;*/
+
+                    if (table.Status == "Booked")
+                    {
+                        btn.BackColor = Color.Gray; // Dark blue if booking details are present
+                    }
+                    else if (table.Status == "Using")
+                    {
+                        btn.BackColor = Color.DeepSkyBlue; // Gray if status is booked but no booking details
                     }
                     else
                     {
                         btn.BackColor = Color.LightBlue; // Light blue if available
                     }
+
+
 
                     btn.Text = $"ID: {table.ID}\nName: {table.Name}\nStatus: {table.Status}";
                     
