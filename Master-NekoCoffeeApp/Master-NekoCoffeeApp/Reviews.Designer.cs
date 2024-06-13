@@ -273,7 +273,7 @@
             this.txbName.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbName.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbName.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbName.BorderRadius = 30;
+            this.txbName.BorderRadius = 35;
             this.txbName.BorderThickness = 1;
             this.txbName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbName.Cursor = System.Windows.Forms.Cursors.IBeam;

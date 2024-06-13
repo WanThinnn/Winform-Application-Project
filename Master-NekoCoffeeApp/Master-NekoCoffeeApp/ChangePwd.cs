@@ -137,5 +137,10 @@ namespace Master_NekoCoffeeApp
                 MessageBox.Show("Kiểm tra lại mạng", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

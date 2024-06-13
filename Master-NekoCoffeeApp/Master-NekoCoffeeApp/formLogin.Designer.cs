@@ -73,10 +73,10 @@
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(208, 3);
+            this.logo.Location = new System.Drawing.Point(196, 13);
             this.logo.Margin = new System.Windows.Forms.Padding(2);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(84, 84);
+            this.logo.Size = new System.Drawing.Size(95, 100);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logo.TabIndex = 98;
             this.logo.TabStop = false;
@@ -350,7 +350,7 @@
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
-            this.linkLabel1.Location = new System.Drawing.Point(296, 60);
+            this.linkLabel1.Location = new System.Drawing.Point(276, 60);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(106, 17);
@@ -545,13 +545,13 @@
             // lkForgotPass
             // 
             this.lkForgotPass.AutoSize = true;
-            this.lkForgotPass.Font = new System.Drawing.Font("#9Slide03 BoosterNextFYBlack", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lkForgotPass.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.lkForgotPass.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.lkForgotPass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(84)))), ((int)(((byte)(88)))));
-            this.lkForgotPass.Location = new System.Drawing.Point(387, 182);
+            this.lkForgotPass.Location = new System.Drawing.Point(395, 182);
             this.lkForgotPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lkForgotPass.Name = "lkForgotPass";
-            this.lkForgotPass.Size = new System.Drawing.Size(117, 18);
+            this.lkForgotPass.Size = new System.Drawing.Size(109, 17);
             this.lkForgotPass.TabIndex = 115;
             this.lkForgotPass.TabStop = true;
             this.lkForgotPass.Text = "Quên mật khẩu?";

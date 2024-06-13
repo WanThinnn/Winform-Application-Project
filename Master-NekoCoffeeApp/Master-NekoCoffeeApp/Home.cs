@@ -108,5 +108,10 @@ namespace Master_NekoCoffeeApp
             Reviews frm = new Reviews(this.Username);
             frm.Show();
         }
+
+        private void lbHome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

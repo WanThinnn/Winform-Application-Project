@@ -113,7 +113,7 @@
             this.bunifuLabel8.CursorType = null;
             this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel8.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel8.Location = new System.Drawing.Point(993, 218);
+            this.bunifuLabel8.Location = new System.Drawing.Point(993, 239);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel8.Size = new System.Drawing.Size(63, 17);
@@ -135,7 +135,7 @@
             this.txbBirthday.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbBirthday.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbBirthday.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbBirthday.BorderRadius = 30;
+            this.txbBirthday.BorderRadius = 35;
             this.txbBirthday.BorderThickness = 1;
             this.txbBirthday.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbBirthday.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -149,7 +149,7 @@
             this.txbBirthday.IconRight = null;
             this.txbBirthday.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbBirthday.Lines = new string[0];
-            this.txbBirthday.Location = new System.Drawing.Point(980, 231);
+            this.txbBirthday.Location = new System.Drawing.Point(980, 252);
             this.txbBirthday.Margin = new System.Windows.Forms.Padding(4);
             this.txbBirthday.MaxLength = 32767;
             this.txbBirthday.MinimumSize = new System.Drawing.Size(2, 2);
@@ -204,7 +204,7 @@
             this.bunifuLabel7.CursorType = null;
             this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel7.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel7.Location = new System.Drawing.Point(871, 466);
+            this.bunifuLabel7.Location = new System.Drawing.Point(883, 490);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel7.Size = new System.Drawing.Size(34, 17);
@@ -220,7 +220,7 @@
             this.bunifuLabel6.CursorType = null;
             this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel6.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel6.Location = new System.Drawing.Point(883, 415);
+            this.bunifuLabel6.Location = new System.Drawing.Point(883, 436);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel6.Size = new System.Drawing.Size(86, 17);
@@ -236,7 +236,7 @@
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel5.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel5.Location = new System.Drawing.Point(883, 350);
+            this.bunifuLabel5.Location = new System.Drawing.Point(883, 371);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(38, 17);
@@ -252,7 +252,7 @@
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel4.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel4.Location = new System.Drawing.Point(883, 283);
+            this.bunifuLabel4.Location = new System.Drawing.Point(883, 304);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel4.Size = new System.Drawing.Size(46, 17);
@@ -268,7 +268,7 @@
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel3.Location = new System.Drawing.Point(879, 219);
+            this.bunifuLabel3.Location = new System.Drawing.Point(879, 240);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(58, 17);
@@ -284,7 +284,7 @@
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel2.Location = new System.Drawing.Point(879, 163);
+            this.bunifuLabel2.Location = new System.Drawing.Point(879, 184);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(64, 17);
@@ -301,7 +301,7 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel1.Location = new System.Drawing.Point(879, 98);
+            this.bunifuLabel1.Location = new System.Drawing.Point(879, 119);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(90, 17);
@@ -406,7 +406,7 @@
             this.dbGender.BackColor = System.Drawing.Color.Transparent;
             this.dbGender.BackgroundColor = System.Drawing.Color.White;
             this.dbGender.BorderColor = System.Drawing.Color.Black;
-            this.dbGender.BorderRadius = 14;
+            this.dbGender.BorderRadius = 19;
             this.dbGender.Color = System.Drawing.Color.Black;
             this.dbGender.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
             this.dbGender.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -427,7 +427,7 @@
             this.dbGender.FormattingEnabled = true;
             this.dbGender.Icon = null;
             this.dbGender.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.dbGender.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
+            this.dbGender.IndicatorColor = System.Drawing.Color.Black;
             this.dbGender.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
             this.dbGender.IntegralHeight = false;
             this.dbGender.ItemBackColor = System.Drawing.Color.White;
@@ -440,7 +440,7 @@
             "Male",
             "Female"});
             this.dbGender.ItemTopMargin = 3;
-            this.dbGender.Location = new System.Drawing.Point(869, 231);
+            this.dbGender.Location = new System.Drawing.Point(869, 252);
             this.dbGender.Margin = new System.Windows.Forms.Padding(4);
             this.dbGender.Name = "dbGender";
             this.dbGender.Size = new System.Drawing.Size(101, 36);
@@ -462,7 +462,7 @@
             this.txbUsername.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbUsername.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbUsername.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbUsername.BorderRadius = 30;
+            this.txbUsername.BorderRadius = 35;
             this.txbUsername.BorderThickness = 1;
             this.txbUsername.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -476,7 +476,7 @@
             this.txbUsername.IconRight = null;
             this.txbUsername.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbUsername.Lines = new string[0];
-            this.txbUsername.Location = new System.Drawing.Point(871, 108);
+            this.txbUsername.Location = new System.Drawing.Point(871, 129);
             this.txbUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txbUsername.MaxLength = 32767;
             this.txbUsername.MinimumSize = new System.Drawing.Size(2, 2);
@@ -537,7 +537,7 @@
             this.tbDate.BorderColorDisabled = System.Drawing.Color.Silver;
             this.tbDate.BorderColorHover = System.Drawing.Color.Silver;
             this.tbDate.BorderColorIdle = System.Drawing.Color.Silver;
-            this.tbDate.BorderRadius = 30;
+            this.tbDate.BorderRadius = 35;
             this.tbDate.BorderThickness = 1;
             this.tbDate.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.tbDate.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -551,7 +551,7 @@
             this.tbDate.IconRight = null;
             this.tbDate.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbDate.Lines = new string[0];
-            this.tbDate.Location = new System.Drawing.Point(865, 488);
+            this.tbDate.Location = new System.Drawing.Point(871, 506);
             this.tbDate.Margin = new System.Windows.Forms.Padding(4);
             this.tbDate.MaxLength = 32767;
             this.tbDate.MinimumSize = new System.Drawing.Size(2, 2);
@@ -588,7 +588,7 @@
             this.tbDate.SelectionLength = 0;
             this.tbDate.SelectionStart = 0;
             this.tbDate.ShortcutsEnabled = true;
-            this.tbDate.Size = new System.Drawing.Size(253, 38);
+            this.tbDate.Size = new System.Drawing.Size(252, 38);
             this.tbDate.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tbDate.TabIndex = 144;
             this.tbDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -612,7 +612,7 @@
             this.tbPhone.BorderColorDisabled = System.Drawing.Color.Black;
             this.tbPhone.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.tbPhone.BorderColorIdle = System.Drawing.Color.Black;
-            this.tbPhone.BorderRadius = 30;
+            this.tbPhone.BorderRadius = 35;
             this.tbPhone.BorderThickness = 1;
             this.tbPhone.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.tbPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -626,7 +626,7 @@
             this.tbPhone.IconRight = null;
             this.tbPhone.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbPhone.Lines = new string[0];
-            this.tbPhone.Location = new System.Drawing.Point(870, 424);
+            this.tbPhone.Location = new System.Drawing.Point(870, 445);
             this.tbPhone.Margin = new System.Windows.Forms.Padding(4);
             this.tbPhone.MaxLength = 32767;
             this.tbPhone.MinimumSize = new System.Drawing.Size(2, 2);
@@ -687,7 +687,7 @@
             this.tbPoint.BorderColorDisabled = System.Drawing.Color.Silver;
             this.tbPoint.BorderColorHover = System.Drawing.Color.Silver;
             this.tbPoint.BorderColorIdle = System.Drawing.Color.Silver;
-            this.tbPoint.BorderRadius = 30;
+            this.tbPoint.BorderRadius = 35;
             this.tbPoint.BorderThickness = 1;
             this.tbPoint.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.tbPoint.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -701,7 +701,7 @@
             this.tbPoint.IconRight = null;
             this.tbPoint.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbPoint.Lines = new string[0];
-            this.tbPoint.Location = new System.Drawing.Point(865, 531);
+            this.tbPoint.Location = new System.Drawing.Point(870, 552);
             this.tbPoint.Margin = new System.Windows.Forms.Padding(4);
             this.tbPoint.MaxLength = 32767;
             this.tbPoint.MinimumSize = new System.Drawing.Size(2, 2);
@@ -738,7 +738,7 @@
             this.tbPoint.SelectionLength = 0;
             this.tbPoint.SelectionStart = 0;
             this.tbPoint.ShortcutsEnabled = true;
-            this.tbPoint.Size = new System.Drawing.Size(126, 38);
+            this.tbPoint.Size = new System.Drawing.Size(118, 38);
             this.tbPoint.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tbPoint.TabIndex = 142;
             this.tbPoint.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -762,7 +762,7 @@
             this.tbType.BorderColorDisabled = System.Drawing.Color.Silver;
             this.tbType.BorderColorHover = System.Drawing.Color.Silver;
             this.tbType.BorderColorIdle = System.Drawing.Color.Silver;
-            this.tbType.BorderRadius = 30;
+            this.tbType.BorderRadius = 35;
             this.tbType.BorderThickness = 1;
             this.tbType.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.tbType.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -776,7 +776,7 @@
             this.tbType.IconRight = null;
             this.tbType.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbType.Lines = new string[0];
-            this.tbType.Location = new System.Drawing.Point(993, 531);
+            this.tbType.Location = new System.Drawing.Point(996, 552);
             this.tbType.Margin = new System.Windows.Forms.Padding(4);
             this.tbType.MaxLength = 32767;
             this.tbType.MinimumSize = new System.Drawing.Size(2, 2);
@@ -837,7 +837,7 @@
             this.tbEmail.BorderColorDisabled = System.Drawing.Color.Black;
             this.tbEmail.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.tbEmail.BorderColorIdle = System.Drawing.Color.Black;
-            this.tbEmail.BorderRadius = 30;
+            this.tbEmail.BorderRadius = 35;
             this.tbEmail.BorderThickness = 1;
             this.tbEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.tbEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -851,7 +851,7 @@
             this.tbEmail.IconRight = null;
             this.tbEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbEmail.Lines = new string[0];
-            this.tbEmail.Location = new System.Drawing.Point(870, 361);
+            this.tbEmail.Location = new System.Drawing.Point(870, 382);
             this.tbEmail.Margin = new System.Windows.Forms.Padding(4);
             this.tbEmail.MaxLength = 32767;
             this.tbEmail.MinimumSize = new System.Drawing.Size(2, 2);
@@ -912,7 +912,7 @@
             this.tbFullname.BorderColorDisabled = System.Drawing.Color.Black;
             this.tbFullname.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.tbFullname.BorderColorIdle = System.Drawing.Color.Black;
-            this.tbFullname.BorderRadius = 30;
+            this.tbFullname.BorderRadius = 35;
             this.tbFullname.BorderThickness = 1;
             this.tbFullname.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.tbFullname.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -926,7 +926,7 @@
             this.tbFullname.IconRight = null;
             this.tbFullname.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbFullname.Lines = new string[0];
-            this.tbFullname.Location = new System.Drawing.Point(867, 295);
+            this.tbFullname.Location = new System.Drawing.Point(867, 316);
             this.tbFullname.Margin = new System.Windows.Forms.Padding(4);
             this.tbFullname.MaxLength = 32767;
             this.tbFullname.MinimumSize = new System.Drawing.Size(2, 2);
@@ -977,7 +977,7 @@
             // label1
             // 
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(868, 75);
+            this.label1.Location = new System.Drawing.Point(866, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(260, 20);
             this.label1.TabIndex = 138;
@@ -1409,7 +1409,7 @@
             this.tbPwd.BorderColorDisabled = System.Drawing.Color.Black;
             this.tbPwd.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.tbPwd.BorderColorIdle = System.Drawing.Color.Black;
-            this.tbPwd.BorderRadius = 30;
+            this.tbPwd.BorderRadius = 35;
             this.tbPwd.BorderThickness = 1;
             this.tbPwd.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.tbPwd.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -1423,7 +1423,7 @@
             this.tbPwd.IconRight = null;
             this.tbPwd.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbPwd.Lines = new string[0];
-            this.tbPwd.Location = new System.Drawing.Point(867, 172);
+            this.tbPwd.Location = new System.Drawing.Point(867, 193);
             this.tbPwd.Margin = new System.Windows.Forms.Padding(4);
             this.tbPwd.MaxLength = 32767;
             this.tbPwd.MinimumSize = new System.Drawing.Size(2, 2);

@@ -139,7 +139,7 @@
             this.txbPrice.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbPrice.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbPrice.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbPrice.BorderRadius = 30;
+            this.txbPrice.BorderRadius = 35;
             this.txbPrice.BorderThickness = 1;
             this.txbPrice.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -330,7 +330,7 @@
             this.dbStatus.BackColor = System.Drawing.Color.Transparent;
             this.dbStatus.BackgroundColor = System.Drawing.Color.White;
             this.dbStatus.BorderColor = System.Drawing.Color.Black;
-            this.dbStatus.BorderRadius = 14;
+            this.dbStatus.BorderRadius = 16;
             this.dbStatus.Color = System.Drawing.Color.Black;
             this.dbStatus.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
             this.dbStatus.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -351,7 +351,7 @@
             this.dbStatus.FormattingEnabled = true;
             this.dbStatus.Icon = null;
             this.dbStatus.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.dbStatus.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
+            this.dbStatus.IndicatorColor = System.Drawing.Color.Black;
             this.dbStatus.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
             this.dbStatus.IntegralHeight = false;
             this.dbStatus.ItemBackColor = System.Drawing.Color.White;
@@ -510,7 +510,7 @@
             this.txbID.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbID.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbID.BorderRadius = 30;
+            this.txbID.BorderRadius = 35;
             this.txbID.BorderThickness = 1;
             this.txbID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbID.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -585,7 +585,7 @@
             this.txbNameItem.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbNameItem.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbNameItem.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbNameItem.BorderRadius = 30;
+            this.txbNameItem.BorderRadius = 35;
             this.txbNameItem.BorderThickness = 1;
             this.txbNameItem.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbNameItem.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -983,7 +983,7 @@
             this.dbType.BackColor = System.Drawing.Color.Transparent;
             this.dbType.BackgroundColor = System.Drawing.Color.White;
             this.dbType.BorderColor = System.Drawing.Color.Black;
-            this.dbType.BorderRadius = 14;
+            this.dbType.BorderRadius = 16;
             this.dbType.Color = System.Drawing.Color.Black;
             this.dbType.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
             this.dbType.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -1004,7 +1004,7 @@
             this.dbType.FormattingEnabled = true;
             this.dbType.Icon = null;
             this.dbType.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.dbType.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
+            this.dbType.IndicatorColor = System.Drawing.Color.Black;
             this.dbType.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
             this.dbType.IntegralHeight = false;
             this.dbType.ItemBackColor = System.Drawing.Color.White;
@@ -1237,7 +1237,7 @@
             this.txbPoint.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbPoint.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbPoint.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbPoint.BorderRadius = 30;
+            this.txbPoint.BorderRadius = 35;
             this.txbPoint.BorderThickness = 1;
             this.txbPoint.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbPoint.Cursor = System.Windows.Forms.Cursors.IBeam;

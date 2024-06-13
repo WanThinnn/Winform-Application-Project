@@ -271,7 +271,7 @@
             this.txbIDEmployee.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbIDEmployee.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbIDEmployee.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbIDEmployee.BorderRadius = 30;
+            this.txbIDEmployee.BorderRadius = 35;
             this.txbIDEmployee.BorderThickness = 1;
             this.txbIDEmployee.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbIDEmployee.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -346,7 +346,7 @@
             this.txbEmail.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbEmail.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbEmail.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbEmail.BorderRadius = 30;
+            this.txbEmail.BorderRadius = 35;
             this.txbEmail.BorderThickness = 1;
             this.txbEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -421,7 +421,7 @@
             this.txbBirthday.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbBirthday.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbBirthday.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbBirthday.BorderRadius = 30;
+            this.txbBirthday.BorderRadius = 35;
             this.txbBirthday.BorderThickness = 1;
             this.txbBirthday.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbBirthday.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -918,7 +918,7 @@
             this.txbNameEmployee.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbNameEmployee.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbNameEmployee.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbNameEmployee.BorderRadius = 30;
+            this.txbNameEmployee.BorderRadius = 35;
             this.txbNameEmployee.BorderThickness = 1;
             this.txbNameEmployee.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbNameEmployee.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -1100,7 +1100,7 @@
             this.txbPhone.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbPhone.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbPhone.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbPhone.BorderRadius = 30;
+            this.txbPhone.BorderRadius = 35;
             this.txbPhone.BorderThickness = 1;
             this.txbPhone.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -1191,7 +1191,7 @@
             this.txbAdrr.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbAdrr.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbAdrr.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbAdrr.BorderRadius = 30;
+            this.txbAdrr.BorderRadius = 35;
             this.txbAdrr.BorderThickness = 1;
             this.txbAdrr.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbAdrr.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -1282,7 +1282,7 @@
             this.txbSalary.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbSalary.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbSalary.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbSalary.BorderRadius = 30;
+            this.txbSalary.BorderRadius = 35;
             this.txbSalary.BorderThickness = 1;
             this.txbSalary.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbSalary.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -1365,7 +1365,7 @@
             this.dbGender.BackColor = System.Drawing.Color.Transparent;
             this.dbGender.BackgroundColor = System.Drawing.Color.White;
             this.dbGender.BorderColor = System.Drawing.Color.Black;
-            this.dbGender.BorderRadius = 14;
+            this.dbGender.BorderRadius = 19;
             this.dbGender.Color = System.Drawing.Color.Black;
             this.dbGender.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
             this.dbGender.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -1386,7 +1386,7 @@
             this.dbGender.FormattingEnabled = true;
             this.dbGender.Icon = null;
             this.dbGender.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.dbGender.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(143)))), ((int)(((byte)(94)))));
+            this.dbGender.IndicatorColor = System.Drawing.Color.Black;
             this.dbGender.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
             this.dbGender.IntegralHeight = false;
             this.dbGender.ItemBackColor = System.Drawing.Color.White;
@@ -1421,7 +1421,7 @@
             this.txbShift.BorderColorDisabled = System.Drawing.Color.Black;
             this.txbShift.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txbShift.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbShift.BorderRadius = 30;
+            this.txbShift.BorderRadius = 35;
             this.txbShift.BorderThickness = 1;
             this.txbShift.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbShift.Cursor = System.Windows.Forms.Cursors.IBeam;
