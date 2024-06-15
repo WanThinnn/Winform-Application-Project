@@ -195,9 +195,9 @@ namespace UI
                 btn.OnPressedState.FillColor = Color.Black;
                 btn.OnPressedState.ForeColor = Color.LightSalmon;
 
-                btn.OnDisabledState.FillColor = Color.White;
-                btn.OnDisabledState.BorderColor = Color.White;
-                btn.OnDisabledState.ForeColor = Color.LightSalmon;
+                //btn.OnDisabledState.FillColor = Color.White;
+                //btn.OnDisabledState.BorderColor = Color.White;
+                //btn.OnDisabledState.ForeColor = Color.LightSalmon;
 
                 btn.ButtonText = $"Hoá đơn số: {bill.billId}\nBàn số: {bill.tableId}\nTổng cộng: {bill.Total}";
 

@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserRating));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.commentsFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -38,6 +39,7 @@
             this.lbPeople = new Bunifu.UI.WinForms.BunifuLabel();
             this.lbPoint = new Bunifu.UI.WinForms.BunifuLabel();
             this.AdminOrderTableBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnReLoad = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,7 +54,7 @@
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(110, 30);
+            this.bunifuLabel1.Size = new System.Drawing.Size(137, 36);
             this.bunifuLabel1.TabIndex = 53;
             this.bunifuLabel1.Text = "ĐÁNH GIÁ";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -78,6 +80,7 @@
             // 
             // commentsFlowLayoutPanel
             // 
+            this.commentsFlowLayoutPanel.AutoScroll = true;
             this.commentsFlowLayoutPanel.Location = new System.Drawing.Point(40, 165);
             this.commentsFlowLayoutPanel.Name = "commentsFlowLayoutPanel";
             this.commentsFlowLayoutPanel.Size = new System.Drawing.Size(678, 295);
@@ -131,7 +134,7 @@
             this.lbPeople.Location = new System.Drawing.Point(319, 123);
             this.lbPeople.Name = "lbPeople";
             this.lbPeople.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbPeople.Size = new System.Drawing.Size(77, 17);
+            this.lbPeople.Size = new System.Drawing.Size(90, 21);
             this.lbPeople.TabIndex = 98;
             this.lbPeople.Text = "100 nhận xét";
             this.lbPeople.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -147,7 +150,7 @@
             this.lbPoint.Location = new System.Drawing.Point(127, 73);
             this.lbPoint.Name = "lbPoint";
             this.lbPoint.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbPoint.Size = new System.Drawing.Size(156, 86);
+            this.lbPoint.Size = new System.Drawing.Size(195, 106);
             this.lbPoint.TabIndex = 99;
             this.lbPoint.Text = "4.9/5";
             this.lbPoint.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -172,11 +175,11 @@
             this.AdminOrderTableBtn.ColorContrastOnClick = 45;
             this.AdminOrderTableBtn.ColorContrastOnHover = 45;
             this.AdminOrderTableBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.AdminOrderTableBtn.CustomizableEdges = borderEdges1;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.AdminOrderTableBtn.CustomizableEdges = borderEdges3;
             this.AdminOrderTableBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminOrderTableBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminOrderTableBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -243,9 +246,100 @@
             this.AdminOrderTableBtn.UseDefaultRadiusAndThickness = true;
             this.AdminOrderTableBtn.Click += new System.EventHandler(this.AdminOrderTableBtn_Click);
             // 
+            // btnReLoad
+            // 
+            this.btnReLoad.AllowAnimations = true;
+            this.btnReLoad.AllowMouseEffects = true;
+            this.btnReLoad.AllowToggling = false;
+            this.btnReLoad.AnimationSpeed = 200;
+            this.btnReLoad.AutoGenerateColors = false;
+            this.btnReLoad.AutoRoundBorders = false;
+            this.btnReLoad.AutoSizeLeftIcon = true;
+            this.btnReLoad.AutoSizeRightIcon = true;
+            this.btnReLoad.BackColor = System.Drawing.Color.Transparent;
+            this.btnReLoad.BackColor1 = System.Drawing.Color.LightSalmon;
+            this.btnReLoad.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReLoad.BackgroundImage")));
+            this.btnReLoad.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnReLoad.ButtonText = "Tải Lại";
+            this.btnReLoad.ButtonTextMarginLeft = 0;
+            this.btnReLoad.ColorContrastOnClick = 45;
+            this.btnReLoad.ColorContrastOnHover = 45;
+            this.btnReLoad.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnReLoad.CustomizableEdges = borderEdges4;
+            this.btnReLoad.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnReLoad.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnReLoad.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnReLoad.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnReLoad.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnReLoad.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReLoad.ForeColor = System.Drawing.Color.White;
+            this.btnReLoad.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReLoad.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnReLoad.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnReLoad.IconMarginLeft = 11;
+            this.btnReLoad.IconPadding = 10;
+            this.btnReLoad.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReLoad.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnReLoad.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnReLoad.IconSize = 25;
+            this.btnReLoad.IdleBorderColor = System.Drawing.Color.LightSalmon;
+            this.btnReLoad.IdleBorderRadius = 37;
+            this.btnReLoad.IdleBorderThickness = 1;
+            this.btnReLoad.IdleFillColor = System.Drawing.Color.LightSalmon;
+            this.btnReLoad.IdleIconLeftImage = null;
+            this.btnReLoad.IdleIconRightImage = null;
+            this.btnReLoad.IndicateFocus = false;
+            this.btnReLoad.Location = new System.Drawing.Point(588, 101);
+            this.btnReLoad.Name = "btnReLoad";
+            this.btnReLoad.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnReLoad.OnDisabledState.BorderRadius = 37;
+            this.btnReLoad.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnReLoad.OnDisabledState.BorderThickness = 1;
+            this.btnReLoad.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnReLoad.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnReLoad.OnDisabledState.IconLeftImage = null;
+            this.btnReLoad.OnDisabledState.IconRightImage = null;
+            this.btnReLoad.onHoverState.BorderColor = System.Drawing.Color.LightSalmon;
+            this.btnReLoad.onHoverState.BorderRadius = 37;
+            this.btnReLoad.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnReLoad.onHoverState.BorderThickness = 1;
+            this.btnReLoad.onHoverState.FillColor = System.Drawing.Color.LightSalmon;
+            this.btnReLoad.onHoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnReLoad.onHoverState.IconLeftImage = null;
+            this.btnReLoad.onHoverState.IconRightImage = null;
+            this.btnReLoad.OnIdleState.BorderColor = System.Drawing.Color.LightSalmon;
+            this.btnReLoad.OnIdleState.BorderRadius = 37;
+            this.btnReLoad.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnReLoad.OnIdleState.BorderThickness = 1;
+            this.btnReLoad.OnIdleState.FillColor = System.Drawing.Color.LightSalmon;
+            this.btnReLoad.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnReLoad.OnIdleState.IconLeftImage = null;
+            this.btnReLoad.OnIdleState.IconRightImage = null;
+            this.btnReLoad.OnPressedState.BorderColor = System.Drawing.Color.LightSalmon;
+            this.btnReLoad.OnPressedState.BorderRadius = 37;
+            this.btnReLoad.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnReLoad.OnPressedState.BorderThickness = 1;
+            this.btnReLoad.OnPressedState.FillColor = System.Drawing.Color.LightSalmon;
+            this.btnReLoad.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnReLoad.OnPressedState.IconLeftImage = null;
+            this.btnReLoad.OnPressedState.IconRightImage = null;
+            this.btnReLoad.Size = new System.Drawing.Size(123, 39);
+            this.btnReLoad.TabIndex = 101;
+            this.btnReLoad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnReLoad.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnReLoad.TextMarginLeft = 0;
+            this.btnReLoad.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnReLoad.UseDefaultRadiusAndThickness = true;
+            this.btnReLoad.Click += new System.EventHandler(this.btnSend_Click);
+            // 
             // UserRating
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.btnReLoad);
             this.Controls.Add(this.AdminOrderTableBtn);
             this.Controls.Add(this.lbPeople);
             this.Controls.Add(this.ratingStars);
@@ -274,5 +368,6 @@
         private Bunifu.UI.WinForms.BunifuLabel lbPeople;
         private Bunifu.UI.WinForms.BunifuLabel lbPoint;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminOrderTableBtn;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnReLoad;
     }
 }

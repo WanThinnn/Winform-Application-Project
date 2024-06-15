@@ -466,6 +466,7 @@ namespace UI
                         MessageBox.Show("Tích điểm thất bại!", "Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+                this.Hide();
             }
 
 

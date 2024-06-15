@@ -44,7 +44,7 @@ namespace UI
             viewData();
             UserAdd.Enabled = true;
             UserUpdate.Enabled = false;
-            UserDelete.Enabled = false;
+      
         }
         void viewData()
         {
@@ -147,7 +147,7 @@ namespace UI
             txbBirthday.Text = user.Birthday;
             UserAdd.Enabled = false;
             UserUpdate.Enabled = true;
-            UserDelete.Enabled = true;
+            
         }
 
         private async void UserAdd_Click(object sender, EventArgs e)
@@ -365,7 +365,7 @@ namespace UI
             txbBirthday.Clear();
             UserAdd.Enabled = true;
             UserUpdate.Enabled = false;
-            UserDelete.Enabled = false;
+            
             dbGender.Text = string.Empty; // Đặt giá trị hiển thị về rỗng
 
             tbPwd.BorderColorActive = Color.DodgerBlue;

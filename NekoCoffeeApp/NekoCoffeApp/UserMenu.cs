@@ -182,15 +182,28 @@ namespace UI
 
         private void AddToCartAndTableDetail(string drinkName, int quantity, int price)
         {
-            // Add to UserCart
-            UserCart.Instance.AddItemToCart(drinkName, quantity, price);
+            // Show a confirmation message box
+            DialogResult result = MessageBox.Show("Bạn có muốn thêm mặt hàng này vào giỏ hàng không?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
-            // Add to TableDetail (if the form is open)
-            var tableDetailForm = Application.OpenForms.OfType<TableDetail>().FirstOrDefault();
-            if (tableDetailForm != null)
+            // Check if the user clicked OK
+            if (result == DialogResult.OK)
             {
-                tableDetailForm.AddItemToTableDetail(drinkName, quantity, price);
+                // Add to UserCart
+                UserCart.Instance.AddItemToCart(drinkName, quantity, price);
+
+                // Add to TableDetail (if the form is open)
+                var tableDetailForm = Application.OpenForms.OfType<TableDetail>().FirstOrDefault();
+                if (tableDetailForm != null)
+                {
+                    tableDetailForm.AddItemToTableDetail(drinkName, quantity, price);
+                }
+            }
+            else
+            {
+                // User clicked Cancel or closed the message box
+               
             }
         }
+
     }
 }

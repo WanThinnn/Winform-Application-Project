@@ -158,7 +158,13 @@ namespace UI
         private void AdminOrderTableBtn_Click(object sender, EventArgs e)
         {
             RatingStar rate = new RatingStar();
-            rate.Show();
+            rate.ShowDialog();
+            btnSend_Click(sender, e);   
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            LoadRates();
         }
     }
 }

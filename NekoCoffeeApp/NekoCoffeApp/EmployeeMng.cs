@@ -41,8 +41,7 @@ namespace UI
             }
             viewData();
             btnAdd.Enabled = true;
-            btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
+            
         }
         public bool IsValidEmail(string email)
         {
@@ -218,8 +217,7 @@ namespace UI
 
 
             btnAdd.Enabled = true;
-            btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
+            
             viewData();
         }
 
@@ -260,8 +258,7 @@ namespace UI
 
 
             btnAdd.Enabled = false;
-            btnUpdate.Enabled = true;
-            btnDelete.Enabled = true;
+            
         }
 
         private async void btnDelete_Click(object sender, EventArgs e)

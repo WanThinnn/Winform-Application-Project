@@ -90,6 +90,8 @@ namespace UI
 
                 if (set.StatusCode == System.Net.HttpStatusCode.OK)
                 {
+                    tbComment.Text = "";
+                    ratingStars.Value = 0;
                     MessageBox.Show($"Tài khoản {fullname} đã gửi một nhận xét!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     /*RateAdded?.Invoke(this, rate); // Kích hoạt sự kiện TableAdded
                     viewData();*/

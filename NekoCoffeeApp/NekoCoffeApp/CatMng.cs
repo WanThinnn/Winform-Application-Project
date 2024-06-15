@@ -40,8 +40,7 @@ namespace UI
             }
             viewData();
             btnAdd.Enabled = true;
-            btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
+            
         }
         void viewData()
         {
@@ -151,8 +150,7 @@ namespace UI
 
 
             btnAdd.Enabled = true;
-            btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
+            
             viewData();
         }
 
@@ -230,8 +228,7 @@ namespace UI
             txbPrice.Text = cat.Price.ToString();
             txbAvailable.Text = cat.Available.ToString();
             btnAdd.Enabled = false;
-            btnUpdate.Enabled = true;
-            btnDelete.Enabled = true;
+            
 
         }
 

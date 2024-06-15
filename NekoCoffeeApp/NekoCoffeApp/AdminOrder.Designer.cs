@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminOrder));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.AdminPaymentBtn1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminOrderPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuShapes3 = new Bunifu.UI.WinForms.BunifuShapes();
+            this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuShapes2 = new Bunifu.UI.WinForms.BunifuShapes();
+            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuShapes1 = new Bunifu.UI.WinForms.BunifuShapes();
             this.AdminOrderBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminLoadTablesBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Table_flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.AdminOrderTableBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuShapes1 = new Bunifu.UI.WinForms.BunifuShapes();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuShapes2 = new Bunifu.UI.WinForms.BunifuShapes();
-            this.bunifuShapes3 = new Bunifu.UI.WinForms.BunifuShapes();
-            this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.AdminOrderPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,11 +67,11 @@
             this.AdminPaymentBtn1.ColorContrastOnClick = 45;
             this.AdminPaymentBtn1.ColorContrastOnHover = 45;
             this.AdminPaymentBtn1.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.AdminPaymentBtn1.CustomizableEdges = borderEdges5;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.AdminPaymentBtn1.CustomizableEdges = borderEdges1;
             this.AdminPaymentBtn1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminPaymentBtn1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminPaymentBtn1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -162,6 +162,101 @@
             this.AdminOrderPanel.Size = new System.Drawing.Size(700, 479);
             this.AdminOrderPanel.TabIndex = 0;
             // 
+            // bunifuShapes3
+            // 
+            this.bunifuShapes3.Angle = 0F;
+            this.bunifuShapes3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuShapes3.BorderColor = System.Drawing.Color.LightBlue;
+            this.bunifuShapes3.BorderThickness = 2;
+            this.bunifuShapes3.FillColor = System.Drawing.Color.LightBlue;
+            this.bunifuShapes3.FillShape = true;
+            this.bunifuShapes3.Location = new System.Drawing.Point(353, 368);
+            this.bunifuShapes3.Name = "bunifuShapes3";
+            this.bunifuShapes3.Shape = Bunifu.UI.WinForms.BunifuShapes.Shapes.Square;
+            this.bunifuShapes3.Sides = 5;
+            this.bunifuShapes3.Size = new System.Drawing.Size(20, 20);
+            this.bunifuShapes3.TabIndex = 79;
+            this.bunifuShapes3.Text = "bunifuShapes3";
+            // 
+            // bunifuLabel3
+            // 
+            this.bunifuLabel3.AllowParentOverrides = false;
+            this.bunifuLabel3.AutoEllipsis = false;
+            this.bunifuLabel3.CursorType = null;
+            this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel3.Location = new System.Drawing.Point(379, 373);
+            this.bunifuLabel3.Name = "bunifuLabel3";
+            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel3.Size = new System.Drawing.Size(39, 20);
+            this.bunifuLabel3.TabIndex = 78;
+            this.bunifuLabel3.Text = "Trống";
+            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuShapes2
+            // 
+            this.bunifuShapes2.Angle = 0F;
+            this.bunifuShapes2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuShapes2.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.bunifuShapes2.BorderThickness = 2;
+            this.bunifuShapes2.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.bunifuShapes2.FillShape = true;
+            this.bunifuShapes2.Location = new System.Drawing.Point(462, 368);
+            this.bunifuShapes2.Name = "bunifuShapes2";
+            this.bunifuShapes2.Shape = Bunifu.UI.WinForms.BunifuShapes.Shapes.Square;
+            this.bunifuShapes2.Sides = 5;
+            this.bunifuShapes2.Size = new System.Drawing.Size(20, 20);
+            this.bunifuShapes2.TabIndex = 77;
+            this.bunifuShapes2.Text = "bunifuShapes2";
+            // 
+            // bunifuLabel2
+            // 
+            this.bunifuLabel2.AllowParentOverrides = false;
+            this.bunifuLabel2.AutoEllipsis = false;
+            this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel2.Location = new System.Drawing.Point(488, 373);
+            this.bunifuLabel2.Name = "bunifuLabel2";
+            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel2.Size = new System.Drawing.Size(45, 20);
+            this.bunifuLabel2.TabIndex = 76;
+            this.bunifuLabel2.Text = "Đã đặt";
+            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel1.Location = new System.Drawing.Point(591, 373);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(93, 20);
+            this.bunifuLabel1.TabIndex = 75;
+            this.bunifuLabel1.Text = "Đang sử dụng";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuShapes1
+            // 
+            this.bunifuShapes1.Angle = 0F;
+            this.bunifuShapes1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuShapes1.BorderColor = System.Drawing.Color.Gray;
+            this.bunifuShapes1.BorderThickness = 2;
+            this.bunifuShapes1.FillColor = System.Drawing.Color.Gray;
+            this.bunifuShapes1.FillShape = true;
+            this.bunifuShapes1.Location = new System.Drawing.Point(565, 368);
+            this.bunifuShapes1.Name = "bunifuShapes1";
+            this.bunifuShapes1.Shape = Bunifu.UI.WinForms.BunifuShapes.Shapes.Square;
+            this.bunifuShapes1.Sides = 5;
+            this.bunifuShapes1.Size = new System.Drawing.Size(20, 20);
+            this.bunifuShapes1.TabIndex = 74;
+            this.bunifuShapes1.Text = "bunifuShapes1";
+            // 
             // AdminOrderBtn
             // 
             this.AdminOrderBtn.AllowAnimations = true;
@@ -176,16 +271,16 @@
             this.AdminOrderBtn.BackColor1 = System.Drawing.Color.LightSalmon;
             this.AdminOrderBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminOrderBtn.BackgroundImage")));
             this.AdminOrderBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminOrderBtn.ButtonText = "DRINK";
+            this.AdminOrderBtn.ButtonText = "NƯỚC";
             this.AdminOrderBtn.ButtonTextMarginLeft = 0;
             this.AdminOrderBtn.ColorContrastOnClick = 45;
             this.AdminOrderBtn.ColorContrastOnHover = 45;
             this.AdminOrderBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.AdminOrderBtn.CustomizableEdges = borderEdges6;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.AdminOrderBtn.CustomizableEdges = borderEdges2;
             this.AdminOrderBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminOrderBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminOrderBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -209,7 +304,7 @@
             this.AdminOrderBtn.IdleIconLeftImage = null;
             this.AdminOrderBtn.IdleIconRightImage = null;
             this.AdminOrderBtn.IndicateFocus = false;
-            this.AdminOrderBtn.Location = new System.Drawing.Point(515, 407);
+            this.AdminOrderBtn.Location = new System.Drawing.Point(359, 407);
             this.AdminOrderBtn.Name = "AdminOrderBtn";
             this.AdminOrderBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminOrderBtn.OnDisabledState.BorderRadius = 37;
@@ -266,16 +361,16 @@
             this.AdminLoadTablesBtn.BackColor1 = System.Drawing.Color.LightSalmon;
             this.AdminLoadTablesBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminLoadTablesBtn.BackgroundImage")));
             this.AdminLoadTablesBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminLoadTablesBtn.ButtonText = "LOAD";
+            this.AdminLoadTablesBtn.ButtonText = "CẬP NHẬT";
             this.AdminLoadTablesBtn.ButtonTextMarginLeft = 0;
             this.AdminLoadTablesBtn.ColorContrastOnClick = 45;
             this.AdminLoadTablesBtn.ColorContrastOnHover = 45;
             this.AdminLoadTablesBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.AdminLoadTablesBtn.CustomizableEdges = borderEdges7;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.AdminLoadTablesBtn.CustomizableEdges = borderEdges3;
             this.AdminLoadTablesBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminLoadTablesBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminLoadTablesBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -299,7 +394,7 @@
             this.AdminLoadTablesBtn.IdleIconLeftImage = null;
             this.AdminLoadTablesBtn.IdleIconRightImage = null;
             this.AdminLoadTablesBtn.IndicateFocus = false;
-            this.AdminLoadTablesBtn.Location = new System.Drawing.Point(359, 407);
+            this.AdminLoadTablesBtn.Location = new System.Drawing.Point(515, 407);
             this.AdminLoadTablesBtn.Name = "AdminLoadTablesBtn";
             this.AdminLoadTablesBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminLoadTablesBtn.OnDisabledState.BorderRadius = 37;
@@ -364,16 +459,16 @@
             this.AdminOrderTableBtn.BackColor1 = System.Drawing.Color.LightSalmon;
             this.AdminOrderTableBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminOrderTableBtn.BackgroundImage")));
             this.AdminOrderTableBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminOrderTableBtn.ButtonText = "TABLE";
+            this.AdminOrderTableBtn.ButtonText = "BÀN";
             this.AdminOrderTableBtn.ButtonTextMarginLeft = 0;
             this.AdminOrderTableBtn.ColorContrastOnClick = 45;
             this.AdminOrderTableBtn.ColorContrastOnHover = 45;
             this.AdminOrderTableBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.AdminOrderTableBtn.CustomizableEdges = borderEdges8;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.AdminOrderTableBtn.CustomizableEdges = borderEdges4;
             this.AdminOrderTableBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AdminOrderTableBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.AdminOrderTableBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -439,99 +534,6 @@
             this.AdminOrderTableBtn.TextPadding = new System.Windows.Forms.Padding(0);
             this.AdminOrderTableBtn.UseDefaultRadiusAndThickness = true;
             this.AdminOrderTableBtn.Click += new System.EventHandler(this.AdminAdjustTable_Click);
-            // 
-            // bunifuShapes1
-            // 
-            this.bunifuShapes1.Angle = 0F;
-            this.bunifuShapes1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShapes1.BorderColor = System.Drawing.Color.Gray;
-            this.bunifuShapes1.BorderThickness = 2;
-            this.bunifuShapes1.FillColor = System.Drawing.Color.Gray;
-            this.bunifuShapes1.FillShape = true;
-            this.bunifuShapes1.Location = new System.Drawing.Point(565, 368);
-            this.bunifuShapes1.Name = "bunifuShapes1";
-            this.bunifuShapes1.Shape = Bunifu.UI.WinForms.BunifuShapes.Shapes.Square;
-            this.bunifuShapes1.Sides = 5;
-            this.bunifuShapes1.Size = new System.Drawing.Size(20, 20);
-            this.bunifuShapes1.TabIndex = 74;
-            this.bunifuShapes1.Text = "bunifuShapes1";
-            // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(591, 373);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(74, 15);
-            this.bunifuLabel1.TabIndex = 75;
-            this.bunifuLabel1.Text = "Đang sử dụng";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel2
-            // 
-            this.bunifuLabel2.AllowParentOverrides = false;
-            this.bunifuLabel2.AutoEllipsis = false;
-            this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel2.Location = new System.Drawing.Point(488, 373);
-            this.bunifuLabel2.Name = "bunifuLabel2";
-            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(34, 15);
-            this.bunifuLabel2.TabIndex = 76;
-            this.bunifuLabel2.Text = "Đã đặt";
-            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuShapes2
-            // 
-            this.bunifuShapes2.Angle = 0F;
-            this.bunifuShapes2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShapes2.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.bunifuShapes2.BorderThickness = 2;
-            this.bunifuShapes2.FillColor = System.Drawing.Color.DeepSkyBlue;
-            this.bunifuShapes2.FillShape = true;
-            this.bunifuShapes2.Location = new System.Drawing.Point(462, 368);
-            this.bunifuShapes2.Name = "bunifuShapes2";
-            this.bunifuShapes2.Shape = Bunifu.UI.WinForms.BunifuShapes.Shapes.Square;
-            this.bunifuShapes2.Sides = 5;
-            this.bunifuShapes2.Size = new System.Drawing.Size(20, 20);
-            this.bunifuShapes2.TabIndex = 77;
-            this.bunifuShapes2.Text = "bunifuShapes2";
-            // 
-            // bunifuShapes3
-            // 
-            this.bunifuShapes3.Angle = 0F;
-            this.bunifuShapes3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShapes3.BorderColor = System.Drawing.Color.LightBlue;
-            this.bunifuShapes3.BorderThickness = 2;
-            this.bunifuShapes3.FillColor = System.Drawing.Color.LightBlue;
-            this.bunifuShapes3.FillShape = true;
-            this.bunifuShapes3.Location = new System.Drawing.Point(353, 368);
-            this.bunifuShapes3.Name = "bunifuShapes3";
-            this.bunifuShapes3.Shape = Bunifu.UI.WinForms.BunifuShapes.Shapes.Square;
-            this.bunifuShapes3.Sides = 5;
-            this.bunifuShapes3.Size = new System.Drawing.Size(20, 20);
-            this.bunifuShapes3.TabIndex = 79;
-            this.bunifuShapes3.Text = "bunifuShapes3";
-            // 
-            // bunifuLabel3
-            // 
-            this.bunifuLabel3.AllowParentOverrides = false;
-            this.bunifuLabel3.AutoEllipsis = false;
-            this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel3.Location = new System.Drawing.Point(379, 373);
-            this.bunifuLabel3.Name = "bunifuLabel3";
-            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(31, 15);
-            this.bunifuLabel3.TabIndex = 78;
-            this.bunifuLabel3.Text = "Trống";
-            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // AdminOrder
             // 

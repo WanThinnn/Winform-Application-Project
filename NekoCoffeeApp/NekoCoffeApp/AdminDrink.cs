@@ -123,7 +123,7 @@ namespace UI
             {
                 AdminFillDrinkID.Clear();
                 AdminFillDrinkName.Clear();
-                AdminFillDrinkAvailable.Items.Clear();
+                AdminFillDrinkAvailable.Text = "";
                 AdminFillDrinkPrice.Clear();
                 AdminFillDrinkSearch.Clear();
                 AdminFillDrinkType.Clear();
@@ -290,7 +290,8 @@ namespace UI
                     Name = AdminFillDrinkName.Text,
                     Available = AdminFillDrinkAvailable.Text,
                     Price = AdminFillDrinkPrice.Text,
-                    Type = AdminFillDrinkType.Text
+                    Type = AdminFillDrinkType.Text,
+                    ImageURL = ResDrink.ImageURL,
                 };
 
                 FirebaseResponse update = drk.Update($"Drinks/" + AdminFillDrinkID.Text, drink);
@@ -299,11 +300,13 @@ namespace UI
                 {
                     AdminFillDrinkID.Clear();
                     AdminFillDrinkName.Clear();
-                    AdminFillDrinkAvailable.Items.Clear();
+                    AdminFillDrinkAvailable.Text = "";
                     AdminFillDrinkPrice.Clear();
                     AdminFillDrinkSearch.Clear();
                     AdminFillDrinkType.Clear();
+                    pictureBox.Image = null;
                     MessageBox.Show($"Sửa thành công nước {AdminFillDrinkID.Text}!", "Chúc mừng!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    viewData();
                 }
                 else { return; }
                 viewData();
