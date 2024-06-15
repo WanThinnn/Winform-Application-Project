@@ -404,12 +404,12 @@ namespace UI
 
             txbID.Clear();
             txbNameItem.Clear();
-            dbStatus.Text = string.Empty;
-            dbType.Text = string.Empty;
+            dbStatus.Text = "";
+            dbType.Text = "";
 
             txbPrice.Clear();
             txbSearch.Clear();
-            dbType.Items.Clear();
+      
             txbPoint.Clear();
             pictureBox.Image = null;
 

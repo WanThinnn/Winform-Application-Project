@@ -113,10 +113,11 @@
             this.bunifuLabel8.CursorType = null;
             this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel8.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel8.Location = new System.Drawing.Point(993, 239);
+            this.bunifuLabel8.Location = new System.Drawing.Point(1324, 294);
+            this.bunifuLabel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(63, 17);
+            this.bunifuLabel8.Size = new System.Drawing.Size(79, 21);
             this.bunifuLabel8.TabIndex = 156;
             this.bunifuLabel8.Text = "Sinh nhật:";
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -149,10 +150,10 @@
             this.txbBirthday.IconRight = null;
             this.txbBirthday.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbBirthday.Lines = new string[0];
-            this.txbBirthday.Location = new System.Drawing.Point(980, 252);
-            this.txbBirthday.Margin = new System.Windows.Forms.Padding(4);
+            this.txbBirthday.Location = new System.Drawing.Point(1307, 310);
+            this.txbBirthday.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txbBirthday.MaxLength = 32767;
-            this.txbBirthday.MinimumSize = new System.Drawing.Size(2, 2);
+            this.txbBirthday.MinimumSize = new System.Drawing.Size(3, 2);
             this.txbBirthday.Modified = false;
             this.txbBirthday.Multiline = false;
             this.txbBirthday.Name = "txbBirthday";
@@ -176,7 +177,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txbBirthday.OnIdleState = stateProperties4;
-            this.txbBirthday.Padding = new System.Windows.Forms.Padding(4);
+            this.txbBirthday.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txbBirthday.PasswordChar = '\0';
             this.txbBirthday.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txbBirthday.PlaceholderText = "";
@@ -186,7 +187,7 @@
             this.txbBirthday.SelectionLength = 0;
             this.txbBirthday.SelectionStart = 0;
             this.txbBirthday.ShortcutsEnabled = true;
-            this.txbBirthday.Size = new System.Drawing.Size(140, 38);
+            this.txbBirthday.Size = new System.Drawing.Size(187, 47);
             this.txbBirthday.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txbBirthday.TabIndex = 155;
             this.txbBirthday.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -204,10 +205,11 @@
             this.bunifuLabel7.CursorType = null;
             this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel7.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel7.Location = new System.Drawing.Point(883, 490);
+            this.bunifuLabel7.Location = new System.Drawing.Point(1177, 603);
+            this.bunifuLabel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(34, 17);
+            this.bunifuLabel7.Size = new System.Drawing.Size(43, 21);
             this.bunifuLabel7.TabIndex = 154;
             this.bunifuLabel7.Text = "Khác:";
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -220,10 +222,11 @@
             this.bunifuLabel6.CursorType = null;
             this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel6.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel6.Location = new System.Drawing.Point(883, 436);
+            this.bunifuLabel6.Location = new System.Drawing.Point(1177, 537);
+            this.bunifuLabel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(86, 17);
+            this.bunifuLabel6.Size = new System.Drawing.Size(107, 21);
             this.bunifuLabel6.TabIndex = 153;
             this.bunifuLabel6.Text = "Số điện thoại:";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -236,10 +239,11 @@
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel5.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel5.Location = new System.Drawing.Point(883, 371);
+            this.bunifuLabel5.Location = new System.Drawing.Point(1177, 457);
+            this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(38, 17);
+            this.bunifuLabel5.Size = new System.Drawing.Size(48, 21);
             this.bunifuLabel5.TabIndex = 152;
             this.bunifuLabel5.Text = "Email:";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -252,10 +256,11 @@
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel4.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel4.Location = new System.Drawing.Point(883, 304);
+            this.bunifuLabel4.Location = new System.Drawing.Point(1177, 374);
+            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(46, 17);
+            this.bunifuLabel4.Size = new System.Drawing.Size(58, 21);
             this.bunifuLabel4.TabIndex = 151;
             this.bunifuLabel4.Text = "Họ tên:";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -268,10 +273,11 @@
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel3.Location = new System.Drawing.Point(879, 240);
+            this.bunifuLabel3.Location = new System.Drawing.Point(1172, 295);
+            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(58, 17);
+            this.bunifuLabel3.Size = new System.Drawing.Size(73, 21);
             this.bunifuLabel3.TabIndex = 150;
             this.bunifuLabel3.Text = "Giới tính:";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -284,10 +290,11 @@
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel2.Location = new System.Drawing.Point(879, 184);
+            this.bunifuLabel2.Location = new System.Drawing.Point(1172, 226);
+            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(64, 17);
+            this.bunifuLabel2.Size = new System.Drawing.Size(79, 21);
             this.bunifuLabel2.TabIndex = 149;
             this.bunifuLabel2.Text = "Mật khẩu:";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -301,10 +308,11 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.bunifuLabel1.Location = new System.Drawing.Point(879, 119);
+            this.bunifuLabel1.Location = new System.Drawing.Point(1172, 146);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(90, 17);
+            this.bunifuLabel1.Size = new System.Drawing.Size(111, 21);
             this.bunifuLabel1.TabIndex = 148;
             this.bunifuLabel1.Text = "Tên tài khoản:";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -357,8 +365,8 @@
             this.btnRefresh.IdleIconLeftImage = null;
             this.btnRefresh.IdleIconRightImage = null;
             this.btnRefresh.IndicateFocus = false;
-            this.btnRefresh.Location = new System.Drawing.Point(245, 527);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefresh.Location = new System.Drawing.Point(327, 649);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRefresh.OnDisabledState.BorderRadius = 40;
@@ -392,7 +400,7 @@
             this.btnRefresh.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnRefresh.OnPressedState.IconLeftImage = null;
             this.btnRefresh.OnPressedState.IconRightImage = null;
-            this.btnRefresh.Size = new System.Drawing.Size(81, 46);
+            this.btnRefresh.Size = new System.Drawing.Size(108, 57);
             this.btnRefresh.TabIndex = 147;
             this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRefresh.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -440,10 +448,10 @@
             "Male",
             "Female"});
             this.dbGender.ItemTopMargin = 3;
-            this.dbGender.Location = new System.Drawing.Point(869, 252);
-            this.dbGender.Margin = new System.Windows.Forms.Padding(4);
+            this.dbGender.Location = new System.Drawing.Point(1159, 310);
+            this.dbGender.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dbGender.Name = "dbGender";
-            this.dbGender.Size = new System.Drawing.Size(101, 36);
+            this.dbGender.Size = new System.Drawing.Size(133, 36);
             this.dbGender.TabIndex = 146;
             this.dbGender.Text = null;
             this.dbGender.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -476,10 +484,10 @@
             this.txbUsername.IconRight = null;
             this.txbUsername.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txbUsername.Lines = new string[0];
-            this.txbUsername.Location = new System.Drawing.Point(871, 129);
-            this.txbUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.txbUsername.Location = new System.Drawing.Point(1161, 159);
+            this.txbUsername.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txbUsername.MaxLength = 32767;
-            this.txbUsername.MinimumSize = new System.Drawing.Size(2, 2);
+            this.txbUsername.MinimumSize = new System.Drawing.Size(3, 2);
             this.txbUsername.Modified = false;
             this.txbUsername.Multiline = false;
             this.txbUsername.Name = "txbUsername";
@@ -503,7 +511,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txbUsername.OnIdleState = stateProperties8;
-            this.txbUsername.Padding = new System.Windows.Forms.Padding(4);
+            this.txbUsername.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txbUsername.PasswordChar = '\0';
             this.txbUsername.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txbUsername.PlaceholderText = "";
@@ -513,7 +521,7 @@
             this.txbUsername.SelectionLength = 0;
             this.txbUsername.SelectionStart = 0;
             this.txbUsername.ShortcutsEnabled = true;
-            this.txbUsername.Size = new System.Drawing.Size(249, 38);
+            this.txbUsername.Size = new System.Drawing.Size(332, 47);
             this.txbUsername.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txbUsername.TabIndex = 145;
             this.txbUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -551,10 +559,10 @@
             this.tbDate.IconRight = null;
             this.tbDate.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbDate.Lines = new string[0];
-            this.tbDate.Location = new System.Drawing.Point(871, 506);
-            this.tbDate.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDate.Location = new System.Drawing.Point(1161, 623);
+            this.tbDate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbDate.MaxLength = 32767;
-            this.tbDate.MinimumSize = new System.Drawing.Size(2, 2);
+            this.tbDate.MinimumSize = new System.Drawing.Size(3, 2);
             this.tbDate.Modified = false;
             this.tbDate.Multiline = false;
             this.tbDate.Name = "tbDate";
@@ -578,7 +586,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbDate.OnIdleState = stateProperties12;
-            this.tbDate.Padding = new System.Windows.Forms.Padding(4);
+            this.tbDate.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbDate.PasswordChar = '\0';
             this.tbDate.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbDate.PlaceholderText = "Ngày tham gia";
@@ -588,7 +596,7 @@
             this.tbDate.SelectionLength = 0;
             this.tbDate.SelectionStart = 0;
             this.tbDate.ShortcutsEnabled = true;
-            this.tbDate.Size = new System.Drawing.Size(252, 38);
+            this.tbDate.Size = new System.Drawing.Size(336, 47);
             this.tbDate.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tbDate.TabIndex = 144;
             this.tbDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -626,10 +634,10 @@
             this.tbPhone.IconRight = null;
             this.tbPhone.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbPhone.Lines = new string[0];
-            this.tbPhone.Location = new System.Drawing.Point(870, 445);
-            this.tbPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.tbPhone.Location = new System.Drawing.Point(1160, 548);
+            this.tbPhone.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbPhone.MaxLength = 32767;
-            this.tbPhone.MinimumSize = new System.Drawing.Size(2, 2);
+            this.tbPhone.MinimumSize = new System.Drawing.Size(3, 2);
             this.tbPhone.Modified = false;
             this.tbPhone.Multiline = false;
             this.tbPhone.Name = "tbPhone";
@@ -653,7 +661,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbPhone.OnIdleState = stateProperties16;
-            this.tbPhone.Padding = new System.Windows.Forms.Padding(4);
+            this.tbPhone.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbPhone.PasswordChar = '\0';
             this.tbPhone.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbPhone.PlaceholderText = "";
@@ -663,7 +671,7 @@
             this.tbPhone.SelectionLength = 0;
             this.tbPhone.SelectionStart = 0;
             this.tbPhone.ShortcutsEnabled = true;
-            this.tbPhone.Size = new System.Drawing.Size(253, 38);
+            this.tbPhone.Size = new System.Drawing.Size(337, 47);
             this.tbPhone.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tbPhone.TabIndex = 143;
             this.tbPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -701,10 +709,10 @@
             this.tbPoint.IconRight = null;
             this.tbPoint.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbPoint.Lines = new string[0];
-            this.tbPoint.Location = new System.Drawing.Point(870, 552);
-            this.tbPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.tbPoint.Location = new System.Drawing.Point(1160, 679);
+            this.tbPoint.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbPoint.MaxLength = 32767;
-            this.tbPoint.MinimumSize = new System.Drawing.Size(2, 2);
+            this.tbPoint.MinimumSize = new System.Drawing.Size(3, 2);
             this.tbPoint.Modified = false;
             this.tbPoint.Multiline = false;
             this.tbPoint.Name = "tbPoint";
@@ -728,7 +736,7 @@
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbPoint.OnIdleState = stateProperties20;
-            this.tbPoint.Padding = new System.Windows.Forms.Padding(4);
+            this.tbPoint.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbPoint.PasswordChar = '\0';
             this.tbPoint.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbPoint.PlaceholderText = "Điểm";
@@ -738,7 +746,7 @@
             this.tbPoint.SelectionLength = 0;
             this.tbPoint.SelectionStart = 0;
             this.tbPoint.ShortcutsEnabled = true;
-            this.tbPoint.Size = new System.Drawing.Size(118, 38);
+            this.tbPoint.Size = new System.Drawing.Size(157, 47);
             this.tbPoint.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tbPoint.TabIndex = 142;
             this.tbPoint.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -776,10 +784,10 @@
             this.tbType.IconRight = null;
             this.tbType.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbType.Lines = new string[0];
-            this.tbType.Location = new System.Drawing.Point(996, 552);
-            this.tbType.Margin = new System.Windows.Forms.Padding(4);
+            this.tbType.Location = new System.Drawing.Point(1328, 679);
+            this.tbType.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbType.MaxLength = 32767;
-            this.tbType.MinimumSize = new System.Drawing.Size(2, 2);
+            this.tbType.MinimumSize = new System.Drawing.Size(3, 2);
             this.tbType.Modified = false;
             this.tbType.Multiline = false;
             this.tbType.Name = "tbType";
@@ -803,7 +811,7 @@
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbType.OnIdleState = stateProperties24;
-            this.tbType.Padding = new System.Windows.Forms.Padding(4);
+            this.tbType.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbType.PasswordChar = '\0';
             this.tbType.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbType.PlaceholderText = "Loại KH";
@@ -813,7 +821,7 @@
             this.tbType.SelectionLength = 0;
             this.tbType.SelectionStart = 0;
             this.tbType.ShortcutsEnabled = true;
-            this.tbType.Size = new System.Drawing.Size(127, 38);
+            this.tbType.Size = new System.Drawing.Size(169, 47);
             this.tbType.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tbType.TabIndex = 141;
             this.tbType.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -851,10 +859,10 @@
             this.tbEmail.IconRight = null;
             this.tbEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbEmail.Lines = new string[0];
-            this.tbEmail.Location = new System.Drawing.Point(870, 382);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.tbEmail.Location = new System.Drawing.Point(1160, 470);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbEmail.MaxLength = 32767;
-            this.tbEmail.MinimumSize = new System.Drawing.Size(2, 2);
+            this.tbEmail.MinimumSize = new System.Drawing.Size(3, 2);
             this.tbEmail.Modified = false;
             this.tbEmail.Multiline = false;
             this.tbEmail.Name = "tbEmail";
@@ -878,7 +886,7 @@
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbEmail.OnIdleState = stateProperties28;
-            this.tbEmail.Padding = new System.Windows.Forms.Padding(4);
+            this.tbEmail.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbEmail.PasswordChar = '\0';
             this.tbEmail.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbEmail.PlaceholderText = "";
@@ -888,7 +896,7 @@
             this.tbEmail.SelectionLength = 0;
             this.tbEmail.SelectionStart = 0;
             this.tbEmail.ShortcutsEnabled = true;
-            this.tbEmail.Size = new System.Drawing.Size(253, 38);
+            this.tbEmail.Size = new System.Drawing.Size(337, 47);
             this.tbEmail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tbEmail.TabIndex = 140;
             this.tbEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -926,10 +934,10 @@
             this.tbFullname.IconRight = null;
             this.tbFullname.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbFullname.Lines = new string[0];
-            this.tbFullname.Location = new System.Drawing.Point(867, 316);
-            this.tbFullname.Margin = new System.Windows.Forms.Padding(4);
+            this.tbFullname.Location = new System.Drawing.Point(1156, 389);
+            this.tbFullname.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbFullname.MaxLength = 32767;
-            this.tbFullname.MinimumSize = new System.Drawing.Size(2, 2);
+            this.tbFullname.MinimumSize = new System.Drawing.Size(3, 2);
             this.tbFullname.Modified = false;
             this.tbFullname.Multiline = false;
             this.tbFullname.Name = "tbFullname";
@@ -953,7 +961,7 @@
             stateProperties32.ForeColor = System.Drawing.Color.Empty;
             stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbFullname.OnIdleState = stateProperties32;
-            this.tbFullname.Padding = new System.Windows.Forms.Padding(4);
+            this.tbFullname.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbFullname.PasswordChar = '\0';
             this.tbFullname.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbFullname.PlaceholderText = "";
@@ -963,7 +971,7 @@
             this.tbFullname.SelectionLength = 0;
             this.tbFullname.SelectionStart = 0;
             this.tbFullname.ShortcutsEnabled = true;
-            this.tbFullname.Size = new System.Drawing.Size(253, 38);
+            this.tbFullname.Size = new System.Drawing.Size(337, 47);
             this.tbFullname.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tbFullname.TabIndex = 139;
             this.tbFullname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -977,9 +985,10 @@
             // label1
             // 
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(866, 86);
+            this.label1.Location = new System.Drawing.Point(1155, 106);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 20);
+            this.label1.Size = new System.Drawing.Size(347, 25);
             this.label1.TabIndex = 138;
             this.label1.Text = resources.GetString("label1.Text");
             // 
@@ -1010,10 +1019,10 @@
             this.tbUsername.IconRight = null;
             this.tbUsername.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbUsername.Lines = new string[0];
-            this.tbUsername.Location = new System.Drawing.Point(867, 25);
-            this.tbUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.tbUsername.Location = new System.Drawing.Point(1156, 31);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbUsername.MaxLength = 32767;
-            this.tbUsername.MinimumSize = new System.Drawing.Size(2, 2);
+            this.tbUsername.MinimumSize = new System.Drawing.Size(3, 2);
             this.tbUsername.Modified = false;
             this.tbUsername.Multiline = false;
             this.tbUsername.Name = "tbUsername";
@@ -1037,7 +1046,7 @@
             stateProperties36.ForeColor = System.Drawing.Color.Empty;
             stateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbUsername.OnIdleState = stateProperties36;
-            this.tbUsername.Padding = new System.Windows.Forms.Padding(4);
+            this.tbUsername.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbUsername.PasswordChar = '\0';
             this.tbUsername.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbUsername.PlaceholderText = "Nhập tên tài khoản để tìm kiếm";
@@ -1047,7 +1056,7 @@
             this.tbUsername.SelectionLength = 0;
             this.tbUsername.SelectionStart = 0;
             this.tbUsername.ShortcutsEnabled = true;
-            this.tbUsername.Size = new System.Drawing.Size(167, 46);
+            this.tbUsername.Size = new System.Drawing.Size(223, 57);
             this.tbUsername.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tbUsername.TabIndex = 137;
             this.tbUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1061,8 +1070,6 @@
             // UserView
             // 
             this.UserView.AllowCustomTheming = false;
-            this.UserView.AllowUserToAddRows = false;
-            this.UserView.AllowUserToDeleteRows = false;
             this.UserView.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
@@ -1112,14 +1119,14 @@
             this.UserView.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.UserView.HeaderBgColor = System.Drawing.Color.Empty;
             this.UserView.HeaderForeColor = System.Drawing.Color.White;
-            this.UserView.Location = new System.Drawing.Point(31, 35);
+            this.UserView.Location = new System.Drawing.Point(41, 43);
+            this.UserView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UserView.Name = "UserView";
-            this.UserView.ReadOnly = true;
             this.UserView.RowHeadersVisible = false;
             this.UserView.RowHeadersWidth = 62;
             this.UserView.RowTemplate.Height = 40;
             this.UserView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.UserView.Size = new System.Drawing.Size(800, 477);
+            this.UserView.Size = new System.Drawing.Size(1067, 587);
             this.UserView.TabIndex = 136;
             this.UserView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -1170,8 +1177,8 @@
             this.UserUpdate.IdleIconLeftImage = null;
             this.UserUpdate.IdleIconRightImage = null;
             this.UserUpdate.IndicateFocus = false;
-            this.UserUpdate.Location = new System.Drawing.Point(512, 527);
-            this.UserUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.UserUpdate.Location = new System.Drawing.Point(683, 649);
+            this.UserUpdate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.UserUpdate.Name = "UserUpdate";
             this.UserUpdate.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.UserUpdate.OnDisabledState.BorderRadius = 40;
@@ -1205,7 +1212,7 @@
             this.UserUpdate.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.UserUpdate.OnPressedState.IconLeftImage = null;
             this.UserUpdate.OnPressedState.IconRightImage = null;
-            this.UserUpdate.Size = new System.Drawing.Size(81, 46);
+            this.UserUpdate.Size = new System.Drawing.Size(108, 57);
             this.UserUpdate.TabIndex = 135;
             this.UserUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.UserUpdate.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1261,8 +1268,8 @@
             this.UserDelete.IdleIconLeftImage = null;
             this.UserDelete.IdleIconRightImage = null;
             this.UserDelete.IndicateFocus = false;
-            this.UserDelete.Location = new System.Drawing.Point(423, 527);
-            this.UserDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.UserDelete.Location = new System.Drawing.Point(564, 649);
+            this.UserDelete.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.UserDelete.Name = "UserDelete";
             this.UserDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.UserDelete.OnDisabledState.BorderRadius = 40;
@@ -1296,7 +1303,7 @@
             this.UserDelete.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.UserDelete.OnPressedState.IconLeftImage = null;
             this.UserDelete.OnPressedState.IconRightImage = null;
-            this.UserDelete.Size = new System.Drawing.Size(81, 46);
+            this.UserDelete.Size = new System.Drawing.Size(108, 57);
             this.UserDelete.TabIndex = 134;
             this.UserDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.UserDelete.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1352,8 +1359,8 @@
             this.UserAdd.IdleIconLeftImage = null;
             this.UserAdd.IdleIconRightImage = null;
             this.UserAdd.IndicateFocus = false;
-            this.UserAdd.Location = new System.Drawing.Point(334, 527);
-            this.UserAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.UserAdd.Location = new System.Drawing.Point(445, 649);
+            this.UserAdd.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.UserAdd.Name = "UserAdd";
             this.UserAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.UserAdd.OnDisabledState.BorderRadius = 40;
@@ -1387,7 +1394,7 @@
             this.UserAdd.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.UserAdd.OnPressedState.IconLeftImage = null;
             this.UserAdd.OnPressedState.IconRightImage = null;
-            this.UserAdd.Size = new System.Drawing.Size(81, 46);
+            this.UserAdd.Size = new System.Drawing.Size(108, 57);
             this.UserAdd.TabIndex = 133;
             this.UserAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.UserAdd.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1423,10 +1430,10 @@
             this.tbPwd.IconRight = null;
             this.tbPwd.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbPwd.Lines = new string[0];
-            this.tbPwd.Location = new System.Drawing.Point(867, 193);
-            this.tbPwd.Margin = new System.Windows.Forms.Padding(4);
+            this.tbPwd.Location = new System.Drawing.Point(1156, 238);
+            this.tbPwd.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbPwd.MaxLength = 32767;
-            this.tbPwd.MinimumSize = new System.Drawing.Size(2, 2);
+            this.tbPwd.MinimumSize = new System.Drawing.Size(3, 2);
             this.tbPwd.Modified = false;
             this.tbPwd.Multiline = false;
             this.tbPwd.Name = "tbPwd";
@@ -1450,7 +1457,7 @@
             stateProperties40.ForeColor = System.Drawing.Color.Empty;
             stateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbPwd.OnIdleState = stateProperties40;
-            this.tbPwd.Padding = new System.Windows.Forms.Padding(4);
+            this.tbPwd.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbPwd.PasswordChar = '\0';
             this.tbPwd.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbPwd.PlaceholderText = "";
@@ -1460,7 +1467,7 @@
             this.tbPwd.SelectionLength = 0;
             this.tbPwd.SelectionStart = 0;
             this.tbPwd.ShortcutsEnabled = true;
-            this.tbPwd.Size = new System.Drawing.Size(253, 38);
+            this.tbPwd.Size = new System.Drawing.Size(337, 47);
             this.tbPwd.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tbPwd.TabIndex = 132;
             this.tbPwd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1518,8 +1525,8 @@
             this.UserCheck.IdleIconLeftImage = null;
             this.UserCheck.IdleIconRightImage = null;
             this.UserCheck.IndicateFocus = false;
-            this.UserCheck.Location = new System.Drawing.Point(1042, 25);
-            this.UserCheck.Margin = new System.Windows.Forms.Padding(4);
+            this.UserCheck.Location = new System.Drawing.Point(1389, 31);
+            this.UserCheck.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.UserCheck.Name = "UserCheck";
             this.UserCheck.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.UserCheck.OnDisabledState.BorderRadius = 40;
@@ -1553,7 +1560,7 @@
             this.UserCheck.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.UserCheck.OnPressedState.IconLeftImage = null;
             this.UserCheck.OnPressedState.IconRightImage = null;
-            this.UserCheck.Size = new System.Drawing.Size(85, 46);
+            this.UserCheck.Size = new System.Drawing.Size(113, 57);
             this.UserCheck.TabIndex = 131;
             this.UserCheck.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.UserCheck.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1564,10 +1571,10 @@
             // 
             // Customer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1159, 599);
+            this.ClientSize = new System.Drawing.Size(1545, 737);
             this.Controls.Add(this.bunifuLabel8);
             this.Controls.Add(this.txbBirthday);
             this.Controls.Add(this.bunifuLabel7);
@@ -1595,6 +1602,7 @@
             this.Controls.Add(this.tbPwd);
             this.Controls.Add(this.UserCheck);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Customer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Khách Hàng";

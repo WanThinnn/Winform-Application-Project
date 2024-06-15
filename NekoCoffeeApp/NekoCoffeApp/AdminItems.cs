@@ -106,7 +106,7 @@ namespace UI
 
                     // Create a new panel for each item
                     Panel panel = new Panel();
-                    panel.Size = new Size(250, 250); // Adjust the size of the Panel
+                    panel.Size = new Size(200, 200); // Adjust the size of the Panel
                     //panel.BorderStyle = BorderStyle.FixedSingle;
 
                     // Create a PictureBox to display the item's image
@@ -136,16 +136,16 @@ namespace UI
                     nameLabel.Font = new Font("Segoe UI", 10, FontStyle.Bold);
 
                     // Create a Label to display the item's price
-                    Label priceLabel = new Label();
-                    priceLabel.Text = $"{item.Price} VND";
-                    priceLabel.Location = new Point(10, 150); // Set the position of the Label below the name
-                    priceLabel.AutoSize = true;
-                    priceLabel.Font = new Font("Segoe UI", 8, FontStyle.Bold);
+                    //Label priceLabel = new Label();
+                    //priceLabel.Text = $"{item.Price} VND";
+                    //priceLabel.Location = new Point(10, 150); // Set the position of the Label below the name
+                    //priceLabel.AutoSize = true;
+                    //priceLabel.Font = new Font("Segoe UI", 8, FontStyle.Bold);
 
                     // Create a Label to display the item's price
                     Label pointLabel = new Label();
                     pointLabel.Text = $"{item.Point} Điểm";
-                    pointLabel.Location = new Point(10, 165); // Set the position of the Label below the name
+                    pointLabel.Location = new Point(10, 160); // Set the position of the Label below the name
                     pointLabel.AutoSize = true;
                     pointLabel.Font = new Font("Segoe UI", 8, FontStyle.Bold);
 
@@ -172,7 +172,7 @@ namespace UI
                     // Add PictureBox, Labels, NumericUpDown, and Button to the Panel
                     panel.Controls.Add(pictureBox);
                     panel.Controls.Add(nameLabel);
-                    panel.Controls.Add(priceLabel);
+                    //panel.Controls.Add(priceLabel);
                     panel.Controls.Add(pointLabel);
                     //panel.Controls.Add(numericUpDown);
                     panel.Controls.Add(btn);

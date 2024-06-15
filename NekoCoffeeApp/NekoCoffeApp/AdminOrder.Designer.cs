@@ -439,6 +439,7 @@
             // 
             // Table_flowLayoutPanel
             // 
+            this.Table_flowLayoutPanel.AutoScroll = true;
             this.Table_flowLayoutPanel.Location = new System.Drawing.Point(35, 20);
             this.Table_flowLayoutPanel.Name = "Table_flowLayoutPanel";
             this.Table_flowLayoutPanel.Size = new System.Drawing.Size(630, 342);

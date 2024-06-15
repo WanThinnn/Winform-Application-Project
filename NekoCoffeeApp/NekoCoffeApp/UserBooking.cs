@@ -232,5 +232,10 @@ namespace UI
         {
 
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            LoadTables();
+        }
     }
 }

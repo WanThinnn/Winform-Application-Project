@@ -74,7 +74,7 @@ namespace Master_NekoCoffeeApp
 
                 // Filter the list to only include users of type "KH", "KHTT", "KHVIP"
                 var filteredList = mList.Values
-                    .Where(user => user.Position == "KH" || user.Position == "KHTT" || user.Position == "KHVIP")
+                    .Where(user => user.Position == "KH" || user.Position == "KHTT" || user.Position == "KHVIP" || user.Position == "Google User")
                     .ToList();
 
                 // Check if filteredList is empty

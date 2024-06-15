@@ -10610,18 +10610,6 @@
         3HQNdylQzkBNCger6/+NgdgcJwjspQldgdv/pwpJ+gNx5wZDfJvjBAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Microsoft Sans Serif'; font-size: 10pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAANAAAAAiCAYAAAAu/ldmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACZSURBVHhe7dOxCQMxAARB9V+VHpXhMlyAH4ESZ29vOgOX
-        XL4DiNZarznnx8yebTdz8hljH8Bzu5mTj4DgVwKCQEAQCAgCAUEgIAgEBIGAIBAQBAKCQEAQCAgCAUEg
-        IAgEBIGAIBAQBAKCQEAQCAgCAUEgIAgEBIGAIBAQBAKCQEAQCAgCAUHwFdB1Xe99mNmz7WZOPsB/xrgB
-        q/pCLOaBGMcAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="AddBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHAAAAAnCAYAAADXa8wEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

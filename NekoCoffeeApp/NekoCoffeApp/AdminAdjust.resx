@@ -2772,7 +2772,7 @@
   <data name="AdminAdjustTable.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJYAAAA1CAYAAACjiRKiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL4SURBVHhe7d0/aBRBFMfxKy0tLS0tLVNaWomNvaUI6QLu
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAL4SURBVHhe7d0/aBRBFMfxKy0tLS0tLVNaWomNvaUI6QLu
         7glapLAQ7Cwsbja1YCdYCVaWFhaCRUAQIonh1kQTMdys781NxJzv4v65KXL5PvhYuHOTwPyYnZ1kJ4Ou
         VbvhtdrlD/1G8dyXw3eqLosaZ9fxOOqY6tiKm3G405Z3xUoIkssPfFmMrW8OS6WSsT6SsX6ZJGS1u3dZ
         QvXalzlhOr+qcFdyxdUYi37lR9ljAoW/6Cz2onYPLsSItCv9oHTwSuwbneMcm5T5L5m93tdu7VKMS7MK
@@ -2791,7 +2791,7 @@
   <data name="AdminAdjustDrink.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJYAAAA1CAYAAACjiRKiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL4SURBVHhe7d0/aBRBFMfxKy0tLS0tLVNaWomNvaUI6QLu
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAL4SURBVHhe7d0/aBRBFMfxKy0tLS0tLVNaWomNvaUI6QLu
         7glapLAQ7Cwsbja1YCdYCVaWFhaCRUAQIonh1kQTMdys781NxJzv4v65KXL5PvhYuHOTwPyYnZ1kJ4Ou
         VbvhtdrlD/1G8dyXw3eqLosaZ9fxOOqY6tiKm3G405Z3xUoIkssPfFmMrW8OS6WSsT6SsX6ZJGS1u3dZ
         QvXalzlhOr+qcFdyxdUYi37lR9ljAoW/6Cz2onYPLsSItCv9oHTwSuwbneMcm5T5L5m93tdu7VKMS7MK
@@ -2810,7 +2810,7 @@
   <data name="AdminAdjustProduct.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJYAAAA1CAYAAACjiRKiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL4SURBVHhe7d0/aBRBFMfxKy0tLS0tLVNaWomNvaUI6QLu
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAL4SURBVHhe7d0/aBRBFMfxKy0tLS0tLVNaWomNvaUI6QLu
         7glapLAQ7Cwsbja1YCdYCVaWFhaCRUAQIonh1kQTMdys781NxJzv4v65KXL5PvhYuHOTwPyYnZ1kJ4Ou
         VbvhtdrlD/1G8dyXw3eqLosaZ9fxOOqY6tiKm3G405Z3xUoIkssPfFmMrW8OS6WSsT6SsX6ZJGS1u3dZ
         QvXalzlhOr+qcFdyxdUYi37lR9ljAoW/6Cz2onYPLsSItCv9oHTwSuwbneMcm5T5L5m93tdu7VKMS7MK
@@ -2829,7 +2829,7 @@
   <data name="AdminAdjustCat.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJYAAAA1CAYAAACjiRKiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL4SURBVHhe7d0/aBRBFMfxKy0tLS0tLVNaWomNvaUI6QLu
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAL4SURBVHhe7d0/aBRBFMfxKy0tLS0tLVNaWomNvaUI6QLu
         7glapLAQ7Cwsbja1YCdYCVaWFhaCRUAQIonh1kQTMdys781NxJzv4v65KXL5PvhYuHOTwPyYnZ1kJ4Ou
         VbvhtdrlD/1G8dyXw3eqLosaZ9fxOOqY6tiKm3G405Z3xUoIkssPfFmMrW8OS6WSsT6SsX6ZJGS1u3dZ
         QvXalzlhOr+qcFdyxdUYi37lR9ljAoW/6Cz2onYPLsSItCv9oHTwSuwbneMcm5T5L5m93tdu7VKMS7MK
@@ -2848,7 +2848,7 @@
   <data name="AdminAdjustEmployee.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJYAAAA1CAYAAACjiRKiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL4SURBVHhe7d0/aBRBFMfxKy0tLS0tLVNaWomNvaUI6QLu
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAL4SURBVHhe7d0/aBRBFMfxKy0tLS0tLVNaWomNvaUI6QLu
         7glapLAQ7Cwsbja1YCdYCVaWFhaCRUAQIonh1kQTMdys781NxJzv4v65KXL5PvhYuHOTwPyYnZ1kJ4Ou
         VbvhtdrlD/1G8dyXw3eqLosaZ9fxOOqY6tiKm3G405Z3xUoIkssPfFmMrW8OS6WSsT6SsX6ZJGS1u3dZ
         QvXalzlhOr+qcFdyxdUYi37lR9ljAoW/6Cz2onYPLsSItCv9oHTwSuwbneMcm5T5L5m93tdu7VKMS7MK
@@ -2867,7 +2867,7 @@
   <data name="AdminAdjustCustomer.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJYAAAA1CAYAAACjiRKiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL4SURBVHhe7d0/aBRBFMfxKy0tLS0tLVNaWomNvaUI6QLu
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAL4SURBVHhe7d0/aBRBFMfxKy0tLS0tLVNaWomNvaUI6QLu
         7glapLAQ7Cwsbja1YCdYCVaWFhaCRUAQIonh1kQTMdys781NxJzv4v65KXL5PvhYuHOTwPyYnZ1kJ4Ou
         VbvhtdrlD/1G8dyXw3eqLosaZ9fxOOqY6tiKm3G405Z3xUoIkssPfFmMrW8OS6WSsT6SsX6ZJGS1u3dZ
         QvXalzlhOr+qcFdyxdUYi37lR9ljAoW/6Cz2onYPLsSItCv9oHTwSuwbneMcm5T5L5m93tdu7VKMS7MK

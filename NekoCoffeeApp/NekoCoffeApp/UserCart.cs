@@ -23,7 +23,7 @@ namespace UI
                 return _instance;
             }
         }
-
+        int total = 0;
         private IFirebaseClient client;
 
         private IFirebaseConfig ifc = new FirebaseConfig()
@@ -63,6 +63,7 @@ namespace UI
             //{
             //    MessageBox.Show($"Lỗi kết nối Firebase: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             //}
+          
         }
 
         public void AddItemToCart(string drinkName, int quantity, int price)
@@ -193,7 +194,7 @@ namespace UI
                     SL = quantity,
                     Total = price * quantity
                 };
-
+                this.total = tableDetail.Total;
                 FirebaseResponse response = await client.SetAsync($"TableDetails/{selectedTable.ID}/{drinkName}", tableDetail);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
