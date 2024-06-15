@@ -69,6 +69,7 @@ namespace UI
                 lbGender.Text = GlobalVars.CurrentUser.Gender;
                 lbPhone.Text = GlobalVars.CurrentUser.PhoneNumber;
                 lbUsername.Text = GlobalVars.CurrentUser.Username;
+                Point.Text = "Điểm thành viên:" + GlobalVars.CurrentUser.Point.ToString();
                 try
                 {
                     AvatarPictureBox.Load(GlobalVars.CurrentUser.Avatar);

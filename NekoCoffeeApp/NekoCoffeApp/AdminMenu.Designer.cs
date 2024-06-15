@@ -29,15 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminMenu));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.AdminComeOder = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.AdminDate1 = new Bunifu.UI.WinForms.BunifuDatePicker();
-            this.AdminLabel1 = new System.Windows.Forms.Label();
             this.AdminTitle1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -71,9 +68,7 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 40;
             this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.AdminComeOder);
             this.bunifuPanel1.Controls.Add(this.AdminDate1);
-            this.bunifuPanel1.Controls.Add(this.AdminLabel1);
             this.bunifuPanel1.Controls.Add(this.AdminTitle1);
             this.bunifuPanel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuPanel1.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -83,96 +78,6 @@
             this.bunifuPanel1.Size = new System.Drawing.Size(681, 172);
             this.bunifuPanel1.TabIndex = 0;
             this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
-            // 
-            // AdminComeOder
-            // 
-            this.AdminComeOder.AllowAnimations = true;
-            this.AdminComeOder.AllowMouseEffects = true;
-            this.AdminComeOder.AllowToggling = false;
-            this.AdminComeOder.AnimationSpeed = 200;
-            this.AdminComeOder.AutoGenerateColors = false;
-            this.AdminComeOder.AutoRoundBorders = false;
-            this.AdminComeOder.AutoSizeLeftIcon = true;
-            this.AdminComeOder.AutoSizeRightIcon = true;
-            this.AdminComeOder.BackColor = System.Drawing.Color.Transparent;
-            this.AdminComeOder.BackColor1 = System.Drawing.Color.Black;
-            this.AdminComeOder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminComeOder.BackgroundImage")));
-            this.AdminComeOder.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminComeOder.ButtonText = "Đặt món";
-            this.AdminComeOder.ButtonTextMarginLeft = 0;
-            this.AdminComeOder.ColorContrastOnClick = 45;
-            this.AdminComeOder.ColorContrastOnHover = 45;
-            this.AdminComeOder.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.AdminComeOder.CustomizableEdges = borderEdges3;
-            this.AdminComeOder.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.AdminComeOder.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.AdminComeOder.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.AdminComeOder.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.AdminComeOder.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.AdminComeOder.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminComeOder.ForeColor = System.Drawing.Color.LightSalmon;
-            this.AdminComeOder.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AdminComeOder.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.AdminComeOder.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.AdminComeOder.IconMarginLeft = 11;
-            this.AdminComeOder.IconPadding = 10;
-            this.AdminComeOder.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AdminComeOder.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.AdminComeOder.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.AdminComeOder.IconSize = 25;
-            this.AdminComeOder.IdleBorderColor = System.Drawing.Color.Black;
-            this.AdminComeOder.IdleBorderRadius = 35;
-            this.AdminComeOder.IdleBorderThickness = 1;
-            this.AdminComeOder.IdleFillColor = System.Drawing.Color.Black;
-            this.AdminComeOder.IdleIconLeftImage = null;
-            this.AdminComeOder.IdleIconRightImage = null;
-            this.AdminComeOder.IndicateFocus = false;
-            this.AdminComeOder.Location = new System.Drawing.Point(477, 115);
-            this.AdminComeOder.Name = "AdminComeOder";
-            this.AdminComeOder.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.AdminComeOder.OnDisabledState.BorderRadius = 35;
-            this.AdminComeOder.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminComeOder.OnDisabledState.BorderThickness = 1;
-            this.AdminComeOder.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.AdminComeOder.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.AdminComeOder.OnDisabledState.IconLeftImage = null;
-            this.AdminComeOder.OnDisabledState.IconRightImage = null;
-            this.AdminComeOder.onHoverState.BorderColor = System.Drawing.Color.Black;
-            this.AdminComeOder.onHoverState.BorderRadius = 35;
-            this.AdminComeOder.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminComeOder.onHoverState.BorderThickness = 1;
-            this.AdminComeOder.onHoverState.FillColor = System.Drawing.Color.Black;
-            this.AdminComeOder.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.AdminComeOder.onHoverState.IconLeftImage = null;
-            this.AdminComeOder.onHoverState.IconRightImage = null;
-            this.AdminComeOder.OnIdleState.BorderColor = System.Drawing.Color.Black;
-            this.AdminComeOder.OnIdleState.BorderRadius = 35;
-            this.AdminComeOder.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminComeOder.OnIdleState.BorderThickness = 1;
-            this.AdminComeOder.OnIdleState.FillColor = System.Drawing.Color.Black;
-            this.AdminComeOder.OnIdleState.ForeColor = System.Drawing.Color.LightSalmon;
-            this.AdminComeOder.OnIdleState.IconLeftImage = null;
-            this.AdminComeOder.OnIdleState.IconRightImage = null;
-            this.AdminComeOder.OnPressedState.BorderColor = System.Drawing.Color.Black;
-            this.AdminComeOder.OnPressedState.BorderRadius = 35;
-            this.AdminComeOder.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.AdminComeOder.OnPressedState.BorderThickness = 1;
-            this.AdminComeOder.OnPressedState.FillColor = System.Drawing.Color.Black;
-            this.AdminComeOder.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.AdminComeOder.OnPressedState.IconLeftImage = null;
-            this.AdminComeOder.OnPressedState.IconRightImage = null;
-            this.AdminComeOder.Size = new System.Drawing.Size(138, 42);
-            this.AdminComeOder.TabIndex = 4;
-            this.AdminComeOder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.AdminComeOder.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.AdminComeOder.TextMarginLeft = 0;
-            this.AdminComeOder.TextPadding = new System.Windows.Forms.Padding(0);
-            this.AdminComeOder.UseDefaultRadiusAndThickness = true;
-            this.AdminComeOder.Click += new System.EventHandler(this.AdminComeOder_Click);
             // 
             // AdminDate1
             // 
@@ -193,34 +98,23 @@
             this.AdminDate1.IconColor = System.Drawing.Color.Black;
             this.AdminDate1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.AdminDate1.LeftTextMargin = 5;
-            this.AdminDate1.Location = new System.Drawing.Point(49, 115);
+            this.AdminDate1.Location = new System.Drawing.Point(33, 114);
             this.AdminDate1.MinimumSize = new System.Drawing.Size(4, 32);
             this.AdminDate1.Name = "AdminDate1";
             this.AdminDate1.Size = new System.Drawing.Size(372, 32);
             this.AdminDate1.TabIndex = 2;
             // 
-            // AdminLabel1
-            // 
-            this.AdminLabel1.AutoSize = true;
-            this.AdminLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.AdminLabel1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminLabel1.Location = new System.Drawing.Point(45, 49);
-            this.AdminLabel1.Name = "AdminLabel1";
-            this.AdminLabel1.Size = new System.Drawing.Size(570, 46);
-            this.AdminLabel1.TabIndex = 1;
-            this.AdminLabel1.Text = "We serve more than 40 coffee and stay with that is many cats\r\nall will cost with " +
-    "a affordable, given you many good time\r\n";
-            // 
             // AdminTitle1
             // 
             this.AdminTitle1.AutoSize = true;
             this.AdminTitle1.BackColor = System.Drawing.Color.Transparent;
-            this.AdminTitle1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminTitle1.Location = new System.Drawing.Point(44, 13);
+            this.AdminTitle1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminTitle1.Location = new System.Drawing.Point(27, 27);
             this.AdminTitle1.Name = "AdminTitle1";
-            this.AdminTitle1.Size = new System.Drawing.Size(451, 26);
+            this.AdminTitle1.Size = new System.Drawing.Size(607, 93);
             this.AdminTitle1.TabIndex = 0;
-            this.AdminTitle1.Text = "Best place for healing your mental health";
+            this.AdminTitle1.Text = "Xin chào, chúc bạn một ngày mới thật vui vẻ và có một \r\nngày làm việc thật hiệu q" +
+    "uả\r\n\r\n";
             // 
             // panel1
             // 
@@ -346,13 +240,13 @@
             // 
             this.AdminLabel3.AutoSize = true;
             this.AdminLabel3.BackColor = System.Drawing.Color.LightSalmon;
-            this.AdminLabel3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminLabel3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminLabel3.ForeColor = System.Drawing.Color.Black;
-            this.AdminLabel3.Location = new System.Drawing.Point(187, 12);
+            this.AdminLabel3.Location = new System.Drawing.Point(209, 17);
             this.AdminLabel3.Name = "AdminLabel3";
-            this.AdminLabel3.Size = new System.Drawing.Size(146, 18);
+            this.AdminLabel3.Size = new System.Drawing.Size(107, 19);
             this.AdminLabel3.TabIndex = 6;
-            this.AdminLabel3.Text = "REMAINING TABLES\r\n";
+            this.AdminLabel3.Text = "BÀN TRỐNG";
             this.AdminLabel3.Click += new System.EventHandler(this.AdminLabel3_Click);
             // 
             // AdminTableCircle
@@ -386,10 +280,10 @@
             this.AdminTableCircle.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
             this.AdminTableCircle.SuperScriptText = "";
             this.AdminTableCircle.TabIndex = 17;
-            this.AdminTableCircle.Text = "11";
+            this.AdminTableCircle.Text = "6";
             this.AdminTableCircle.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.AdminTableCircle.Value = 11;
-            this.AdminTableCircle.ValueByTransition = 11;
+            this.AdminTableCircle.Value = 6;
+            this.AdminTableCircle.ValueByTransition = 6;
             this.AdminTableCircle.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.AdminTableCircle.ProgressChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCircleProgress.ProgressChangedEventArgs>(this.AdminTableCircle_ProgressChanged);
             // 
@@ -433,12 +327,12 @@
             // 
             this.AdminLabel2.AutoSize = true;
             this.AdminLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.AdminLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminLabel2.Location = new System.Drawing.Point(31, 12);
+            this.AdminLabel2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminLabel2.Location = new System.Drawing.Point(16, 17);
             this.AdminLabel2.Name = "AdminLabel2";
-            this.AdminLabel2.Size = new System.Drawing.Size(102, 18);
+            this.AdminLabel2.Size = new System.Drawing.Size(173, 19);
             this.AdminLabel2.TabIndex = 5;
-            this.AdminLabel2.Text = "UNPAID BILLS";
+            this.AdminLabel2.Text = "CHƯA THANH TOÁN";
             // 
             // bunifuPanel3
             // 
@@ -563,7 +457,7 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(103, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 18);
+            this.label2.Size = new System.Drawing.Size(140, 23);
             this.label2.TabIndex = 5;
             this.label2.Text = "RECENTLY PAY";
             // 
@@ -604,9 +498,7 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton AdminComeOder;
         private Bunifu.UI.WinForms.BunifuDatePicker AdminDate1;
-        private System.Windows.Forms.Label AdminLabel1;
         private System.Windows.Forms.Label AdminTitle1;
         private System.Windows.Forms.Panel panel2;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;

@@ -209,7 +209,7 @@
             this.txPass.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txPass.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txPass.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txPass.DefaultText = "241203";
+            this.txPass.DefaultText = "";
             this.txPass.FillColor = System.Drawing.Color.White;
             this.txPass.HideSelection = true;
             this.txPass.IconLeft = null;
@@ -217,8 +217,7 @@
             this.txPass.IconPadding = 10;
             this.txPass.IconRight = null;
             this.txPass.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txPass.Lines = new string[] {
-        "241203"};
+            this.txPass.Lines = new string[0];
             this.txPass.Location = new System.Drawing.Point(136, 145);
             this.txPass.Margin = new System.Windows.Forms.Padding(2);
             this.txPass.MaxLength = 32767;
@@ -254,7 +253,7 @@
             this.txPass.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txPass.SelectedText = "";
             this.txPass.SelectionLength = 0;
-            this.txPass.SelectionStart = 6;
+            this.txPass.SelectionStart = 0;
             this.txPass.ShortcutsEnabled = true;
             this.txPass.Size = new System.Drawing.Size(370, 35);
             this.txPass.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
@@ -286,7 +285,7 @@
             this.txUser.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txUser.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txUser.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txUser.DefaultText = "thienlai";
+            this.txUser.DefaultText = "";
             this.txUser.FillColor = System.Drawing.Color.White;
             this.txUser.HideSelection = true;
             this.txUser.IconLeft = null;
@@ -294,8 +293,7 @@
             this.txUser.IconPadding = 10;
             this.txUser.IconRight = null;
             this.txUser.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txUser.Lines = new string[] {
-        "thienlai"};
+            this.txUser.Lines = new string[0];
             this.txUser.Location = new System.Drawing.Point(136, 106);
             this.txUser.Margin = new System.Windows.Forms.Padding(2);
             this.txUser.MaxLength = 32767;
@@ -331,7 +329,7 @@
             this.txUser.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txUser.SelectedText = "";
             this.txUser.SelectionLength = 0;
-            this.txUser.SelectionStart = 8;
+            this.txUser.SelectionStart = 0;
             this.txUser.ShortcutsEnabled = true;
             this.txUser.Size = new System.Drawing.Size(370, 35);
             this.txUser.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
@@ -353,7 +351,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(276, 60);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(106, 17);
+            this.linkLabel1.Size = new System.Drawing.Size(139, 23);
             this.linkLabel1.TabIndex = 112;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "For MasterUser";
@@ -551,7 +549,7 @@
             this.lkForgotPass.Location = new System.Drawing.Point(395, 182);
             this.lkForgotPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lkForgotPass.Name = "lkForgotPass";
-            this.lkForgotPass.Size = new System.Drawing.Size(109, 17);
+            this.lkForgotPass.Size = new System.Drawing.Size(146, 23);
             this.lkForgotPass.TabIndex = 115;
             this.lkForgotPass.TabStop = true;
             this.lkForgotPass.Text = "Quên mật khẩu?";
@@ -565,7 +563,7 @@
             this.lbDangNhap.Location = new System.Drawing.Point(273, 29);
             this.lbDangNhap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDangNhap.Name = "lbDangNhap";
-            this.lbDangNhap.Size = new System.Drawing.Size(159, 31);
+            this.lbDangNhap.Size = new System.Drawing.Size(202, 40);
             this.lbDangNhap.TabIndex = 116;
             this.lbDangNhap.Text = "ĐĂNG NHẬP";
             // 

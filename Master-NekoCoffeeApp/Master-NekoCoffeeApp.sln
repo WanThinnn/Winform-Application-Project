@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master-NekoCoffeeApp", "Master-NekoCoffeeApp\Master-NekoCoffeeApp.csproj", "{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{F6FF956B-D63C-41D3-B83A-C9AA604CC4DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7C50961-1E7B-4AFB-99D5-77E7A7F9B716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6FF956B-D63C-41D3-B83A-C9AA604CC4DF}.Debug|Any CPU.ActiveCfg = Debug
+		{F6FF956B-D63C-41D3-B83A-C9AA604CC4DF}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -118,7 +118,7 @@ namespace UI
                 {
                     throw new Exception("Failed to connect to Firebase.");
                 }
-                var data = await empp.GetAsync($"/Employees_{_masterUserName}/");
+                var data = await empp.GetAsync($"/Employees/");
 
                 // Check if data or data.Body is null
                 if (data == null || data.Body == null)

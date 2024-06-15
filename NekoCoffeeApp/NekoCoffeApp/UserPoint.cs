@@ -40,6 +40,7 @@ namespace UI
             else
             {
                 lbFullname.Text = GlobalVars.CurrentUser.Fullname;
+                txtPoint.Text = GlobalVars.CurrentUser.Point.ToString();
                 try
                 {
                     AvatarPictureBox.Load(GlobalVars.CurrentUser.Avatar);

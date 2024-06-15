@@ -29,21 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserAccount));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.lbFullname = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.lbUsername = new System.Windows.Forms.Label();
+            this.lbPhone = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.lbBirthday = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.editPhone = new System.Windows.Forms.LinkLabel();
+            this.editBirthday = new System.Windows.Forms.LinkLabel();
             this.lbDay = new System.Windows.Forms.Label();
             this.lbEmail = new System.Windows.Forms.Label();
+            this.lbGender = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,17 +57,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.Point = new System.Windows.Forms.Label();
             this.AvatarPictureBox = new System.Windows.Forms.PictureBox();
             this.btnUpdate = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.editBirthday = new System.Windows.Forms.LinkLabel();
-            this.editPhone = new System.Windows.Forms.LinkLabel();
-            this.lbBirthday = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.lbPhone = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.lbGender = new System.Windows.Forms.Label();
-            this.lbUsername = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AvatarPictureBox)).BeginInit();
@@ -73,12 +72,12 @@
             this.bunifuLabel1.AllowParentOverrides = false;
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.CursorType = null;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Montserrat Black", 16F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.Location = new System.Drawing.Point(236, 24);
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(242, 29);
+            this.bunifuLabel1.Size = new System.Drawing.Size(294, 31);
             this.bunifuLabel1.TabIndex = 53;
             this.bunifuLabel1.Text = "TÀI KHOẢN CÁ NHÂN";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -113,7 +112,7 @@
             this.lbFullname.Location = new System.Drawing.Point(54, 341);
             this.lbFullname.Name = "lbFullname";
             this.lbFullname.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbFullname.Size = new System.Drawing.Size(113, 32);
+            this.lbFullname.Size = new System.Drawing.Size(143, 41);
             this.lbFullname.TabIndex = 90;
             this.lbFullname.Text = "Họ và tên";
             this.lbFullname.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -148,6 +147,198 @@
             this.bunifuPanel3.Size = new System.Drawing.Size(428, 340);
             this.bunifuPanel3.TabIndex = 91;
             // 
+            // lbUsername
+            // 
+            this.lbUsername.AutoSize = true;
+            this.lbUsername.BackColor = System.Drawing.Color.LightSalmon;
+            this.lbUsername.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUsername.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbUsername.Location = new System.Drawing.Point(169, 34);
+            this.lbUsername.Name = "lbUsername";
+            this.lbUsername.Size = new System.Drawing.Size(55, 28);
+            this.lbUsername.TabIndex = 108;
+            this.lbUsername.Text = "Text";
+            // 
+            // lbPhone
+            // 
+            this.lbPhone.AcceptsReturn = false;
+            this.lbPhone.AcceptsTab = false;
+            this.lbPhone.AnimationSpeed = 200;
+            this.lbPhone.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.lbPhone.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.lbPhone.BackColor = System.Drawing.Color.Transparent;
+            this.lbPhone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lbPhone.BackgroundImage")));
+            this.lbPhone.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.lbPhone.BorderColorDisabled = System.Drawing.Color.LightSalmon;
+            this.lbPhone.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.lbPhone.BorderColorIdle = System.Drawing.Color.LightSalmon;
+            this.lbPhone.BorderRadius = 1;
+            this.lbPhone.BorderThickness = 1;
+            this.lbPhone.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.lbPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lbPhone.DefaultFont = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lbPhone.DefaultText = "";
+            this.lbPhone.FillColor = System.Drawing.Color.LightSalmon;
+            this.lbPhone.HideSelection = true;
+            this.lbPhone.IconLeft = null;
+            this.lbPhone.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.lbPhone.IconPadding = 10;
+            this.lbPhone.IconRight = null;
+            this.lbPhone.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.lbPhone.Lines = new string[0];
+            this.lbPhone.Location = new System.Drawing.Point(147, 114);
+            this.lbPhone.MaxLength = 32767;
+            this.lbPhone.MinimumSize = new System.Drawing.Size(1, 1);
+            this.lbPhone.Modified = false;
+            this.lbPhone.Multiline = false;
+            this.lbPhone.Name = "lbPhone";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.White;
+            stateProperties1.ForeColor = System.Drawing.Color.Black;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.lbPhone.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.LightSalmon;
+            stateProperties2.FillColor = System.Drawing.Color.LightSalmon;
+            stateProperties2.ForeColor = System.Drawing.Color.White;
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.White;
+            this.lbPhone.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.lbPhone.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.LightSalmon;
+            stateProperties4.FillColor = System.Drawing.Color.LightSalmon;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.lbPhone.OnIdleState = stateProperties4;
+            this.lbPhone.Padding = new System.Windows.Forms.Padding(3);
+            this.lbPhone.PasswordChar = '\0';
+            this.lbPhone.PlaceholderForeColor = System.Drawing.Color.White;
+            this.lbPhone.PlaceholderText = "Enter text";
+            this.lbPhone.ReadOnly = false;
+            this.lbPhone.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.lbPhone.SelectedText = "";
+            this.lbPhone.SelectionLength = 0;
+            this.lbPhone.SelectionStart = 0;
+            this.lbPhone.ShortcutsEnabled = true;
+            this.lbPhone.Size = new System.Drawing.Size(171, 19);
+            this.lbPhone.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.lbPhone.TabIndex = 107;
+            this.lbPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.lbPhone.TextMarginBottom = 0;
+            this.lbPhone.TextMarginLeft = 3;
+            this.lbPhone.TextMarginTop = 0;
+            this.lbPhone.TextPlaceholder = "Enter text";
+            this.lbPhone.UseSystemPasswordChar = false;
+            this.lbPhone.WordWrap = true;
+            // 
+            // lbBirthday
+            // 
+            this.lbBirthday.AcceptsReturn = false;
+            this.lbBirthday.AcceptsTab = false;
+            this.lbBirthday.AnimationSpeed = 200;
+            this.lbBirthday.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.lbBirthday.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.lbBirthday.BackColor = System.Drawing.Color.Transparent;
+            this.lbBirthday.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lbBirthday.BackgroundImage")));
+            this.lbBirthday.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.lbBirthday.BorderColorDisabled = System.Drawing.Color.LightSalmon;
+            this.lbBirthday.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.lbBirthday.BorderColorIdle = System.Drawing.Color.LightSalmon;
+            this.lbBirthday.BorderRadius = 1;
+            this.lbBirthday.BorderThickness = 1;
+            this.lbBirthday.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.lbBirthday.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lbBirthday.DefaultFont = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lbBirthday.DefaultText = "";
+            this.lbBirthday.FillColor = System.Drawing.Color.LightSalmon;
+            this.lbBirthday.HideSelection = true;
+            this.lbBirthday.IconLeft = null;
+            this.lbBirthday.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.lbBirthday.IconPadding = 10;
+            this.lbBirthday.IconRight = null;
+            this.lbBirthday.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.lbBirthday.Lines = new string[0];
+            this.lbBirthday.Location = new System.Drawing.Point(129, 67);
+            this.lbBirthday.MaxLength = 32767;
+            this.lbBirthday.MinimumSize = new System.Drawing.Size(1, 1);
+            this.lbBirthday.Modified = false;
+            this.lbBirthday.Multiline = false;
+            this.lbBirthday.Name = "lbBirthday";
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.White;
+            stateProperties5.ForeColor = System.Drawing.Color.Black;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.lbBirthday.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.LightSalmon;
+            stateProperties6.FillColor = System.Drawing.Color.LightSalmon;
+            stateProperties6.ForeColor = System.Drawing.Color.White;
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.White;
+            this.lbBirthday.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.lbBirthday.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.LightSalmon;
+            stateProperties8.FillColor = System.Drawing.Color.LightSalmon;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.lbBirthday.OnIdleState = stateProperties8;
+            this.lbBirthday.Padding = new System.Windows.Forms.Padding(3);
+            this.lbBirthday.PasswordChar = '\0';
+            this.lbBirthday.PlaceholderForeColor = System.Drawing.Color.White;
+            this.lbBirthday.PlaceholderText = "Enter text";
+            this.lbBirthday.ReadOnly = false;
+            this.lbBirthday.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.lbBirthday.SelectedText = "";
+            this.lbBirthday.SelectionLength = 0;
+            this.lbBirthday.SelectionStart = 0;
+            this.lbBirthday.ShortcutsEnabled = true;
+            this.lbBirthday.Size = new System.Drawing.Size(171, 19);
+            this.lbBirthday.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.lbBirthday.TabIndex = 106;
+            this.lbBirthday.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.lbBirthday.TextMarginBottom = 0;
+            this.lbBirthday.TextMarginLeft = 3;
+            this.lbBirthday.TextMarginTop = 0;
+            this.lbBirthday.TextPlaceholder = "Enter text";
+            this.lbBirthday.UseSystemPasswordChar = false;
+            this.lbBirthday.WordWrap = true;
+            // 
+            // editPhone
+            // 
+            this.editPhone.ActiveLinkColor = System.Drawing.Color.DeepSkyBlue;
+            this.editPhone.AutoSize = true;
+            this.editPhone.BackColor = System.Drawing.Color.LightSalmon;
+            this.editPhone.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editPhone.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.editPhone.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.editPhone.Location = new System.Drawing.Point(346, 127);
+            this.editPhone.Name = "editPhone";
+            this.editPhone.Size = new System.Drawing.Size(40, 23);
+            this.editPhone.TabIndex = 103;
+            this.editPhone.TabStop = true;
+            this.editPhone.Text = "Edit";
+            this.editPhone.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.editPhone_LinkClicked);
+            // 
+            // editBirthday
+            // 
+            this.editBirthday.ActiveLinkColor = System.Drawing.Color.DeepSkyBlue;
+            this.editBirthday.AutoSize = true;
+            this.editBirthday.BackColor = System.Drawing.Color.LightSalmon;
+            this.editBirthday.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editBirthday.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.editBirthday.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.editBirthday.Location = new System.Drawing.Point(346, 81);
+            this.editBirthday.Name = "editBirthday";
+            this.editBirthday.Size = new System.Drawing.Size(40, 23);
+            this.editBirthday.TabIndex = 101;
+            this.editBirthday.TabStop = true;
+            this.editBirthday.Text = "Edit";
+            this.editBirthday.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.editBirthday_LinkClicked);
+            // 
             // lbDay
             // 
             this.lbDay.AutoSize = true;
@@ -156,7 +347,7 @@
             this.lbDay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbDay.Location = new System.Drawing.Point(163, 278);
             this.lbDay.Name = "lbDay";
-            this.lbDay.Size = new System.Drawing.Size(45, 21);
+            this.lbDay.Size = new System.Drawing.Size(55, 28);
             this.lbDay.TabIndex = 98;
             this.lbDay.Text = "Text";
             // 
@@ -168,9 +359,21 @@
             this.lbEmail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbEmail.Location = new System.Drawing.Point(101, 228);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(45, 21);
+            this.lbEmail.Size = new System.Drawing.Size(55, 28);
             this.lbEmail.TabIndex = 96;
             this.lbEmail.Text = "Text";
+            // 
+            // lbGender
+            // 
+            this.lbGender.AutoSize = true;
+            this.lbGender.BackColor = System.Drawing.Color.LightSalmon;
+            this.lbGender.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGender.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbGender.Location = new System.Drawing.Point(125, 177);
+            this.lbGender.Name = "lbGender";
+            this.lbGender.Size = new System.Drawing.Size(55, 28);
+            this.lbGender.TabIndex = 95;
+            this.lbGender.Text = "Text";
             // 
             // label4
             // 
@@ -180,7 +383,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(41, 278);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 20);
+            this.label4.Size = new System.Drawing.Size(146, 25);
             this.label4.TabIndex = 92;
             this.label4.Text = "Ngày đăng ký:";
             // 
@@ -192,7 +395,7 @@
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label8.Location = new System.Drawing.Point(41, 178);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(78, 20);
+            this.label8.Size = new System.Drawing.Size(99, 25);
             this.label8.TabIndex = 9;
             this.label8.Text = "Giới tính:";
             // 
@@ -204,7 +407,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Location = new System.Drawing.Point(41, 79);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 20);
+            this.label7.Size = new System.Drawing.Size(111, 25);
             this.label7.TabIndex = 8;
             this.label7.Text = "Ngày sinh:";
             // 
@@ -216,7 +419,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(203, 190);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 20);
+            this.label6.Size = new System.Drawing.Size(0, 25);
             this.label6.TabIndex = 7;
             // 
             // label3
@@ -227,7 +430,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(41, 229);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 20);
+            this.label3.Size = new System.Drawing.Size(69, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Email:";
             // 
@@ -239,7 +442,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(41, 127);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 20);
+            this.label2.Size = new System.Drawing.Size(141, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Số điện thoại:";
             // 
@@ -251,29 +454,19 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(41, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 20);
+            this.label1.Size = new System.Drawing.Size(157, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên đăng nhập:";
             // 
-            // label5
+            // Point
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(74, 402);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 17);
-            this.label5.TabIndex = 92;
-            this.label5.Text = "Loại khách hàng";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(94, 376);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(73, 17);
-            this.label9.TabIndex = 93;
-            this.label9.Text = "Tích điểm:";
+            this.Point.AutoSize = true;
+            this.Point.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Point.Location = new System.Drawing.Point(65, 388);
+            this.Point.Name = "Point";
+            this.Point.Size = new System.Drawing.Size(94, 23);
+            this.Point.TabIndex = 93;
+            this.Point.Text = "Tích điểm:";
             // 
             // AvatarPictureBox
             // 
@@ -388,218 +581,13 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // editBirthday
-            // 
-            this.editBirthday.ActiveLinkColor = System.Drawing.Color.DeepSkyBlue;
-            this.editBirthday.AutoSize = true;
-            this.editBirthday.BackColor = System.Drawing.Color.LightSalmon;
-            this.editBirthday.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editBirthday.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.editBirthday.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.editBirthday.Location = new System.Drawing.Point(346, 81);
-            this.editBirthday.Name = "editBirthday";
-            this.editBirthday.Size = new System.Drawing.Size(31, 17);
-            this.editBirthday.TabIndex = 101;
-            this.editBirthday.TabStop = true;
-            this.editBirthday.Text = "Edit";
-            this.editBirthday.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.editBirthday_LinkClicked);
-            // 
-            // editPhone
-            // 
-            this.editPhone.ActiveLinkColor = System.Drawing.Color.DeepSkyBlue;
-            this.editPhone.AutoSize = true;
-            this.editPhone.BackColor = System.Drawing.Color.LightSalmon;
-            this.editPhone.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editPhone.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.editPhone.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.editPhone.Location = new System.Drawing.Point(346, 127);
-            this.editPhone.Name = "editPhone";
-            this.editPhone.Size = new System.Drawing.Size(31, 17);
-            this.editPhone.TabIndex = 103;
-            this.editPhone.TabStop = true;
-            this.editPhone.Text = "Edit";
-            this.editPhone.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.editPhone_LinkClicked);
-            // 
-            // lbBirthday
-            // 
-            this.lbBirthday.AcceptsReturn = false;
-            this.lbBirthday.AcceptsTab = false;
-            this.lbBirthday.AnimationSpeed = 200;
-            this.lbBirthday.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.lbBirthday.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.lbBirthday.BackColor = System.Drawing.Color.Transparent;
-            this.lbBirthday.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lbBirthday.BackgroundImage")));
-            this.lbBirthday.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.lbBirthday.BorderColorDisabled = System.Drawing.Color.LightSalmon;
-            this.lbBirthday.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.lbBirthday.BorderColorIdle = System.Drawing.Color.LightSalmon;
-            this.lbBirthday.BorderRadius = 1;
-            this.lbBirthday.BorderThickness = 1;
-            this.lbBirthday.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.lbBirthday.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lbBirthday.DefaultFont = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lbBirthday.DefaultText = "";
-            this.lbBirthday.FillColor = System.Drawing.Color.LightSalmon;
-            this.lbBirthday.HideSelection = true;
-            this.lbBirthday.IconLeft = null;
-            this.lbBirthday.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.lbBirthday.IconPadding = 10;
-            this.lbBirthday.IconRight = null;
-            this.lbBirthday.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.lbBirthday.Lines = new string[0];
-            this.lbBirthday.Location = new System.Drawing.Point(129, 67);
-            this.lbBirthday.MaxLength = 32767;
-            this.lbBirthday.MinimumSize = new System.Drawing.Size(1, 1);
-            this.lbBirthday.Modified = false;
-            this.lbBirthday.Multiline = false;
-            this.lbBirthday.Name = "lbBirthday";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.White;
-            stateProperties5.ForeColor = System.Drawing.Color.Black;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.lbBirthday.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.LightSalmon;
-            stateProperties6.FillColor = System.Drawing.Color.LightSalmon;
-            stateProperties6.ForeColor = System.Drawing.Color.White;
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.White;
-            this.lbBirthday.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.lbBirthday.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.LightSalmon;
-            stateProperties8.FillColor = System.Drawing.Color.LightSalmon;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.lbBirthday.OnIdleState = stateProperties8;
-            this.lbBirthday.Padding = new System.Windows.Forms.Padding(3);
-            this.lbBirthday.PasswordChar = '\0';
-            this.lbBirthday.PlaceholderForeColor = System.Drawing.Color.White;
-            this.lbBirthday.PlaceholderText = "Enter text";
-            this.lbBirthday.ReadOnly = false;
-            this.lbBirthday.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.lbBirthday.SelectedText = "";
-            this.lbBirthday.SelectionLength = 0;
-            this.lbBirthday.SelectionStart = 0;
-            this.lbBirthday.ShortcutsEnabled = true;
-            this.lbBirthday.Size = new System.Drawing.Size(171, 19);
-            this.lbBirthday.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.lbBirthday.TabIndex = 106;
-            this.lbBirthday.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.lbBirthday.TextMarginBottom = 0;
-            this.lbBirthday.TextMarginLeft = 3;
-            this.lbBirthday.TextMarginTop = 0;
-            this.lbBirthday.TextPlaceholder = "Enter text";
-            this.lbBirthday.UseSystemPasswordChar = false;
-            this.lbBirthday.WordWrap = true;
-            // 
-            // lbPhone
-            // 
-            this.lbPhone.AcceptsReturn = false;
-            this.lbPhone.AcceptsTab = false;
-            this.lbPhone.AnimationSpeed = 200;
-            this.lbPhone.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.lbPhone.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.lbPhone.BackColor = System.Drawing.Color.Transparent;
-            this.lbPhone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lbPhone.BackgroundImage")));
-            this.lbPhone.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.lbPhone.BorderColorDisabled = System.Drawing.Color.LightSalmon;
-            this.lbPhone.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.lbPhone.BorderColorIdle = System.Drawing.Color.LightSalmon;
-            this.lbPhone.BorderRadius = 1;
-            this.lbPhone.BorderThickness = 1;
-            this.lbPhone.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.lbPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lbPhone.DefaultFont = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lbPhone.DefaultText = "";
-            this.lbPhone.FillColor = System.Drawing.Color.LightSalmon;
-            this.lbPhone.HideSelection = true;
-            this.lbPhone.IconLeft = null;
-            this.lbPhone.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.lbPhone.IconPadding = 10;
-            this.lbPhone.IconRight = null;
-            this.lbPhone.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.lbPhone.Lines = new string[0];
-            this.lbPhone.Location = new System.Drawing.Point(147, 114);
-            this.lbPhone.MaxLength = 32767;
-            this.lbPhone.MinimumSize = new System.Drawing.Size(1, 1);
-            this.lbPhone.Modified = false;
-            this.lbPhone.Multiline = false;
-            this.lbPhone.Name = "lbPhone";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.White;
-            stateProperties1.ForeColor = System.Drawing.Color.Black;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.lbPhone.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.LightSalmon;
-            stateProperties2.FillColor = System.Drawing.Color.LightSalmon;
-            stateProperties2.ForeColor = System.Drawing.Color.White;
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.White;
-            this.lbPhone.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.lbPhone.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.LightSalmon;
-            stateProperties4.FillColor = System.Drawing.Color.LightSalmon;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.lbPhone.OnIdleState = stateProperties4;
-            this.lbPhone.Padding = new System.Windows.Forms.Padding(3);
-            this.lbPhone.PasswordChar = '\0';
-            this.lbPhone.PlaceholderForeColor = System.Drawing.Color.White;
-            this.lbPhone.PlaceholderText = "Enter text";
-            this.lbPhone.ReadOnly = false;
-            this.lbPhone.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.lbPhone.SelectedText = "";
-            this.lbPhone.SelectionLength = 0;
-            this.lbPhone.SelectionStart = 0;
-            this.lbPhone.ShortcutsEnabled = true;
-            this.lbPhone.Size = new System.Drawing.Size(171, 19);
-            this.lbPhone.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.lbPhone.TabIndex = 107;
-            this.lbPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.lbPhone.TextMarginBottom = 0;
-            this.lbPhone.TextMarginLeft = 3;
-            this.lbPhone.TextMarginTop = 0;
-            this.lbPhone.TextPlaceholder = "Enter text";
-            this.lbPhone.UseSystemPasswordChar = false;
-            this.lbPhone.WordWrap = true;
-            // 
-            // lbGender
-            // 
-            this.lbGender.AutoSize = true;
-            this.lbGender.BackColor = System.Drawing.Color.LightSalmon;
-            this.lbGender.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGender.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbGender.Location = new System.Drawing.Point(125, 177);
-            this.lbGender.Name = "lbGender";
-            this.lbGender.Size = new System.Drawing.Size(45, 21);
-            this.lbGender.TabIndex = 95;
-            this.lbGender.Text = "Text";
-            // 
-            // lbUsername
-            // 
-            this.lbUsername.AutoSize = true;
-            this.lbUsername.BackColor = System.Drawing.Color.LightSalmon;
-            this.lbUsername.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUsername.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbUsername.Location = new System.Drawing.Point(169, 34);
-            this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(45, 21);
-            this.lbUsername.TabIndex = 108;
-            this.lbUsername.Text = "Text";
-            // 
             // UserAccount
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.AvatarPictureBox);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Point);
             this.Controls.Add(this.bunifuPanel3);
             this.Controls.Add(this.lbFullname);
             this.Controls.Add(this.bunifuGradientPanel1);
@@ -630,8 +618,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label Point;
         private System.Windows.Forms.Label lbDay;
         private System.Windows.Forms.Label lbEmail;
         private System.Windows.Forms.PictureBox AvatarPictureBox;

@@ -214,8 +214,8 @@ namespace Master_NekoCoffeeApp
                         RegistrationDate = DateTime.Now, // Gán ngày đăng ký tại đây
                         Point = 0,
                         Birthday = txbBirthday.Text,
-                        Avatar = '',
-                        Master = '',
+                        Avatar = "",
+                        Master = "",
                         hasBooking = "false"
                     };
 
