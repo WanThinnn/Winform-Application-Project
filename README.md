@@ -12,9 +12,12 @@ Neko Coffee - Ứng Dụng Quản Lý Quán Cà Phê Mèo
 4. Hồ Diệp Huy
 
 ## III. Một số công nghệ được sử dụng:
-(Comming soon...)
+1. CSDL: Google Firebase Realtime Database + Firebase Storage
+2. GUI: Winform C# + Bunifu Framework
+3. Bảo mật: Thuật toán Bcrypt băm mật khẩu nâng cao
+4. API Login with Google
 
-## IV. Một số tính năng (dự kiến):
+## IV. Một số tính năng:
 - Đăng nhập: khách vãng lai hoặc đã có tài khoản
 - Đăng ký (khách hàng)
 - Quản lý khách hàng, nhân viên, thực đơn, bàn
@@ -26,6 +29,4 @@ Neko Coffee - Ứng Dụng Quản Lý Quán Cà Phê Mèo
 - Tích điểm
 - Đổi quà: đổi nước, quà lưu niệm (ly, bộ pha cà phê, vòng cổ cho mèo,...)
 - Mua/Bán các sản phẩm về mèo
-- Nhận/Tặng mèo
 
-# (Comming soon...)
