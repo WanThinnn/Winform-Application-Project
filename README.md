@@ -4,6 +4,7 @@ _Lời ngỏ: Ứng dụng vẫn đang trong quá trình xây dựng và phát t
 
 ## I. Đồ án môn học:
 Neko Coffee - Ứng Dụng Quản Lý Quán Cà Phê Mèo
+Note: Vui lòng xem báo cáo trong thư mục "reports" để biết thêm chi tiết.
 
 ## II. Thành viên:
 1. Lại Quan Thiên
