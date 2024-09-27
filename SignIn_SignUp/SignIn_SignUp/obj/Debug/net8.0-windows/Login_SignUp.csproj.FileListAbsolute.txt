@@ -1,0 +1,39 @@
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\bin\Debug\net8.0-windows\Login_SignUp.exe
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\bin\Debug\net8.0-windows\Login_SignUp.deps.json
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\bin\Debug\net8.0-windows\Login_SignUp.runtimeconfig.json
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\bin\Debug\net8.0-windows\Login_SignUp.dll
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\bin\Debug\net8.0-windows\Login_SignUp.pdb
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\SignIn_SignUp.Login.resources
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.Properties.Resources.resources
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\SignIn_SignUp.SignUp.resources
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.csproj.GenerateResource.cache
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.GeneratedMSBuildEditorConfig.editorconfig
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.AssemblyInfoInputs.cache
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.AssemblyInfo.cs
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.csproj.CoreCompileInputs.cache
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.dll
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\refint\Login_SignUp.dll
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.pdb
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.genruntimeconfig.cache
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\ref\Login_SignUp.dll
+D:\UIT\Semester_4\Lập trình Mạng\ĐỒ ÁN\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.ForgotPass.resources
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\bin\Debug\net8.0-windows\Login_SignUp.exe
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\bin\Debug\net8.0-windows\Login_SignUp.deps.json
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\bin\Debug\net8.0-windows\Login_SignUp.runtimeconfig.json
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\bin\Debug\net8.0-windows\Login_SignUp.dll
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\bin\Debug\net8.0-windows\Login_SignUp.pdb
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.ForgotPass.resources
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\SignIn_SignUp.Login.resources
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.Properties.Resources.resources
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\SignIn_SignUp.SignUp.resources
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.csproj.GenerateResource.cache
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.AssemblyInfoInputs.cache
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.AssemblyInfo.cs
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.csproj.CoreCompileInputs.cache
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.sourcelink.json
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.dll
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\refint\Login_SignUp.dll
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.pdb
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\Login_SignUp.genruntimeconfig.cache
+C:\Users\Thien\Downloads\Neko-Coffe\Winform-Application-Project\SignIn_SignUp\SignIn_SignUp\obj\Debug\net8.0-windows\ref\Login_SignUp.dll
