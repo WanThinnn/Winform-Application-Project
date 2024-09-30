@@ -5,6 +5,10 @@ _Lời ngỏ: Ứng dụng vẫn đang trong quá trình xây dựng và phát t
 ## I. Đồ án môn học:
 Neko Coffee - Ứng Dụng Quản Lý Quán Cà Phê Mèo
 Note: Vui lòng xem báo cáo trong thư mục "reports" để biết thêm chi tiết.
+![image](https://github.com/user-attachments/assets/15c1238a-2170-4446-841e-c58d8fce1e3d)
+![image](https://github.com/user-attachments/assets/a20b7182-64ac-4f38-b5d8-84bc916090e2)
+![image](https://github.com/user-attachments/assets/3b0a26c9-980b-4222-acb0-3e5c9d271c00)
+![image](https://github.com/user-attachments/assets/079d5572-4aa4-4784-9a9d-f629e7b822ba)
 
 ## II. Thành viên:
 1. Lại Quan Thiên
