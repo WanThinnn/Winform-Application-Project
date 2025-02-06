@@ -12,9 +12,8 @@ Note: Vui lòng xem báo cáo trong thư mục "reports" để biết thêm chi 
 
 ## II. Thành viên:
 1. Lại Quan Thiên
-2. Đặng Đức Tài
-3. Mai Nguyễn Nam Phương
-4. Hồ Diệp Huy
+2. Mai Nguyễn Nam Phương
+3. Hồ Diệp Huy
 <a href="https://github.com/WanThinnn/Winform-Application-Project/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=WanThinnn/Winform-Application-Project" />
 </a>
