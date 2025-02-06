@@ -14,9 +14,7 @@ Note: Vui lòng xem báo cáo trong thư mục "reports" để biết thêm chi 
 1. Lại Quan Thiên
 2. Mai Nguyễn Nam Phương
 3. Hồ Diệp Huy
-<a href="https://github.com/WanThinnn/Winform-Application-Project/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=WanThinnn/Winform-Application-Project" />
-</a>
+
 
 ## III. Một số công nghệ được sử dụng:
 1. CSDL: Google Firebase Realtime Database + Firebase Storage
